@@ -1,0 +1,15 @@
+= haml :header
+= haml :navigation
+
+.container-fluid
+  .panel-group{id: "agent"}
+    - settings.agents.each do |agent|
+      .panel.panel-default
+        .panel-heading.panel-title.panel-list
+          %a.accordion-toggle{href: "#agent_" + agent['name'], id: "link_" + agent['name'], data: { toggle: "collapse", parent: "#agent" }}
+            = agent['title'] + " <small class='pull-right'>" + agent['name'] + "</small>"
+        .panel-collapse.collapse{id: "agent_" + agent['name']}
+          .panel-body
+            = agent['description']
+
+= haml :footer

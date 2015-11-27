@@ -1,0 +1,57 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "access_key": "{{user `access_key`}}",
+      "secret_key": "{{user `secret_key`}}",
+      "region": "us-east-1",
+      "source_ami": "ami-77fb5d1c",
+      "instance_type": "m1.small",
+      "ssh_username": "ubuntu",
+      "ami_name": "doi-metadata-search {{timestamp}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "chef-solo",
+      "cookbook_paths": ["vendor/cookbooks"],
+      "run_list": ["recipe[doi_metadata_search]"],
+      "json": {
+        "ruby": {
+          "deploy_user": "ubuntu",
+          "deploy_group": "ubuntu",
+          "rails_env": "production"
+        },
+        "phantomjs": {
+          "version": "1.9.7",
+          "base_url": "https://bitbucket.org/ariya/phantomjs/downloads" }
+      }
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "atlas",
+      "artifact": "datacite/doi-metadata-search",
+      "artifact_type": "amazon.ami",
+      "token": "{{user `atlas_token`}}",
+      "metadata": {
+        "created_at": "{{timestamp}}"
+      }
+    }
+  ],
+  "variables": {
+    "compression_level": "6",
+    "cpus": "2",
+    "disk_size": "40000",
+    "headless": "false",
+    "memory": "2048",
+    "mirror": "http://releases.ubuntu.com",
+    "access_key": "{{env `AWS_KEY`}}",
+    "secret_key": "{{env `AWS_SECRET`}}",
+    "atlas_token": "{{env `ATLAS_TOKEN`}}"
+  },
+   "push": {
+    "name": "datacite/doi-metadata-search",
+    "vcs": true
+  }
+}

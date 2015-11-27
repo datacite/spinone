@@ -1,0 +1,71 @@
+= haml :header
+= haml :navigation
+
+.container-fluid
+  .content
+    - if is_admin?
+      .row
+        .col-md-12
+          .panel.panel-default
+            .panel-heading
+              Jobs
+            %table.table
+              %thead
+                %tr
+                  %th.jobs Processed
+                  %th.jobs Failed
+                  %th.jobs Busy
+                  %th.jobs Enqueued
+                  %th.jobs Retries
+                  %th.jobs Scheduled
+                  %th.jobs Dead
+              %tbody
+                %tr
+                  %td.jobs
+                    - if @process.stats.processed > 0
+                      %a{href: "/sidekiq", target: "_blank"}
+                        = number_with_delimiter(@process.stats.processed)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.failed > 0
+                      %a{href: "/sidekiq", target: "_blank"}
+                        = number_with_delimiter(@process.stats.failed)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.workers_size > 0
+                      %a{href: "/sidekiq/busy", target: "_blank"}
+                        = number_with_delimiter(@process.workers_size)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.enqueued > 0
+                      %a{href: "/sidekiq/queues", target: "_blank"}
+                        = number_with_delimiter(@process.stats.enqueued)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.retry_size > 0
+                      %a{href: "/sidekiq/retries", target: "_blank"}
+                        = number_with_delimiter(@process.stats.retry_size)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.scheduled_size > 0
+                      %a{href: "/sidekiq/scheduled", target: "_blank"}
+                        = number_with_delimiter(@process.stats.scheduled_size)
+                    - else
+                      0
+                  %td.jobs
+                    - if @process.stats.dead_size > 0
+                      %a{href: "/sidekiq/morgue", target: "_blank"}
+                        = number_with_delimiter(@process.stats.dead_size)
+                    - else
+                      0
+    - else
+      .panel.panel-default
+        .panel-body
+          Status information is only available for administrators.
+          
+= haml :footer

@@ -1,0 +1,59 @@
+.header{id: "navtop"}
+  .navbar.navbar-default.navbar-static-top{role: "navigation"}
+    .container-fluid
+      .navbar-header
+        %button.navbar-toggle{type: 'button', data: { toggle: "collapse", target: ".navbar-collapse"}}
+          %span.sr-only Toggle Navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      %a.navbar-brand{:href => "/"}
+        %img.logo{src: "/images/logo.png" }
+        %span.logo> Data
+        %span Cite Push Service
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-right
+          - if signed_in?
+            %li.dropdown
+              %a.dropdown-toggle{href: '#', id: "account_menu_link", data: { toggle: "dropdown"}, aria: { haspopup: "true", expanded: "false" }}
+                = user_display
+                %span.caret
+              %ul.dropdown-menu{role: 'menu'}
+                %li
+                  %a{:href => 'https://profiles.labs.datacite.org/users/me'}
+                    %i.fa.fa-user
+                    Settings
+                %li.divider
+                %li
+                  %a{:href => "#{ENV['ORCID_URL']}/#{session[:orcid][:uid]}"}
+                    %i.fa.fa-external-link
+                    ORCID Record
+                %li.divider
+                  %li
+                    %a{:href => '/auth/signout'}
+                      %i.fa.fa-sign-out
+                      Sign out
+          - else
+            %li
+              %a.btn.btn-default{:href => "/auth/jwt", id: 'sign-in'}
+                Sign in
+
+        %ul.nav.navbar-nav.navbar-right
+          %li.dropdown
+            %a.dropdown-toggle{href: '#', data: { toggle: "dropdown"}, aria: { haspopup: "true", expanded: "false" }}
+              %i.fa.fa-th
+              %span.caret
+            %ul.dropdown-menu{role: 'menu'}
+              %li.dropdown-header DataCite Labs
+              - settings.labs_links.each do |item|
+                %li
+                  %a{:href => item['url']}
+                    %i.fa{class: "fa-#{item['icon']}"}
+                    = item['name']
+              %li.divider
+              %li.dropdown-header DataCite
+              - settings.production_links.each do |item|
+                %li
+                  %a{:href => item['url']}
+                    %i.fa.fa-fw{class: "fa-#{item['icon']}"}
+                    = item['name']
