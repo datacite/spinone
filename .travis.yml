@@ -4,9 +4,6 @@ sudo: false
 rvm:
   - 2.2.0
 
-env:
-  - CODECLIMATE_REPO_TOKEN=d3d49b55abedc77746ee6f87ddc16ae72b56bb759507a593d085569b8cc6199f
-
 services:
   - redis-server
 
@@ -15,4 +12,4 @@ before_script:
   - mkdir -p tmp/pids
 
 script:
-  - bundle exec rspec
+  - CODECLIMATE_REPO_TOKEN=d3d49b55abedc77746ee6f87ddc16ae72b56bb759507a593d085569b8cc6199f bundle exec rspec
