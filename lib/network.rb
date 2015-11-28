@@ -71,8 +71,12 @@ module Sinatra
 
     def parse_error_response(string)
       string = parse_response(string)
-      string = string['error'] if string.is_a?(Hash) && string['error']
-      string
+      
+      if string.is_a?(Hash) && string['error']
+        string['error']
+      else
+        string
+      end
     end
 
     def parse_response(string)
