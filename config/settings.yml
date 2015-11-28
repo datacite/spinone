@@ -1,10 +1,3 @@
-agents:
- - name: orcid
-   title: ORCID
-   description: Push works with ORCID nameIdentifier.
- - name: related_identifier
-   title: Related Identifier
-   description: Push works with relatedIdentifier.
 labs_links:
  - name: Profiles
    url: https://profiles.labs.datacite.org

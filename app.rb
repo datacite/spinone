@@ -24,7 +24,8 @@ ENV_VARS = Hash[env_vars.map { |env| [env, ENV[env]] }]
 DEFAULT_TIMEOUT = 60
 
 require 'sinatra'
-require 'sinatra/contrib'
+require 'sinatra/json'
+require 'sinatra/config_file'
 require 'active_support/all'
 require 'haml'
 require 'will_paginate'

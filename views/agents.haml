@@ -3,13 +3,13 @@
 
 .container-fluid
   .panel-group{id: "agent"}
-    - settings.agents.each do |agent|
+    - Agent.descendants.map { |a| a.new }.each do |agent|
       .panel.panel-default
         .panel-heading.panel-title.panel-list
-          %a.accordion-toggle{href: "#agent_" + agent['name'], id: "link_" + agent['name'], data: { toggle: "collapse", parent: "#agent" }}
-            = agent['title'] + " <small class='pull-right'>" + agent['name'] + "</small>"
-        .panel-collapse.collapse{id: "agent_" + agent['name']}
+          %a.accordion-toggle{href: "#agent_" + agent.name, id: "link_" + agent.name, data: { toggle: "collapse", parent: "#agent" }}
+            = agent.title + " <small class='pull-right'>" + agent.name + "</small>"
+        .panel-collapse.collapse{id: "agent_" + agent.name}
           .panel-body
-            = agent['description']
+            = agent.description
 
 = haml :footer

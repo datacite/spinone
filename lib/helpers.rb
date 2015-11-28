@@ -6,4 +6,8 @@ helpers do
     else "panel-warning"
     end
   end
+
+  def doi_as_url(doi)
+    "http://doi.org/" + doi
+  end
 end

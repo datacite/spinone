@@ -1,10 +1,20 @@
 require 'sinatra/base'
 require 'json'
 require 'nokogiri'
+require 'faraday'
+require 'faraday_middleware'
+require 'net/http'
+require 'excon'
+require 'uri'
 
 module Sinatra
   module Network
     def get_result(url, options = { content_type: 'json' })
+      # make sure we use a 'Host' header
+      uri = URI.parse(url)
+      options[:headers] ||= {}
+      options[:headers]['Host'] = uri.host
+
       conn = faraday_conn(options[:content_type], options)
       conn.basic_auth(options[:username], options[:password]) if options[:username]
       conn.authorization :Bearer, options[:bearer] if options[:bearer]
@@ -40,13 +50,13 @@ module Sinatra
 
       Faraday.new do |c|
         c.headers['Accept'] = accept_header
-        c.headers['User-Agent'] = "doi-metadata-search - http://#{ENV['HOSTNAME']}"
+        c.headers['User-Agent'] = "spinone - http://#{ENV['HOSTNAME']}"
         c.use      FaradayMiddleware::FollowRedirects, limit: limit, cookie: :all
         c.request  :multipart
         c.request  :json if accept_header == 'application/json'
         c.use      Faraday::Response::RaiseError
         c.response :encoding
-        c.adapter  Faraday.default_adapter
+        c.adapter  :excon
       end
     end
 
