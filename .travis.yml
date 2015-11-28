@@ -9,7 +9,7 @@ services:
 
 before_script:
   - cp .env.travis .env
-  - mkdir -p tmp/pids
+  - mkdir -p tmp/pids log
 
 script:
   - bundle exec rspec
