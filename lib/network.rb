@@ -10,20 +10,13 @@ require 'uri'
 module Sinatra
   module Network
     def get_result(url, content_type: 'json', headers: {}, **options)
-      # make sure we use a 'Host' header
-      headers['Host'] = URI.parse(url).host
-
       conn = faraday_conn(content_type, options)
-
-      if options[:bearer]
-        conn.authorization :Bearer, options[:bearer]
-      elsif options[:token]
-        conn.authorization :Token, token: options[:token]
-      elsif options[:username]
-        conn.basic_auth(options[:username], options[:password])
-      end
+      conn = auth_conn(conn, options)
 
       conn.options[:timeout] = options[:timeout] || DEFAULT_TIMEOUT
+
+      # make sure we use a 'Host' header
+      headers['Host'] = URI.parse(url).host
 
       if options[:data]
         response = conn.post url, {}, headers do |request|
@@ -59,6 +52,17 @@ module Sinatra
       end
     end
 
+    def auth_conn(conn, options)
+      if options[:bearer]
+        conn.authorization :Bearer, options[:bearer]
+      elsif options[:token]
+        conn.authorization :Token, token: options[:token]
+      elsif options[:username]
+        conn.basic_auth(options[:username], options[:password])
+      end
+      conn
+    end
+
     def rescue_faraday_error(error)
       if error.is_a?(Faraday::ResourceNotFound)
         { error: "resource not found", status: 404 }
@@ -71,7 +75,7 @@ module Sinatra
 
     def parse_error_response(string)
       string = parse_response(string)
-      
+
       if string.is_a?(Hash) && string['error']
         string['error']
       else
