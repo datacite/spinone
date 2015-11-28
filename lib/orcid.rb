@@ -11,19 +11,13 @@ class Orcid < Agent
     'Push works with ORCID nameIdentifier.'
   end
 
-  def get_query_url(options = {})
-    offset = options[:offset].to_i
-    rows = options[:rows].presence || job_batch_size
-    from_date = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-    until_date = options[:until_date].presence || Time.now.to_date.iso8601
-
+  def get_query_url(offset: 0, rows: job_batch_size, from_date: (Time.now.to_date - 1.day).iso8601, until_date: Time.now.to_date.iso8601)
     updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
-    fq = "#{updated} AND has_metadata:true AND is_active:true"
     params = { q: "nameIdentifier:ORCID\\:*",
                start: offset,
                rows: rows,
                fl: "doi,nameIdentifier,updated",
-               fq: fq,
+               fq: "#{updated} AND has_metadata:true AND is_active:true",
                wt: "json" }
     url + URI.encode_www_form(params)
   end

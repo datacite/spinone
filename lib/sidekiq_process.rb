@@ -44,9 +44,9 @@ class SidekiqProcess
   def stop
     if pid
       IO.write(pidfile, pid) unless File.exist? pidfile
-      message = `/usr/bin/env bundle exec sidekiqctl stop #{pidfile} 10`
+      `/usr/bin/env bundle exec sidekiqctl stop #{pidfile} 10`
     else
-      message = "No Sidekiq process running."
+      "No Sidekiq process running."
     end
   end
 
@@ -54,19 +54,19 @@ class SidekiqProcess
     if pid
       IO.write(pidfile, pid) unless File.exist? pidfile
       `/usr/bin/env bundle exec sidekiqctl quiet #{pidfile}`
-      message = "Sidekiq turned quiet."
+      "Sidekiq turned quiet."
     else
-      message = "No Sidekiq process running."
+      "No Sidekiq process running."
     end
   end
 
   def start
     if pid
       ps = process_set.first
-      message = "Sidekiq process running, Sidekiq process started at #{Time.at(ps['started_at']).utc.iso8601}."
+      "Sidekiq process running, Sidekiq process started at #{Time.at(ps['started_at']).utc.iso8601}."
     else
       `/usr/bin/env bundle exec sidekiq -r ./app.rb --pidfile #{pidfile} --environment #{ENV['RACK_ENV']} --logfile #{logfile} --config #{configfile} --daemon`
-      message = "No Sidekiq process running, Sidekiq process started at #{Time.now.utc.iso8601}."
+      "No Sidekiq process running, Sidekiq process started at #{Time.now.utc.iso8601}."
     end
   end
 
@@ -74,9 +74,9 @@ class SidekiqProcess
     ps = process_set.first
     if ps.nil?
       start
-      message = "No Sidekiq process running, Sidekiq process started at #{Time.now.utc.iso8601}."
+      "No Sidekiq process running, Sidekiq process started at #{Time.now.utc.iso8601}."
     else
-      message = "Sidekiq process running, Sidekiq process started at #{Time.at(ps['started_at']).utc.iso8601}."
+      "Sidekiq process running, Sidekiq process started at #{Time.at(ps['started_at']).utc.iso8601}."
     end
   end
 end

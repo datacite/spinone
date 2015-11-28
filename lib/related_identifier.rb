@@ -11,12 +11,7 @@ class RelatedIdentifier < Agent
     'Push works with relatedIdentifier.'
   end
 
-  def get_query_url(options={})
-    offset = options[:offset].to_i
-    rows = options[:rows].presence || job_batch_size
-    from_date = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-    until_date = options[:until_date].presence || Time.now.to_date.iso8601
-
+  def get_query_url(offset: 0, rows: job_batch_size, from_date: (Time.now.to_date - 1.day).iso8601, until_date: Time.now.to_date.iso8601)
     updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
     params = { q: "relatedIdentifier:DOI\\:*",
                start: offset,
