@@ -9,24 +9,29 @@ require 'uri'
 
 module Sinatra
   module Network
-    def get_result(url, options = { content_type: 'json' })
+    def get_result(url, content_type: 'json', headers: {}, **options)
       # make sure we use a 'Host' header
-      uri = URI.parse(url)
-      options[:headers] ||= {}
-      options[:headers]['Host'] = uri.host
+      headers['Host'] = URI.parse(url).host
 
-      conn = faraday_conn(options[:content_type], options)
-      conn.basic_auth(options[:username], options[:password]) if options[:username]
-      conn.authorization :Bearer, options[:bearer] if options[:bearer]
+      conn = faraday_conn(content_type, options)
+
+      if options[:bearer]
+        conn.authorization :Bearer, options[:bearer]
+      elsif options[:token]
+        conn.authorization :Token, token: options[:token]
+      elsif options[:username]
+        conn.basic_auth(options[:username], options[:password])
+      end
+
       conn.options[:timeout] = options[:timeout] || DEFAULT_TIMEOUT
+
       if options[:data]
-        response = conn.post url, {}, options[:headers] do |request|
+        response = conn.post url, {}, headers do |request|
           request.body = options[:data]
         end
       else
-        response = conn.get url, {}, options[:headers]
+        response = conn.get url, {}, headers
       end
-      # parsing by content type is not reliable, so we check the response format
       parse_response(response.body)
     rescue *NETWORKABLE_EXCEPTIONS => error
       rescue_faraday_error(error)
