@@ -27,15 +27,9 @@ module Sinatra
         response = conn.get url, {}, options[:headers]
       end
       # parsing by content type is not reliable, so we check the response format
-      if json = as_json(response.body)
-        json
-      elsif xml = as_xml(response.body)
-        xml
-      else
-        force_utf8(response.body)
-      end
-    rescue *NETWORKABLE_EXCEPTIONS => e
-      rescue_faraday_error(url, e, options)
+      parse_response(response.body)
+    rescue *NETWORKABLE_EXCEPTIONS => error
+      rescue_faraday_error(error)
     end
 
     def faraday_conn(content_type = 'json', options = {})
@@ -60,7 +54,7 @@ module Sinatra
       end
     end
 
-    def rescue_faraday_error(url, error, options={})
+    def rescue_faraday_error(error)
       if error.is_a?(Faraday::ResourceNotFound)
         { error: "resource not found", status: 404 }
       elsif error.is_a?(Faraday::TimeoutError) || error.is_a?(Faraday::ConnectionFailed) || (error.try(:response) && error.response[:status] == 408)
@@ -71,13 +65,13 @@ module Sinatra
     end
 
     def parse_error_response(string)
-      if json = as_json(string)
-        string = json
-      elsif xml = as_xml(string)
-        string = xml
-      end
+      string = parse_response(string)
       string = string['error'] if string.is_a?(Hash) && string['error']
       string
+    end
+
+    def parse_response(string)
+      as_json(string) || as_xml(string) || force_utf8(string)
     end
 
     def as_xml(string)
