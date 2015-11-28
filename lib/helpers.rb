@@ -10,4 +10,9 @@ helpers do
   def doi_as_url(doi)
     "http://doi.org/" + doi
   end
+
+  def number_with_delimiter(number, default_options = {})
+    options = { :delimiter => ',' }.merge(default_options)
+    number.to_s.reverse.gsub(/(\d{3}(?=(\d)))/, "\\1#{options[:delimiter]}").reverse
+  end
 end
