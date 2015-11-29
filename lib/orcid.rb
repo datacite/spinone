@@ -30,8 +30,52 @@ class Orcid < Agent
   def get_works(items)
     Array(items).map do |item|
       doi = item.fetch("doi", nil)
+      pid = doi_as_url(doi)
+      year = item.fetch("publicationYear", nil).to_i
+      type = item.fetch("resourceTypeGeneral", nil)
+      type = DATACITE_TYPE_TRANSLATIONS[type] if type
+
+      publisher_id = item.fetch("datacentre_symbol", nil)
+
+      xml = Base64.decode64(item.fetch('xml', "PGhzaD48L2hzaD4=\n"))
+      xml = Hash.from_xml(xml).fetch("resource", {})
+      authors = xml.fetch("creators", {}).fetch("creator", [])
+      authors = [authors] if authors.is_a?(Hash)
+
       name_identifiers = item.fetch('nameIdentifier', []).select { |id| id =~ /^ORCID:.+/ }
-      name_identifiers.map { |work| { orcid: work.split(':', 2).last, doi: doi }}
+      contributors = name_identifiers.map { |work| get_contributor(work) }
+
+      { "pid" => pid,
+        "DOI" => doi,
+        "author" => get_hashed_authors(authors),
+        "container-title" => nil,
+        "title" => item.fetch("title", []).first,
+        "issued" => { "date-parts" => [[year]] },
+        "publisher_id" => publisher_id,
+        "registration_agency" => "datacite",
+        "tracked" => true,
+        "type" => type,
+        "contributors" => contributors }
+    end
+  end
+
+  def get_contributor(work)
+    orcid = work.split(':', 2).last
+    pid = "http://orcid.org/#{orcid}"
+
+    { "pid" => pid,
+      "source_id" => source_id }
+  end
+
+  def get_events(items)
+    Array(items).map do |item|
+      pid = doi_as_url(item.fetch("doi"))
+      name_identifiers = item.fetch('nameIdentifier', []).select { |id| id =~ /^ORCID:.+/ }.map { |id| { 'nameIdentifier' => id }}
+
+      { source_id: source_id,
+        work_id: pid,
+        total: name_identifiers.length,
+        extra: name_identifiers }
     end
   end
 

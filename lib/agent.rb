@@ -52,7 +52,13 @@ class Agent
     return result if result[:error]
 
     items = result.fetch('response', {}).fetch('docs', nil)
-    get_works(items).flatten
+
+    { works: get_works(items),
+      events: get_events(items) }
+  end
+
+  def get_events(items)
+    []
   end
 
   def url
@@ -60,7 +66,8 @@ class Agent
   end
 
   def update_status(result)
-
+    self.scheduled_at = Time.now.iso8601
+    self.count += result[:works].length
   end
 
   def timestamp_key

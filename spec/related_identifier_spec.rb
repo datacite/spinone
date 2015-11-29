@@ -73,7 +73,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data(result)).to be_empty
+      expect(subject.parse_data(result)).to eq(:works=>[], :events=>[])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -81,11 +81,16 @@ describe RelatedIdentifier, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data(result)
 
-      expect(response.length).to eq(200)
-      work = response.first
-      expect(work['pid']).to eq("http://doi.org/10.5517/CC13D9MF")
-      expect(work['author']).to eq( [{"family"=>"Anastasiadis", "given"=>"Nikolaos C."}, {"family"=>"Mylonas-Margaritis", "given"=>"Ioannis"}, {"family"=>"Psycharis", "given"=>"Vassilis"}, {"family"=>"Raptopoulou", "given"=>"Catherine P."}, {"family"=>"Kalofolias", "given"=>"Dimitris A."}, {"family"=>"Milios", "given"=>"Constantinos J."}, {"family"=>"Klouras", "given"=>"Nikolaos"}, {"family"=>"Perlepes", "given"=>"Spyros P."}])
-      expect(work['related_works']).to eq([{"pid"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "source_id"=>"datacite_related_identifier", "relation_type_id"=>"is_supplement_to"}])
+      expect(response[:works].length).to eq(200)
+      work = response[:works].first
+      expect(work['DOI']).to eq("10.5517/CC13D9MF")
+      expect(work['related_works'].length).to eq(1)
+      related_work = work['related_works'].last
+      expect(related_work).to eq("pid"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "source_id"=>"datacite_related_identifier", "relation_type_id"=>"is_supplement_to")
+
+      expect(response[:events].length).to eq(200)
+      event = response[:events].first
+      expect(event).to eq(:source_id=>"datacite_related_identifier", :work_id=>"http://doi.org/10.5517/CC13D9MF", :total=>1)
     end
   end
 end

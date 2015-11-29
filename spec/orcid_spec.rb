@@ -73,7 +73,7 @@ describe Orcid, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data(result)).to be_empty
+      expect(subject.parse_data(result)).to eq(:works=>[], :events=>[])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -81,9 +81,16 @@ describe Orcid, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data(result)
 
-      expect(response.length).to eq(63)
-      work = response.first
-      expect(work).to eq(:orcid=>"0000-0002-4133-2218", :doi=>"10.1594/PANGAEA.733793")
+      expect(response[:works].length).to eq(62)
+      work = response[:works].first
+      expect(work['DOI']).to eq("10.1594/PANGAEA.733793")
+      expect(work['contributors'].length).to eq(1)
+      contributor = work['contributors'].first
+      expect(contributor).to eq("pid"=>"http://orcid.org/0000-0002-4133-2218", "source_id"=>"datacite_orcid")
+
+      expect(response[:events].length).to eq(62)
+      event = response[:events].first
+      expect(event).to eq(:source_id=>"datacite_orcid", :work_id=>"http://doi.org/10.1594/PANGAEA.733793", :total=>1, :extra=>[{"nameIdentifier"=>"ORCID:0000-0002-4133-2218"}])
     end
   end
 end
