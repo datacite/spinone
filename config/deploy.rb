@@ -45,7 +45,7 @@ set :ssh_options,
 set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
 
 # install/update npm modules and bower components
-set :npm_target_path, -> { release_path.join('public') }
+set :npm_target_path, -> { release_path.join('public/assets') }
 
 # restart passenger method
 set :passenger_restart_with_touch, true
@@ -72,7 +72,7 @@ set :log_level, log_level
 set :linked_files, %w(.env)
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w(log tmp/pids tmp/sockets vendor/bundle frontend/node_modules frontend/bower_components)
+set :linked_dirs, %w(log tmp/pids tmp/sockets vendor/bundle frontend/node_modules public/assets)
 
 # Default value for keep_releases is 5
 set :keep_releases, 5
