@@ -4,7 +4,7 @@ describe "agents", type: :feature, js: true do
   it 'is user' do
     visit '/status'
     expect(page).to have_css ".panel"
-    expect(page).to have_css ".panel-body", text: "Status information is only available for administrators."
+    expect(page).to have_css ".panel-heading", text: "ORCID"
   end
 
   it 'is admin' do
