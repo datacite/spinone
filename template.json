@@ -4,18 +4,18 @@
       "type": "amazon-ebs",
       "access_key": "{{user `access_key`}}",
       "secret_key": "{{user `secret_key`}}",
-      "region": "us-east-1",
-      "source_ami": "ami-77fb5d1c",
-      "instance_type": "m1.small",
+      "region": "eu-west-1",
+      "source_ami": "ami-1802a66b",
+      "instance_type": "m3.medium",
       "ssh_username": "ubuntu",
-      "ami_name": "doi-metadata-search {{timestamp}}"
+      "ami_name": "spinone {{timestamp}}"
     }
   ],
   "provisioners": [
     {
       "type": "chef-solo",
       "cookbook_paths": ["vendor/cookbooks"],
-      "run_list": ["recipe[doi_metadata_search]"],
+      "run_list": ["recipe[spinone]"],
       "json": {
         "ruby": {
           "deploy_user": "ubuntu",
@@ -31,7 +31,7 @@
   "post-processors": [
     {
       "type": "atlas",
-      "artifact": "datacite/doi-metadata-search",
+      "artifact": "datacite/spinone",
       "artifact_type": "amazon.ami",
       "token": "{{user `atlas_token`}}",
       "metadata": {
@@ -51,7 +51,7 @@
     "atlas_token": "{{env `ATLAS_TOKEN`}}"
   },
    "push": {
-    "name": "datacite/doi-metadata-search",
+    "name": "datacite/spinone",
     "vcs": true
   }
 }
