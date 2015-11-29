@@ -11,5 +11,12 @@
         .panel-collapse.collapse{id: "agent_" + agent.name}
           .panel-body
             = agent.description
+            %h5
+              Count
+            = agent.count.to_i
+            - if agent.scheduled_at.present?
+              %h5
+                Scheduled at
+              = format_time(agent.scheduled_at)
 
 = haml :footer

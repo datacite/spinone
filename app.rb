@@ -20,9 +20,6 @@ env_vars = %w(HOSTNAME SERVERS SITENAME)
 env_vars.each { |env| fail ArgumentError,  "ENV[#{env}] is not set" unless ENV[env] }
 ENV_VARS = Hash[env_vars.map { |env| [env, ENV[env]] }]
 
-# Constants
-DEFAULT_TIMEOUT = 60
-
 require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/config_file'
@@ -31,9 +28,8 @@ require 'haml'
 require 'will_paginate'
 require 'will_paginate-bootstrap'
 require 'cgi'
-require 'faraday'
-require 'faraday_middleware'
-require 'faraday/encoding'
+require 'maremma'
+require 'redis'
 require 'gabba'
 require 'rack-flash'
 require 'omniauth/jwt'
@@ -42,15 +38,23 @@ require 'sidekiq/api'
 require 'open-uri'
 require 'uri'
 
-NETWORKABLE_EXCEPTIONS = [Faraday::ClientError,
-                          Faraday::TimeoutError,
-                          Faraday::SSLError,
-                          Faraday::ConnectionFailed,
-                          URI::InvalidURIError,
-                          Encoding::UndefinedConversionError,
-                          ArgumentError,
-                          NoMethodError,
-                          TypeError]
+# DataCite resourceTypeGeneral from DataCite metadata schema: http://dx.doi.org/10.5438/0010
+DATACITE_TYPE_TRANSLATIONS = {
+  "Audiovisual" => "motion_picture",
+  "Collection" => nil,
+  "Dataset" => "dataset",
+  "Event" => nil,
+  "Image" => "graphic",
+  "InteractiveResource" => nil,
+  "Model" => nil,
+  "PhysicalObject" => nil,
+  "Service" => nil,
+  "Software" => nil,
+  "Sound" => "song",
+  "Text" => "report",
+  "Workflow" => nil,
+  "Other" => nil
+}
 
 Dir[File.join(File.dirname(__FILE__), 'lib', '*.rb')].each { |f| require f }
 
@@ -83,6 +87,9 @@ configure do
                   "role" => "role" }
   end
   # OmniAuth.config.logger = logger
+
+  # Configure Redis
+  set :redis, Redis.new
 
   # Google analytics event tracking
   set :ga, Gabba::Gabba.new(ENV['GABBA_COOKIE'], ENV['GABBA_URL']) if ENV['GABBA_COOKIE']

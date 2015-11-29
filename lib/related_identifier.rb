@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'base64'
+
 class RelatedIdentifier < Agent
   def name
     'related_identifier'
@@ -11,7 +14,12 @@ class RelatedIdentifier < Agent
     'Push works with relatedIdentifier.'
   end
 
-  def get_query_url(offset: 0, rows: job_batch_size, from_date: (Time.now.to_date - 1.day).iso8601, until_date: Time.now.to_date.iso8601)
+  def get_query_url(options = {})
+    offset = options[:offset].to_i
+    rows = options[:rows] || job_batch_size
+    from_date = options[:from_date] || (Time.now.to_date - 1.day).iso8601
+    until_date = options[:until_date] || Time.now.to_date.iso8601
+
     updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
     params = { q: "relatedIdentifier:DOI\\:*",
                start: offset,
@@ -30,9 +38,7 @@ class RelatedIdentifier < Agent
       type = item.fetch("resourceTypeGeneral", nil)
       type = DATACITE_TYPE_TRANSLATIONS[type] if type
 
-      datacentre_symbol = item.fetch("datacentre_symbol", nil)
-      publisher = Publisher.where(name: datacentre_symbol).first
-      publisher_id = publisher.present? ? publisher.id : nil
+      publisher_id = item.fetch("datacentre_symbol", nil)
 
       xml = Base64.decode64(item.fetch('xml', "PGhzaD48L2hzaD4=\n"))
       xml = Hash.from_xml(xml).fetch("resource", {})
@@ -57,15 +63,12 @@ class RelatedIdentifier < Agent
   end
 
   def get_related_work(work)
-    raw_relation_type, _related_identifier_type, related_identifier = work.split(':', 3)
+    relation_type, _related_identifier_type, related_identifier = work.split(':', 3)
     pid = doi_as_url(related_identifier.strip.upcase)
-
-    # find relation_type, default to "is_referenced_by" otherwise
-    relation_type = RelationType.where(name: raw_relation_type.underscore).pluck(:name).first || 'is_referenced_by'
 
     { "pid" => pid,
       "source_id" => source_id,
-      "relation_type_id" => relation_type }
+      "relation_type_id" => relation_type.underscore }
   end
 
   def get_events(items)
@@ -85,5 +88,9 @@ class RelatedIdentifier < Agent
 
   def job_batch_size
     200
+  end
+
+  def cron_line
+    "40 17 * * *"
   end
 end

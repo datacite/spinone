@@ -5,7 +5,7 @@ namespace :queue do
     if args.extras.empty?
       agents = Agent.descendants.map { |a| a.new }
     else
-      agents = Agent.descendants.select { |a| args.extras.include?(a.to_s.downcase) }.map { |a| a.new }
+      agents = Agent.descendants.map { |a| a.new }.select { |agent| args.extras.include?(agent.name) }
     end
 
     if agents.empty?
@@ -25,7 +25,7 @@ namespace :queue do
 
     agents.each do |agent|
       count = agent.queue_jobs(from_date: from_date, until_date: until_date)
-      puts "#{count} works for agent #{agent.to_s} have been queued."
+      puts "#{count} works for agent #{agent.title} have been queued."
     end
   end
 end

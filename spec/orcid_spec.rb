@@ -4,8 +4,6 @@ describe Orcid, type: :model, vcr: true do
   before(:each) { allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8)) }
   let(:fixture_path) { "#{Sinatra::Application.root}/spec/fixtures/" }
 
-  subject { Orcid.new }
-
   context "get_query_url" do
     it "default" do
       expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2CnameIdentifier%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
@@ -75,13 +73,13 @@ describe Orcid, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data(result, nil)).to be_empty
+      expect(subject.parse_data(result)).to be_empty
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid.json')
       result = JSON.parse(body)
-      response = subject.parse_data(result, nil)
+      response = subject.parse_data(result)
 
       expect(response.length).to eq(63)
       work = response.first

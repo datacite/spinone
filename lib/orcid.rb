@@ -11,7 +11,12 @@ class Orcid < Agent
     'Push works with ORCID nameIdentifier.'
   end
 
-  def get_query_url(offset: 0, rows: job_batch_size, from_date: (Time.now.to_date - 1.day).iso8601, until_date: Time.now.to_date.iso8601)
+  def get_query_url(options = {})
+    offset = options[:offset].to_i
+    rows = options[:rows] || job_batch_size
+    from_date = options[:from_date] || (Time.now.to_date - 1.day).iso8601
+    until_date = options[:until_date] || Time.now.to_date.iso8601
+
     updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
     params = { q: "nameIdentifier:ORCID\\:*",
                start: offset,
@@ -32,5 +37,9 @@ class Orcid < Agent
 
   def job_batch_size
     1000
+  end
+
+  def cron_line
+    "40 18 * * *"
   end
 end

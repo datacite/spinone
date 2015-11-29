@@ -21,8 +21,8 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require File.join(File.dirname(__FILE__), '..', 'heartbeat.rb')
 
 # require support files, and files in lib folder
-Dir[File.join(File.dirname(__FILE__), 'support', '*.rb')].each { |f| require f }
-Dir[File.join(File.dirname(__FILE__), '..', 'lib', '*.rb')].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), '../lib/**/*.rb')].each { |f| require f }
 
 config_file "config/settings.yml"
 
@@ -90,4 +90,15 @@ VCR.configure do |c|
   c.filter_sensitive_data('<API_KEY>') { ENV['API_KEY'] }
   c.allow_http_connections_when_no_cassette = false
   c.configure_rspec_metadata!
+end
+
+def capture_stdout(&block)
+  stdout, string = $stdout, StringIO.new
+  $stdout = string
+
+  yield
+
+  string.tap(&:rewind).read
+ensure
+  $stdout = stdout
 end
