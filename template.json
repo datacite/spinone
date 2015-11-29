@@ -1,44 +1,39 @@
 {
-  "builders": [
-    {
-      "type": "amazon-ebs",
-      "access_key": "{{user `access_key`}}",
-      "secret_key": "{{user `secret_key`}}",
-      "region": "eu-west-1",
-      "source_ami": "ami-1802a66b",
-      "instance_type": "m3.medium",
-      "ssh_username": "ubuntu",
-      "ami_name": "spinone {{timestamp}}"
-    }
-  ],
-  "provisioners": [
-    {
-      "type": "chef-solo",
-      "cookbook_paths": ["vendor/cookbooks"],
-      "run_list": ["recipe[spinone]"],
-      "json": {
-        "ruby": {
-          "deploy_user": "ubuntu",
-          "deploy_group": "ubuntu",
-          "rails_env": "production"
-        },
-        "phantomjs": {
-          "version": "1.9.7",
-          "base_url": "https://bitbucket.org/ariya/phantomjs/downloads" }
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `access_key`}}",
+    "secret_key": "{{user `secret_key`}}",
+    "region": "{{user `region`}}",
+    "source_ami": "{{user `source_ami`}}",
+    "instance_type": "{{user `instance_type`}}",
+    "ssh_username": "ubuntu",
+    "ami_name": "lagotto {{timestamp}}"
+  }],
+  "provisioners": [{
+    "type": "chef-solo",
+    "cookbook_paths": ["vendor/cookbooks"],
+    "run_list": ["recipe[spinone]"],
+    "json": {
+      "ruby": {
+        "deploy_user": "ubuntu",
+        "deploy_group": "ubuntu",
+        "rails_env": "production"
+      },
+      "phantomjs": {
+        "version": "1.9.7",
+        "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
       }
     }
-  ],
-  "post-processors": [
-    {
-      "type": "atlas",
-      "artifact": "datacite/spinone",
-      "artifact_type": "amazon.ami",
-      "token": "{{user `atlas_token`}}",
-      "metadata": {
-        "created_at": "{{timestamp}}"
-      }
+  }],
+  "post-processors": [{
+    "type": "atlas",
+    "artifact": "datacite/spinone",
+    "artifact_type": "amazon.ami",
+    "token": "{{user `atlas_token`}}",
+    "metadata": {
+      "created_at": "{{timestamp}}"
     }
-  ],
+  }],
   "variables": {
     "compression_level": "6",
     "cpus": "2",
@@ -46,11 +41,14 @@
     "headless": "false",
     "memory": "2048",
     "mirror": "http://releases.ubuntu.com",
-    "access_key": "{{env `AWS_KEY`}}",
-    "secret_key": "{{env `AWS_SECRET`}}",
+    "access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
+    "secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
+    "region": "{{env `AWS_REGION`}}",
+    "source_ami": "{{env `AWS_SOURCE_AMI`}}",
+    "instance_type": "{{env `AWS_INSTANCE_TYPE`}}",
     "atlas_token": "{{env `ATLAS_TOKEN`}}"
   },
-   "push": {
+  "push": {
     "name": "datacite/spinone",
     "vcs": true
   }
