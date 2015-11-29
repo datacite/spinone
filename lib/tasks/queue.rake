@@ -3,9 +3,9 @@ namespace :queue do
   desc "Queue all works"
   task :all do |_, args|
     if args.extras.empty?
-      agents = Agent.descendants.map { |a| a.new }
+      agents = Agent.descendants.map { |a| a.new }.sort_by { |agent| agent.name}
     else
-      agents = Agent.descendants.map { |a| a.new }.select { |agent| args.extras.include?(agent.name) }
+      agents = Agent.descendants.map { |a| a.new }.select { |agent| args.extras.include?(agent.name) }.sort_by { |agent| agent.name}
     end
 
     if agents.empty?
