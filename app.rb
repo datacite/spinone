@@ -159,3 +159,8 @@ get '/api/agents' do
   end
   json meta: { 'total' => agents.size }, data: agents
 end
+
+get '/api/status' do
+  status = Status.new
+  json meta: { 'total' => status.counts.size }, data: status.counts
+end

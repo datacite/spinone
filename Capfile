@@ -5,12 +5,6 @@ require 'capistrano/setup'
 require 'capistrano/deploy'
 
 # Include tasks from other gems included in your Gemfile
-#
-# For documentation on these, see for example:
-#
-#   https://github.com/capistrano/bundler
-#   https://github.com/capistrano/passenger
-
 require 'capistrano/bundler'
 require 'capistrano/passenger'
 require "whenever/capistrano"
