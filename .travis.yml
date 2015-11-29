@@ -10,6 +10,7 @@ services:
 before_script:
   - cp .env.travis .env
   - mkdir -p tmp/pids log
+  - cd frontend && npm install
 
 script:
   - bundle exec rspec
