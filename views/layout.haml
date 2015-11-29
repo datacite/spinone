@@ -9,11 +9,12 @@
     %link{:rel => 'stylesheet', :href => "/stylesheets/datacite.css", :type => 'text/css'}
     %link{:rel => 'stylesheet', :href => "//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic", :type => 'text/css'}
 
-    %script{:type => 'text/javascript', :src => 'https://code.jquery.com/jquery-1.11.3.min.js'}
+    %script{:type => 'text/javascript', :src => '/jquery/dist/jquery.min.js'}
     %script{:type => 'text/javascript', :src => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'}
-    %script{:type => 'text/javascript', :src => '/javascripts/spin.min.js'}
-    %script{:type => 'text/javascript', :src => '/javascripts/format.min.js'}
-    %script{:type => 'text/javascript', :src => '/javascripts/jquery.oauthpopup.js'}
+    %script{:type => 'text/javascript', :src => '/d3/d3.min.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/bar_chart.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/d3_helpers.js'}
+    %script{:type => 'text/javascript', :src => '/javascripts/status.js'}
     %script{:type => 'text/javascript', :src => '/javascripts/bootstrap.notify.js'}
     - if ENV['BUGSNAG_JS_KEY']
       %script{:type => 'text/javascript', :src => '//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js', :data => { 'apikey' => "#{ENV['BUGSNAG_JS_KEY']}" }}

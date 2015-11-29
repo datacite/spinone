@@ -3,6 +3,20 @@
 
 .container-fluid
   .content
+    .row
+      - Agent.descendants.map { |a| a.new }.sort_by { |agent| agent.name}.each do |agent|
+        .col-md-4
+          .panel.panel-default
+            .panel-heading
+              = agent.title
+            .panel-body.panel-chart
+              %h2.graphs
+                = number_with_delimiter(agent.count)
+              .graphs{id: "chart_#{agent.name}"}
+              .text-muted{id: "chart_#{agent.name}-loading"}
+                Loading …
+                %img{src: "images/spinner.gif"}
+
     - if is_admin?
       .row
         .col-md-12
@@ -63,9 +77,5 @@
                         = number_with_delimiter(@process.stats.dead_size)
                     - else
                       0
-    - else
-      .panel.panel-default
-        .panel-body
-          Status information is only available for administrators.
-          
+
 = haml :footer

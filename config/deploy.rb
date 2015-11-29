@@ -45,7 +45,7 @@ set :ssh_options,
 set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
 
 # install/update npm modules and bower components
-set :npm_target_path, -> { release_path.join('frontend') }
+set :npm_target_path, -> { release_path.join('public') }
 
 # restart passenger method
 set :passenger_restart_with_touch, true
