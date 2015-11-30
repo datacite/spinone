@@ -17,7 +17,7 @@ function barViz(data, div, count, format) {
       .domain([startDate, endDate])
       .rangeRound([0, width]);
     var y = d3.scale.linear()
-      .domain([d3.min(data, function(d) { return d.values[count]; }), d3.max(data, function(d) { return d.values[count]; })])
+      .domain([0, d3.max(data, function(d) { return d.values[count]; })])
       .rangeRound([height, 0]);
   } else {
     var x = d3.time.scale.utc()
