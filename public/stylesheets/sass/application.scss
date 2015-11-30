@@ -488,10 +488,10 @@ $bar-color-5: $wet-asphalt;
 $bar-color-6: darken($bar-color-1, 10%);
 $bar-color-7: lighten($bar-color-1, 20%);
 
-@import "../../assets/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
-@import "../../assets/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "spinone";
 @import "almviz";
+@import "../../assets/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../../assets/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Fix inconsistencies
 // small span.label { vertical-align: bottom; font-size: 66%; margin-left: 0.5em; }
