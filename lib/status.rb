@@ -10,6 +10,7 @@ class Status
 
   def write
     counts = { 'id' => SecureRandom.uuid,
+               'version' => App::VERSION,
                'timestamp' => Time.now.iso8601 }
     Agent.descendants.map do |a|
       agent = a.new
@@ -34,7 +35,8 @@ class Status
         'attributes' => {
           'orcid' => s['orcid'],
           'related_identifier' => s['related_identifier'],
-          'timestamp' => Time.now.iso8601
+          'version' => s['version'],
+          'timestamp' => s['timestamp']
         }
       }
     end
