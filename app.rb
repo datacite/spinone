@@ -60,6 +60,10 @@ Dir[File.join(File.dirname(__FILE__), 'lib', '*.rb')].each { |f| require f }
 
 config_file "config/settings.yml"
 
+Sidekiq.configure_server do |config|
+  config.options[:concurrency] = ENV["CONCURRENCY"].to_i
+end
+
 configure do
   set :root, File.dirname(__FILE__)
 

@@ -44,12 +44,28 @@ GEM
     capybara-screenshot (1.0.11)
       capybara (>= 1.0, < 3)
       launchy
+    celluloid (0.17.2)
+      celluloid-essentials
+      celluloid-extras
+      celluloid-fsm
+      celluloid-pool
+      celluloid-supervision
+      timers (>= 4.1.1)
+    celluloid-essentials (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-extras (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-fsm (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-pool (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-supervision (0.20.5)
+      timers (>= 4.1.1)
     chronic (0.10.2)
     cliver (0.3.2)
     codeclimate-test-reporter (0.4.8)
       simplecov (>= 0.7.1, < 1.0.0)
     colorize (0.7.7)
-    concurrent-ruby (1.0.0)
     connection_pool (2.2.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
@@ -68,13 +84,14 @@ GEM
     haml (4.0.7)
       tilt
     hashie (3.4.3)
+    hitimes (1.2.3)
     i18n (0.7.0)
     json (1.8.3)
     jwt (1.5.2)
     launchy (2.4.3)
       addressable (~> 2.3)
     log4r (1.1.10)
-    maremma (1.0.3)
+    maremma (1.0.4)
       activesupport (~> 4.2, >= 4.2.5)
       builder (~> 3.2, >= 3.2.2)
       excon (~> 0.45.0)
@@ -122,6 +139,8 @@ GEM
     rainbow (2.0.0)
     rake (10.4.2)
     redis (3.2.2)
+    redis-namespace (1.5.2)
+      redis (~> 3.0, >= 3.0.4)
     rsolr (1.0.13)
       builder (>= 2.1.2)
     rspec (3.4.0)
@@ -150,12 +169,13 @@ GEM
       nokogiri (>= 1.4.4)
       nokogumbo (= 1.4.1)
     sass (3.4.19)
-    sidekiq (4.0.1)
-      concurrent-ruby (~> 1.0)
+    sidekiq (3.5.3)
+      celluloid (~> 0.17.2)
       connection_pool (~> 2.2, >= 2.2.0)
       json (~> 1.0)
       redis (~> 3.2, >= 3.2.1)
-    simplecov (0.10.0)
+      redis-namespace (~> 1.5, >= 1.5.2)
+    simplecov (0.11.0)
       docile (~> 1.1.0)
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
@@ -177,6 +197,8 @@ GEM
       net-ssh (>= 2.8.0)
     thread_safe (0.3.5)
     tilt (2.0.1)
+    timers (4.1.1)
+      hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     vcr (2.9.3)
@@ -228,7 +250,7 @@ DEPENDENCIES
   rubocop (~> 0.27.0)
   sanitize
   sass
-  sidekiq
+  sidekiq (~> 3.5.3)
   sinatra
   sinatra-contrib
   vcr (~> 2.9.3)
