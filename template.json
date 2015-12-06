@@ -43,6 +43,25 @@
     ]
   }],
   "provisioners": [{
+    "type": "shell",
+    "override": {
+      "amazon-ebs": {
+         "scripts": []
+      },
+      "virtualbox-iso": {
+        "scripts": [
+          "vendor/scripts/ubuntu/apt.sh",
+          "vendor/scripts/ubuntu/init.sh",
+          "vendor/scripts/ubuntu/virtualbox.sh",
+          "vendor/scripts/common/vagrant.sh",
+          "vendor/scripts/common/sshd.sh",
+          "vendor/scripts/ubuntu/cleanup.sh",
+          "vendor/scripts/common/minimize.sh"
+        ]
+      }
+    }
+  },
+  {
     "type": "chef-solo",
     "cookbook_paths": ["vendor/cookbooks"],
     "run_list": ["recipe[spinone]"],
@@ -72,25 +91,6 @@
             "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
           }
         }
-      }
-    }
-  },
-  {
-    "type": "shell",
-    "override": {
-      "amazon-ebs": {
-         "scripts": []
-      },
-      "virtualbox-iso": {
-        "scripts": [
-          "vendor/scripts/ubuntu/apt.sh",
-          "vendor/scripts/ubuntu/init.sh",
-          "vendor/scripts/ubuntu/virtualbox.sh",
-          "vendor/scripts/common/vagrant.sh",
-          "vendor/scripts/common/sshd.sh",
-          "vendor/scripts/ubuntu/cleanup.sh",
-          "vendor/scripts/common/minimize.sh"
-        ]
       }
     }
   }],
