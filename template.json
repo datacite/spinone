@@ -41,12 +41,6 @@
       ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
       ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
     ]
-  },
-  {
-    "type": "docker",
-      "image": "ubuntu",
-      "export_path": "image.tar",
-      "commit": true
   }],
   "provisioners": [{
     "type": "shell",
@@ -108,11 +102,6 @@
     "compression_level": "{{user `compression_level`}}",
     "only": ["virtualbox-iso"],
     "output": "spinone-virtualbox.box"
-  },
-  {
-    "type": "docker-import",
-    "repository": "datacite/spinone",
-    "tag": "{{user `version`}}"
   }],
   "variables": {
     "compression_level": "6",
