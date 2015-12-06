@@ -41,25 +41,25 @@
       ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
       ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
     ]
+  },
+  {
+    "type": "docker",
+      "image": "ubuntu",
+      "export_path": "image.tar",
+      "commit": true
   }],
   "provisioners": [{
     "type": "shell",
-    "override": {
-      "amazon-ebs": {
-        "inline": ["echo foo"]
-      },
-      "virtualbox-iso": {
-        "scripts": [
-          "vendor/scripts/ubuntu/apt.sh",
-          "vendor/scripts/ubuntu/init.sh",
-          "vendor/scripts/ubuntu/virtualbox.sh",
-          "vendor/scripts/common/vagrant.sh",
-          "vendor/scripts/common/sshd.sh",
-          "vendor/scripts/ubuntu/cleanup.sh",
-          "vendor/scripts/common/minimize.sh"
-        ]
-      }
-    }
+    "only": ["virtualbox-iso"],
+    "scripts": [
+      "vendor/scripts/ubuntu/apt.sh",
+      "vendor/scripts/ubuntu/init.sh",
+      "vendor/scripts/ubuntu/virtualbox.sh",
+      "vendor/scripts/common/vagrant.sh",
+      "vendor/scripts/common/sshd.sh",
+      "vendor/scripts/ubuntu/cleanup.sh",
+      "vendor/scripts/common/minimize.sh"
+    ]
   },
   {
     "type": "chef-solo",
@@ -106,11 +106,13 @@
   {
     "type": "vagrant",
     "compression_level": "{{user `compression_level`}}",
-    "override": {
-      "virtualbox": {
-        "output": "spinone-virtualbox.box"
-      }
-    }
+    "only": ["virtualbox-iso"],
+    "output": "spinone-virtualbox.box"
+  },
+  {
+    "type": "docker-import",
+    "repository": "datacite/spinone",
+    "tag": "{{user `version`}}"
   }],
   "variables": {
     "compression_level": "6",
@@ -119,6 +121,7 @@
     "headless": "false",
     "memory": "2048",
     "mirror": "http://releases.ubuntu.com",
+    "version": "0.1",
     "access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
     "secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
     "region": "{{env `AWS_REGION`}}",
