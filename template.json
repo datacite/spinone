@@ -8,6 +8,39 @@
     "instance_type": "{{user `instance_type`}}",
     "ssh_username": "ubuntu",
     "ami_name": "lagotto {{timestamp}}"
+  },
+  {
+    "type": "virtualbox-iso",
+    "guest_os_type": "Ubuntu_64",
+    "iso_url": "{{user `mirror`}}/14.04.2/ubuntu-14.04.2-server-amd64.iso",
+    "iso_checksum": "8acd2f56bfcba2f7ac74a7e4a5e565ce68c024c38525c0285573e41c86ae90c0",
+    "iso_checksum_type": "sha256",
+    "output_directory": "output-ubuntu-14.04.2-amd64",
+    "vm_name": "packer-ubuntu-14.04.2-amd64",
+    "disk_size": "{{user `disk_size`}}",
+    "headless": "{{user `headless`}}",
+    "http_directory": "vendor/http",
+    "boot_wait": "5s",
+    "boot_command": [
+      "<esc><wait>",
+      "<esc><wait>",
+      "<enter><wait>",
+      "/install/vmlinuz ",
+      "initrd=/install/initrd.gz ",
+      "biosdevname=0 ",
+      "auto-install/enable=true ",
+      "debconf/priority=critical ",
+      "preseed/url=http://{{.HTTPIP}}:{{.HTTPPort}}/ubuntu-14.04.2/preseed.cfg ",
+      "<enter>"
+    ],
+    "ssh_wait_timeout": "60m",
+    "ssh_username": "vagrant",
+    "ssh_password": "vagrant",
+    "shutdown_command": "sudo poweroff",
+    "vboxmanage": [
+      ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
+      ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
+    ]
   }],
   "provisioners": [{
     "type": "chef-solo",
@@ -15,15 +48,36 @@
     "run_list": ["recipe[spinone]"],
     "json": {
       "ruby": {
-        "deploy_user": "ubuntu",
-        "deploy_group": "ubuntu",
-        "rails_env": "production"
+        "override": {
+           "amazon-ebs": {
+            "deploy_user": "ubuntu",
+            "deploy_group": "ubuntu",
+            "rails_env": "production"
+          },
+          "virtualbox-iso": {
+            "deploy_user": "vagrant",
+            "deploy_group": "vagrant",
+            "rails_env": "development"
+          }
+        }
       },
       "phantomjs": {
         "version": "1.9.7",
         "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
       }
     }
+  },
+  {
+    "type": "shell",
+    "scripts": [
+      "vendor/scripts/ubuntu/apt.sh",
+      "vendor/scripts/ubuntu/init.sh",
+      "vendor/scripts/ubuntu/virtualbox.sh",
+      "vendor/scripts/common/vagrant.sh",
+      "vendor/scripts/common/sshd.sh",
+      "vendor/scripts/ubuntu/cleanup.sh",
+      "vendor/scripts/common/minimize.sh"
+    ]
   }],
   "post-processors": [{
     "type": "atlas",
@@ -32,6 +86,18 @@
     "token": "{{user `atlas_token`}}",
     "metadata": {
       "created_at": "{{timestamp}}"
+    }
+  },
+  {
+    "type": "vagrant",
+    "compression_level": "{{user `compression_level`}}",
+    "override": {
+      "virtualbox": {
+        "output": "ubuntu-14-04-x64-virtualbox.box"
+      },
+      "vmware": {
+        "output": "ubuntu-14-04-x64-vmware.box"
+      }
     }
   }],
   "variables": {
