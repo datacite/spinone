@@ -53,6 +53,10 @@
             "deploy_user": "ubuntu",
             "deploy_group": "ubuntu",
             "rails_env": "production"
+          },
+          "phantomjs": {
+            "version": "1.9.7",
+            "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
           }
         }
       },
@@ -62,6 +66,10 @@
             "deploy_user": "vagrant",
             "deploy_group": "vagrant",
             "rails_env": "development"
+          },
+          "phantomjs": {
+            "version": "1.9.7",
+            "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
           }
         }
       }
@@ -69,15 +77,22 @@
   },
   {
     "type": "shell",
-    "scripts": [
-      "vendor/scripts/ubuntu/apt.sh",
-      "vendor/scripts/ubuntu/init.sh",
-      "vendor/scripts/ubuntu/virtualbox.sh",
-      "vendor/scripts/common/vagrant.sh",
-      "vendor/scripts/common/sshd.sh",
-      "vendor/scripts/ubuntu/cleanup.sh",
-      "vendor/scripts/common/minimize.sh"
-    ]
+    "override": {
+      "amazon-ebs": {
+         "scripts": []
+      },
+      "virtualbox-iso": {
+        "scripts": [
+          "vendor/scripts/ubuntu/apt.sh",
+          "vendor/scripts/ubuntu/init.sh",
+          "vendor/scripts/ubuntu/virtualbox.sh",
+          "vendor/scripts/common/vagrant.sh",
+          "vendor/scripts/common/sshd.sh",
+          "vendor/scripts/ubuntu/cleanup.sh",
+          "vendor/scripts/common/minimize.sh"
+        ]
+      }
+    }
   }],
   "post-processors": [{
     "type": "atlas",
