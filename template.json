@@ -15,8 +15,8 @@
     "iso_url": "{{user `mirror`}}/14.04.2/ubuntu-14.04.2-server-amd64.iso",
     "iso_checksum": "8acd2f56bfcba2f7ac74a7e4a5e565ce68c024c38525c0285573e41c86ae90c0",
     "iso_checksum_type": "sha256",
-    "output_directory": "output-ubuntu-14.04.2-amd64",
-    "vm_name": "packer-ubuntu-14.04.2-amd64",
+    "output_directory": "output-spinone",
+    "vm_name": "packer-spinone",
     "disk_size": "{{user `disk_size`}}",
     "headless": "{{user `headless`}}",
     "http_directory": "vendor/http",
@@ -46,15 +46,19 @@
     "type": "chef-solo",
     "cookbook_paths": ["vendor/cookbooks"],
     "run_list": ["recipe[spinone]"],
-    "json": {
-      "ruby": {
-        "override": {
-           "amazon-ebs": {
+    "override": {
+      "amazon-ebs": {
+        "json": {
+          "ruby": {
             "deploy_user": "ubuntu",
             "deploy_group": "ubuntu",
             "rails_env": "production"
-          },
-          "virtualbox-iso": {
+          }
+        }
+      },
+      "virtualbox-iso": {
+        "json": {
+          "ruby": {
             "deploy_user": "vagrant",
             "deploy_group": "vagrant",
             "rails_env": "development"
@@ -93,10 +97,7 @@
     "compression_level": "{{user `compression_level`}}",
     "override": {
       "virtualbox": {
-        "output": "ubuntu-14-04-x64-virtualbox.box"
-      },
-      "vmware": {
-        "output": "ubuntu-14-04-x64-vmware.box"
+        "output": "spinone-virtualbox.box"
       }
     }
   }],
