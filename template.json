@@ -7,7 +7,7 @@
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "{{user `instance_type`}}",
     "ssh_username": "ubuntu",
-    "ami_name": "lagotto {{timestamp}}"
+    "ami_name": "spinone {{timestamp}}"
   },
   {
     "type": "virtualbox-iso",

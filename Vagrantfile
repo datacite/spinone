@@ -130,4 +130,9 @@ Vagrant.configure("2") do |config|
     machine.vm.network :public_network
     machine.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}/shared", id: "vagrant-root"
   end
+
+  config.push.define "atlas" do |push|
+    push.app = "datacite/spinone"
+    vcs = true
+  end
 end
