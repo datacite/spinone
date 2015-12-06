@@ -17,12 +17,11 @@ def load_env
   # requires dotenv plugin/gem
   require "dotenv"
 
-  # make sure DOTENV is set, defaults to "default"
-  ENV["DOTENV"] ||= "default"
+  # make sure DOTENV is set, defaults to "vagrant"
+  ENV["DOTENV"] ||= "vagrant"
 
   # load ENV variables from file specified by DOTENV
-  # use .env with DOTENV=default
-  filename = ENV["DOTENV"] == "default" ? ".env" : ".env.#{ENV['DOTENV']}"
+  filename = ".env.#{ENV['DOTENV']}"
   Dotenv.load! File.expand_path("../#{filename}", __FILE__)
 rescue LoadError
   $stderr.puts "Please install dotenv plugin with \"vagrant plugin install dotenv\""
@@ -47,7 +46,7 @@ Vagrant.configure("2") do |config|
   load_env
 
   # Install latest version of Chef
-  config.omnibus.chef_version = "12.4.1"
+  config.omnibus.chef_version = "12.5.1"
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "chef/ubuntu-14.04"
@@ -112,19 +111,6 @@ Vagrant.configure("2") do |config|
       override.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
     end
 
-    machine.vm.provider :digital_ocean do |digital_ocean, override|
-      # please configure in .env
-      override.ssh.private_key_path = ENV.fetch('SSH_PRIVATE_KEY', nil)
-      digital_ocean.token = ENV.fetch('DO_PROVIDER_TOKEN', nil)
-      digital_ocean.size = ENV.fetch('DO_SIZE', nil)
-
-      override.vm.box = 'digital_ocean'
-      override.vm.box_url = "https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box"
-      override.ssh.username = "ubuntu"
-      digital_ocean.region = 'nyc2'
-      digital_ocean.image = 'ubuntu-14-04-x64'
-    end
-
     machine.vm.hostname = ENV.fetch('HOSTNAME')
     machine.vm.network :private_network, ip: ENV.fetch('PRIVATE_IP', nil)
     machine.vm.network :public_network
@@ -133,6 +119,5 @@ Vagrant.configure("2") do |config|
 
   config.push.define "atlas" do |push|
     push.app = "datacite/spinone"
-    vcs = true
   end
 end
