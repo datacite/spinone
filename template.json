@@ -46,7 +46,7 @@
     "type": "shell",
     "override": {
       "amazon-ebs": {
-         "scripts": []
+        "inline": ["echo foo"]
       },
       "virtualbox-iso": {
         "scripts": [
