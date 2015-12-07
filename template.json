@@ -66,6 +66,9 @@
   },
   "push": {
     "name": "datacite/spinone",
-    "vcs": false
+    "vcs": true,
+    "include": [
+      ".env.production"
+    ]
   }
 }
