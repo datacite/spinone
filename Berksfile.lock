@@ -7,13 +7,13 @@ DEPENDENCIES
     revision: 6291989921ef6880f70cfa255fa6c4a48f37219a
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: 9b7bb4a433e318621562a50c807e46f48f5f83e9
+    revision: 2bef6f8c797c58f7c011cd154aecb185b733b0b2
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 0837afc5fda1bfd87409659fbfa75d5177026530
+    revision: 33186861f01a37c145c5e9eca754ce37221d8917
 
 GRAPH
   7-zip (1.0.2)
@@ -61,31 +61,25 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (0.6.4)
+  passenger_nginx (0.6.5)
     apt (>= 0.0.0)
-    dotenv (~> 0.2.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
   poise (2.4.0)
   poise-service (1.0.3)
     poise (~> 2.0)
-  redisio (2.3.0)
-    build-essential (>= 0.0.0)
-    ulimit (>= 0.1.2)
   ruby (0.7.6)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
   selinux (0.9.0)
-  spinone (1.0.1)
+  spinone (1.0.3)
     apt (>= 0.0.0)
     capistrano (~> 0.10.0)
     consul (>= 0.0.0)
     dotenv (~> 0.2.0)
     nodejs (>= 0.0.0)
     passenger_nginx (~> 0.6.0)
-    redisio (>= 0.0.0)
     ruby (~> 0.7.0)
-  ulimit (0.3.3)
   windows (1.38.4)
     chef_handler (>= 0.0.0)
   yum (3.8.2)

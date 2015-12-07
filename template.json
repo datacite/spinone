@@ -10,6 +10,15 @@
     "ami_name": "spinone {{timestamp}}"
   }],
   "provisioners": [{
+    "type": "file",
+    "source": ".env",
+    "destination": "/var/www/spinone/shared/.env"
+  },
+  {
+    "type": "shell",
+    "inline": ["sudo apt-get install -y git", "git clone git@github.com:datacite/spinone.git"]
+  },
+  {
     "type": "chef-solo",
     "install_command": "curl -L https://www.chef.io/chef/install.sh | {{if .Sudo}}sudo{{end}} bash -s -- -v {{user `chef_version`}}",
     "cookbook_paths": ["vendor/cookbooks"],
@@ -57,6 +66,7 @@
   },
   "push": {
     "name": "datacite/spinone",
-    "vcs": true
+    "vcs": true,
+    "include": [".env"]
   }
 }
