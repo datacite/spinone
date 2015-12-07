@@ -119,5 +119,6 @@ Vagrant.configure("2") do |config|
 
   config.push.define "atlas" do |push|
     push.app = "datacite/spinone"
+    push.dir = "."
   end
 end

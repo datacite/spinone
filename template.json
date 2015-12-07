@@ -10,22 +10,10 @@
     "ami_name": "spinone {{timestamp}}"
   }],
   "provisioners": [{
-    "type": "shell",
-    "only": ["virtualbox-iso"],
-    "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
-    "scripts": [
-      "scripts/base.sh",
-      "scripts/vagrant.sh",
-      "scripts/virtualbox.sh",
-      "scripts/cleanup.sh",
-      "scripts/zerodisk.sh"
-    ]
-  },
-  {
     "type": "chef-solo",
-    "install_command": "curl -L https://www.chef.io/chef/install.sh | {{if .Sudo}}sudo{{end}} bash -s -- -v {{user `chef_version`}}"
+    "install_command": "curl -L https://www.chef.io/chef/install.sh | {{if .Sudo}}sudo{{end}} bash -s -- -v {{user `chef_version`}}",
     "cookbook_paths": ["vendor/cookbooks"],
-    "run_list": ["recipe[passenger_nginx]"],
+    "run_list": ["recipe[spinone]"],
     "override": {
       "amazon-ebs": {
         "json": {
@@ -34,7 +22,6 @@
             "deploy_group": "ubuntu",
             "rails_env": "production"
           },
-          "application": "spinone",
           "redis": { "version": "2.8.23" },
           "phantomjs": {
             "version": "1.9.7",
@@ -52,12 +39,6 @@
     "metadata": {
       "created_at": "{{timestamp}}"
     }
-  },
-  {
-    "type": "vagrant",
-    "compression_level": "{{user `compression_level`}}",
-    "only": ["virtualbox-iso"],
-    "output": "spinone-virtualbox.box"
   }],
   "variables": {
     "compression_level": "6",

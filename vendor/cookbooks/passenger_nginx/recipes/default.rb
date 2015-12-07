@@ -42,11 +42,3 @@ service 'nginx' do
   supports :status => true, :restart => true, :reload => true
   action   :nothing
 end
-
-# create required files and folders, and deploy application
-capistrano node["application"] do
-  user            ENV['DEPLOY_USER']
-  group           ENV['DEPLOY_GROUP']
-  rails_env       ENV['RAILS_ENV']
-  action          [:config, :bundle_install, :npm_install, :precompile_assets, :restart]
-end

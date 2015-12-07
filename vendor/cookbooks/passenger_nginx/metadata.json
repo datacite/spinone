@@ -12,8 +12,7 @@
     "apt": ">= 0.0.0",
     "nodejs": ">= 0.0.0",
     "ruby": "~> 0.7.0",
-    "dotenv": "~> 0.2.0",
-    "capistrano": "~> 0.10.0"
+    "dotenv": "~> 0.2.0"
   },
   "recommendations": {
   },
@@ -31,7 +30,7 @@
   },
   "recipes": {
   },
-  "version": "0.6.3",
+  "version": "0.6.4",
   "source_url": "",
   "issues_url": ""
 }
