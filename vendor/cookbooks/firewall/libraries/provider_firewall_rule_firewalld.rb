@@ -22,7 +22,7 @@ class Chef
     include FirewallCookbook::Helpers::Firewalld
 
     provides :firewall_rule, os: 'linux', platform_family: %w(rhel fedora) do |node|
-      node['platform_version'].to_f >= 7.0
+      node['platform_version'].to_f >= 7.0 && !node['firewall']['redhat7_iptables']
     end
 
     action :create do
@@ -40,6 +40,12 @@ class Chef
         next if firewall.rules['firewalld'].key?(k) && firewall.rules['firewalld'][k] == v
         firewall.rules['firewalld'][k] = v
 
+        # If persistent rules is enabled (default) make sure we add a permanent rule at the same time
+        perm_rules = node && node['firewall'] && node['firewall']['firewalld'] && node['firewall']['firewalld']['permanent']
+        if new_resource.permanent || perm_rules
+          k = "firewall-cmd --permanent --direct --add-rule #{build_firewall_rule(new_resource, ip_version)}"
+          firewall.rules['firewalld'][k] = v
+        end
         new_resource.notifies(:restart, firewall, :delayed)
         new_resource.updated_by_last_action(true)
       end

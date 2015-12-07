@@ -57,16 +57,6 @@ http {
   # include <%= node['nginx']['dir'] %>/naxsi_core.rules;
 
   ##
-  # Phusion Passenger config
-  ##
-  # Uncomment it if you installed passenger or passenger-enterprise
-  ##
-
-  passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
-  passenger_ruby /usr/bin/ruby;
-  passenger_nodejs /usr/bin/nodejs;
-
-  ##
   # Virtual Host Configs
   ##
 

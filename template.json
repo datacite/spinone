@@ -24,7 +24,7 @@
   {
     "type": "chef-solo",
     "cookbook_paths": ["vendor/cookbooks"],
-    "run_list": ["recipe[spinone]"],
+    "run_list": ["recipe[passenger_nginx]"],
     "override": {
       "amazon-ebs": {
         "json": {
@@ -33,6 +33,7 @@
             "deploy_group": "ubuntu",
             "rails_env": "production"
           },
+          "application": "spinone",
           "phantomjs": {
             "version": "1.9.7",
             "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
