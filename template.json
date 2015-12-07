@@ -65,8 +65,6 @@
     "atlas_token": "{{env `ATLAS_TOKEN`}}"
   },
   "push": {
-    "name": "datacite/spinone",
-    "vcs": true,
-    "include": [".env"]
+    "name": "datacite/spinone"
   }
 }
