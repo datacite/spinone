@@ -1,13 +1,8 @@
 {
   "run_list": [
-    "recipe[passenger_nginx]"
+    "recipe[spinone]"
   ],
-  "application": "spinone",
   "phantomjs": {
     "version": "1.9.7",
-    "base_url": "https://bitbucket.org/ariya/phantomjs/downloads" },
-  "nodejs": {
-    "npm_packages": [{ "name": "phantomjs" },
-                     { "name": "istanbul"},
-                     { "name": "codeclimate-test-reporter" }] }
+    "base_url": "https://bitbucket.org/ariya/phantomjs/downloads" }
 }

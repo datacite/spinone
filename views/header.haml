@@ -20,7 +20,7 @@
                 %span.caret
               %ul.dropdown-menu{role: 'menu'}
                 %li
-                  %a{:href => 'https://profiles.labs.datacite.org/users/me'}
+                  %a{:href => "#{ENV['JWT_HOST']}/users/me"}
                     %i.fa.fa-user
                     Settings
                 %li.divider

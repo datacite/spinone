@@ -13,7 +13,7 @@ log/*
 /vendor/bundle/*
 .env
 .env.*
-!.env.vagrant
+!.env.example
 !.env.travis
 *.box
 packer_cache/*

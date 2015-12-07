@@ -16,7 +16,7 @@ end
 
 # Check for required ENV variables, can be set in .env file
 # ENV_VARS is hash of required ENV variables
-env_vars = %w(HOSTNAME SERVERS SITENAME)
+env_vars = %w(DOTENV HOSTNAME SERVERS SITENAME)
 env_vars.each { |env| fail ArgumentError,  "ENV[#{env}] is not set" unless ENV[env] }
 ENV_VARS = Hash[env_vars.map { |env| [env, ENV[env]] }]
 
@@ -83,7 +83,7 @@ configure do
   # Configure ORCID client, scope and site are different from defaults
   use OmniAuth::Builder do
     provider :jwt, ENV['JWT_SECRET_KEY'],
-      auth_url: ENV['JWT_URL'],
+      auth_url: "#{ENV['JWT_HOST']}/services/#{ENV['JWT_NAME']}",
       uid_claim: 'uid',
       required_claims: ['uid', 'name'],
       info_map: { "name" => "name",

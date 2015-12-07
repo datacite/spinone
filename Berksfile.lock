@@ -1,13 +1,13 @@
 DEPENDENCIES
   capistrano
     git: git@github.com:lagotto/capistrano-cookbook.git
-    revision: 643868b3ad167ff5e48a39560f5e1db25a71155d
+    revision: a59ff6012fca3b9bc7912bf788656ba04bad95be
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
     revision: 6291989921ef6880f70cfa255fa6c4a48f37219a
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: 2bef6f8c797c58f7c011cd154aecb185b733b0b2
+    revision: f05c755a0e7421fb2834c99315bdce4f9986f5dc
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
@@ -23,7 +23,7 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   build-essential (2.2.4)
-  capistrano (0.10.16)
+  capistrano (0.10.17)
     apt (>= 0.0.0)
     consul (>= 0.0.0)
     dotenv (~> 0.2.0)
@@ -61,7 +61,7 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (0.6.5)
+  passenger_nginx (0.6.6)
     apt (>= 0.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
