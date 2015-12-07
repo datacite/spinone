@@ -10,13 +10,13 @@
     "ami_name": "spinone {{timestamp}}"
   }],
   "provisioners": [{
+    "type": "shell",
+    "inline": ["sudo apt-get install -y git", "git clone git@github.com:datacite/spinone.git /var/www/spinone/shared"]
+  },
+  {
     "type": "file",
     "source": ".env",
     "destination": "/var/www/spinone/shared/.env"
-  },
-  {
-    "type": "shell",
-    "inline": ["sudo apt-get install -y git", "git clone git@github.com:datacite/spinone.git"]
   },
   {
     "type": "chef-solo",
