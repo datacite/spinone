@@ -77,7 +77,8 @@
       ".git/*",
       ".vagrant/*",
       "tmp/*",
-      ".bundle/*"
+      ".bundle/*",
+      ".sass-cache/*"
     ]
   }
 }
