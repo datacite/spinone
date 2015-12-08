@@ -5,15 +5,6 @@ dotenv node["application"] do
   action          :nothing
 end.run_action(:load)
 
-# install and configure dependencies
-include_recipe "apt"
-include_recipe "nodejs"
-
-if node['ruby']['rails_env'] != "production"
-  include_recipe "redisio"
-  include_recipe "redisio::enable"
-end
-
 # install nginx and create configuration file and application root
 passenger_nginx node["application"] do
   user            ENV['DEPLOY_USER']

@@ -1,21 +1,18 @@
-# load .env configuration file with ENV variables
-# copy configuration file to shared folder
-dotenv node["application"] do
-  dotenv          node["dotenv"]
-  action          :nothing
-end.run_action(:load)
-
 # install and configure dependencies
 include_recipe "apt"
 include_recipe "nodejs"
 
+execute "apt-get update" do
+  action :nothing
+end
+
 # add Phusion PPA for Nginx compiled with Passenger
 apt_repository "phusion-passenger-#{node['lsb']['codename']}" do
-  uri          "https://apt.dockerproject.org/repo"
+  uri          "https://oss-binaries.phusionpassenger.com/apt/passenger"
   distribution node['lsb']['codename']
   components   ["main"]
-  keyserver    "hkp://p80.pool.sks-keyservers.net:80"
-  key          "58118E89F3A912897C070ADBF76221572C52609D"
+  keyserver    "keyserver.ubuntu.com"
+  key          "561F9B9CAC40B2F7"
   action       :add
   notifies     :run, "execute[apt-get update]", :immediately
 end

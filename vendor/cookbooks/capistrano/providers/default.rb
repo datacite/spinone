@@ -25,6 +25,9 @@ action :config do
   # symlink current folder
   link "/var/www/#{new_resource.name}/current" do
     to "/var/www/#{new_resource.name}/shared"
+    owner new_resource.user
+    group new_resource.group
+    mode '0755'
   end
 end
 
