@@ -15,7 +15,7 @@
     "ruby": "~> 0.7.0",
     "dotenv": "~> 0.2.0",
     "passenger_nginx": "~> 0.6.0",
-    "capistrano": "~> 0.10.0"
+    "capistrano": "~> 1.0.0"
   },
   "recommendations": {
   },
@@ -33,7 +33,7 @@
   },
   "recipes": {
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "source_url": "",
   "issues_url": ""
 }
