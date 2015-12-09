@@ -12,13 +12,13 @@
   "provisioners": [{
     "type": "shell",
     "inline": ["sudo apt-get install -y git",
-               "sudo mkdir -p /var/www/spinone/shared",
+               "sudo mkdir -p /var/www/spinone",
                "sudo chown -R ubuntu:ubuntu /var/www/spinone",
-               "git clone https://github.com/datacite/spinone.git /var/www/spinone/shared"]  },
+               "git clone https://github.com/datacite/spinone.git /var/www/spinone"]  },
   {
     "type": "file",
     "source": ".env.production",
-    "destination": "/var/www/spinone/shared/.env"
+    "destination": "/var/www/spinone/.env"
   },
   {
     "type": "chef-solo",

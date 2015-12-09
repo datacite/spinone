@@ -73,9 +73,9 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
       unless Vagrant::Util::Platform.windows?
         # Disable default synced folder before bindfs tries to bind to it
-        override.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}/shared", disabled: true
+        override.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}", disabled: true
         override.vm.synced_folder ".", "/vagrant", id: "vagrant-root", nfs: true
-        override.bindfs.bind_folder "/vagrant", "/var/www/#{ENV['APPLICATION']}/shared",
+        override.bindfs.bind_folder "/vagrant", "/var/www/#{ENV['APPLICATION']}",
                                     :owner => "900",
                                     :group => "900",
                                     :"create-as-user" => true,
@@ -107,7 +107,7 @@ Vagrant.configure("2") do |config|
       aws.tags = { Name: ENV["APPLICATION"] }
 
       override.nfs.functional = false
-      override.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}/shared", type: "rsync", rsync__exclude: [".git/", ".bundle/", "vendor/bundle/ruby"]
+      override.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}", type: "rsync", rsync__exclude: [".git/", ".bundle/", "vendor/bundle/ruby"]
 
       override.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
     end
@@ -128,6 +128,6 @@ Vagrant.configure("2") do |config|
     machine.vm.hostname = ENV.fetch('HOSTNAME')
     machine.vm.network :private_network, ip: ENV.fetch('PRIVATE_IP', nil)
     machine.vm.network :public_network
-    machine.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}/shared", id: "vagrant-root"
+    machine.vm.synced_folder ".", "/var/www/#{ENV['APPLICATION']}", id: "vagrant-root"
   end
 end
