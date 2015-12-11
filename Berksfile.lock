@@ -1,19 +1,19 @@
 DEPENDENCIES
   capistrano
     git: git@github.com:lagotto/capistrano-cookbook.git
-    revision: f46537bf1f612e0f45e17569e518007d6b79267e
+    revision: 55249e6930f847eaaa88aeed4ef079cc89798faa
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
-    revision: 6291989921ef6880f70cfa255fa6c4a48f37219a
+    revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: f05c755a0e7421fb2834c99315bdce4f9986f5dc
+    revision: 8ac6d061ce50d6f980cd627927c1cceb441f16ef
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: e7aaab79c3474ed393ce03378ae1d2a4ff87400d
+    revision: 6d9aa94b1f8d236a80796b836c26530043d47fcd
 
 GRAPH
   7-zip (1.0.2)
@@ -23,13 +23,13 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   build-essential (2.2.4)
-  capistrano (1.0.0)
+  capistrano (1.0.2)
     apt (>= 0.0.0)
     consul (>= 0.0.0)
-    dotenv (~> 0.2.0)
+    dotenv (~> 1.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
-  chef-sugar (3.1.1)
+  chef-sugar (3.2.0)
   chef-vault (1.3.2)
   chef_handler (1.2.0)
   chocolatey (0.6.1)
@@ -43,11 +43,11 @@ GRAPH
     poise (~> 2.2)
     poise-service (~> 1.0)
     selinux (~> 0.9)
-  dotenv (0.2.14)
+  dotenv (1.0.0)
   firewall (2.2.0)
     chef-sugar (>= 0.0.0)
   golang (1.7.0)
-  homebrew (2.0.2)
+  homebrew (2.0.3)
     build-essential (>= 2.1.2)
   libarchive (0.6.1)
     apt (~> 2.5)
@@ -55,13 +55,13 @@ GRAPH
   libartifact (1.3.3)
     libarchive (~> 0.6)
     poise (~> 2.2)
-  nodejs (2.4.2)
+  nodejs (2.4.4)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (0.6.6)
+  passenger_nginx (1.0.1)
     apt (>= 0.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
@@ -72,13 +72,13 @@ GRAPH
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
   selinux (0.9.0)
-  spinone (1.0.4)
+  spinone (1.0.6)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)
-    dotenv (~> 0.2.0)
+    dotenv (~> 1.0.0)
     nodejs (>= 0.0.0)
-    passenger_nginx (~> 0.6.0)
+    passenger_nginx (~> 1.0.0)
     ruby (~> 0.7.0)
   windows (1.38.4)
     chef_handler (>= 0.0.0)

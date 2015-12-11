@@ -13,7 +13,7 @@
     "nodejs": ">= 0.0.0",
     "consul": ">= 0.0.0",
     "ruby": "~> 0.7.0",
-    "dotenv": "~> 0.2.0"
+    "dotenv": "~> 1.0.0"
   },
   "recommendations": {
   },
@@ -31,7 +31,7 @@
   },
   "recipes": {
   },
-  "version": "1.0.0",
+  "version": "1.0.2",
   "source_url": "",
   "issues_url": ""
 }

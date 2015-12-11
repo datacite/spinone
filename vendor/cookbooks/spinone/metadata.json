@@ -13,8 +13,8 @@
     "consul": ">= 0.0.0",
     "nodejs": ">= 0.0.0",
     "ruby": "~> 0.7.0",
-    "dotenv": "~> 0.2.0",
-    "passenger_nginx": "~> 0.6.0",
+    "dotenv": "~> 1.0.0",
+    "passenger_nginx": "~> 1.0.0",
     "capistrano": "~> 1.0.0"
   },
   "recommendations": {
@@ -33,7 +33,7 @@
   },
   "recipes": {
   },
-  "version": "1.0.4",
+  "version": "1.0.6",
   "source_url": "",
   "issues_url": ""
 }
