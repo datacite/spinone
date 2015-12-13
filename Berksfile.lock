@@ -13,7 +13,7 @@ DEPENDENCIES
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 6d9aa94b1f8d236a80796b836c26530043d47fcd
+    revision: 8bf033af5aca584d1d956a8b9ca37807be263afb
 
 GRAPH
   7-zip (1.0.2)
@@ -72,7 +72,7 @@ GRAPH
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
   selinux (0.9.0)
-  spinone (1.0.6)
+  spinone (1.0.7)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)
