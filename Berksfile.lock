@@ -1,19 +1,19 @@
 DEPENDENCIES
   capistrano
     git: git@github.com:lagotto/capistrano-cookbook.git
-    revision: 902a9ff223de89d1744361ee4b8599e9300eef11
+    revision: 3c70544db220a8c9734f41341349f25915319076
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
     revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: dacf9faee827ffc9f02b67929eb5b065983d1425
+    revision: c545d276343f29757a11657ef7910b3561c9c86d
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 361dadf2742394c0f675e7df427cffd79d5dd9cf
+    revision: 1eeedf5b6d8eb5c1ea03af9d1f4613a48e07e937
 
 GRAPH
   7-zip (1.0.2)
@@ -23,18 +23,21 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   build-essential (2.2.4)
-  capistrano (1.0.9)
+  capistrano (1.0.18)
     apt (>= 0.0.0)
+    chef-solo-search (>= 0.0.0)
     consul (>= 0.0.0)
     dotenv (~> 1.0.0)
     nodejs (>= 0.0.0)
-    remote_syslog2 (>= 0.0.0)
+    rsyslog (>= 0.0.0)
     ruby (~> 0.7.0)
+  chef-solo-search (0.5.1)
   chef-sugar (3.2.0)
   chef-vault (1.3.2)
   chef_handler (1.2.0)
   chocolatey (0.6.1)
     windows (~> 1.38)
+  compat_resource (12.5.19)
   consul (1.3.1)
     chef-vault (~> 1.3)
     chocolatey (>= 0.0.0)
@@ -62,19 +65,20 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (1.0.2)
+  passenger_nginx (1.0.9)
     apt (>= 0.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
   poise (2.4.0)
   poise-service (1.0.3)
     poise (~> 2.0)
-  remote_syslog2 (0.2.3)
+  rsyslog (4.0.0)
+    compat_resource (>= 0.0.0)
   ruby (0.7.6)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
   selinux (0.9.0)
-  spinone (1.0.8)
+  spinone (1.0.9)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)

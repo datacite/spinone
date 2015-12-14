@@ -30,9 +30,8 @@ http {
   ##
   # Logging Settings
   ##
-
-  error_log syslog:server=unix:/dev/log,facility=local7,tag=nginx,severity=error;
-  access_log syslog:server=unix:/dev/log,facility=local7,tag=nginx,severity=info main;
+  error_log syslog:server=<%= @rsyslog_server %>;
+  access_log syslog:server=<%= @rsyslog_server %>,severity=info;
 
   ##
   # Gzip Settings

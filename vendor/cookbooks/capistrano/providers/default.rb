@@ -107,9 +107,20 @@ action :consul_install do
   run_context.include_recipe 'consul'
 end
 
-action :remote_syslog2_install do
-  # install remote_syslog2
-  run_context.include_recipe 'remote_syslog2'
+action :rsyslog_config do
+  # configure rsyslog
+  if ENV['RSYSLOG_HOST']
+    node.override['rsyslog']['server'] = false
+    node.override['rsyslog']['server_ip'] = ENV['RSYSLOG_HOST']
+    node.override['rsyslog']['port'] = ENV['RSYSLOG_PORT'] || 514
+    node.override['rsyslog']['protocol'] = 'udp'
+
+    run_context.include_recipe 'rsyslog::client'
+  else
+    node.override['rsyslog']['server'] = true
+
+    run_context.include_recipe 'rsyslog::server'
+  end
 end
 
 action :precompile_assets do
