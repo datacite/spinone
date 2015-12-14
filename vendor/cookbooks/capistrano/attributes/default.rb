@@ -18,5 +18,5 @@ default['remote_syslog2']['config']['files'] = %W(
 )
 default['remote_syslog2']['config']['destination']['host'] = ENV['PAPERTRAIL_HOST']
 default['remote_syslog2']['config']['destination']['port'] = ENV['PAPERTRAIL_PORT']
-default['remote_syslog2']['version'] = "v0.13"
-default['remote_syslog2']['install']['download_file'] = "https://github.com/papertrail/remote_syslog2/releases/download/#{node['remote_syslog2']['version']}/remote_syslog_linux_amd64.tar.gz"
+#default['remote_syslog2']['version'] = "v0.13"
+#default['remote_syslog2']['install']['download_file'] = "https://github.com/papertrail/remote_syslog2/releases/download/#{node['remote_syslog2']['version']}/remote_syslog_linux_amd64.tar.gz"

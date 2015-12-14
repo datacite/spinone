@@ -1,19 +1,19 @@
 DEPENDENCIES
   capistrano
     git: git@github.com:lagotto/capistrano-cookbook.git
-    revision: 55249e6930f847eaaa88aeed4ef079cc89798faa
+    revision: 902a9ff223de89d1744361ee4b8599e9300eef11
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
     revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: 8ac6d061ce50d6f980cd627927c1cceb441f16ef
+    revision: dacf9faee827ffc9f02b67929eb5b065983d1425
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 8bf033af5aca584d1d956a8b9ca37807be263afb
+    revision: 361dadf2742394c0f675e7df427cffd79d5dd9cf
 
 GRAPH
   7-zip (1.0.2)
@@ -23,11 +23,12 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   build-essential (2.2.4)
-  capistrano (1.0.2)
+  capistrano (1.0.9)
     apt (>= 0.0.0)
     consul (>= 0.0.0)
     dotenv (~> 1.0.0)
     nodejs (>= 0.0.0)
+    remote_syslog2 (>= 0.0.0)
     ruby (~> 0.7.0)
   chef-sugar (3.2.0)
   chef-vault (1.3.2)
@@ -61,18 +62,19 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (1.0.1)
+  passenger_nginx (1.0.2)
     apt (>= 0.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
   poise (2.4.0)
   poise-service (1.0.3)
     poise (~> 2.0)
+  remote_syslog2 (0.2.3)
   ruby (0.7.6)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
   selinux (0.9.0)
-  spinone (1.0.7)
+  spinone (1.0.8)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)
