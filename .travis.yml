@@ -11,6 +11,7 @@ before_script:
   - cp .env.travis .env
   - mkdir -p tmp/pids log
   - cd frontend && npm install
+  - cd ../ && npm install -g istanbul codeclimate-test-reporter
 
 script:
   - bundle exec rspec
