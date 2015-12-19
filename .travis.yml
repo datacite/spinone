@@ -19,3 +19,6 @@ script:
 addons:
   code_climate:
     repo_token: d3d49b55abedc77746ee6f87ddc16ae72b56bb759507a593d085569b8cc6199f
+
+notifications:
+  slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
