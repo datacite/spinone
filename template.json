@@ -59,12 +59,7 @@
   }],
   "variables": {
     "compression_level": "6",
-    "cpus": "2",
-    "disk_size": "40000",
-    "headless": "false",
-    "memory": "2048",
     "mirror": "http://releases.ubuntu.com",
-    "version": "0.1",
     "chef_version": "12.5.1",
     "access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
     "secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
