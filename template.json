@@ -8,6 +8,7 @@
     "associate_public_ip_address": true,
     "vpc_id": "{{user `vpc_id`}}",
     "subnet_id": "{{user `subnet_id`}}",
+    "security_group_id": "{{user `security_group_id`}}",
     "instance_type": "{{user `instance_type`}}",
     "ssh_username": "ubuntu",
     "ami_name": "spinone {{timestamp}}"
@@ -71,6 +72,7 @@
     "source_ami": "{{env `AWS_SOURCE_AMI`}}",
     "vpc_id": "{{env `AWS_VPC_ID`}}",
     "subnet_id": "{{env `AWS_SUBNET_ID`}}",
+    "security_group_id": "{{env `AWS_SECURITY_GROUP_ID`}}",
     "instance_type": "{{env `AWS_INSTANCE_TYPE`}}",
     "atlas_token": "{{env `ATLAS_TOKEN`}}"
   },
