@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: 6edd8e3b2a428afe806a05a631f6454e4022d4e9
+    revision: faea6fe7344cd68273e1f5ef1970e68c47f2c965
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
@@ -37,7 +37,7 @@ GRAPH
   chef_handler (1.2.0)
   chocolatey (0.6.1)
     windows (~> 1.38)
-  compat_resource (12.5.24)
+  compat_resource (12.5.26)
   consul (1.3.1)
     chef-vault (~> 1.3)
     chocolatey (>= 0.0.0)
@@ -68,7 +68,7 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (1.0.10)
+  passenger_nginx (1.0.12)
     apt (>= 0.0.0)
     hostnames (>= 0.0.0)
     nodejs (>= 0.0.0)
