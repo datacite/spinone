@@ -1,3 +1,5 @@
+require_relative 'agent'
+
 class Orcid < Agent
   def name
     'orcid'

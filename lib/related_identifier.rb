@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'base64'
+require_relative 'agent'
 
 class RelatedIdentifier < Agent
   def name
