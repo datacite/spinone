@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
-    revision: 32f9a2a280cb326539fab0a69a4e2dd4271d7aef
+    revision: 21cd289f8a47283feabd9add7987c7c4d94a2dd7
   ruby
     git: git@github.com:lagotto/ruby-cookbook.git
     revision: 3926fd9a0a25f2fbf5e25831a681ffd046f5d1a5
@@ -48,7 +48,7 @@ GRAPH
     poise-service (~> 1.0)
     selinux (~> 0.9)
   dotenv (1.0.0)
-  firewall (2.2.0)
+  firewall (2.3.0)
     chef-sugar (>= 0.0.0)
   golang (1.7.0)
   homebrew (2.0.3)
@@ -68,13 +68,13 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  passenger_nginx (1.0.14)
+  passenger_nginx (1.0.15)
     apt (>= 0.0.0)
     hostnames (>= 0.0.0)
     nodejs (>= 0.0.0)
     ruby (~> 0.7.0)
   poise (2.4.0)
-  poise-service (1.0.3)
+  poise-service (1.0.4)
     poise (~> 2.0)
   rsyslog (4.0.0)
     compat_resource (>= 0.0.0)
@@ -90,7 +90,7 @@ GRAPH
     nodejs (>= 0.0.0)
     passenger_nginx (~> 1.0.0)
     ruby (~> 0.7.0)
-  windows (1.38.4)
+  windows (1.39.0)
     chef_handler (>= 0.0.0)
   yum (3.8.2)
   yum-epel (0.6.5)
