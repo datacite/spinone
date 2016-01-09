@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "status": "accepted",
+    "message-type": "deposit",
+    "message-version": "6.0.0"
+  },
+  "deposit": {
+    "id": "8a859c94-7796-41da-90fc-3a229f5d7320",
+    "state": "waiting",
+    "message_type": "datacite_orcid",
+    "events": 62,
+    "works": 62,
+    "contributors": 0,
+    "publishers": 0,
+    "source_token": "1c1de794-97bd-477b-a686-0a6b0d309bb4",
+    "timestamp": "2016-01-08T20:56:20Z"
+  }
+}

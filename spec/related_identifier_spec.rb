@@ -1,7 +1,11 @@
 require 'spec_helper'
 
 describe RelatedIdentifier, type: :model, vcr: true do
-  before(:each) { allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8)) }
+  before(:each) do
+    allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8))
+    subject.count = 0
+  end
+
   let(:fixture_path) { "#{Sinatra::Application.root}/spec/fixtures/" }
 
   context "get_query_url" do
@@ -91,6 +95,44 @@ describe RelatedIdentifier, type: :model, vcr: true do
       expect(response[:events].length).to eq(200)
       event = response[:events].first
       expect(event).to eq(:source_id=>"datacite_related_identifier", :work_id=>"http://doi.org/10.5517/CC13D9MF", :total=>1)
+    end
+  end
+
+  context "push_data" do
+    it "should report if there are no works returned by the Datacite Metadata Search API" do
+      result = { works: [], events: [] }
+      expect(subject.push_data(result)).to be_empty
+    end
+
+    it "should report if there are works returned by the Datacite Metadata Search API" do
+      body = File.read(fixture_path + 'orcid.json')
+      result = JSON.parse(body)
+      result = subject.parse_data(result)
+
+      response = subject.push_data(result)
+      meta = response['meta']
+      expect(meta['status']).to eq('accepted')
+      deposit = response["deposit"]
+      expect(deposit['source_token']).to eq(subject.uuid)
+      expect(deposit['message_action']).to eq('create')
+    end
+  end
+
+  context "update_status" do
+    it "should report if there are no works returned by the Datacite Metadata Search API" do
+      subject.update_status({})
+      expect(subject.count).to eq(0)
+      expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
+    end
+
+    it "should report if there are works returned by the Datacite Metadata Search API" do
+      body = File.read(fixture_path + 'orcid.json')
+      result = JSON.parse(body)
+      result = subject.parse_data(result)
+
+      subject.update_status(result)
+      expect(subject.count).to eq(62)
+      expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end
   end
 end

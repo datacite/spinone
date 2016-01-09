@@ -94,4 +94,16 @@ class RelatedIdentifier < Agent
   def cron_line
     "40 17 * * *"
   end
+
+  def uuid
+    ENV['RELATED_IDENTIFIER_UUID']
+  end
+
+  def push_url
+    ENV['RELATED_IDENTIFIER_URL']
+  end
+
+  def access_token
+    ENV['RELATED_IDENTIFIER_TOKEN']
+  end
 end

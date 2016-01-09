@@ -16,6 +16,7 @@ class Agent
   def process_data(options)
     result = get_data(options)
     result = parse_data(result)
+    push_data(result)
     update_status(result)
   end
 
@@ -61,13 +62,33 @@ class Agent
     []
   end
 
+  # push to deposit API if no error and we have collected works and/or events
+  def push_data(result)
+    return {} unless result.fetch(:works, []).present? ||
+                     result.fetch(:events, []).present? ||
+                     result.fetch(:contributors, []).present? ||
+                     result.fetch(:publishers, []).present?
+
+    deposit = { deposit: { source_token: uuid,
+                           message: result,
+                           message_type: source_id }}
+
+    Maremma.post push_url, data: deposit, token: access_token
+  end
+
   def url
     "http://search.datacite.org/api?"
   end
 
   def update_status(result)
     self.scheduled_at = Time.now.iso8601
-    self.count += result[:works].length
+    self.count += deposit_count(result)
+  end
+
+  def deposit_count(result)
+    result.fetch(:works, []).size +
+    result.fetch(:contributors, []).size +
+    result.fetch(:publishers, []).size
   end
 
   def timestamp_key

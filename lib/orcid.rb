@@ -88,4 +88,16 @@ class Orcid < Agent
   def cron_line
     "40 18 * * *"
   end
+
+  def uuid
+    ENV['ORCID_UUID']
+  end
+
+  def push_url
+    ENV['ORCID_URL']
+  end
+
+  def access_token
+    ENV['ORCID_TOKEN']
+  end
 end
