@@ -81,7 +81,7 @@ class Agent
 
   def update_status(response)
     self.scheduled_at = Time.now.iso8601
-    self.count += response.fetch('data', {}).fetch('message_size', 0)
+    self.count += response.fetch('data', {}).fetch('attributes', {}).fetch('message_size', 0)
   end
 
   def timestamp_key

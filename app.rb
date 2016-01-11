@@ -189,13 +189,17 @@ post '/api/agents' do
   halt 422, json(response) if response[:errors]
 
   id = response.fetch('data', {}).fetch('id', nil)
-  source_token = response.fetch('data', {}).fetch('source_token', nil)
-  state = response.fetch('data', {}).fetch('state', nil)
+  source_token = response.fetch('data', {}).fetch('attributes', {}).fetch('source_token', nil)
+  state = response.fetch('data', {}).fetch('attributes', {}).fetch('state', nil)
   agent = Agent.descendants.map { |a| a.new }.find { |agent| agent.uuid == source_token }
 
   if state == "done"
     agent.update_status(response)
-    json data: { 'id' => id, 'state' => 'done', 'source_token' => agent.uuid }
+    json data: { 'id' => id,
+                 'type' => 'agent',
+                 'attributes' => {
+                    'state' => 'done',
+                    'source_token' => agent.uuid }}
   elsif state == "failed"
     if ENV['RACK_ENV'] != "test"
       notif.add_tab(:callback, response)

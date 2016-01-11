@@ -32,12 +32,14 @@ describe '/api/agents' do
   end
   let(:params) do
     { "data" => { "id" => uuid,
-                  "state" => "done",
-                  "message_type" => agent.source_id,
-                  "message_action" => "create",
-                  "message_size" => 12,
-                  "source_token" => agent.uuid,
-                  "timestamp" => Time.now.iso8601 } }
+                  "type" => "agent",
+                  "attributes" => {
+                    "state" => "done",
+                    "message_type" => agent.source_id,
+                    "message_action" => "create",
+                    "message_size" => 12,
+                    "source_token" => agent.uuid,
+                    "timestamp" => Time.now.iso8601 } } }
   end
 
   it "get returns correct content_type get" do
@@ -67,9 +69,9 @@ describe '/api/agents' do
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)
-    data = response.fetch('data', {})
-    expect(data['state']).to eq("done")
-    expect(data['source_token']).to eq(agent.uuid)
+    attributes = response.fetch('data', {}).fetch('attributes', {})
+    expect(attributes['state']).to eq("done")
+    expect(attributes['source_token']).to eq(agent.uuid)
     expect(agent.count).to eq(12)
   end
 
@@ -94,12 +96,14 @@ describe '/api/agents' do
 
   it "post agents failed" do
     params = { "data" => { "id" => uuid,
-                           "state" => "failed",
-                           "message_type" => agent.source_id,
-                           "message_action" => "failed",
-                           "message_size" => 12,
-                           "source_token" => agent.uuid,
-                           "timestamp" => "2016-01-09T09:15:18Z" } }
+                           "type" => "agent",
+                           "attributes" => {
+                             "state" => "failed",
+                             "message_type" => agent.source_id,
+                             "message_action" => "failed",
+                             "message_size" => 12,
+                             "source_token" => agent.uuid,
+                             "timestamp" => "2016-01-09T09:15:18Z" } } }
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)
@@ -109,12 +113,14 @@ describe '/api/agents' do
 
   it "post agents other state" do
     params = { "data" => { "id" => uuid,
-                           "state" => "working",
-                           "message_type" => agent.source_id,
-                           "message_action" => "failed",
-                           "message_size" => 12,
-                           "source_token" => agent.uuid,
-                           "timestamp" => "2016-01-09T09:15:18Z" } }
+                           "type" => "agent",
+                           "attributes" => {
+                             "state" => "working",
+                             "message_type" => agent.source_id,
+                             "message_action" => "failed",
+                             "message_size" => 12,
+                             "source_token" => agent.uuid,
+                             "timestamp" => "2016-01-09T09:15:18Z" } } }
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)
