@@ -68,9 +68,11 @@ class Agent
                      result.fetch(:contributors, []).present? ||
                      result.fetch(:publishers, []).present?
 
+    callback = "#{ENV['SERVER_URL']}/api/agents"
     deposit = { deposit: { source_token: uuid,
                            message: result,
-                           message_type: source_id }}
+                           message_type: source_id,
+                           callback: callback }}
 
     Maremma.post push_url, data: deposit, token: access_token
   end
