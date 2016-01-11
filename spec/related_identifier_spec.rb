@@ -126,12 +126,11 @@ describe RelatedIdentifier, type: :model, vcr: true do
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      body = File.read(fixture_path + 'orcid.json')
+      body = File.read(fixture_path + 'callback.json')
       result = JSON.parse(body)
-      result = subject.parse_data(result)
 
       subject.update_status(result)
-      expect(subject.count).to eq(62)
+      expect(subject.count).to eq(12)
       expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end
   end

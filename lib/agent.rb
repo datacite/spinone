@@ -17,7 +17,6 @@ class Agent
     result = get_data(options)
     result = parse_data(result)
     push_data(result)
-    update_status(result)
   end
 
   def get_data(options={})
@@ -80,15 +79,9 @@ class Agent
     "http://search.datacite.org/api?"
   end
 
-  def update_status(result)
+  def update_status(response)
     self.scheduled_at = Time.now.iso8601
-    self.count += deposit_count(result)
-  end
-
-  def deposit_count(result)
-    result.fetch(:works, []).size +
-    result.fetch(:contributors, []).size +
-    result.fetch(:publishers, []).size
+    self.count += response.fetch('data', {}).fetch('message_size', 0)
   end
 
   def timestamp_key

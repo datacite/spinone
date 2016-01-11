@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'namae'
+require 'json'
 
 module Sinatra
   module Formatting
@@ -60,6 +61,14 @@ module Sinatra
 
     def format_time(time)
       Time.iso8601(time).strftime("%d %b %H:%M UTC") if time.present?
+    end
+
+    def from_json(string)
+      ::JSON.parse(string)
+    rescue ::JSON::ParserError => e
+      { errors: [{ status: 422,
+                   title: "Request must contain valid JSON",
+                   detail: e.message }] }
     end
   end
 

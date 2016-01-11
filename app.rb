@@ -115,8 +115,21 @@ configure do
   end
 end
 
+# use token authentication for POST requests to the API
+before '/api/*' do
+  next unless request.post?
+
+  token = /^Token token=(.+)/.match(env['HTTP_AUTHORIZATION'].to_s)
+  halt 401, json(errors: [{ status: 401, title: "You are not authorized to access this page" }]) \
+    unless token.present? && [ENV['ORCID_TOKEN'], ENV['RELATED_IDENTIFIER_TOKEN']].include?(token[1])
+end
+
 after do
   response.headers['Access-Control-Allow-Origin'] = '*'
+end
+
+after '/api/*' do
+  content_type "application/vnd.api+json"
 end
 
 get '/' do
@@ -154,15 +167,47 @@ get '/auth/failure' do
 end
 
 get '/api/agents' do
-  agents = settings.agents.map do |agent|
-    { 'id' => agent['name'],
+  agents = Agent.descendants.map do |a|
+    agent = a.new
+
+    { 'id' => agent.name,
       'type' => 'agent',
       'attributes' => {
-        'title' => agent['title'],
-        'description' => agent['description']
+        'title' => agent.title,
+        'description' => agent.description,
+        'count' => agent.count,
+        'scheduled_at' => agent.scheduled_at
       } }
   end
+
   json meta: { 'total' => agents.size }, data: agents
+end
+
+post '/api/agents' do
+  response = from_json(request.body.read)
+
+  halt 422, json(response) if response[:errors]
+
+  id = response.fetch('data', {}).fetch('id', nil)
+  source_token = response.fetch('data', {}).fetch('source_token', nil)
+  state = response.fetch('data', {}).fetch('state', nil)
+  agent = Agent.descendants.map { |a| a.new }.find { |agent| agent.uuid == source_token }
+
+  if state == "done"
+    agent.update_status(response)
+    json data: { 'id' => id, 'state' => 'done', 'source_token' => agent.uuid }
+  elsif state == "failed"
+    if ENV['RACK_ENV'] != "test"
+      notif.add_tab(:callback, response)
+      Bugsnag.notify(Net::HTTPBadRequest.new("Processing of deposit #{id} failed"), {
+        :severity => "warning",
+      })
+    end
+
+    json errors: [{ status: 400, title: "Processing of deposit #{id} failed" }]
+  else
+    json errors: [{ status: 422, title: "Request must contain state \"done\" or \"failed\"" }]
+  end
 end
 
 get '/api/status' do

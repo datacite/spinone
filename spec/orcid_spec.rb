@@ -117,22 +117,4 @@ describe Orcid, type: :model, vcr: true do
       expect(deposit['message_action']).to eq('create')
     end
   end
-
-  context "update_status" do
-    it "should report if there are no works returned by the Datacite Metadata Search API" do
-      subject.update_status({})
-      expect(subject.count).to eq(0)
-      expect(subject.scheduled_at).to eq("2015-04-08T18:40:00+00:00")
-    end
-
-    it "should report if there are works returned by the Datacite Metadata Search API" do
-      body = File.read(fixture_path + 'orcid.json')
-      result = JSON.parse(body)
-      result = subject.parse_data(result)
-
-      subject.update_status(result)
-      expect(subject.count).to eq(62)
-      expect(subject.scheduled_at).to eq("2015-04-08T18:40:00+00:00")
-    end
-  end
 end
