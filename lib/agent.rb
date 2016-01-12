@@ -93,9 +93,9 @@ class Agent
     "http://search.datacite.org/api?"
   end
 
-  def update_status(response)
+  def update_status(message_size)
     self.scheduled_at = Time.now.iso8601
-    self.count += response.fetch('data', {}).fetch('attributes', {}).fetch('message_size', 0)
+    self.count += message_size.to_i
   end
 
   def timestamp_key

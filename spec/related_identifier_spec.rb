@@ -90,11 +90,11 @@ describe RelatedIdentifier, type: :model, vcr: true do
       expect(work['DOI']).to eq("10.5517/CC13D9MF")
       expect(work['related_works'].length).to eq(1)
       related_work = work['related_works'].last
-      expect(related_work).to eq("pid"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "source_id"=>"datacite_related_identifier", "relation_type_id"=>"is_supplement_to")
+      expect(related_work).to eq("pid"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "source_id"=>"datacite_related", "relation_type_id"=>"is_supplement_to")
 
       expect(response[:events].length).to eq(200)
       event = response[:events].first
-      expect(event).to eq(:source_id=>"datacite_related_identifier", :work_id=>"http://doi.org/10.5517/CC13D9MF", :total=>1)
+      expect(event).to eq(:source_id=>"datacite_related", :work_id=>"http://doi.org/10.5517/CC13D9MF", :total=>1)
     end
   end
 
@@ -120,16 +120,13 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
   context "update_status" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      subject.update_status({})
+      subject.update_status(0)
       expect(subject.count).to eq(0)
       expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      body = File.read(fixture_path + 'callback.json')
-      result = JSON.parse(body)
-
-      subject.update_status(result)
+      subject.update_status(12)
       expect(subject.count).to eq(12)
       expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end

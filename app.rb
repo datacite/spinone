@@ -187,13 +187,14 @@ post '/api/agents' do
 
   halt 422, json(response) if response[:errors]
 
-  id = response.fetch('data', {}).fetch('id', nil)
-  source_token = response.fetch('data', {}).fetch('attributes', {}).fetch('source_token', nil)
-  state = response.fetch('data', {}).fetch('attributes', {}).fetch('state', nil)
+  id = response.fetch('deposit', {}).fetch('id', nil)
+  source_token = response.fetch('deposit', {}).fetch('source_token', nil)
+  state = response.fetch('deposit', {}).fetch('state', nil)
+  message_size = response.fetch('deposit', {}).fetch('message_size', 0)
   agent = Agent.find_by_uuid(source_token)
 
   if state == "done"
-    agent.update_status(response)
+    agent.update_status(message_size)
     json data: { 'id' => id,
                  'type' => 'agent',
                  'attributes' => {

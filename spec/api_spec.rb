@@ -31,15 +31,13 @@ describe '/api/agents' do
       "HTTP_AUTHORIZATION" => "Token token=\"#{token}\"" }
   end
   let(:params) do
-    { "data" => { "id" => uuid,
-                  "type" => "agent",
-                  "attributes" => {
-                    "state" => "done",
-                    "message_type" => agent.source_id,
-                    "message_action" => "create",
-                    "message_size" => 12,
-                    "source_token" => agent.uuid,
-                    "timestamp" => Time.now.iso8601 } } }
+    { "deposit" => { "id" => uuid,
+                     "state" => "done",
+                     "message_type" => agent.source_id,
+                     "message_action" => "create",
+                     "message_size" => 12,
+                     "source_token" => agent.uuid,
+                     "timestamp" => Time.now.iso8601 } }
   end
 
   it "get returns correct content_type get" do
@@ -95,15 +93,13 @@ describe '/api/agents' do
   end
 
   it "post agents failed" do
-    params = { "data" => { "id" => uuid,
-                           "type" => "agent",
-                           "attributes" => {
-                             "state" => "failed",
-                             "message_type" => agent.source_id,
-                             "message_action" => "failed",
-                             "message_size" => 12,
-                             "source_token" => agent.uuid,
-                             "timestamp" => "2016-01-09T09:15:18Z" } } }
+    params = { "deposit" => { "id" => uuid,
+                              "state" => "failed",
+                              "message_type" => agent.source_id,
+                              "message_action" => "failed",
+                              "message_size" =>  2,
+                              "source_token" => agent.uuid,
+                              "timestamp" => "2016-01-09T09:15:18Z" } }
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)
@@ -112,15 +108,13 @@ describe '/api/agents' do
   end
 
   it "post agents other state" do
-    params = { "data" => { "id" => uuid,
-                           "type" => "agent",
-                           "attributes" => {
-                             "state" => "working",
-                             "message_type" => agent.source_id,
-                             "message_action" => "failed",
-                             "message_size" => 12,
-                             "source_token" => agent.uuid,
-                             "timestamp" => "2016-01-09T09:15:18Z" } } }
+    params = { "deposit" => { "id" => uuid,
+                              "state" => "working",
+                              "message_type" => agent.source_id,
+                              "message_action" => "failed",
+                              "message_size" => 12,
+                              "source_token" => agent.uuid,
+                              "timestamp" => "2016-01-09T09:15:18Z" } }
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)

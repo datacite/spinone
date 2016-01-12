@@ -15,6 +15,10 @@ class RelatedIdentifier < Agent
     'Push works with relatedIdentifier.'
   end
 
+  def source_id
+    'datacite_related'
+  end
+
   def get_query_url(options = {})
     offset = options[:offset].to_i
     rows = options[:rows] || job_batch_size
