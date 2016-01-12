@@ -168,17 +168,15 @@ get '/auth/failure' do
 end
 
 get '/api/agents' do
-  agents = Agent.descendants.map do |a|
-    agent = a.new
-
-    { 'id' => agent.name,
-      'type' => 'agent',
-      'attributes' => {
-        'title' => agent.title,
-        'description' => agent.description,
-        'count' => agent.count,
-        'scheduled_at' => agent.scheduled_at
-      } }
+  agents = Agent.all.map do |agent|
+            { 'id' => agent.name,
+              'type' => 'agent',
+              'attributes' => {
+                'title' => agent.title,
+                'description' => agent.description,
+                'count' => agent.count,
+                'scheduled_at' => agent.scheduled_at
+              } }
   end
 
   json meta: { 'total' => agents.size }, data: agents
@@ -192,7 +190,7 @@ post '/api/agents' do
   id = response.fetch('data', {}).fetch('id', nil)
   source_token = response.fetch('data', {}).fetch('attributes', {}).fetch('source_token', nil)
   state = response.fetch('data', {}).fetch('attributes', {}).fetch('state', nil)
-  agent = Agent.descendants.map { |a| a.new }.find { |agent| agent.uuid == source_token }
+  agent = Agent.find_by_uuid(source_token)
 
   if state == "done"
     agent.update_status(response)

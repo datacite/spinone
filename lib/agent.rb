@@ -9,6 +9,14 @@ class Agent
   include Sinatra::Formatting
   include Sinatra::RedisClient
 
+  def self.all
+    Agent.descendants.map { |a| a.new }.sort_by { |agent| agent.name }
+  end
+
+  def self.find_by_uuid(param)
+    all.find { |agent| agent.uuid == param }
+  end
+
   def source_id
     'datacite_' + name
   end
