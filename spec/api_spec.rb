@@ -62,7 +62,6 @@ describe '/api/agents' do
     expect(data.length).to eq(2)
     agent = data.first
     expect(agent['type']).to eq("agent")
-    expect(agent['attributes']['title']).to eq("ORCID")
   end
 
   it "post agents" do
