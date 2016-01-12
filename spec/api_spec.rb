@@ -28,7 +28,7 @@ describe '/api/agents' do
   let(:agent) { Orcid.new }
   let(:headers) do
     { "CONTENT_TYPE" => "application/vnd.api+json",
-      "HTTP_AUTHORIZATION" => "Token token=#{token}" }
+      "HTTP_AUTHORIZATION" => "Token token=\"#{token}\"" }
   end
   let(:params) do
     { "data" => { "id" => uuid,
@@ -86,7 +86,7 @@ describe '/api/agents' do
 
   it "post agents wrong token" do
     headers = { "CONTENT_TYPE" => "application/vnd.api+json",
-                "HTTP_AUTHORIZATION" => "Token token=456" }
+                "HTTP_AUTHORIZATION" => "Token token=\456\"" }
     post '/api/agents', params.to_json, headers
 
     response = ::JSON.parse(last_response.body)

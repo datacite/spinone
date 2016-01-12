@@ -57,6 +57,10 @@ class Agent
       events: get_events(items) }
   end
 
+  def get_works(items)
+    []
+  end
+
   def get_events(items)
     []
   end

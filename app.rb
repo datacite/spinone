@@ -119,8 +119,9 @@ end
 before '/api/*' do
   next unless request.post?
 
-  token = /^Token token=(.+)/.match(env['HTTP_AUTHORIZATION'].to_s)
-  halt 401, json(errors: [{ status: 401, title: "You are not authorized to access this page" }]) \
+  token = /^Token token="(.+)"$/.match(env['HTTP_AUTHORIZATION'].to_s)
+  halt 401, json(errors: [{ status: 401,
+                            title: "You are not authorized to access this page" }]) \
     unless token.present? && [ENV['ORCID_TOKEN'], ENV['RELATED_IDENTIFIER_TOKEN']].include?(token[1])
 end
 
