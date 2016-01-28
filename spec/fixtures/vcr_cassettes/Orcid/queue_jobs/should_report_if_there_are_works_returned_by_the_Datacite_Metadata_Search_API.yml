@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - doi-metadata-search - http://spinone.local
+      - Maremma - http://push.local
       Accept:
-      - ''
+      - application/json
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Sat, 28 Nov 2015 06:34:24 GMT
+      - Thu, 28 Jan 2016 09:24:47 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:

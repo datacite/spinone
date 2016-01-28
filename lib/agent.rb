@@ -17,10 +17,6 @@ class Agent
     all.find { |agent| agent.uuid == param }
   end
 
-  def source_id
-    'datacite_' + name
-  end
-
   def process_data(options)
     result = get_data(options)
     result = parse_data(result)
@@ -35,7 +31,7 @@ class Agent
   def get_total(options={})
     query_url = get_query_url(options.merge(rows: 0))
     result = Maremma.get(query_url, options)
-    result.fetch("response", {}).fetch("numFound", 0)
+    result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
   end
 
   def queue_jobs(options={})
@@ -56,11 +52,9 @@ class Agent
   end
 
   def parse_data(result)
-    result = { error: "No hash returned." } unless result.is_a?(Hash)
-    return result if result[:error]
+    return result if result["errors"]
 
-    items = result.fetch('response', {}).fetch('docs', nil)
-
+    items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
     { works: get_works(items),
       events: get_events(items) }
   end

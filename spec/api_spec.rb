@@ -57,7 +57,7 @@ describe '/api/agents' do
 
     response = ::JSON.parse(last_response.body)
     data = response.fetch('data', {})
-    expect(data.length).to eq(2)
+    expect(data.length).to eq(3)
     agent = data.first
     expect(agent['type']).to eq("agent")
     expect(agent['attributes']['title']).to eq("ORCID")

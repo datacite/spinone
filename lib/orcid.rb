@@ -13,6 +13,10 @@ class Orcid < Agent
     'Push works with ORCID nameIdentifier.'
   end
 
+  def source_id
+    'datacite_orcid'
+  end
+
   def get_query_url(options = {})
     offset = options[:offset].to_i
     rows = options[:rows] || job_batch_size

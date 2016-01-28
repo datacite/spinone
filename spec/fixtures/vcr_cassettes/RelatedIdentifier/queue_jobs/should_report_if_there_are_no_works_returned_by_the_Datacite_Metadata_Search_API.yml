@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - spinone - http://spinone.local
+      - Maremma - http://push.local
       Accept:
       - application/json
   response:
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Sat, 28 Nov 2015 17:12:54 GMT
+      - Thu, 28 Jan 2016 09:24:50 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:

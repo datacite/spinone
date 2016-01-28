@@ -32,7 +32,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(1208)
+      expect(subject.get_total).to eq(1196)
     end
 
     it "with no works" do
@@ -48,27 +48,27 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.queue_jobs
-      expect(response).to eq(1208)
+      expect(response).to eq(1196)
     end
   end
 
   context "get_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       response = subject.get_data(from_date: "2009-04-07", until_date: "2009-04-08")
-      expect(response["response"]["numFound"]).to eq(0)
+      expect(response["data"]["response"]["numFound"]).to eq(0)
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.get_data
-      expect(response["response"]["numFound"]).to eq(1208)
-      doc = response["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5517/CC13D9MF")
+      expect(response["data"]["response"]["numFound"]).to eq(1196)
+      doc = response["data"]["response"]["docs"].first
+      expect(doc["doi"]).to eq("10.1594/PANGAEA.59873")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
       stub = stub_request(:get, subject.get_query_url(rows: 0)).to_return(:status => [408])
       response = subject.get_data(rows: 0)
-      expect(response).to eq(:error=>"execution expired", :status=>408)
+      expect(response).to eq("errors" => [{"status"=>408, "title"=>"Request timeout"}])
       expect(stub).to have_been_requested
     end
   end
@@ -77,13 +77,13 @@ describe RelatedIdentifier, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data(result)).to eq(:works=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq(:works=>[], :events=>[])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier.json')
       result = JSON.parse(body)
-      response = subject.parse_data(result)
+      response = subject.parse_data("data" => result)
 
       expect(response[:works].length).to eq(200)
       work = response[:works].first
@@ -107,12 +107,12 @@ describe RelatedIdentifier, type: :model, vcr: true do
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid.json')
       result = JSON.parse(body)
-      result = subject.parse_data(result)
+      result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      meta = response['meta']
+      meta = response['data']['meta']
       expect(meta['status']).to eq('accepted')
-      deposit = response["deposit"]
+      deposit = response['data']["deposit"]
       expect(deposit['source_token']).to eq(subject.uuid)
       expect(deposit['message_action']).to eq('create')
     end

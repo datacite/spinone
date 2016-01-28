@@ -150,13 +150,11 @@ get '/agents' do
 end
 
 get '/auth/jwt/callback' do
-  session[:orcid] = request.env["omniauth.auth"]
-
+  @user = User.new(request.env['omniauth.auth'])
+  self.current_user = @user
   redirect to request.env['omniauth.origin'] || params[:origin] || '/'
 end
 
-# Used to sign out a user but can also be used to mark that a user has seen the
-# 'You have been signed out' message. Clears the user's session cookie.
 get '/auth/signout' do
   session.clear
   redirect to('/')
@@ -164,7 +162,7 @@ end
 
 get '/auth/failure' do
   flash[:error] = "Authentication failed with message \"#{params['message']}\"."
-  haml :auth_callback
+  redirect to('/')
 end
 
 get '/api/agents' do
