@@ -68,7 +68,7 @@ configure do
   set :root, File.dirname(__FILE__)
 
   # Configure sessions and flash
-  enable :sessions
+  use Rack::Session::Cookie, secret: ENV['RACK_SESSION_SECRET']
   use Rack::Flash
 
   # Configure logging
@@ -215,4 +215,12 @@ end
 get '/api/status' do
   status = Status.new
   json meta: { 'total' => status.counts.size }, data: status.counts
+end
+
+get '/heartbeat' do
+  content_type 'text/html'
+
+  halt 503, 'failed' unless services_up?
+
+  'OK'
 end

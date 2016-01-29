@@ -18,7 +18,6 @@ require 'capybara-screenshot/rspec'
 require 'tilt/haml'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
-require File.join(File.dirname(__FILE__), '..', 'heartbeat.rb')
 
 # require support files, and files in lib folder
 Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each { |f| require f }
