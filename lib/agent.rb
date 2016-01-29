@@ -55,7 +55,9 @@ class Agent
     return result if result["errors"]
 
     items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
+
     { works: get_works(items),
+      contributors: get_contributors(items),
       events: get_events(items) }
   end
 
@@ -64,6 +66,10 @@ class Agent
   end
 
   def get_events(items)
+    []
+  end
+
+  def get_contributors(items)
     []
   end
 

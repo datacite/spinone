@@ -77,7 +77,7 @@ describe OrcidUpdate, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq(:works=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq(:works=>[], :contributors=>[], :events=>[])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -85,16 +85,10 @@ describe OrcidUpdate, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response[:works].length).to eq(62)
-      work = response[:works].first
-      expect(work['DOI']).to eq("10.1594/PANGAEA.733793")
-      expect(work['contributors'].length).to eq(1)
-      contributor = work['contributors'].first
-      expect(contributor).to eq("pid"=>"http://orcid.org/0000-0002-4133-2218", "source_id"=>"datacite_orcid")
-
-      expect(response[:events].length).to eq(62)
-      event = response[:events].first
-      expect(event).to eq(:source_id=>"datacite_orcid", :work_id=>"http://doi.org/10.1594/PANGAEA.733793", :total=>1, :extra=>[{"nameIdentifier"=>"ORCID:0000-0002-4133-2218"}])
+      expect(response[:contributors].length).to eq(63)
+      contributor = response[:contributors].first
+      expect(contributor['pid']).to eq("http://orcid.org/0000-0002-4133-2218")
+      expect(contributor['related_works']).to eq("pid"=>"http://doi.org/10.1594/PANGAEA.733793", "source_id"=>"orcid_update")
     end
   end
 

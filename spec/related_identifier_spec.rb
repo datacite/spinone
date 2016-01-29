@@ -77,7 +77,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq(:works=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq(:works=>[], :contributors=>[], :events=>[])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
