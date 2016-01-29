@@ -87,7 +87,7 @@ describe OrcidUpdate, type: :model, vcr: true do
 
       expect(response[:contributors].length).to eq(63)
       contributor = response[:contributors].first
-      expect(contributor['pid']).to eq("http://orcid.org/0000-0002-4133-2218")
+      expect(contributor['uid']).to eq("http://orcid.org/0000-0002-4133-2218")
       expect(contributor['related_works']).to eq("pid"=>"http://doi.org/10.1594/PANGAEA.733793", "source_id"=>"orcid_update")
     end
   end

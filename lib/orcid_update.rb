@@ -23,7 +23,7 @@ class OrcidUpdate < Orcid
         .select { |id| id =~ /^ORCID:0000.+/ }
         .map { |i| i.split(':', 2).last }
       orcids.reduce(sum) do |sum, orcid|
-        sum + [{ "pid" => "http://orcid.org/#{orcid}",
+        sum + [{ "uid" => "http://orcid.org/#{orcid}",
                  "related_works" => {
                    "pid" => "http://doi.org/#{item['doi']}",
                    "source_id" => source_id }}]
