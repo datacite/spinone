@@ -1,5 +1,5 @@
 #
-# Copyright 2015-2016, Noah Kantrowitz
+# Copyright 2015, Noah Kantrowitz
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,20 @@
 # limitations under the License.
 #
 
-default['poise-service']['provider'] = 'auto'
 
-default['poise-service']['options'] = {}
+module Poise
+  module Backports
+    # The correct interpolation key for any version of Chef.
+    # @since 2.6.0
+    # @example
+    #   file '/path' do
+    #     content my_content
+    #     verify "myapp -t #{Poise::Backports::VERIFY_PATH}"
+    #   end
+    VERIFY_PATH = if Gem::Version.create(Chef::VERSION) < Gem::Version.create('12.5.0')
+      '%{file}'
+    else
+      '%{path}'
+    end
+  end
+end
