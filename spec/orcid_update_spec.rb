@@ -92,23 +92,23 @@ describe OrcidUpdate, type: :model, vcr: true do
     end
   end
 
-  # context "push_data" do
-  #   it "should report if there are no works returned by the Datacite Metadata Search API" do
-  #     result = { works: [], events: [] }
-  #     expect(subject.push_data(result)).to be_empty
-  #   end
+  context "push_data" do
+    it "should report if there are no works returned by the Datacite Metadata Search API" do
+      result = { works: [], events: [] }
+      expect(subject.push_data(result)).to be_empty
+    end
 
-  #   it "should report if there are works returned by the Datacite Metadata Search API" do
-  #     body = File.read(fixture_path + 'orcid.json')
-  #     result = JSON.parse(body)
-  #     result = subject.parse_data(result)
+    it "should report if there are works returned by the Datacite Metadata Search API" do
+      body = File.read(fixture_path + 'orcid.json')
+      result = JSON.parse(body)
+      result = subject.parse_data("data" => result)
 
-  #     response = subject.push_data(result)
-  #     meta = response['meta']
-  #     expect(response).to eq('accepted')
-  #     deposit = response["deposit"]
-  #     expect(deposit['source_token']).to eq(subject.uuid)
-  #     expect(deposit['message_action']).to eq('create')
-  #   end
-  # end
+      response = subject.push_data(result)
+      deposit = response["data"]
+      expect(deposit['type']).to eq("deposits")
+      expect(deposit['attributes']['source_token']).to eq(subject.uuid)
+      expect(deposit['attributes']['message_action']).to eq('create')
+      expect(deposit['attributes']['message_size']).to eq(63)
+    end
+  end
 end

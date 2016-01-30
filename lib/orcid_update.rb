@@ -46,4 +46,8 @@ class OrcidUpdate < Orcid
   def push_url
     ENV['ORCID_UPDATE_URL']
   end
+
+  def access_token
+    ENV['ORCID_UPDATE_TOKEN']
+  end
 end

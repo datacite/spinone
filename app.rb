@@ -181,14 +181,14 @@ get '/api/agents' do
 end
 
 post '/api/agents' do
-  response = from_json(request.body.read)
+  result = from_json(request.body.read)
 
-  halt 422, json(response) if response[:errors]
+  halt 422, json(result) if result["errors"]
 
-  id = response.fetch('deposit', {}).fetch('id', nil)
-  source_token = response.fetch('deposit', {}).fetch('source_token', nil)
-  state = response.fetch('deposit', {}).fetch('state', nil)
-  message_size = response.fetch('deposit', {}).fetch('message_size', 0)
+  id = result.fetch('deposit', {}).fetch('id', nil)
+  source_token = result.fetch('deposit', {}).fetch('source_token', nil)
+  state = result.fetch('deposit', {}).fetch('state', nil)
+  message_size = result.fetch('deposit', {}).fetch('message_size', 0)
   agent = Agent.find_by_uuid(source_token)
 
   if state == "done"
@@ -200,7 +200,7 @@ post '/api/agents' do
                     'source_token' => agent.uuid }}
   elsif state == "failed"
     if ENV['RACK_ENV'] != "test"
-      notif.add_tab(:callback, response)
+      notif.add_tab(:callback, result)
       Bugsnag.notify(Net::HTTPBadRequest.new("Processing of deposit #{id} failed"), {
         :severity => "warning",
       })
