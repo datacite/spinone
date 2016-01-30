@@ -47,7 +47,7 @@ class Agent
       end
     end
 
-    # return number of works queued
+    # return number of works or contributors queued
     total
   end
 
