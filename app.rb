@@ -1,22 +1,15 @@
 begin
   # requires dotenv plugin/gem
   require 'dotenv'
-
-  # make sure DOTENV is set, defaults to "default"
-  ENV['DOTENV'] ||= 'default'
-
-  # load ENV variables from file specified by DOTENV
-  # use .env with DOTENV=default
-  filename = ENV['DOTENV'] == 'default' ? '.env' : ".env.#{ENV['DOTENV']}"
-  Dotenv.load! File.expand_path("../#{filename}", __FILE__)
+  Dotenv.load! File.expand_path("../.env", __FILE__)
 rescue Errno::ENOENT
-  $stderr.puts "Please create #{filename} file, or use DOTENV=example for example configuration"
+  $stderr.puts "Please create .env file, e.g. from .env.example"
   exit
 end
 
 # Check for required ENV variables, can be set in .env file
 # ENV_VARS is hash of required ENV variables
-env_vars = %w(DOTENV HOSTNAME)
+env_vars = %w(HOSTNAME)
 env_vars.each { |env| fail ArgumentError,  "ENV[#{env}] is not set" unless ENV[env] }
 ENV_VARS = Hash[env_vars.map { |env| [env, ENV[env]] }]
 

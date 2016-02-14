@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Thu, 28 Jan 2016 09:24:47 GMT
+      - Mon, 08 Feb 2016 01:27:09 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,8 +30,9 @@ http_interactions:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
       encoding: UTF-8
-      string: |
-        {"responseHeader":{"status":0,"QTime":1},"response":{"numFound":60,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":49},"response":{"numFound":60,"start":0,"docs":[]}}
+
+'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 recorded_with: VCR 2.9.3

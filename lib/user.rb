@@ -1,5 +1,5 @@
 class User
-  attr_accessor :name, :uid, :role, :auth_hash, :api_key, :expires_at, :orcid
+  attr_accessor :name, :uid, :role, :auth_hash, :authentication_token, :expires_at, :orcid
 
   def initialize(auth_hash={})
     @auth_hash = auth_hash
@@ -9,7 +9,7 @@ class User
     @name = info.fetch("name", nil)
     @role = info.fetch("role", nil)
     @expires_at = info.fetch("expires_at", nil)
-    @api_key = info.fetch("authentication_token", nil)
+    @authentication_token = info.fetch("authentication_token", nil)
   end
 
   alias_method :orcid, :uid

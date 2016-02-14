@@ -4,7 +4,7 @@ DEPENDENCIES
     revision: f42dae835506ff5e7ff6de3e8ff9410a92da744e
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
-    revision: 0343aaa39aaed6a91b05211cd3a2ae9da95e89ba
+    revision: 766a336d399f87c2778efecedf49a775b5519d8a
   passenger_nginx
     git: git@github.com:lagotto/passenger_nginx-cookbook.git
     revision: 21cd289f8a47283feabd9add7987c7c4d94a2dd7
@@ -19,11 +19,10 @@ DEPENDENCIES
     revision: 1eeedf5b6d8eb5c1ea03af9d1f4613a48e07e937
 
 GRAPH
-  7-zip (1.0.2)
-    windows (>= 1.2.2)
   apt (2.9.2)
-  ark (0.9.0)
-    7-zip (>= 0.0.0)
+  ark (1.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
   build-essential (2.2.4)
   capistrano (1.0.22)
@@ -38,19 +37,17 @@ GRAPH
   chef-sugar (3.3.0)
   chef-vault (1.3.2)
   chef_handler (1.2.0)
-  chocolatey (0.6.2)
-    windows (~> 1.38)
-  compat_resource (12.7.0)
-  consul (1.3.1)
+  compat_resource (12.7.1)
+  consul (1.4.3)
     chef-vault (~> 1.3)
-    chocolatey (>= 0.0.0)
     firewall (~> 2.0)
     golang (>= 0.0.0)
     libartifact (~> 1.3)
+    nssm (>= 0.0.0)
     poise (~> 2.2)
     poise-service (~> 1.0)
-    selinux (~> 0.9)
-  dotenv (1.0.0)
+    yum-epel (>= 0.0.0)
+  dotenv (1.0.1)
   firewall (2.4.0)
     chef-sugar (>= 0.0.0)
   golang (1.7.0)
@@ -71,6 +68,8 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  nssm (1.2.0)
+    windows (~> 1.0)
   passenger_nginx (1.0.15)
     apt (>= 0.0.0)
     hostnames (>= 0.0.0)
@@ -84,7 +83,8 @@ GRAPH
   ruby (0.7.7)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
-  selinux (0.9.0)
+  seven_zip (1.0.4)
+    windows (>= 1.2.2)
   spinone (1.0.9)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
@@ -95,6 +95,6 @@ GRAPH
     ruby (~> 0.7.0)
   windows (1.39.1)
     chef_handler (>= 0.0.0)
-  yum (3.9.0)
+  yum (3.10.0)
   yum-epel (0.6.5)
     yum (~> 3.2)

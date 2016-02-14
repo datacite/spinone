@@ -62,7 +62,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
       response = subject.get_data
       expect(response["data"]["response"]["numFound"]).to eq(1196)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.1594/PANGAEA.59873")
+      expect(doc["doi"]).to eq("10.5517/CC143SLM")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
