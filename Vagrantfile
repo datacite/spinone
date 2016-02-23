@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here.
 
   # Check if required plugins are installed.
-  required_plugins = %w{ vagrant-omnibus vagrant-bindfs dotenv }
+  required_plugins = %w{ vagrant-omnibus dotenv }
 
   unless installed_plugins(required_plugins).empty?
     puts "Plugins have been installed, please rerun vagrant."
@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
 
   # Enable provisioning with chef solo
   config.vm.provision :chef_solo do |chef|
-    chef.json = { "dotenv" => ENV["DOTENV"], "application" => ENV["APPLICATION"] }
+    chef.json = { "application" => ENV["APPLICATION"] }
     chef.custom_config_path = "Vagrantfile.chef"
     chef.cookbooks_path = "vendor/cookbooks"
     dna = JSON.parse(File.read(File.expand_path("../node.json", __FILE__)))
@@ -59,10 +59,10 @@ Vagrant.configure("2") do |config|
   end
 
   # allow multiple machines, specified by DOTENV
-  config.vm.define ENV["DOTENV"] do |machine|
+  config.vm.define "default" do |machine|
     # Override settings for specific providers
     machine.vm.provider :virtualbox do |vb, override|
-      vb.name = "#{ENV["APPLICATION"]}.virtualbox"
+      vb.name = "#{ENV["APPLICATION"]}"
       vb.customize ["modifyvm", :id, "--memory", "1024"]
     end
 
