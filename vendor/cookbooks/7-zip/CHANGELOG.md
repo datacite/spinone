@@ -1,6 +1,6 @@
-seven_zip Cookbook CHANGELOG
+7-zip Cookbook CHANGELOG
 ========================
-This file is used to list changes made in each version of the seven_zip cookbook.
+This file is used to list changes made in each version of the 7-zip cookbook.
 
 
 v1.0.2
