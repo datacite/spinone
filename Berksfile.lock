@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: d40a6dc987080615a0c126101ec041efcaa78dc8
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 1eeedf5b6d8eb5c1ea03af9d1f4613a48e07e937
+    revision: e5ec349acf728a818ac64e16386086683d01156a
 
 GRAPH
   7-zip (1.0.2)
@@ -88,7 +88,7 @@ GRAPH
     build-essential (>= 0.0.0)
   seven_zip (2.0.0)
     windows (>= 1.2.2)
-  spinone (1.0.9)
+  spinone (1.0.10)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)
