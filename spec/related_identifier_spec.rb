@@ -77,7 +77,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq(:works=>[], :contributors=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq([])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -85,36 +85,42 @@ describe RelatedIdentifier, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response[:works].length).to eq(200)
-      work = response[:works].first
-      expect(work['DOI']).to eq("10.5517/CC13D9MF")
-      expect(work['related_works'].length).to eq(1)
-      related_work = work['related_works'].last
-      expect(related_work).to eq("pid"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "source_id"=>"datacite_related", "relation_type_id"=>"is_supplement_to")
+      expect(response.length).to eq(1984)
+      expect(response.first[:prefix]).to eq("10.5517")
+      expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.5517/CC13D9MF",
+                                              "obj_id"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004",
+                                              "relation_type_id"=>"is_supplement_to",
+                                              "source_id"=>"datacite_related",
+                                              "publisher_id"=>"BL.CCDC")
 
-      expect(response[:events].length).to eq(200)
-      event = response[:events].first
-      expect(event).to eq(:source_id=>"datacite_related", :work_id=>"http://doi.org/10.5517/CC13D9MF", :total=>1)
+      expect(response.first[:subj]).to eq("pid"=>"http://doi.org/10.5517/CC13D9MF",
+                                          "DOI"=>"10.5517/CC13D9MF",
+                                          "author"=>[{"family"=>"Anastasiadis", "given"=>"Nikolaos C."}, {"family"=>"Mylonas-Margaritis", "given"=>"Ioannis"}, {"family"=>"Psycharis", "given"=>"Vassilis"}, {"family"=>"Raptopoulou", "given"=>"Catherine P."}, {"family"=>"Kalofolias", "given"=>"Dimitris A."}, {"family"=>"Milios", "given"=>"Constantinos J."}, {"family"=>"Klouras", "given"=>"Nikolaos"}, {"family"=>"Perlepes", "given"=>"Spyros P."}],
+                                          "title"=>"CCDC 1024724: Experimental Crystal Structure Determination",
+                                          "container-title"=>"Cambridge Crystallographic Data Centre",
+                                          "issued"=>{"date-parts"=>[[2014]]},
+                                          "publisher_id"=>"BL.CCDC",
+                                          "registration_agency"=>"datacite",
+                                          "tracked"=>true,
+                                          "type"=>nil)
     end
   end
 
   context "push_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      result = { works: [], events: [] }
+      result = []
       expect(subject.push_data(result)).to be_empty
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      body = File.read(fixture_path + 'orcid.json')
+      body = File.read(fixture_path + 'related_identifier.json')
       result = JSON.parse(body)
       result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      meta = response['data']['meta']
-      expect(meta['status']).to eq('accepted')
-      deposit = response['data']["deposit"]
-      expect(deposit['source_token']).to eq(subject.uuid)
-      expect(deposit['message_action']).to eq('create')
+      expect(response.length).to eq(1984)
+      deposit = response.first
+      expect(deposit).to eq("errors"=>[{"status"=>400, "title"=>"the server responded with status 422"}])
     end
   end
 

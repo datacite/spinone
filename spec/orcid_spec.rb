@@ -77,7 +77,7 @@ describe Orcid, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq(:works=>[], :contributors=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq([])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -85,22 +85,30 @@ describe Orcid, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response[:works].length).to eq(62)
-      work = response[:works].first
-      expect(work['DOI']).to eq("10.1594/PANGAEA.733793")
-      expect(work['contributors'].length).to eq(1)
-      contributor = work['contributors'].first
-      expect(contributor).to eq("pid"=>"http://orcid.org/0000-0002-4133-2218", "source_id"=>"datacite_orcid")
+      expect(response.length).to eq(63)
+      expect(response.first[:prefix]).to eq("10.1594")
+      expect(response.first[:message_type]).to eq("contribution")
+      expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.1594/PANGAEA.733793",
+                                              "obj_id"=>"http://orcid.org/0000-0002-4133-2218",
+                                              "source_id"=>"datacite_orcid",
+                                              "publisher_id"=>"TIB.PANGAEA")
 
-      expect(response[:events].length).to eq(62)
-      event = response[:events].first
-      expect(event).to eq(:source_id=>"datacite_orcid", :work_id=>"http://doi.org/10.1594/PANGAEA.733793", :total=>1, :extra=>[{"nameIdentifier"=>"ORCID:0000-0002-4133-2218"}])
+      expect(response.first[:subj]).to eq("pid"=>"http://doi.org/10.1594/PANGAEA.733793",
+                                          "DOI"=>"10.1594/PANGAEA.733793",
+                                          "author"=>[],
+                                          "container-title"=>"PANGAEA - Data Publisher for Earth & Environmental Science",
+                                          "title"=>"Paleomagnetic measurements of 10 sediment profiles from the Antarctic continental slope",
+                                          "issued"=>{"date-parts"=>[[1989]]},
+                                          "publisher_id"=>"TIB.PANGAEA",
+                                          "registration_agency"=>"datacite",
+                                          "tracked"=>true,
+                                          "type"=>nil)
     end
   end
 
   context "push_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      result = { works: [], events: [] }
+      result = []
       expect(subject.push_data(result)).to be_empty
     end
 
@@ -110,11 +118,9 @@ describe Orcid, type: :model, vcr: true do
       result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      meta = response['data']['meta']
-      expect(meta['status']).to eq('accepted')
-      deposit = response['data']["deposit"]
-      expect(deposit['source_token']).to eq(subject.uuid)
-      expect(deposit['message_action']).to eq('create')
+      expect(response.length).to eq(63)
+      deposit = response.first
+      expect(deposit).to eq("errors"=>[{"status"=>400, "title"=>"the server responded with status 422"}])
     end
   end
 end

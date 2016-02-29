@@ -77,7 +77,7 @@ describe OrcidUpdate, type: :model, vcr: true do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid_nil.json')
       result = JSON.parse(body)
-      expect(subject.parse_data("data" => result)).to eq(:works=>[], :contributors=>[], :events=>[])
+      expect(subject.parse_data("data" => result)).to eq([])
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
@@ -85,16 +85,17 @@ describe OrcidUpdate, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response[:contributors].length).to eq(63)
-      contributor = response[:contributors].first
-      expect(contributor['uid']).to eq("http://orcid.org/0000-0002-4133-2218")
-      expect(contributor['related_works']).to eq("pid"=>"http://doi.org/10.1594/PANGAEA.733793", "source_id"=>"orcid_update")
+      expect(response.length).to eq(63)
+      item= response.first
+      expect(item).to eq("orcid"=>"http://orcid.org/0000-0002-4133-2218",
+                         "doi"=>"http://doi.org/10.1594/PANGAEA.733793",
+                         "source_id"=>"orcid_update")
     end
   end
 
   context "push_data" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      result = { works: [], events: [] }
+      result = []
       expect(subject.push_data(result)).to be_empty
     end
 
@@ -104,11 +105,15 @@ describe OrcidUpdate, type: :model, vcr: true do
       result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      deposit = response["data"]
-      expect(deposit['type']).to eq("deposits")
-      expect(deposit['attributes']['source_token']).to eq(subject.uuid)
-      expect(deposit['attributes']['message_action']).to eq('create')
-      expect(deposit['attributes']['message_size']).to eq(63)
+      expect(response.length).to eq(63)
+      claim = response.first
+      expect(claim).to eq("data"=>{"id"=>"536ac1c5-4b9f-4392-91a7-d8d0b4a898bf",
+                                   "type"=>"claims",
+                                   "attributes"=>{"orcid"=>"http://orcid.org/0000-0002-4133-2218",
+                                                  "doi"=>"http://doi.org/10.1594/PANGAEA.733793",
+                                                  "source_id"=>"orcid_update",
+                                                  "state"=>"waiting",
+                                                  "claimed_at"=>nil}})
     end
   end
 end

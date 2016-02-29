@@ -55,38 +55,30 @@ class Agent
     return result if result["errors"]
 
     items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
-
-    { works: get_works(items),
-      contributors: get_contributors(items),
-      events: get_events(items) }
+    get_relations_with_related_works(items)
   end
 
-  def get_works(items)
-    []
-  end
-
-  def get_events(items)
-    []
-  end
-
-  def get_contributors(items)
-    []
-  end
-
-  # push to deposit API if no error and we have collected works and/or events
-  def push_data(result)
-    return {} unless result.fetch(:works, []).present? ||
-                     result.fetch(:events, []).present? ||
-                     result.fetch(:contributors, []).present? ||
-                     result.fetch(:publishers, []).present?
+  # push to deposit API if no error and we have collected works
+  def push_data(items)
+    return [] if items.empty?
 
     callback = "#{ENV['SERVER_URL']}/api/agents"
-    deposit = { deposit: { source_token: uuid,
-                           message: result,
-                           message_type: source_id,
-                           callback: callback }}
 
-    Maremma.post push_url, data: deposit, token: access_token
+    Array(items).map do |item|
+      relation = item.fetch(:relation, {})
+      deposit = { "deposit" => { "subj_id" => relation.fetch("subj_id", nil),
+                                 "obj_id" => relation.fetch("obj_id", nil),
+                                 "relation_type_id" => relation.fetch("relation_type_id", nil),
+                                 "source_id" => relation.fetch("source_id", nil),
+                                 "publisher_id" => relation.fetch("publisher_id", nil),
+                                 "subj" => item.fetch(:subj, {}),
+                                 "obj" => item.fetch(:obj, {}),
+                                 "prefix" => item.fetch(:prefix, nil),
+                                 "source_token" => uuid,
+                                 "callback" => callback } }
+
+      Maremma.post push_url, data: deposit, token: access_token
+    end
   end
 
   def url

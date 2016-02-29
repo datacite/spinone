@@ -33,17 +33,24 @@ class OrcidUpdate < Agent
     url + URI.encode_www_form(params)
   end
 
-  def get_contributors(items)
+  def get_relations_with_related_works(items)
     Array(items).reduce([]) do |sum, item|
       orcids = item.fetch('nameIdentifier', [])
         .select { |id| id =~ /^ORCID:0000.+/ }
         .map { |i| i.split(':', 2).last }
       orcids.reduce(sum) do |sum, orcid|
-        sum + [{ "uid" => "http://orcid.org/#{orcid}",
-                 "related_works" => {
-                   "pid" => "http://doi.org/#{item['doi']}",
-                   "source_id" => source_id }}]
+        sum + [{ "orcid" => "http://orcid.org/#{orcid}",
+                 "doi" => "http://doi.org/#{item['doi']}",
+                 "source_id" => source_id }]
       end
+    end
+  end
+
+  # push to API if no error and we have collected contributor/work pairs
+  def push_data(items)
+    Array(items).map do |item|
+      claim = { "claim" => item }
+      Maremma.post push_url, data: claim, token: access_token
     end
   end
 
