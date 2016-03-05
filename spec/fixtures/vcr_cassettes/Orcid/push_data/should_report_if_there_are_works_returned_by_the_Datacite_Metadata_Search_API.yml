@@ -7,14 +7,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.733793","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.733793","DOI":"10.1594/PANGAEA.733793","author":[],"title":"Paleomagnetic
         measurements of 10 sediment profiles from the Antarctic continental slope","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[1989]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[1989]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -35,15 +35,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 38fa78ef-59ed-4a56-94a6-0940a74d9bdc
+      - 96b45fab-05b1-418d-83dd-41f18ef4e7df
       X-Runtime:
-      - '27.849910'
+      - '0.190282'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:39 GMT
+      - Sat, 05 Mar 2016 12:07:11 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -62,14 +62,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.733883","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.733883","DOI":"10.1594/PANGAEA.733883","author":[],"title":"Metadata
         and number of samples per gravity corer sediment profile","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2010]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2010]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -90,15 +90,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9e7802e3-fda8-42f3-a543-351268d56dce
+      - 15e5195e-147a-480d-a2dd-2c0dfd965975
       X-Runtime:
-      - '0.194614'
+      - '0.141038'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:40 GMT
+      - Sat, 05 Mar 2016 12:07:11 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -121,14 +121,14 @@ http_interactions:
         D (2012): Marine geological constraints for the grounding-line position of
         the Antarctic Ice Sheet on the southern Weddell Sea shelf at the Last Glacial
         Maximum. Quaternary Science Reviews, 32, 25-47","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2011]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2011]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -149,15 +149,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9dc66d54-85e8-4d43-adf5-55042aa32d21
+      - 13deb90c-249d-4c97-ace4-551e83441a88
       X-Runtime:
-      - '0.192261'
+      - '0.141456'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:40 GMT
+      - Sat, 05 Mar 2016 12:07:11 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -175,14 +175,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.735810","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735810","DOI":"10.6084/M9.FIGSHARE.735810","author":[],"title":"Ant
-        Species Presence Data for Summer 2012 at the Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Species Presence Data for Summer 2012 at the Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -203,15 +203,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d535890a-165a-4284-a44f-3f9adb85c542
+      - 1b99813a-8478-4655-b8ca-6cf417bbb66c
       X-Runtime:
-      - '0.157749'
+      - '0.129681'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:40 GMT
+      - Sat, 05 Mar 2016 12:07:11 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -229,14 +229,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.735811","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735811","DOI":"10.6084/M9.FIGSHARE.735811","author":[],"title":"Pitfall
-        Trap Locations in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Trap Locations in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -257,15 +257,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - cc22702d-603f-4313-b3d2-2c3c938206b3
+      - db0a33a9-f6b8-4a4a-8b30-f1b63f4a746a
       X-Runtime:
-      - '0.165602'
+      - '0.154214'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:40 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -283,14 +283,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1041547","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1041547","DOI":"10.6084/M9.FIGSHARE.1041547","author":[],"title":"Jills
-        of All Trades: Ant Diversity and Versatility in the Cross Timbers Ecoregion","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        of All Trades: Ant Diversity and Versatility in the Cross Timbers Ecoregion","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -311,15 +311,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d1790702-f065-4314-b560-90252564a378
+      - 2ecf523e-29bc-4a4e-aeb3-1e437ae08c73
       X-Runtime:
-      - '0.179745'
+      - '0.138906'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:40 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -338,14 +338,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.5284/1030449","obj_id":"http://orcid.org/0000-0003-3938-899X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
         Rural Settlement of Roman Britain: an online resource","container-title":"Archaeology
-        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -366,15 +366,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 0871e719-3628-496d-9875-4d0ba25d6e65
+      - accc51a8-4415-482e-84af-934ec5d2c3c2
       X-Runtime:
-      - '0.191474'
+      - '0.156259'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:41 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -393,14 +393,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.5284/1030449","obj_id":"http://orcid.org/0000-0002-2725-6730","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
         Rural Settlement of Roman Britain: an online resource","container-title":"Archaeology
-        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -421,15 +421,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 25fbddc4-d703-45df-af39-778dc1433288
+      - aaaaa5eb-5360-46d6-a3af-b2a9a9e9d394
       X-Runtime:
-      - '0.197457'
+      - '0.160060'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:41 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -453,14 +453,14 @@ http_interactions:
         H; Eisenhauer, Anton; Steneck, Robert S (2015): Century-scale trends and seasonality
         in pH and temperature for shallow zones of the Bering Sea. Proceedings of
         the National Academy of Sciences, 201419216","container-title":"PANGAEA -
-        Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -481,15 +481,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2904d016-1e06-4321-abc7-9cd7a5ef1cf7
+      - 1615305c-7421-4391-b2e1-eb55920458c9
       X-Runtime:
-      - '0.195829'
+      - '0.131518'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:41 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -508,14 +508,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.843860","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.843860","DOI":"10.1594/PANGAEA.843860","author":[],"title":"Documentation
         of sediment core PS1619-2","container-title":"PANGAEA - Data Publisher for
-        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -536,15 +536,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - ba57f178-4530-4f6b-87bf-fdd04ca40e3f
+      - 0ae9eb78-aa6f-4deb-8362-5b11bf231458
       X-Runtime:
-      - '0.175235'
+      - '0.136560'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:41 GMT
+      - Sat, 05 Mar 2016 12:07:12 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -563,14 +563,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.843865","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.843865","DOI":"10.1594/PANGAEA.843865","author":[],"title":"Documentation
         of sediment core PS1637-3","container-title":"PANGAEA - Data Publisher for
-        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -591,15 +591,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 91435ef7-53f9-41cc-b7e1-6ed81b96534a
+      - a8ed0dd6-6803-4fcc-93c4-aa22325f49ab
       X-Runtime:
-      - '0.179861'
+      - '0.138095'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:41 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -617,14 +617,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.707350","obj_id":"http://orcid.org/0000-0001-9964-6984","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707350","DOI":"10.6084/M9.FIGSHARE.707350","author":[],"title":"Working
-        memory for visual and haptic targets: A study using the interference paradigm","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        memory for visual and haptic targets: A study using the interference paradigm","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -645,15 +645,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 78371422-ca48-448e-af4f-6191630a09ca
+      - 3a28e36e-fc54-4f46-a8aa-b70f46e9b397
       X-Runtime:
-      - '0.155590'
+      - '0.132010'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:42 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -672,14 +672,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.707351","obj_id":"http://orcid.org/0000-0001-9964-6984","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707351","DOI":"10.6084/M9.FIGSHARE.707351","author":[],"title":"Theta
         power modulations during the explicit recognition of unfamiliar 3-D objects
-        explored haptically","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        explored haptically","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -700,15 +700,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 0b46f8f9-ac42-489b-99e9-1936acc9c8a6
+      - f966e965-e429-4a3d-bd39-76c0d7126445
       X-Runtime:
-      - '0.179999'
+      - '0.128990'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:42 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -726,14 +726,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.778701","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.778701","DOI":"10.6084/M9.FIGSHARE.778701","author":[],"title":"Pedillus
-        terminalis and mimic species","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        terminalis and mimic species","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -754,15 +754,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 8635b649-edf3-42b7-93c8-b1f8e2bfc921
+      - 26795309-741c-4467-aaa6-d0c3f0be9009
       X-Runtime:
-      - '0.271076'
+      - '0.154228'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:42 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -781,14 +781,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.779705","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.779705","DOI":"10.6084/M9.FIGSHARE.779705","author":[],"title":"Ants
         in the Grassland:their imortance and potential as indicators of ecosystem
-        health","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        health","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -809,15 +809,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9f034167-1af6-4766-8901-656d037ed76a
+      - bb4ffc3b-aa05-48f5-bd3d-822d3f79e8bf
       X-Runtime:
-      - '0.218611'
+      - '0.173243'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:42 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -835,14 +835,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.745301","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745301","DOI":"10.6084/M9.FIGSHARE.745301","author":[],"title":"Behavioral
-        Model for Comanche harvester ant interactions","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Model for Comanche harvester ant interactions","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -863,15 +863,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1cdfca56-a970-4b21-a05c-05f65aaffae2
+      - e0d2ab1f-720f-4904-903e-e84afec9a8cf
       X-Runtime:
-      - '0.177944'
+      - '0.138769'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:42 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -890,14 +890,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.745313","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745313","DOI":"10.6084/M9.FIGSHARE.745313","author":[],"title":"The
         courtship behavior of two Zygoballus sp. (Araneae: Salticidae): Final Summer
-        Project Report (1983)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Project Report (1983)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -918,15 +918,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 55e5ff5a-3a8a-4179-8211-11a43e36c5d2
+      - 2287d245-7fc5-418e-b6d8-797c4ad25ad3
       X-Runtime:
-      - '0.163424'
+      - '0.148146'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:43 GMT
+      - Sat, 05 Mar 2016 12:07:13 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -944,14 +944,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.746960","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.746960","DOI":"10.6084/M9.FIGSHARE.746960","author":[],"title":"Ant
-        Sampling Sites in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Sampling Sites in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -972,15 +972,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a85ec8b4-7344-49cb-96ca-7fa42213fe3a
+      - cfbc8137-b69d-4785-a2e3-8bb2b4dc8cfd
       X-Runtime:
-      - '0.186789'
+      - '0.143062'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:43 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -999,14 +999,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.760716","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.760716","DOI":"10.6084/M9.FIGSHARE.760716","author":[],"title":"Door
         Construction Behavior in the Mygalomorph Spider Family Antrodiaetidae and
-        One Member of the Family Ctenizidae (Araneae: Mygalomorphae)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        One Member of the Family Ctenizidae (Araneae: Mygalomorphae)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1027,15 +1027,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b4c5ff4d-fa01-44e2-8c02-f7aa20aa9e0b
+      - b197fcf4-11ab-4800-bf48-aa8dd19d9036
       X-Runtime:
-      - '0.211535'
+      - '0.148469'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:43 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1054,14 +1054,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769272","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769272","DOI":"10.6084/M9.FIGSHARE.769272","author":[],"title":"Testing
         central place foraging theory in the ant genus Pogonmyrmex: a review of the
-        literature from 1997 - 2008","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        literature from 1997 - 2008","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1082,15 +1082,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2b20fab2-47e5-47b4-8723-4734135e081b
+      - 5bf9f66c-1193-4bb2-9fcf-a011797ed20b
       X-Runtime:
-      - '0.147168'
+      - '0.141271'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:43 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1108,14 +1108,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769271","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769271","DOI":"10.6084/M9.FIGSHARE.769271","author":[],"title":"Determination
-        of sex ratios in ants","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        of sex ratios in ants","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1136,15 +1136,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6982ff48-7c16-440d-bbe2-7ef511a3d08d
+      - 5b7717ae-d250-40c4-b981-ff9197d53325
       X-Runtime:
-      - '0.159368'
+      - '0.168112'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:43 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1163,14 +1163,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769270","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769270","DOI":"10.6084/M9.FIGSHARE.769270","author":[],"title":"Preliminary
         Assessment  of the Arthropod and Ant Assemblages of Todd Island, March 14
-        and 28, 2010 (Fort Worth Nature Center, Fort Worth, Texas)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        and 28, 2010 (Fort Worth Nature Center, Fort Worth, Texas)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1191,15 +1191,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9d8f9bad-ddb1-4987-9b5c-ca5b1fe36792
+      - b221ada9-2df9-492c-9ab7-33c8206911ed
       X-Runtime:
-      - '0.168852'
+      - '0.156051'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:44 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1218,14 +1218,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368269","obj_id":"http://orcid.org/0000-0002-4000-4167","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368269","DOI":"10.6084/M9.FIGSHARE.1368269","author":[],"title":"ABO
         phenotype and innate isoagglutinin specificities as they arise from glycosidic
-        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1246,15 +1246,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6f9421ff-b012-4294-ac06-baff55460a6d
+      - a21000ce-8afd-49c4-8040-9a657300fe23
       X-Runtime:
-      - '0.191948'
+      - '0.143721'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:44 GMT
+      - Sat, 05 Mar 2016 12:07:14 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1272,14 +1272,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368484","obj_id":"http://orcid.org/0000-0001-6176-2816","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368484","DOI":"10.6084/M9.FIGSHARE.1368484","author":[],"title":"Database
-        - Medical Education - Part I - The Double Standard Test. (version 1.0)","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Medical Education - Part I - The Double Standard Test. (version 1.0)","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1300,15 +1300,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - bcf8b1d7-bce3-41e4-8321-e8240ead0a6f
+      - 70a4fe20-5b08-4623-affa-fc496dfe647a
       X-Runtime:
-      - '0.201873'
+      - '0.155573'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:44 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1326,14 +1326,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368488","obj_id":"http://orcid.org/0000-0003-3796-827X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368488","DOI":"10.6084/M9.FIGSHARE.1368488","author":[],"title":"A
-        Novel Approach to Malware Detection using Static Classification","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Novel Approach to Malware Detection using Static Classification","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1354,15 +1354,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6d5fee21-b6b2-4631-95ca-c23343710ad8
+      - 61f4d784-bc1a-4569-b7cd-14e5078e28dd
       X-Runtime:
-      - '0.198926'
+      - '0.142015'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:44 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1380,14 +1380,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368581","obj_id":"http://orcid.org/0000-0003-1073-887X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368581","DOI":"10.6084/M9.FIGSHARE.1368581","author":[],"title":"Domain
-        decomposition without the agonizing pain","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        decomposition without the agonizing pain","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1408,15 +1408,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - cd8fc098-2bea-45e3-a5e1-33f5c53d5d63
+      - aa6248e8-3912-4d02-814e-c890d1664e25
       X-Runtime:
-      - '0.146820'
+      - '0.139810'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:44 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1434,14 +1434,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368663","obj_id":"http://orcid.org/0000-0001-9873-8342","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368663","DOI":"10.6084/M9.FIGSHARE.1368663","author":[],"title":"Science
-        Metrics In Colombia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Metrics In Colombia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1462,15 +1462,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - eb87fed7-b0b2-4637-a258-81d3401f6caf
+      - fb7c451c-9679-48d6-8036-69e2ddd641d0
       X-Runtime:
-      - '0.155143'
+      - '0.183404'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1489,14 +1489,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368671","obj_id":"http://orcid.org/0000-0002-3437-4911","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368671","DOI":"10.6084/M9.FIGSHARE.1368671","author":[],"title":"Global
         sensitivity analysis of the climatevegetation system to astronomical forcing:
-        an emulator-based approach","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        an emulator-based approach","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1517,15 +1517,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 466aa4f4-18f9-41b8-a44d-b3dd8848b834
+      - c7f28d0d-84ce-44a0-aae7-c69c9106cdf6
       X-Runtime:
-      - '0.164014'
+      - '0.153325'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1543,14 +1543,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368728","obj_id":"http://orcid.org/0000-0001-9873-8342","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368728","DOI":"10.6084/M9.FIGSHARE.1368728","author":[],"title":"Factors
-        associated with Human T. cruzi infection","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        associated with Human T. cruzi infection","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1571,15 +1571,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - dd5561ba-32fa-4d7c-9991-a1d89469a6d9
+      - 27936a81-3d30-42ed-92b5-7db1c790e816
       X-Runtime:
-      - '0.173592'
+      - '0.164866'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:15 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1597,14 +1597,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368744","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368744","DOI":"10.6084/M9.FIGSHARE.1368744","author":[],"title":"Circle-based
-        construction Rosette Map f86v","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        construction Rosette Map f86v","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1625,15 +1625,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 758e5607-8b22-4647-9d2c-37335a23ca01
+      - 6429fdf9-fd82-4d43-9d8b-44e46bf3cb37
       X-Runtime:
-      - '0.155555'
+      - '0.154535'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1651,14 +1651,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368745","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368745","DOI":"10.6084/M9.FIGSHARE.1368745","author":[],"title":"Square
-        based construction Rosette Map","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        based construction Rosette Map","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1679,15 +1679,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 8cf75594-80ba-4a26-8601-9ec147ac5864
+      - 8532e500-3868-47bc-98cb-929ddb65fa00
       X-Runtime:
-      - '0.218418'
+      - '0.141313'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1706,14 +1706,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368746","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368746","DOI":"10.6084/M9.FIGSHARE.1368746","author":[],"title":"Circling
         a square: The geometry of Beinecke MS408 folio 86v and how to construct the
-        scaffold of the Rosette map with compass and straightedge","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        scaffold of the Rosette map with compass and straightedge","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1734,15 +1734,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 7d01bf7f-e531-4d7a-9393-b8b7b9d21274
+      - ba2597b9-ee14-4b76-847a-ae8e434ea9f7
       X-Runtime:
-      - '0.141496'
+      - '0.146797'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:45 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1761,14 +1761,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368761","obj_id":"http://orcid.org/0000-0001-6176-2816","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368761","DOI":"10.6084/M9.FIGSHARE.1368761","author":[],"title":"Acta
         01 de 2015  Departamento de Ciencias Fisiolgicas (ECB)  Facultad de Salud
-        - Universidad del Valle","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Universidad del Valle","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1789,15 +1789,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 44046234-f490-4fab-88a3-84ee0524344f
+      - d38eba3f-d80b-4bb9-bdc1-2ff460146178
       X-Runtime:
-      - '0.125475'
+      - '0.160219'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1815,14 +1815,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368774","obj_id":"http://orcid.org/0000-0002-0311-9774","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368774","DOI":"10.6084/M9.FIGSHARE.1368774","author":[],"title":"Tools
-        for reproducible and accessible science: KnitR, VMs and OMERO","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        for reproducible and accessible science: KnitR, VMs and OMERO","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1843,15 +1843,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b5d1fec6-4dce-4fd0-858c-66c11e3560f1
+      - 02d17268-e5b1-4f7b-a08f-cf4138b6e60a
       X-Runtime:
-      - '0.125997'
+      - '0.148507'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1870,14 +1870,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370882","obj_id":"http://orcid.org/0000-0001-6921-5307","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370882","DOI":"10.6084/M9.FIGSHARE.1370882","author":[],"title":"Robot
         Navigation for Monitoring Unsteady Environmental Boundaries without Field
-        Gradient Estimation","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Gradient Estimation","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1898,15 +1898,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 094f8f34-29bf-4ec1-a9ba-551bbb77316e
+      - 20b53c94-a5a4-4a66-bd31-d1067483d618
       X-Runtime:
-      - '0.123325'
+      - '0.134822'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:16 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1925,14 +1925,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370854","obj_id":"http://orcid.org/0000-0002-4000-4167","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370854","DOI":"10.6084/M9.FIGSHARE.1370854","author":[],"title":"ABO
         phenotype and innate isoagglutinin specificities as they arise from glycosidic
-        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -1953,15 +1953,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1f775380-5cb6-41e7-86c9-ad72eb30162b
+      - b8d911ae-991c-40b9-a3c7-a45977481041
       X-Runtime:
-      - '0.192472'
+      - '0.155588'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -1979,14 +1979,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1226424","obj_id":"http://orcid.org/0000-0001-8478-7549","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1226424","DOI":"10.6084/M9.FIGSHARE.1226424","author":[],"title":"Color
-        mememaps of self-balancing strategies","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        mememaps of self-balancing strategies","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2007,15 +2007,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b40b1480-c52d-45d9-ab2f-d7e3685f5b51
+      - c0120908-1796-462b-8d7e-735ee529ac32
       X-Runtime:
-      - '0.145256'
+      - '0.128326'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2033,14 +2033,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371006","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371006","DOI":"10.6084/M9.FIGSHARE.1371006","author":[],"title":"Comanche
-        harvester ant colonies in GL site of FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        harvester ant colonies in GL site of FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2061,15 +2061,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 8902af19-c37b-474f-9f53-34479a72ef8d
+      - aab345c9-cedb-4db4-bf52-d7424eda598c
       X-Runtime:
-      - '0.144765'
+      - '0.130882'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2087,14 +2087,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371005","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371005","DOI":"10.6084/M9.FIGSHARE.1371005","author":[],"title":"Comanche
-        harvester ant colonies at EP in the FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        harvester ant colonies at EP in the FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2115,15 +2115,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 601d51a3-db58-4931-b923-0f6358d10707
+      - 00d6cdd2-5fd5-42b9-ba30-1d7d474b07a1
       X-Runtime:
-      - '0.126367'
+      - '0.128294'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:46 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2141,14 +2141,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371077","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371077","DOI":"10.6084/M9.FIGSHARE.1371077","author":[],"title":"Survey
-        of 3''GG gRNA sites in 6 genomes","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        of 3''GG gRNA sites in 6 genomes","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2169,15 +2169,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6178df4d-7979-4911-ab35-b2c60c0599d6
+      - 8966d285-de90-4a22-bf96-4c02c593170c
       X-Runtime:
-      - '0.123245'
+      - '0.154722'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2195,14 +2195,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371009","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371009","DOI":"10.6084/M9.FIGSHARE.1371009","author":[],"title":"Caenorhabditis
-        elegans annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        elegans annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2223,15 +2223,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c4137286-cc22-4942-9b11-b9a81d0b2eb2
+      - 525e3a7c-ef9a-427d-a67d-a406cf079725
       X-Runtime:
-      - '0.124384'
+      - '0.146168'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2249,14 +2249,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371008","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371008","DOI":"10.6084/M9.FIGSHARE.1371008","author":[],"title":"Caenorhabditis
-        elegans 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        elegans 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2277,15 +2277,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - da12d6ac-223c-4eb4-9ee9-17fb8b66fca1
+      - 3b9617bd-5aac-4669-8bca-00f3f45927fd
       X-Runtime:
-      - '0.127103'
+      - '0.133108'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:17 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2303,14 +2303,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371010","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371010","DOI":"10.6084/M9.FIGSHARE.1371010","author":[],"title":"Danio
-        rerio 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        rerio 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2331,15 +2331,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 95d076b1-e7d9-4b2b-9b58-5aab87f49249
+      - 7fe7fba4-39ff-4314-afea-9aaac30d3f52
       X-Runtime:
-      - '0.137291'
+      - '0.167736'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2357,14 +2357,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371011","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371011","DOI":"10.6084/M9.FIGSHARE.1371011","author":[],"title":"Drosophila
-        melanogaster 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        melanogaster 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2385,15 +2385,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 7f6f6bfc-3a56-4684-a6c8-f0ecad1bbf21
+      - 701f06ff-ebbb-423e-8375-9d19445b2054
       X-Runtime:
-      - '0.142239'
+      - '0.135117'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2411,14 +2411,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371013","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371013","DOI":"10.6084/M9.FIGSHARE.1371013","author":[],"title":"Homo
-        sapiens 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        sapiens 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2439,15 +2439,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b8139d1b-56bd-4f06-b16b-c7196cc62fa0
+      - e60582c4-9c0f-4469-8cf7-11bc17bd53e5
       X-Runtime:
-      - '0.132493'
+      - '0.128200'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2465,14 +2465,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371014","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371014","DOI":"10.6084/M9.FIGSHARE.1371014","author":[],"title":"Mus
-        musculus 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        musculus 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2493,15 +2493,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 83335f1f-5345-4b70-9ea7-27e3a74d386d
+      - 44d452e5-a399-49b7-a915-3a369cddb6f8
       X-Runtime:
-      - '0.148074'
+      - '0.134898'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:47 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2519,14 +2519,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371012","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371012","DOI":"10.6084/M9.FIGSHARE.1371012","author":[],"title":"Drosophila
-        melanogaster annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        melanogaster annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2547,15 +2547,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9ac7a208-b25a-4f21-af3a-f146f9a95245
+      - 0978fc51-3192-4686-9667-5e8f7cfb1d1d
       X-Runtime:
-      - '0.132534'
+      - '0.153094'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2573,14 +2573,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371015","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371015","DOI":"10.6084/M9.FIGSHARE.1371015","author":[],"title":"Saccharomyces
-        cerevisiae 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        cerevisiae 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2601,15 +2601,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1818260a-1004-4bd8-a5a9-ed1b2ea33412
+      - ea97ead7-660b-460f-8213-f02716727cec
       X-Runtime:
-      - '0.145569'
+      - '0.137373'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2627,14 +2627,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371017","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371017","DOI":"10.6084/M9.FIGSHARE.1371017","author":[],"title":"Danio
-        rerio annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        rerio annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2655,15 +2655,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 5a1f9003-e2c9-494a-ab14-c0a331d38b6c
+      - 6d5cc30c-cfd2-46a4-9bd5-8f5a8d98e953
       X-Runtime:
-      - '0.125920'
+      - '0.139742'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:18 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2681,14 +2681,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371018","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371018","DOI":"10.6084/M9.FIGSHARE.1371018","author":[],"title":"Mus
-        musculus annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        musculus annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2709,15 +2709,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b47fb54d-413a-43d5-b113-2e3e8d824a25
+      - 41638337-f79a-4f1d-8731-9e53e33ac0e0
       X-Runtime:
-      - '0.136575'
+      - '0.174156'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2735,14 +2735,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371016","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371016","DOI":"10.6084/M9.FIGSHARE.1371016","author":[],"title":"Saccharomyces
-        cerevisiae annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        cerevisiae annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2763,15 +2763,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d0b2e102-35e2-47e5-92f4-fbd8aa218f6a
+      - 2ef76d79-3865-432a-b128-d872716e884e
       X-Runtime:
-      - '0.144405'
+      - '0.176748'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2789,14 +2789,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371019","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371019","DOI":"10.6084/M9.FIGSHARE.1371019","author":[],"title":"Homo
-        sapiens annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        sapiens annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2817,15 +2817,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9083fcd0-a09b-4ce3-aeda-2fe527731756
+      - 8b383d10-9a59-4232-a4e0-487b9a98ba3e
       X-Runtime:
-      - '0.124472'
+      - '0.130304'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2843,14 +2843,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371114","obj_id":"http://orcid.org/0000-0001-5882-6823","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371114","DOI":"10.6084/M9.FIGSHARE.1371114","author":[],"title":"2015-04-03
-        WikiArabia GLAM-wiki","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        WikiArabia GLAM-wiki","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2871,15 +2871,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9fdf08f9-616d-4bb3-8f1c-65e5fc4baee8
+      - 6461fac5-ccca-4849-aa79-6940ff040630
       X-Runtime:
-      - '0.147203'
+      - '0.144103'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:48 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2897,14 +2897,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1337953","obj_id":"http://orcid.org/0000-0001-5882-6823","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1337953","DOI":"10.6084/M9.FIGSHARE.1337953","author":[],"title":"ORCID
-        in Wikipedia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        in Wikipedia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2925,15 +2925,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6c7404e9-a3d0-4ab2-b9af-953cd8210cf0
+      - 99942ddb-4423-4455-85e4-f0d355faa3b3
       X-Runtime:
-      - '0.131449'
+      - '0.168349'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -2951,14 +2951,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371137","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371137","DOI":"10.6084/M9.FIGSHARE.1371137","author":[],"title":"Comanche  harvester
-        ant in the Southwest Nature Preserve, Arlington, Texas","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        ant in the Southwest Nature Preserve, Arlington, Texas","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -2979,15 +2979,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d0e4983f-2c73-44a5-9cb3-7f43659bf197
+      - d5d38956-38ff-4846-b9d4-9f2c74ce64a0
       X-Runtime:
-      - '0.123815'
+      - '0.136204'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:19 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3005,14 +3005,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371138","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371138","DOI":"10.6084/M9.FIGSHARE.1371138","author":[],"title":"Comanche
-        harvester ant in Todd Island (1)in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        harvester ant in Todd Island (1)in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3033,15 +3033,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 5d44723e-eb09-4512-a5ea-cc500d8bd7af
+      - 12bebe38-a5df-4628-8e4c-99c6112a9eb5
       X-Runtime:
-      - '0.129992'
+      - '0.138371'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3059,14 +3059,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371139","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371139","DOI":"10.6084/M9.FIGSHARE.1371139","author":[],"title":"Comanche
-        harvester ant on Todd Island (2) in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        harvester ant on Todd Island (2) in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3087,15 +3087,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - f2d1698a-6228-4b0d-8751-ff6438dbebe7
+      - 855cf120-a56e-4cca-8bdb-35740a0f1bd9
       X-Runtime:
-      - '0.129787'
+      - '0.150665'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3113,14 +3113,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014351","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014351","DOI":"10.6084/M9.FIGSHARE.1014351","author":[],"title":"RDA
-        Triplot of  Ant Species Presence and Soil Type","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Triplot of  Ant Species Presence and Soil Type","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3141,15 +3141,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 58f11648-f875-49a2-87fe-0c4fd4ed4779
+      - 4958ce49-ef48-4d6e-bef2-76307293de3c
       X-Runtime:
-      - '0.132077'
+      - '0.145122'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3167,14 +3167,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014348","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014348","DOI":"10.6084/M9.FIGSHARE.1014348","author":[],"title":"RDA
-        Triplot of Species Presence","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Triplot of Species Presence","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3195,15 +3195,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - dca37372-a7d9-4b93-84ea-b2427e704d51
+      - 5e9ff4f7-a265-4980-9551-116f4ee3bd6f
       X-Runtime:
-      - '0.144706'
+      - '0.132704'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3221,14 +3221,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014352","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014352","DOI":"10.6084/M9.FIGSHARE.1014352","author":[],"title":"RDA
-        Triplot of Ant Species Abundance at th Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Triplot of Ant Species Abundance at th Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3249,15 +3249,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 0faaa5b1-b6d4-4c24-99e2-eac39b003637
+      - 983ac45f-8923-4efa-a707-094108461694
       X-Runtime:
-      - '0.126700'
+      - '0.154607'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:49 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3275,14 +3275,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008321","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008321","DOI":"10.6084/M9.FIGSHARE.1008321","author":[],"title":"Tracking
-        the Comanche Harvester Ant in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        the Comanche Harvester Ant in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3303,15 +3303,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c6b6fa12-429b-4cd7-9593-5a38d3f3786d
+      - fc23f663-c436-49f8-a702-3c4d676ec7cc
       X-Runtime:
-      - '0.148267'
+      - '0.137093'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:50 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3329,14 +3329,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008320","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008320","DOI":"10.6084/M9.FIGSHARE.1008320","author":[],"title":"Nest
-        Distribution of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Distribution of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3357,15 +3357,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - bb0f2001-131c-4b19-b8bb-24298fb918a6
+      - c0c6d109-9c5a-4aed-9a55-ca34e97d34d1
       X-Runtime:
-      - '0.131550'
+      - '0.130479'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:50 GMT
+      - Sat, 05 Mar 2016 12:07:20 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
@@ -3383,14 +3383,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.999239","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.999239","DOI":"10.6084/M9.FIGSHARE.999239","author":[],"title":"Nest
-        Structure of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":null,"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Structure of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
       Accept:
       - application/json
       Authorization:
-      - Token token="8897f9349100728d66d64d56bc21254bb346a9ed21954933"
+      - Token token=8897f9349100728d66d64d56bc21254bb346a9ed21954933
       Content-Type:
       - application/json
   response:
@@ -3411,15 +3411,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 485151be-7970-45e8-a7c2-96df81a873be
+      - 0e6723d6-86f2-4b6a-9b14-d3d7bb29cb64
       X-Runtime:
-      - '0.121502'
+      - '0.151326'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 29 Feb 2016 02:44:50 GMT
+      - Sat, 05 Mar 2016 12:07:21 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:

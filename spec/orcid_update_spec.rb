@@ -107,7 +107,7 @@ describe OrcidUpdate, type: :model, vcr: true do
       response = subject.push_data(result)
       expect(response.length).to eq(63)
       claim = response.first
-      expect(claim).to eq("data"=>{"id"=>"536ac1c5-4b9f-4392-91a7-d8d0b4a898bf",
+      expect(claim).to eq("data"=>{"id"=>"9b812fff-0f88-4a80-9bb0-1bf3ace7a78b",
                                    "type"=>"claims",
                                    "attributes"=>{"orcid"=>"http://orcid.org/0000-0002-4133-2218",
                                                   "doi"=>"http://doi.org/10.1594/PANGAEA.733793",
