@@ -81,7 +81,7 @@ configure do
       uid_claim: 'uid',
       required_claims: ['uid', 'name'],
       info_map: { "name" => "name",
-                  "authentication_token" => "authentication_token",
+                  "api_key" => "api_key",
                   "role" => "role" }
   end
   # OmniAuth.config.logger = logger
@@ -143,8 +143,7 @@ get '/agents' do
 end
 
 get '/auth/jwt/callback' do
-  @user = User.new(request.env['omniauth.auth'])
-  self.current_user = @user
+  session[:auth] = request.env['omniauth.auth']
   redirect to request.env['omniauth.origin'] || params[:origin] || '/'
 end
 

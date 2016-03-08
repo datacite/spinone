@@ -1,12 +1,9 @@
+require 'sinatra/base'
+
 module Sinatra
-  module Session
+  module SessionHelper
     def current_user
       @current_user ||= session[:auth].present? ? User.new(session[:auth]) : nil
-    end
-
-    def current_user=(user)
-      @current_user = user
-      session[:auth] = user.nil? ? nil : user.auth_hash
     end
 
     def signed_in?
@@ -18,5 +15,5 @@ module Sinatra
     end
   end
 
-  helpers Session
+  helpers SessionHelper
 end
