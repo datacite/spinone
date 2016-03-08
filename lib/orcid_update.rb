@@ -39,8 +39,8 @@ class OrcidUpdate < Agent
         .select { |id| id =~ /^ORCID:0000.+/ }
         .map { |i| i.split(':', 2).last }
       orcids.reduce(sum) do |sum, orcid|
-        sum + [{ "orcid" => "http://orcid.org/#{orcid}",
-                 "doi" => "http://doi.org/#{item['doi']}",
+        sum + [{ "orcid" => orcid,
+                 "doi" => item['doi'],
                  "source_id" => source_id }]
       end
     end

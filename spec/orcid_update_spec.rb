@@ -87,8 +87,8 @@ describe OrcidUpdate, type: :model, vcr: true do
 
       expect(response.length).to eq(63)
       item= response.first
-      expect(item).to eq("orcid"=>"http://orcid.org/0000-0002-4133-2218",
-                         "doi"=>"http://doi.org/10.1594/PANGAEA.733793",
+      expect(item).to eq("orcid"=>"0000-0002-4133-2218",
+                         "doi"=>"10.1594/PANGAEA.733793",
                          "source_id"=>"orcid_update")
     end
   end
