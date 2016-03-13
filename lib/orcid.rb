@@ -27,7 +27,7 @@ class Orcid < Agent
     params = { q: "nameIdentifier:ORCID\\:*",
                start: offset,
                rows: rows,
-               fl: "doi,nameIdentifier,updated",
+               fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,nameIdentifier,xml,updated",
                fq: "#{updated} AND has_metadata:true AND is_active:true",
                wt: "json" }
     url + URI.encode_www_form(params)
@@ -117,18 +117,6 @@ class Orcid < Agent
 
     { "pid" => pid,
       "source_id" => source_id }
-  end
-
-  def get_events(items)
-    Array(items).map do |item|
-      pid = doi_as_url(item.fetch("doi"))
-      name_identifiers = item.fetch('nameIdentifier', []).select { |id| id =~ /^ORCID:.+/ }.map { |id| { 'nameIdentifier' => id }}
-
-      { source_id: source_id,
-        work_id: pid,
-        total: name_identifiers.length,
-        extra: name_identifiers }
-    end
   end
 
   def job_batch_size

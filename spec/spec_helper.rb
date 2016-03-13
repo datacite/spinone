@@ -87,6 +87,7 @@ VCR.configure do |c|
   c.ignore_localhost = true
   c.ignore_hosts 'codeclimate.com'
   c.filter_sensitive_data('<API_KEY>') { ENV['API_KEY'] }
+  c.filter_sensitive_data("<ORCID_UPDATE_TOKEN>") { ENV["ORCID_UPDATE_TOKEN"] }
   c.allow_http_connections_when_no_cassette = false
   c.configure_rspec_metadata!
 end

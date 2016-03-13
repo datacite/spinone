@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://search.datacite.org/api?fl=doi,nameIdentifier,updated&fq=updated:%5B2013-09-04T00:00:00Z%20TO%202013-09-05T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
+    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,nameIdentifier,xml,updated&fq=updated:%5B2013-09-04T00:00:00Z%20TO%202013-09-05T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,42 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Mon, 08 Feb 2016 01:26:54 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Connection:
-      - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
-    body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":111},"response":{"numFound":0,"start":0,"docs":[]}}
-
-'
-    http_version: 
-  recorded_at: Mon, 08 Feb 2016 01:26:45 GMT
-- request:
-    method: get
-    uri: http://search.datacite.org/api?fl=doi,nameIdentifier,updated&fq=updated:%5B2013-09-04T00:00:00Z%20TO%202013-09-05T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.1.19
-      Date:
-      - Mon, 08 Feb 2016 01:26:54 GMT
+      - Sun, 13 Mar 2016 10:54:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -69,7 +34,42 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Mon, 08 Feb 2016 01:26:45 GMT
+  recorded_at: Sun, 13 Mar 2016 10:53:13 GMT
+- request:
+    method: get
+    uri: http://search.datacite.org/api?fl=doi,nameIdentifier,relatedIdentifier,updated&fq=updated:%5B2013-09-04T00:00:00Z%20TO%202013-09-05T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sun, 13 Mar 2016 10:54:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
+
+'
+    http_version: 
+  recorded_at: Sun, 13 Mar 2016 10:53:13 GMT
 - request:
     method: get
     uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,xml,updated&fq=updated:%5B2013-09-04T00:00:00Z%20TO%202013-09-05T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=relatedIdentifier:DOI%5C:*&rows=0&start=0&wt=json
@@ -89,7 +89,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Mon, 08 Feb 2016 01:26:54 GMT
+      - Sun, 13 Mar 2016 10:54:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -100,9 +100,9 @@ http_interactions:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":387},"response":{"numFound":1,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Mon, 08 Feb 2016 01:26:45 GMT
+  recorded_at: Sun, 13 Mar 2016 10:53:13 GMT
 recorded_with: VCR 2.9.3

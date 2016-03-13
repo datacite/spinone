@@ -27,7 +27,7 @@ class OrcidUpdate < Agent
     params = { q: "nameIdentifier:ORCID\\:*",
                start: offset,
                rows: rows,
-               fl: "doi,nameIdentifier,updated",
+               fl: "doi,nameIdentifier,relatedIdentifier,updated",
                fq: "#{updated} AND has_metadata:true AND is_active:true",
                wt: "json" }
     url + URI.encode_www_form(params)
@@ -35,12 +35,17 @@ class OrcidUpdate < Agent
 
   def get_relations_with_related_works(items)
     Array(items).reduce([]) do |sum, item|
+      parent = item.fetch('relatedIdentifier', [])
+        .select { |id| id =~ /IsPartOf:DOI:.+/ }
+        .map { |i| i.split(':', 3).last }.first
+      doi = parent ? parent : item['doi']
+
       orcids = item.fetch('nameIdentifier', [])
         .select { |id| id =~ /^ORCID:0000.+/ }
         .map { |i| i.split(':', 2).last }
       orcids.reduce(sum) do |sum, orcid|
         sum + [{ "orcid" => orcid,
-                 "doi" => item['doi'],
+                 "doi" => doi,
                  "source_id" => source_id }]
       end
     end
