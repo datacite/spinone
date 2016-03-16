@@ -98,7 +98,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
                                           "author"=>[{"family"=>"Anastasiadis", "given"=>"Nikolaos C."}, {"family"=>"Mylonas-Margaritis", "given"=>"Ioannis"}, {"family"=>"Psycharis", "given"=>"Vassilis"}, {"family"=>"Raptopoulou", "given"=>"Catherine P."}, {"family"=>"Kalofolias", "given"=>"Dimitris A."}, {"family"=>"Milios", "given"=>"Constantinos J."}, {"family"=>"Klouras", "given"=>"Nikolaos"}, {"family"=>"Perlepes", "given"=>"Spyros P."}],
                                           "title"=>"CCDC 1024724: Experimental Crystal Structure Determination",
                                           "container-title"=>"Cambridge Crystallographic Data Centre",
-                                          "issued"=>{"date-parts"=>[[2014]]},
+                                          "issued"=>"2014",
                                           "publisher_id"=>"BL.CCDC",
                                           "registration_agency"=>"datacite",
                                           "tracked"=>true,
