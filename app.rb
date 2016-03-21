@@ -112,7 +112,7 @@ end
 before '/api/*' do
   next unless request.post?
 
-  token = /^Token token="(.+)"$/.match(env['HTTP_AUTHORIZATION'].to_s)
+  token = /^Token token=(.+)$/.match(env['HTTP_AUTHORIZATION'].to_s)
   halt 401, json(errors: [{ status: 401,
                             title: "You are not authorized to access this page" }]) \
     unless token.present? && [ENV['ORCID_TOKEN'], ENV['RELATED_IDENTIFIER_TOKEN']].include?(token[1])
@@ -180,11 +180,11 @@ post '/api/agents' do
   id = result.fetch('deposit', {}).fetch('id', nil)
   source_token = result.fetch('deposit', {}).fetch('source_token', nil)
   state = result.fetch('deposit', {}).fetch('state', nil)
-  message_size = result.fetch('deposit', {}).fetch('message_size', 0)
+  total = result.fetch('deposit', {}).fetch('total', 1)
   agent = Agent.find_by_uuid(source_token)
 
   if state == "done"
-    agent.update_status(message_size)
+    agent.update_status(total)
     json data: { 'id' => id,
                  'type' => 'agent',
                  'attributes' => {
