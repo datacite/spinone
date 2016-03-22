@@ -73,6 +73,7 @@ class Agent
                                  "publisher_id" => relation.fetch("publisher_id", nil),
                                  "subj" => item.fetch(:subj, {}),
                                  "obj" => item.fetch(:obj, {}),
+                                 "message_type" => item.fetch(:message_type, nil),
                                  "prefix" => item.fetch(:prefix, nil),
                                  "source_token" => uuid,
                                  "callback" => callback } }
