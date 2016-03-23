@@ -65,16 +65,20 @@ class Orcid < Agent
   def get_relations(obj, items)
     prefix = obj["DOI"][/^10\.\d{4,5}/]
 
-    Array(items).map do |item|
-      orcid = item.split(':', 2).last
+    Array(items).reduce([]) do |sum, item|
+      orcid = validated_orcid(item.split(':', 2).last)
 
-      { prefix: prefix,
-        message_type: "contribution",
-        relation: { "subj_id" => "http://orcid.org/#{orcid}",
-                    "obj_id" => obj["pid"],
-                    "source_id" => source_id,
-                    "publisher_id" => obj["publisher_id"] },
-        obj: obj }
+      if orcid.present?
+        sum << { prefix: prefix,
+                 message_type: "contribution",
+                 relation: { "subj_id" => orcid_as_url(orcid),
+                             "obj_id" => obj["pid"],
+                             "source_id" => source_id,
+                             "publisher_id" => obj["publisher_id"] },
+                 obj: obj }
+      else
+        sum
+      end
     end
   end
 

@@ -59,7 +59,7 @@ class RelatedIdentifier < Agent
                "tracked" => true,
                "type" => type }
 
-      related_identifiers = item.fetch('relatedIdentifier', []).select { |id| id =~ /:DOI:.+/ }
+      related_identifiers = item.fetch('relatedIdentifier', []).select { |id| id =~ /:DOI:10\..+/ }
       sum += get_relations(subj, related_identifiers)
     end
   end
@@ -67,17 +67,21 @@ class RelatedIdentifier < Agent
   def get_relations(subj, items)
     prefix = subj["DOI"][/^10\.\d{4,5}/]
 
-    Array(items).map do |item|
+    Array(items).reduce([]) do |sum, item|
       raw_relation_type, _related_identifier_type, related_identifier = item.split(':', 3)
-      pid = doi_as_url(related_identifier.strip.upcase)
+      doi = validated_doi(related_identifier.strip.upcase)
 
-      { prefix: prefix,
-        relation: { "subj_id" => subj["pid"],
-                    "obj_id" => pid,
-                    "relation_type_id" => raw_relation_type.underscore,
-                    "source_id" => source_id,
-                    "publisher_id" => subj["publisher_id"] },
-        subj: subj }
+      if doi.present?
+        sum << { prefix: prefix,
+                 relation: { "subj_id" => subj["pid"],
+                             "obj_id" => doi_as_url(doi),
+                             "relation_type_id" => raw_relation_type.underscore,
+                             "source_id" => source_id,
+                             "publisher_id" => subj["publisher_id"] },
+                 subj: subj }
+      else
+        sum
+      end
     end
   end
 

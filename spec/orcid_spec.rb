@@ -80,6 +80,14 @@ describe Orcid, type: :model, vcr: true do
       expect(subject.parse_data("data" => result)).to eq([])
     end
 
+    it "should report if there are invalid works returned by the Datacite Metadata Search API" do
+      body = File.read(fixture_path + 'orcid_invalid.json')
+      result = JSON.parse(body)
+      response = subject.parse_data("data" => result)
+
+      expect(response.length).to eq(61)
+    end
+
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'orcid.json')
       result = JSON.parse(body)

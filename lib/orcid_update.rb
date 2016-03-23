@@ -41,8 +41,9 @@ class OrcidUpdate < Agent
       doi = parent ? parent : item['doi']
 
       orcids = item.fetch('nameIdentifier', [])
-        .select { |id| id =~ /^ORCID:0000.+/ }
+        .select { |id| id =~ /^ORCID:.+/ }
         .map { |i| i.split(':', 2).last }
+        .select { |id| validated_orcid(id).present? }
       orcids.reduce(sum) do |sum, orcid|
         sum + [{ "orcid" => orcid,
                  "doi" => doi,

@@ -4,16 +4,27 @@ require 'json'
 
 module Sinatra
   module Formatting
-    def worker_label(status)
-      case status
-      when "working" then "panel-success"
-      when "waiting" then "panel-default"
-      else "panel-warning"
-      end
+    # Format used for DOI validation
+    # The prefix is 10.x where x is 4-5 digits. The suffix can be anything, but can"t be left off
+    DOI_FORMAT = %r(\A10\.\d{4,5}/.+)
+
+    # Format used for ORCID validation
+    ORCID_FORMAT = %r(\A\d{4}-\d{4}-\d{4}-\d{3}[0-9X]+\z)
+
+    def validated_doi(doi)
+      Array(DOI_FORMAT.match(doi)).last
+    end
+
+    def validated_orcid(orcid)
+      Array(ORCID_FORMAT.match(orcid)).last
     end
 
     def doi_as_url(doi)
       "http://doi.org/" + doi
+    end
+
+    def orcid_as_url(orcid)
+      "http://orcid.org/" + orcid
     end
 
     def number_with_delimiter(number, default_options = {})
@@ -56,6 +67,14 @@ module Sinatra
         "http://orcid.org/#{name_identifier}"
       else
         nil
+      end
+    end
+
+    def worker_label(status)
+      case status
+      when "working" then "panel-success"
+      when "waiting" then "panel-default"
+      else "panel-warning"
       end
     end
 
