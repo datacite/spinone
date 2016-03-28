@@ -26,12 +26,15 @@ are passed directly into the Chef resource/providers which are exposed
 for more advanced configuration.
 
 Out of the box the following platforms are certified to work and are
-tested using our [Test Kitchen][8] configuration. Additional platforms
+tested using our [Test Kitchen][8
+] configuration. Additional platforms
 _may_ work, but your mileage may vary.
 
 - CentOS (RHEL) 5.11, 6.7, 7.2
 - Ubuntu 12.04, 14.04
-- Windows 2012
+- Windows 2012r2
+- Debian 7.9, 8.2
+- FreeBSD 10.2
 
 ### Client
 Out of the box the default recipe installs and configures the Consul
@@ -110,6 +113,24 @@ consul_definition 'mem-util' do
 end
 ```
 
+A service definition with an integrated check can also be created. You will have to define a regular service and then add a check as a an additional parameter. The definition below checks if the vault service is healthy on a 10 second interval and 5 second timeout.
+```ruby
+consul_definition 'vault' do
+  type 'service'
+  parameters(
+    port:  8200,
+    address: '127.0.0.1',
+    tags: ['vault', 'http'],
+    check: {
+      interval: '10s',
+      timeout: '5s',
+      http: 'http://127.0.0.1:8200/v1/sys/health'
+    }
+  )
+  notifies :reload, 'consul_service[consul]', :delayed
+end
+```
+
 Finally, a [watch][9] is created below to tell the agent to monitor to
 see if an application has been deployed. Once that application is
 deployed a script is run locally. This can be used, for example, as a
@@ -175,36 +196,6 @@ All of the [options available on the command-line][12] can be passed
 into the resource. This could potentially be a *very dangerous*
 operation. You should absolutely understand what you are doing. By the
 nature of this command it is _impossible_ for it to be idempotent.
-
-### UI
-
-`consul_ui` resource can be used to download and extract the
-[consul web UI](https://www.consul.io/intro/getting-started/ui.html).
-It can be done with a block like this:
-
-```ruby
-consul_ui 'consul-ui' do
-  owner node['consul']['service_user']
-  group node['consul']['service_group']
-  version node['consul']['version']
-end
-```
-
-Assuming consul version `0.5.2` above block would create `/srv/consul-ui/0.5.2`
-and symlink `/srv/consul-ui/current`.
-
-It does not change agent's configuration by itself.
-`consul_config` resource should be modified explicitly in order to host the web page.
-
-```ruby
-consul_config 'consul' do
-  ...
-  ui_dir '/srv/consul-ui/current/dist'
-end
-```
-
-This is optional, because consul UI can be hosted by any web server.
-
 
 [0]: http://blog.vialstudios.com/the-environment-cookbook-pattern/#theapplicationcookbook
 [1]: http://consul.io

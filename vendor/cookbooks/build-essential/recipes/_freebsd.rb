@@ -21,4 +21,7 @@ potentially_at_compile_time do
   package 'devel/gmake'
   package 'devel/autoconf'
   package 'devel/m4'
+  package 'devel/gettext'
+  # Only install gcc on freebsd 9.x - 10 uses clang
+  package 'lang/gcc49' if node['platform_version'].to_i <= 9
 end
