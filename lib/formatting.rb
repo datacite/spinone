@@ -9,7 +9,7 @@ module Sinatra
     DOI_FORMAT = %r(\A10\.\d{4,5}/.+)
 
     # Format used for ORCID validation
-    ORCID_FORMAT = %r(\A\d{4}-\d{4}-\d{4}-\d{3}[0-9X]+\z)
+    ORCID_FORMAT = %r(\A(?:http:\/\/orcid\.org\/)?(\d{4}-\d{4}-\d{4}-\d{3}[0-9X]+)\z)
 
     def validated_doi(doi)
       Array(DOI_FORMAT.match(doi)).last
