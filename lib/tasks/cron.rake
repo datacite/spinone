@@ -5,8 +5,8 @@ namespace :cron do
     Rake::Task["cache:update"].reenable
 
     agents = Agent.descendants.map { |a| a.new }.select { |agent| agent.stale? }
-    Rake::Task["queue:all"].invoke(*agents.map { |agent| agent.name })
-    Rake::Task["queue:all"].reenable
+    Rake::Task["queue:stale"].invoke(*agents.map { |agent| agent.name })
+    Rake::Task["queue:stale"].reenable
 
     Rake::Task["sidekiq:monitor"].invoke
     Rake::Task["sidekiq:monitor"].reenable

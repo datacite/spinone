@@ -42,12 +42,12 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
   context "queue_jobs" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      response = subject.queue_jobs(from_date: "2009-04-07", until_date: "2009-04-08")
+      response = subject.queue_jobs(all: true, from_date: "2009-04-07", until_date: "2009-04-08")
       expect(response).to eq(0)
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      response = subject.queue_jobs
+      response = subject.queue_jobs(all: true)
       expect(response).to eq(1196)
     end
   end
@@ -132,17 +132,15 @@ describe RelatedIdentifier, type: :model, vcr: true do
     end
   end
 
-  context "update_status" do
+  context "update_count" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      subject.update_status(0)
+      subject.update_count(0)
       expect(subject.count).to eq(0)
-      expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      subject.update_status(12)
+      subject.update_count(12)
       expect(subject.count).to eq(12)
-      expect(subject.scheduled_at).to eq("2015-04-08T17:40:00+00:00")
     end
   end
 end

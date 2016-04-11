@@ -184,7 +184,7 @@ post '/api/agents' do
   agent = Agent.find_by_uuid(source_token)
 
   if state == "done"
-    agent.update_status(total)
+    agent.update_count(total)
     json data: { 'id' => id,
                  'type' => 'agent',
                  'attributes' => {

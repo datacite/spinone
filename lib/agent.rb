@@ -37,6 +37,10 @@ class Agent
   def queue_jobs(options={})
     total = get_total(options)
 
+    unless options[:all]
+      return 0 unless stale?
+    end
+
     if total > 0
       # walk through paginated results
       total_pages = (total.to_f / job_batch_size).ceil
@@ -46,6 +50,8 @@ class Agent
         AgentJob.perform_async(name, options)
       end
     end
+
+    scheduled_at = Time.now if total > 0
 
     # return number of works or contributors queued
     total
@@ -86,8 +92,7 @@ class Agent
     "http://search.datacite.org/api?"
   end
 
-  def update_status(message_size)
-    self.scheduled_at = Time.now.iso8601
+  def update_count(message_size)
     self.count += message_size.to_i
   end
 

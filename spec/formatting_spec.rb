@@ -41,7 +41,7 @@ describe Orcid, type: :model do
 
     it "http://orcid.org/0000-0002-1825-0097" do
       orcid = "http://orcid.org/0000-0002-1825-0097"
-      expect(subject.validated_orcid(orcid)).to be_nil
+      expect(subject.validated_orcid(orcid)).to eq("0000-0002-1825-0097")
     end
 
     it "0000-0002-1825" do

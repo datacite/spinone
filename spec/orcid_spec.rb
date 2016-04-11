@@ -42,12 +42,12 @@ describe Orcid, type: :model, vcr: true do
 
   context "queue_jobs" do
     it "should report if there are no works returned by the Datacite Metadata Search API" do
-      response = subject.queue_jobs(from_date: "2009-04-07", until_date: "2009-04-08")
+      response = subject.queue_jobs(all: true, from_date: "2009-04-07", until_date: "2009-04-08")
       expect(response).to eq(0)
     end
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
-      response = subject.queue_jobs
+      response = subject.queue_jobs(all: true)
       expect(response).to eq(59)
     end
   end
