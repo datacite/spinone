@@ -10,23 +10,23 @@ describe DataciteCrossref, type: :model, vcr: true do
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with zero rows" do
-      expect(subject.get_query_url(rows: 0)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 0)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with different from_date and until_date" do
-      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with offset" do
-      expect(subject.get_query_url(offset: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=250&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(offset: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=250&rows=200&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with rows" do
-      expect(subject.get_query_url(rows: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3ADOI%5C%3A*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
   end
 
@@ -85,24 +85,25 @@ describe DataciteCrossref, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response.length).to eq(65)
-      expect(response.first[:prefix]).to eq("10.5517")
-      expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.5517/CC13D9MF",
-                                              "obj_id"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004",
-                                              "relation_type_id"=>"is_supplement_to",
+      expect(response.length).to eq(168)
+      expect(response.first[:prefix]).to eq("10.5061")
+      expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.5061/DRYAD.HT0HS",
+                                              "obj_id"=>"http://doi.org/10.1186/S12864-015-1469-5",
+                                              "relation_type_id"=>"is_referenced_by",
                                               "source_id"=>"datacite_crossref",
-                                              "publisher_id"=>"BL.CCDC")
+                                              "publisher_id"=>"CDL.DRYAD")
 
-      expect(response.first[:subj]).to eq("pid"=>"http://doi.org/10.5517/CC13D9MF",
-                                          "DOI"=>"10.5517/CC13D9MF",
-                                          "author"=>[{"family"=>"Anastasiadis", "given"=>"Nikolaos C."}, {"family"=>"Mylonas-Margaritis", "given"=>"Ioannis"}, {"family"=>"Psycharis", "given"=>"Vassilis"}, {"family"=>"Raptopoulou", "given"=>"Catherine P."}, {"family"=>"Kalofolias", "given"=>"Dimitris A."}, {"family"=>"Milios", "given"=>"Constantinos J."}, {"family"=>"Klouras", "given"=>"Nikolaos"}, {"family"=>"Perlepes", "given"=>"Spyros P."}],
-                                          "title"=>"CCDC 1024724: Experimental Crystal Structure Determination",
-                                          "container-title"=>"Cambridge Crystallographic Data Centre",
-                                          "issued"=>"2014",
-                                          "publisher_id"=>"BL.CCDC",
+      expect(response.first[:subj]).to eq("pid"=>"http://doi.org/10.5061/DRYAD.HT0HS",
+                                          "DOI"=>"10.5061/DRYAD.HT0HS",
+                                          "author"=>[{"family"=>"McTavish", "given"=>"Emily Jane"}, {"family"=>"Hillis", "given"=>"David M."}],
+                                          "title"=>"Data from: How does ascertainment bias in SNP analyses affect inferences about population history?",
+                                          "container-title"=>"Dryad Digital Repository",
+                                          "published"=>"2015",
+                                          "issued"=>"2015-04-08T14:37:53Z",
+                                          "publisher_id"=>"CDL.DRYAD",
                                           "registration_agency"=>"datacite",
                                           "tracked"=>true,
-                                          "type"=>nil)
+                                          "type"=>"dataset")
     end
   end
 

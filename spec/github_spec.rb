@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Orcid, type: :model, vcr: true do
+describe Github, type: :model, vcr: true do
   before(:each) do
     allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8))
     subject.count = 0
@@ -10,29 +10,29 @@ describe Orcid, type: :model, vcr: true do
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url).to eq("http://search.datacite.org/api?q=relatedIdentifier%3AURL%5C%3Ahttps%5C%3A%5C%2F%5C%2Fgithub.com*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with zero rows" do
-      expect(subject.get_query_url(rows: 0)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 0)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3AURL%5C%3Ahttps%5C%3A%5C%2F%5C%2Fgithub.com*&start=0&rows=0&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with different from_date and until_date" do
-      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(from_date: "2015-04-05", until_date: "2015-04-05")).to eq("http://search.datacite.org/api?q=relatedIdentifier%3AURL%5C%3Ahttps%5C%3A%5C%2F%5C%2Fgithub.com*&start=0&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-05T00%3A00%3A00Z+TO+2015-04-05T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with offset" do
-      expect(subject.get_query_url(offset: 250)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=250&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(offset: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3AURL%5C%3Ahttps%5C%3A%5C%2F%5C%2Fgithub.com*&start=250&rows=1000&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
 
     it "with rows" do
-      expect(subject.get_query_url(rows: 250)).to eq("http://search.datacite.org/api?q=nameIdentifier%3AORCID%5C%3A*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CnameIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
+      expect(subject.get_query_url(rows: 250)).to eq("http://search.datacite.org/api?q=relatedIdentifier%3AURL%5C%3Ahttps%5C%3A%5C%2F%5C%2Fgithub.com*&start=0&rows=250&fl=doi%2Ccreator%2Ctitle%2Cpublisher%2CpublicationYear%2CresourceTypeGeneral%2Cdatacentre_symbol%2CrelatedIdentifier%2Cxml%2Cminted%2Cupdated&fq=updated%3A%5B2015-04-07T00%3A00%3A00Z+TO+2015-04-08T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&wt=json")
     end
   end
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(55)
+      expect(subject.get_total).to eq(19)
     end
 
     it "with no works" do
@@ -48,7 +48,7 @@ describe Orcid, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.queue_jobs(all: true)
-      expect(response).to eq(55)
+      expect(response).to eq(19)
     end
   end
 
@@ -60,9 +60,9 @@ describe Orcid, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.get_data
-      expect(response["data"]["response"]["numFound"]).to eq(55)
+      expect(response["data"]["response"]["numFound"]).to eq(19)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1226424")
+      expect(doc["doi"]).to eq("10.5281/ZENODO.16650")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
@@ -93,10 +93,13 @@ describe Orcid, type: :model, vcr: true do
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response.length).to eq(56)
-      expect(response.first[:prefix]).to eq("10.6084")
+      expect(response.length).to eq(63)
+      expect(response.first[:prefix]).to eq("10.1594")
       expect(response.first[:message_type]).to eq("contribution")
-      expect(response.first[:relation]).to eq("subj_id"=>"http://orcid.org/0000-0001-8478-7549", "obj_id"=>"http://doi.org/10.6084/M9.FIGSHARE.1226424", "source_id"=>"datacite_orcid", "publisher_id"=>"CDL.DIGSCI")
+      expect(response.first[:relation]).to eq("subj_id"=>"http://orcid.org/0000-0002-4133-2218",
+                                              "obj_id"=>"http://doi.org/10.1594/PANGAEA.733793",
+                                              "source_id"=>"datacite_orcid",
+                                              "publisher_id"=>"TIB.PANGAEA")
 
       expect(response.first[:obj]).to eq("pid"=>"http://doi.org/10.1594/PANGAEA.733793",
                                          "DOI"=>"10.1594/PANGAEA.733793",
@@ -123,7 +126,7 @@ describe Orcid, type: :model, vcr: true do
       result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      expect(response.length).to eq(56)
+      expect(response.length).to eq(63)
       deposit = response.first
       expect(deposit).to eq("errors"=>[{"status"=>400, "title"=>"the server responded with status 422"}])
     end

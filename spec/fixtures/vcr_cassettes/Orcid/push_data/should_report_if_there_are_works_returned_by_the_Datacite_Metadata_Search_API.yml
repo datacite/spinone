@@ -5,9 +5,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.733793","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.733793","DOI":"10.1594/PANGAEA.733793","author":[],"title":"Paleomagnetic
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4133-2218","obj_id":"http://doi.org/10.1594/PANGAEA.733793","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.733793","DOI":"10.1594/PANGAEA.733793","author":[],"title":"Paleomagnetic
         measurements of 10 sediment profiles from the Antarctic continental slope","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[1989]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","published":"1989","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -32,27 +32,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.844920'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - b41cf3d2-7d24-419e-ab2a-4d22b9185953
+      X-Runtime:
+      - '0.228755'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 833f3549-d10b-4fe4-bd98-30866fc3d53e
       Date:
-      - Sun, 13 Mar 2016 11:16:06 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -60,9 +61,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.733883","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.733883","DOI":"10.1594/PANGAEA.733883","author":[],"title":"Metadata
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4133-2218","obj_id":"http://doi.org/10.1594/PANGAEA.733883","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.733883","DOI":"10.1594/PANGAEA.733883","author":[],"title":"Metadata
         and number of samples per gravity corer sediment profile","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2010]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","published":"2010","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -87,27 +88,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.033507'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 744ca510-08c6-462f-814e-be6f06a9fa59
+      X-Runtime:
+      - '0.124246'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - de7d3056-d393-475b-89ff-5cdbd0fa9373
       Date:
-      - Sun, 13 Mar 2016 11:16:10 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -115,13 +117,13 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.771774","obj_id":"http://orcid.org/0000-0002-8414-7389","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.771774","DOI":"10.1594/PANGAEA.771774","author":[],"title":"Last
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-8414-7389","obj_id":"http://doi.org/10.1594/PANGAEA.771774","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.771774","DOI":"10.1594/PANGAEA.771774","author":[],"title":"Last
         glacial maximum sediment record of the southern Weddell Sea shelf, supplement
         to: Hillenbrand, Claus-Dieter; Melles, Martin; Kuhn, Gerhard; Larter, Robert
         D (2012): Marine geological constraints for the grounding-line position of
         the Antarctic Ice Sheet on the southern Weddell Sea shelf at the Last Glacial
         Maximum. Quaternary Science Reviews, 32, 25-47","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2011]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Data Publisher for Earth & Environmental Science","published":"2011","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -146,27 +148,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.116135'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 26470d2f-f68d-4311-9c98-033aea2f05d3
+      X-Runtime:
+      - '0.128928'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 79941c7a-7769-41c8-ae96-32dfa7728dd7
       Date:
-      - Sun, 13 Mar 2016 11:16:15 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -174,8 +177,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.735810","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735810","DOI":"10.6084/M9.FIGSHARE.735810","author":[],"title":"Ant
-        Species Presence Data for Summer 2012 at the Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.735810","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735810","DOI":"10.6084/M9.FIGSHARE.735810","author":[],"title":"Ant
+        Species Presence Data for Summer 2012 at the Fort Worth Nature Center, Texas","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -200,27 +203,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.009089'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - fd91506f-8fbb-41c4-99b5-f4122799c0ae
+      X-Runtime:
+      - '0.123768'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 5bc06880-8df9-4fae-829e-513af73cb797
       Date:
-      - Sun, 13 Mar 2016 11:16:20 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -228,8 +232,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.735811","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735811","DOI":"10.6084/M9.FIGSHARE.735811","author":[],"title":"Pitfall
-        Trap Locations in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.735811","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.735811","DOI":"10.6084/M9.FIGSHARE.735811","author":[],"title":"Pitfall
+        Trap Locations in the Fort Worth Nature Center","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -254,27 +258,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.958814'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - fec52c6b-6a42-4dd9-9854-c2c558ddde96
+      X-Runtime:
+      - '0.130932'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 1fc0e7fd-17c1-4cbd-83d4-f9da0f47aae5
       Date:
-      - Sun, 13 Mar 2016 11:16:23 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -282,8 +287,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1041547","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1041547","DOI":"10.6084/M9.FIGSHARE.1041547","author":[],"title":"Jills
-        of All Trades: Ant Diversity and Versatility in the Cross Timbers Ecoregion","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1041547","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1041547","DOI":"10.6084/M9.FIGSHARE.1041547","author":[],"title":"Jills
+        of All Trades: Ant Diversity and Versatility in the Cross Timbers Ecoregion","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -308,27 +313,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.850834'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 8086463e-473b-41fc-acfb-b005d6a12c16
+      X-Runtime:
+      - '0.122166'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 142ef159-ed55-43d6-bfa3-14d9d133ceac
       Date:
-      - Sun, 13 Mar 2016 11:16:28 GMT
+      - Thu, 21 Apr 2016 13:37:54 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -336,9 +342,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.5284/1030449","obj_id":"http://orcid.org/0000-0003-3938-899X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0003-3938-899X","obj_id":"http://doi.org/10.5284/1030449","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{},"obj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
         Rural Settlement of Roman Britain: an online resource","container-title":"Archaeology
-        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Service","published":"2015","issued":null,"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -363,27 +369,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.647704'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 29a50c9a-f3fc-4259-8fdc-7a1fe948d90b
+      X-Runtime:
+      - '0.149724'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 106d13c2-6423-4b0b-a115-bfd6e031260c
       Date:
-      - Sun, 13 Mar 2016 11:16:31 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -391,9 +398,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.5284/1030449","obj_id":"http://orcid.org/0000-0002-2725-6730","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-2725-6730","obj_id":"http://doi.org/10.5284/1030449","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"BL.ADS","subj":{},"obj":{"pid":"http://doi.org/10.5284/1030449","DOI":"10.5284/1030449","author":[],"title":"The
         Rural Settlement of Roman Britain: an online resource","container-title":"Archaeology
-        Data Service","issued":{"date-parts":[[2015]]},"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Service","published":"2015","issued":null,"publisher_id":"BL.ADS","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.5284","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -418,27 +425,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.075247'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 7ac23ce4-4195-4ec2-b788-5d9849859fa0
+      X-Runtime:
+      - '0.182800'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - e29558b1-473e-475f-8880-6b1ac2c602f6
       Date:
-      - Sun, 13 Mar 2016 11:16:35 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -446,14 +454,14 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.843846","obj_id":"http://orcid.org/0000-0002-0931-8707","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.843846","DOI":"10.1594/PANGAEA.843846","author":[],"title":"Seasonality
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-0931-8707","obj_id":"http://doi.org/10.1594/PANGAEA.843846","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.843846","DOI":"10.1594/PANGAEA.843846","author":[],"title":"Seasonality
         in pH and temperature for shallow zones of the Bering Sea from measurements
         of coral Clathromorphum nereostratum, supplement to: Fietzke, Jan; Ragazzola,
         Federica; Halfar, Jochen; Dietze, Heiner; Foster, Laura C; Hansteen, Thor
         H; Eisenhauer, Anton; Steneck, Robert S (2015): Century-scale trends and seasonality
         in pH and temperature for shallow zones of the Bering Sea. Proceedings of
         the National Academy of Sciences, 201419216","container-title":"PANGAEA -
-        Data Publisher for Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Data Publisher for Earth & Environmental Science","published":"2015","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -478,27 +486,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.923275'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - f38a0dd3-73d4-4ab9-91ec-209f37fd87aa
+      X-Runtime:
+      - '0.149718'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - ec47b87d-9c28-4871-9057-1ac10da2ad3d
       Date:
-      - Sun, 13 Mar 2016 11:16:40 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -506,9 +515,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.843860","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.843860","DOI":"10.1594/PANGAEA.843860","author":[],"title":"Documentation
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4133-2218","obj_id":"http://doi.org/10.1594/PANGAEA.843860","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.843860","DOI":"10.1594/PANGAEA.843860","author":[],"title":"Documentation
         of sediment core PS1619-2","container-title":"PANGAEA - Data Publisher for
-        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Earth & Environmental Science","published":"2015","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -533,27 +542,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.427651'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 12bc29c1-d65e-4f51-8702-b4eb63489786
+      X-Runtime:
+      - '0.151908'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 19a74b6b-dce4-4be1-b17e-33d443ecc910
       Date:
-      - Sun, 13 Mar 2016 11:16:45 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -561,9 +571,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.1594/PANGAEA.843865","obj_id":"http://orcid.org/0000-0002-4133-2218","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{"pid":"http://doi.org/10.1594/PANGAEA.843865","DOI":"10.1594/PANGAEA.843865","author":[],"title":"Documentation
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4133-2218","obj_id":"http://doi.org/10.1594/PANGAEA.843865","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","subj":{},"obj":{"pid":"http://doi.org/10.1594/PANGAEA.843865","DOI":"10.1594/PANGAEA.843865","author":[],"title":"Documentation
         of sediment core PS1637-3","container-title":"PANGAEA - Data Publisher for
-        Earth & Environmental Science","issued":{"date-parts":[[2015]]},"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Earth & Environmental Science","published":"2015","issued":null,"publisher_id":"TIB.PANGAEA","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.1594","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -588,27 +598,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.191516'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 77a347fa-9bb4-40f3-b4eb-e5c889475578
+      X-Runtime:
+      - '0.129348'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 02e9042d-7022-4fe9-80c3-5d23ce8f92c6
       Date:
-      - Sun, 13 Mar 2016 11:16:50 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -616,8 +627,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.707350","obj_id":"http://orcid.org/0000-0001-9964-6984","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707350","DOI":"10.6084/M9.FIGSHARE.707350","author":[],"title":"Working
-        memory for visual and haptic targets: A study using the interference paradigm","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-9964-6984","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.707350","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707350","DOI":"10.6084/M9.FIGSHARE.707350","author":[],"title":"Working
+        memory for visual and haptic targets: A study using the interference paradigm","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -642,27 +653,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.908362'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 0e716b89-bb12-406c-b76e-dd364bcd7802
+      X-Runtime:
+      - '0.146973'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 725a817b-5e61-4db1-941b-4a978ade1d79
       Date:
-      - Sun, 13 Mar 2016 11:16:53 GMT
+      - Thu, 21 Apr 2016 13:37:55 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -670,9 +682,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.707351","obj_id":"http://orcid.org/0000-0001-9964-6984","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707351","DOI":"10.6084/M9.FIGSHARE.707351","author":[],"title":"Theta
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-9964-6984","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.707351","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.707351","DOI":"10.6084/M9.FIGSHARE.707351","author":[],"title":"Theta
         power modulations during the explicit recognition of unfamiliar 3-D objects
-        explored haptically","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        explored haptically","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -697,27 +709,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.282766'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - a83effbb-02be-49ff-8133-4fee54afdb1a
+      X-Runtime:
+      - '0.197127'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - a9885acf-19fa-42b5-9b49-c99b40cc2b65
       Date:
-      - Sun, 13 Mar 2016 11:16:59 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -725,8 +738,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.778701","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.778701","DOI":"10.6084/M9.FIGSHARE.778701","author":[],"title":"Pedillus
-        terminalis and mimic species","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.778701","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.778701","DOI":"10.6084/M9.FIGSHARE.778701","author":[],"title":"Pedillus
+        terminalis and mimic species","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -751,27 +764,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.987595'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 9158c117-88dd-457f-8e58-d6c6abe33354
+      X-Runtime:
+      - '0.180184'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - b349718b-4485-41e0-98eb-c7fe34c8a73d
       Date:
-      - Sun, 13 Mar 2016 11:17:04 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -779,9 +793,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.779705","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.779705","DOI":"10.6084/M9.FIGSHARE.779705","author":[],"title":"Ants
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.779705","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.779705","DOI":"10.6084/M9.FIGSHARE.779705","author":[],"title":"Ants
         in the Grassland:their imortance and potential as indicators of ecosystem
-        health","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        health","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -806,27 +820,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.138140'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 9a0e10b4-f261-4742-8300-5cbb397def73
+      X-Runtime:
+      - '0.122044'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 2e21cc78-492e-470d-917a-67f3807b4bb2
       Date:
-      - Sun, 13 Mar 2016 11:17:08 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -834,8 +849,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.745301","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745301","DOI":"10.6084/M9.FIGSHARE.745301","author":[],"title":"Behavioral
-        Model for Comanche harvester ant interactions","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.745301","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745301","DOI":"10.6084/M9.FIGSHARE.745301","author":[],"title":"Behavioral
+        Model for Comanche harvester ant interactions","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -860,27 +875,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.035353'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 333714cd-b289-4977-8c85-524fb8e6db89
+      X-Runtime:
+      - '0.128746'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 77c76ee8-e719-4290-8886-2afc9df5501f
       Date:
-      - Sun, 13 Mar 2016 11:17:13 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -888,9 +904,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.745313","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745313","DOI":"10.6084/M9.FIGSHARE.745313","author":[],"title":"The
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.745313","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.745313","DOI":"10.6084/M9.FIGSHARE.745313","author":[],"title":"The
         courtship behavior of two Zygoballus sp. (Araneae: Salticidae): Final Summer
-        Project Report (1983)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Project Report (1983)","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -915,27 +931,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.804684'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 6e9b05af-a559-469e-b97e-b1a855f92eca
+      X-Runtime:
+      - '0.122828'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 794f4dcc-cb87-43b1-862f-064cc5d1f30c
       Date:
-      - Sun, 13 Mar 2016 11:17:17 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -943,8 +960,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.746960","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.746960","DOI":"10.6084/M9.FIGSHARE.746960","author":[],"title":"Ant
-        Sampling Sites in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.746960","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.746960","DOI":"10.6084/M9.FIGSHARE.746960","author":[],"title":"Ant
+        Sampling Sites in the Fort Worth Nature Center","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -969,27 +986,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.670515'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 56628abe-7f5c-49b7-bca3-40f45f88a6a0
+      X-Runtime:
+      - '0.129618'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 6abe4ed5-09dd-4304-b52b-7fc76f4d3d42
       Date:
-      - Sun, 13 Mar 2016 11:17:23 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -997,9 +1015,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.760716","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.760716","DOI":"10.6084/M9.FIGSHARE.760716","author":[],"title":"Door
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.760716","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.760716","DOI":"10.6084/M9.FIGSHARE.760716","author":[],"title":"Door
         Construction Behavior in the Mygalomorph Spider Family Antrodiaetidae and
-        One Member of the Family Ctenizidae (Araneae: Mygalomorphae)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        One Member of the Family Ctenizidae (Araneae: Mygalomorphae)","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1024,27 +1042,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '2.619619'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 2f7dae03-b695-4436-9a89-184004aa8e32
+      X-Runtime:
+      - '0.129669'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 7bd651d6-eaf5-46b1-80ca-ad10f064693a
       Date:
-      - Sun, 13 Mar 2016 11:17:30 GMT
+      - Thu, 21 Apr 2016 13:37:56 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1052,9 +1071,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769272","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769272","DOI":"10.6084/M9.FIGSHARE.769272","author":[],"title":"Testing
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.769272","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769272","DOI":"10.6084/M9.FIGSHARE.769272","author":[],"title":"Testing
         central place foraging theory in the ant genus Pogonmyrmex: a review of the
-        literature from 1997 - 2008","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        literature from 1997 - 2008","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1079,27 +1098,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.769161'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 845ffd09-7ecb-4d76-b282-98083960da51
+      X-Runtime:
+      - '0.138906'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 23868a1b-38f3-4ac8-a62b-00f123961041
       Date:
-      - Sun, 13 Mar 2016 11:17:36 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1107,8 +1127,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769271","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769271","DOI":"10.6084/M9.FIGSHARE.769271","author":[],"title":"Determination
-        of sex ratios in ants","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.769271","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769271","DOI":"10.6084/M9.FIGSHARE.769271","author":[],"title":"Determination
+        of sex ratios in ants","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1133,27 +1153,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.152423'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 5142c8ac-5150-4cbe-9840-802645b5a617
+      X-Runtime:
+      - '0.174906'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - b08979bb-88c5-4de2-bd83-ff747bd621ee
       Date:
-      - Sun, 13 Mar 2016 11:17:41 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1161,9 +1182,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.769270","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769270","DOI":"10.6084/M9.FIGSHARE.769270","author":[],"title":"Preliminary
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.769270","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.769270","DOI":"10.6084/M9.FIGSHARE.769270","author":[],"title":"Preliminary
         Assessment  of the Arthropod and Ant Assemblages of Todd Island, March 14
-        and 28, 2010 (Fort Worth Nature Center, Fort Worth, Texas)","container-title":"Figshare","issued":{"date-parts":[[2013]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        and 28, 2010 (Fort Worth Nature Center, Fort Worth, Texas)","container-title":"Figshare","published":"2013","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1188,27 +1209,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.644800'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - b51386fd-309e-4f4a-a230-ac527c39402e
+      X-Runtime:
+      - '0.119199'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 77a12a74-5586-43fb-a414-40dac3f89aec
       Date:
-      - Sun, 13 Mar 2016 11:17:46 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1216,9 +1238,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368269","obj_id":"http://orcid.org/0000-0002-4000-4167","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368269","DOI":"10.6084/M9.FIGSHARE.1368269","author":[],"title":"ABO
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4000-4167","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368269","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368269","DOI":"10.6084/M9.FIGSHARE.1368269","author":[],"title":"ABO
         phenotype and innate isoagglutinin specificities as they arise from glycosidic
-        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1243,27 +1265,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.954442'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - b9914c24-7f6c-42a0-bc9c-fe7231b62065
+      X-Runtime:
+      - '0.122433'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - fb90c0c1-b963-4fbc-9697-39401ee58f5d
       Date:
-      - Sun, 13 Mar 2016 11:17:53 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1271,8 +1294,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368484","obj_id":"http://orcid.org/0000-0001-6176-2816","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368484","DOI":"10.6084/M9.FIGSHARE.1368484","author":[],"title":"Database
-        - Medical Education - Part I - The Double Standard Test. (version 1.0)","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-6176-2816","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368484","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368484","DOI":"10.6084/M9.FIGSHARE.1368484","author":[],"title":"Database
+        - Medical Education - Part I - The Double Standard Test. (version 1.0)","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1297,27 +1320,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.271910'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 57749b79-fd4c-4545-9150-5f26f8a07ef6
+      X-Runtime:
+      - '0.117880'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 2f68fdca-83a8-4ed6-b01b-7721cba10fc2
       Date:
-      - Sun, 13 Mar 2016 11:17:59 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1325,8 +1349,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368488","obj_id":"http://orcid.org/0000-0003-3796-827X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368488","DOI":"10.6084/M9.FIGSHARE.1368488","author":[],"title":"A
-        Novel Approach to Malware Detection using Static Classification","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0003-3796-827X","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368488","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368488","DOI":"10.6084/M9.FIGSHARE.1368488","author":[],"title":"A
+        Novel Approach to Malware Detection using Static Classification","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1351,27 +1375,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.333531'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 50aafe29-d417-434a-b41f-cc59082530dc
+      X-Runtime:
+      - '0.123878'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 828efab1-58d7-42d5-98c6-798043ffbd28
       Date:
-      - Sun, 13 Mar 2016 11:18:04 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1379,8 +1404,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368581","obj_id":"http://orcid.org/0000-0003-1073-887X","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368581","DOI":"10.6084/M9.FIGSHARE.1368581","author":[],"title":"Domain
-        decomposition without the agonizing pain","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0003-1073-887X","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368581","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368581","DOI":"10.6084/M9.FIGSHARE.1368581","author":[],"title":"Domain
+        decomposition without the agonizing pain","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1405,27 +1430,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.303726'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - f31d0685-4735-4afd-b8c2-0f9fd33646e0
+      X-Runtime:
+      - '0.118966'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - b28002c8-add0-4093-aaf9-2fb56ae863c9
       Date:
-      - Sun, 13 Mar 2016 11:18:08 GMT
+      - Thu, 21 Apr 2016 13:37:57 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1433,8 +1459,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368663","obj_id":"http://orcid.org/0000-0001-9873-8342","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368663","DOI":"10.6084/M9.FIGSHARE.1368663","author":[],"title":"Science
-        Metrics In Colombia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-9873-8342","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368663","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368663","DOI":"10.6084/M9.FIGSHARE.1368663","author":[],"title":"Science
+        Metrics In Colombia","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1459,27 +1485,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.539319'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 6c6d6c89-b538-4bf6-bcdd-fe3f70d609f7
+      X-Runtime:
+      - '0.131075'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - e2587aaf-f477-4437-b1d4-1d8ca9f23cb2
       Date:
-      - Sun, 13 Mar 2016 11:18:13 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1487,9 +1514,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368671","obj_id":"http://orcid.org/0000-0002-3437-4911","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368671","DOI":"10.6084/M9.FIGSHARE.1368671","author":[],"title":"Global
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3437-4911","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368671","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368671","DOI":"10.6084/M9.FIGSHARE.1368671","author":[],"title":"Global
         sensitivity analysis of the climatevegetation system to astronomical forcing:
-        an emulator-based approach","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        an emulator-based approach","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1514,27 +1541,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.350035'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 7f6d86f7-d366-4a9e-86e3-0e782ceafee7
+      X-Runtime:
+      - '0.143048'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - ec8a4933-beec-491e-87ed-db43c7837076
       Date:
-      - Sun, 13 Mar 2016 11:18:16 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1542,8 +1570,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368728","obj_id":"http://orcid.org/0000-0001-9873-8342","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368728","DOI":"10.6084/M9.FIGSHARE.1368728","author":[],"title":"Factors
-        associated with Human T. cruzi infection","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-9873-8342","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368728","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368728","DOI":"10.6084/M9.FIGSHARE.1368728","author":[],"title":"Factors
+        associated with Human T. cruzi infection","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1568,27 +1596,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.777744'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 4fac8807-fb27-43bf-987f-0515ce42a636
+      X-Runtime:
+      - '0.141756'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 5a849d69-6d3b-40f8-a69c-d71f3c343680
       Date:
-      - Sun, 13 Mar 2016 11:18:20 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1596,8 +1625,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368744","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368744","DOI":"10.6084/M9.FIGSHARE.1368744","author":[],"title":"Circle-based
-        construction Rosette Map f86v","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-7757-8001","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368744","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368744","DOI":"10.6084/M9.FIGSHARE.1368744","author":[],"title":"Circle-based
+        construction Rosette Map f86v","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1622,27 +1651,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.640181'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 51500f7d-c97f-4e20-8682-8c0d81dec1a1
+      X-Runtime:
+      - '0.128772'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - c85d244c-73e9-4034-ae7f-8cc40f733edd
       Date:
-      - Sun, 13 Mar 2016 11:18:23 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1650,8 +1680,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368745","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368745","DOI":"10.6084/M9.FIGSHARE.1368745","author":[],"title":"Square
-        based construction Rosette Map","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-7757-8001","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368745","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368745","DOI":"10.6084/M9.FIGSHARE.1368745","author":[],"title":"Square
+        based construction Rosette Map","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1676,27 +1706,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.079703'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 0b399334-c339-432a-a98d-2d3488b3542d
+      X-Runtime:
+      - '0.122611'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 7e074022-80e1-4693-bd23-de877399efe2
       Date:
-      - Sun, 13 Mar 2016 11:18:26 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1704,9 +1735,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368746","obj_id":"http://orcid.org/0000-0001-7757-8001","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368746","DOI":"10.6084/M9.FIGSHARE.1368746","author":[],"title":"Circling
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-7757-8001","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368746","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368746","DOI":"10.6084/M9.FIGSHARE.1368746","author":[],"title":"Circling
         a square: The geometry of Beinecke MS408 folio 86v and how to construct the
-        scaffold of the Rosette map with compass and straightedge","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        scaffold of the Rosette map with compass and straightedge","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1731,27 +1762,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.548296'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 194d881c-8ef1-4269-8403-d9202c672dfe
+      X-Runtime:
+      - '0.119825'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 5e2cb2b6-61b9-4330-9e3a-0486f441e922
       Date:
-      - Sun, 13 Mar 2016 11:18:30 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1759,9 +1791,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368761","obj_id":"http://orcid.org/0000-0001-6176-2816","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368761","DOI":"10.6084/M9.FIGSHARE.1368761","author":[],"title":"Acta
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-6176-2816","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368761","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368761","DOI":"10.6084/M9.FIGSHARE.1368761","author":[],"title":"Acta
         01 de 2015  Departamento de Ciencias Fisiolgicas (ECB)  Facultad de Salud
-        - Universidad del Valle","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        - Universidad del Valle","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1786,27 +1818,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.738515'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - b8446758-8fc9-4b62-9c63-d6d0bf3aee03
+      X-Runtime:
+      - '0.117647'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 104cbc40-4c54-43c3-ab2f-f40be88060ad
       Date:
-      - Sun, 13 Mar 2016 11:18:34 GMT
+      - Thu, 21 Apr 2016 13:37:58 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1814,8 +1847,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368774","obj_id":"http://orcid.org/0000-0002-0311-9774","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368774","DOI":"10.6084/M9.FIGSHARE.1368774","author":[],"title":"Tools
-        for reproducible and accessible science: KnitR, VMs and OMERO","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-0311-9774","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1368774","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1368774","DOI":"10.6084/M9.FIGSHARE.1368774","author":[],"title":"Tools
+        for reproducible and accessible science: KnitR, VMs and OMERO","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1840,27 +1873,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.495417'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - c518212e-281d-48b7-b5a1-fb4a0b1a3c0c
+      X-Runtime:
+      - '0.120908'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 94185e8e-5e9f-4a2d-adc4-8e227a7d798d
       Date:
-      - Sun, 13 Mar 2016 11:18:37 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1868,9 +1902,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370882","obj_id":"http://orcid.org/0000-0001-6921-5307","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370882","DOI":"10.6084/M9.FIGSHARE.1370882","author":[],"title":"Robot
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-6921-5307","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370882","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370882","DOI":"10.6084/M9.FIGSHARE.1370882","author":[],"title":"Robot
         Navigation for Monitoring Unsteady Environmental Boundaries without Field
-        Gradient Estimation","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        Gradient Estimation","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1895,27 +1929,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.601481'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 2e6ecebb-3936-4c19-b2f0-4a62ccf045aa
+      X-Runtime:
+      - '0.141191'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 9a273ec6-3028-449e-8ee6-92d89137cd98
       Date:
-      - Sun, 13 Mar 2016 11:18:41 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1923,9 +1958,9 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370854","obj_id":"http://orcid.org/0000-0002-4000-4167","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370854","DOI":"10.6084/M9.FIGSHARE.1370854","author":[],"title":"ABO
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-4000-4167","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1370854","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1370854","DOI":"10.6084/M9.FIGSHARE.1370854","author":[],"title":"ABO
         phenotype and innate isoagglutinin specificities as they arise from glycosidic
-        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+        exclusion and relate to human reproduction.  A hypothesis*","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -1950,27 +1985,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.561276'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - f954c457-dae2-49b4-95bf-31ad79310b9d
+      X-Runtime:
+      - '0.140325'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - fbeb062d-63ba-4a8c-bdd2-1dd98774a9a0
       Date:
-      - Sun, 13 Mar 2016 11:18:45 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -1978,8 +2014,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1226424","obj_id":"http://orcid.org/0000-0001-8478-7549","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1226424","DOI":"10.6084/M9.FIGSHARE.1226424","author":[],"title":"Color
-        mememaps of self-balancing strategies","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-8478-7549","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1226424","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1226424","DOI":"10.6084/M9.FIGSHARE.1226424","author":[],"title":"Color
+        mememaps of self-balancing strategies","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2004,27 +2040,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.157646'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - d719a25e-d053-4fea-8d94-3b44a051ab77
+      X-Runtime:
+      - '0.145536'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - be56f959-5b1b-453b-a259-60cfd13f4726
       Date:
-      - Sun, 13 Mar 2016 11:18:48 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2032,8 +2069,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371006","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371006","DOI":"10.6084/M9.FIGSHARE.1371006","author":[],"title":"Comanche
-        harvester ant colonies in GL site of FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371006","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371006","DOI":"10.6084/M9.FIGSHARE.1371006","author":[],"title":"Comanche
+        harvester ant colonies in GL site of FWNC","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2058,27 +2095,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.903837'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 09c68f83-1880-4327-95d4-26fcccf41cd3
+      X-Runtime:
+      - '0.125811'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - bf6ebaff-8485-43fd-9c9b-7c25f1b8c067
       Date:
-      - Sun, 13 Mar 2016 11:18:50 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2086,8 +2124,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371005","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371005","DOI":"10.6084/M9.FIGSHARE.1371005","author":[],"title":"Comanche
-        harvester ant colonies at EP in the FWNC","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371005","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371005","DOI":"10.6084/M9.FIGSHARE.1371005","author":[],"title":"Comanche
+        harvester ant colonies at EP in the FWNC","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2112,27 +2150,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.048737'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - a0765058-a86a-45bb-83f7-aa841042bcd2
+      X-Runtime:
+      - '0.153085'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 371acbba-8b09-4338-8b07-07894db8bfc8
       Date:
-      - Sun, 13 Mar 2016 11:18:53 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2140,8 +2179,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371077","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371077","DOI":"10.6084/M9.FIGSHARE.1371077","author":[],"title":"Survey
-        of 3''GG gRNA sites in 6 genomes","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371077","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371077","DOI":"10.6084/M9.FIGSHARE.1371077","author":[],"title":"Survey
+        of 3''GG gRNA sites in 6 genomes","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":null},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2166,27 +2205,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.043062'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 8d09c256-0ccf-4bea-998f-00bd94b04947
+      X-Runtime:
+      - '0.126801'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 04f478d9-b53f-4c17-9b32-37cc029a88f6
       Date:
-      - Sun, 13 Mar 2016 11:18:55 GMT
+      - Thu, 21 Apr 2016 13:37:59 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2194,8 +2234,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371009","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371009","DOI":"10.6084/M9.FIGSHARE.1371009","author":[],"title":"Caenorhabditis
-        elegans annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371009","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371009","DOI":"10.6084/M9.FIGSHARE.1371009","author":[],"title":"Caenorhabditis
+        elegans annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2220,27 +2260,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.996122'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 65ba64a9-6343-4556-a5c5-4eff9e9c716b
+      X-Runtime:
+      - '0.129170'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 07b950b9-61d9-4623-99f2-2f7d7d6d7794
       Date:
-      - Sun, 13 Mar 2016 11:18:58 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2248,8 +2289,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371008","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371008","DOI":"10.6084/M9.FIGSHARE.1371008","author":[],"title":"Caenorhabditis
-        elegans 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371008","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371008","DOI":"10.6084/M9.FIGSHARE.1371008","author":[],"title":"Caenorhabditis
+        elegans 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2274,27 +2315,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.881900'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - ae65d801-c4bb-4558-b642-3a0c8fc161c1
+      X-Runtime:
+      - '0.145937'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 874bcd4d-4e50-49dd-aad7-d7ae15b87295
       Date:
-      - Sun, 13 Mar 2016 11:19:00 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2302,8 +2344,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371010","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371010","DOI":"10.6084/M9.FIGSHARE.1371010","author":[],"title":"Danio
-        rerio 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371010","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371010","DOI":"10.6084/M9.FIGSHARE.1371010","author":[],"title":"Danio
+        rerio 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2328,27 +2370,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.059205'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - bf89f4cf-a2c8-409b-821e-db24d0b3dad7
+      X-Runtime:
+      - '0.131771'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - d5fd24c8-e353-4e82-894b-1a3869a4a1af
       Date:
-      - Sun, 13 Mar 2016 11:19:03 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2356,8 +2399,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371011","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371011","DOI":"10.6084/M9.FIGSHARE.1371011","author":[],"title":"Drosophila
-        melanogaster 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371011","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371011","DOI":"10.6084/M9.FIGSHARE.1371011","author":[],"title":"Drosophila
+        melanogaster 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2382,27 +2425,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.568174'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 8254bc35-cf28-4762-a83a-449d23cab1d9
+      X-Runtime:
+      - '0.149535'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - b66faa82-35c0-4a26-a92d-e10421dbc912
       Date:
-      - Sun, 13 Mar 2016 11:19:06 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2410,8 +2454,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371013","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371013","DOI":"10.6084/M9.FIGSHARE.1371013","author":[],"title":"Homo
-        sapiens 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371013","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371013","DOI":"10.6084/M9.FIGSHARE.1371013","author":[],"title":"Homo
+        sapiens 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2436,27 +2480,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '0.824915'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - d4f3fccc-d4cd-498b-9e71-4fbb78685d00
+      X-Runtime:
+      - '0.136224'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - a6be1e29-8074-4895-8c16-7116134dc7af
       Date:
-      - Sun, 13 Mar 2016 11:19:09 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2464,8 +2509,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371014","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371014","DOI":"10.6084/M9.FIGSHARE.1371014","author":[],"title":"Mus
-        musculus 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371014","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371014","DOI":"10.6084/M9.FIGSHARE.1371014","author":[],"title":"Mus
+        musculus 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2490,27 +2535,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.442507'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - db035bad-383d-4984-ab81-0474e9e5eac2
+      X-Runtime:
+      - '0.122529'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 877d9324-e969-4182-be1b-6745083b4b3f
       Date:
-      - Sun, 13 Mar 2016 11:19:12 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2518,8 +2564,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371012","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371012","DOI":"10.6084/M9.FIGSHARE.1371012","author":[],"title":"Drosophila
-        melanogaster annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371012","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371012","DOI":"10.6084/M9.FIGSHARE.1371012","author":[],"title":"Drosophila
+        melanogaster annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2544,27 +2590,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '2.292357'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 1ec32446-5272-40b2-b436-82d2d2f0ba37
+      X-Runtime:
+      - '0.119312'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 06562a2f-bde9-4590-8772-a02de3048efc
       Date:
-      - Sun, 13 Mar 2016 11:19:16 GMT
+      - Thu, 21 Apr 2016 13:38:00 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2572,8 +2619,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371015","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371015","DOI":"10.6084/M9.FIGSHARE.1371015","author":[],"title":"Saccharomyces
-        cerevisiae 3 prime GG gRNAs per Gene","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371015","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371015","DOI":"10.6084/M9.FIGSHARE.1371015","author":[],"title":"Saccharomyces
+        cerevisiae 3 prime GG gRNAs per Gene","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2598,27 +2645,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.802355'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - fcd6f04e-1da0-4f0f-9894-b865cbb088ec
+      X-Runtime:
+      - '0.124788'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 0590c59f-f131-48f9-be94-397251d65621
       Date:
-      - Sun, 13 Mar 2016 11:19:20 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2626,8 +2674,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371017","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371017","DOI":"10.6084/M9.FIGSHARE.1371017","author":[],"title":"Danio
-        rerio annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371017","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371017","DOI":"10.6084/M9.FIGSHARE.1371017","author":[],"title":"Danio
+        rerio annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2652,27 +2700,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.872258'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 4cb286e9-08a6-4105-87d3-4cfcd9b76c7e
+      X-Runtime:
+      - '0.130238'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - c40761b3-148c-45a6-97c9-f2f64104a009
       Date:
-      - Sun, 13 Mar 2016 11:19:25 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2680,8 +2729,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371018","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371018","DOI":"10.6084/M9.FIGSHARE.1371018","author":[],"title":"Mus
-        musculus annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371018","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371018","DOI":"10.6084/M9.FIGSHARE.1371018","author":[],"title":"Mus
+        musculus annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2706,27 +2755,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.761858'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - f6259141-7554-435e-9676-5086e37f54f7
+      X-Runtime:
+      - '0.145820'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 02c7ae10-28a1-4b6f-8650-59bf288bbaeb
       Date:
-      - Sun, 13 Mar 2016 11:19:29 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2734,8 +2784,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371016","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371016","DOI":"10.6084/M9.FIGSHARE.1371016","author":[],"title":"Saccharomyces
-        cerevisiae annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371016","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371016","DOI":"10.6084/M9.FIGSHARE.1371016","author":[],"title":"Saccharomyces
+        cerevisiae annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2760,27 +2810,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.542944'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - dfa0dffa-3b32-4db4-8615-09b5870ba6ad
+      X-Runtime:
+      - '0.119139'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - bffd63c6-61a7-4255-845f-07176be7bcd5
       Date:
-      - Sun, 13 Mar 2016 11:19:34 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2788,8 +2839,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371019","obj_id":"http://orcid.org/0000-0001-5921-2399","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371019","DOI":"10.6084/M9.FIGSHARE.1371019","author":[],"title":"Homo
-        sapiens annotated 3 prime GG motif gRNAs","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5921-2399","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371019","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371019","DOI":"10.6084/M9.FIGSHARE.1371019","author":[],"title":"Homo
+        sapiens annotated 3 prime GG motif gRNAs","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2814,27 +2865,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.831126'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 21d30237-397d-4e58-86c3-9df254ae2961
+      X-Runtime:
+      - '0.147434'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - dbf128d2-d931-451e-9784-75bf2024b814
       Date:
-      - Sun, 13 Mar 2016 11:19:38 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2842,8 +2894,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371114","obj_id":"http://orcid.org/0000-0001-5882-6823","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371114","DOI":"10.6084/M9.FIGSHARE.1371114","author":[],"title":"2015-04-03
-        WikiArabia GLAM-wiki","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5882-6823","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371114","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371114","DOI":"10.6084/M9.FIGSHARE.1371114","author":[],"title":"2015-04-03
+        WikiArabia GLAM-wiki","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2868,27 +2920,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.230885'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 0b758d95-aa81-4708-9a85-5081d66b3aaa
+      X-Runtime:
+      - '0.127871'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - e0b903c7-8e03-474f-9ca7-da374c8d6365
       Date:
-      - Sun, 13 Mar 2016 11:19:42 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2896,8 +2949,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1337953","obj_id":"http://orcid.org/0000-0001-5882-6823","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1337953","DOI":"10.6084/M9.FIGSHARE.1337953","author":[],"title":"ORCID
-        in Wikipedia","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0001-5882-6823","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1337953","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1337953","DOI":"10.6084/M9.FIGSHARE.1337953","author":[],"title":"ORCID
+        in Wikipedia","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2922,27 +2975,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.573667'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - b57391f4-2f67-4d97-8d70-a871a6a80aca
+      X-Runtime:
+      - '0.131767'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - e01295f3-40f3-4e9c-9db2-7c576386be52
       Date:
-      - Sun, 13 Mar 2016 11:19:46 GMT
+      - Thu, 21 Apr 2016 13:38:01 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -2950,8 +3004,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371137","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371137","DOI":"10.6084/M9.FIGSHARE.1371137","author":[],"title":"Comanche  harvester
-        ant in the Southwest Nature Preserve, Arlington, Texas","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371137","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371137","DOI":"10.6084/M9.FIGSHARE.1371137","author":[],"title":"Comanche  harvester
+        ant in the Southwest Nature Preserve, Arlington, Texas","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -2976,27 +3030,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.410059'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 2d4da402-ab17-42af-bec8-bc0afc0e7e00
+      X-Runtime:
+      - '0.139407'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - a8488469-c415-43bf-8a1e-d0f4c0bb8ef3
       Date:
-      - Sun, 13 Mar 2016 11:19:50 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3004,8 +3059,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371138","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371138","DOI":"10.6084/M9.FIGSHARE.1371138","author":[],"title":"Comanche
-        harvester ant in Todd Island (1)in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371138","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371138","DOI":"10.6084/M9.FIGSHARE.1371138","author":[],"title":"Comanche
+        harvester ant in Todd Island (1)in the Fort Worth Nature Center","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3030,27 +3085,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.363860'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 00be62ce-5276-4287-bc3c-953018daf7cc
+      X-Runtime:
+      - '0.195879'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - df1e3858-167b-4fd1-8d75-2b283377b154
       Date:
-      - Sun, 13 Mar 2016 11:19:54 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3058,8 +3114,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371139","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371139","DOI":"10.6084/M9.FIGSHARE.1371139","author":[],"title":"Comanche
-        harvester ant on Todd Island (2) in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2015]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1371139","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1371139","DOI":"10.6084/M9.FIGSHARE.1371139","author":[],"title":"Comanche
+        harvester ant on Todd Island (2) in the Fort Worth Nature Center","container-title":"Figshare","published":"2015","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3084,27 +3140,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.492736'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - ed790c72-98c7-418e-86cd-f6861fe7c5b3
+      X-Runtime:
+      - '0.128678'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 452d264a-1cf1-4973-8400-8e602386b664
       Date:
-      - Sun, 13 Mar 2016 11:19:58 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3112,8 +3169,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014351","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014351","DOI":"10.6084/M9.FIGSHARE.1014351","author":[],"title":"RDA
-        Triplot of  Ant Species Presence and Soil Type","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014351","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014351","DOI":"10.6084/M9.FIGSHARE.1014351","author":[],"title":"RDA
+        Triplot of  Ant Species Presence and Soil Type","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3138,27 +3195,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.626000'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - ed7f44b9-979b-40b1-9171-25dc51ca6389
+      X-Runtime:
+      - '0.124009'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 831a4276-64de-4a9d-a508-e14e2ec291f1
       Date:
-      - Sun, 13 Mar 2016 11:20:02 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3166,8 +3224,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014348","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014348","DOI":"10.6084/M9.FIGSHARE.1014348","author":[],"title":"RDA
-        Triplot of Species Presence","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014348","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014348","DOI":"10.6084/M9.FIGSHARE.1014348","author":[],"title":"RDA
+        Triplot of Species Presence","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3192,27 +3250,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.628901'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 339e7c9f-75ea-4201-9490-20fe9484e102
+      X-Runtime:
+      - '0.143532'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 12155ead-f6fb-49c6-aedd-5059d323dd9f
       Date:
-      - Sun, 13 Mar 2016 11:20:06 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3220,8 +3279,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014352","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014352","DOI":"10.6084/M9.FIGSHARE.1014352","author":[],"title":"RDA
-        Triplot of Ant Species Abundance at th Fort Worth Nature Center, Texas","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1014352","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1014352","DOI":"10.6084/M9.FIGSHARE.1014352","author":[],"title":"RDA
+        Triplot of Ant Species Abundance at th Fort Worth Nature Center, Texas","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"graphic"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3246,27 +3305,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.676801'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 714ffcc0-72e2-48d2-8523-3775fdc1757e
+      X-Runtime:
+      - '0.120739'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 0597d7bd-2c35-4356-89bd-7c44b581093e
       Date:
-      - Sun, 13 Mar 2016 11:20:11 GMT
+      - Thu, 21 Apr 2016 13:38:02 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3274,8 +3334,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008321","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008321","DOI":"10.6084/M9.FIGSHARE.1008321","author":[],"title":"Tracking
-        the Comanche Harvester Ant in the Fort Worth Nature Center","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008321","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008321","DOI":"10.6084/M9.FIGSHARE.1008321","author":[],"title":"Tracking
+        the Comanche Harvester Ant in the Fort Worth Nature Center","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3300,27 +3360,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.529231'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - dc2a3f0b-b275-46c1-988d-1e02e8485d86
+      X-Runtime:
+      - '0.123495'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - af6cf723-fa4d-448a-ae60-d1295dc343f2
       Date:
-      - Sun, 13 Mar 2016 11:20:14 GMT
+      - Thu, 21 Apr 2016 13:38:03 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3328,8 +3389,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008320","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008320","DOI":"10.6084/M9.FIGSHARE.1008320","author":[],"title":"Nest
-        Distribution of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1008320","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.1008320","DOI":"10.6084/M9.FIGSHARE.1008320","author":[],"title":"Nest
+        Distribution of the Comanche Harvester Ant","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3354,27 +3415,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.688444'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - 2ce876d1-0951-43c9-bdd3-a418aefdc896
+      X-Runtime:
+      - '0.135077'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - c8923d2d-dab8-4038-a94d-8db657ebef45
       Date:
-      - Sun, 13 Mar 2016 11:20:19 GMT
+      - Thu, 21 Apr 2016 13:38:03 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 - request:
@@ -3382,8 +3444,8 @@ http_interactions:
     uri: http://10.2.2.6/api/deposits
     body:
       encoding: UTF-8
-      string: '{"deposit":{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.999239","obj_id":"http://orcid.org/0000-0002-3546-1048","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.999239","DOI":"10.6084/M9.FIGSHARE.999239","author":[],"title":"Nest
-        Structure of the Comanche Harvester Ant","container-title":"Figshare","issued":{"date-parts":[[2014]]},"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"obj":{},"prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
+      string: '{"deposit":{"subj_id":"http://orcid.org/0000-0002-3546-1048","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.999239","relation_type_id":null,"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","subj":{},"obj":{"pid":"http://doi.org/10.6084/M9.FIGSHARE.999239","DOI":"10.6084/M9.FIGSHARE.999239","author":[],"title":"Nest
+        Structure of the Comanche Harvester Ant","container-title":"Figshare","published":"2014","issued":null,"publisher_id":"CDL.DIGSCI","registration_agency":"datacite","tracked":true,"type":"dataset"},"message_type":"contribution","prefix":"10.6084","source_token":"1c1de794-97bd-477b-a686-0a6b0d309bb4","callback":"http://10.2.2.14/api/agents"}}'
     headers:
       User-Agent:
       - Maremma - http://push.local
@@ -3408,27 +3470,28 @@ http_interactions:
       - no-cache
       Vary:
       - Accept-Encoding
-      X-Runtime:
-      - '1.690762'
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
+      X-Request-Id:
+      - a080b105-a991-4bf3-ac39-6fc526ea5be7
+      X-Runtime:
+      - '0.129638'
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      X-Request-Id:
-      - 4a0f6eed-cad8-4d6b-a028-1db10fc0262b
       Date:
-      - Sun, 13 Mar 2016 11:20:24 GMT
+      - Thu, 21 Apr 2016 13:38:03 GMT
       Set-Cookie:
       - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.24
+      - Phusion Passenger 5.0.27
       Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"error","error":"found unpermitted parameter: date-parts"}}'
+      string: '{"meta":{"status":"error","error":"found unpermitted parameters: author,
+        published"}}'
     http_version: 
   recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
 recorded_with: VCR 2.9.3

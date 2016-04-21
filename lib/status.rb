@@ -34,6 +34,7 @@ class Status
         'type' => 'status',
         'attributes' => {
           'datacite_crossref' => s['datacite_crossref'].to_i,
+          'github' => s['github'].to_i,
           'orcid' => s['orcid'].to_i,
           'orcid_update' => s['orcid_update'].to_i,
           'related_identifier' => s['related_identifier'].to_i,

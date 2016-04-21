@@ -6,7 +6,7 @@ class OrcidUpdate < Agent
   end
 
   def title
-    'ORCID (Auto-Update)'
+    'ORCID Auto-Update'
   end
 
   def description

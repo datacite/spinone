@@ -32,7 +32,7 @@ describe OrcidUpdate, type: :model, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(59)
+      expect(subject.get_total).to eq(55)
     end
 
     it "with no works" do
@@ -48,7 +48,7 @@ describe OrcidUpdate, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.queue_jobs
-      expect(response).to eq(59)
+      expect(response).to eq(55)
     end
   end
 
@@ -60,9 +60,9 @@ describe OrcidUpdate, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.get_data
-      expect(response["data"]["response"]["numFound"]).to eq(59)
+      expect(response["data"]["response"]["numFound"]).to eq(55)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5284/1030449")
+      expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1226424")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do

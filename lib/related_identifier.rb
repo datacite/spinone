@@ -29,7 +29,7 @@ class RelatedIdentifier < Agent
     params = { q: "relatedIdentifier:DOI\\:*",
                start: offset,
                rows: rows,
-               fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,xml,updated",
+               fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,xml,minted,updated",
                fq: "#{updated} AND has_metadata:true AND is_active:true",
                wt: "json" }
     url +  URI.encode_www_form(params)
@@ -53,7 +53,8 @@ class RelatedIdentifier < Agent
                "author" => get_hashed_authors(authors),
                "title" => item.fetch("title", []).first,
                "container-title" => item.fetch("publisher", nil),
-               "issued" => item.fetch("publicationYear", nil),
+               "published" => item.fetch("publicationYear", nil),
+               "issued" => item.fetch("minted", nil),
                "publisher_id" => publisher_id,
                "registration_agency" => "datacite",
                "tracked" => true,

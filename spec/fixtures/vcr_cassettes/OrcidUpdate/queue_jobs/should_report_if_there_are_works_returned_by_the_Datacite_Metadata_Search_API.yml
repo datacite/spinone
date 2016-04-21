@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Sun, 13 Mar 2016 10:02:51 GMT
+      - Thu, 21 Apr 2016 13:40:00 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,7 +30,7 @@ http_interactions:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":112},"response":{"numFound":59,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":55,"start":0,"docs":[]}}
 
 '
     http_version: 

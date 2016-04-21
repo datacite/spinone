@@ -4,7 +4,10 @@ describe Status, type: :model, vcr: true do
   before(:each) do
     allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8))
     subject.reset
+    DataciteCrossref.new.count = 5
+    Github.new.count = 20
     Orcid.new.count = 10
+    OrcidUpdate.new.count = 50
     RelatedIdentifier.new.count = 100
   end
 
@@ -21,7 +24,7 @@ describe Status, type: :model, vcr: true do
       subject.write
       status = subject.counts.first
       expect(status['type']).to eq("status")
-      expect(status['attributes']).to eq("orcid"=>10, "related_identifier"=>100, "version"=>App::VERSION, "timestamp"=>"2015-04-08T00:00:00+00:00")
+      expect(status['attributes']).to eq("datacite_crossref"=>5, "github"=>20, "orcid"=>10, "orcid_update"=>50, "related_identifier"=>100, "version"=>App::VERSION, "timestamp"=>"2015-04-08T00:00:00+00:00")
     end
   end
 end
