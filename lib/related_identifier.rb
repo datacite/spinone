@@ -8,7 +8,7 @@ class RelatedIdentifier < Agent
   end
 
   def title
-    'Related Identifier'
+    'DataCite (RelatedIdentifier)'
   end
 
   def description
@@ -67,21 +67,21 @@ class RelatedIdentifier < Agent
   def get_relations(subj, items)
     prefix = subj["DOI"][/^10\.\d{4,5}/]
 
-    Array(items).reduce([]) do |sum, item|
+    Array(items).map do |item|
       raw_relation_type, _related_identifier_type, related_identifier = item.split(':', 3)
-      doi = validated_doi(related_identifier.strip.upcase)
+      doi = related_identifier.strip.upcase
 
-      if doi.present?
-        sum << { prefix: prefix,
-                 relation: { "subj_id" => subj["pid"],
-                             "obj_id" => doi_as_url(doi),
-                             "relation_type_id" => raw_relation_type.underscore,
-                             "source_id" => source_id,
-                             "publisher_id" => subj["publisher_id"] },
-                 subj: subj }
-      else
-        sum
-      end
+      registration_agency = get_doi_ra(doi)
+
+      _source_id = registration_agency == "crossref" ? "datacite_crossref" : "datacite_related"
+
+      { prefix: prefix,
+        relation: { "subj_id" => subj["pid"],
+                    "obj_id" => doi_as_url(doi),
+                    "relation_type_id" => raw_relation_type.underscore,
+                    "source_id" => _source_id,
+                    "publisher_id" => subj["publisher_id"] },
+        subj: subj }
     end
   end
 

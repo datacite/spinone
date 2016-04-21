@@ -4,10 +4,12 @@ require 'maremma'
 require 'parse-cron'
 require_relative 'formatting'
 require_relative 'redis_client'
+require_relative 'metadata'
 
 class Agent
   include Sinatra::Formatting
   include Sinatra::RedisClient
+  include Sinatra::Metadata
 
   def self.all
     Agent.descendants.map { |a| a.new }.sort_by { |agent| agent.name }

@@ -1,0 +1,354 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.1021/OL103024Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '55'
+      Date:
+      - Thu, 21 Apr 2016 01:45:35 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.1021/OL103024Z",
+         "RA": "CrossRef"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.1107/S0108768112007999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '63'
+      Date:
+      - Thu, 21 Apr 2016 01:45:35 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.1107/S0108768112007999",
+         "RA": "CrossRef"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.1002/EJIC.201300595
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '60'
+      Date:
+      - Thu, 21 Apr 2016 01:45:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.1002/EJIC.201300595",
+         "RA": "CrossRef"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.1039/C4GC02471K
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '56'
+      Date:
+      - Thu, 21 Apr 2016 01:45:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.1039/C4GC02471K",
+         "RA": "CrossRef"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.1594/PANGAEA.818322
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '61'
+      Date:
+      - Thu, 21 Apr 2016 01:45:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.1594/PANGAEA.818322",
+         "RA": "Data Cite"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.15468/EFB17F
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '54'
+      Date:
+      - Thu, 21 Apr 2016 01:45:37 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.15468/EFB17F",
+         "RA": "Data Cite"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.5886/RTT57CC9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '55'
+      Date:
+      - Thu, 21 Apr 2016 01:45:37 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.5886/RTT57CC9",
+         "RA": "Data Cite"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.5519/0002965
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '54'
+      Date:
+      - Thu, 21 Apr 2016 01:45:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.5519/0002965",
+         "RA": "Data Cite"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+- request:
+    method: get
+    uri: http://doi.crossref.org/doiRA/10.3897/PHYTOKEYS.12.2849
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://push.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '63'
+      Date:
+      - Thu, 21 Apr 2016 01:45:38 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+         {
+         "DOI": "10.3897/PHYTOKEYS.12.2849",
+         "RA": "CrossRef"
+        }
+        ]
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+recorded_with: VCR 2.9.3

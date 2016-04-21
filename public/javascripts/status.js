@@ -21,12 +21,14 @@ d3.json(query)
     var by_day = d3.nest()
       .key(function(d) { return d.attributes.timestamp.substr(0,10); })
       .rollup(function(leaves) {
-        return { "orcid": d3.max(leaves, function(d) { return d.attributes.orcid;}),
+        return { "datacite_crossref": d3.max(leaves, function(d) { return d.attributes.datacite_crossref;}),
+                 "orcid": d3.max(leaves, function(d) { return d.attributes.orcid;}),
                  "orcid_update": d3.max(leaves, function(d) { return d.attributes.orcid_update;}),
                  "related_identifier": d3.max(leaves, function(d) { return d.attributes.related_identifier;})
                 };})
       .entries(day_data);
 
+    barViz(by_day, "#chart_datacite_crossref", "datacite_crossref", "days");
     barViz(by_day, "#chart_orcid", "orcid", "days");
     barViz(by_day, "#chart_orcid_update", "orcid_update", "days");
     barViz(by_day, "#chart_related_identifier", "related_identifier", "days");

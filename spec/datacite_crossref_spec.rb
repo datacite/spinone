@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RelatedIdentifier, type: :model, vcr: true do
+describe DataciteCrossref, type: :model, vcr: true do
   before(:each) do
     allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8))
     subject.count = 0
@@ -32,7 +32,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(1196)
+      expect(subject.get_total).to eq(1181)
     end
 
     it "with no works" do
@@ -48,7 +48,7 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.queue_jobs(all: true)
-      expect(response).to eq(1196)
+      expect(response).to eq(1181)
     end
   end
 
@@ -60,9 +60,9 @@ describe RelatedIdentifier, type: :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       response = subject.get_data
-      expect(response["data"]["response"]["numFound"]).to eq(1196)
+      expect(response["data"]["response"]["numFound"]).to eq(1181)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5517/CC143SLM")
+      expect(doc["doi"]).to eq("10.5061/DRYAD.56M2G/1")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
@@ -80,20 +80,12 @@ describe RelatedIdentifier, type: :model, vcr: true do
       expect(subject.parse_data("data" => result)).to eq([])
     end
 
-    it "should report if there are invalid works returned by the Datacite Metadata Search API" do
-      body = File.read(fixture_path + 'related_identifier_invalid.json')
-      result = JSON.parse(body)
-      response = subject.parse_data("data" => result)
-
-      expect(response.length).to eq(1983)
-    end
-
     it "should report if there are works returned by the Datacite Metadata Search API" do
       body = File.read(fixture_path + 'related_identifier.json')
       result = JSON.parse(body)
       response = subject.parse_data("data" => result)
 
-      expect(response.length).to eq(1984)
+      expect(response.length).to eq(65)
       expect(response.first[:prefix]).to eq("10.5517")
       expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.5517/CC13D9MF",
                                               "obj_id"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004",
@@ -111,11 +103,6 @@ describe RelatedIdentifier, type: :model, vcr: true do
                                           "registration_agency"=>"datacite",
                                           "tracked"=>true,
                                           "type"=>nil)
-      expect(response[100][:relation]).to eq("subj_id"=>"http://doi.org/10.15468/DL.KZSYIB",
-                                             "obj_id"=>"http://doi.org/10.15468/MAVQL6",
-                                             "relation_type_id"=>"references",
-                                             "source_id"=>"datacite_related",
-                                             "publisher_id"=>"DK.GBIF")
     end
   end
 
@@ -131,9 +118,9 @@ describe RelatedIdentifier, type: :model, vcr: true do
       result = subject.parse_data("data" => result)
 
       response = subject.push_data(result)
-      expect(response.length).to eq(1984)
+      expect(response.length).to eq(65)
       deposit = response.first
-      expect(deposit).to eq("errors"=>[{"status"=>400, "title"=>"the server responded with status 422"}])
+      expect(deposit).to eq({"data"=>{"meta"=>{"status"=>"accepted", "message-type"=>"deposit", "message-version"=>"v7"}, "deposit"=>{"id"=>"8ac8bb26-c5c9-46ad-b6cd-479ecb1afe26", "state"=>"waiting", "message_type"=>"relation", "message_action"=>"create", "source_token"=>"7385e6bf-6980-45e6-ac18-b0ee6b84a50a", "callback"=>"http://10.2.2.14/api/agents", "prefix"=>"10.5517", "subj_id"=>"http://doi.org/10.5517/CC13D9MF", "obj_id"=>"http://doi.org/10.1016/J.INOCHE.2014.11.004", "relation_type_id"=>"is_supplement_to", "source_id"=>"datacite_crossref", "publisher_id"=>"BL.CCDC", "total"=>1, "occurred_at"=>"2016-04-21T05:06:49Z", "timestamp"=>"2016-04-21T05:06:49Z", "subj"=>{"pid"=>"http://doi.org/10.5517/CC13D9MF", "author"=>[{"given"=>"Nikolaos C.", "family"=>"Anastasiadis"}, {"given"=>"Ioannis", "family"=>"Mylonas-Margaritis"}, {"given"=>"Vassilis", "family"=>"Psycharis"}, {"given"=>"Catherine P.", "family"=>"Raptopoulou"}, {"given"=>"Dimitris A.", "family"=>"Kalofolias"}, {"given"=>"Constantinos J.", "family"=>"Milios"}, {"given"=>"Nikolaos", "family"=>"Klouras"}, {"given"=>"Spyros P.", "family"=>"Perlepes"}], "title"=>"CCDC 1024724: Experimental Crystal Structure Determination", "container-title"=>"Cambridge Crystallographic Data Centre", "issued"=>"2014", "DOI"=>"10.5517/CC13D9MF", "registration_agency"=>"datacite", "publisher_id"=>"BL.CCDC", "type"=>nil, "tracked"=>true}, "obj"=>{}}}})
     end
   end
 
