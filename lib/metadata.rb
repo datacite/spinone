@@ -60,6 +60,18 @@ module Sinatra
     def github_owner_from_url(url)
       github_from_url(url).fetch(:owner, nil)
     end
+
+    def github_as_owner_url(github_hash)
+      "https://github.com/#{github_hash[:owner]}" if github_hash[:owner].present?
+    end
+
+    def github_as_repo_url(github_hash)
+      "https://github.com/#{github_hash[:owner]}/#{github_hash[:repo]}" if github_hash[:repo].present?
+    end
+
+    def github_as_release_url(github_hash)
+      "https://github.com/#{github_hash[:owner]}/#{github_hash[:repo]}/tree/#{github_hash[:release]}" if github_hash[:release].present?
+    end
   end
 
   helpers Metadata

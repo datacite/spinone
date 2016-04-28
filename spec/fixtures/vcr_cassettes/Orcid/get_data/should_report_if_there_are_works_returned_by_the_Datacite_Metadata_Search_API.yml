@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,nameIdentifier,xml,minted,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=1000&start=0&wt=json
+    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=1000&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Thu, 21 Apr 2016 13:39:47 GMT
+      - Thu, 28 Apr 2016 08:29:10 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:

@@ -58,10 +58,10 @@ describe '/api/agents' do
 
     response = ::JSON.parse(last_response.body)
     data = response.fetch('data', {})
-    expect(data.length).to eq(5)
+    expect(data.length).to eq(4)
     agent = data.first
     expect(agent['type']).to eq("agent")
-    expect(agent['attributes']['title']).to eq("DataCite (Crossref)")
+    expect(agent['attributes']['title']).to eq("DataCite (GitHub)")
   end
 
   it "post agents" do
