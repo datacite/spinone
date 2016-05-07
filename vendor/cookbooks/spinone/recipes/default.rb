@@ -4,6 +4,8 @@ dotenv node["application"] do
   action          :nothing
 end.run_action(:load)
 
+include_recipe "memcached"
+
 # install nginx and create configuration file and application root
 passenger_nginx node["application"] do
   user            ENV['DEPLOY_USER']

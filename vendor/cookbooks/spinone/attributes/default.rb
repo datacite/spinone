@@ -10,6 +10,6 @@ default['ruby']['packages'] += %w{ avahi-daemon libnss-mdns } if node['ruby']['r
 default["application"] = "spinone"
 
 default['nodejs']['repo'] = 'https://deb.nodesource.com/node_0.12'
-default['nodejs']['npm_packages'] = [{ "name" => "phantomjs" },
+default['nodejs']['npm_packages'] = [{ "name" => "phantomjs-prebuilt" },
                                      { "name" => "istanbul"},
                                      { "name" => "codeclimate-test-reporter" }]
