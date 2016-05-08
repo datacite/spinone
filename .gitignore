@@ -42,3 +42,4 @@ doc/dependencies*
 .env.*
 !.env.example
 !.env.travis
+packer_cache/*

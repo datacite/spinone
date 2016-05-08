@@ -2,18 +2,11 @@
 # Learn more: http://github.com/javan/whenever
 
 begin
-  # make sure DOTENV is set
-  ENV["DOTENV"] ||= "default"
-
-  # load ENV variables from file specified by DOTENV
-  # use .env with DOTENV=default
-  filename = ENV["DOTENV"] == "default" ? ".env" : ".env.#{ENV['DOTENV']}"
-
-  fail Errno::ENOENT unless File.exist?(File.expand_path("../../#{filename}", __FILE__))
+  fail Errno::ENOENT unless File.exist?(File.expand_path("../../.env", __FILE__))
 
   # load ENV variables from file specified by APP_ENV, fallback to .env
   require "dotenv"
-  Dotenv.load! filename
+  Dotenv.load! ".env"
 rescue Errno::ENOENT
   $stderr.puts "Please create file .env in the application root folder"
   exit
@@ -24,7 +17,7 @@ end
 
 env :PATH, ENV['PATH']
 env :DOTENV, ENV['DOTENV']
-set :environment, ENV['RACK_ENV']
+set :environment, ENV['RAILS_ENV']
 set :output, "log/cron.log"
 
 # every hour at 5 min past the hour

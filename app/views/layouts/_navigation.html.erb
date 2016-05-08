@@ -1,0 +1,20 @@
+<div class="navbar subnav hidden-xs" role="navigation">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <%= content_tag :h1, @title || controller.controller_name.humanize, data_tags_for_api %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Status", status_index_path %></li>
+        <% if can?(:read, Agent) %>
+          <li><%= link_to "Agents", agents_path %></li>
+        <% end %>
+        <li class="dropdown hidden-sm hidden-md">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'API Documentation', '/api' %></li>
+            <li><%= link_to 'GitHub Issues', "#{ENV['GITHUB_URL']}/issues" %></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

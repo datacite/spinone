@@ -1,0 +1,24 @@
+# Load agents
+options:
+  find_existing_by: ['name']
+records:
+  - sprig_id: datacite_related
+    type: DataciteRelated
+    name: datacite_related
+    title: DataCite (RelatedIdentifier)
+    description: Import works with relatedIdentifiers via the DataCite Solr API.
+  - sprig_id: datacite_orcid
+    type: DataciteOrcid
+    name: datacite_orcid
+    title: DataCite (ORCID)
+    description: Import works with ORCID nameIdentifier via the DataCite Solr API.
+  - sprig_id: datacite_github
+    type: DataciteGithub
+    name: datacite_github
+    title: DataCite (Github)
+    description: Import works with Github relatedIdentifiers via the DataCite Solr API.
+  - sprig_id: orcid_update
+    type: OrcidUpdate
+    name: orcid_update
+    title: ORCID (Auto-Update)
+    description: Push DataCite DOIs with ORCID nameIdentifier to ORCID.

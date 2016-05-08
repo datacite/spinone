@@ -8,9 +8,11 @@ gem 'ar-octopus', '~> 0.8.5', :require => 'octopus', :git => 'https://github.com
 gem "dotenv", '~> 1.0.2'
 gem 'sidekiq', '~> 4.0', '>= 4.0.1'
 gem 'sinatra', :require => nil
-gem "config"
+gem 'config', '~> 1.0.0'
+gem 'sprig', '~> 0.1.7'
 gem 'rake', '~> 10.5'
 gem "whenever", "~> 0.9.0", require: false
+gem 'parse-cron', '~> 0.1.4'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 2.1', '>= 2.1.1'
 gem 'addressable', "~> 2.3.8"
@@ -38,10 +40,8 @@ gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 
 gem 'devise', '~> 3.5', '>= 3.5.2'
-gem "omniauth-orcid", "~> 1.0"
-gem 'omniauth-github', '~> 1.1.2'
 gem 'omniauth', '~> 1.2.2'
-gem 'jwt', '~> 1.5', '>= 1.5.1'
+gem 'omniauth-jwt', '~> 0.0.3', git: 'https://github.com/datacite/omniauth-jwt.git'
 gem 'cancancan', '~> 1.9.2'
 
 gem 'sprockets-rails', '~> 2.2.0', :require => 'sprockets/railtie'

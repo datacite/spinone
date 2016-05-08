@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/datacite/omniauth-jwt.git
+  revision: fe3717276f8fbfd5ffc27f83e77615f4d0367251
+  specs:
+    omniauth-jwt (0.0.3)
+      jwt
+      omniauth (~> 1.2, >= 1.2.2)
+
+GIT
   remote: https://github.com/fly1tkg/state_machine.git
   revision: 181f758a50698c4564b46a48d5704b48e9b3cf33
   branch: issue/334
@@ -113,9 +121,9 @@ GEM
     coffee-script-source (1.10.0)
     colorize (0.7.7)
     concurrent-ruby (1.0.2)
-    config (1.1.0)
+    config (1.0.0)
       activesupport (>= 3.0)
-      deep_merge (~> 1.0.1)
+      deep_merge (~> 1.0.0)
     connection_pool (2.2.0)
     countries (1.2.5)
       currencies (~> 0.4.2)
@@ -185,7 +193,7 @@ GEM
     i18n (0.7.0)
     i18n_data (0.7.0)
     json (1.8.3)
-    jwt (1.5.1)
+    jwt (1.5.4)
     latex-decode (0.2.2)
       unicode (~> 0.4)
     launchy (2.4.3)
@@ -215,7 +223,6 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.3)
-    multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.18)
     namae (0.10.1)
@@ -224,25 +231,12 @@ GEM
       activesupport (>= 3.0.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    oauth2 (1.1.0)
-      faraday (>= 0.8, < 0.10)
-      jwt (~> 1.0, < 1.5.2)
-      multi_json (~> 1.3)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 3)
     oj (2.13.1)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
-    omniauth-github (1.1.2)
-      omniauth (~> 1.0)
-      omniauth-oauth2 (~> 1.1)
-    omniauth-oauth2 (1.3.1)
-      oauth2 (~> 1.0)
-      omniauth (~> 1.2)
-    omniauth-orcid (1.1.1)
-      omniauth-oauth2 (~> 1.3.1)
     orm_adapter (0.5.0)
+    parse-cron (0.1.4)
     parser (2.3.1.0)
       ast (~> 2.2)
     poltergeist (1.8.1)
@@ -358,6 +352,7 @@ GEM
     slop (3.6.0)
     sort_alphabetical (1.0.2)
       unicode_utils (>= 1.2.2)
+    sprig (0.1.9)
     spring (1.7.1)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -430,7 +425,7 @@ DEPENDENCIES
   codeclimate-test-reporter (~> 0.4.8)
   coffee-rails (~> 4.1, >= 4.1.1)
   colorize (~> 0.7.7)
-  config
+  config (~> 1.0.0)
   country_select (~> 2.5, >= 2.5.1)
   dalli (~> 2.7.0)
   database_cleaner (~> 1.3.0)
@@ -443,7 +438,6 @@ DEPENDENCIES
   hashie (~> 3.3.2)
   hologram (~> 1.3.1)
   httplog
-  jwt (~> 1.5, >= 1.5.1)
   launchy (~> 2.4.2)
   lograge (~> 0.3.5)
   maremma (~> 2.1, >= 2.1.1)
@@ -452,8 +446,8 @@ DEPENDENCIES
   nilify_blanks (~> 1.2.0)
   nokogiri (~> 1.6, >= 1.6.7.2)
   omniauth (~> 1.2.2)
-  omniauth-github (~> 1.1.2)
-  omniauth-orcid (~> 1.0)
+  omniauth-jwt (~> 0.0.3)!
+  parse-cron (~> 0.1.4)
   poltergeist (~> 1.8.1)
   postrank-uri (~> 1.0.18)
   pry-rails (~> 0.3.2)
@@ -469,6 +463,7 @@ DEPENDENCIES
   simple_form (~> 3.1.0)
   simplecov (~> 0.10.0)
   sinatra
+  sprig (~> 0.1.7)
   spring
   sprockets-rails (~> 2.2.0)
   state_machine (~> 1.2.0)!

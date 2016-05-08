@@ -5,14 +5,14 @@ http_interactions:
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -37,26 +37,938 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c397720a-9f5c-4f9c-a262-43bead283116
+      - d53b2709-2245-49a1-b8cd-f61de65b4d66
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.123705'
+      - '1.098325'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:10 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"054a6396-6611-4945-8727-3cec90f13233","type":"claims","attributes":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"73eeb204-9c56-4519-bb87-b493141f5b8b","type":"claims","attributes":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:10 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e76b36dc-654f-435b-b3e2-95227f119b95
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.192638'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:10 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"31b08fb8-5bc8-4d64-a3b6-f1e3dc962323","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:10 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 287009c2-19d6-4333-a08a-d513ee918a5e
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.090722'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:10 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"01eb3c69-891a-407a-b519-7c685a040898","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:10 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 44d66f54-e7d7-4e27-a883-4c8edf9465cd
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.118451'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:10 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"38ca6a73-9047-4639-bf86-9b79a1ecd673","type":"claims","attributes":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:10 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6798cac5-1e3d-4a6b-8030-a01235c5c71a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.138078'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"258444b8-024d-42f4-8ce1-ef8220e3ff54","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 7402fd8f-0b34-4390-854f-8b1df4259c3d
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.087103'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"072f2e33-0a43-4fd2-a040-50bb91337558","type":"claims","attributes":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9841c79f-9097-4832-9486-1fda83f7c000
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.097160'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"08843ac3-8c99-4176-80be-2377913e5f9d","type":"claims","attributes":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3b540961-5f9f-4071-a7fc-6c1440028979
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.101870'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fae298e6-5c80-4f18-9801-b293c962845d","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9ffbd77a-6550-414f-9a67-9b5b6b14a98a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.106101'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8977ec16-99b9-4789-bdd7-63c8fbd41a5e","type":"claims","attributes":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1c10beda-f284-4088-8f2c-c0639b5bc7f0
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.080243'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"21088684-4484-455a-ac54-2f2d4fa397de","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b11edbd6-518a-4923-99e6-4b93bdc2e282
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.069398'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f4d41e4f-c6c3-469e-8597-a060914a83d2","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 25cc8bee-6b25-4e29-b602-6343c725fbe3
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.073283'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"26544b84-2256-414b-98b5-74aae17b13e4","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 10537a94-2ee6-4651-bd09-912c062cbc8e
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.074810'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"bb3ad3e3-3ddf-424b-a218-bd98b9219545","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:11 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b981bee9-2400-4c85-aaa3-60af3e9c127f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.083730'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:12 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6378087e-cc7c-4ca6-9475-c1132ef10c48","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 71341f75-de07-4210-abfc-5bc7e34fd60a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.069257'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:12 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"a46228be-42ef-4fb6-8a8f-9253734d6de7","type":"claims","attributes":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 8ee2944c-6a6e-4489-a53c-10b23747e106
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.078018'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:12 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5195280f-3bc2-48c9-a7fa-75a1bd56838e","type":"claims","attributes":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 525b3132-b9f4-4e8a-aa3e-7964bba1059b
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.080283'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:12 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"054a6396-6611-4945-8727-3cec90f13233","type":"claims","attributes":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -65,11 +977,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-2725-6730","doi":"10.5284/1030449","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -94,39 +1006,39 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - adf71206-c340-4226-aa2f-de828f12a6be
+      - d5a5bc97-e6b9-4de1-8096-bb58faa7738a
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.081876'
+      - '0.074785'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"098fe13a-41a1-49a0-9c2d-5681450c7451","type":"claims","attributes":{"orcid":"0000-0002-2725-6730","doi":"10.5284/1030449","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"098fe13a-41a1-49a0-9c2d-5681450c7451","type":"claims","attributes":{"orcid":"0000-0002-2725-6730","doi":"10.5284/1030449","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-8414-7389","doi":"10.1594/PANGAEA.771774","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -151,39 +1063,39 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c9f57416-adc8-4e36-a718-8651f1faef29
+      - 5fd2024e-40f3-44c0-84c7-b68160c7c246
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.094875'
+      - '0.074705'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"c99dc2a1-2c32-4ef9-9ff6-1b73a5bc2147","type":"claims","attributes":{"orcid":"0000-0002-8414-7389","doi":"10.1594/PANGAEA.771774","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"00663ee5-49e2-4cf4-a49b-df9356bc3080","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -208,39 +1120,39 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 00179b25-956f-442e-877f-cc697a1d4129
+      - 2e8f45ef-066a-4e1c-9547-0c3400b65c3b
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.097991'
+      - '0.085376'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"65b0a2e6-acbb-4951-8aa1-199160fcb0f4","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"06aa8380-1c23-4e71-9197-102e587f84a9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -265,39 +1177,39 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c5cbe0fe-1828-4c5f-9d4c-a923d77e5426
+      - b782771e-1bf6-427b-ad8f-a5b4a825a7f9
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.171829'
+      - '0.081709'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3d514aa6-6ad6-4d69-9cb6-b0784c157861","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"8f6518df-52ef-4398-8c16-a3d179ccf101","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -322,39 +1234,39 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - ef93bb30-ebc9-47ea-888d-5e39290eb1f2
+      - da925ea7-7eb0-4b18-a4ce-3c410a23b5c4
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.083545'
+      - '0.069517'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:53 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"fd774352-29ea-48d1-a5ef-c39e21f1e4bb","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"6c9ebf87-286d-43e5-a7d3-bd4ea314511c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
     body:
       encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source_id":"orcid_update"}}'
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -379,26 +1291,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 454469ce-7b1d-46e9-ab5c-0e5a86f7f664
+      - 795a9807-7946-45da-9169-72f2eb7fbef5
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.081432'
+      - '0.080810'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
+      - Sun, 08 May 2016 13:20:12 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2a7e373c-5a3b-42bd-a06f-d3b022a76be3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"32785fe3-f472-4428-b0e7-54124f7fe64f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:12 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -407,11 +1319,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -436,7 +1348,64 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b2e6bcb2-7d94-4a88-b853-8a0285422183
+      - 9981cdea-ad7f-4d90-baf1-53112385653a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.089823'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:13 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"c6241c93-26b6-4002-a385-0948033539aa","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a0506606-789f-41ac-a7a9-8881de88f8de
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
@@ -446,2011 +1415,16 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"c6241c93-26b6-4002-a385-0948033539aa","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"508b32c6-21c8-4790-aa2e-2bc7d50eff9a","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 000b1ecb-afad-466d-9462-238110bcbff0
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.071210'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"cdeeb754-f4bd-4340-bc0e-3abf7e0752dc","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 42ba3c06-f3f5-40ba-b5cc-ea204da6a4d9
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.089258'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"d4e41afc-8c7b-436b-8c04-6f5052414d13","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - ade104ae-20e5-42e8-9e07-a6b02c6a4ada
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.123229'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8f6518df-52ef-4398-8c16-a3d179ccf101","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - dad2ef85-b4d0-4b60-9037-e9dc83a4c4b4
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.124622'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"fcd072cb-de97-4846-9dbd-ef6a11049a29","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 028f6305-0e26-4450-8aac-fc86d8681832
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.077505'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"d95fd8b7-0f91-4feb-9e24-fbae773faedf","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 8a16fea2-f92c-41d9-8c39-55e7576e9b27
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.101081'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"79202618-3131-4299-b855-72ee56be55c5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - a04a9b27-e3f1-4fa7-8fee-205b7c0e0a5e
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.096298'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:54 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"807f72f4-c714-4286-bff4-2bc8148ece6e","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - fef689e8-99c4-4946-97a4-17e5331e5c97
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.093335'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"13ac7b75-f904-4961-b817-7277e3d0d27b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 74f74654-2c1b-41a7-86cb-eb126b6a9841
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.102267'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a4642b7c-ed73-4e5c-acfd-5f21680f0ac3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-4133-2218","doi":"10.1594/PANGAEA.733793","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 31b57618-d33e-4464-922a-a5fe3c102b2d
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.108498'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b0922dc6-d910-4f45-a62e-4f71df75055c","type":"claims","attributes":{"orcid":"0000-0002-4133-2218","doi":"10.1594/PANGAEA.733793","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-4133-2218","doi":"10.1594/PANGAEA.733793","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 10892345-9a76-4d1d-8737-b6d5039d55c7
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.117844'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"b0922dc6-d910-4f45-a62e-4f71df75055c","type":"claims","attributes":{"orcid":"0000-0002-4133-2218","doi":"10.1594/PANGAEA.733793","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-0931-8707","doi":"10.1594/PANGAEA.843846","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 0659d6cd-76ae-49bb-9e0a-ee0a40afc005
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.133063'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"014f935b-56f5-49f8-a28e-2667902c3b16","type":"claims","attributes":{"orcid":"0000-0002-0931-8707","doi":"10.1594/PANGAEA.843846","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 7172b6be-6019-4582-8852-40e64c1734c6
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.090240'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"6c9ebf87-286d-43e5-a7d3-bd4ea314511c","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 60e57f59-a1e3-41ca-9eee-9981916b035d
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.086047'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"32785fe3-f472-4428-b0e7-54124f7fe64f","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - a485f9b5-f0f6-4b3c-81e6-16ae636445ae
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.080323'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"00663ee5-49e2-4cf4-a49b-df9356bc3080","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - feed6211-2330-4467-91f1-065720f2914f
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.078194'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"06aa8380-1c23-4e71-9197-102e587f84a9","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 784a2891-fb18-4c5c-91a6-eedd866f00cd
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.085139'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:55 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"56e983d2-c947-4f08-8c18-ba6937824136","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 60bfaa85-60d5-4f19-b605-9a812843a084
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.076471'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"dcca7e9d-5e0b-4ed0-aa7f-0ff52e163899","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 48149e77-a3d4-4a51-ac80-125eb39505d9
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.075053'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"38ca6a73-9047-4639-bf86-9b79a1ecd673","type":"claims","attributes":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 393dea04-f93a-4065-a339-26720c4ba7ef
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.131377'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"258444b8-024d-42f4-8ce1-ef8220e3ff54","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 1a848ad3-30c8-43b9-8ef4-183b65be2fc6
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.238343'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"072f2e33-0a43-4fd2-a040-50bb91337558","type":"claims","attributes":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - d564f2e9-a556-4c85-b168-01172ddc9d77
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.105803'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"08843ac3-8c99-4176-80be-2377913e5f9d","type":"claims","attributes":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 1595c10a-fb4f-479c-895f-edc8b13eec4a
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.094482'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"fae298e6-5c80-4f18-9801-b293c962845d","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 6d480cfe-94a1-4164-9d7a-bfb5875647fc
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.129645'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:56 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8977ec16-99b9-4789-bdd7-63c8fbd41a5e","type":"claims","attributes":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 7c627987-ea9b-448c-88bf-dfb21f06a7c4
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.074310'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"21088684-4484-455a-ac54-2f2d4fa397de","type":"claims","attributes":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 5c1309fc-d22e-4a5a-b21e-a0c3228f8074
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.091158'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"f4d41e4f-c6c3-469e-8597-a060914a83d2","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 2c2e7e33-616c-46c7-aa23-82b8eb4c0585
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.119017'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"26544b84-2256-414b-98b5-74aae17b13e4","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 05458126-c858-4180-bf18-7d93255dd2e6
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.090434'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"bb3ad3e3-3ddf-424b-a218-bd98b9219545","type":"claims","attributes":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - c65df9cc-400e-4a38-a92a-dc034befbe26
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.125854'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"6378087e-cc7c-4ca6-9475-c1132ef10c48","type":"claims","attributes":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - f8deae2e-0ea5-4239-8c15-75b550e9bd78
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.130020'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a46228be-42ef-4fb6-8a8f-9253734d6de7","type":"claims","attributes":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - c1008974-9c7a-4f49-ac3b-ca42e3b5eadc
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.091505'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"5195280f-3bc2-48c9-a7fa-75a1bd56838e","type":"claims","attributes":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 865b9b01-cfc4-47d0-9425-e187ef7db8ae
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.091130'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"73eeb204-9c56-4519-bb87-b493141f5b8b","type":"claims","attributes":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 5e8022f6-26bd-4bba-b6f2-b8942373d440
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.082668'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:57 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"31b08fb8-5bc8-4d64-a3b6-f1e3dc962323","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - cd29f692-809b-447f-82ea-e07a70dbfdae
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.102809'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"01eb3c69-891a-407a-b519-7c685a040898","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
-- request:
-    method: post
-    uri: http://10.2.2.12/api/claims
-    body:
-      encoding: UTF-8
-      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source_id":"orcid_update"}}'
-    headers:
-      User-Agent:
-      - Maremma - http://push.local
-      Accept:
-      - application/json
-      Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 202
-      message: ''
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 202 Accepted
-      Cache-Control:
-      - no-cache
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - cbbe13d6-0a8f-4380-b983-66a45793aa3a
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
-      X-Runtime:
-      - '0.086836'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
-      X-Powered-By:
-      - Phusion Passenger 5.0.24
-      Server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.24
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"508b32c6-21c8-4790-aa2e-2bc7d50eff9a","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
-    http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2459,11 +1433,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371009","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2488,26 +1462,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 94694ffb-cac8-445e-bef2-21226cc6c42c
+      - 78c7888b-5b95-4419-b08a-8e71cb12e5ba
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.083085'
+      - '0.073157'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2648e7aa-9024-40df-a179-ddba3781296c","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371009","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"2648e7aa-9024-40df-a179-ddba3781296c","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371009","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2516,11 +1490,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371008","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2545,26 +1519,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 5a3b7432-f511-409c-951d-4b0856620c59
+      - dc5a8036-1624-47d8-8699-15c81b59f109
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.075462'
+      - '0.070245'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"e9a6d53f-d6c9-4a35-ab68-dec9639ab2b3","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371008","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"e9a6d53f-d6c9-4a35-ab68-dec9639ab2b3","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371008","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2573,11 +1547,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371010","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2602,26 +1576,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 30721572-edf2-4bd2-b0ea-051d3c5ba815
+      - 8d04c418-787a-41b9-808f-394a7aca80c7
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.079331'
+      - '0.081668'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"c17886b7-413e-4ea0-8141-5881e8e17cd8","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371010","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"c17886b7-413e-4ea0-8141-5881e8e17cd8","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371010","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2630,11 +1604,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371011","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2659,26 +1633,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6239f3a4-26c6-42b1-980b-e5eb27a7bf9b
+      - dae37c26-af58-4b06-a771-9012dcd71337
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.115166'
+      - '0.072089'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"260ff476-5334-488c-9b3c-eedfbffc2db5","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371011","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"260ff476-5334-488c-9b3c-eedfbffc2db5","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371011","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2687,11 +1661,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371013","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2716,26 +1690,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1c745fe8-39cf-4747-85a8-01d5ba939032
+      - d2f700e8-9d10-452f-aff3-a84f79f52343
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.137728'
+      - '0.064881'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1f953957-7e68-44c3-b199-0ae41b3bbd91","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371013","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"1f953957-7e68-44c3-b199-0ae41b3bbd91","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371013","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2744,11 +1718,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371014","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2773,26 +1747,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2277c5c3-7bbc-4b4c-bd6e-ed09e506a0b6
+      - effd1f00-814c-4823-a7c3-d3333082ec85
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.117579'
+      - '0.084317'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5ff27702-077b-4c48-933b-d81d66f19f73","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371014","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"5ff27702-077b-4c48-933b-d81d66f19f73","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371014","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2801,11 +1775,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371012","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2830,26 +1804,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 915c138e-02ac-40b1-a304-c8966732152d
+      - 749e5deb-b0ef-4968-9743-1daf31fb7d08
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.101471'
+      - '0.089201'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:58 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2878c4e1-0e30-4af8-a207-9d4dd09b61d4","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371012","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"2878c4e1-0e30-4af8-a207-9d4dd09b61d4","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371012","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2858,11 +1832,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371015","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2887,26 +1861,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3fcb1247-aa06-4f6d-91e6-4f717441dfec
+      - 7018d8b2-0ab2-49b0-89e9-50c5fe9687e2
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.099498'
+      - '0.062368'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"818a35f9-8171-4bff-b872-a0ec264bf83b","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371015","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"818a35f9-8171-4bff-b872-a0ec264bf83b","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371015","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2915,11 +1889,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371017","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -2944,26 +1918,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 060e4085-a71b-471f-8ca1-13609f4e98ce
+      - ca1f5bd4-aa37-4e00-ab0c-5e295c7d2e1a
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.100209'
+      - '0.065449'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:13 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"f37c70de-993c-4863-b462-ed0a67e3a5c6","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371017","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"f37c70de-993c-4863-b462-ed0a67e3a5c6","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371017","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:13 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -2972,11 +1946,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371018","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3001,26 +1975,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3952f64a-b0a1-44b6-b83e-abc61ce6f1a3
+      - cf0603df-0e24-47bf-b741-932410370f32
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.092757'
+      - '0.065547'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1b42d280-f636-48da-9dba-99d2ac10da9e","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371018","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"1b42d280-f636-48da-9dba-99d2ac10da9e","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371018","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3029,11 +2003,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371016","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3058,26 +2032,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9a3b9d6b-3e67-4a02-bd5a-d013cac76cfc
+      - 9b08cce9-b882-44a3-b5d8-c388e56cbaf5
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.097191'
+      - '0.073055'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"0f7021b0-de73-4394-a138-85517ab4228d","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371016","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"0f7021b0-de73-4394-a138-85517ab4228d","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371016","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3086,11 +2060,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371019","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3115,26 +2089,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 11050441-13aa-436b-9556-8f20ae5d1d39
+      - f7c2eb7c-bb1d-4515-9e3d-e224e8a5a4d6
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.097344'
+      - '0.069564'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"61fcb7ac-b07e-4749-a1df-7c9450096cbd","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371019","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"61fcb7ac-b07e-4749-a1df-7c9450096cbd","type":"claims","attributes":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371019","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3143,11 +2117,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1371114","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3172,26 +2146,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 615b6af2-6757-4122-80a5-1d5344f7746f
+      - 2940bb06-dfdd-4ad6-b341-f711b386fbab
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.122391'
+      - '0.072517'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"99495b5e-7e4f-4ab5-9643-691a952376da","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1371114","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"99495b5e-7e4f-4ab5-9643-691a952376da","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1371114","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3200,11 +2174,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1337953","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3229,26 +2203,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c87edbef-ae6f-4afe-a64b-9a7f34f9a8b9
+      - f98ba49c-cb25-428e-a9a8-32008ac369bc
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.101320'
+      - '0.064362'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"103db3b0-dd23-4704-b180-2159aecf6dd0","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1337953","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"103db3b0-dd23-4704-b180-2159aecf6dd0","type":"claims","attributes":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1337953","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3257,11 +2231,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3286,26 +2260,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3318513c-58e7-43d0-8cd8-eabfbb310139
+      - d483bc14-65ca-46bb-a276-f8e8e451bedf
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.094451'
+      - '0.070215'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"ae7184b9-3c47-40e3-8ef8-f6baded6ef41","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"ae7184b9-3c47-40e3-8ef8-f6baded6ef41","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3314,11 +2288,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3343,26 +2317,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - f1d208a2-5610-401c-87db-d346e199083b
+      - 4e33fbd5-64d3-403b-88a6-2d86aa76049a
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.089146'
+      - '0.065661'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:07:59 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"9350bf2a-4f39-4b77-9843-98dfd6d3d6b1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"9350bf2a-4f39-4b77-9843-98dfd6d3d6b1","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
 - request:
     method: post
     uri: http://10.2.2.12/api/claims
@@ -3371,11 +2345,11 @@ http_interactions:
       string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source_id":"orcid_update"}}'
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
       Authorization:
-      - Token token=<ORCID_UPDATE_TOKEN>
+      - Token token=<VOLPINO_TOKEN>
       Content-Type:
       - application/json
   response:
@@ -3400,24 +2374,822 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 60036268-f7f9-434e-bbdf-f01a221d4f39
+      - 71956d3e-1a40-4ee6-9e83-967442202c04
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       X-Runtime:
-      - '0.103426'
+      - '0.062751'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Sun, 13 Mar 2016 11:08:00 GMT
+      - Sun, 08 May 2016 13:20:14 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.24
       Server:
       - nginx/1.8.1 + Phusion Passenger 5.0.24
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5e77e789-0dd1-411d-8960-4df584eb8910","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source_id":"orcid_update","state":"ignored","claimed_at":null}}}'
+      string: '{"data":{"id":"5e77e789-0dd1-411d-8960-4df584eb8910","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 78b4cee7-08d1-405b-8dc2-9a10f6b235a4
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.080768'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:14 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"cdeeb754-f4bd-4340-bc0e-3abf7e0752dc","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 08cb6b99-0f82-4fe6-bc6e-212b1f151547
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.075756'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:14 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"d4e41afc-8c7b-436b-8c04-6f5052414d13","type":"claims","attributes":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4f2b0ed3-fc05-4d4b-a330-e5a4dfc83e88
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.068878'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:14 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"13ac7b75-f904-4961-b817-7277e3d0d27b","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:14 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 15c1ccff-e3a0-4ef0-83fe-f653a4c10a59
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.072836'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"a4642b7c-ed73-4e5c-acfd-5f21680f0ac3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 772ff80f-0191-416a-85d4-9ac1e7ddf929
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.071998'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fcd072cb-de97-4846-9dbd-ef6a11049a29","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b38d16c4-14fd-47f0-b87e-8b7c8879bb6f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.076180'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"d95fd8b7-0f91-4feb-9e24-fbae773faedf","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f0fdc325-457c-421e-8938-0047ef9eb377
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.068869'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"79202618-3131-4299-b855-72ee56be55c5","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6f141d47-9364-4367-9ce6-ba718ec9b17a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.069129'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"807f72f4-c714-4286-bff4-2bc8148ece6e","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 07a58a49-c5e1-49a0-ab59-7530e3e748c7
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.074296'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"65b0a2e6-acbb-4951-8aa1-199160fcb0f4","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 921fc703-742c-426a-9648-a00abb3b21f4
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.074029'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3d514aa6-6ad6-4d69-9cb6-b0784c157861","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1a3bf6c7-4c60-4388-80ea-9e2673759674
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.069697'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fd774352-29ea-48d1-a5ef-c39e21f1e4bb","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e760cb6d-b355-45d3-a7ad-04b7075a49c0
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.067106'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2a7e373c-5a3b-42bd-a06f-d3b022a76be3","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 38ee88c4-e250-48f4-8aef-92f2aa6f94e6
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.079626'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56e983d2-c947-4f08-8c18-ba6937824136","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
+- request:
+    method: post
+    uri: http://10.2.2.12/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9c2236c6-f244-4285-99f2-928d36be31ba
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.078113'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 08 May 2016 13:20:15 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.24
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.24
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"dcca7e9d-5e0b-4ed0-aa7f-0ff52e163899","type":"claims","attributes":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source-id":"orcid_update","state":"waiting","claimed-at":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 May 2016 13:20:15 GMT
 recorded_with: VCR 2.9.3
