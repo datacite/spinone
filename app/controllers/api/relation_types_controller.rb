@@ -18,13 +18,13 @@ class Api::RelationTypesController < Api::BaseController
 
   def index
     @relation_types = RelationType.all
-    render json: @relation_types, meta: { total: @relation_types.length }
+    render json: @relation_types[:data], meta: @relation_types[:meta]
   end
 
   def show
     @relation_type = RelationType.find(params[:id])
     fail ActiveRecord::RecordNotFound unless @relation_type.present?
 
-    render json: @relation_type
+    render json: @relation_type[:data]
   end
 end

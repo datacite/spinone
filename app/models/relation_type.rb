@@ -19,9 +19,9 @@ class RelationType < Base
       item = items.find { |i| i["value"] == options[:id] }
       return nil if item.nil?
 
-      parse_item(item)
+      { data: parse_item(item) }
     else
-      parse_items(items)
+      { data: parse_items(items), meta: { total: items.length } }
     end
   end
 

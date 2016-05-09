@@ -27,10 +27,12 @@ class Contributor < Base
       item = result.fetch("data", {}).fetch("contributor", {})
       return nil if item.blank?
 
-      parse_item(item)
+      { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch("contributors", [])
-      parse_items(items)
+      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
+
+      { data: parse_items(items), meta: { total: total } }
     end
   end
 

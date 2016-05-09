@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://10.2.2.6/api/deposits?page=1&per_page=25&q=fd49e100-33a6-4dd2-98cf-143d94093958
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Miniprofiler-Ids:
+      - '["tf32j3amey2c698ag479","waotyia72haphcr4j7un","olcpd1j4rx65auotljlp","nkgsmivmqv2d3bm0xo8q","ei5g0r9azlapwkcnorn7","6lcnjjf6oeiaks4vg725","1q0z5p8q0x3odjlimfwm","9e9h6ucqcns9dzdjizrq","pjey1ayvp17dbt6yp5k0","4kv6n7dczwwm0yz2oiu1"]'
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 712b9d90-622a-4781-b51f-1c2e0cfedb7a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"824a7cd965fa83d9194252698cc32f57"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '5.645666'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 09 May 2016 09:17:57 GMT
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.27
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"deposit-list","message-version":"v7","total":1,"total_pages":1,"page":1},"deposits":[{"id":"fd49e100-33a6-4dd2-98cf-143d94093958","state":"working","message_type":"relation","message_action":"create","source_token":"7a78b5d8-d466-49f7-b335-75f67119f852","callback":"http://10.2.2.14/api/agents","prefix":"10.5517","subj_id":"http://doi.org/10.5517/CCSMT39","obj_id":"http://doi.org/10.3233/MGC-2010-0016","relation_type_id":"is_supplement_to","source_id":"datacite_related","publisher_id":"BL.CCDC","total":1,"occurred_at":"2016-05-08T20:45:26Z","timestamp":"2016-05-08T20:48:35Z","subj":{"pid":"http://doi.org/10.5517/CCSMT39","author":[{"given":"Lucia
+        M.","family":"Lee"},{"given":"Philip J. W.","family":"Elder"},{"given":"Anthony
+        F.","family":"Cozzolino"},{"given":"Qin","family":"Yang"},{"given":"Ignacio","family":"Vargas-Baca"}],"title":"CCDC
+        734021: Experimental Crystal Structure Determination","container-title":"Cambridge
+        Crystallographic Data Centre","issued":"2014-03-22T22:53:47Z","published":"2013","DOI":"10.5517/CCSMT39","registration_agency_id":"datacite","publisher_id":"BL.CCDC","type":"dataset","tracked":true},"obj":{}}]}'
+    http_version: 
+  recorded_at: Mon, 09 May 2016 09:17:57 GMT
+recorded_with: VCR 2.9.3

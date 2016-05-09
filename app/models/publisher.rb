@@ -29,10 +29,12 @@ class Publisher < Base
       item = result.fetch("data", {}).fetch("publisher", {})
       return nil if item.blank?
 
-      parse_item(item)
+      { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
-      parse_items(items)
+      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
+
+      { data: parse_items(items), meta: { total: total } }
     end
   end
 
