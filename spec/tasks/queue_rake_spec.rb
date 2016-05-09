@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "queue:all[orcid]", vcr: true do
   include_context "rake"

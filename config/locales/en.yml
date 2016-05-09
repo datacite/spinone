@@ -1,0 +1,34 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  date:
+    formats:
+      default: "%Y/%m/%d"
+      short: "%b %d"
+      medium: "%d %b %Y"
+      long: "%B %d, %Y"
+      month: "%B %Y"
+      year: "%Y"
+  time:
+    formats:
+      short: "%d %b %H:%M UTC"
+      medium: "%d %b %Y %H:%M UTC"
+      long: "%B %d, %Y %H:%M UTC"
+      long_date: "%B %d, %Y"
+  will_paginate:
+     previous_label: "&#171; Previous"
+     next_label: "Next &#187;"
+  activerecord:
+    attributes:
+      user:
+        login: "Username or email"
+    errors:
+      models:
+        work:
+          attributes:
+            issued_at:
+              on_or_before: "is a datetime in the future"
+              invalid_datetime: "invalid datetime format"
+            published_on:
+              invalid_date: "invalid date format"

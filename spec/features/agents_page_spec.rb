@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "agents", type: :feature, js: true do
   it 'lists all agents' do

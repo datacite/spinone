@@ -1,36 +1,12 @@
-Encoding.default_external = Encoding::UTF_8
+# This file is used by Rack-based servers to start the application.
 
-require 'rubygems'
-require 'bundler'
+require ::File.expand_path('../config/environment', __FILE__)
+require './lib/heartbeat'
 
-Bundler.require
-require 'sass/plugin/rack'
-require './app'
-
-# use scss for stylesheets
-Sass::Plugin.options[:style] = :compressed
-use Sass::Plugin::Rack
-
-# from https://github.com/mperham/sidekiq/wiki/Monitoring
-require 'sidekiq'
-
-Sidekiq.configure_client do |config|
-  config.redis = { size: 1 }
+map "/heartbeat" do
+  run Heartbeat
 end
 
-require 'sidekiq/web'
-Sidekiq::Web.use Rack::Session::Cookie, secret: ENV['RACK_SESSION_COOKIE']
-map '/sidekiq' do
-  use Rack::Auth::Basic, 'Sidekiq Web' do |username, password|
-    username == ENV['ADMIN_USERNAME'] && password == ENV['ADMIN_PASSWORD']
-  end
-
-  run Sidekiq::Web
+map "/" do
+  run Rails.application
 end
-
-Sidekiq::Web.instance_eval { @middleware.reverse! } # Last added, First Run
-
-run Rack::URLMap.new(
-  '/' => Sinatra::Application,
-  '/sidekiq' => Sidekiq::Web
-)

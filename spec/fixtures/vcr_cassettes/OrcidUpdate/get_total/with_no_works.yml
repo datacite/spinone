@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://search.datacite.org/api?fl=doi,nameIdentifier,relatedIdentifier,updated&fq=updated:%5B2009-04-07T00:00:00Z%20TO%202009-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
+    uri: http://search.datacite.org/api?fl=doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated&fq=updated:%5B2009-04-07T00:00:00Z%20TO%202009-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=nameIdentifier:ORCID%5C:*&rows=0&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://push.local
+      - Maremma - http://api.local
       Accept:
       - application/json
   response:
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Thu, 21 Apr 2016 13:40:10 GMT
+      - Sun, 08 May 2016 13:01:40 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,9 +30,9 @@ http_interactions:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Wed, 08 Apr 2015 00:00:00 GMT
+  recorded_at: Sun, 08 May 2016 12:59:23 GMT
 recorded_with: VCR 2.9.3

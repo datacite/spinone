@@ -15,10 +15,12 @@
   }],
   "provisioners": [{
     "type": "shell",
-    "inline": ["sudo apt-get install -y git",
+    "inline": ["sudo apt-get update -y",
+               "sudo apt-get install -y -f git",
                "sudo mkdir -p /var/www/spinone",
                "sudo chown -R ubuntu:ubuntu /var/www/spinone",
-               "git clone https://github.com/datacite/spinone.git /var/www/spinone"]  },
+               "git clone https://github.com/datacite/spinone.git /var/www/spinone"]
+  },
   {
     "type": "file",
     "source": ".env.production",
@@ -40,9 +42,8 @@
           "nginx": {
             "behind_proxy": true
           },
-          "phantomjs": {
-            "version": "1.9.7",
-            "base_url": "https://bitbucket.org/ariya/phantomjs/downloads"
+          "rsyslog": {
+            "local_host_name": "spinone"
           }
         }
       }
@@ -82,6 +83,7 @@
       ".git/*",
       ".vagrant/*",
       "tmp/*",
+      "log/*",
       ".bundle/*",
       ".sass-cache/*"
     ]

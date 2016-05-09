@@ -1,0 +1,29 @@
+<% unless Agent.visible.empty? %>
+  <div class="panel panel-default">
+    <div class="panel-heading">Agents</div>
+    <table class="table" id="Table">
+      <thead>
+        <tr>
+          <th class="name">Agent</th>
+          <th>Status</th>
+          <th class="description">Description</th>
+          <th class="group">Next update</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% Agent.visible.each do |agent| %>
+          <tr>
+            <td><%= link_to agent.title, agent_path(agent) %></td>
+            <td><%= state_label(agent.human_state_name).html_safe %></td>
+            <td><%= h(agent.description) %></td>
+            <td><%= l agent.run_at, format: :short %></td>
+            <td><%= number_with_delimiter(agent.count) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% else %>
+  <div class="alert alert-info">No active agents found</div>
+<% end %>

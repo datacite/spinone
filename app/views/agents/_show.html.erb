@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading panel-title" id="api_key" data-name="<%= @agent.name %>" data-api_key="<%= current_user && current_user.api_key %>" data-model="agent" data-page="" data-per_page="15" data-q="" data-publisher_id="" data-agent_id="<%= @agent.name %>" data-class_name="" data-sort="<%= @agent.name %>">
+    <%= @agent.title %> <small class="pull-right" id="timestamp"><%= date_from_iso8601(@agent.timestamp) + ' UTC' %> <%= state_label(@agent.human_state_name).html_safe %></small>
+  </div>
+  <div class="panel-body">
+    <dl class="dl-horizontal">
+      <% unless @agent.description.blank? %>
+        <dt>Description</dt>
+        <dd><%= h(@agent.description) %></dd>
+      <% end %>
+      <dt>Last update</dt>
+      <dd><%= l @agent.last_run_at, format: :medium %></dd>
+      <dt>Count</dt>
+      <dd><%= number_with_delimiter(@agent.count) %></dd>
+    </dl>
+  </div>
+</div>
