@@ -11,7 +11,7 @@ class OrcidUpdate < Agent
   end
 
   def push_url
-    ENV['VOLPINO_URL']
+    "#{ENV['VOLPINO_URL']}/claims"
   end
 
   def access_token

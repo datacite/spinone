@@ -12,5 +12,4 @@ describe RelationType, type: :model, vcr: true do
     relation_type = RelationType.find("IsCitedBy")
     expect(relation_type.title).to eq("Is cited by")
   end
-
 end

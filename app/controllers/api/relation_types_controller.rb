@@ -1,4 +1,4 @@
-class Api::V1::RelationTypesController < Api::BaseController
+class Api::RelationTypesController < Api::BaseController
   swagger_controller :relation_types, "Relation Types"
 
   swagger_api :index do
@@ -18,7 +18,7 @@ class Api::V1::RelationTypesController < Api::BaseController
 
   def index
     @relation_types = RelationType.all
-    render json: @relation_types
+    render json: @relation_types, meta: { total: @relation_types.length }
   end
 
   def show

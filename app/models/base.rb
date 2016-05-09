@@ -6,8 +6,8 @@ class Base
     collect_data
   end
 
-  def self.find(id)
-    collect_data(id: id)
+  def self.where(options={})
+    collect_data(options)
   end
 
   def self.collect_data(options = {})

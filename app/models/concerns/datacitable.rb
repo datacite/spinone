@@ -211,7 +211,7 @@ module Datacitable
     end
 
     def push_url
-      ENV["LAGOTTO_URL"]
+      "#{ENV["LAGOTTO_URL"]}/deposits"
     end
 
     def access_token

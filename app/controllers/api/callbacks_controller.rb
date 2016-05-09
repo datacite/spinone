@@ -1,4 +1,4 @@
-class Api::V1::CallbacksController < Api::BaseController
+class Api::CallbacksController < Api::BaseController
   before_filter :authenticate_user_from_token!
   load_and_authorize_resource :agent, parent: false
 

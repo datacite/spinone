@@ -10,13 +10,13 @@ var endDate = new Date(),
 var params = d3.select("#api_key");
 if (!params.empty()) {
   var api_key = params.attr('data-api-key');
-  var query = encodeURI("/api/status");
+  var query = encodeURI("/status");
 }
 
 // load the data from the Lagotto API
 if (query) {
   d3.json(query)
-    .header("Accept", "application/json; version=1")
+    .header("Accept", "application/json")
     .header("Authorization", "Token token=" + api_key)
     .get(function(error, json) {
       if (error) { return console.warn(error); }

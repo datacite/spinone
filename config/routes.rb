@@ -17,15 +17,14 @@ Rails.application.routes.draw do
 
   resources :agents
   resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
-  resources :status, :only => [:index]
-
+  get "/dashboard", to: "status#index"
   get "/api", to: "api/index#index"
 
-  namespace :api, defaults: { format: "json" } do
-    scope module: :v1, constraints: ApiConstraint.new(version: 1, default: :true) do
-      resources :callbacks, only: [:create]
-      resources :relation_types, only: [:show, :index]
-      resources :status, only: [:index]
-    end
+  scope module: :api, defaults: { format: "json" } do
+    resources :callbacks, only: [:create]
+    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }
+    resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }
+    resources :relation_types, only: [:show, :index]
+    resources :status, only: [:index]
   end
 end

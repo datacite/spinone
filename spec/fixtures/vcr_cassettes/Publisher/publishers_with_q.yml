@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://10.2.2.6/api/publishers?page=1&per_page=50&q=plos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Miniprofiler-Ids:
+      - '["bltx4oocxhfx5sl4a10b","waotyia72haphcr4j7un","olcpd1j4rx65auotljlp","nkgsmivmqv2d3bm0xo8q","ei5g0r9azlapwkcnorn7","6lcnjjf6oeiaks4vg725","1q0z5p8q0x3odjlimfwm","9e9h6ucqcns9dzdjizrq","pjey1ayvp17dbt6yp5k0","4kv6n7dczwwm0yz2oiu1"]'
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ee00e866-46de-4b59-ab50-95d8298c41ac
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"6dd7ef54f95a3a3a127ac7a93ae5f2a4"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.756268'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 09 May 2016 07:54:34 GMT
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/, __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.27
+      Server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.27
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":1,"total_pages":1,"page":1},"publishers":[{"id":"340","title":"Public
+        Library of Science (PLoS)","other_names":["Public Library of Science (PLoS)","Public
+        Library of Science"],"prefixes":["10.1371"],"registration_agency_id":"crossref","timestamp":"2016-05-09T07:09:35Z"}]}'
+    http_version: 
+  recorded_at: Mon, 09 May 2016 07:54:34 GMT
+recorded_with: VCR 2.9.3
