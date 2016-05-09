@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe '/api/v1/status', :type => :api do
+describe '/api/status', :type => :api do
   it "get status" do
-    get '/api/status'
+    get '/status'
 
     response = JSON.parse(last_response.body)
     data = response.fetch('data', {})
@@ -11,7 +11,7 @@ describe '/api/v1/status', :type => :api do
   end
 
   it "returns correct content_type" do
-    get '/api/status'
+    get '/status'
 
     expect(last_response.header["Content-Type"]).to eq("application/json; charset=utf-8")
   end

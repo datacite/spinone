@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe '/api/v1/callbacks', :type => :api do
+describe '/api/callbacks', :type => :api do
   before(:each) do
     allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8))
   end
@@ -25,13 +25,13 @@ describe '/api/v1/callbacks', :type => :api do
   end
 
   it "post returns correct content_type" do
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     expect(last_response.header["Content-Type"]).to eq("application/json; charset=utf-8")
   end
 
   it "post callbacks" do
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     response = JSON.parse(last_response.body)
     attributes = response.fetch('deposit', {}).fetch('attributes', {})
@@ -42,7 +42,7 @@ describe '/api/v1/callbacks', :type => :api do
 
   it "post callbacks no token" do
     headers = { "CONTENT_TYPE" => "application/json" }
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     response = JSON.parse(last_response.body)
     expect(response).to eq("errors"=>[{"status"=>"401", "title"=>"You are not authorized to access this page."}])
@@ -52,7 +52,7 @@ describe '/api/v1/callbacks', :type => :api do
   it "post callbacks wrong token" do
     headers = { "CONTENT_TYPE" => "application/json",
                 "HTTP_AUTHORIZATION" => "Token token=456" }
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     response = JSON.parse(last_response.body)
     expect(response).to eq("errors"=>[{"status"=>"401", "title"=>"You are not authorized to access this page."}])
@@ -67,7 +67,7 @@ describe '/api/v1/callbacks', :type => :api do
                               "message_size" =>  2,
                               "source_token" => agent.uuid,
                               "timestamp" => "2016-01-09T09:15:18Z" } }
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     response = JSON.parse(last_response.body)
     expect(response['errors']).to eq([{"status"=>400, "title"=>"Processing of deposit #{uuid} failed"}])
@@ -82,7 +82,7 @@ describe '/api/v1/callbacks', :type => :api do
                               "message_size" => 12,
                               "source_token" => agent.uuid,
                               "timestamp" => "2016-01-09T09:15:18Z" } }
-    post '/api/callbacks', params.to_json, headers
+    post '/callbacks', params.to_json, headers
 
     response = JSON.parse(last_response.body)
     expect(response['errors']).to eq([{"status"=>422, "title"=>"Request must contain state \"done\" or \"failed\""}])
