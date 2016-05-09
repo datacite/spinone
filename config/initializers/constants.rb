@@ -22,6 +22,9 @@ ORCID_VERSION = '1.2'
 # ORCID schema
 ORCID_SCHEMA = 'https://raw.githubusercontent.com/ORCID/ORCID-Source/master/orcid-model/src/main/resources/orcid-message-1.2.xsd'
 
+# Version of DataCite API
+DATACITE_VERSION = "3.1"
+
 # CrossRef types from http://api.crossref.org/types
 CROSSREF_TYPE_TRANSLATIONS = {
   "proceedings" => nil,
