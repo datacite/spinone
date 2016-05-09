@@ -1,11 +1,12 @@
 <div class="panel panel-default">
-  <div class="panel-heading">Agents</div>
+  <div class="panel-heading panel-title">Agents</div>
   <table class="table" id="Table">
     <thead>
       <tr>
         <th class="name">Agent</th>
         <th>Status</th>
         <th class="description">Description</th>
+        <th class="group">Next update</th>
         <% if can?(:manage, Agent) %>
           <th class="status">Actions</th>
         <% end %>
@@ -17,6 +18,7 @@
           <td><%= link_to_if agent.installed?, agent.title, agent_path(agent) %></td>
           <td><%= state_label(agent.human_state_name).html_safe %></td>
           <td><%= h(agent.description) %></td>
+          <td><%= l agent.run_at, format: :short %></td>
           <% if can?(:manage, Agent) %>
             <td>
               <% if agent.human_state_name == "available" %>
