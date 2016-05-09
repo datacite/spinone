@@ -3,8 +3,6 @@ require 'rails_helper'
 describe Agent, :type => :model, vcr: true do
   include ActiveJob::TestHelper
 
-  it { is_expected.to belong_to(:group) }
-
   it { is_expected.to validate_presence_of(:name) }
   it { is_expected.to validate_presence_of(:title) }
   it { is_expected.to validate_numericality_of(:timeout).is_greater_than(0).only_integer.with_message("must be greater than 0") }
