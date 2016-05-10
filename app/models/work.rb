@@ -1,4 +1,4 @@
-class Publisher < Base
+class Work < Base
   attr_reader :id, :title, :other_names, :prefixes, :registration_agency_id, :updated_at
 
   def initialize(attributes)
@@ -14,10 +14,12 @@ class Publisher < Base
     if options[:id].present?
       "#{url}/#{options[:id]}"
     else
-      params = { page: options.fetch(:offset, 1),
-                 per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:q, nil),
-                 registration_agency_id: options.fetch(:registration_agency_id, nil) }.compact
+      params = { q: q,
+                 start: options.fetch(:offset, 0),
+                 rows: options[:rows].presence || 25,
+                 fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated",
+                 fq: "has_metadata:true AND is_active:true",
+                 wt: "json" }
       url + "?" + URI.encode_www_form(params)
     end
   end
@@ -31,7 +33,7 @@ class Publisher < Base
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", {}).fetch("publishers", [])
+      items = result.fetch("data", {}).fetch("works", [])
       total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
 
       { data: parse_items(items), meta: { total: total } }
@@ -43,6 +45,6 @@ class Publisher < Base
   end
 
   def self.url
-    "#{ENV["LAGOTTO_URL"]}/publishers"
+    "#{ENV["LAGOTTO_URL"]}/works"
   end
 end

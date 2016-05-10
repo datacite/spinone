@@ -25,12 +25,6 @@ class RelationType < Base
     end
   end
 
-  def self.parse_items(items)
-    Array(items).map do |item|
-      parse_item(item)
-    end
-  end
-
   def self.parse_item(item)
     id = item.fetch("value", "missing value")
     title = id.underscore.humanize

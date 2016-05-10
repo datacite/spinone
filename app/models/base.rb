@@ -19,4 +19,10 @@ class Base
     query_url = get_query_url(options)
     Maremma.get(query_url, options)
   end
+
+  def self.parse_items(items)
+    Array(items).map do |item|
+      parse_item(item)
+    end
+  end
 end

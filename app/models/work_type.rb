@@ -1,11 +1,10 @@
-class Contributor < Base
-  attr_reader :id, :given, :family, :literal, :updated_at
+class WorkType < Base
+  attr_reader :id, :title, :container, :updated_at
 
   def initialize(attributes)
     @id = attributes.fetch("id", nil)
-    @given = attributes.fetch("given", nil)
-    @family = attributes.fetch("family", nil)
-    @literal = attributes.fetch("literal", nil)
+    @title = attributes.fetch("title", nil)
+    @container = attributes.fetch("container", nil)
     @updated_at = attributes.fetch("timestamp", nil)
   end
 
@@ -13,10 +12,7 @@ class Contributor < Base
     if options[:id].present?
       "#{url}/#{options[:id]}"
     else
-      params = { page: options.fetch(:offset, 1),
-                 per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:q, nil) }.compact
-      url + "?" + URI.encode_www_form(params)
+      url
     end
   end
 
@@ -24,12 +20,12 @@ class Contributor < Base
     return result if result['errors']
 
     if options[:id]
-      item = result.fetch("data", {}).fetch("contributor", {})
+      item = result.fetch("data", {}).fetch("work_type", {})
       return nil if item.blank?
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", {}).fetch("contributors", [])
+      items = result.fetch("data", {}).fetch("work_types", [])
       total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
 
       { data: parse_items(items), meta: { total: total } }
@@ -41,6 +37,6 @@ class Contributor < Base
   end
 
   def self.url
-    "#{ENV["LAGOTTO_URL"]}/contributors"
+    "#{ENV["LAGOTTO_URL"]}/work_types"
   end
 end

@@ -25,7 +25,11 @@ Rails.application.routes.draw do
     resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }
     resources :events, only: [:show, :index]
     resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }
+    resources :registration_agencies, only: [:show, :index]
     resources :relation_types, only: [:show, :index]
+    resources :sources, only: [:show, :index]
     resources :status, only: [:index]
+    resources :work_types, only: [:show, :index]
+    resources :works, only: [:show, :index]
   end
 end
