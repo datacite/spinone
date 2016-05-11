@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.datacite.org/api/10.3886/ICPSR36357.V1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Wed, 11 May 2016 10:09:27 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '1072'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.26 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 404 - /search/public/api/10.3886/ICPSR36357.V1</h1><HR size="1" noshade="noshade"><p><b>type</b>
+        Status report</p><p><b>message</b> <u>/search/public/api/10.3886/ICPSR36357.V1</u></p><p><b>description</b>
+        <u>The requested resource (/search/public/api/10.3886/ICPSR36357.V1) is not
+        available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.26</h3></body></html>'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 10:07:05 GMT
+recorded_with: VCR 2.9.3

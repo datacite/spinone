@@ -1,11 +1,12 @@
 class Publisher < Base
-  attr_reader :id, :title, :other_names, :prefixes, :registration_agency_id, :updated_at
+  attr_reader :id, :title, :other_names, :prefixes, :member_id, :registration_agency_id, :updated_at
 
   def initialize(attributes)
     @id = attributes.fetch("id", nil)
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
+    @member_id = @id.split(".").first
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
     @updated_at = attributes.fetch("timestamp", nil)
   end
@@ -32,9 +33,9 @@ class Publisher < Base
       { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
-      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
+      meta = result.fetch("data", {}).fetch("meta", {}).except("status", "message-type", "message-version")
 
-      { data: parse_items(items), meta: { total: total } }
+      { data: parse_items(items), meta: meta }
     end
   end
 

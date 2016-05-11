@@ -1,4 +1,4 @@
-class Api::PublishersController < Api::BaseController
+class Api::WorksController < Api::BaseController
   swagger_controller :works, "Works"
 
   swagger_api :index do
