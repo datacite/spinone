@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: d40a6dc987080615a0c126101ec041efcaa78dc8
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: c0d4e40b1156e6849a577fb9e1e97f0fab9aa872
+    revision: 5cda625bbf78156c75f7c012bbdd946bd4f10b9f
 
 GRAPH
   apt (2.9.2)
@@ -95,7 +95,7 @@ GRAPH
     packagecloud (>= 0.0.0)
   seven_zip (2.0.0)
     windows (>= 1.2.2)
-  spinone (1.2.1)
+  spinone (1.2.2)
     apt (>= 0.0.0)
     capistrano (~> 1.0.0)
     consul (>= 0.0.0)
