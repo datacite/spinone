@@ -18,20 +18,22 @@ Installs packages required for compiling C software from source. Use this cookbo
 
 ### Chef
 
-- Chef 11+
+- Chef 12+
 
 ### Cookbooks
 
 - seven_zip
+- mingw
 
 **Note for Debian platform family:** On Debian platform-family systems, it is recommended that `apt-get update` be run, to ensure that the package cache is updated. It's not in the scope of this cookbook to do that, as it can [create a duplicate resource](https://tickets.chef.io/browse/CHEF-3694). We recommend using the [apt](https://supermarket.chef.io/cookbooks/apt) cookbook to do this.
 
 ## Attributes
 
-Attribute                                 | Default                      | Description
------------------------------------------ | :--------------------------: | -----------------------------------
-`node['build-essential']['compile_time']` | `false`                      | Execute resources at compile time
-`node['build-essential']['msys']['path']` | `#{ENV['SYSTEMDRIVE']\\msys` | Destination for msys (Windows only)
+Attribute                                    | Default                         | Description
+-------------------------------------------- | :-----------------------------: | -----------------------------------
+`node['build-essential']['compile_time']`    | `false`                         | Execute resources at compile time
+`node['build-essential']['mingw32']['path']` | `#{ENV['SYSTEMDRIVE']\\mingw32` | Destination for mingw 32-bit compiler toolchain (Windows only)
+`node['build-essential']['mingw64']['path']` | `#{ENV['SYSTEMDRIVE']\\mingw64` | Destination for mingw 64-bit compiler toolchain (Windows only)
 
 ## Usage
 

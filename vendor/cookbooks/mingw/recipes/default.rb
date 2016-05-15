@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: build-essential
-# Attributes:: default
+# Cookbook Name:: mingw
+# Recipe:: default
 #
-# Copyright 2008-2016, Chef Software, Inc.
+# Copyright 2016 Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,8 +15,5 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-default['build-essential']['compile_time'] = false
-default['build-essential']['mingw32']['path'] = "#{ENV['SYSTEMDRIVE']}\\mingw32"
-default['build-essential']['mingw64']['path'] = "#{ENV['SYSTEMDRIVE']}\\mingw64"
+include_recipe 'seven_zip::default'

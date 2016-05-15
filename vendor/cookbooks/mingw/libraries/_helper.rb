@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: build-essential
-# Attributes:: default
+# Cookbook Name:: mingw
+# Library:: _helper
 #
-# Copyright 2008-2016, Chef Software, Inc.
+# Copyright 2016, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,6 +17,12 @@
 # limitations under the License.
 #
 
-default['build-essential']['compile_time'] = false
-default['build-essential']['mingw32']['path'] = "#{ENV['SYSTEMDRIVE']}\\mingw32"
-default['build-essential']['mingw64']['path'] = "#{ENV['SYSTEMDRIVE']}\\mingw64"
+module Mingw
+  module Helper
+    def win_friendly_path(path)
+      path.gsub(::File::SEPARATOR, ::File::ALT_SEPARATOR || '\\') if path
+    end
+  end
+end
+
+Chef::Resource.send(:include, Mingw::Helper)
