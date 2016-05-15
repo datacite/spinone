@@ -3,7 +3,6 @@ octopus:
   fully_replicated: true
   enviroments:
     - development
-    - stage
     - production
   defaults: &defaults
     slave:
@@ -15,8 +14,6 @@ octopus:
       host: <%= ENV['DB_SLAVE_HOST'] || ENV['DB_HOST'] || "127.0.0.1" %>
       port: <%= ENV['DB_PORT'] || 3306 %>
   development:
-    <<: *defaults
-  stage:
     <<: *defaults
   production:
     <<: *defaults
