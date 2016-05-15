@@ -19,7 +19,7 @@ class OrcidUpdate < Agent
   end
 
   # push to Volpino API if no error and we have collected works
-  def push_data(items)
+  def push_data(items, options={})
     return [] if items.empty?
 
     callback = "#{ENV['SERVER_URL']}/api/agents"
