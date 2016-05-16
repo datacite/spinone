@@ -41,6 +41,7 @@ class Work < Base
       sort = options[:sort].presence || options[:q].present? ? "score" : "minted"
       order = options[:order].presence || "desc"
       fq = %w(has_metadata:true is_active:true)
+      fq << "resourceTypeGeneral:#{options['resource-type-id']}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['publisher-id']}" if options['publisher-id'].present?
 
       params = { q: options.fetch(:q, nil).presence || "*:*",
@@ -49,7 +50,7 @@ class Work < Base
                  fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,xml,minted,updated",
                  fq: fq,
                  facet: "true",
-                 'facet.field' => %w(resourceType_facet publicationYear datacentre_facet),
+                 'facet.field' => %w(publicationYear datacentre_facet resourceType_facet),
                  'facet.limit' => 10,
                  'f.resourceType_facet.facet.limit' => 15,
                  'facet.mincount' => 1,
@@ -93,10 +94,11 @@ class Work < Base
                             end
 
     if options["publisher-id"].present? && publishers.empty?
-      publishers = [[Publisher, { "id" => options["publisher-id"], "title" => "Test" }]]
+      publisher = Publisher.where(id: options["publisher-id"])[:data]
+      publishers = [[Publisher, { "id" => publisher.id, "title" => publisher.title }]]
     end
 
-    Array(resource_types) + Array(publishers).map do |item|
+    Array(resource_types).map do |item|
       parse_include(item.first, item.last)
     end
   end
@@ -108,15 +110,15 @@ class Work < Base
   def self.parse_facet_counts(facets, options={})
     resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
     years = facets.fetch("publicationYear", []).each_slice(2).to_h
-    if options["publisher-id"].present?
+    publishers = facets.fetch("datacentre_facet", [])
+                       .each_slice(2)
+                       .map do |p|
+                              id, title = p.first.split(' - ', 2)
+                              [id, p.last]
+                            end.to_h
+
+    if options["publisher-id"].present? && publishers.empty?
       publishers = { options["publisher-id"] => 0 }
-    else
-      publishers = facets.fetch("datacentre_facet", [])
-                         .each_slice(2)
-                         .map do |p|
-                                id, title = p.first.split(' - ', 2)
-                                [id, p.last]
-                              end.to_h
     end
 
     { "resource-types" => resource_types,

@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Mon, 16 May 2016 07:40:27 GMT
+      - Mon, 16 May 2016 17:36:33 GMT
       Content-Type:
       - application/xml;charset=UTF-8
       Connection:
@@ -89,5 +89,5 @@ http_interactions:
         name=\"publicationYear\">2016</str><str name=\"language\">eng</str><str name=\"resourceTypeGeneral\">Dataset</str><long
         name=\"_version_\">1533458938032291842</long><date name=\"indexed\">2016-05-05T03:53:24.465Z</date></doc></result>\n</response>\n"
     http_version: 
-  recorded_at: Mon, 16 May 2016 07:37:59 GMT
+  recorded_at: Mon, 16 May 2016 17:34:04 GMT
 recorded_with: VCR 2.9.3

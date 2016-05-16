@@ -18,7 +18,7 @@ class Api::WorksController < Api::BaseController
 
   def index
     collection = Work.where(params)
-    render json: collection[:data], include: ['publishers'], meta: collection[:meta]
+    render json: collection[:data], meta: collection[:meta]
   end
 
   def show
