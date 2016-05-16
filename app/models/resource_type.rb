@@ -1,4 +1,4 @@
-class RelationType < Base
+class ResourceType < Base
   attr_reader :id, :title
 
   def initialize(attributes)
@@ -7,7 +7,7 @@ class RelationType < Base
   end
 
   def self.get_query_url(options={})
-    "http://schema.datacite.org/meta/kernel-#{DATACITE_VERSION}/include/datacite-relationType-v#{DATACITE_VERSION}.xsd"
+    "http://schema.datacite.org/meta/kernel-#{DATACITE_VERSION}/include/datacite-resourceType-v#{DATACITE_VERSION}.xsd"
   end
 
   def self.parse_data(result, options={})

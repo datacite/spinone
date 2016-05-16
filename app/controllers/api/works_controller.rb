@@ -17,14 +17,14 @@ class Api::WorksController < Api::BaseController
   end
 
   def index
-    @works = Work.where(params)
-    render json: @works[:data], meta: @works[:meta]
+    collection = Work.where(params)
+    render json: collection[:data], include: ['publishers'], meta: collection[:meta]
   end
 
   def show
-    @work = Work.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless @work.present?
+    item = Work.where(id: params[:id])
+    fail ActiveRecord::RecordNotFound unless item.present?
 
-    render json: @work[:data]
+    render json: item[:data]
   end
 end

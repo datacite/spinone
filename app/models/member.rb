@@ -3,7 +3,7 @@ class Member < Base
 
   def initialize(item)
     attributes = item.fetch('attributes', {})
-    @id = item.fetch("id", nil)
+    @id = item.fetch("id", nil).underscore
     @title = attributes.fetch("title", nil)
     @description = attributes.fetch("description", nil)
     @member_type = attributes.fetch("member-type", nil)
@@ -17,7 +17,7 @@ class Member < Base
       "#{url}/#{options[:id]}"
     else
       params = { q: options.fetch(:q, nil),
-                 member_type: options.fetch(:member_type, nil),
+                 member_type: options.fetch("member-type", nil),
                  region: options.fetch(:region, nil),
                  year: options.fetch(:year, nil) }.compact
       url + "?" + URI.encode_www_form(params)

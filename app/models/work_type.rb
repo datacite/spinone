@@ -2,7 +2,7 @@ class WorkType < Base
   attr_reader :id, :title, :container, :updated_at
 
   def initialize(attributes)
-    @id = attributes.fetch("id", nil)
+    @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @container = attributes.fetch("container", nil)
     @updated_at = attributes.fetch("timestamp", nil)

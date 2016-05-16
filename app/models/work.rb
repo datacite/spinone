@@ -11,7 +11,7 @@ class Work < Base
   include Metadatable
 
   def initialize(attributes)
-    @doi = attributes.fetch("doi", nil)
+    @doi = attributes.fetch("doi")
     @id = doi_as_url(@doi)
 
     xml = Base64.decode64(attributes.fetch('xml', "PGhzaD48L2hzaD4=\n"))
@@ -26,10 +26,12 @@ class Work < Base
     @published = attributes.fetch("publicationYear", nil)
     @issued =  attributes.fetch("minted", nil)
     @resource_type_general = attributes.fetch("resourceTypeGeneral", nil)
+    @resource_type_general = @resource_type_general.underscore.dasherize if @resource_type_general.present?
     @resource_type = attributes.fetch("resourceType", nil).presence || nil
     @type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
     @license = attributes.fetch("rightsURI", []).first
     @publisher_id = attributes.fetch("datacentre_symbol", nil)
+    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
   end
 
   def self.get_query_url(options={})
@@ -38,12 +40,19 @@ class Work < Base
     else
       sort = options[:sort].presence || options[:q].present? ? "score" : "minted"
       order = options[:order].presence || "desc"
+      fq = %w(has_metadata:true is_active:true)
+      fq << "datacentre_symbol:#{options['publisher-id']}" if options['publisher-id'].present?
 
       params = { q: options.fetch(:q, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
                  fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,xml,minted,updated",
-                 fq: "has_metadata:true AND is_active:true",
+                 fq: fq,
+                 facet: "true",
+                 'facet.field' => %w(resourceType_facet publicationYear datacentre_facet),
+                 'facet.limit' => 10,
+                 'f.resourceType_facet.facet.limit' => 15,
+                 'facet.mincount' => 1,
                  sort: "#{sort} #{order}",
                  wt: "json" }.compact
       url + "?" + URI.encode_www_form(params)
@@ -60,10 +69,59 @@ class Work < Base
       { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      total = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
 
-      { data: parse_items(items), meta: { total: total } }
+      included = parse_included(facets, options)
+      meta = parse_facet_counts(facets, options)
+      meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+
+      { data: parse_items(items) + parse_included(facets), meta: meta }
     end
+  end
+
+  def self.parse_included(facets, options={})
+    resource_types = facets.fetch("resourceType_facet", [])
+                           .each_slice(2)
+                           .map { |r| [ResourceType, { "id" => r.first,
+                                                       "title" => r.first.underscore.humanize }] }
+
+    publishers = facets.fetch("datacentre_facet", [])
+                       .each_slice(2)
+                       .map do |p|
+                              id, title = p.first.split(' - ', 2)
+                              [Publisher, { "id" => id, "title" => title }]
+                            end
+
+    if options["publisher-id"].present? && publishers.empty?
+      publishers = [[Publisher, { "id" => options["publisher-id"], "title" => "Test" }]]
+    end
+
+    Array(resource_types) + Array(publishers).map do |item|
+      parse_include(item.first, item.last)
+    end
+  end
+
+  def self.parse_include(klass, params)
+    klass.new(params)
+  end
+
+  def self.parse_facet_counts(facets, options={})
+    resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
+    years = facets.fetch("publicationYear", []).each_slice(2).to_h
+    if options["publisher-id"].present?
+      publishers = { options["publisher-id"] => 0 }
+    else
+      publishers = facets.fetch("datacentre_facet", [])
+                         .each_slice(2)
+                         .map do |p|
+                                id, title = p.first.split(' - ', 2)
+                                [id, p.last]
+                              end.to_h
+    end
+
+    { "resource-types" => resource_types,
+      "years" => years,
+      "publishers" => publishers }
   end
 
   def self.parse_item(item)

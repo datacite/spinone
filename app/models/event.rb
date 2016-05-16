@@ -29,10 +29,10 @@ class Event < Base
                  q: options.fetch(:q, nil),
                  state: options.fetch(:state, nil),
                  prefix: options.fetch(:prefix, nil),
-                 message_type: options.fetch(:message_type, nil),
-                 source_token: options.fetch(:source_token, nil),
-                 source_id: options.fetch(:source_id, nil),
-                 registration_agency_id: options.fetch(:registration_agency_id, nil) }.compact
+                 message_type: options.fetch("message-type", nil),
+                 source_token: options.fetch("source-token", nil),
+                 source_id: options.fetch("source-id", nil),
+                 registration_agency_id: options.fetch("registration-agency-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end

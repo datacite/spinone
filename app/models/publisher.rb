@@ -2,7 +2,7 @@ class Publisher < Base
   attr_reader :id, :title, :other_names, :prefixes, :member_id, :registration_agency_id, :updated_at
 
   def initialize(attributes)
-    @id = attributes.fetch("id", nil)
+    @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
@@ -18,7 +18,7 @@ class Publisher < Base
       params = { page: options.fetch(:offset, 1),
                  per_page: options.fetch(:rows, 25),
                  q: options.fetch(:q, nil),
-                 registration_agency_id: options.fetch(:registration_agency_id, nil) }.compact
+                 registration_agency_id: options.fetch("registration-agency-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end
