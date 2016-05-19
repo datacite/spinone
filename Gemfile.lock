@@ -15,12 +15,12 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: 2b4989935130732d59d7cc1b6228d4a447dd5071
+  revision: b5e2b41a3316e1a2a44b5a5cccdf4f91d8698922
   specs:
-    active_model_serializers (0.10.0.rc5)
-      actionpack (>= 4.0)
-      activemodel (>= 4.0)
-      railties (>= 4.0)
+    active_model_serializers (0.10.0)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      railties (>= 4.1, < 6)
 
 GIT
   remote: https://github.com/tchandy/octopus.git
@@ -78,7 +78,7 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
-    bibtex-ruby (4.3.0)
+    bibtex-ruby (4.4.0)
       latex-decode (~> 0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -96,7 +96,7 @@ GEM
     bugsnag (2.8.13)
       json (~> 1.7, >= 1.7.7)
     builder (3.2.2)
-    byebug (8.2.5)
+    byebug (9.0.3)
     cancancan (1.9.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -138,7 +138,7 @@ GEM
     database_cleaner (1.3.0)
     debug_inspector (0.0.2)
     deep_merge (1.0.1)
-    devise (3.5.9)
+    devise (3.5.10)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -221,11 +221,11 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
+    minitest (5.9.0)
     multi_json (1.11.3)
     multipart-post (2.0.0)
     mysql2 (0.3.18)
-    namae (0.10.1)
+    namae (0.10.2)
     nilify_blanks (1.2.1)
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -314,7 +314,7 @@ GEM
       powerpack (~> 0.0.6)
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
-    ruby-progressbar (1.8.0)
+    ruby-progressbar (1.8.1)
     ruby2ruby (2.1.4)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
