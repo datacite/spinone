@@ -39,7 +39,7 @@ gem 'namae', '~> 0.10.1'
 gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 
-gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-jwt', '~> 0.0.3', git: 'https://github.com/datacite/omniauth-jwt.git'
 gem 'cancancan', '~> 1.9.2'
