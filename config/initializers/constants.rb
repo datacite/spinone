@@ -25,6 +25,9 @@ ORCID_SCHEMA = 'https://raw.githubusercontent.com/ORCID/ORCID-Source/master/orci
 # Version of DataCite API
 DATACITE_VERSION = "3.1"
 
+# Date of DataCite Schema
+DATACITE_SCHEMA_DATE = "2014-10-16"
+
 # CrossRef types from http://api.crossref.org/types
 CROSSREF_TYPE_TRANSLATIONS = {
   "proceedings" => nil,

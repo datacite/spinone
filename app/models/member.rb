@@ -1,5 +1,5 @@
 class Member < Base
-  attr_reader :id, :title, :description, :member_type, :region, :country, :year
+  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :updated_at
 
   def initialize(item)
     attributes = item.fetch('attributes', {})
@@ -10,6 +10,7 @@ class Member < Base
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
     @year = attributes.fetch("year", nil)
+    @updated_at = attributes.fetch("updated", nil)
   end
 
   def self.get_query_url(options={})

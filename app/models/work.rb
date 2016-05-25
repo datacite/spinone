@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :published, :issued
+  attr_reader :id, :doi, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :published, :issued, :updated_at
 
   # include author methods
   include Authorable
@@ -24,7 +24,8 @@ class Work < Base
     @container_title = attributes.fetch("publisher", nil)
     @description = attributes.fetch("description", []).first
     @published = attributes.fetch("publicationYear", nil)
-    @issued =  attributes.fetch("minted", nil)
+    @issued = attributes.fetch("minted", nil)
+    @updated_at = attributes.fetch("updated", nil)
     @resource_type_general = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_general = @resource_type_general.underscore.dasherize if @resource_type_general.present?
     @resource_type = attributes.fetch("resourceType", nil).presence || nil
