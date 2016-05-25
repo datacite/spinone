@@ -22,7 +22,7 @@ class Api::ResourceTypesController < Api::BaseController
   end
 
   def show
-    @resource_type = ResourceType.find(params[:id])
+    @resource_type = ResourceType.where(id: params[:id])
     fail ActiveRecord::RecordNotFound unless @resource_type.present?
 
     render json: @resource_type[:data]

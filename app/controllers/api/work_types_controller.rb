@@ -22,7 +22,7 @@ class Api::WorkTypesController < Api::BaseController
   end
 
   def show
-    @work_type = WorkType.find(params[:id])
+    @work_type = WorkType.where(id: params[:id])
     fail ActiveRecord::RecordNotFound unless @work_type.present?
 
     render json: @work_type[:data]

@@ -3,7 +3,7 @@ require 'rouge'
 
 module ApplicationHelper
   def login_link
-    link_to "Sign in", user_omniauth_authorize_path(:jwt), :id => "sign-in", class: 'btn btn-default'
+    link_to "Sign in", user_jwt_omniauth_authorize_path, :id => "sign-in", class: 'btn btn-default'
   end
 
   def icon(icon, text = nil, html_options = {})

@@ -22,7 +22,7 @@ class Api::RelationTypesController < Api::BaseController
   end
 
   def show
-    @relation_type = RelationType.find(params[:id])
+    @relation_type = RelationType.where(id: params[:id])
     fail ActiveRecord::RecordNotFound unless @relation_type.present?
 
     render json: @relation_type[:data]

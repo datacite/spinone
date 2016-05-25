@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Source, type: :model, vcr: true do
   it "sources" do
     sources = Source.all
-    expect(sources.length).to eq(6)
+    expect(sources.length).to eq(2)
     source = sources.first
     expect(source.title).to eq("DataCite (RelatedIdentifier)")
   end
