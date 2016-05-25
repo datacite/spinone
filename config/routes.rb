@@ -22,9 +22,8 @@ Rails.application.routes.draw do
 
   scope module: :api, defaults: { format: "json" } do
     resources :callbacks, only: [:create]
-    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ } do
-      resources :contributions
-    end
+    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }
+    resources :contributions, only: [:index]
     resources :events, only: [:show, :index]
     resources :members, only: [:show, :index]
     resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }
