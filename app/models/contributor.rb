@@ -1,11 +1,16 @@
 class Contributor < Base
-  attr_reader :id, :given, :family, :literal, :updated_at
+  attr_reader :id, :given, :family, :literal, :orcid, :github, :updated_at
+
+  # include helper module for extracting identifier
+  include Identifiable
 
   def initialize(attributes)
     @id = attributes.fetch("id", nil)
     @given = attributes.fetch("given", nil)
     @family = attributes.fetch("family", nil)
     @literal = attributes.fetch("literal", nil)
+    @orcid = orcid_from_url(@id)
+    @github = github_owner_from_url(@id)
     @updated_at = attributes.fetch("timestamp", nil)
   end
 
