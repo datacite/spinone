@@ -15,7 +15,8 @@ class Publisher < Base
     if options[:id].present?
       "#{url}/#{options[:id]}"
     else
-      params = { page: options.fetch(:offset, 1),
+      page = options.fetch(:offset, 0) > 0 ? options.fetch(:offset, 0) : 1
+      params = { page: page,
                  per_page: options.fetch(:rows, 25),
                  q: options.fetch(:q, nil),
                  registration_agency_id: options.fetch("registration-agency-id", nil) }.compact
