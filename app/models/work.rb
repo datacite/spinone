@@ -37,7 +37,8 @@ class Work < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      url + "?q=doi:" + options[:id]
+      params = { q: "doi:#{options[:id]}",
+                 wt: "json" }
     else
       sort = options[:sort].presence || options[:q].present? ? "score" : "minted"
       order = options[:order].presence || "desc"
@@ -58,15 +59,16 @@ class Work < Base
                  'facet.mincount' => 1,
                  sort: "#{sort} #{order}",
                  wt: "json" }.compact
-      url + "?" + URI.encode_www_form(params)
     end
+
+    url + "?" + URI.encode_www_form(params)
   end
 
   def self.parse_data(result, options={})
     return result if result['errors']
 
     if options[:id]
-      item = result.fetch("data", {}).fetch('response', {}).fetch('doc', {})
+      item = result.fetch("data", {}).fetch('response', {}).fetch('docs', []).first
       return nil if item.blank?
 
       { data: parse_item(item) }
