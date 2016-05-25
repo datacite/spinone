@@ -44,6 +44,7 @@ class Work < Base
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id']}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['publisher-id']}" if options['publisher-id'].present?
+      fq << "allocator_symbol:#{options['member-id']}" if options['member-id'].present?
 
       params = { q: options.fetch(:q, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
