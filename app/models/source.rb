@@ -2,7 +2,7 @@ class Source < Base
   attr_reader :id, :title, :description, :state, :group_id, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at
 
   def initialize(attributes)
-    @id = attributes.fetch("id", nil)
+    @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @description = attributes.fetch("description", nil)
     @state = attributes.fetch("state", nil)

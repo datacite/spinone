@@ -76,11 +76,10 @@ class Work < Base
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
 
-      included = parse_included(facets, options)
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
 
-      { data: parse_items(items) + parse_included(facets), meta: meta }
+      { data: parse_items(items) + parse_included(facets, options), meta: meta }
     end
   end
 
@@ -105,10 +104,6 @@ class Work < Base
     Array(resource_types).map do |item|
       parse_include(item.first, item.last)
     end
-  end
-
-  def self.parse_include(klass, params)
-    klass.new(params)
   end
 
   def self.parse_facet_counts(facets, options={})

@@ -2,6 +2,8 @@ class Base
   extend ActiveModel::Naming
   include ActiveModel::Serialization
 
+  DEFAULT_ROWS = 1000
+
   def self.all
     collect_data
   end
@@ -25,5 +27,9 @@ class Base
     Array(items).map do |item|
       parse_item(item)
     end
+  end
+
+  def self.parse_include(klass, params)
+    klass.new(params)
   end
 end
