@@ -8,7 +8,7 @@ class Contributor < Base
     @id = attributes.fetch("id", nil)
     @given = attributes.fetch("given", nil)
     @family = attributes.fetch("family", nil)
-    @literal = attributes.fetch("literal", nil)
+    @literal = attributes.fetch("literal", nil).presence || github_owner_from_url(@id).presence || orcid_from_url(@id)
     @orcid = orcid_from_url(@id)
     @github = github_owner_from_url(@id)
     @updated_at = attributes.fetch("timestamp", nil)
@@ -16,7 +16,8 @@ class Contributor < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      "#{url}/#{options[:id]}"
+      id = Array(/\A(?:http:\/\/orcid\.org\/)?(\d{4}-\d{4}-\d{4}-\d{3}[0-9X]+)\z/.match(options[:id])).last || "https://github.com/#{options[:id]}"
+      "#{url}/#{id}"
     else
       offset = options.fetch(:offset, 0).to_f
       page = (offset / 25).ceil + 1
@@ -29,13 +30,13 @@ class Contributor < Base
   end
 
   def self.parse_data(result, options={})
-    return result if result['errors']
+    return nil if result.blank? || result['errors']
 
     if options[:id]
       item = result.fetch("data", {}).fetch("contributor", {})
       return nil if item.blank?
 
-      { data: parse_item(item) }
+      { data: parse_items([item]) }
     else
       items = result.fetch("data", {}).fetch("contributors", [])
       total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
