@@ -25,10 +25,12 @@ Rails.application.routes.draw do
     resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }
     resources :contributions, only: [:index]
     resources :events, only: [:show, :index]
+    resources :groups, only: [:show, :index]
     resources :members, only: [:show, :index]
     resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }
     resources :registration_agencies, only: [:show, :index], path: "/registration-agencies"
     resources :relation_types, only: [:show, :index], path: "/relation-types"
+    resources :relations, only: [:index]
     resources :resource_types, only: [:show, :index], path: "/resource-types"
     resources :sources, only: [:show, :index]
     resources :status, only: [:index]
