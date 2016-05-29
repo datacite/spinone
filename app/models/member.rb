@@ -26,11 +26,11 @@ class Member < Base
   end
 
   def self.parse_data(result, options={})
-    return result if result['errors']
+    return nil if result.blank? || result['errors']
 
-    if options[:id]
+    if options[:id].present?
       item = result.fetch("data", {})
-      return nil if item.blank?
+      return {} unless item.present?
 
       { data: parse_item(item) }
     else

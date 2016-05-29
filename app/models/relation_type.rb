@@ -12,7 +12,7 @@ class RelationType < Base
   end
 
   def self.parse_data(result, options={})
-    return result if result['errors']
+    return nil if result.blank? || result['errors']
 
     items = result.fetch("data", {}).fetch("schema", {}).fetch("simpleType", {}).fetch('restriction', {}).fetch('enumeration', [])
 

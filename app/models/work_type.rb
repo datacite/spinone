@@ -17,7 +17,7 @@ class WorkType < Base
   end
 
   def self.parse_data(result, options={})
-    return result if result['errors']
+    return nil if result.blank? || result['errors']
 
     if options[:id]
       item = result.fetch("data", {}).fetch("work_type", {})
