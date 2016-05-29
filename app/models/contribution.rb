@@ -5,9 +5,10 @@ class Contribution < Base
   include Identifiable
 
   def initialize(attributes)
+    @id = SecureRandom.uuid
     @orcid = orcid_from_url(attributes.fetch("subj_id"))
     @doi = doi_from_url(attributes.fetch("obj_id"))
-    @id = "#{orcid}:#{doi}"
+
     @credit_name = attributes.fetch("credit_name", nil)
 
     @doi = attributes.fetch("DOI")
