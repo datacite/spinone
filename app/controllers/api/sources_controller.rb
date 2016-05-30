@@ -1,6 +1,8 @@
 class Api::SourcesController < Api::BaseController
   def index
-    @sources = Source.all
+    @sources = Source.where(params)
+    fail ActiveRecord::RecordNotFound unless @sources.present?
+
     render json: @sources[:data], meta: @sources[:meta]
   end
 

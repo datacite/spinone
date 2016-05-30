@@ -17,26 +17,39 @@ class Source < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      "#{url}/#{options[:id]}"
+      id = options[:id].underscore
+      "#{url}/#{id}"
     else
-      url
+      params = { q: options.fetch(:q, nil),
+                 group_id: options.fetch("group-id", nil) }.compact
+      url + "?" + URI.encode_www_form(params)
     end
   end
 
   def self.parse_data(result, options={})
-    return result if result['errors']
+    return nil if result.blank? || result['errors']
 
     if options[:id]
       item = result.fetch("data", {}).fetch("source", {})
       return nil if item.blank?
 
-      { data: parse_item(item) }
+      group = Group.where(id: item.fetch("group_id", nil))
+      group = group[:data] if group.present?
+
+      { data: parse_items([item]) + [group] }
     else
       items = result.fetch("data", {}).fetch("sources", [])
-      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
 
-      { data: parse_items(items), meta: { total: total } }
+      meta = result.fetch("data", {}).fetch("meta", {})
+      meta = { total: meta["total"], groups: meta["groups"] }
+
+      { data: parse_items(items) + parse_included(items, options), meta: meta }
     end
+  end
+
+  def self.parse_included(items, options={})
+    used_groups = items.map { |i| i.fetch("group_id").underscore.dasherize }.uniq
+    groups = Group.all[:data].select { |s| used_groups.include?(s.id) }
   end
 
   def self.parse_item(item)

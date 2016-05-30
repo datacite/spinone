@@ -1,6 +1,8 @@
 class Api::MembersController < Api::BaseController
   def index
     @members = Member.where(params)
+    fail ActiveRecord::RecordNotFound unless @members.present?
+
     render json: @members[:data], meta: @members[:meta]
   end
 

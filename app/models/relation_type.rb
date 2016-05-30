@@ -1,34 +1,42 @@
 class RelationType < Base
-  attr_reader :id, :title, :updated_at
+  attr_reader :id, :title, :inverse_title, :updated_at
 
   def initialize(attributes)
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
-    @updated_at = DATACITE_SCHEMA_DATE
+    @inverse_title = attributes.fetch("inverse_title", nil)
+    @updated_at = attributes.fetch("timestamp", nil)
   end
 
   def self.get_query_url(options={})
-    "http://schema.datacite.org/meta/kernel-#{DATACITE_VERSION}/include/datacite-relationType-v#{DATACITE_VERSION}.xsd"
+    if options[:id].present?
+      "#{url}/#{options[:id]}"
+    else
+      url
+    end
   end
 
   def self.parse_data(result, options={})
     return nil if result.blank? || result['errors']
 
-    items = result.fetch("data", {}).fetch("schema", {}).fetch("simpleType", {}).fetch('restriction', {}).fetch('enumeration', [])
-
     if options[:id]
-      item = items.find { |i| i["value"] == options[:id] }
-      return nil if item.nil?
+      item = result.fetch("data", {}).fetch("relation_type", {})
+      return nil if item.blank?
 
       { data: parse_item(item) }
     else
-      { data: parse_items(items), meta: { total: items.length } }
+      items = result.fetch("data", {}).fetch("relation_types", [])
+      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
+
+      { data: parse_items(items), meta: { total: total } }
     end
   end
 
   def self.parse_item(item)
-    id = item.fetch("value")
-    title = id.underscore.humanize
-    self.new("id" => id, "title" => title)
+    self.new(item)
+  end
+
+  def self.url
+    "#{ENV["LAGOTTO_URL"]}/relation_types"
   end
 end

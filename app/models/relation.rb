@@ -5,7 +5,7 @@ class Relation < Base
   include Identifiable
 
   def initialize(attributes)
-    @id = SecureRandom.uuid
+    @id = attributes.fetch("subj_id")
     @subj_id = attributes.fetch("subj_id")
     @obj_id = attributes.fetch("obj_id")
 
@@ -14,7 +14,7 @@ class Relation < Base
     @title = attributes.fetch("title", nil)
     @container_title = attributes.fetch("container-title", nil)
     @source_id = attributes.fetch("source_id").underscore.dasherize
-    @publisher_id = attributes.fetch("publisher_id")
+    @publisher_id = attributes.fetch("publisher_id", nil)
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
     @relation_type_id = attributes.fetch("relation_type_id").underscore.dasherize
     @total = attributes.fetch("total", nil)
@@ -31,10 +31,13 @@ class Relation < Base
     source_id = options.fetch("source-id", nil)
     source_id = source_id.underscore if source_id.present?
 
+    relation_type_id = options.fetch("relation-type-id", nil)
+    relation_type_id = relation_type_id.underscore if relation_type_id.present?
+
     params = { page: page,
                per_page: options.fetch(:rows, 25),
                q: options.fetch(:q, nil),
-               relation_type_id: options.fetch("relation-type-id", nil),
+               relation_type_id: relation_type_id,
                work_id: options.fetch("work-id", nil),
                work_ids: options.fetch("work-ids", nil),
                source_id: source_id }.compact
@@ -45,28 +48,16 @@ class Relation < Base
     return result if result['errors']
 
     items = result.fetch("data", {}).fetch("relations", [])
-
-    meta = parse_facet_counts(items, options)
-    meta[:total] = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
-
-    { data: parse_items(items) + parse_included(items, options), meta: meta }
+    meta = result.fetch("data", {}).fetch("meta", {})
+    meta = { total: meta["total"],
+             sources: meta["sources"],
+             relation_types: meta["relation_types"] }
+    { data: parse_items(items) + parse_included(meta, options), meta: meta }
   end
 
-  def self.parse_included(items, options={})
-    used_sources = items.map { |i| i.fetch("source_id").underscore.dasherize }.uniq
-    used_relation_types = items.map { |i| i.fetch("relation_type_id").underscore.dasherize }.uniq
-
-    sources = Source.all[:data].select { |s| used_sources.include?(s.id) }
-    sources + RelationType.all[:data].select { |s| used_relation_types.include?(s.id) }
-  end
-
-  def self.parse_facet_counts(items, options={})
-    sources = items.group_by { |i| i["source_id"] }.reduce({}) do |sum, (k, v)|
-      sum[k] = v.count
-      sum
-    end
-
-    { "sources" => sources }
+  def self.parse_included(meta, options={})
+    sources = Source.all[:data].select { |s| meta[:sources].has_key?(s.id.underscore) }
+    sources + RelationType.all[:data].select { |s| meta[:relation_types].has_key?(s.id.underscore) }
   end
 
   def self.parse_item(item)

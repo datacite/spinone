@@ -1,6 +1,8 @@
 class Api::WorksController < Api::BaseController
   def index
     collection = Work.where(params)
+    fail ActiveRecord::RecordNotFound unless collection.present?
+
     render json: collection[:data], meta: collection[:meta]
   end
 

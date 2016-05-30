@@ -8,7 +8,10 @@ class Contributor < Base
     @id = attributes.fetch("id", nil)
     @given = attributes.fetch("given", nil)
     @family = attributes.fetch("family", nil)
-    @literal = attributes.fetch("literal", nil).presence || github_owner_from_url(@id).presence || orcid_from_url(@id)
+    @literal = attributes.fetch("literal", nil)
+    unless @literal.present? || @given.present? || @family.present?
+      @literal = github_owner_from_url(@id).presence || orcid_from_url(@id)
+    end
     @orcid = orcid_from_url(@id)
     @github = github_owner_from_url(@id)
     @updated_at = attributes.fetch("timestamp", nil)
@@ -16,7 +19,7 @@ class Contributor < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      id = Array(/\A(?:http:\/\/orcid\.org\/)?(\d{4}-\d{4}-\d{4}-\d{3}[0-9X]+)\z/.match(options[:id])).last || "https://github.com/#{options[:id]}"
+      id = options[:id] # || "https://github.com/#{options[:id]}"
       "#{url}/#{id}"
     else
       offset = options.fetch(:offset, 0).to_f
