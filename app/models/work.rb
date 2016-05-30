@@ -88,6 +88,8 @@ class Work < Base
       relation_type_id = options.fetch("relation-type-id", nil)
       relation_type_id = relation_type_id.underscore if relation_type_id.present?
 
+      publisher_id = options.fetch("publisher-id", nil)
+
       sort = options.fetch("sort", nil)
       sort = sort.underscore if sort.present?
 
@@ -95,14 +97,16 @@ class Work < Base
                  per_page: options.fetch(:rows, 25),
                  source_id: source_id,
                  relation_type_id: relation_type_id,
+                 publisher_id: publisher_id,
                  sort: sort }.compact
       lagotto_url + "?" + URI.encode_www_form(params)
     end
   end
 
   def self.get_data(options={})
-    # don't query DataCite MDS
-    return {} if options["source-id"].present?
+    # sometimes don't query DataCite MDS
+    return {} if options["source-id"].present? ||
+                 (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
 
     query_url = get_query_url(options)
     Maremma.get(query_url, options)
@@ -131,7 +135,7 @@ class Work < Base
       member = member[:data] if member.present?
 
       { data: parse_items([item]) + [publisher].compact + [member].compact + parse_lagotto_included(items, meta, options), meta: meta }
-    elsif options["source-id"].present?
+    elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
       meta = result[:meta]
@@ -175,8 +179,8 @@ class Work < Base
 
   def self.parse_lagotto_included(items, meta, options={})
     included = get_work_types(items)
-    included += Source.all[:data].select { |s| meta[:sources].has_key?(s.id.underscore) }
-    included += RelationType.all[:data].select { |s| meta[:relation_types].has_key?(s.id.underscore) }
+    included += Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
+    included += RelationType.all[:data].select { |s| meta.fetch(:relation_types).has_key?(s.id.underscore) }
   end
 
   def self.parse_facet_counts(facets, options={})
@@ -229,7 +233,7 @@ class Work < Base
                relation_types: meta["relation_types"] }.compact
 
       { data: data, meta: meta }
-    elsif options[:id].present? || options["source-id"].present?
+    elsif options[:id].present? || options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       lagotto_query_url = get_lagotto_query_url(options)
       response = Maremma.get(lagotto_query_url, options)
 
