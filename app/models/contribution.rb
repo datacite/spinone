@@ -5,7 +5,7 @@ class Contribution < Base
   include Identifiable
 
   def initialize(attributes)
-    @id = attributes.fetch("obj_id")
+    @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
     @obj_id = attributes.fetch("obj_id")
 
@@ -19,8 +19,10 @@ class Contribution < Base
     @author = attributes.fetch("author", nil)
     @title = attributes.fetch("title", nil)
     @container_title = attributes.fetch("container-title", nil)
-    @source_id = attributes.fetch("source_id").underscore.dasherize
+    @source_id = attributes.fetch("source_id", nil)
+    @source_id = @source_id.underscore.dasherize if @source_id.present?
     @contributor_role_id = attributes.fetch("contributor_role_id", nil)
+    @contributor_role_id = @contributor_role_id.underscore.dasherize if @contributor_role_id.present?
     @published = attributes.fetch("published", nil)
     @issued = attributes.fetch("issued", nil)
     @updated_at = attributes.fetch("timestamp", nil)

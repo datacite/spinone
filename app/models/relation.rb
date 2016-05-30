@@ -5,7 +5,7 @@ class Relation < Base
   include Identifiable
 
   def initialize(attributes)
-    @id = attributes.fetch("subj_id")
+    @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
     @obj_id = attributes.fetch("obj_id")
 
