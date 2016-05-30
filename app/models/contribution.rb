@@ -56,7 +56,7 @@ class Contribution < Base
   end
 
   def self.parse_included(meta, options={})
-    sources = Source.all[:data].select { |s| meta[:sources].has_key?(s.id.underscore) }
+    Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
   end
 
   def self.parse_item(item)

@@ -6,7 +6,7 @@ class Publisher < Base
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
-    @member_id = @id.split(".").first
+    @member_id = attributes.fetch("member_id", nil)
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
     @updated_at = attributes.fetch("timestamp", nil)
   end
@@ -21,7 +21,8 @@ class Publisher < Base
       params = { page: page,
                  per_page: options.fetch(:rows, 25),
                  q: options.fetch(:q, nil),
-                 registration_agency_id: options.fetch("registration-agency-id", nil) }.compact
+                 registration_agency_id: options.fetch("registration-agency-id", nil),
+                 member_id: options.fetch("member-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end
@@ -36,10 +37,17 @@ class Publisher < Base
       { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
-      meta = result.fetch("data", {}).fetch("meta", {}).except("status", "message-type", "message-version")
+      meta = result.fetch("data", {}).fetch("meta", {})
+      meta = { total: meta.fetch("total", {}),
+               registration_agencies: meta.fetch("registration_agencies", {}),
+               members: meta.fetch("members", {}) }
 
-      { data: parse_items(items), meta: meta }
+      { data: parse_items(items) + parse_included(meta, options), meta: meta }
     end
+  end
+
+  def self.parse_included(meta, options={})
+    Member.all[:data].select { |s| meta.fetch(:members, {}).has_key?(s.id.underscore) }
   end
 
   def self.parse_item(item)
