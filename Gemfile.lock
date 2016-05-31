@@ -15,11 +15,12 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: 835aad3c7493f7cc33fe624434cf4c38082f3bdd
+  revision: b8af2892f79f3ae7dfb875dcac9897d90b90084b
   specs:
     active_model_serializers (0.10.0)
       actionpack (>= 4.1, < 6)
       activemodel (>= 4.1, < 6)
+      jsonapi (~> 0.1.1.beta2)
       railties (>= 4.1, < 6)
 
 GIT
@@ -96,7 +97,7 @@ GEM
     bugsnag (2.8.13)
       json (~> 1.7, >= 1.7.7)
     builder (3.2.2)
-    byebug (9.0.4)
+    byebug (9.0.5)
     cancancan (1.9.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -192,6 +193,8 @@ GEM
     i18n (0.7.0)
     i18n_data (0.7.0)
     json (1.8.3)
+    jsonapi (0.1.1.beta2)
+      json (~> 1.8)
     jwt (1.5.4)
     latex-decode (0.2.2)
       unicode (~> 0.4)

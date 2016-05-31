@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     resources :events, only: [:show, :index]
     resources :groups, only: [:show, :index]
     resources :members, only: [:show, :index]
+    resources :pages, only: [:show, :index], constraints: { :id => /.+/ }
     resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }
     resources :registration_agencies, only: [:show, :index], path: "/registration-agencies"
     resources :relation_types, only: [:show, :index], path: "/relation-types"
