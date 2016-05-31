@@ -47,7 +47,7 @@ class Publisher < Base
   end
 
   def self.parse_included(meta, options={})
-    Member.all[:data].select { |s| meta.fetch(:members, {}).has_key?(s.id.underscore) }
+    Member.all[:data].select { |s| meta.fetch(:members, {}).has_key?(s.id.upcase) }
   end
 
   def self.parse_item(item)
