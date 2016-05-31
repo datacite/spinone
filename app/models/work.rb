@@ -159,6 +159,9 @@ class Work < Base
                            .each_slice(2)
                            .map { |r| [ResourceType, { "id" => r.first,
                                                        "title" => r.first.underscore.humanize }] }
+    resource_types = Array(resource_types).map do |item|
+      parse_include(item.first, item.last)
+    end
 
     publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
@@ -166,15 +169,16 @@ class Work < Base
                               id, title = p.first.split(' - ', 2)
                               [Publisher, { "id" => id, "title" => title }]
                             end
-
-    if options["publisher-id"].present? && publishers.empty?
-      publisher = Publisher.where(id: options["publisher-id"])[:data]
-      publishers = [[Publisher, { "id" => publisher.id, "title" => publisher.title }]]
-    end
-
-    Array(resource_types).map do |item|
+    publishers = Array(publishers).map do |item|
       parse_include(item.first, item.last)
     end
+
+    if options["publisher-id"].present? && publishers.empty?
+      publishers = Publisher.where(id: options["publisher-id"])
+      publishers = publishers[:data] if publishers.present?
+    end
+
+    resource_types + publishers
   end
 
   def self.parse_lagotto_included(items, meta, options={})
