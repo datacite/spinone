@@ -1,5 +1,5 @@
 class Member < Base
-  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :updated_at
+  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :updated_at
 
   def initialize(item)
     attributes = item.fetch('attributes', {})
@@ -10,6 +10,10 @@ class Member < Base
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
     @year = attributes.fetch("year", nil)
+    @logo_url = attributes.fetch("logo-url", nil)
+    @website = attributes.fetch("website", nil)
+    @email = attributes.fetch("email", nil)
+    @phone = attributes.fetch("phone", nil)
     @updated_at = attributes.fetch("updated", nil)
   end
 
