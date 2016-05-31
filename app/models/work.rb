@@ -127,14 +127,14 @@ class Work < Base
       item = items.first
 
       publisher_id = item.fetch("datacentre_symbol", nil)
-      publisher = publisher_id.present? ? Publisher.where(id: publisher_id) : nil
-      publisher = publisher[:data] if publisher.present?
+      publishers = Publisher.where(id: publisher_id)
+      publishers = publishers.present? ? publishers[:data] : []
 
       member_id = item.fetch("allocator_symbol", nil)
       member = member_id.present? ? Member.where(id: member_id) : nil
       member = member[:data] if member.present?
 
-      { data: parse_items([item]) + [publisher].compact + [member].compact + parse_lagotto_included(items, meta, options), meta: meta }
+      { data: parse_items([item]) + publishers + [member].compact + parse_lagotto_included(items, meta, options), meta: meta }
     elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
