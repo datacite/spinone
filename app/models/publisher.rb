@@ -34,7 +34,11 @@ class Publisher < Base
       item = result.fetch("data", {}).fetch("publisher", {})
       return nil if item.blank?
 
-      { data: parse_item(item) }
+      member_id = item.fetch("member_id", nil)
+      member = member_id.present? ? Member.where(id: member_id) : nil
+      member = member[:data] if member.present?
+
+      { data: parse_items([item]) + [member].compact }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
       meta = result.fetch("data", {}).fetch("meta", {})
