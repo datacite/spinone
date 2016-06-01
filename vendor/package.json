@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "spinone",
   "version": "0.0.0",
-  "description": "Spinone frontend",
+  "description": "Spinone",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -17,7 +17,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bower": "1.7.7",
-    "swagger-ui": "2.1.4"
+    "bower": "1.7.7"
   }
 }
