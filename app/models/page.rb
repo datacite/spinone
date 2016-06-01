@@ -31,11 +31,11 @@ class Page < Base
       items = items.select { |i| i.values.join("\n").downcase.include?(options[:q]) } if options[:q]
       items = items.select { |i| Array(i["tags"]).include?(options[:tag]) } if options[:tag]
 
+      meta = { total: items.length, tags: parse_meta(items) }
+
       offset = (options[:offset] || 0).to_i
       rows = (options[:rows] || 25).to_i
       items = items[offset...offset + rows]
-
-      meta = { total: items.length, tags: parse_meta(items) }
 
       { data: parse_items(items), meta: meta }
     end
