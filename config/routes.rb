@@ -17,8 +17,6 @@ Rails.application.routes.draw do
   resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
   get "/dashboard", to: "status#index"
 
-  mount SwaggerEngine::Engine, at: "/"
-
   scope module: :api, defaults: { format: "json" } do
     resources :callbacks, only: [:create]
     resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }

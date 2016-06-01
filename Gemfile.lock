@@ -365,7 +365,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    swagger_engine (0.0.3)
     teaspoon (1.1.5)
       railties (>= 3.2.5, < 6)
     teaspoon-jasmine (2.2.0)
@@ -466,7 +465,6 @@ DEPENDENCIES
   spring
   sprockets-rails (~> 2.2.0)
   state_machine (~> 1.2.0)!
-  swagger_engine
   teaspoon-jasmine (~> 2.2.0)
   uglifier (~> 2.7, >= 2.7.2)
   vcr (~> 2.9.3)
