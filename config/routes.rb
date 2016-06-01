@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  root :to => 'index#index'
+
   resources :agents
   resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
   get "/dashboard", to: "status#index"
