@@ -23,8 +23,7 @@ gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_
 gem 'colorize', '~> 0.7.7'
 
 gem "haml-rails", "~> 0.9"
-gem "swagger-docs", "~> 0.1.9"
-gem 'swagger-ui_rails', '~> 0.1.7'
+gem 'swagger_engine'
 gem "dalli", "~> 2.7.0"
 gem 'will_paginate', '3.0.7'
 gem "will_paginate-bootstrap", "~> 1.0.1"

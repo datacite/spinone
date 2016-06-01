@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: b8af2892f79f3ae7dfb875dcac9897d90b90084b
+  revision: f2f747eddaaa9fe9a2446630849227317cddea66
   specs:
     active_model_serializers (0.10.0)
       actionpack (>= 4.1, < 6)
@@ -239,7 +239,7 @@ GEM
       rack (~> 1.0)
     orm_adapter (0.5.0)
     parse-cron (0.1.4)
-    parser (2.3.1.0)
+    parser (2.3.1.1)
       ast (~> 2.2)
     poltergeist (1.8.1)
       capybara (~> 2.1)
@@ -365,10 +365,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    swagger-docs (0.1.9)
-      activesupport (>= 3, < 5)
-      rails (>= 3, < 5)
-    swagger-ui_rails (0.1.7)
+    swagger_engine (0.0.3)
     teaspoon (1.1.5)
       railties (>= 3.2.5, < 6)
     teaspoon-jasmine (2.2.0)
@@ -469,8 +466,7 @@ DEPENDENCIES
   spring
   sprockets-rails (~> 2.2.0)
   state_machine (~> 1.2.0)!
-  swagger-docs (~> 0.1.9)
-  swagger-ui_rails (~> 0.1.7)
+  swagger_engine
   teaspoon-jasmine (~> 2.2.0)
   uglifier (~> 2.7, >= 2.7.2)
   vcr (~> 2.9.3)
