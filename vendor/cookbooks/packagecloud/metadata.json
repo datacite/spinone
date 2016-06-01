@@ -35,7 +35,7 @@
   "recipes": {
 
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "source_url": "https://github.com/computology/packagecloud-cookbook",
   "issues_url": "https://github.com/computology/packagecloud-cookbook/issues",
   "privacy": false,

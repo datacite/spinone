@@ -2,17 +2,16 @@
 
 [![Build Status](https://travis-ci.org/chef-cookbooks/memcached.svg?branch=master)](http://travis-ci.org/chef-cookbooks/memcached) [![Cookbook Version](https://img.shields.io/cookbook/v/memcached.svg)](https://supermarket.chef.io/cookbooks/memcached)
 
-Installs/configures a single memcached instance managed by the systems init system.  Also provides a custom resource to set up one or more memcached instances running under runit.
+Provides a custom resource for installing instances of memcached. Also ships with a default recipe that uses attributes to configure a single memcached instance on a host.
 
 ## Requirements
 
 ### Platforms
 
-- Debian / Ubuntu
+- Debian / Ubuntu and derivatives
 - RHEL and derivatives
 - Fedora
 - openSUSE/SLES
-- SmartOS base64 1.8.1 - Note that SMF directly configures memcached with no opportunity to alter settings. If you need custom parameters, use the `memcached_instance` provider instead.
 
 ### Chef
 
@@ -20,13 +19,13 @@ Installs/configures a single memcached instance managed by the systems init syst
 
 ### Cookbooks
 
-- runit
+- runit (not used by default)
 - yum-epel
 - compat_resource
 
 ## Attributes
 
-The following are node attributes are used to configure `/etc/memcached.conf` if using the default.rb recipe. They are not used if using the memcached_instance custom resource.
+The following are node attributes are used to configure the command line options of memcached if using the default.rb recipe. They are not used if using the memcached_instance custom resource.
 
 - `memcached['memory']` - maximum memory for memcached instances.
 - `memcached['user']` - user to run memcached as.
@@ -39,24 +38,26 @@ The following are node attributes are used to configure `/etc/memcached.conf` if
 - `memcached['logfilename']` - logfile to which memcached output will be redirected in $logfilepath/$logfilename.
 - `memcached['threads']` - Number of threads to use to process incoming requests. The default is 4.
 - `memcached['experimental_options']` - Comma separated list of extended or experimental options. (array)
-- `memcached['ulimit']` - boolean `true` will set the ulimit to the `maxconn` value
+- `memcached['ulimit']` - maxfile limit to set (needs to be at least maxconn)
 
 ## Usage
 
-This cookbook can be used to to setup a single memcached instance running under the system's init provider by including `memcached::default` on your runlist.  The above documented attributes can be used to control the configuration of that service.
+This cookbook can be used to to setup a single memcached instance running under the system's init provider by including `memcached::default` on your runlist. The above documented attributes can be used to control the configuration of that service.
 
-The cookbook can also within other cookbooks in your infrastructure with the `memcached_instance` custom resource.  See the documentation below for the usage and examples of that custom resource.
+The cookbook can also within other cookbooks in your infrastructure with the `memcached_instance` custom resource. See the documentation below for the usage and examples of that custom resource.
 
 ## Custom Resources
 
 ### instance
 
-Adds or removes an instance of memcached running under the runit supervisor.
+Adds or removes an instance of memcached running under the system's native init system (sys-v, upstart, or systemd). For backwards compatibility there is also a runit provider that can be used if desired.
 
 #### Actions
 
-- :add: Add a new instance
-- :remove: Remove an existing instance
+- :start: Starts (and installs) an instance of memcached
+- :stop: Stops an instance of memcached
+- :enable: Enabled (and installs) an instance of memcached to run at boot
+- :restart: Restarts an instance of memcached
 
 #### Properties
 
@@ -92,13 +93,20 @@ memcached_instance 'super_custom_memcached'  do
 end
 ```
 
+Specify the runit provider to maintain legacy behavior (including optional usage of legacy actions)
+
+```ruby
+memcached_instance_runit 'super_custom_memcached'  do
+  action :create
+end
+```
+
 ## License & Authors
 
 - Author:: Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
-- Author:: Joshua Sierles ([joshua@37signals.com](mailto:joshua@37signals.com))
 
 ```text
-Copyright:: 2009-2015, Chef Software, Inc
+Copyright:: 2009-2016, Chef Software, Inc
 Copyright:: 2009, 37signals
 
 Licensed under the Apache License, Version 2.0 (the "License");

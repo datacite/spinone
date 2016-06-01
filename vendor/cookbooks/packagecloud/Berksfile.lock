@@ -6,7 +6,7 @@ DEPENDENCIES
     path: test/fixtures/cookbooks/packagecloud_test
 
 GRAPH
-  packagecloud (0.1.1)
+  packagecloud (0.2.1)
   packagecloud_test (0.0.0)
     packagecloud (>= 0.0.0)
     yum (>= 0.0.0)

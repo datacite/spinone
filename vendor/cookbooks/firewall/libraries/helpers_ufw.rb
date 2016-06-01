@@ -46,7 +46,7 @@ module FirewallCookbook
         end
 
         # if we don't do this, ufw will fail as it does not support protocol numbers, so we'll only allow it to run if specifying icmp/tcp/udp protocol types
-        if new_resource.protocol && !new_resource.protocol.to_s.downcase.match('^(tcp|udp|icmp)$')
+        if new_resource.protocol && !new_resource.protocol.to_s.downcase.match('^(tcp|udp|icmp|none)$')
           msg = ''
           msg << "firewall_rule[#{new_resource.name}] was asked to "
           msg << "#{new_resource.command} a rule using protocol #{new_resource.protocol} "
@@ -74,7 +74,13 @@ module FirewallCookbook
         rule << rule_proto(new_resource)
         rule << rule_dest_port(new_resource)
         rule << rule_source_port(new_resource)
-        rule.strip
+        rule = rule.strip
+
+        if rule == 'ufw allow in proto tcp to any from any'
+          Chef::Log.warn("firewall_rule[#{new_resource.name}] produced a rule that opens all traffic. This may be a logic error in your cookbook.")
+        end
+
+        rule
       end
 
       def rule_interface(new_resource)

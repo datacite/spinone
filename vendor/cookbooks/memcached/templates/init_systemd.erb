@@ -1,0 +1,12 @@
+# Systemd unit file for <%= @instance %>
+
+[Unit]
+Description=memcached instance <%= @instance %>
+After=network.target
+
+[Service]
+LimitNOFILE=<%= @ulimit %>
+ExecStart=<%= @binary_path %> <%= @cli_options %>
+
+[Install]
+WantedBy=multi-user.target

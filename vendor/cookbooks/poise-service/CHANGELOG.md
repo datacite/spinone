@@ -1,5 +1,11 @@
 # Poise-Service Changelog
 
+## v1.3.1
+
+* [#25](https://github.com/poise/poise-service/pull/25) Cope with a service user
+  with an invalid home directory.
+* Use the correct default cookbook for `service_template` when used with additional plugins.
+
 ## v1.3.0
 
 * Allow setting `pid_file_external false` as a provider option for the `sysvinit`

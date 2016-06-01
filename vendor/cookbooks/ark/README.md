@@ -1,5 +1,5 @@
 # ark cookbook
-[![Build Status](https://travis-ci.org/burtlo/ark.svg?branch=master)](https://travis-ci.org/burtlo/ark) [![Cookbook Version](https://img.shields.io/cookbook/v/ark.svg)](https://supermarket.chef.io/cookbooks/ark)
+[![Build Status](https://travis-ci.org/chef-cookbooks/ark.svg?branch=master)](https://travis-ci.org/chef-cookbooks/ark) [![Cookbook Version](https://img.shields.io/cookbook/v/ark.svg)](https://supermarket.chef.io/cookbooks/ark)
 
 ## Overview
 This cookbook provides `ark`, a resource for managing software archives. It manages the fetch-unpack-configure-build-install process common to installing software from source, or from binary distributions that are not fully fledged OS packages.
@@ -58,7 +58,7 @@ Customize the attributes to suit site specific conventions and defaults.
 ### Actions
 - `:install`: extracts the file and creates a 'friendly' symbolic link to the extracted directory path
 - `:configure`: configure ahead of the install action
-- `:install_with_make`: extracts the archive to a path, runs `make`, and `make install`. It does _not_ run the configure step at this time
+- `:install_with_make`: extracts the archive to a path, runs `make`, and `make install`.
 - `:dump`: strips all directories from the archive and dumps the contained files into a specified path
 - `:cherry_pick`: extract a specified file from an archive and places in specified path
 - `:put`: extract the archive to a specified path, does not create any symbolic links
@@ -131,6 +131,10 @@ Extract the archive to a specified path, does not create any symbolic links.
 - `owner`: owner of extracted directory.
   - Default: `root`
 
+- `backup`: The number of backups to be kept in /var/chef/backup (for UNIX- and Linux-based platforms) or C:/chef/backup (for the Microsoft Windows platform). Set to false to prevent backups from being kept.
+  - Default: `5`
+
+
 #### Examples
 This example copies `ivy.tar.gz` to `/var/cache/chef/ivy-2.2.0.tar.gz`, unpacks its contents to `/usr/local/ivy-2.2.0/` -- stripping the leading directory, and symlinks `/usr/local/ivy` to `/usr/local/ivy-2.2.0`
 
@@ -168,7 +172,7 @@ Install Apache Ivy dependency resolution tool in <path>/resource_name in this ca
  end
 ```
 
-Install Apache Ivy dependency resolution tool in /home/foobar/ivy, strip any leading directory if one exists:
+Install Apache Ivy dependency resolution tool in /home/foobar/ivy, strip any leading directory if one exists, don't keep backup copies of ivy.tar.gz:
 
 ```ruby
  ark "ivy" do
@@ -176,6 +180,7 @@ Install Apache Ivy dependency resolution tool in /home/foobar/ivy, strip any lea
    url 'http://someurl.example.com/ivy.tar.gz'
    checksum '89ba5fde0c596db388c3bbd265b63007a9cc3df3a8e6d79a46780c1a39408cb5'
    action :put
+   backup false
  end
 ```
 
@@ -227,7 +232,7 @@ You can also pass multiple actions to ark and supply the file extension in case 
  end
 ```
 
-## License and Authors
+## License & Authors
 - Author: Philip (flip) Kromer - Infochimps, Inc([coders@infochimps.com](mailto:coders@infochimps.com))
 - Author: Bryan W. Berry ([bryan.berry@gmail.com](mailto:bryan.berry@gmail.com))
 - Author: Denis Barishev ([denis.barishev@gmail.com](mailto:denis.barishev@gmail.com))
@@ -236,7 +241,7 @@ You can also pass multiple actions to ark and supply the file extension in case 
 - Copyright: 2011, Philip (flip) Kromer - Infochimps, Inc
 - Copyright: 2012, Bryan W. Berry
 - Copyright: 2012, Denis Barishev
-- Copyright: 2013, Chef Software, Inc
+- Copyright: 2013-2016, Chef Software, Inc
 - Copyright: 2014, Bloomberg L.P.
 
 ```
