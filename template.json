@@ -76,8 +76,8 @@
     "name": "datacite/spinone",
     "vcs": false,
     "exclude": [
-      "frontend/bower_components/*",
-      "frontend/node_modules/*",
+      "vendor/bower_components/*",
+      "vendor/node_modules/*",
       "vendor/bundle/*",
       ".DS_Store",
       ".git/*",
