@@ -1,7 +1,7 @@
 DEPENDENCIES
   capistrano
     git: git@github.com:lagotto/capistrano-cookbook.git
-    revision: f42dae835506ff5e7ff6de3e8ff9410a92da744e
+    revision: 845e2f33833dd0ab4dc5a035cfb66072c11045eb
   dotenv
     git: git@github.com:lagotto/dotenv-cookbook.git
     revision: 3760e235c2cf7876119e6e2488c7c2b39319d4c4
@@ -16,7 +16,7 @@ DEPENDENCIES
     revision: d40a6dc987080615a0c126101ec041efcaa78dc8
   spinone
     git: git@github.com:datacite/spinone-cookbook.git
-    revision: 53e4d18511aceb3e73722dbee120fd928e7ea1a5
+    revision: 919aafccf17621f5279ff365ff12d9487ab72aff
 
 GRAPH
   apt (2.9.2)
@@ -27,7 +27,7 @@ GRAPH
   build-essential (4.0.0)
     mingw (>= 0.0.0)
     seven_zip (>= 0.0.0)
-  capistrano (1.0.22)
+  capistrano (1.1.0)
     apt (>= 0.0.0)
     chef-solo-search (>= 0.0.0)
     consul (>= 0.0.0)
@@ -93,9 +93,9 @@ GRAPH
     packagecloud (>= 0.0.0)
   seven_zip (2.0.1)
     windows (>= 1.2.2)
-  spinone (1.2.3)
+  spinone (1.2.4)
     apt (>= 0.0.0)
-    capistrano (~> 1.0.0)
+    capistrano (~> 1.1.0)
     consul (>= 0.0.0)
     dotenv (~> 1.0.0)
     memcached (>= 0.0.0)

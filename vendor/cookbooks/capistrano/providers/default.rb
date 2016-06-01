@@ -14,9 +14,9 @@ end
 action :config do
   # create folders
   if node['ruby']['enable_capistrano']
-    dirs = %W{ #{new_resource.name} #{new_resource.name}/shared #{new_resource.name}/shared/frontend #{new_resource.name}/shared/vendor #{new_resource.name}/shared/tmp #{new_resource.name}/shared/tmp/pids }
+    dirs = %W{ #{new_resource.name} #{new_resource.name}/shared #{new_resource.name}/shared/vendor #{new_resource.name}/shared/tmp #{new_resource.name}/shared/tmp/pids }
   else
-    dirs = %W{ #{new_resource.name} #{new_resource.name}/frontend #{new_resource.name}/vendor #{new_resource.name}/log #{new_resource.name}/tmp #{new_resource.name}/tmp/pids }
+    dirs = %W{ #{new_resource.name} #{new_resource.name}/vendor #{new_resource.name}/log #{new_resource.name}/tmp #{new_resource.name}/tmp/pids }
   end
 
   dirs.each do |dir|
@@ -72,17 +72,17 @@ action :npm_install do
   run_context.include_recipe 'nodejs'
 
   if node['ruby']['enable_capistrano']
-    file = "/var/www/#{new_resource.name}/current/frontend/package.json"
+    file = "/var/www/#{new_resource.name}/current/vendor/package.json"
   else
-    file = "/var/www/#{new_resource.name}/frontend/package.json"
+    file = "/var/www/#{new_resource.name}/vendor/package.json"
   end
 
   if ::File.exist?(file)
     # create directory for npm packages
     if node['ruby']['enable_capistrano']
-      dir = "/var/www/#{new_resource.name}/current/frontend/node_modules"
+      dir = "/var/www/#{new_resource.name}/current/vendor/node_modules"
     else
-      dir = "/var/www/#{new_resource.name}/frontend/node_modules"
+      dir = "/var/www/#{new_resource.name}/vendor/node_modules"
     end
     directory dir do
       owner new_resource.user
@@ -95,7 +95,7 @@ action :npm_install do
     # we need to set $HOME because of a Chef bug: https://tickets.opscode.com/browse/CHEF-2517
     execute "npm install" do
       user new_resource.user
-      cwd "/var/www/#{new_resource.name}/frontend"
+      cwd "/var/www/#{new_resource.name}/vendor"
       environment ({ 'HOME' => ::Dir.home(new_resource.user), 'USER' => new_resource.user })
       action :run
     end
