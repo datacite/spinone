@@ -1,0 +1,18 @@
+version: '2'
+
+# when sharing the host folder, you need to reinstall Ruby gems
+# and npm modules into the vendor folder
+
+services:
+  web:
+    env_file: .env
+    image: datacite1/spinone
+    ports:
+      - "8080:80"
+  db:
+    env_file: .env
+    image: mysql:5.6
+    ports:
+      - "3307:3306"
+  redis:
+    image: redis:2.8

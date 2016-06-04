@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-# ruby '2.3.0'
+# ruby '2.2.0'
 
 gem 'rails', '~> 4.2', '>= 4.2.6'
 gem 'mysql2', '0.3.18'
@@ -52,7 +52,6 @@ group :development do
   gem 'better_errors', '~> 2.0.0'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'hologram', '~> 1.3.1'
-  gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
