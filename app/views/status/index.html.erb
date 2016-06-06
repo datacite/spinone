@@ -12,7 +12,7 @@
             <% end %>
           </h2>
           <div class="graphs" id="chart_datacite_github"></div>
-          <div class="text-muted" id="chart_datacite_github-loading">Loading … <img src="<%= asset_path('spinner.gif', host: ENV['CDN_HOST']) %>"></div>
+          <div class="text-muted" id="chart_datacite_github-loading">Loading … <img src="<%= asset_path('/images/spinner.gif', host: ENV['CDN_HOST']) %>"></div>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
             <% end %>
           </h2>
           <div class="graphs" id="chart_datacite_orcid"></div>
-          <div class="text-muted" id="chart_datacite_orcid-loading">Loading … <img src="<%= asset_path('spinner.gif', host: ENV['CDN_HOST']) %>"></div>
+          <div class="text-muted" id="chart_datacite_orcid-loading">Loading … <img src="<%= asset_path('/images/spinner.gif', host: ENV['CDN_HOST']) %>"></div>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
             <% end %>
           </h2>
           <div class="graphs" id="chart_datacite_related"></div>
-          <div class="text-muted" id="chart_datacite_related-loading">Loading … <img src="<%= asset_path('spinner.gif', host: ENV['CDN_HOST']) %>"></div>
+          <div class="text-muted" id="chart_datacite_related-loading">Loading … <img src="<%= asset_path('/images/spinner.gif', host: ENV['CDN_HOST']) %>"></div>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
             <% end %>
           </h2>
           <div class="graphs" id="chart_orcid_update"></div>
-          <div class="text-muted" id="chart_orcid_update-loading">Loading … <img src="<%= asset_path('spinner.gif', host: ENV['CDN_HOST']) %>"></div>
+          <div class="text-muted" id="chart_orcid_update-loading">Loading … <img src="<%= asset_path('/images/spinner.gif', host: ENV['CDN_HOST']) %>"></div>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
           <div class="panel-body panel-chart text-center">
             <h2 class="graphs" id="db_size"><%= number_to_human_size(@current_status.db_size) %></h2>
             <div class="graphs" id="chart_db_size"></div>
-            <div class="text-muted" id="chart_db_size-loading">Loading … <img src="<%= asset_path('spinner.gif', host: ENV['CDN_HOST']) %>"></div>
+            <div class="text-muted" id="chart_db_size-loading">Loading … <img src="<%= asset_path('/images/spinner.gif', host: ENV['CDN_HOST']) %>"></div>
           </div>
         </div>
       </div>
