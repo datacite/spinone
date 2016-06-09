@@ -29,7 +29,7 @@ RUN rm -f /etc/service/memcached/down
 
 # Prepare tmp folder for installation of Ruby gems and npm modules
 RUN mkdir -p /home/app/tmp
-COPY vendor /home/app/tmp
+COPY vendor /home/app/tmp/vendor
 RUN chown -R app:app /home/app/tmp && \
     chmod -R 755 /home/app/tmp
 

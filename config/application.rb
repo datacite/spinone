@@ -22,6 +22,11 @@ if File.exist?(env_json_file)
   env_vars.each { |k, v| ENV[k] = v }
 end
 
+# default values for some ENV variables
+ENV['APPLICATION'] ||= "spionone"
+ENV['SITENAMELONG'] ||= "DataCite API"
+ENV['TRUSTED_IP'] ||= "10.0.10.1"
+
 module Spinone
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
