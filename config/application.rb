@@ -25,6 +25,7 @@ end
 # default values for some ENV variables
 ENV['APPLICATION'] ||= "spionone"
 ENV['SITENAMELONG'] ||= "DataCite API"
+ENV['LOG_LEVEL'] ||= "info"
 ENV['TRUSTED_IP'] ||= "10.0.10.1"
 
 module Spinone
