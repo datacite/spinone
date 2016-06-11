@@ -4,30 +4,28 @@
 [![Code Climate](https://codeclimate.com/github/datacite/spinone/badges/gpa.svg)](https://codeclimate.com/github/datacite/spinone)
 [![Test Coverage](https://codeclimate.com/github/datacite/spinone/badges/coverage.svg)](https://codeclimate.com/github/datacite/spinone/coverage)
 
-## Local Installation
+The common DataCite API. Merges information from Metadata Store (MDS), Event Data and other services, and provides this information via a common REST API using the [JSONAPI](http://jsonapi.org/) specification.
 
-### Requirements
-
-- Ruby (2.1 or higher)
-- git
-- Virtualbox: [https://www.virtualbox.org](https://www.virtualbox.org)
-- Vagrant: [http://www.vagrantup.com](http://www.vagrantup.com)
-- Vagrant omnibus plugin: `vagrant plugin install vagrant-omnibus`
-
-### Installation
-
-Using Virtualbox.
+Examples:
 
 ```
-git clone https://github.com/datacite/spinone.git
-cd spinone
-cp .env.example .env
-vagrant up --provider=virtualbox
+https://api.labs.datacite.org/works?q=cancer&rows=100
+https://api.labs.datacite.org/members?region=emea
+https://api.labs.datacite.org/pages?tag=orcid
+
 ```
 
-If you don't see any errors from the last command, you now have a properly
-configured Ubuntu virtual machine running `spinone`. You can point your
-browser to `http://10.2.2.14`.
+## Installation
+
+Using Docker.
+
+```
+docker run -p 8040:80 datacite1/spinone
+```
+
+You can now point your browser to `http://localhost:8040` and use the application.
+
+For a more detailed configuration, including serving the application from the host for live editing, look at `docker-compose.yml` in the root folder.
 
 ## Development
 
