@@ -14,7 +14,6 @@ before_script:
   - cd vendor && npm install
   - cd ../ && npm install -g istanbul codeclimate-test-reporter
   - bundle exec rake db:setup RAILS_ENV=test
-  - bundle exec rake sidekiq:monitor
 
 script:
   - bundle exec rspec
