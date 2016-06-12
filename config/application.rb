@@ -26,6 +26,7 @@ end
 ENV['APPLICATION'] ||= "spionone"
 ENV['SITENAMELONG'] ||= "DataCite API"
 ENV['LOG_LEVEL'] ||= "info"
+ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
 ENV['TRUSTED_IP'] ||= "10.0.10.1"
 
 module Spinone
