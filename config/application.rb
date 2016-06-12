@@ -23,7 +23,7 @@ if File.exist?(env_json_file)
 end
 
 # default values for some ENV variables
-ENV['APPLICATION'] ||= "spionone"
+ENV['APPLICATION'] ||= "spinone"
 ENV['SITENAMELONG'] ||= "DataCite API"
 ENV['LOG_LEVEL'] ||= "info"
 ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
