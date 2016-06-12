@@ -1,22 +1,14 @@
 # Use this file to easily define all of your cron jobs.
 # Learn more: http://github.com/javan/whenever
 
-begin
-  fail Errno::ENOENT unless File.exist?(File.expand_path("../../.env", __FILE__))
-
-  # load ENV variables from file specified by APP_ENV, fallback to .env
-  require "dotenv"
-  Dotenv.load! ".env"
-rescue Errno::ENOENT
-  $stderr.puts "Please create file .env in the application root folder"
-  exit
-rescue LoadError
-  $stderr.puts "Please install dotenv with \"gem install dotenv\""
-  exit
+# load ENV variables from .env file if it exists
+env_file = File.expand_path("../../.env", __FILE__)
+if File.exist?(env_file)
+  require 'dotenv'
+  Dotenv.load! env_file
 end
 
 env :PATH, ENV['PATH']
-env :DOTENV, ENV['DOTENV']
 set :environment, ENV['RAILS_ENV']
 set :output, "log/cron.log"
 
