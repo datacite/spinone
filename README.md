@@ -1,8 +1,6 @@
 # Spinone
 
-[![Build Status](https://travis-ci.org/datacite/spinone.svg?branch=master)](https://travis-ci.org/datacite/spinone)
-[![Code Climate](https://codeclimate.com/github/datacite/spinone/badges/gpa.svg)](https://codeclimate.com/github/datacite/spinone)
-[![Test Coverage](https://codeclimate.com/github/datacite/spinone/badges/coverage.svg)](https://codeclimate.com/github/datacite/spinone/coverage)
+[![Build Status](https://travis-ci.org/datacite/spinone.svg?branch=master)](https://travis-ci.org/datacite/spinone) [![Code Climate](https://codeclimate.com/github/datacite/spinone/badges/gpa.svg)](https://codeclimate.com/github/datacite/spinone) [![Test Coverage](https://codeclimate.com/github/datacite/spinone/badges/coverage.svg)](https://codeclimate.com/github/datacite/spinone/coverage)
 
 The common DataCite API. Merges information from Metadata Store (MDS), Event Data and other services, and provides this information via a common REST API using the [JSONAPI](http://jsonapi.org/) specification.
 
