@@ -1,5 +1,5 @@
 class Page < Base
-  attr_reader :id, :author, :title, :container_title, :description, :license, :tags, :issued, :updated_at
+  attr_reader :id, :author, :title, :container_title, :description, :license, :image_url, :tags, :issued, :updated_at
 
   def initialize(attributes)
     @id = attributes.fetch("url").underscore.dasherize
@@ -8,6 +8,7 @@ class Page < Base
     @container_title = attributes.fetch("container-title", nil)
     @description = attributes.fetch("description", nil)
     @license = attributes.fetch("license", nil)
+    @image_url = attributes.fetch("image", nil)
     @tags = attributes.fetch("tags", [])
     @issued = attributes.fetch("issued", nil)
     @updated_at = @issued
