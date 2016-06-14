@@ -20,7 +20,7 @@ https://api.labs.datacite.org/pages?tag=orcid
 Using Docker.
 
 ```
-docker run -p 8040:80 datacite1/spinone
+docker run -p 8040:80 datacite/spinone
 ```
 
 You can now point your browser to `http://localhost:8040` and use the application.

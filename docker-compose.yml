@@ -3,7 +3,7 @@ version: '2'
 services:
   web:
     env_file: .env.example
-    image: lagotto/lagotto
+    image: datacite/spinone
     ports:
       - "8080:80"
   db:
