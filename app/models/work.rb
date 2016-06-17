@@ -320,5 +320,7 @@ class Work < Base
     end
 
     uri.to_s
+  rescue URI::InvalidURIError
+    nil
   end
 end
