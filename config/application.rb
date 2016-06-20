@@ -39,8 +39,8 @@ module Spinone
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += Dir["#{config.root}/app/models/**/**", "#{config.root}/app/controllers/**/"]
 
-    # add assets from Ember app
-    config.assets.paths << "#{Rails.root}/frontend/bower_components"
+    # add assets installed via bower
+    config.assets.paths << "#{Rails.root}/vendor/bower_components"
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -56,6 +56,17 @@ module Spinone
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # See everything in the log (default is :info)
+    log_level = ENV["LOG_LEVEL"] ? ENV["LOG_LEVEL"].to_sym : :info
+    config.log_level = log_level
+
+    # Prepend all log lines with the following tags.
+    # config.log_tags = [ :subdomain, :uuid ]
+
+    # Use a different logger for distributed setups
+    config.lograge.enabled = true
+    config.logger = Syslog::Logger.new(ENV['APPLICATION'])
 
     # Configure the default encoding used in templates for Ruby.
     config.encoding = "utf-8"

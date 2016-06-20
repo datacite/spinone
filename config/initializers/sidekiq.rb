@@ -4,7 +4,5 @@ Sidekiq.configure_server do |config|
   config.options[:concurrency] = ENV["CONCURRENCY"].to_i
 end
 
-if ["production", "stage"].include? ENV['RAILS_ENV']
-  Sidekiq::Logging.logger = Syslog::Logger.new(ENV['APPLICATION'])
-end
+Sidekiq::Logging.logger = Syslog::Logger.new(ENV['APPLICATION'])
 Sidekiq::Logging.logger.level = Logger.const_get(ENV["LOG_LEVEL"].upcase)

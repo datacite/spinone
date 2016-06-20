@@ -44,17 +44,6 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
-  # See everything in the log (default is :info)
-  log_level = ENV["LOG_LEVEL"] ? ENV["LOG_LEVEL"].to_sym : :info
-  config.log_level = log_level
-
-  # Prepend all log lines with the following tags.
-  # config.log_tags = [ :subdomain, :uuid ]
-
-  # Use a different logger for distributed setups
-  config.lograge.enabled = true
-  config.logger = Syslog::Logger.new(ENV['APPLICATION'])
-
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
