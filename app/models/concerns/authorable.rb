@@ -31,6 +31,15 @@ module Authorable
       Array(authors).map { |author| get_one_hashed_author(author) }
     end
 
+    # parse array of author hashes into CSL format, fix for wrong author format
+    def get_comma_separated_authors(authors)
+      Array(authors).map do |author|
+        a = author.fetch("creatorName", "")
+        a = a.gsub(", Ph.D.", "")
+        a.split(", ").map { |au| get_one_author(au) }
+      end.first
+    end
+
     def get_one_hashed_author(author)
       raw_name = author.fetch("creatorName", nil)
 

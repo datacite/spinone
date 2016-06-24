@@ -43,3 +43,4 @@ doc/dependencies*
 !.env.example
 !.env.travis
 packer_cache/*
+docker-compose.override.yml

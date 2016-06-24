@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     resources :callbacks, only: [:create]
     resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }
     resources :contributions, only: [:index]
+    resources :datasets, only: [:show, :index], constraints: { :id => /.+/ }, path: "/dats"
     resources :events, only: [:show, :index]
     resources :groups, only: [:show, :index]
     resources :members, only: [:show, :index]
