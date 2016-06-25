@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   scope module: :api, defaults: { format: "json" } do
     resources :callbacks, only: [:create]
-    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ }] do
+    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ } do
       resources :contributions, only: [:index]
     end
     resources :contributions, only: [:index]
@@ -33,7 +33,7 @@ Rails.application.routes.draw do
       resources :works
     end
     resources :pages, only: [:show, :index], constraints: { :id => /.+/ }
-    resources :publishers, only: [:show, :index], constraints: { :id => /.+/ }] do
+    resources :publishers, only: [:show, :index], constraints: { :id => /.+/ } do
       resources :works
     end
     resources :registration_agencies, only: [:show, :index], path: "/registration-agencies"

@@ -7,7 +7,7 @@ title: "Home"
 
 ### Version History
 
-* V1: 2013-09-08, first draft.
+* v.1: June 25, 2016, first draft.
 
 ### Overview
 
