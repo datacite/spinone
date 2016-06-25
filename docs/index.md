@@ -3,17 +3,15 @@ layout: page
 title: "Home"
 ---
 
-## DataCite API
-
-### Version History
+## Version History
 
 * v.1: June 25, 2016, first draft.
 
-### Overview
+## Overview
 
 The API is generally RESTFUL and returns results in JSON. The API follows the [JSONAPI](http://jsonapi.org/) specification.
 
-### Results Overview
+## Results Overview
 
 All results are returned in JSON. There are two general types of results:
 
@@ -22,22 +20,22 @@ All results are returned in JSON. There are two general types of results:
 
 The mime-type for API results is `application/vnd.api+json`.
 
-#### Singletons
+### Singletons
 
-Singletons are single results. Retrieving metadata for a specific identifier (e.g. DOI, ISSN, funder_identifier) typically returns in a singleton result.
+Singletons are single results. Retrieving metadata for a specific identifier (e.g. DOI, ORCID) typically returns in a singleton result.
 
-#### Lists
+### Lists
 
 Lists results can contain multiple entries. Searching or filtering typically returns a list result. A list has two parts:
 
 * **meta**, which includes information about the query, e.g. number of results returned.
 * **data**, which will will contain the items matching the query or filter.
 
-*** Sort order
+### Sort order
 
 If the API call includes a query, then the sort order will be by the relevance score. If no query is included, then the sort order will be by DOI update date.
 
-*** Resource Components
+## Resource Components
 
 Major resource components supported by the DataCite API are (in alphabetical order):
 
@@ -98,7 +96,7 @@ The works component can be appended to other resources.
 | `/publishers/{publisher-id}/works` | returns list of works associated with a DataCite data center |
 | `/sources/{source-id}/works` | returns list of works associated with an Event Data source |
 
-### Parameters
+## Parameters
 
 Parameters can be used to query, filter and control the results returned by the DataCite API. They can be passed as normal URI parameters or as JSON in the body of the request.
 
@@ -118,8 +116,7 @@ https://api.datacite.org/members/cern/works?q=python&rows=1
 
 ### Queries
 
-Queries support a subset of [DisMax](https://wiki.apache.org/solr/DisMax), so, for example you
-can refine queries as follows.
+Queries support a subset of [DisMax](https://wiki.apache.org/solr/DisMax), so, for example you can refine queries as follows.
 
 Works that include "renear" but not "ontologies":
 
@@ -127,7 +124,7 @@ Works that include "renear" but not "ontologies":
 https://api.datacite.org/works?q=renear+-ontologies
 ```
 
-## Sorting
+### Sorting
 
 Results from a listy response can be sorted by applying the `sort` and `order` parameters. Order
 sets the result ordering, either `asc` or `desc`. Sort sets the field by which results will be
@@ -151,7 +148,7 @@ https://api.datacite.org/works?q=josiah+carberry&sort=published&order=asc
 
 Facet counts are returned via the `meta` object. Facet counts give counts per field value for an entire result set.
 
-## Filter Names
+### Filter Names
 
 Filters allow you to narrow queries. All filter results are lists.  The following filters are supported:
 
@@ -161,17 +158,17 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 | `from-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
 | `until-date` | `{date}` | metadata where published date is before (inclusive)  `{date}` |
 
-### Notes on owner prefixes
+## Notes on owner prefixes
 
 The prefix of a DataCite DOI does **NOT** indicate who currently owns the DOI.
 
 DataCite also has publisher IDs for depositing organisations. A single publisher may control multiple owner prefixes, which in turn may control a number of DOIs. When looking at works published by a certain organisaton, publisher IDs and the publisher routes should be used.
 
-### Notes on dates
+## Notes on dates
 
 Note that dates in filters should always be of the form `YYYY-MM-DD`, `YYYY-MM` or `YYYY`. Also note that date information in CrossRef metadata can often be incomplete. So, for example, a publisher may only include the year and month of publication for a journal article. For a monograph they might just include the year. In these cases the API selects the earliest possible date given the information provided. So, for instance, if the publisher only provided 2013-02 as the published date, then the date would be treated as 2013-02-01. Similarly, if the publisher only provided the year 2013 as the date, it would be treated at 2013-01-01.
 
-### Rows
+## Rows
 
 Normally, results are returned 25 at a time. You can control the number of results returns by using the `rows` parameter. To limit results to 5, for example, you could do the following:
 
@@ -187,19 +184,19 @@ https://api.datacite.org/works?q=allen+renear&rows=0
 
 The maximum number rows you can ask for in one query is `1000`.
 
-### Offset
+## Offset
 
 The number of returned items is controlled by the `rows` parameter, but you can select the offset into the result list by using the `offset` parameter.  So, for example, to select the second set of 5 results (i.e. results 6 through 10), you would do the following:
 
 ```
 https://api.datacite.org/works?q=allen+renear&rows=5&offset=5
 ```
-### Example Queries
+## Example Queries
 
 **All works published by data center `cdl.digsci` (Figshare)**
 
 ```
-https://api.datacite.org/prefixes/10.1016/works
+https://api.datacite.org/publishers/cdl.digsci/works
 ```
 
 **All members with `data` in their name (e.g. Australian National Data Service)**
@@ -208,7 +205,7 @@ https://api.datacite.org/prefixes/10.1016/works
 https://api.datacite.org/members?q=data
 ```
 
-### Error messages
+## Error messages
 
 When an error occurs, the API will return a [JSONAPI error object](http://jsonapi.org/examples/#error-objects), for example
 
