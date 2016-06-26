@@ -20,7 +20,7 @@ class Publisher < Base
 
       params = { page: page,
                  per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:q, nil),
+                 q: options.fetch(:query, nil),
                  registration_agency_id: options.fetch("registration-agency-id", nil),
                  member_id: options.fetch("member-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)

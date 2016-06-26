@@ -33,7 +33,7 @@ Lists results can contain multiple entries. Searching or filtering typically ret
 
 ### Sort order
 
-If the API call includes a query, then the sort order will be by the relevance score. If no query is included, then the sort order will be by DOI update date.
+If the API call includes a query, then the sort order will be by the relevance score. If no query is included, then the sort order will be by DOI deposit date.
 
 ## Resource Components
 
@@ -57,7 +57,7 @@ Major resource components supported by the DataCite API are (in alphabetical ord
 
 These can be used alone like this
 
-| resource                 | description                       |
+| Resource                 | Description                       |
 |:-------------------------|:----------------------------------|
 | `/agents`                | returns a list of agents used by the Event Data service |
 | `/contributions`         | returns a list of all contributions from the Event Data service |
@@ -78,7 +78,7 @@ These can be used alone like this
 ### Resource components and identifiers
 Resource components can be used in conjunction with identifiers to retrieve the metadata for that identifier.
 
-| resource                     | description                                      |
+| Resource                     | Description                                      |
 |:-----------------------------|:-------------------------------------------------|
 | `/members/{member-id}`       | returns metadata for a DataCite member           |
 | `/publisher/{publisher-id}`  | returns metadata for a DataCite data center      |
@@ -89,7 +89,7 @@ Resource components can be used in conjunction with identifiers to retrieve the 
 
 The works component can be appended to other resources.
 
-| resource                    | description                       |
+| Resource                    | Description                       |
 |:----------------------------|:----------------------------------|
 | `/works/{doi}`      | returns information about the specified DataCite `DOI` |
 | `/members/{member-id}/works` | returns list of works associated with a DataCite member |
@@ -100,18 +100,18 @@ The works component can be appended to other resources.
 
 Parameters can be used to query, filter and control the results returned by the DataCite API. They can be passed as normal URI parameters or as JSON in the body of the request.
 
-| parameter                    | description                 |
+| Parameter                    | Description                 |
 |:-----------------------------|:----------------------------|
-| `q`                          | limited [DisMax](https://wiki.apache.org/solr/DisMax) query terms |
-| `rows={#}`                   | results per per page |
-| `offset={#}`                 | result offset |
-| `sort={#}`                   | sort results by a certain field |
-| `order={#}`                  | set the sort order to `asc` or `desc` |
+| `query`                      | limited [DisMax](https://wiki.apache.org/solr/DisMax) query terms |
+| `rows`                       | results per per page |
+| `offset`                     | result offset |
+| `sort`                       | sort results by a certain field |
+| `order`                      | set the sort order to `asc` or `desc` |
 
 ### Example query using URI parameters
 
 ```
-https://api.datacite.org/members/cern/works?q=python&rows=1
+https://api.datacite.org/members/cern/works?query=python&rows=1
 ```
 
 ### Queries
@@ -121,27 +121,24 @@ Queries support a subset of [DisMax](https://wiki.apache.org/solr/DisMax), so, f
 Works that include "renear" but not "ontologies":
 
 ```
-https://api.datacite.org/works?q=renear+-ontologies
+https://api.datacite.org/works?query=renear+-ontologies
 ```
 
 ### Sorting
 
-Results from a listy response can be sorted by applying the `sort` and `order` parameters. Order
-sets the result ordering, either `asc` or `desc`. Sort sets the field by which results will be
-sorted. Possible values are:
+Results from a listy response can be sorted by applying the `sort` and `order` parameters. Order sets the result ordering, either `asc` or `desc`. Sort sets the field by which results will be sorted. Possible values are:
 
-| Sort value | Description |
-|------------|-------------|
-| `score` or `relevance` | Sort by relevance score |
-| `updated` | Sort by date of most recent change to metadata. Currently the same as `deposited`. |
-| `deposited` | Sort by time of most recent deposit |
-| `indexed` | Sort by time of most recent index |
-| `published` | Sort by publication date |
+| Sort value  | Description                                    |
+|-------------|------------------------------------------------|
+| `score`     | Sort by relevance score                        |
+| `updated`   | Sort by date of most recent change to metadata |
+| `deposited` | Sort by time of most recent deposit            |
+| `published` | Sort by publication date                       |
 
 An example that sorts results in order of publication, beginning with the least recent:
 
 ```
-https://api.datacite.org/works?q=josiah+carberry&sort=published&order=asc
+https://api.datacite.org/works?query=josiah+carberry&sort=published&order=asc
 ```
 
 ### Facet Counts
@@ -152,7 +149,7 @@ Facet counts are returned via the `meta` object. Facet counts give counts per fi
 
 Filters allow you to narrow queries. All filter results are lists.  The following filters are supported:
 
-| filter     | possible values | description|
+| Filter     | Possible values | Description|
 |:-----------|:----------------|:-----------|
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
 | `from-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
@@ -166,20 +163,20 @@ DataCite also has publisher IDs for depositing organisations. A single publisher
 
 ## Notes on dates
 
-Note that dates in filters should always be of the form `YYYY-MM-DD`, `YYYY-MM` or `YYYY`. Also note that date information in CrossRef metadata can often be incomplete. So, for example, a publisher may only include the year and month of publication for a journal article. For a monograph they might just include the year. In these cases the API selects the earliest possible date given the information provided. So, for instance, if the publisher only provided 2013-02 as the published date, then the date would be treated as 2013-02-01. Similarly, if the publisher only provided the year 2013 as the date, it would be treated at 2013-01-01.
+Note that dates in filters should always be of the form `YYYY-MM-DD`, `YYYY-MM` or `YYYY`. Also note that the date published in DataCite metadata is always expressed as `YYYY` (the `publicationYear` field).
 
 ## Rows
 
 Normally, results are returned 25 at a time. You can control the number of results returns by using the `rows` parameter. To limit results to 5, for example, you could do the following:
 
 ```
-https://api.datacite.org/works?q=allen+renear&rows=5
+https://api.datacite.org/works?query=allen+renear&rows=5
 ```
 
 If you would just like to get the `summary` of the results, you can set the rows to 0 (zero).
 
 ```
-https://api.datacite.org/works?q=allen+renear&rows=0
+https://api.datacite.org/works?query=allen+renear&rows=0
 ```
 
 The maximum number rows you can ask for in one query is `1000`.
@@ -189,7 +186,7 @@ The maximum number rows you can ask for in one query is `1000`.
 The number of returned items is controlled by the `rows` parameter, but you can select the offset into the result list by using the `offset` parameter.  So, for example, to select the second set of 5 results (i.e. results 6 through 10), you would do the following:
 
 ```
-https://api.datacite.org/works?q=allen+renear&rows=5&offset=5
+https://api.datacite.org/works?query=allen+renear&rows=5&offset=5
 ```
 ## Example Queries
 
@@ -202,7 +199,7 @@ https://api.datacite.org/publishers/cdl.digsci/works
 **All members with `data` in their name (e.g. Australian National Data Service)**
 
 ```
-https://api.datacite.org/members?q=data
+https://api.datacite.org/members?query=data
 ```
 
 ## Error messages

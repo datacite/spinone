@@ -36,7 +36,7 @@ class Relation < Base
 
     params = { page: page,
                per_page: options.fetch(:rows, 25),
-               q: options.fetch(:q, nil),
+               q: options.fetch(:query, nil),
                relation_type_id: relation_type_id,
                work_id: options.fetch("work-id", nil),
                work_ids: options.fetch("work-ids", nil),

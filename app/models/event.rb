@@ -29,7 +29,7 @@ class Event < Base
 
       params = { page: page,
                  per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:q, nil),
+                 q: options.fetch(:query, nil),
                  state: options.fetch(:state, nil),
                  prefix: options.fetch(:prefix, nil),
                  message_type: options.fetch("message-type", nil),

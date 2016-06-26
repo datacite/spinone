@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :member_id, :registration_agency_id, :results, :published, :issued, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :member_id, :registration_agency_id, :results, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -28,7 +28,7 @@ class Work < Base
     @container_title = attributes.fetch("publisher", nil)
     @description = attributes.fetch("description", []).first
     @published = attributes.fetch("publicationYear", nil)
-    @issued = attributes.fetch("minted", nil)
+    @deposited = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
     @resource_type_general = attributes.fetch("resourceTypeGeneral", nil)
     @type = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
@@ -48,14 +48,24 @@ class Work < Base
       params = { q: "doi:#{options[:id]}",
                  wt: "json" }
     else
-      sort = options[:sort].presence || options[:q].present? ? "score" : "minted"
-      order = options[:order].presence || "desc"
+      if options[:sort].present?
+        sort = case options[:sort]
+               when "deposited" then "minted"
+               when "published" then "publicationYear"
+               when "updated" then "updated"
+               else "score"
+               end
+      else
+        sort = options[:query].present? ? "score" : "minted"
+      end
+      order = options[:order] == "asc" ? "asc" : "desc"
+
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['publisher-id']}" if options['publisher-id'].present?
       fq << "allocator_symbol:#{options['member-id']}" if options['member-id'].present?
 
-      params = { q: options.fetch(:q, nil).presence || "*:*",
+      params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
                  fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,xml,minted,updated",

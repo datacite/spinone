@@ -27,7 +27,7 @@ class Contributor < Base
 
       params = { page: page,
                  per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:q, nil) }.compact
+                 q: options.fetch(:query, nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end

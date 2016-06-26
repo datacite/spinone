@@ -15,7 +15,7 @@ class DatasetSerializer < ActiveModel::Serializer
     [{ "date" => object.published,
        "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "publicationYear" }
      },
-     { "date" => object.issued,
+     { "date" => object.deposited,
        "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "Issued" }
      },
      { "date" => object.updated_at,

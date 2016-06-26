@@ -20,7 +20,7 @@ class Source < Base
       id = options[:id].underscore
       "#{url}/#{id}"
     else
-      params = { q: options.fetch(:q, nil),
+      params = { q: options.fetch(:query, nil),
                  group_id: options.fetch("group-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end

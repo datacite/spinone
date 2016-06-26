@@ -29,7 +29,7 @@ class Page < Base
 
       { data: parse_item(item) }
     else
-      items = items.select { |i| i.values.join("\n").downcase.include?(options[:q]) } if options[:q]
+      items = items.select { |i| i.values.join("\n").downcase.include?(options[:query]) } if options[:query]
       items = items.select { |i| Array(i["tags"]).include?(options[:tag]) } if options[:tag]
 
       meta = { total: items.length, tags: parse_meta(items) }
