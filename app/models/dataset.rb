@@ -23,7 +23,7 @@ class Dataset < Base
       authors = xml.fetch("creators", {}).fetch("creator", [])
 
       authors = [authors] if authors.is_a?(Hash)
-      @author = get_comma_separated_authors(authors)
+      @author = get_hashed_authors(authors)
     end
 
     @doi = attributes.fetch("doi", nil)

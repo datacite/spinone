@@ -66,7 +66,7 @@ These can be used alone like this
 | `/groups`                | returns a list of groups for sources used by Event Data service |
 | `/members`               | returns a list of all DataCite members |
 | `/pages`                 | returns a list of posts from the DataCite blog |
-| `/publishers`            | returns a list of all DataCite members |
+| `/publishers`            | returns a list of all DataCite publishers |
 | `/registration-agencies` | returns a list of registration agencies used by the Event Data service |
 | `/relations`             | returns a list of all relations from the Event Data service |
 | `/relation-types`        | returns a list of valid relation types |
