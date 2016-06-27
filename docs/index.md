@@ -85,17 +85,6 @@ Resource components can be used in conjunction with identifiers to retrieve the 
 | `/works/{doi}`               | returns metadata for the specified DataCite DOI. |
 | `/work-types/{work-type-id}` | returns information about a specified work type  |
 
-### Combining resource components
-
-The works component can be appended to other resources.
-
-| Resource                    | Description                       |
-|:----------------------------|:----------------------------------|
-| `/works/{doi}`      | returns information about the specified DataCite `DOI` |
-| `/members/{member-id}/works` | returns list of works associated with a DataCite member |
-| `/publishers/{publisher-id}/works` | returns list of works associated with a DataCite data center |
-| `/sources/{source-id}/works` | returns list of works associated with an Event Data source |
-
 ## Parameters
 
 Parameters can be used to query, filter and control the results returned by the DataCite API. They can be passed as normal URI parameters or as JSON in the body of the request.
@@ -152,6 +141,7 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 | Filter     | Possible values | Description|
 |:-----------|:----------------|:-----------|
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
+| `publisher-id` | `{publisher-id}` | metadata associated with a specific DataCite data center |
 | `from-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
 | `until-date` | `{date}` | metadata where published date is before (inclusive)  `{date}` |
 
@@ -193,7 +183,7 @@ https://api.datacite.org/works?query=allen+renear&rows=5&offset=5
 **All works published by data center `cdl.digsci` (Figshare)**
 
 ```
-https://api.datacite.org/publishers/cdl.digsci/works
+https://api.datacite.org/works?publisher-id=cdl.digsci
 ```
 
 **All members with `data` in their name (e.g. Australian National Data Service)**
