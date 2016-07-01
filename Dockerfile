@@ -4,9 +4,6 @@ MAINTAINER Martin Fenner "mfenner@datacite.org"
 # Set correct environment variables
 ENV HOME /home/app
 
-# Use runit to manage sidekiq workers
-ENV RUNIT 1
-
 # Allow app user to read /etc/container_environment
 RUN usermod -a -G docker_env app
 
@@ -39,27 +36,16 @@ RUN chown -R app:app /home/app/tmp && \
 # Install npm and bower packages
 WORKDIR /home/app/tmp/vendor
 RUN sudo -u app npm install
-WORKDIR /home/app/tmp
-RUN npm install -g phantomjs-prebuilt istanbul codeclimate-test-reporter
 
 # Install Ruby gems
 COPY Gemfile /home/app/tmp/Gemfile
 COPY Gemfile.lock /home/app/tmp/Gemfile.lock
+WORKDIR /home/app/tmp
 RUN gem install bundler && \
     mkdir -p /home/app/tmp/vendor/bundle && \
     chown -R app:app /home/app/tmp/vendor/bundle && \
     chmod -R 755 /home/app/tmp/vendor/bundle && \
     sudo -u app bundle install --path vendor/bundle
-
-# Add Runit script for sidekiq workers
-RUN mkdir /etc/service/sidekiq
-ADD vendor/docker/sidekiq.sh /etc/service/sidekiq/run
-
-# Run additional scripts during container startup (i.e. not at build time)
-RUN mkdir -p /etc/my_init.d
-COPY vendor/docker/70_install.sh /etc/my_init.d/70_install.sh
-COPY vendor/docker/80_cron.sh /etc/my_init.d/80_cron.sh
-COPY vendor/docker/90_migrate.sh /etc/my_init.d/90_migrate.sh
 
 # Copy webapp folder
 ADD . /home/app/webapp
