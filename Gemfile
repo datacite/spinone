@@ -14,7 +14,7 @@ gem 'rake', '~> 10.5'
 gem "whenever", "~> 0.9.0", require: false
 gem 'parse-cron', '~> 0.1.4'
 gem 'bugsnag', '~> 2.8.6'
-gem 'maremma', '~> 2.1', '>= 2.1.1'
+gem 'maremma', '~> 2.2', '>= 2.2.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
 gem 'nilify_blanks', '~> 1.2.0'

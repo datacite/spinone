@@ -59,7 +59,7 @@ describe DataciteOrcid, type: :model, vcr: true do
       response = subject.get_data
       expect(response["data"]["response"]["numFound"]).to eq(55)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.6084/M9.FIGSHARE.1226424")
+      expect(doc["doi"]).to eq("10.5284/1030449")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
