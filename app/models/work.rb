@@ -200,7 +200,7 @@ class Work < Base
 
   def self.parse_facet_counts(facets, options={})
     resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
-    years = facets.fetch("publicationYear", []).each_slice(2).to_h
+    years = facets.fetch("publicationYear", []).each_slice(2).sort { |a, b| b.first <=> a.first }.to_h
     publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
