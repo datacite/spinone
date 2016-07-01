@@ -64,6 +64,7 @@ class Work < Base
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['publisher-id']}" if options['publisher-id'].present?
       fq << "allocator_symbol:#{options['member-id']}" if options['member-id'].present?
+      fq << "publicationYear:#{options['year']}" if options['year'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
