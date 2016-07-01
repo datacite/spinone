@@ -7,9 +7,9 @@ The common DataCite API. Merges information from Metadata Store (MDS), Event Dat
 Examples:
 
 ```
-https://api.labs.datacite.org/works?q=cancer&rows=100
-https://api.labs.datacite.org/members?region=emea
-https://api.labs.datacite.org/pages?tag=orcid
+https://api.datacite.org/works?query=cancer&rows=100
+https://api.datacite.org/members?region=emea
+https://api.datacite.org/pages?tag=orcid
 
 ```
 
@@ -21,9 +21,7 @@ Using Docker.
 docker run -p 8040:80 datacite/spinone
 ```
 
-You can now point your browser to `http://localhost:8040` and use the application.
-
-For a more detailed configuration, including serving the application from the host for live editing, look at `docker-compose.yml` in the root folder.
+You can now point your browser to `http://localhost:8040` and use the application. You will need access to MySQL and Redis. For a more detailed configuration, including serving the application from the host for live editing, look at `docker-compose.yml` in the root folder.
 
 ## Development
 
