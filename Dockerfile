@@ -51,13 +51,6 @@ RUN gem install bundler && \
     chmod -R 755 /home/app/tmp/vendor/bundle && \
     sudo -u app bundle install --path vendor/bundle
 
-# Copy webapp folder
-ADD . /home/app/webapp
-WORKDIR /home/app/webapp
-RUN mkdir -p /home/app/webapp/tmp/pids && \
-    chown -R app:app /home/app/webapp && \
-    chmod -R 755 /home/app/webapp
-
 # Add Runit script for sidekiq workers
 RUN mkdir /etc/service/sidekiq
 ADD vendor/docker/sidekiq.sh /etc/service/sidekiq/run
@@ -67,6 +60,13 @@ RUN mkdir -p /etc/my_init.d
 COPY vendor/docker/70_install.sh /etc/my_init.d/70_install.sh
 COPY vendor/docker/80_cron.sh /etc/my_init.d/80_cron.sh
 COPY vendor/docker/90_migrate.sh /etc/my_init.d/90_migrate.sh
+
+# Copy webapp folder
+ADD . /home/app/webapp
+WORKDIR /home/app/webapp
+RUN mkdir -p /home/app/webapp/tmp/pids && \
+    chown -R app:app /home/app/webapp && \
+    chmod -R 755 /home/app/webapp
 
 # Expose web
 EXPOSE 80
