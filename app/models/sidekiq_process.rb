@@ -33,10 +33,6 @@ class SidekiqProcess
     "#{Rails.root}/tmp/pids/sidekiq.pid"
   end
 
-  def logfile
-    "#{Rails.root}/log/sidekiq.log"
-  end
-
   def configfile
     "#{Rails.root}/config/sidekiq.yml"
   end
@@ -65,7 +61,7 @@ class SidekiqProcess
       ps = process_set.first
       message = "Sidekiq process running, Sidekiq process started at #{Time.at(ps['started_at']).utc.iso8601}."
     else
-      `/usr/bin/env bundle exec sidekiq --pidfile #{pidfile} --environment #{ENV['RAILS_ENV']} --logfile #{logfile} --config #{configfile} --daemon`
+      `/usr/bin/env bundle exec sidekiq --pidfile #{pidfile} --environment #{ENV['RAILS_ENV']} --config #{configfile} --daemon`
       message = "No Sidekiq process running, Sidekiq process started at #{Time.zone.now.utc.iso8601}."
     end
   end
