@@ -51,9 +51,9 @@ RUN sudo -u app npm install
 # Install Ruby gems
 WORKDIR /home/app/webapp
 RUN gem install bundler && \
-    mkdir -p /home/app/vendor/bundle && \
-    chown -R app:app /home/app/vendor/bundle && \
-    chmod -R 755 /home/app/tmp/vendor/bundle && \
+    mkdir -p /home/app/webapp/vendor/bundle && \
+    chown -R app:app /home/app/webapp/vendor/bundle && \
+    chmod -R 755 /home/app/webapp/vendor/bundle && \
     sudo -u app bundle install --path vendor/bundle
 
 # Expose web
