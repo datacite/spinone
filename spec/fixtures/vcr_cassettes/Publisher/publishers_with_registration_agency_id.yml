@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/publishers?page=1&per_page=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c5c708ff-0445-4940-b94b-ddeff9190b72
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"4e0bc23ac4f88ababd9d2982f0e5ca02"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.186001'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":7494,"total_pages":300,"page":1,"registration_agencies":{"datacite":746,"crossref":6748},"members":{"DELFT":14,"DK":9,"MTAKIK":37,"PURDUE":25,"CDL":169,"OSTI":24,"ETHZ":43,"GESIS":64,"CISTI":19,"ZBMED":31,"INIST":30,"SND":6,"CERN":7,"CRUI":33,"DATACITE":2,"CSIC":1,"ZBW":9,"ANDS":41,"JALC":1,"NRCT":1,"TIB":108,"SUBGOE":3,"ESTDOI":6,"BIBSYS":2,"BL":61}},"publishers":[{"id":"ETHZ.UBASOJS","title":"027.7
+        - Zeitschrift für Bibliothekskultur","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-07-02T16:39:50Z"},{"id":"4396","title":"123Doc
+        Education","other_names":["123Doc Education"],"prefixes":["10.7579"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:15Z"},{"id":"2034","title":"21st
+        Century COE Program","other_names":["21st Century COE Program (Toplogical
+        Science and Technology)","21st Century COE Program"],"prefixes":["10.3731"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:14Z"},{"id":"7298","title":"21st
+        Century Political Science Association","other_names":["21st Century Political
+        Science Association"],"prefixes":["10.17937"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:23Z"},{"id":"DELFT.DATACENT","title":"3TU
+        Datacentrum","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-07-02T16:24:11Z"},{"id":"DELFT.DATA4TU","title":"4TU.Centre
+        for Research Data","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-07-02T16:24:09Z"},{"id":"6412","title":"A
+        Fundacao para o Desenvolvimento de Bauru (FunDeB)","other_names":["A Fundacao
+        para o Desenvolvimento de Bauru (FunDeB)"],"prefixes":["10.15675"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3776","title":"A.
+        I. Rosu Cultural Scientific Foundation (Fundatia cultural-stiintifica A. I.
+        Rosu)","other_names":["A. I. Rosu Cultural Scientific Foundation (Fundatia
+        cultural-stiintifica A. I. Rosu)","A. I. Rosu Cultural Scientific Foundation
+        Fundatia cultural-stiintifica A. I. Rosu"],"prefixes":["10.5775"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"9115","title":"AABRM","other_names":["AABRM"],"prefixes":["10.21658"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:01:01Z"},{"id":"2653","title":"AACE
+        Corp (American Association of Clinical Endocrinologists)","other_names":["AACE
+        Corp (American Association of Clinical Endocrinologists)","American Association
+        of Clinical Endocrinologists"],"prefixes":["10.4158"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:16Z"},{"id":"2471","title":"AACN
+        Publishing","other_names":["AACN Publishing"],"prefixes":["10.4037"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:40Z"},{"id":"DK.AAU","title":"Aalborg
+        University Library","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-07-02T16:24:17Z"},{"id":"4226","title":"Aarhus
+        University Library","other_names":["Aarhus University Library"],"prefixes":["10.7146"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6864","title":"Abant
+        Izzet Baysal Universitesi Egitim Fakultesi Dergisi","other_names":["Abant
+        Izzet Baysal Universitesi Egitim Fakultesi Dergisi"],"prefixes":["10.17240"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"4886","title":"Abant
+        Izzet Baysal University Graduate School of Social Sciences","other_names":["Abant
+        Izzet Baysal University Graduate School of Social Sciences"],"prefixes":["10.11616"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"7394","title":"ABC
+        Journals","other_names":["ABC Journals"],"prefixes":["10.18034"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"5938","title":"ABCD
+        Diabetes Care, Ltd.","other_names":["ABCD Diabetes Care, LTD.","ABCD Diabetes
+        Care, Ltd."],"prefixes":["10.15277"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3766","title":"ABEAT
+        - Associacao Brasileira de Especialistas em Alta Tecnologia","other_names":["ABEAT
+        - Associacao Brasileira de Especialistas em Alta Tecnologia"],"prefixes":["10.5769"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:29Z"},{"id":"8875","title":"ABEC
+        Publicacoes","other_names":["ABEC Publicacoes"],"prefixes":["10.21452"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6706","title":"ABED
+        - Associacao Brasileira de Educacao a Distancia","other_names":["ABED - Associacao
+        Brasileira de Educacao a Distancia"],"prefixes":["10.17143"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3637","title":"Aboriginal
+        Policy Studies","other_names":["Aboriginal Policy Studies"],"prefixes":["10.5663"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6983","title":"ABRACICON:
+        Academia Brasileira de Ciencias Contabeis","other_names":["ABRACICON: Academia
+        Brasileira de Ciencias Contabeis"],"prefixes":["10.17524"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"7603","title":"Academia
+        Koreana","other_names":["Academia Koreana"],"prefixes":["10.18399"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"6093","title":"Academia
+        Publishing","other_names":["Academia Publishing"],"prefixes":["10.15413"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"7345","title":"Academic
+        and Educational Forum on International Relations","other_names":["Academic
+        and Educational Forum on International Relations"],"prefixes":["10.17994"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"}]}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:18 GMT
+recorded_with: VCR 2.9.3

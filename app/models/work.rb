@@ -189,7 +189,7 @@ class Work < Base
       publishers = publishers[:data] if publishers.present?
     end
 
-    resource_types + publishers
+    resource_types + Array(publishers)
   end
 
   def self.parse_lagotto_included(items, meta, options={})

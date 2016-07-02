@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/relation_types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ac7670af-e3f6-4e0d-9d96-38432acf0f71
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"ddd1a36f9fddddf9e5cc51894c8d4a2a"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.020666'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"relation_type-list","message-version":"v7","total":39},"relation_types":[{"id":"bookmarks","title":"Bookmarks","inverse_title":"Is
+        bookmarked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"cites","title":"Cites","inverse_title":"Is
+        cited by","timestamp":"2016-03-21T15:05:03Z"},{"id":"compiles","title":"Compiles","inverse_title":"Is
+        compiled by","timestamp":"2016-03-21T15:05:03Z"},{"id":"continues","title":"Continues","inverse_title":"Is
+        continued by","timestamp":"2016-03-21T15:05:03Z"},{"id":"corrects","title":"Corrects","inverse_title":"Is
+        corrected by","timestamp":"2016-03-21T15:05:04Z"},{"id":"discusses","title":"Discusses","inverse_title":"Is
+        discussed by","timestamp":"2016-03-21T15:05:04Z"},{"id":"documents","title":"Documents","inverse_title":"Is
+        documented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"downloads","title":"Downloads","inverse_title":"Is
+        downloaded by","timestamp":"2016-03-21T15:05:04Z"},{"id":"has_metadata","title":"Has
+        metadata","inverse_title":"Is metadata for","timestamp":"2016-03-21T15:05:03Z"},{"id":"has_part","title":"Has
+        part","inverse_title":"Is part of","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_bookmarked_by","title":"Is
+        Bookmarked by","inverse_title":"Bookmarks","timestamp":"2016-04-08T12:43:04Z"},{"id":"is_cited_by","title":"Is
+        cited by","inverse_title":"Cites","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_compiled_by","title":"Is
+        compiled by","inverse_title":"Compiles","timestamp":"2016-03-22T17:41:55Z"},{"id":"is_continued_by","title":"Is
+        continued by","inverse_title":"Continues","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_corrected_by","title":"Is
+        corrected by","inverse_title":"Corrects","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_derived_from","title":"Is
+        derived from","inverse_title":"Is source of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_discussed_by","title":"Is
+        discussed by","inverse_title":"Discusses","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_documented_by","title":"Is
+        documented by","inverse_title":"Documents","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_downloaded_by","title":"Is
+        downloaded by","inverse_title":"Downloads","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_identical_to","title":"Is
+        identical to","inverse_title":"Is identical to","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_liked_by","title":"Is
+        Liked by","inverse_title":"Likes","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_metadata_for","title":"Is
+        metadata for","inverse_title":"Has metadata","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_new_version_of","title":"Is
+        new version of","inverse_title":"Is previous version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_original_form_of","title":"Is
+        original form of","inverse_title":"Is variant form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_part_of","title":"Is
+        part of","inverse_title":"Has part","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_previous_version_of","title":"Is
+        previous version of","inverse_title":"Is new version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_recommended_by","title":"Is
+        recommended by","inverse_title":"Recommends","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_referenced_by","title":"Is
+        referenced by","inverse_title":"References","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_reviewed_by","title":"Is
+        reviewed by","inverse_title":"reviews","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_source_of","title":"Is
+        source of","inverse_title":"Is derived from","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_supplement_to","title":"Is
+        supplement to","inverse_title":"Is supplemented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_supplemented_by","title":"Is
+        supplemented by","inverse_title":"Is supplement to","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_variant_form_of","title":"Is
+        variant form of","inverse_title":"Is original form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_viewed_by","title":"Is
+        viewed by","inverse_title":"Views","timestamp":"2016-03-21T15:05:04Z"},{"id":"likes","title":"Likes","inverse_title":"Is
+        Liked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"recommends","title":"Recommends","inverse_title":"Is
+        recommended by","timestamp":"2016-03-21T15:05:04Z"},{"id":"references","title":"References","inverse_title":"Is
+        referenced by","timestamp":"2016-03-21T15:05:03Z"},{"id":"reviews","title":"Reviews","inverse_title":"Is
+        reviewed by","timestamp":"2016-03-21T15:05:03Z"},{"id":"views","title":"Views","inverse_title":"Is
+        viewed by","timestamp":"2016-03-21T15:05:04Z"}]}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:18 GMT
+recorded_with: VCR 2.9.3

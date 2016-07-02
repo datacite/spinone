@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/registration_agencies/crossref
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:00:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3a8503d9-fbba-4b21-bb67-e3ff30313fe9
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"b377f2275a7c1de0aa2f7303391338f5"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.011745'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"registration-agency","message-version":"v7"},"registration_agency":{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:00:33 GMT
+recorded_with: VCR 2.9.3

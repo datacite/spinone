@@ -1,0 +1,3726 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"http://doi.org/10.1007/S11548-015-1180-7","relation_type_id":"is_supplement_to","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f229f023-525a-4ba1-a243-3296ead89a9f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.028422'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"4cdd1b70-c2cd-4e3d-83a1-7f5268106586","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"http://doi.org/10.1007/S11548-015-1180-7","relation_type_id":"is_supplement_to","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:38Z","timestamp":"2016-07-02T17:02:38Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","author":[{"given":"Andrey","family":"Fedorov"},{"given":"Paul
+        L","family":"Nguyen"},{"given":"Kemal","family":"Tuncali"},{"given":"Clare","family":"Tempany"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","issued":"2015-03-26T20:45:10Z","published":"2015","DOI":"10.5281/ZENODO.16396","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"dataset","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:33 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"http://doi.org/10.1016/J.MRI.2012.05.001","relation_type_id":"cites","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0174ea6f-834d-403e-b164-8265eb5fb761
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.021055'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"5cec378e-8f5c-4e7a-9abd-5040b614f35c","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"http://doi.org/10.1016/J.MRI.2012.05.001","relation_type_id":"cites","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:38Z","timestamp":"2016-07-02T17:02:38Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","author":[{"given":"Andrey","family":"Fedorov"},{"given":"Paul
+        L","family":"Nguyen"},{"given":"Kemal","family":"Tuncali"},{"given":"Clare","family":"Tempany"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","issued":"2015-03-26T20:45:10Z","published":"2015","DOI":"10.5281/ZENODO.16396","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"dataset","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:33 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 67e4bcca-dda9-4711-a73a-d099593e4814
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.021988'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"0356a31d-d2ed-42a3-b821-e5d5b473842a","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:39Z","timestamp":"2016-07-02T17:02:39Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","author":[{"given":"Andrey","family":"Fedorov"},{"given":"Paul
+        L","family":"Nguyen"},{"given":"Kemal","family":"Tuncali"},{"given":"Clare","family":"Tempany"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","issued":"2015-03-26T20:45:10Z","published":"2015","DOI":"10.5281/ZENODO.16396","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"dataset","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:33 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/SlicerProstate","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4198f253-9220-4061-9675-62d896590509
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024617'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"1ebb979d-d371-475a-ad67-3feb0d0b7ee4","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/SlicerProstate","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:23Z","timestamp":"2016-07-02T17:02:23Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:33 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - bf81bd30-31a8-4b5e-ada8-934254f41e6c
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.028437'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"cb58ec58-aded-4bbf-924a-36beabc97d7f","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:39Z","timestamp":"2016-07-02T17:02:39Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16396","author":[{"given":"Andrey","family":"Fedorov"},{"given":"Paul
+        L","family":"Nguyen"},{"given":"Kemal","family":"Tuncali"},{"given":"Clare","family":"Tempany"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","issued":"2015-03-26T20:45:10Z","published":"2015","DOI":"10.5281/ZENODO.16396","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"dataset","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:34 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/siavashk","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a6b60064-4ec5-48db-a69b-71a58267ce4a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022426'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"de0e5a9a-78d3-47a0-ba42-7c1c11144c2c","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/siavashk","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:40Z","timestamp":"2016-07-02T17:02:40Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:34 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16650","obj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16650","DOI":"10.5281/ZENODO.16650","author":[{"family":"Moore","given":"Jason
+        K."},{"family":"Dembia","given":"Christopher"}],"title":"DynamicistToolKit:
+        Version 0.4.0","container-title":"Zenodo","published":"2015","issued":"2015-04-07T05:43:27Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 63a0c884-1c71-4f32-acfc-d16516c6e5e0
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.027824'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"603856e1-4ecd-41c3-9e64-bc603088b6b9","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16650","obj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:24Z","timestamp":"2016-07-02T17:02:24Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16650","author":[{"given":"Jason
+        K.","family":"Moore"},{"given":"Christopher","family":"Dembia"}],"title":"DynamicistToolKit:
+        Version 0.4.0","container-title":"Zenodo","issued":"2015-04-07T05:43:27Z","published":"2015","DOI":"10.5281/ZENODO.16650","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:34 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c7b1752b-5e78-43c2-b437-358f2db292fd
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024989'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f20ee0fc-bd40-4989-b4f2-43384395df13","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:24Z","timestamp":"2016-07-02T17:02:24Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:35 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/moorepants","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5e614c53-b9ea-4b76-a50c-de4c13fdcb73
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022297'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"9098613b-612a-4cd2-8798-dafeb8c880b8","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/moorepants","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:25Z","timestamp":"2016-07-02T17:02:25Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:35 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16651","obj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16651","DOI":"10.5281/ZENODO.16651","author":[{"family":"Silva","given":"Anders"},{"family":"Russello","given":"Michael
+        A"}],"title":"irelr: an R package for reconstructing pedigrees with molecular
+        data","container-title":"Zenodo","published":"2015","issued":"2015-04-07T07:46:04Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6d46c844-0905-412f-b50a-3d2a0b6276da
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.019549'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f28fc174-d0e5-4e32-ac30-7ffff211ebad","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16651","obj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:41Z","timestamp":"2016-07-02T17:02:41Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16651","author":[{"given":"Anders","family":"Silva"},{"given":"Michael
+        A","family":"Russello"}],"title":"irelr: an R package for reconstructing pedigrees
+        with molecular data","container-title":"Zenodo","issued":"2015-04-07T07:46:04Z","published":"2015","DOI":"10.5281/ZENODO.16651","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:35 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","obj_id":"https://github.com/andersgs/irelr","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a3f0a12d-a973-406e-99cf-2542c6d773eb
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024400'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"41fe0cef-ec5b-4780-afad-b28f51fb3f83","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","obj_id":"https://github.com/andersgs/irelr","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:25Z","timestamp":"2016-07-02T17:02:25Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:35 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/andersgs","obj_id":"https://github.com/andersgs/irelr","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 716c62ac-d8fe-4f58-a8e0-ab464007a9d5
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023277'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"9cef59d2-640f-48ea-86ac-b84b1575a9b6","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/andersgs","obj_id":"https://github.com/andersgs/irelr","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:25Z","timestamp":"2016-07-02T17:02:25Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:36 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16655","obj_id":"https://github.com/scrm/scrm/tree/v1.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16655","DOI":"10.5281/ZENODO.16655","author":[{"family":"Staab","given":"Paul"},{"family":"Zhu","given":"Joe"},{"given":"gerton"},{"family":"Terhorst","given":"Jonathan"},{"family":"Kelleher","given":"Jerome"}],"title":"scrm:
+        Version 1.5.0","container-title":"Zenodo","published":"2015","issued":"2015-04-07T09:20:03Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a11b5b5c-9087-4efb-8cdf-ddd79841b56a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.025935'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"d70e4646-5add-47c3-8454-a98b512ff804","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16655","obj_id":"https://github.com/scrm/scrm/tree/v1.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:26Z","timestamp":"2016-07-02T17:02:26Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16655","author":[{"given":"Paul","family":"Staab"},{"given":"Joe","family":"Zhu"},{"given":"gerton"},{"given":"Jonathan","family":"Terhorst"},{"given":"Jerome","family":"Kelleher"}],"title":"scrm:
+        Version 1.5.0","container-title":"Zenodo","issued":"2015-04-07T09:20:03Z","published":"2015","DOI":"10.5281/ZENODO.16655","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:36 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/scrm/scrm/tree/v1.5.0","obj_id":"https://github.com/scrm/scrm","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d4e1cee5-d838-45df-97e0-57ab40d70948
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.019301'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"557e3389-08e4-45e6-be68-2d4ea42ec55a","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/scrm/scrm/tree/v1.5.0","obj_id":"https://github.com/scrm/scrm","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:42Z","timestamp":"2016-07-02T17:02:42Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:36 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/scrm","obj_id":"https://github.com/scrm/scrm","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9dc2e474-b60e-42f3-b8f4-e9f67867fc1b
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016821'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"8b8c6cff-205a-4e26-b14e-67455c3a213b","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/scrm","obj_id":"https://github.com/scrm/scrm","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:42Z","timestamp":"2016-07-02T17:02:42Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:36 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16659","obj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16659","DOI":"10.5281/ZENODO.16659","author":[{"family":"Mengoni","given":"Marlene"}],"title":"opti4Abq:
+        release under GPL License","container-title":"Zenodo","published":"2015","issued":"2015-04-07T13:35:57Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d31d3d34-ed47-47dd-9230-e0e2510d1c9f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024111'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"0b6c2210-0e6b-4289-b2b9-e43236f65222","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16659","obj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:27Z","timestamp":"2016-07-02T17:02:27Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16659","author":[{"given":"Marlene","family":"Mengoni"}],"title":"opti4Abq:
+        release under GPL License","container-title":"Zenodo","issued":"2015-04-07T13:35:57Z","published":"2015","DOI":"10.5281/ZENODO.16659","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:37 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4876e312-4cb0-4996-9df7-282df49b729f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017578'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"d53c1d75-420b-4191-b3ec-4d8f59465d54","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:43Z","timestamp":"2016-07-02T17:02:43Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:37 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/mengomarlene","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d99ee1a5-b98e-4841-a9b6-904b6f52cddd
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022651'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f735626a-5f43-4eac-89ba-464c0c889ed5","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/mengomarlene","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:27Z","timestamp":"2016-07-02T17:02:27Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:37 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16662","obj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16662","DOI":"10.5281/ZENODO.16662","author":[{"given":"xs-admin"},{"given":"xkp"}],"title":"Excess:
+        Working Prototype","container-title":"Zenodo","published":"2015","issued":"2015-04-07T19:12:20Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 61ea3792-ce4a-4e3f-ab7a-1e68d8ee381f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024635'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"4f735941-af01-4227-b181-5a6f4c8943ad","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16662","obj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:43Z","timestamp":"2016-07-02T17:02:43Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16662","author":[{"given":"xs-admin"},{"given":"xkp"}],"title":"Excess:
+        Working Prototype","container-title":"Zenodo","issued":"2015-04-07T19:12:20Z","published":"2015","DOI":"10.5281/ZENODO.16662","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:38 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - dc1307ef-f8c8-406b-b3da-e037b84ebd3b
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023257'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"ad903739-4b81-4a74-8d42-521957ec98e8","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:28Z","timestamp":"2016-07-02T17:02:28Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:38 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/xs-admin","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e718e5be-5df2-463b-b1d3-67d534ab1f32
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023092'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"6578f6c3-922b-4fe5-9ae4-f7a869fec111","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/xs-admin","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:28Z","timestamp":"2016-07-02T17:02:28Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:38 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16666","obj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16666","DOI":"10.5281/ZENODO.16666","author":[{"family":"Rinker","given":"Tyler"}],"title":"qdapRegex:
+        qdapRegex Version 0.3.2","container-title":"Zenodo","published":"2015","issued":"2015-04-07T22:15:06Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a8cdebed-3b28-4f2e-a9d7-cdc41d140cb5
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.018798'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f5575d49-c878-4b15-8a7a-02db57c83c88","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16666","obj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:44Z","timestamp":"2016-07-02T17:02:44Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16666","author":[{"given":"Tyler","family":"Rinker"}],"title":"qdapRegex:
+        qdapRegex Version 0.3.2","container-title":"Zenodo","issued":"2015-04-07T22:15:06Z","published":"2015","DOI":"10.5281/ZENODO.16666","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:38 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - bc60465d-c832-46a1-8a86-8430956f938f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016845'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"d12d2f78-c0ce-4b14-a58e-4afa18d71cfe","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:44Z","timestamp":"2016-07-02T17:02:44Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:39 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 79a5146f-91ff-4ca6-ac65-aed35d20ccc1
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016698'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"29137c3e-0878-4b2a-8c6c-b221584d71c7","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:44Z","timestamp":"2016-07-02T17:02:44Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:39 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16667","obj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16667","DOI":"10.5281/ZENODO.16667","author":[{"family":"Rinker","given":"Tyler"}],"title":"qdapDictionaries:
+        qdapDictionaries Version 1.0.5","container-title":"Zenodo","published":"2015","issued":"2015-04-07T22:16:25Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e03e38ae-f578-4518-8c88-e27a8bcf8c05
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.026249'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"27c87fe5-ad9d-43d2-9f5d-2c8c222bd852","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16667","obj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:29Z","timestamp":"2016-07-02T17:02:29Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16667","author":[{"given":"Tyler","family":"Rinker"}],"title":"qdapDictionaries:
+        qdapDictionaries Version 1.0.5","container-title":"Zenodo","issued":"2015-04-07T22:16:25Z","published":"2015","DOI":"10.5281/ZENODO.16667","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:39 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 031504b2-b9a8-461f-bf93-e2705661ba2d
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022765'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"c18cedef-5713-4189-90ef-a4bdd4b87d1e","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:29Z","timestamp":"2016-07-02T17:02:29Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:39 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a335b3fb-f924-4aa9-9ca6-8ec55a93d1bd
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022143'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f4cbd296-40a6-4338-836f-7e72dc03a5b1","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:30Z","timestamp":"2016-07-02T17:02:30Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:40 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16668","obj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16668","DOI":"10.5281/ZENODO.16668","author":[{"family":"Karczewski","given":"Konrad"},{"family":"Roberson","given":"Eli"},{"family":"Staton","given":"Evan"},{"family":"Chapman","given":"Brad"},{"family":"Minikel","given":"Eric"}],"title":"loftee:
+        v0.2.1-beta","container-title":"Zenodo","published":"2015","issued":"2015-04-07T23:49:45Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ed6a4b2c-9155-4a5b-915c-38693fdc73a3
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.020534'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"597ad694-604d-4f4f-8e31-d4a1be1c6129","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16668","obj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:46Z","timestamp":"2016-07-02T17:02:46Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16668","author":[{"given":"Konrad","family":"Karczewski"},{"given":"Eli","family":"Roberson"},{"given":"Evan","family":"Staton"},{"given":"Brad","family":"Chapman"},{"given":"Eric","family":"Minikel"}],"title":"loftee:
+        v0.2.1-beta","container-title":"Zenodo","issued":"2015-04-07T23:49:45Z","published":"2015","DOI":"10.5281/ZENODO.16668","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:40 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","obj_id":"https://github.com/konradjk/loftee","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e888fbd5-e1cc-427b-bb22-850bf3faeff9
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017535'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"27ca88c2-645f-4412-9a3a-7749e316c783","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","obj_id":"https://github.com/konradjk/loftee","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:46Z","timestamp":"2016-07-02T17:02:46Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:40 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/konradjk","obj_id":"https://github.com/konradjk/loftee","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - acdf1e69-e7ba-4250-b2f0-c994cc99020a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017289'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"9a541fa1-dc38-4351-a4b2-2b648e9fc808","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/konradjk","obj_id":"https://github.com/konradjk/loftee","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:46Z","timestamp":"2016-07-02T17:02:46Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:41 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16670","obj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16670","DOI":"10.5281/ZENODO.16670","author":[{"family":"Morton","given":"Timothy"}],"title":"VESPA:
+        Bug fix","container-title":"Zenodo","published":"2015","issued":"2015-04-08T02:09:46Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5472acd5-972f-4d23-8d92-10d792165a91
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.025311'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"b8cc7bef-3328-4710-a065-ed2895fbb5c4","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16670","obj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:31Z","timestamp":"2016-07-02T17:02:31Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16670","author":[{"given":"Timothy","family":"Morton"}],"title":"VESPA:
+        Bug fix","container-title":"Zenodo","issued":"2015-04-08T02:09:46Z","published":"2015","DOI":"10.5281/ZENODO.16670","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:41 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b71dc95c-26dd-4f44-b4b4-f1172a0bfc3b
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.030650'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"5f422bae-9e15-483a-908f-d5d54c40c86f","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:31Z","timestamp":"2016-07-02T17:02:31Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:41 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/timothydmorton","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 65fb2182-bdc6-4613-879b-3f4e0c98195b
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022791'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"b34cef81-6959-4e76-9b95-ec51d282b45e","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/timothydmorton","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:31Z","timestamp":"2016-07-02T17:02:31Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:41 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16672","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16672","DOI":"10.5281/ZENODO.16672","author":[{"family":"Seidel","given":"Ivan"}],"title":"ArduinoThread:
+        1.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T04:23:09Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1e7b77ed-e597-4843-a03b-fce8174d5fbf
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023667'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"dcffaf08-34e9-4bc9-b8e6-77d52cc7d312","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16672","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:32Z","timestamp":"2016-07-02T17:02:32Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16672","author":[{"given":"Ivan","family":"Seidel"}],"title":"ArduinoThread:
+        1.0","container-title":"Zenodo","issued":"2015-04-08T04:23:09Z","published":"2015","DOI":"10.5281/ZENODO.16672","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:42 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 328ada8e-3780-465c-a7f4-74605f261ef9
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017049'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"e38c1bd4-a683-4c97-b84f-ac4d34b68229","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:48Z","timestamp":"2016-07-02T17:02:48Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:42 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 36f05f91-b0eb-4325-91ee-4bfbfc55a71e
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.026883'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"21a1f581-4a3d-4500-9ee2-d9a67cec5b13","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:32Z","timestamp":"2016-07-02T17:02:32Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:42 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16673","obj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16673","DOI":"10.5281/ZENODO.16673","author":[{"family":"Seidel","given":"Ivan"},{"given":"ecdr"},{"family":"Klaus","given":"Philipp"},{"given":"SomeRandomGuy"},{"given":"feilb"},{"given":"colombod"},{"family":"Šuppa","given":"Marek"},{"family":"Alexander","given":"Marc"},{"family":"Gael","given":"Jurgen
+        Van"},{"family":"Murphy","given":"Jock"}],"title":"DueTimer: Adapt to 1.5.x
+        library specification","container-title":"Zenodo","published":"2015","issued":"2015-04-08T04:49:04Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 272f8aac-2e93-4adc-b85b-3374e21ec68d
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.021669'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f71fa886-5a67-4091-ac95-da26490463ce","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16673","obj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:48Z","timestamp":"2016-07-02T17:02:48Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16673","author":[{"given":"Ivan","family":"Seidel"},{"given":"ecdr"},{"given":"Philipp","family":"Klaus"},{"given":"SomeRandomGuy"},{"given":"feilb"},{"given":"colombod"},{"given":"Marek","family":"Šuppa"},{"given":"Marc","family":"Alexander"},{"given":"Jurgen
+        Van","family":"Gael"},{"given":"Jock","family":"Murphy"}],"title":"DueTimer:
+        Adapt to 1.5.x library specification","container-title":"Zenodo","issued":"2015-04-08T04:49:04Z","published":"2015","DOI":"10.5281/ZENODO.16673","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:43 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3fd22f80-da4a-4f34-9f21-69b91c352bf4
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023132'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"fbe1c19b-084b-4d65-90c0-ef5da8b23a5d","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:33Z","timestamp":"2016-07-02T17:02:33Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:43 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 2a737d65-9abe-4c09-8b37-baa3789af535
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.020543'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"c9c1adc7-d4b8-44d0-91d3-d6d94eb0a379","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:49Z","timestamp":"2016-07-02T17:02:49Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:43 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16677","obj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16677","DOI":"10.5281/ZENODO.16677","author":[{"family":"Wakefield","given":"Matthew"}],"title":"xenomapper:
+        v1.0b1","container-title":"Zenodo","published":"2015","issued":"2015-04-08T09:37:50Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 235f51e0-94c6-4dc5-9d65-e40b0ad5e971
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.018656'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"ff00610a-9f16-48b2-87db-5b083c15ef15","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16677","obj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:49Z","timestamp":"2016-07-02T17:02:49Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16677","author":[{"given":"Matthew","family":"Wakefield"}],"title":"xenomapper:
+        v1.0b1","container-title":"Zenodo","issued":"2015-04-08T09:37:50Z","published":"2015","DOI":"10.5281/ZENODO.16677","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:43 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4af447d1-a80f-457a-a570-5405def95431
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022903'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"6ee63f31-0b91-4d79-bb3a-17a7e0da4c91","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:34Z","timestamp":"2016-07-02T17:02:34Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:44 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/genomematt","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 79ec6a1c-d628-48c9-a45f-1f857f4c03d7
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023869'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"a4c80f51-bcd9-41d7-bab7-0e1010eced17","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/genomematt","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:34Z","timestamp":"2016-07-02T17:02:34Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:44 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16683","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16683","DOI":"10.5281/ZENODO.16683","author":[{"family":"Portner","given":"Hanspeter"},{"family":"Bolivar","given":"Marti"}],"title":"chimaera_firmware:
+        Chimaera Firmware Version 0.6.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T14:29:33Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ef83024f-8684-4795-ba7d-ac00738e333e
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024610'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"7837ef10-c6f9-4e2f-83cc-9bb748a90f33","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16683","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:34Z","timestamp":"2016-07-02T17:02:34Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16683","author":[{"given":"Hanspeter","family":"Portner"},{"given":"Marti","family":"Bolivar"}],"title":"chimaera_firmware:
+        Chimaera Firmware Version 0.6.0","container-title":"Zenodo","issued":"2015-04-08T14:29:33Z","published":"2015","DOI":"10.5281/ZENODO.16683","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:44 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4d73905e-de99-4b0e-bc21-af518cba8112
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017800'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"2e86e895-6311-4f57-ae6e-72f340ad9c9c","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:50Z","timestamp":"2016-07-02T17:02:50Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:45 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/OpenMusicKontrollers","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d2eeb4e6-86da-413f-9b0c-7feeb3cf35ba
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016708'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"2245bd76-40dc-4ae7-9db0-7952a961850f","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/OpenMusicKontrollers","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:51Z","timestamp":"2016-07-02T17:02:51Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:45 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16685","obj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16685","DOI":"10.5281/ZENODO.16685","author":[{"given":"megabyte22"}],"title":"maternal_effects:
+        Maternal Effects Source Code","container-title":"Zenodo","published":"2015","issued":"2015-04-08T16:07:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 737c2116-1221-463f-b72d-66184adb9c57
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.026040'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"7040f245-e728-48ea-8f47-af373023af4a","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16685","obj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:35Z","timestamp":"2016-07-02T17:02:35Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16685","author":[{"given":"megabyte22"}],"title":"maternal_effects:
+        Maternal Effects Source Code","container-title":"Zenodo","issued":"2015-04-08T16:07:10Z","published":"2015","DOI":"10.5281/ZENODO.16685","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:45 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3d2dacf7-2564-46d0-b80a-e5f0583445c1
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024722'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"6c4b27b3-44f4-4945-8dfd-c6333858626d","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:35Z","timestamp":"2016-07-02T17:02:35Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:46 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/megabyte22","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1626e13a-e0f7-4134-8e62-cae9ba7052ad
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016630'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"39344e11-0860-4f3e-9a83-8433542ccafe","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/megabyte22","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:51Z","timestamp":"2016-07-02T17:02:51Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:46 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16687","obj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16687","DOI":"10.5281/ZENODO.16687","author":[{"given":"Albert"}],"title":"geombest-plus:
+        Release 1.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T17:23:03Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c40bb3c0-a012-4b19-871a-cc8b511a70dd
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024934'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f7bd1537-3381-4b2c-94b9-436e23815b69","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16687","obj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:36Z","timestamp":"2016-07-02T17:02:36Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16687","author":[{"given":"Albert"}],"title":"geombest-plus:
+        Release 1.0","container-title":"Zenodo","issued":"2015-04-08T17:23:03Z","published":"2015","DOI":"10.5281/ZENODO.16687","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:46 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ef02afd0-ad94-4ffe-bfcc-c578e5f86f5f
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.023047'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"76e33795-02ae-4661-8469-7ed6dadf50ec","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:36Z","timestamp":"2016-07-02T17:02:36Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:46 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/csdms-contrib","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 2f1e7b2c-2d12-411c-bba6-83b17ece443a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016692'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"59222d8b-5a6c-4f2f-a749-dfaeef1b99d2","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/csdms-contrib","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:52Z","timestamp":"2016-07-02T17:02:52Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:47 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16688","obj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16688","DOI":"10.5281/ZENODO.16688","author":[{"family":"Geneva","given":"Anthony
+        J"},{"family":"Kingan","given":"Sarah B."}],"title":"spectrum2stats: spectrum2stats:
+        An R package to calculate population genetic summary statistics from site
+        frequency spectra","container-title":"Zenodo","published":"2015","issued":"2015-04-08T18:50:06Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 52a0d18f-a16c-49dd-bb2b-6a256bb25676
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.020217'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"5ba883b6-9aff-458e-87fd-d9597ef3ca68","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16688","obj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:52Z","timestamp":"2016-07-02T17:02:52Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16688","author":[{"given":"Anthony
+        J","family":"Geneva"},{"given":"Sarah B.","family":"Kingan"}],"title":"spectrum2stats:
+        spectrum2stats: An R package to calculate population genetic summary statistics
+        from site frequency spectra","container-title":"Zenodo","issued":"2015-04-08T18:50:06Z","published":"2015","DOI":"10.5281/ZENODO.16688","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:47 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3f289fe5-b9b6-4b55-8dc0-9e66bddc41e3
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024903'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"f16c433e-c3c2-413c-b964-96b29af81491","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:37Z","timestamp":"2016-07-02T17:02:37Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:47 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/geneva","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ed034af4-8241-4add-83b2-787908764693
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.022328'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"656843c5-0d5e-4d14-b28f-62e53bc8cd88","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/geneva","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:37Z","timestamp":"2016-07-02T17:02:37Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:47 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16692","obj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16692","DOI":"10.5281/ZENODO.16692","author":[{"family":"Álvarez","given":"Rubén
+        Rellán"},{"family":"Lobet","given":"Guillaume"}],"title":"glo_roots: pre-print","container-title":"Zenodo","published":"2015","issued":"2015-04-08T21:12:26Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4d7b7999-9247-452c-899a-8466c9d0576c
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.019538'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"24542b53-bd1a-42b2-9109-59a9decea456","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16692","obj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:53Z","timestamp":"2016-07-02T17:02:53Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16692","author":[{"given":"Rubén
+        Rellán","family":"Álvarez"},{"given":"Guillaume","family":"Lobet"}],"title":"glo_roots:
+        pre-print","container-title":"Zenodo","issued":"2015-04-08T21:12:26Z","published":"2015","DOI":"10.5281/ZENODO.16692","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:48 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6fbea048-44f5-4786-8f3d-9c2913c256c7
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017675'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"19791202-417c-4aaf-9d2b-48dce2ff33e1","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:54Z","timestamp":"2016-07-02T17:02:54Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:48 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/rr-lab","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 11c77aba-c463-43ba-ab5c-a0ef09961686
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017076'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"1a30c87d-a31b-432b-8fd0-5f5f9fff3d5f","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/rr-lab","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:54Z","timestamp":"2016-07-02T17:02:54Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:48 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"http://doi.org/10.5281/ZENODO.16693","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"http://doi.org/10.5281/ZENODO.16693","DOI":"10.5281/ZENODO.16693","author":[{"family":"Seidel","given":"Ivan"}],"title":"ArduinoThread:
+        2.0.2","container-title":"Zenodo","published":"2015","issued":"2015-04-08T23:08:22Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4d1b83f9-c780-4925-9b45-eedc9af5fac8
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.024439'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"c479da80-eab2-4fcd-88f4-092250e8ca98","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","prefix":"10.5281","subj_id":"http://doi.org/10.5281/ZENODO.16693","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","total":1,"occurred_at":"2016-07-02T17:02:38Z","timestamp":"2016-07-02T17:02:38Z","subj":{"pid":"http://doi.org/10.5281/ZENODO.16693","author":[{"given":"Ivan","family":"Seidel"}],"title":"ArduinoThread:
+        2.0.2","container-title":"Zenodo","issued":"2015-04-08T23:08:22Z","published":"2015","DOI":"10.5281/ZENODO.16693","registration_agency_id":"datacite","publisher_id":"CERN.ZENODO","type":"computer_program","tracked":true},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:49 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 47d4d1df-3abf-41cc-be5c-a4295337973a
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.017447'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"0c41a01d-cda4-47d7-bcec-8e6f24222c9a","state":"waiting","message_type":"relation","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","total":1,"occurred_at":"2016-07-02T17:02:54Z","timestamp":"2016-07-02T17:02:54Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:49 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0bccb350-002e-4e67-bccf-0dc4173ee9f9
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      X-Runtime:
+      - '0.016976'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"accepted","message-type":"deposit","message-version":"v7"},"deposit":{"id":"2a1133cb-3ce0-4baa-be7c-e8f4989ba6f9","state":"waiting","message_type":"contribution","message_action":"create","source_token":"31eb4576-c06a-4711-bd9a-912e16f2303a","callback":"http://localhost:8040/api/callbacks","subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"references","source_id":"github_contributor","total":1,"occurred_at":"2016-07-02T17:02:55Z","timestamp":"2016-07-02T17:02:55Z","subj":{},"obj":{}}}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:49 GMT
+recorded_with: VCR 2.9.3

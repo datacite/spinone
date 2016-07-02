@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/publishers?page=1&per_page=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.1
+      Date:
+      - Sat, 02 Jul 2016 17:02:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e354dd9d-f5e0-4522-ad43-01f6fb109d66
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Etag:
+      - W/"dfcbe04544c835ab2a04d296ba7c3e43"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.192195'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/
+      X-Powered-By:
+      - Phusion Passenger 5.0.29
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":7494,"total_pages":150,"page":1,"registration_agencies":{"datacite":746,"crossref":6748},"members":{"DELFT":14,"DK":9,"MTAKIK":37,"PURDUE":25,"CDL":169,"OSTI":24,"ETHZ":43,"GESIS":64,"CISTI":19,"ZBMED":31,"INIST":30,"SND":6,"CERN":7,"CRUI":33,"DATACITE":2,"CSIC":1,"ZBW":9,"ANDS":41,"JALC":1,"NRCT":1,"TIB":108,"SUBGOE":3,"ESTDOI":6,"BIBSYS":2,"BL":61}},"publishers":[{"id":"ETHZ.UBASOJS","title":"027.7
+        - Zeitschrift für Bibliothekskultur","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-07-02T16:39:50Z"},{"id":"4396","title":"123Doc
+        Education","other_names":["123Doc Education"],"prefixes":["10.7579"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:15Z"},{"id":"2034","title":"21st
+        Century COE Program","other_names":["21st Century COE Program (Toplogical
+        Science and Technology)","21st Century COE Program"],"prefixes":["10.3731"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:14Z"},{"id":"7298","title":"21st
+        Century Political Science Association","other_names":["21st Century Political
+        Science Association"],"prefixes":["10.17937"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:23Z"},{"id":"DELFT.DATACENT","title":"3TU
+        Datacentrum","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-07-02T16:24:11Z"},{"id":"DELFT.DATA4TU","title":"4TU.Centre
+        for Research Data","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-07-02T16:24:09Z"},{"id":"6412","title":"A
+        Fundacao para o Desenvolvimento de Bauru (FunDeB)","other_names":["A Fundacao
+        para o Desenvolvimento de Bauru (FunDeB)"],"prefixes":["10.15675"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3776","title":"A.
+        I. Rosu Cultural Scientific Foundation (Fundatia cultural-stiintifica A. I.
+        Rosu)","other_names":["A. I. Rosu Cultural Scientific Foundation (Fundatia
+        cultural-stiintifica A. I. Rosu)","A. I. Rosu Cultural Scientific Foundation
+        Fundatia cultural-stiintifica A. I. Rosu"],"prefixes":["10.5775"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"9115","title":"AABRM","other_names":["AABRM"],"prefixes":["10.21658"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:01:01Z"},{"id":"2653","title":"AACE
+        Corp (American Association of Clinical Endocrinologists)","other_names":["AACE
+        Corp (American Association of Clinical Endocrinologists)","American Association
+        of Clinical Endocrinologists"],"prefixes":["10.4158"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:16Z"},{"id":"2471","title":"AACN
+        Publishing","other_names":["AACN Publishing"],"prefixes":["10.4037"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:40Z"},{"id":"DK.AAU","title":"Aalborg
+        University Library","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-07-02T16:24:17Z"},{"id":"4226","title":"Aarhus
+        University Library","other_names":["Aarhus University Library"],"prefixes":["10.7146"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6864","title":"Abant
+        Izzet Baysal Universitesi Egitim Fakultesi Dergisi","other_names":["Abant
+        Izzet Baysal Universitesi Egitim Fakultesi Dergisi"],"prefixes":["10.17240"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"4886","title":"Abant
+        Izzet Baysal University Graduate School of Social Sciences","other_names":["Abant
+        Izzet Baysal University Graduate School of Social Sciences"],"prefixes":["10.11616"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"7394","title":"ABC
+        Journals","other_names":["ABC Journals"],"prefixes":["10.18034"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"5938","title":"ABCD
+        Diabetes Care, Ltd.","other_names":["ABCD Diabetes Care, LTD.","ABCD Diabetes
+        Care, Ltd."],"prefixes":["10.15277"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3766","title":"ABEAT
+        - Associacao Brasileira de Especialistas em Alta Tecnologia","other_names":["ABEAT
+        - Associacao Brasileira de Especialistas em Alta Tecnologia"],"prefixes":["10.5769"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:29Z"},{"id":"8875","title":"ABEC
+        Publicacoes","other_names":["ABEC Publicacoes"],"prefixes":["10.21452"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6706","title":"ABED
+        - Associacao Brasileira de Educacao a Distancia","other_names":["ABED - Associacao
+        Brasileira de Educacao a Distancia"],"prefixes":["10.17143"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3637","title":"Aboriginal
+        Policy Studies","other_names":["Aboriginal Policy Studies"],"prefixes":["10.5663"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"6983","title":"ABRACICON:
+        Academia Brasileira de Ciencias Contabeis","other_names":["ABRACICON: Academia
+        Brasileira de Ciencias Contabeis"],"prefixes":["10.17524"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"7603","title":"Academia
+        Koreana","other_names":["Academia Koreana"],"prefixes":["10.18399"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"6093","title":"Academia
+        Publishing","other_names":["Academia Publishing"],"prefixes":["10.15413"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:00:59Z"},{"id":"7345","title":"Academic
+        and Educational Forum on International Relations","other_names":["Academic
+        and Educational Forum on International Relations"],"prefixes":["10.17994"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3678","title":"Academic
+        and Scientific Publishers","other_names":["Academic and Scientific Publishers"],"prefixes":["10.5689"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"8212","title":"Academic
+        Journal, Al-Azhar University","other_names":["Academic Journal, Al-Azhar University"],"prefixes":["10.19138"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:09Z"},{"id":"3908","title":"Academic
+        Journals","other_names":["Academic Journals"],"prefixes":["10.5897"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"8985","title":"Academic
+        Platform Journal of Engineering and Science","other_names":["Academic Platform
+        Journal of Engineering and Science"],"prefixes":[],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"4985","title":"Academic
+        Publications","other_names":["Academic Publications"],"prefixes":["10.12732"],"registration_agency_id":"crossref","timestamp":"2016-07-02T17:01:28Z"},{"id":"5282","title":"Academic
+        Publishing House Researcher","other_names":["Academic Publishing House Researcher"],"prefixes":["10.13187"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"847","title":"Academic
+        Society of Technology Management, Yokohama National University","other_names":["Academic
+        Society of Technology Management, Yokohama National University","Academic
+        Society of Technology Management"],"prefixes":["10.2107"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"6008","title":"Academic
+        Star Publishing Company","other_names":["Academic Star Publishing Company"],"prefixes":["10.15341"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"6456","title":"AcademicPres
+        (EAP) Publishing House","other_names":["AcademicPres (EAP) Publishing House"],"prefixes":["10.15835"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"7225","title":"Academicus
+        Journal","other_names":["Academicus Journal"],"prefixes":["10.7336"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:56Z"},{"id":"3062","title":"Academy
+        and Industry Research Collaboration Center (AIRCC)","other_names":["Academy
+        and Industry Research Collaboration Center","Academy and Industry Research
+        Collaboration Center (AIRCC)"],"prefixes":["10.5121"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"8098","title":"Academy
+        for 21st Century Christian Society and Culture","other_names":["Academy for
+        21st Century Christian Society and Culture"],"prefixes":["10.19036"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"5202","title":"Academy
+        Health","other_names":["Academy Health"],"prefixes":["10.13063"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"6862","title":"Academy
+        of Asian Studies, Dankook University","other_names":["Academy of Asian Studies,
+        Dankook University"],"prefixes":["10.17320"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:46:50Z"},{"id":"6084","title":"Academy
+        of Dental Education","other_names":["Academy of Dental Education"],"prefixes":["10.15423"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"8845","title":"Academy
+        of Inventors","other_names":["Academy of Inventors"],"prefixes":["10.21300"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"8318","title":"Academy
+        of Labor and Social Relations","other_names":["Academy of Labor and Social
+        Relations"],"prefixes":["10.20410"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:10Z"},{"id":"7818","title":"Academy
+        of Managed Care Pharmacy","other_names":["Academy of Managed Care Pharmacy"],"prefixes":["10.18553"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:47:02Z"},{"id":"6972","title":"Academy
+        of Medical and Health Research","other_names":["Academy of Medical and Health
+        Research","Academy of Medical and Health Sciences Research"],"prefixes":["10.17511"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:47:02Z"},{"id":"1210","title":"Academy
+        of Natural Sciences of Philadelphia","other_names":["Academy of Natural Sciences
+        of Philadelphia","BioOne (Academy of Natural Sciences of Philadelphia)"],"prefixes":["10.1635"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:52Z"},{"id":"6689","title":"Academy
+        of Science of South Africa","other_names":["Academy of Science of South Africa"],"prefixes":["10.17159"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:47:02Z"},{"id":"3666","title":"Academy
+        of Sciences and Arts of Bosnia and Herzegovina","other_names":["Academy of
+        Sciences and Arts of Bosnia anad Herzegovina","Academy of Sciences and Arts
+        of Bosnia and Herzegovina"],"prefixes":["10.5644"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:47:02Z"},{"id":"3809","title":"Academy
+        of Sciences and Arts of the Republic of Srpska","other_names":["Academy of
+        Sciences and Arts of the Republic of Srpska"],"prefixes":["10.5767"],"registration_agency_id":"crossref","timestamp":"2016-07-02T15:49:15Z"},{"id":"4674","title":"Academy
+        of Taiwan Information Systems Research","other_names":["Academy of Taiwan
+        Information Systems Research"],"prefixes":["10.7903"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:24:52Z"},{"id":"420","title":"Academy
+        of Traumatology","other_names":["Sage Publications- Academy of Traumatology","Academy
+        of Traumatology"],"prefixes":["10.1528"],"registration_agency_id":"crossref","timestamp":"2016-07-02T16:47:02Z"}]}'
+    http_version: 
+  recorded_at: Sat, 02 Jul 2016 17:02:17 GMT
+recorded_with: VCR 2.9.3
