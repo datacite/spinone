@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Contributor, type: :model, vcr: true do
   it "contributors" do
     contributors = Contributor.where(rows: 50)[:data]
-    expect(contributors.length).to eq(19)
+    expect(contributors.length).to eq(50)
     contributor = contributors.first
     expect(contributor.family).to eq("Arend")
   end

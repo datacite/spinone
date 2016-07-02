@@ -19,13 +19,13 @@ describe Agent, :type => :model, vcr: true do
     end
 
     it "low rate-limiting" do
-      subject = FactoryGirl.create(:agent_with_api_responses)
+      subject = FactoryGirl.create(:agent)
       subject.rate_limiting = 10
       expect(subject.wait_time.to_i).to eq(3599)
     end
 
     it "over rate-limiting" do
-      subject = FactoryGirl.create(:agent_with_api_responses)
+      subject = FactoryGirl.create(:agent)
       subject.rate_limiting = 4
       expect(subject.wait_time.to_i).to eq(3599)
     end
@@ -39,7 +39,7 @@ describe Agent, :type => :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       subject.update_count(12)
-      expect(subject.count).to eq(108)
+      expect(subject.count).to eq(24)
     end
   end
 end
