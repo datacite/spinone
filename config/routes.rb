@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   resources :agents
   resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
+  resources :heartbeat, only: [:index]
   get "/dashboard", to: "status#index"
 
   scope module: :api, defaults: { format: "json" } do
