@@ -30,18 +30,4 @@ describe Status, type: :model, vcr: true do
   it "current_version" do
     expect(subject.current_version).to eq("1.0-beta")
   end
-
-  context "services" do
-    it "redis" do
-      expect(subject.redis).to eq("OK")
-    end
-
-    it "sidekiq" do
-      expect(subject.sidekiq).to eq("OK")
-    end
-
-    it "services_ok?" do
-      expect(subject.services_ok?).to be true
-    end
-  end
 end

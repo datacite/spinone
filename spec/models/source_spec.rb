@@ -5,7 +5,7 @@ describe Source, type: :model, vcr: true do
     sources = Source.all[:data]
     expect(sources.length).to eq(19)
     source = sources.first
-    expect(source.title).to eq("DataCite (RelatedIdentifier)")
+    expect(source.title).to eq("Crossref (DataCite)")
   end
 
   it "source" do
