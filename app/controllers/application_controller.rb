@@ -6,11 +6,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def after_sign_in_path_for(resource)
-    if resource.created_at > 1.minute.ago
-      '/users/me'
-    else
-      request.env['omniauth.origin'].presence || stored_location_for(resource) || '/users/me'
-    end
+    request.env['omniauth.origin'].presence || stored_location_for(resource) || root_path
   end
 
   def after_sign_out_path_for(resource_or_scope)
