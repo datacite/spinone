@@ -20,7 +20,7 @@ FactoryGirl.define do
   end
 
   factory :status do
-    current_version "1.0-beta"
+    current_version "2.0"
   end
 
   factory :datacite_related, aliases: [:agent], class: DataciteRelated do

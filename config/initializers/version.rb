@@ -1,3 +1,3 @@
 module Spinone
-  VERSION = "1.0-beta"
+  VERSION = "2.0"
 end

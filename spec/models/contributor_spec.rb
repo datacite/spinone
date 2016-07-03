@@ -5,7 +5,7 @@ describe Contributor, type: :model, vcr: true do
     contributors = Contributor.where(rows: 50)[:data]
     expect(contributors.length).to eq(50)
     contributor = contributors.first
-    expect(contributor.family).to eq("Arend")
+    expect(contributor).to eq(2)
   end
 
   it "contributors with query" do

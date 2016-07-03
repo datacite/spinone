@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Event, type: :model, vcr: true do
   it "events" do
     events = Event.where(rows: 50)[:data]
-    expect(events.length).to eq(2)
+    expect(events.length).to eq(50)
     event = events.first
     expect(event.subj_id).to eq("http://doi.org/10.5517/CCSMT39")
   end

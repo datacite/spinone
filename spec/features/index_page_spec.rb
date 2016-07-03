@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "index", type: :feature, js: true, vcr: true do
   it 'show index page' do
     visit '/'
-    expect(page).to have_css ".panel-body", text: "The DataCite API sends newly indexed metadata from the DataCite Metadata Store to other DataCite services. Please contact DataCite staff for more information."
+    expect(page).to have_css ".panel-body", text: "Version History"
   end
 
   it 'show link to agents' do

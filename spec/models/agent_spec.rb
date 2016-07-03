@@ -39,7 +39,7 @@ describe Agent, :type => :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       subject.update_count(12)
-      expect(subject.count).to eq(60)
+      expect(subject.count).to eq(72)
     end
   end
 end
