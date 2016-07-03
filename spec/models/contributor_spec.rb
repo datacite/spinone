@@ -5,7 +5,7 @@ describe Contributor, type: :model, vcr: true do
     contributors = Contributor.where(rows: 50)[:data]
     expect(contributors.length).to eq(50)
     contributor = contributors.first
-    expect(contributor).to eq(2)
+    expect(contributor.literal).to eq("mne-tools")
   end
 
   it "contributors with query" do

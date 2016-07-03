@@ -5,7 +5,7 @@ describe Event, type: :model, vcr: true do
     events = Event.where(rows: 50)[:data]
     expect(events.length).to eq(50)
     event = events.first
-    expect(event.subj_id).to eq("http://doi.org/10.5517/CCSMT39")
+    expect(event.subj_id).to eq("http://orcid.org/0000-0002-6495-1759")
   end
 
   it "events with query" do
