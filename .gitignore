@@ -24,8 +24,6 @@ capybara-*.html
 /data/*
 /db/*.sqlite3
 /public/system/*
-public/api/
-public/api-docs.json
 public/assets
 /coverage/
 /spec/tmp/
@@ -33,7 +31,6 @@ public/assets
 **.orig
 rerun.txt
 pickle-email-*.html
-.vagrant*
 .idea/*
 erl_crash.dump
 optimise-db.txt
@@ -42,5 +39,4 @@ doc/dependencies*
 .env.*
 !.env.example
 !.env.travis
-packer_cache/*
 docker-compose.override.yml
