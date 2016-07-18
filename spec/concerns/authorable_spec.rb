@@ -14,6 +14,12 @@ describe Work do
       expect(result).to eq("literal"=>"Zaranek")
     end
 
+    it 'should handle authors with unsupported characters' do
+      author = "Pampel, Heinz"
+      result = subject.get_one_author(author)
+      expect(result).to eq("family"=>"Pampel", "given"=>"Heinz")
+    end
+
     it 'should handle author that is not a person' do
       author = "gbif.org"
       result = subject.get_one_author(author)
