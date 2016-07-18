@@ -6,7 +6,7 @@ module Authorable
   included do
     # parse author string into CSL format
     def get_one_author(author, options = { sep: " " })
-      return {} if author.blank?
+      return "" if author.blank?
 
       author = author.split(options[:sep]).reverse.join(" ") if options[:reversed]
 
@@ -42,7 +42,7 @@ module Authorable
     def get_name_identifier(author)
       name_identifier = author.fetch("nameIdentifier", nil)
       name_identifier_scheme = author.fetch("nameIdentifierScheme", "orcid").downcase
-      if name_identifier.present? && name_identifier_scheme == "orcid"
+      if name_identifier_scheme == "orcid" && validate_orcid(name_identifier)
         "http://orcid.org/#{name_identifier}"
       else
         nil
