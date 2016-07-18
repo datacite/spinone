@@ -12,7 +12,7 @@ module Authorable
       author = author.split(options[:sep]).reverse.join(" ") if options[:reversed]
 
       names = Namae.parse(author)
-      if names.blank? || /^\S*\.\S*$/.match(author) || !author.include?(",")
+      if names.blank? || /^\S*\.\S*$/.match(author) || !author.include?(",")
         { "literal" => author }
       else
         name = names.first
