@@ -10,8 +10,8 @@ class Work < Base
   # include metadata helper methods
   include Metadatable
 
-  def initialize(attributes)
-    @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi"))
+  def initialize(attributes={})
+    @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
 
     @author = attributes.fetch("author", nil)
     if author.nil?

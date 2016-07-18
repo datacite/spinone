@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe Work, type: :model, vcr: true do
-
   context "from url" do
     let(:url) { "http://doi.org/10.5061/dryad.8515" }
 
