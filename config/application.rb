@@ -2,6 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 require 'syslog/logger'
+require 'securerandom'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -26,6 +27,8 @@ end
 ENV['APPLICATION'] ||= "spinone"
 ENV['SESSION_KEY'] ||= "_#{ENV['APPLICATION']}_session"
 ENV['SESSION_DOMAIN'] ||= ""
+# ENV['SESSION_ENCRYPTED_COOKIE_SALT'] ||= SecureRandom.hex(15)
+# ENV['SESSION_ENCRYPTED_SIGNED_COOKIE_SALT'] ||= SecureRandom.hex(15)
 ENV['SITENAMELONG'] ||= "DataCite API"
 ENV['LOG_LEVEL'] ||= "info"
 ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
