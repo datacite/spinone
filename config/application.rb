@@ -26,7 +26,7 @@ end
 # default values for some ENV variables
 ENV['APPLICATION'] ||= "spinone"
 ENV['SESSION_KEY'] ||= "_#{ENV['APPLICATION']}_session"
-ENV['SESSION_DOMAIN'] ||= ""
+# ENV['SESSION_DOMAIN'] ||= ""
 # ENV['SESSION_ENCRYPTED_COOKIE_SALT'] ||= SecureRandom.hex(15)
 # ENV['SESSION_ENCRYPTED_SIGNED_COOKIE_SALT'] ||= SecureRandom.hex(15)
 ENV['SITENAMELONG'] ||= "DataCite API"
