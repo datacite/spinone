@@ -4,7 +4,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
-    flash[:alert] = "Error signing in with #{ENV['OMNIAUTH']}"
+    flash[:alert] = "Error signing in with JWT"
     redirect_to root_path
   end
 
