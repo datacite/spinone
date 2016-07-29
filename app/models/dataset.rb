@@ -62,10 +62,9 @@ class Dataset < Base
         sort = options[:query].present? ? "score" : "minted"
       end
       order = options[:order] == "asc" ? "asc" : "desc"
-      publisher_id = options['publisher-id'].presence || "cdl.tcia"
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
-      fq << "datacentre_symbol:#{publisher_id}"
+      fq << "datacentre_symbol:#{options['publisher-id'].underscore.camelize}" if options['publisher-id'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
