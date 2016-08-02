@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 #ruby '2.3.1'
 
-gem 'rails', '~> 4.2', '>= 4.2.6'
+gem 'rails', '~> 4.2', '>= 4.2.7'
 gem 'mysql2', '0.3.18'
 gem 'ar-octopus', '~> 0.8.5', :require => 'octopus', :git => 'https://github.com/tchandy/octopus.git'
 

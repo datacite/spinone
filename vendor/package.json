@@ -1,7 +1,7 @@
 {
-  "name": "spinone",
+  "name": "vendor",
   "version": "0.0.0",
-  "description": "Spinone",
+  "description": "vendor",
   "private": true,
   "directories": {
     "doc": "doc",
