@@ -21,7 +21,7 @@ class Member < Base
     if options[:id].present?
       "#{url}/#{options[:id]}"
     else
-      params = { q: options.fetch(:query, nil),
+      params = { query: options.fetch(:query, nil),
                  member_type: options.fetch("member-type", nil),
                  region: options.fetch(:region, nil),
                  year: options.fetch(:year, nil) }.compact
