@@ -7,7 +7,7 @@ module Authorable
     # parse author string into CSL format
     # only assume personal name when using sort-order: "Turing, Alan"
     def get_one_author(author, options = { sep: " " })
-      return "" if author.blank?
+      return {} if author.strip.blank?
 
       author = author.split(options[:sep]).reverse.join(" ") if options[:reversed]
       names = Namae.parse(author)
