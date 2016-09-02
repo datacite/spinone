@@ -49,7 +49,6 @@ group :development do
   gem 'pry-rails', '~> 0.3.2'
   gem 'better_errors', '~> 2.0.0'
   gem 'binding_of_caller', '~> 0.7.2'
-  gem 'hologram', '~> 1.3.1'
 end
 
 group :development, :test do

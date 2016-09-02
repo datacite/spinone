@@ -10,6 +10,7 @@ class User
   end
 
   alias_method :orcid, :uid
+  alias_method :id, :uid
 
   # Helper method to check for admin user
   def is_admin?
