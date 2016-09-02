@@ -98,6 +98,8 @@
       </tbody>
     </table>
     <div class="panel-footer">
+      <%= icon("info-circle") %>
+      <%= @agent.name %>
       <% if can?(:manage, Agent) && @agent.state > 1 && controller.action_name != "edit" && !(controller.action_name == "update" && !@agent.errors.empty?) %>
         <div class="btn-toolbar pull-right">
           <div class="btn-group btn-group-sm">
