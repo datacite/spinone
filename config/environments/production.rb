@@ -69,7 +69,4 @@ Rails.application.configure do
 
   # always use SSL
   # config.force_ssl = true
-
-  # use ssl with Devise
-  config.to_prepare { Devise::SessionsController.force_ssl }
 end

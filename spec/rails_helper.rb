@@ -81,8 +81,6 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
 
   config.include Rack::Test::Methods, :type => :api
-
-  config.include Devise::TestHelpers, :type => :controller
   config.include Rack::Test::Methods, :type => :controller
 
   def app
