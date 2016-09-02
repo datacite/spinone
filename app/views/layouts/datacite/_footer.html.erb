@@ -34,10 +34,10 @@
     </div>
     <div class="col-md-3">
       <h4 class="share">Contact us</h4>
-      <%= link_to icon('envelope', class: 'fa-2x'), 'mailto:support@datacite.org', class: "share"  %>
-      <%= link_to icon('rss', class: 'fa-2x'), 'https://blog.datacite.org', class: "share"  %>
-      <%= link_to icon('twitter', class: 'fa-2x'), 'https://twitter.com/datacite', class: "share" %>
-      <%= link_to icon('linkedin', class: 'fa-2x'), 'https://www.linkedin.com/company/datacite', class: "share"  %>
+      <%= link_to icon('at'), 'mailto:support@datacite.org', class: "share"  %>
+      <%= link_to icon('rss'), 'https://blog.datacite.org', class: "share"  %>
+      <%= link_to icon('twitter'), 'https://twitter.com/datacite', class: "share" %>
+      <%= link_to icon('linkedin'), 'https://www.linkedin.com/company/datacite', class: "share"  %>
       <ul class="share">
         <% settings.contact_links.each do |item| %>
           <li><%= link_to item['name'], item['url'] %></li>

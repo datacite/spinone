@@ -37,9 +37,7 @@ gem 'namae', '~> 0.10.2'
 gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 
-gem 'devise', '~> 4.1', '>= 4.1.1'
-gem 'omniauth', '~> 1.2.2'
-gem 'omniauth-jwt', '~> 0.0.3', git: 'https://github.com/datacite/omniauth-jwt.git'
+gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 
 gem 'sprockets-rails', '~> 2.2.0', :require => 'sprockets/railtie'

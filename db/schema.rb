@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160507211624) do
+ActiveRecord::Schema.define(version: 20160901124957) do
 
   create_table "agents", force: :cascade do |t|
     t.string   "type",        limit: 191
@@ -42,19 +42,5 @@ ActiveRecord::Schema.define(version: 20160507211624) do
   end
 
   add_index "status", ["created_at"], name: "index_status_created_at", using: :btree
-
-  create_table "users", force: :cascade do |t|
-    t.string   "name",                 limit: 191
-    t.string   "email",                limit: 191
-    t.string   "provider",             limit: 255
-    t.string   "uid",                  limit: 191
-    t.string   "authentication_token", limit: 191
-    t.string   "api_key",              limit: 191
-    t.string   "role",                 limit: 255, default: "user"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "users", ["uid"], name: "index_users_on_uid", unique: true, using: :btree
 
 end

@@ -1,11 +1,8 @@
 require 'github/markdown'
 require 'rouge'
+require 'jwt'
 
 module ApplicationHelper
-  def login_link
-    link_to "Sign in", user_jwt_omniauth_authorize_path, :id => "sign-in", class: 'btn btn-default'
-  end
-
   def icon(icon, text = nil, html_options = {})
     text, html_options = nil, text if text.is_a?(Hash)
 
@@ -182,5 +179,17 @@ module ApplicationHelper
     data[:state] = states[@state] if @state.present?
 
     { class: "logo", id: "api_key", data: data }
+  end
+
+  def current_user
+    @current_user ||= cookies[:jwt].present? ? User.new((JWT.decode cookies[:jwt], ENV['JWT_SECRET_KEY']).first) : nil
+  end
+
+  def user_signed_in?
+    !!current_user
+  end
+
+  def is_admin_or_staff?
+    current_user && current_user.is_admin_or_staff?
   end
 end

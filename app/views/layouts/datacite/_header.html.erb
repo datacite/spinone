@@ -1,5 +1,8 @@
+<% @flash = flash -%>
+<div id="flash"><%= render :partial => 'layouts/flash' -%></div>
+
 <div class="header" id="navtop">
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar <%= @show_image.present? ? 'navbar-transparent' : 'navbar-default' %>" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header"
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -8,63 +11,60 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand hidden-xs" href="/">
+          <%= content_tag :span,  ENV['SITE_TITLE'], data_tags_for_api %>
+        </a>
       </div>
-      <a class="navbar-brand hidden-xs" href="/">
-        <img src="<%= "//#{ENV['CDN_HOST']}/images/datacite.png" %>" class="logo">
-        <%= content_tag :span, "Data", data_tags_for_api %><span>Cite <%= ENV['SITENAME'] %></span>
-      </a>
       <div class="navbar-collapse collapse">
-        <% unless ["sessions","registrations"].include?(controller.controller_name) %>
-          <ul class="nav navbar-nav navbar-right">
-            <% if can?(:read, Agent) %>
-              <li class="dropdown hidden-sm hidden-md">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><%= link_to "Status", '/dashboard' %></li>
-                  <li><%= link_to "Agents", agents_path %></li>
-                </ul>
-              </li>
-            <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <% if can?(:read, Agent) %>
             <li class="dropdown hidden-sm hidden-md">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><%= link_to 'API Documentation', root_url %></li>
-                <li><%= link_to 'GitHub Issues', "#{ENV['GITHUB_URL']}/issues" %></li>
+                <li><%= link_to "Status", '/dashboard' %></li>
+                <li><%= link_to "Agents", agents_path %></li>
               </ul>
             </li>
-            <li class="dropdown">
+          <% end %>
+          <li class="dropdown hidden-sm hidden-md">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><%= link_to "Email", "mailto:support@datacite.org" %></li>
+              <li><%= link_to 'API Documentation', docs_path %></li>
+              <li><%= link_to "Source Code", ENV['GITHUB_URL'] %></li>
+            </ul>
+          </li>
+          <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><%= icon('th') %> <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <% if Rails.env.development? %>
-                  <li class='dropdown-header'>DataCite Development</li>
-                  <% settings.development_links.each do |item| %>
-                    <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
-                  <% end %>
-                <% else %>
-                  <% settings.production_links.each do |item| %>
-                    <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
-                  <% end %>
+            <ul class="dropdown-menu" role="menu">
+              <% if Rails.env.development? %>
+                <% settings.development_links.each do |item| %>
+                  <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
                 <% end %>
+              <% else %>
+                <% settings.production_links.each do |item| %>
+                  <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
+                <% end %>
+              <% end %>
+            </ul>
+          </li>
+          <% if user_signed_in? %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><%= current_user.name %> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to "#{icon('user')} Settings".html_safe, "#{ENV['JWT_HOST']}/users/me" %></li>
+                <li class="divider"></li>
+                <% if ENV['ORCID_CLIENT_ID'].present? %>
+                  <li><%= link_to "#{icon('external-link')} ORCID Record".html_safe, current_user.orcid %></li>
+                  <li class="divider"></li>
+                <% end %>
+                <li><%= link_to "#{icon('sign-out')} Sign Out".html_safe, "#{ENV['JWT_HOST']}/sign_out", :id => "sign_out" %></li>
               </ul>
             </li>
-            <% if user_signed_in? %>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><%= current_user.name %> <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><%= link_to "#{icon('user')} Settings".html_safe, "#{ENV['JWT_HOST']}/users/me" %></li>
-                  <li class="divider"></li>
-                  <% if ENV['ORCID_CLIENT_ID'].present? %>
-                    <li><%= link_to "#{icon('external-link')} ORCID Record".html_safe, current_user.orcid %></li>
-                    <li class="divider"></li>
-                  <% end %>
-                  <li><%= link_to "#{icon('sign-out')} Sign Out".html_safe, destroy_user_session_path, :id => "sign_out" %></li>
-                </ul>
-              </li>
-            <% else %>
-              <li><%= login_link %></li>
-            <% end %>
-          </ul>
-        <% end %>
+          <% else %>
+            <li><%= link_to "#{icon('sign-in')} Sign in".html_safe, "#{ENV['JWT_HOST']}/sign_in", :id => "sign_in", class: 'btn btn-default' %></li></li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>

@@ -1,19 +1,14 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-
-  devise_scope :user do
-    get 'sign_in', :to => 'users/sessions#new', :as => :new_session
-    post 'sign_in', :to => 'users/session#create', :as => :session
-    get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
-  end
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/signout', to: 'sessions#destroy'
 
   authenticate :user, lambda { |u| u.is_admin? } do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  root :to => "docs#index"
+  root :to => 'index#index'
 
   resources :agents
   resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
