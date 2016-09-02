@@ -22,7 +22,6 @@ require "capybara-screenshot/rspec"
 require "database_cleaner"
 require "webmock/rspec"
 require "rack/test"
-require "devise"
 require "sidekiq/testing"
 require "colorize"
 require "maremma"
@@ -68,18 +67,6 @@ VCR.configure do |c|
 end
 
 RSpec.configure do |config|
-  OmniAuth.config.test_mode = true
-  config.before(:each) do
-    OmniAuth.config.mock_auth[:default] = OmniAuth::AuthHash.new({
-      provider: "orcid",
-      uid: "0000-0002-1825-0097",
-      info: { "name" => "Josiah Carberry" },
-      extra: {},
-      credentials: { token: "123",
-                     expires_at: Time.zone.now + 20.years }
-    })
-  end
-
   config.fixture_path = "#{::Rails.root}/spec/fixtures/"
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
