@@ -163,7 +163,7 @@ module ApplicationHelper
 
   def data_tags_for_api
     data = { per_page: 15, model: controller.controller_name }
-    data[:api_key] = current_user.api_key if current_user
+    data[:api_key] = cookies[:jwt].to_s
     data[:page] = @page if @page.present?
     data[:pid] = @work.pid if @work.present?
     data[:q] = @q if @q.present?
