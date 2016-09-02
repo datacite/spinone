@@ -1,17 +1,10 @@
 <div class="panel panel-default">
   <div class="panel-heading panel-title">
-    <% if can?(:manage, Agent) && @agent.state > 1 && controller.action_name != "edit" && !(controller.action_name == "update" && !@agent.errors.empty?) %>
-      <div class="btn-toolbar pull-right">
-        <div class="btn-group btn-group-sm">
-          <%= link_to icon("pencil").html_safe, edit_agent_path(@agent.name), { :remote => true, :class => 'btn btn-default btn-sm pull-right configuration-edit', :title => "Edit" } %>
-        </div>
-      </div>
-    <% end %>
     Configuration
   </div>
   <% if can?(:manage, Agent) && @agent.state > 1 && (controller.action_name == "edit" || (controller.action_name == "update" && !@agent.errors.empty?)) %>
-    <div class="panel-body">
-      <%= simple_form_for(@agent.becomes(Agent), :url => agent_path(@agent.name), :html => { :remote => true }) do |f| %>
+    <%= simple_form_for(@agent.becomes(Agent), :url => agent_path(@agent.name), :html => { :remote => true }) do |f| %>
+      <div class="panel-body">
         <% f.object = @agent.becomes(@agent.class) %>
 
         <%= f.input :title %>
@@ -45,13 +38,15 @@
 
         <%= f.input :max_failed_queries, label: "Failed queries",
                                          hint: "Maximum number of failed queries allowed per 24 hours before being disabled" %>
-
-        <div class="form-group">
-          <%= f.submit "Save ", class: "btn btn-default" %>
-          <%= link_to 'Cancel', agent_path(@agent.name), { :remote => true, :class => 'btn' } %>
+      </div>
+      <div class="panel-footer">
+        <div class="form-group submit pull-right">
+          <%= link_to 'Cancel', agent_path(@agent.name), { :remote => true, :class => 'btn btn-sm' } %>
+          <%= f.submit "Save ", class: "btn btn-sm btn-fill" %>
         </div>
-      <% end %>
-    </div>
+        <div class="clearfix"/>
+      </div>
+    <% end %>
   <% else %>
     <table class="table" id="ConfigurationTable">
       <tbody>
@@ -102,5 +97,14 @@
         </tr>
       </tbody>
     </table>
+    <div class="panel-footer">
+      <% if can?(:manage, Agent) && @agent.state > 1 && controller.action_name != "edit" && !(controller.action_name == "update" && !@agent.errors.empty?) %>
+        <div class="btn-toolbar pull-right">
+          <div class="btn-group btn-group-sm">
+            <%= link_to icon("pencil").html_safe, edit_agent_path(@agent.name), { :remote => true, :class => 'btn btn-neutral btn-fill btn-sm' } %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   <% end %>
 </div>
