@@ -1,5 +1,5 @@
 class Contribution < Base
-  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :source_id, :contributor_role_id, :type, :published, :issued, :updated_at
+  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :source_id, :contributor_role_id, :type, :published, :issued, :updated_at, :publisher_id
 
   # include helper module for extracting identifier
   include Identifiable
@@ -24,6 +24,7 @@ class Contribution < Base
     @contributor_role_id = attributes.fetch("contributor_role_id", nil)
     @contributor_role_id = @contributor_role_id.underscore.dasherize if @contributor_role_id.present?
     @published = attributes.fetch("published", nil)
+    @publisher_id = attributes.fetch("publisher_id", nil)
     @issued = attributes.fetch("issued", nil)
     @updated_at = attributes.fetch("timestamp", nil)
     @type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
@@ -40,6 +41,7 @@ class Contribution < Base
                per_page: options.fetch(:rows, 25),
                contributor_id: options.fetch("contributor-id", nil),
                work_id: options.fetch("work-id", nil),
+               publisher_id: options.fetch("publisher_id", nil),
                source_id: source_id }.compact
     url + "?" + URI.encode_www_form(params)
   end
@@ -50,7 +52,9 @@ class Contribution < Base
     items = result.fetch("data", {}).fetch("contributions", [])
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
-             sources: meta["sources"] }
+             sources: meta["sources"],
+             publishers: meta["publishers"] }
+
 
     { data: parse_items(items) + parse_included(meta, options), meta: meta }
   end
