@@ -10,16 +10,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:02:50 GMT
+      - Wed, 21 Sep 2016 21:07:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,30 +37,28 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1be2383d-94a1-4ae2-b4a5-031af99c4952
+      - c54aa8d1-5d5a-42fc-9e89-2278a037161b
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"12c9b02db00ddd14e48aeabe85be0709"
+      - W/"ac5cadcdcd9446532f090d504802491e"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.011020'
+      - '0.014571'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"source","message-version":"v7"},"source":{"id":"datacite_related","title":"DataCite
         (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:53:37Z","work_count":282464,"relation_count":419378,"result_count":2961670,"by_day":{"with_results":1039,"without_results":200,"not_updated":418080},"by_month":{"with_results":263725,"without_results":126845,"not_updated":28749}}}'
+        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:28:19Z","work_count":283370,"relation_count":420690,"result_count":2964588,"by_day":{"with_results":0,"without_results":0,"not_updated":420631},"by_month":{"with_results":694,"without_results":217,"not_updated":419720}}}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:02:52 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:30 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/groups/relations
@@ -71,16 +69,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:02:50 GMT
+      - Wed, 21 Sep 2016 21:07:30 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -98,26 +96,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 029c2d9e-f884-4be5-91cc-c71173d1ee52
+      - 875d984d-a582-40b1-b375-7754d8c5f125
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"1b027c17ab34aef1a555628f55341322"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.014820'
+      - '0.009931'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"group","message-version":"v7"},"group":{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"}}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:02:52 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:30 GMT
 recorded_with: VCR 2.9.3

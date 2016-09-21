@@ -10,16 +10,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:02:57 GMT
+      - Wed, 21 Sep 2016 21:07:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,26 +37,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - be3f2af7-d82c-405e-8705-f4320a36b240
+      - 402d32b3-c71f-4f3d-afe0-b1319c217bfa
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"e0d7f7021645d72b67fde12325a35869"
+      - W/"7111bb3be2136d5f1cb303cb4e93d555"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.035508'
+      - '0.086090'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"contributor-list","message-version":"v7","total":6461,"total_pages":130,"page":1},"contributors":[{"id":"https://github.com/mne-tools","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-5164-0281","given":"Peyman","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Ehsanizadi","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/bwringe","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pierriko","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/OpenGeoscience","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/cmbant","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/sandraTL","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dncgst","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/RNDITS","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0001-8944-9522","given":"Михаил","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/EducationalTestingService","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/apeltzer","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/chili-epfl","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pupil-labs","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/wtolson","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/gilmore-lab","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/hectornieto","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pyepics","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/jimmyshadow1","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Richardjmorton","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/medusa-project","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/poormanme","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-9717-5071","given":"Dr.V.Padmaja","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Angusman17","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/kotushsrdjan","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/AAROC","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/ComputationalRadiationPhysics","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/casmlab","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/mabenallal","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/RyanIKolkmeier","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/NCMRWF","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dr-rodriguez","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/omeka","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/lingpy","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/magic-sph","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/DallasTrinkle","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/biocaddie","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/m-labs","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/psolymos","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/flav-io","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/sabgaby","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dpryan79","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/markrobinsonuzh","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/chapmandu2","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/lancelothk","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/ethanbrower","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-6594-7655","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/nextgenusfs","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/gdfgh","timestamp":"1970-01-01T00:00:00Z"}]}'
+      string: '{"meta":{"status":"ok","message-type":"contributor-list","message-version":"v7","total":7140,"total_pages":143,"page":1},"contributors":[{"id":"https://github.com/mne-tools","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-5164-0281","given":"Peyman","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Ehsanizadi","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-4232-7295","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/bwringe","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pierriko","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/OpenGeoscience","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/cmbant","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/sandraTL","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dncgst","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/RNDITS","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0001-8944-9522","given":"Михаил","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/EducationalTestingService","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/apeltzer","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/chili-epfl","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pupil-labs","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/wtolson","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/gilmore-lab","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/hectornieto","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/pyepics","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/jimmyshadow1","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Richardjmorton","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/medusa-project","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/poormanme","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-9717-5071","given":"Dr.V.Padmaja","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/Angusman17","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/kotushsrdjan","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/AAROC","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/ComputationalRadiationPhysics","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/casmlab","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/mabenallal","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/RyanIKolkmeier","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/NCMRWF","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dr-rodriguez","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/omeka","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/lingpy","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/magic-sph","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/DallasTrinkle","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/biocaddie","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/m-labs","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/psolymos","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/flav-io","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/sabgaby","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/dpryan79","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/markrobinsonuzh","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/chapmandu2","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/lancelothk","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/ethanbrower","timestamp":"1970-01-01T00:00:00Z"},{"id":"http://orcid.org/0000-0002-6594-7655","timestamp":"1970-01-01T00:00:00Z"},{"id":"https://github.com/nextgenusfs","timestamp":"1970-01-01T00:00:00Z"}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:02:51 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:10 GMT
 recorded_with: VCR 2.9.3

@@ -1,5 +1,5 @@
 class User
-  attr_accessor :name, :uid, :email, :role, :api_key, :orcid
+  attr_accessor :name, :uid, :email, :role, :api_key, :orcid, :authentication_token
 
   def initialize(jwt={})
     @uid = jwt.fetch("uid", nil)
@@ -7,6 +7,7 @@ class User
     @email = jwt.fetch("email", nil)
     @role = jwt.fetch("role", nil)
     @api_key = jwt.fetch("api_key", nil)
+    @authentication_token = jwt.fetch("authentication_token", nil)
   end
 
   alias_method :orcid, :uid
