@@ -27,9 +27,6 @@ COPY vendor/docker/cors.conf /etc/nginx/conf.d/cors.conf
 # Use Amazon NTP servers
 COPY vendor/docker/ntp.conf /etc/ntp.conf
 
-# Enable the memcached service
-RUN rm -f /etc/service/memcached/down
-
 # Copy webapp folder
 COPY . /home/app/webapp/
 RUN mkdir -p /home/app/webapp/tmp/pids && \
