@@ -94,7 +94,7 @@ describe DataciteOrcid, type: :model, vcr: true do
 
       expect(response.first[:obj]).to eq("pid"=>"http://doi.org/10.6084/M9.FIGSHARE.1226424",
                                          "DOI"=>"10.6084/M9.FIGSHARE.1226424",
-                                         "author"=>[{"family"=>"Cotta", "given"=>"Carlos", "ORCID"=>"http://orcid.org/0000-0001-8478-7549"}, {"family"=>"Nogueras", "given"=>"Rafael"}],
+                                         "author"=>[{"literal"=>"Carlos Cotta", "ORCID"=>"http://orcid.org/0000-0001-8478-7549"}, {"literal"=>"Rafael Nogueras"}],
                                          "title"=>"Color mememaps of self-balancing strategies",
                                          "container-title"=>"Figshare",
                                          "published"=>"2015",

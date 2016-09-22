@@ -1,9 +1,6 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  get '/auth/:provider/callback', to: 'sessions#create'
-  get '/auth/signout', to: 'sessions#destroy'
-
   constraints lambda {|request| AuthConstraint.admin?(request) } do
     mount Sidekiq::Web => '/sidekiq'
   end

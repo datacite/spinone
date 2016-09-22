@@ -10,16 +10,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:02:49 GMT
+      - Wed, 21 Sep 2016 21:07:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,26 +37,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c9b362db-ebaa-4b40-9750-b0e37dcd84dc
+      - 5a41a08e-6b22-4bb0-8f72-d65e4863779e
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"a2d6797435bcbebd84871468f1308c32"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.022413'
+      - '0.028345'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"contributor-list","message-version":"v7","total":1,"total_pages":1,"page":1},"contributors":[{"id":"http://orcid.org/0000-0002-4000-4167","family":"Arend","given":"Peter","timestamp":"1970-01-01T00:00:00Z"}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:02:51 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:09 GMT
 recorded_with: VCR 2.9.3

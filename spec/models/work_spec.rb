@@ -23,7 +23,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(85)
     work = works[:data].first
-    expect(work.title).to eq("Microstructure and Debris Fracture in Amorphous Ni–P-CNTs Composite Coatings after Wear")
+    expect(work.title).to eq("GBIF Occurrence Download")
     included = works[:data][74]
     expect(included.title).to eq("Service")
     meta = works[:meta]

@@ -1,8 +1,9 @@
 FactoryGirl.define do
   factory :user do
+    skip_create
+
     sequence(:name) { |n| "Josiah Carberry{n}" }
     sequence(:api_key) { |n| "q9pWP8QxzkR24Mvs9BEy#{n}" }
-    provider "orcid"
     role "user"
     sequence(:uid) { |n| "0000-0002-1825-000#{n}" }
 
@@ -15,8 +16,6 @@ FactoryGirl.define do
       uid '0000-0003-1419-2405'
       authentication_token ENV['ORCID_AUTHENTICATION_TOKEN']
     end
-
-    initialize_with { User.where(uid: uid).first_or_initialize }
   end
 
   factory :status do

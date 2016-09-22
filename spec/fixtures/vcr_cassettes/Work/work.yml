@@ -10,16 +10,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.1.19
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:06:41 GMT
+      - Wed, 21 Sep 2016 21:07:31 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,10 +30,53 @@ http_interactions:
       - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
       encoding: UTF-8
-      string: |
-        {"responseHeader":{"status":0,"QTime":2},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-04-22T12:55:03Z","refQuality":false,"has_metadata":true,"is_active":true,"datacentre_symbol":"GESIS.ICPSR","uploaded":"2016-04-22T12:55:02Z","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHJlc291cmNlIHhtbG5zPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMycgeG1sbnM6eHNpPSdodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZScgeHNpOnNjaGVtYUxvY2F0aW9uPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCc+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9J0RPSSc+MTAuMzg4Ni9JQ1BTUjM2MzU3LnYxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0czwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlIHhtbDpsYW5nPSdlbic+QXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5JQ1BTUiAtIEludGVydW5pdmVyc2l0eSBDb25zb3J0aXVtIGZvciBQb2xpdGljYWwgYW5kIFNvY2lhbCBSZXNlYXJjaDwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNjwvcHVibGljYXRpb25ZZWFyPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSdGdW5kZXInPgogICAgICA8Y29udHJpYnV0b3JOYW1lPk5hdGlvbmFsIEVuZG93bWVudCBmb3IgdGhlIEFydHM8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9J0NvbGxlY3RlZCc+MTk5ODwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSdDb2xsZWN0ZWQnPjE5OTgvMjAxMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0nRGF0YXNldCc+c3VydmV5IGRhdGE8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0nSUNQU1IgU3R1ZHkgTnVtYmVyJz4zNjM1NzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDx2ZXJzaW9uPnYxPC92ZXJzaW9uPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSdBYnN0cmFjdCcgeG1sOmxhbmc9J2VuJz5UaGUgQXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudCAoQUNQU0EpIGlzIHByb2R1Y2VkIHRocm91Z2ggdGhlIHBhcnRuZXJzaGlwIGJldHdlZW4gdGhlIFVuaXRlZCBTdGF0ZXMgQnVyZWF1IG9mIEVjb25vbWljIEFuYWx5c2lzIChCRUEpIGFuZCB0aGUgTmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0cyAoTkVBKS4gQnVpbHQgd2l0aCB0aGUgQkVBJ3MgaW5wdXQtb3V0cHV0IChJLU8pIGFjY291bnRzLCB0aGUgQUNQU0EgcHJvdmlkZXMgZGV0YWlsZWQgc3RhdGlzdGljcyB0aGF0IGlsbHVzdHJhdGUgdGhlIGltcGFjdCBvZiBhcnRzIGFuZCBjdWx0dXJhbCBwcm9kdWN0aW9uIG9uIHRoZSBVbml0ZWQgU3RhdGVzIGVjb25vbXkuIFNwZWNpZmljYWxseSwgdGhpcyBhY2NvdW50IHByb3ZpZGVzIGFuIGFzc2Vzc21lbnQgb2YgdGhlIGFydHMgYW5kIGN1bHR1cmFsIHNlY3RvcidzIGNvbnRyaWJ1dGlvbnMgdG8gZ3Jvc3MgZG9tZXN0aWMgcHJvZHVjdCAoR0RQKS4gRm9yIHllYXJzIDE5OTggdG8gMjAxMywgdGhlIEFDUFNBIHByZXNlbnRzIGFubnVhbCBzdGF0aXN0aWNzIGFib3V0IHRoZSBmb2xsb3dpbmcgaXRlbXM6ICgxKSBPdXRwdXQgb2YgZGV0YWlsZWQgYXJ0cyBhbmQgY3VsdHVyYWwgY29tbW9kaXRpZXMgYW5kIHRoZSBpbmR1c3RyaWVzIHByb2R1Y2luZyB0aGVzZSBjb21tb2RpdGllczsgKDIpIGVtcGxveW1lbnQgYW5kIGNvbXBlbnNhdGlvbiB3aXRoaW4gdGhlc2UgaW5kdXN0cmllczsgKDMpIGFydHMgYW5kIGN1bHR1cmFsIHZhbHVlIGFkZGVkIGJ5IGluZHVzdHJ5OyBhbmQgKDQpIGNvbW1vZGl0eS1mbG93IGRldGFpbHMgZm9yIGFydHMgYW5kIGN1bHR1cmFsIHByb2R1Y3Rpb24gcHJvZHVjdHMuIEluIHRoZSBkYXRhIHRhYmxlcyBwcm92aWRlZCAoY2xpY2sgb24gIk90aGVyIiBpbiB0aGUgRGF0YXNldChzKSBzZWN0aW9uKSwgdGhlIHN0YXRpc3RpY3MgZmFsbCB1bmRlciB0d28gYnJvYWQgY2F0ZWdvcmllczogKDEpIGNvcmUgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbiBhbmQgKDIpIHN1cHBvcnRpbmcgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbi4gVGhlIGNvcmUgY2F0ZWdvcnkgY29udGFpbnMgdGhlIGNvbW1vZGl0aWVzIGluIHdoaWNoIHRoZSBvdXRwdXQgcHJpbWFyaWx5IGNvbnRyaWJ1dGVzIHRvIGFydHMgYW5kIGN1bHR1cmUuIFBlcmZvcm1pbmcgYXJ0cywgbXVzZXVtcywgZGVzaWduIHNlcnZpY2VzLCBhbmQgYXJ0cyBlZHVjYXRpb24gYXJlIGluY2x1ZGVkIGluIHRoZSBjb3JlIGNhdGVnb3J5LiBUaGUgc3VwcG9ydGluZyBjYXRlZ29yeSBjb25zaXN0cyBvZiBjb21tb2RpdGllcyB0aGF0IHN1cHBvcnQgdGhlIGNvcmUgY2F0ZWdvcnkgdGhyb3VnaCBwdWJsaWNhdGlvbiwgZGlzc2VtaW5hdGlvbiBvZiB0aGUgY3JlYXRpdmUgcHJvY2Vzcywgb3Igb3RoZXIgc3VwcG9ydGl2ZSBmdW5jdGlvbnMuIFRoaXMgY2F0ZWdvcnkgY29udGFpbnMgZXZlbnQgcHJvbW90aW9uLCBwcmludGluZywgYW5kIGJyb2FkY2FzdGluZy4gU2l4IGRhdGEgdGFibGVzIGFyZSBwcm92aWRlZCBmb3IgZWFjaCB5ZWFyIGZyb20gMTk5OCB0byAyMDEzOiBUYWJsZSAxLiBQcm9kdWN0aW9uIG9mIENvbW1vZGl0aWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSAyLiBPdXRwdXQgYW5kIFZhbHVlIEFkZGVkIGJ5IEluZHVzdHJ5OyBUYWJsZSAzLiBTdXBwbHkgYW5kIENvbnN1bXB0aW9uIG9mIENvbW1vZGl0aWVzOyBUYWJsZSA0LiBFbXBsb3ltZW50IGFuZCBDb21wZW5zYXRpb24gb2YgRW1wbG95ZWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSA1LiBUb3RhbCBBQ1BTQS1yZWxhdGVkIEVtcGxveW1lbnQgYnkgSW5kdXN0cnk7IFRhYmxlIDYuIE91dHB1dCBieSBBQ1BTQSBDb21tb2RpdHk7IEluIGFkZGl0aW9uLCBlc3RpbWF0ZXMgb2YgcmVhbCB2YWx1ZSBhZGRlZCBieSBpbmR1c3RyeSBhbmQgZXN0aW1hdGVzIG9mIHJlYWwgZ3Jvc3Mgb3V0cHV0IGFuZCBwcmljZXMgaW5kZXhlcyBieSBBQ1BTQSBjb21tb2RpdHkgYXJlIHByb3ZpZGVkIGluIHNlcGFyYXRlIEV4Y2VsIGZpbGVzIChjbGljayBvbiAiT3RoZXIiIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24pLiBUaGUgaW5kdXN0cmllcyBhbmQgY29tbW9kaXRpZXMgcHJlc2VudGVkIGluIHRoZSBkYXRhIGFyZSBiYXNlZCBvbiB0aGUgMjAwNyBOb3J0aCBBbWVyaWNhbiBJbmR1c3RyaWFsIENsYXNzaWZpY2F0aW9uIFN5c3RlbSAoTkFJQ1MpLiBVc2VycyBhcmUgZW5jb3VyYWdlZCB0byByZXZpZXcgdGhlIFRhYmxlIEd1aWRlIHByb3ZpZGVkIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24gYXMgaXQgZ2l2ZXMgaW1wb3J0YW50IGluZm9ybWF0aW9uIGZvciBhbGwgZGF0YSB0YWJsZXMuIEFsc28sIHVzZXJzIHNob3VsZCByZXZpZXcgVGhlIE5FQSBHdWlkZSB0byB0aGUgVS5TLiBBcnRzIGFuZCBDdWx0dXJhbCBQcm9kdWN0aW9uIFNhdGVsbGl0ZSBBY2NvdW50IGFuZCBvdGhlciByZWxhdGVkIG1hdGVyaWFscyBhdmFpbGFibGUgb24gTkVBJ3MgQXJ0cyBEYXRhIFByb2ZpbGUgcGFnZSBhYm91dCB0aGUgQUNQU0EuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9J1RhYmxlT2ZDb250ZW50cycgeG1sOmxhbmc9J2VuJz4mbHQ7cCZndDtEYXRhc2V0czombHQ7L3AmZ3Q7IAombHQ7dWwmZ3Q7IAogJmx0O2xpJmd0O0RTMTogRGF0YXNldCZsdDsvbGkmZ3Q7IAombHQ7L3VsJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPGdlb0xvY2F0aW9ucz4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+IFVuaXRlZCBTdGF0ZXM8L2dlb0xvY2F0aW9uUGxhY2U+CiAgICA8L2dlb0xvY2F0aW9uPgogIDwvZ2VvTG9jYXRpb25zPgo8L3Jlc291cmNlPg==","allocator_symbol":"GESIS","allocator":"GESIS - GESIS - Leibniz Institute for the Social Sciences","allocator_facet":"GESIS - GESIS - Leibniz Institute for the Social Sciences","namespace":"http://datacite.org/schema/kernel-3","datacentre":"GESIS.ICPSR - ICPSR","datacentre_facet":"GESIS.ICPSR - ICPSR","created":"2016-04-22T12:55:02Z","updated":"2016-05-02T13:13:29Z","prefix":"10.3886","has_media":false,"dataset_id":"8089249","doi":"10.3886/ICPSR36357.V1","schema_version":"3","alternateIdentifier":["ICPSR Study Number:36357"],"descriptionType":["Abstract","TableOfContents"],"dateType":["Collected","Collected"],"date":["1998","1998/2013"],"version":"v1","creator":["National Endowment for the Arts"],"publisher":"ICPSR - Interuniversity Consortium for Political and Social Research","contributorType":["Funder"],"resourceType":"survey data","title":["Arts and Cultural Production Satellite Account"],"description":["The Arts and Cultural Production Satellite Account (ACPSA) is produced through the partnership between the United States Bureau of Economic Analysis (BEA) and the National Endowment for the Arts (NEA). Built with the BEA's input-output (I-O) accounts, the ACPSA provides detailed statistics that illustrate the impact of arts and cultural production on the United States economy. Specifically, this account provides an assessment of the arts and cultural sector's contributions to gross domestic product (GDP). For years 1998 to 2013, the ACPSA presents annual statistics about the following items: (1) Output of detailed arts and cultural commodities and the industries producing these commodities; (2) employment and compensation within these industries; (3) arts and cultural value added by industry; and (4) commodity-flow details for arts and cultural production products. In the data tables provided (click on \"Other\" in the Dataset(s) section), the statistics fall under two broad categories: (1) core arts and cultural production and (2) supporting arts and cultural production. The core category contains the commodities in which the output primarily contributes to arts and culture. Performing arts, museums, design services, and arts education are included in the core category. The supporting category consists of commodities that support the core category through publication, dissemination of the creative process, or other supportive functions. This category contains event promotion, printing, and broadcasting. Six data tables are provided for each year from 1998 to 2013: Table 1. Production of Commodities by Industry; Table 2. Output and Value Added by Industry; Table 3. Supply and Consumption of Commodities; Table 4. Employment and Compensation of Employees by Industry; Table 5. Total ACPSA-related Employment by Industry; Table 6. Output by ACPSA Commodity; In addition, estimates of real value added by industry and estimates of real gross output and prices indexes by ACPSA commodity are provided in separate Excel files (click on \"Other\" in the Dataset(s) section). The industries and commodities presented in the data are based on the 2007 North American Industrial Classification System (NAICS). Users are encouraged to review the Table Guide provided in the Dataset(s) section as it gives important information for all data tables. Also, users should review The NEA Guide to the U.S. Arts and Cultural Production Satellite Account and other related materials available on NEA's Arts Data Profile page about the ACPSA.","<p>Datasets:</p> \n<ul> \n <li>DS1: Dataset</li> \n</ul>"],"contributor":["National Endowment for the Arts"],"publicationYear":"2016","language":"eng","resourceTypeGeneral":"Dataset","_version_":1533458938032291842,"indexed":"2016-05-05T03:53:24.465Z"}]}}
+      string: '{"responseHeader":{"status":0,"QTime":4},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-04-22T12:55:03Z","refQuality":false,"has_metadata":true,"is_active":true,"datacentre_symbol":"GESIS.ICPSR","uploaded":"2016-04-22T12:55:02Z","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHJlc291cmNlIHhtbG5zPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMycgeG1sbnM6eHNpPSdodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZScgeHNpOnNjaGVtYUxvY2F0aW9uPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCc+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9J0RPSSc+MTAuMzg4Ni9JQ1BTUjM2MzU3LnYxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0czwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlIHhtbDpsYW5nPSdlbic+QXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5JQ1BTUiAtIEludGVydW5pdmVyc2l0eSBDb25zb3J0aXVtIGZvciBQb2xpdGljYWwgYW5kIFNvY2lhbCBSZXNlYXJjaDwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNjwvcHVibGljYXRpb25ZZWFyPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSdGdW5kZXInPgogICAgICA8Y29udHJpYnV0b3JOYW1lPk5hdGlvbmFsIEVuZG93bWVudCBmb3IgdGhlIEFydHM8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9J0NvbGxlY3RlZCc+MTk5ODwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSdDb2xsZWN0ZWQnPjE5OTgvMjAxMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0nRGF0YXNldCc+c3VydmV5IGRhdGE8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0nSUNQU1IgU3R1ZHkgTnVtYmVyJz4zNjM1NzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDx2ZXJzaW9uPnYxPC92ZXJzaW9uPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSdBYnN0cmFjdCcgeG1sOmxhbmc9J2VuJz5UaGUgQXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudCAoQUNQU0EpIGlzIHByb2R1Y2VkIHRocm91Z2ggdGhlIHBhcnRuZXJzaGlwIGJldHdlZW4gdGhlIFVuaXRlZCBTdGF0ZXMgQnVyZWF1IG9mIEVjb25vbWljIEFuYWx5c2lzIChCRUEpIGFuZCB0aGUgTmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0cyAoTkVBKS4gQnVpbHQgd2l0aCB0aGUgQkVBJ3MgaW5wdXQtb3V0cHV0IChJLU8pIGFjY291bnRzLCB0aGUgQUNQU0EgcHJvdmlkZXMgZGV0YWlsZWQgc3RhdGlzdGljcyB0aGF0IGlsbHVzdHJhdGUgdGhlIGltcGFjdCBvZiBhcnRzIGFuZCBjdWx0dXJhbCBwcm9kdWN0aW9uIG9uIHRoZSBVbml0ZWQgU3RhdGVzIGVjb25vbXkuIFNwZWNpZmljYWxseSwgdGhpcyBhY2NvdW50IHByb3ZpZGVzIGFuIGFzc2Vzc21lbnQgb2YgdGhlIGFydHMgYW5kIGN1bHR1cmFsIHNlY3RvcidzIGNvbnRyaWJ1dGlvbnMgdG8gZ3Jvc3MgZG9tZXN0aWMgcHJvZHVjdCAoR0RQKS4gRm9yIHllYXJzIDE5OTggdG8gMjAxMywgdGhlIEFDUFNBIHByZXNlbnRzIGFubnVhbCBzdGF0aXN0aWNzIGFib3V0IHRoZSBmb2xsb3dpbmcgaXRlbXM6ICgxKSBPdXRwdXQgb2YgZGV0YWlsZWQgYXJ0cyBhbmQgY3VsdHVyYWwgY29tbW9kaXRpZXMgYW5kIHRoZSBpbmR1c3RyaWVzIHByb2R1Y2luZyB0aGVzZSBjb21tb2RpdGllczsgKDIpIGVtcGxveW1lbnQgYW5kIGNvbXBlbnNhdGlvbiB3aXRoaW4gdGhlc2UgaW5kdXN0cmllczsgKDMpIGFydHMgYW5kIGN1bHR1cmFsIHZhbHVlIGFkZGVkIGJ5IGluZHVzdHJ5OyBhbmQgKDQpIGNvbW1vZGl0eS1mbG93IGRldGFpbHMgZm9yIGFydHMgYW5kIGN1bHR1cmFsIHByb2R1Y3Rpb24gcHJvZHVjdHMuIEluIHRoZSBkYXRhIHRhYmxlcyBwcm92aWRlZCAoY2xpY2sgb24gIk90aGVyIiBpbiB0aGUgRGF0YXNldChzKSBzZWN0aW9uKSwgdGhlIHN0YXRpc3RpY3MgZmFsbCB1bmRlciB0d28gYnJvYWQgY2F0ZWdvcmllczogKDEpIGNvcmUgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbiBhbmQgKDIpIHN1cHBvcnRpbmcgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbi4gVGhlIGNvcmUgY2F0ZWdvcnkgY29udGFpbnMgdGhlIGNvbW1vZGl0aWVzIGluIHdoaWNoIHRoZSBvdXRwdXQgcHJpbWFyaWx5IGNvbnRyaWJ1dGVzIHRvIGFydHMgYW5kIGN1bHR1cmUuIFBlcmZvcm1pbmcgYXJ0cywgbXVzZXVtcywgZGVzaWduIHNlcnZpY2VzLCBhbmQgYXJ0cyBlZHVjYXRpb24gYXJlIGluY2x1ZGVkIGluIHRoZSBjb3JlIGNhdGVnb3J5LiBUaGUgc3VwcG9ydGluZyBjYXRlZ29yeSBjb25zaXN0cyBvZiBjb21tb2RpdGllcyB0aGF0IHN1cHBvcnQgdGhlIGNvcmUgY2F0ZWdvcnkgdGhyb3VnaCBwdWJsaWNhdGlvbiwgZGlzc2VtaW5hdGlvbiBvZiB0aGUgY3JlYXRpdmUgcHJvY2Vzcywgb3Igb3RoZXIgc3VwcG9ydGl2ZSBmdW5jdGlvbnMuIFRoaXMgY2F0ZWdvcnkgY29udGFpbnMgZXZlbnQgcHJvbW90aW9uLCBwcmludGluZywgYW5kIGJyb2FkY2FzdGluZy4gU2l4IGRhdGEgdGFibGVzIGFyZSBwcm92aWRlZCBmb3IgZWFjaCB5ZWFyIGZyb20gMTk5OCB0byAyMDEzOiBUYWJsZSAxLiBQcm9kdWN0aW9uIG9mIENvbW1vZGl0aWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSAyLiBPdXRwdXQgYW5kIFZhbHVlIEFkZGVkIGJ5IEluZHVzdHJ5OyBUYWJsZSAzLiBTdXBwbHkgYW5kIENvbnN1bXB0aW9uIG9mIENvbW1vZGl0aWVzOyBUYWJsZSA0LiBFbXBsb3ltZW50IGFuZCBDb21wZW5zYXRpb24gb2YgRW1wbG95ZWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSA1LiBUb3RhbCBBQ1BTQS1yZWxhdGVkIEVtcGxveW1lbnQgYnkgSW5kdXN0cnk7IFRhYmxlIDYuIE91dHB1dCBieSBBQ1BTQSBDb21tb2RpdHk7IEluIGFkZGl0aW9uLCBlc3RpbWF0ZXMgb2YgcmVhbCB2YWx1ZSBhZGRlZCBieSBpbmR1c3RyeSBhbmQgZXN0aW1hdGVzIG9mIHJlYWwgZ3Jvc3Mgb3V0cHV0IGFuZCBwcmljZXMgaW5kZXhlcyBieSBBQ1BTQSBjb21tb2RpdHkgYXJlIHByb3ZpZGVkIGluIHNlcGFyYXRlIEV4Y2VsIGZpbGVzIChjbGljayBvbiAiT3RoZXIiIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24pLiBUaGUgaW5kdXN0cmllcyBhbmQgY29tbW9kaXRpZXMgcHJlc2VudGVkIGluIHRoZSBkYXRhIGFyZSBiYXNlZCBvbiB0aGUgMjAwNyBOb3J0aCBBbWVyaWNhbiBJbmR1c3RyaWFsIENsYXNzaWZpY2F0aW9uIFN5c3RlbSAoTkFJQ1MpLiBVc2VycyBhcmUgZW5jb3VyYWdlZCB0byByZXZpZXcgdGhlIFRhYmxlIEd1aWRlIHByb3ZpZGVkIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24gYXMgaXQgZ2l2ZXMgaW1wb3J0YW50IGluZm9ybWF0aW9uIGZvciBhbGwgZGF0YSB0YWJsZXMuIEFsc28sIHVzZXJzIHNob3VsZCByZXZpZXcgVGhlIE5FQSBHdWlkZSB0byB0aGUgVS5TLiBBcnRzIGFuZCBDdWx0dXJhbCBQcm9kdWN0aW9uIFNhdGVsbGl0ZSBBY2NvdW50IGFuZCBvdGhlciByZWxhdGVkIG1hdGVyaWFscyBhdmFpbGFibGUgb24gTkVBJ3MgQXJ0cyBEYXRhIFByb2ZpbGUgcGFnZSBhYm91dCB0aGUgQUNQU0EuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9J1RhYmxlT2ZDb250ZW50cycgeG1sOmxhbmc9J2VuJz4mbHQ7cCZndDtEYXRhc2V0czombHQ7L3AmZ3Q7IAombHQ7dWwmZ3Q7IAogJmx0O2xpJmd0O0RTMTogRGF0YXNldCZsdDsvbGkmZ3Q7IAombHQ7L3VsJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPGdlb0xvY2F0aW9ucz4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+IFVuaXRlZCBTdGF0ZXM8L2dlb0xvY2F0aW9uUGxhY2U+CiAgICA8L2dlb0xvY2F0aW9uPgogIDwvZ2VvTG9jYXRpb25zPgo8L3Jlc291cmNlPg==","allocator_symbol":"GESIS","allocator":"GESIS
+        - GESIS - Leibniz Institute for the Social Sciences","allocator_facet":"GESIS
+        - GESIS - Leibniz Institute for the Social Sciences","namespace":"http://datacite.org/schema/kernel-3","datacentre":"GESIS.ICPSR
+        - ICPSR","datacentre_facet":"GESIS.ICPSR - ICPSR","created":"2016-04-22T12:55:02Z","updated":"2016-05-02T13:13:29Z","prefix":"10.3886","has_media":false,"dataset_id":"8089249","doi":"10.3886/ICPSR36357.V1","schema_version":"3","alternateIdentifier":["ICPSR
+        Study Number:36357"],"descriptionType":["Abstract","TableOfContents"],"dateType":["Collected","Collected"],"date":["1998","1998/2013"],"version":"v1","creator":["National
+        Endowment for the Arts"],"publisher":"ICPSR - Interuniversity Consortium for
+        Political and Social Research","contributorType":["Funder"],"resourceType":"survey
+        data","title":["Arts and Cultural Production Satellite Account"],"description":["The
+        Arts and Cultural Production Satellite Account (ACPSA) is produced through
+        the partnership between the United States Bureau of Economic Analysis (BEA)
+        and the National Endowment for the Arts (NEA). Built with the BEA''s input-output
+        (I-O) accounts, the ACPSA provides detailed statistics that illustrate the
+        impact of arts and cultural production on the United States economy. Specifically,
+        this account provides an assessment of the arts and cultural sector''s contributions
+        to gross domestic product (GDP). For years 1998 to 2013, the ACPSA presents
+        annual statistics about the following items: (1) Output of detailed arts and
+        cultural commodities and the industries producing these commodities; (2) employment
+        and compensation within these industries; (3) arts and cultural value added
+        by industry; and (4) commodity-flow details for arts and cultural production
+        products. In the data tables provided (click on \"Other\" in the Dataset(s)
+        section), the statistics fall under two broad categories: (1) core arts and
+        cultural production and (2) supporting arts and cultural production. The core
+        category contains the commodities in which the output primarily contributes
+        to arts and culture. Performing arts, museums, design services, and arts education
+        are included in the core category. The supporting category consists of commodities
+        that support the core category through publication, dissemination of the creative
+        process, or other supportive functions. This category contains event promotion,
+        printing, and broadcasting. Six data tables are provided for each year from
+        1998 to 2013: Table 1. Production of Commodities by Industry; Table 2. Output
+        and Value Added by Industry; Table 3. Supply and Consumption of Commodities;
+        Table 4. Employment and Compensation of Employees by Industry; Table 5. Total
+        ACPSA-related Employment by Industry; Table 6. Output by ACPSA Commodity;
+        In addition, estimates of real value added by industry and estimates of real
+        gross output and prices indexes by ACPSA commodity are provided in separate
+        Excel files (click on \"Other\" in the Dataset(s) section). The industries
+        and commodities presented in the data are based on the 2007 North American
+        Industrial Classification System (NAICS). Users are encouraged to review the
+        Table Guide provided in the Dataset(s) section as it gives important information
+        for all data tables. Also, users should review The NEA Guide to the U.S. Arts
+        and Cultural Production Satellite Account and other related materials available
+        on NEA''s Arts Data Profile page about the ACPSA.","<p>Datasets:</p> \n<ul>
+        \n <li>DS1: Dataset</li> \n</ul>"],"contributor":["National Endowment for
+        the Arts"],"publicationYear":"2016","language":"eng","resourceTypeGeneral":"Dataset","_version_":1533458938032291842,"indexed":"2016-05-05T03:53:24.465Z"}]}}
+
+'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:11 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:31 GMT
 - request:
     method: post
     uri: https://eventdata.datacite.org/api/works
@@ -55,9 +98,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:09 GMT
+      - Wed, 21 Sep 2016 21:07:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -75,29 +118,27 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3e32ab74-a7fa-419c-aac9-e1313e98dbe3
+      - 6de1e088-daa1-458a-88ff-df5ed54ebd5e
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"bce78693b3be8fa06ee65f669aaef744"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.041523'
+      - '0.025994'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":{"datacite_related":1},"relation_types":{"is_new_version_of":1}},"works":[{"id":"http://doi.org/10.3886/ICPSR36357.V1","author":[],"title":"Arts
         and Cultural Production Satellite Account","published":"2016","issued":"2016-04-22T12:55:03Z","updated":"2016-06-15T15:13:48Z","DOI":"10.3886/ICPSR36357.V1","publisher_id":"GESIS.ICPSR","registration_agency_id":"datacite","work_type_id":"dataset","results":{}}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:11 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:31 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/publishers/GESIS.ICPSR
@@ -108,16 +149,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:09 GMT
+      - Wed, 21 Sep 2016 21:07:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -135,28 +176,188 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 95d0277a-e97c-4a67-86b6-7c13dd6567d7
+      - 93938e11-99ce-432f-9d02-519b77b107f7
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"3d80849ccc95e11cbac69d1441648396"
+      - W/"30708fbf1c32430eca9a9aa3c40faa76"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.016445'
+      - '0.018909'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher","message-version":"v7"},"publisher":{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-07-02T16:49:04Z"}}'
+      string: '{"meta":{"status":"ok","message-type":"publisher","message-version":"v7"},"publisher":{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-21T20:36:22Z"}}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:11 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:33 GMT
+- request:
+    method: get
+    uri: https://profiles.datacite.org/api/members/GESIS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 21:07:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c7dd0311-54a9-4332-8163-0da00da3db67
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, DELETE, OPTIONS
+      Etag:
+      - W/"28bf57065f3a5599a5bf7d5607e0ed60"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.006929'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gesis","type":"members","attributes":{"title":"Leibniz
+        Institute for the Social Sciences","description":"\u003cp\u003eGESIS is the
+        largest infrastructure institution in Germany serving to promote scientific
+        research in this field. Our services can be categorized from the users’ perspective
+        according to the research data cycle. This cycle comprises data and information
+        research, study planning, including empirical research data collection and
+        storage, preparation, archiving and retrieval of research data, on up through
+        the analysis and publication phases.\u003c/p\u003e\n\n\u003cp\u003eGESIS is
+        a member of the Leibniz Association and participates in European projects
+        like European Social Survey (ESS), European Values Study (EVS), the Council
+        of European Social Science Data Archives CESSDA or OECD’s project PIAAC.\u003c/p\u003e\n\n\u003cp\u003eIn
+        February 2010 we became member of DataCite and initiated a pilot project to
+        establish a DOI registration service for social science data. Since 2011 GESIS
+        and the German National Library of Economics (ZBW) have been operating the
+        Registration agency for social and economic data da|ra. This infrastructure
+        will lay the foundations for a permanent identification, storage, localizing
+        and ultimately a reliable citability of research data in both disciplines.
+        da|ra provides DOI registration services for German research data centers
+        in the fields of social sciences and economics. Besides DOI name registration
+        we operate a comprehensive metadata schema (compatible to DataCite MDS) to
+        ensure proper citation, and in future peer review, of registered social and
+        economic data. Our current focus is on providing DOI names for primary data
+        occurring in the research data cycle. Via our open access repository SSOAR
+        we offer an additional service for open access publications.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://assets.datacite.org/images/members/GESIS.png","email":"brigitte.hausstein@gesis(dot)org","website":"http://www.gesis.org/dara","phone":"+49
+        30 233611314","updated":"2016-07-31T21:40:37.000Z"}}}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 21:07:35 GMT
+- request:
+    method: get
+    uri: https://profiles.datacite.org/api/members/GESIS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 21 Sep 2016 21:07:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d86cd2a4-2359-4c7f-912d-609e6cef60f8
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, DELETE, OPTIONS
+      Etag:
+      - W/"28bf57065f3a5599a5bf7d5607e0ed60"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.007695'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gesis","type":"members","attributes":{"title":"Leibniz
+        Institute for the Social Sciences","description":"\u003cp\u003eGESIS is the
+        largest infrastructure institution in Germany serving to promote scientific
+        research in this field. Our services can be categorized from the users’ perspective
+        according to the research data cycle. This cycle comprises data and information
+        research, study planning, including empirical research data collection and
+        storage, preparation, archiving and retrieval of research data, on up through
+        the analysis and publication phases.\u003c/p\u003e\n\n\u003cp\u003eGESIS is
+        a member of the Leibniz Association and participates in European projects
+        like European Social Survey (ESS), European Values Study (EVS), the Council
+        of European Social Science Data Archives CESSDA or OECD’s project PIAAC.\u003c/p\u003e\n\n\u003cp\u003eIn
+        February 2010 we became member of DataCite and initiated a pilot project to
+        establish a DOI registration service for social science data. Since 2011 GESIS
+        and the German National Library of Economics (ZBW) have been operating the
+        Registration agency for social and economic data da|ra. This infrastructure
+        will lay the foundations for a permanent identification, storage, localizing
+        and ultimately a reliable citability of research data in both disciplines.
+        da|ra provides DOI registration services for German research data centers
+        in the fields of social sciences and economics. Besides DOI name registration
+        we operate a comprehensive metadata schema (compatible to DataCite MDS) to
+        ensure proper citation, and in future peer review, of registered social and
+        economic data. Our current focus is on providing DOI names for primary data
+        occurring in the research data cycle. Via our open access repository SSOAR
+        we offer an additional service for open access publications.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://assets.datacite.org/images/members/GESIS.png","email":"brigitte.hausstein@gesis(dot)org","website":"http://www.gesis.org/dara","phone":"+49
+        30 233611314","updated":"2016-07-31T21:40:37.000Z"}}}'
+    http_version: 
+  recorded_at: Wed, 21 Sep 2016 21:07:35 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/work_types
@@ -167,16 +368,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:09 GMT
+      - Wed, 21 Sep 2016 21:07:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -194,23 +395,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 6cc87a6c-53ba-4748-b2f3-345f2f72fa4f
+      - 316a58b9-dd54-4ffb-a4d4-ce8306dda135
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"5087c6c0840d62d9da57069282864a7a"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.020017'
+      - '0.030502'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work_type-list","message-version":"v7","total":36},"work_types":[{"id":"article","title":"Article","timestamp":"2016-03-21T15:05:02Z"},{"id":"bill","title":"Bill","timestamp":"2016-03-21T15:05:02Z"},{"id":"post-weblog","title":"Blog
@@ -228,7 +427,7 @@ http_interactions:
         Article","container":"Newspaper","timestamp":"2016-03-21T15:05:02Z"},{"id":"pamphlet","title":"Pamphlet","timestamp":"2016-03-21T15:05:03Z"},{"id":"patent","title":"Patent","timestamp":"2016-03-21T15:05:03Z"},{"id":"personal_communication","title":"Personal
         Communication","timestamp":"2016-03-21T15:05:03Z"},{"id":"post","title":"Post","timestamp":"2016-03-21T15:05:03Z"},{"id":"report","title":"Report","timestamp":"2016-03-21T15:05:03Z"},{"id":"review","title":"Review","timestamp":"2016-03-21T15:05:03Z"},{"id":"song","title":"Song","timestamp":"2016-03-21T15:05:03Z"},{"id":"speech","title":"Speech","timestamp":"2016-03-21T15:05:03Z"},{"id":"thesis","title":"Thesis","timestamp":"2016-03-21T15:05:03Z"},{"id":"treaty","title":"Treaty","timestamp":"2016-03-21T15:05:03Z"},{"id":"webpage","title":"Webpage","container":"Website","timestamp":"2016-03-21T15:05:03Z"}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:11 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:35 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/sources
@@ -239,16 +438,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:09 GMT
+      - Wed, 21 Sep 2016 21:07:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -266,54 +465,52 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 00387b3e-e3e9-4e48-bb1f-9cf5f8359fa4
+      - 42bc1bad-a058-49bf-a545-1ac14684b412
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"5dea3646a926586b82485fbeb0bb5adc"
+      - W/"67e8e4caee4aa056d9623d63ca03daf2"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.019047'
+      - '0.024198'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
         (DataCite)","group_id":"relations","description":"Import works linked to a
-        DataCite DOI from Crossref.","state":"active","timestamp":"2016-07-02T16:53:41Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
+        DataCite DOI from Crossref.","state":"active","timestamp":"2016-09-21T20:28:34Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
         (Crossref)","group_id":"relations","description":"Import works with Crossref
-        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:53:35Z","work_count":20293,"relation_count":225345,"result_count":75477,"by_day":{"with_results":21,"without_results":279,"not_updated":224990},"by_month":{"with_results":5145,"without_results":197244,"not_updated":22901}},{"id":"datacite_github","title":"DataCite
+        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:28:11Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":27,"without_results":64,"not_updated":225321}},{"id":"datacite_github","title":"DataCite
         (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
-        via the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:53:37Z","work_count":968,"relation_count":1756,"result_count":1199,"by_day":{"with_results":1,"without_results":0,"not_updated":443},"by_month":{"with_results":139,"without_results":220,"not_updated":85}},{"id":"datacite_related","title":"DataCite
+        via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:35:04Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
         (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:53:37Z","work_count":282464,"relation_count":419378,"result_count":2961670,"by_day":{"with_results":1039,"without_results":200,"not_updated":418080},"by_month":{"with_results":263725,"without_results":126845,"not_updated":28749}},{"id":"europe_pmc_fulltext","title":"Europe
+        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:28:19Z","work_count":283370,"relation_count":420690,"result_count":2964588,"by_day":{"with_results":0,"without_results":0,"not_updated":420631},"by_month":{"with_results":694,"without_results":217,"not_updated":419720}},{"id":"europe_pmc_fulltext","title":"Europe
         PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
-        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"plos_fulltext","title":"PLOS
+        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-09-21T20:18:58Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
         (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
-        citations.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
+        citations.","state":"active","timestamp":"2016-09-21T20:24:11Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
         (ORCID Search and Link)","group_id":"contributions","description":"Import
-        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
+        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-09-21T20:22:48Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
         (ORCID)","group_id":"contributions","description":"Import works with ORCID
-        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github_contributor","title":"Github
+        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:24:11Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
         (Contributor)","group_id":"contributions","description":"Import contributors
-        with works via the Github API.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
-        works via the ORCID API.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
+        with works via the Github API.","state":"active","timestamp":"2016-09-21T20:24:11Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
+        works via the ORCID API.","state":"active","timestamp":"2016-09-21T20:34:05Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
         (Publisher)","group_id":"publishers","description":"Import publishers via
-        the Crossref REST API.","state":"active","timestamp":"2016-07-02T16:53:40Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
+        the Crossref REST API.","state":"active","timestamp":"2016-09-21T20:19:12Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
         (Datacentre)","group_id":"publishers","description":"Import data centres via
-        the DataCite Solr API.","state":"active","timestamp":"2016-07-02T16:24:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
-        is the largest social network.","state":"active","timestamp":"2016-07-02T14:59:22Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
-        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-07-02T14:59:22Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
-        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-07-02T16:24:00Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}}]}'
+        the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:53:40Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
+        is the largest social network.","state":"active","timestamp":"2016-09-21T20:31:23Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
+        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-09-21T20:19:00Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
+        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-09-21T19:42:10Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:11 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:36 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/groups
@@ -324,16 +521,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:10 GMT
+      - Wed, 21 Sep 2016 21:07:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -351,28 +548,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - e6bb4605-2abf-4a95-b036-7763b3490561
+      - 092b0f88-3ad8-454f-89c0-6db7f563bd3a
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"bdb91c439c4c90224189c7eb36197501"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.014993'
+      - '0.028156'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:12 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:36 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/relation_types
@@ -383,16 +578,16 @@ http_interactions:
       User-Agent:
       - Maremma - http://api.local
       Accept:
-      - application/json
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
       message: ''
     headers:
       Server:
-      - nginx/1.11.1
+      - nginx/1.11.3
       Date:
-      - Sat, 02 Jul 2016 17:03:10 GMT
+      - Wed, 21 Sep 2016 21:07:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -410,23 +605,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d2e4b96c-2f91-4bdd-8341-fa21f994d456
+      - df797a23-78fc-4980-acd2-19b1739e55fc
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
       Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS
+      - POST, GET, PUT, DELETE, OPTIONS
       Etag:
       - W/"ddd1a36f9fddddf9e5cc51894c8d4a2a"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.023759'
+      - '0.028783'
       X-Content-Type-Options:
       - nosniff
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/
       X-Powered-By:
-      - Phusion Passenger 5.0.29
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"relation_type-list","message-version":"v7","total":39},"relation_types":[{"id":"bookmarks","title":"Bookmarks","inverse_title":"Is
@@ -470,5 +663,5 @@ http_interactions:
         reviewed by","timestamp":"2016-03-21T15:05:03Z"},{"id":"views","title":"Views","inverse_title":"Is
         viewed by","timestamp":"2016-03-21T15:05:04Z"}]}'
     http_version: 
-  recorded_at: Sat, 02 Jul 2016 17:03:12 GMT
+  recorded_at: Wed, 21 Sep 2016 21:07:36 GMT
 recorded_with: VCR 2.9.3
