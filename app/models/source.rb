@@ -1,5 +1,5 @@
 class Source < Base
-  attr_reader :id, :title, :description, :state, :group_id, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at
+  attr_reader :id, :title, :description, :state, :group_id, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at, :publisher_id
 
   def initialize(attributes)
     @id = attributes.fetch("id").underscore.dasherize
@@ -12,6 +12,7 @@ class Source < Base
     @result_count = attributes.fetch("result_count", 0)
     @by_day = attributes.fetch("by_day", {})
     @by_month = attributes.fetch("by_month", {})
+    @publisher_id = attributes.fetch("publisher_id", {})
     @updated_at = attributes.fetch("timestamp", nil)
   end
 
@@ -49,7 +50,7 @@ class Source < Base
 
   def self.parse_included(items, options={})
     used_groups = items.map { |i| i.fetch("group_id").underscore.dasherize }.uniq
-    groups = Group.all[:data].select { |s| used_groups.include?(s.id) }
+    Group.all[:data].select { |s| used_groups.include?(s.id) }
   end
 
   def self.parse_item(item)

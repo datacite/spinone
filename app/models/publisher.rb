@@ -1,5 +1,5 @@
 class Publisher < Base
-  attr_reader :id, :title, :other_names, :prefixes, :member_id, :registration_agency_id, :updated_at
+  attr_reader :id, :title, :other_names, :prefixes, :member_id, :registration_agency_id, :updated_at, :publisher_id, :ids
 
   def initialize(attributes)
     @id = attributes.fetch("id").underscore.dasherize
@@ -7,6 +7,8 @@ class Publisher < Base
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
     @member_id = attributes.fetch("member_id", nil)
+    @publisher_id = attributes.fetch("publisher_id", nil)
+    @ids = attributes.fetch("ids", nil)
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
     @updated_at = attributes.fetch("timestamp", nil)
   end
@@ -22,6 +24,8 @@ class Publisher < Base
                  per_page: options.fetch(:rows, 25),
                  q: options.fetch(:query, nil),
                  registration_agency_id: options.fetch("registration-agency-id", nil),
+                 publisher_id: options.fetch("publisher-id", nil),
+                 ids: options.fetch(:ids, nil),
                  member_id: options.fetch("member-id", nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end

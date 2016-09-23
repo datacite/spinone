@@ -41,7 +41,7 @@ class Contribution < Base
                per_page: options.fetch(:rows, 25),
                contributor_id: options.fetch("contributor-id", nil),
                work_id: options.fetch("work-id", nil),
-               publisher_id: options.fetch("publisher_id", nil),
+               publisher_id: options.fetch("publisher-id", nil),
                source_id: source_id }.compact
     url + "?" + URI.encode_www_form(params)
   end
@@ -53,10 +53,14 @@ class Contribution < Base
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
              sources: meta["sources"],
-             publishers: meta["publishers"] }
+             publishers: meta["publishers"]
+           }
 
 
-    { data: parse_items(items) + parse_included(meta, options), meta: meta }
+     publishers = Publisher.collect_data(options = {ids: meta[:publishers].keys.join(",")} ).fetch(:data, {})
+     labels = Hash[publishers.map {|x| [x.id, x.title]}]
+     meta.merge!({ labels: labels.sort.to_h})
+    { data: parse_items(items) + parse_included(meta, options), meta: meta}
   end
 
   def self.parse_included(meta, options={})
