@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :member_id, :registration_agency_id, :results, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :member_id, :registration_agency_id, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -40,6 +40,7 @@ class Work < Base
     @member_id = attributes.fetch("allocator_symbol", nil)
     @member_id = @member_id.underscore.dasherize if @member_id.present?
     @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
+    @schema_version = attributes.fetch("schema_version", nil)
     @results = attributes.fetch("results", {})
   end
 
@@ -65,14 +66,15 @@ class Work < Base
       fq << "datacentre_symbol:#{options['publisher-id'].underscore.camelize}" if options['publisher-id'].present?
       fq << "allocator_symbol:#{options['member-id'].underscore.camelize}" if options['member-id'].present?
       fq << "publicationYear:#{options['year']}" if options['year'].present?
+      fq << "schema_version:#{options['schema-version'].underscore.camelize}" if options['schema-version'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
-                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,xml,minted,updated",
+                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated",
                  fq: fq.join(" AND "),
                  facet: "true",
-                 'facet.field' => %w(publicationYear datacentre_facet resourceType_facet),
+                 'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
                  'facet.limit' => 10,
                  'f.resourceType_facet.facet.limit' => 15,
                  'facet.mincount' => 1,
@@ -207,6 +209,7 @@ class Work < Base
                               id, title = p.first.split(' - ', 2)
                               [id, p.last]
                             end.to_h
+    schema_versions = facets.fetch("schema_version", []).each_slice(2).sort { |a, b| b.first <=> a.first }.to_h
 
     if options["publisher-id"].present? && publishers.empty?
       publishers = { options["publisher-id"] => 0 }
@@ -214,7 +217,8 @@ class Work < Base
 
     { "resource-types" => resource_types,
       "years" => years,
-      "publishers" => publishers }
+      "publishers" => publishers,
+      "schema-versions" => schema_versions }
   end
 
   def self.parse_item(item)
