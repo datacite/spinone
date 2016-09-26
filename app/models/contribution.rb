@@ -57,15 +57,14 @@ class Contribution < Base
            }
 
 
-     publishers = Publisher.collect_data(options = {ids: meta[:publishers].keys.join(",")} ).fetch(:data, {})
-     labels = Hash[publishers.map {|x| [x.id, x.title]}]
-     meta.merge!({ labels: labels.sort.to_h})
-    { data: parse_items(items) + parse_included(meta, options), meta: meta}
+    publishers = Publisher.collect_data(options = {ids: meta[:publishers].keys.join(",")} ).fetch(:data, {})
+    { data: parse_items(items) + parse_included(meta, options) + publishers, meta: meta}
   end
 
   def self.parse_included(meta, options={})
     Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
   end
+
 
   def self.parse_item(item)
     self.new(item)

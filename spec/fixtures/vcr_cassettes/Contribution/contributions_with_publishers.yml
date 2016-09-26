@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/contributions?page=1&per_page=50
+    uri: https://eventdata.datacite.org/api/contributions?page=1&per_page=25&publisher_id=tib.pangaea
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:42 GMT
+      - Mon, 26 Sep 2016 14:15:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,63 +37,29 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2d4e8896-b2e8-4d43-90ea-a6a0abf4d731
+      - 3b6edd23-5736-4e21-8d4b-184e9fa060b4
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"bb4ab69cfeebc2491c79d221ae82294c"
+      - W/"9c29b9c847719b360ae8ad344451ecff"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '1.279010'
+      - '1.792574'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"contribution-list","message-version":"v7","total":1080351,"total_pages":21608,"page":1,"sources":{"datacite_related":4516,"datacite_orcid":1071679,"github_contributor":510,"datacite_search_link":3646},"publishers":{"ANDS.CENTRE-1":1,"ANDS.CENTRE-3":44,"ANDS.CENTRE39":7,"ANDS.CENTRE47":8,"ANDS.CENTRE49":3,"ANDS.CENTRE53":3,"ANDS.CENTRE66":5,"ANDS.CENTRE75":17,"BL.ADS":14,"BL.ASTON":76,"BL.BATH":15,"BL.BGI":3,"BL.BRUNEL":1,"BL.CCDC":2,"BL.DUNDEE":4,"BL.DURHAM":8,"BL.ED":4,"BL.HALLAM":5,"BL.HWU":8,"BL.IMPERIAL":949239,"BL.LBORO":1,"BL.LEEDS":133,"BL.NERC":185,"BL.QUB":2,"BL.SHEF":4,"BL.SOTON":77,"BL.STANDREW":2,"BL.STRATH":141,"BL.YORK":44,"CDL.AUL":1,"CDL.BOISESTA":2,"CDL.CDL":2,"CDL.DATABRAR":18,"CDL.DIGSCI":49841,"CDL.DRYAD":31,"CDL.IPLANT":2,"CDL.LCRNZ":9,"CDL.LTERNET":3,"CDL.NCAR":1,"CDL.NIST":4,"CDL.OCONTEXT":4,"CDL.OSU":4,"CDL.PEERJ":863,"CDL.PGERR":17,"CDL.TACC":2,"CDL.UCB":28,"CDL.UCDIRL":747,"CDL.UCLA":1,"CDL.UCSD":1,"CDL.UKY":17,"CDL.UOA":9,"CDL.UTAUSTIN":1,"CDL.UWYO":3,"CERN.INSPIRE":2,"CERN.JACOW":8,"CERN.ZENODO":288,"CISTI.NRC":170,"CRUI.GEM":18,"CRUI.INGV":85,"CRUI.OGSTS":6,"CRUI.POLITO":1,"CRUI.UNIFE":1,"CRUI.UNIFI":1,"DELFT.DATACENT":272,"DK.DTIC":1,"DK.GBIF":6,"DK.GBIF-CO":1,"DK.GBIF-ES":1,"ETHZ.BORIS":2,"ETHZ.E-COLL":1,"ETHZ.FSW":1,"ETHZ.PHSG":8,"ETHZ.SEALS":2,"ETHZ.ZORA":1,"GESIS.BSB":4,"GESIS.CSES":3,"GESIS.MDA":1,"GESIS.UBHD":33,"INIST.IFREMER":73,"INIST.ILL":97,"INIST.INRA":1,"JALC.JALC":3,"PURDUE.EZID":99,"PURDUE.IUPUI":2,"PURDUE.NCIPH":2,"PURDUE.UIUCLIB":15,"SND.BILS":1,"SND.SND":15,"SND.SU":18,"TIB.ADLNET":1,"TIB.ETA":13,"TIB.GFZ":35,"TIB.GFZBIB":1,"TIB.HBRS":5,"TIB.HSD":83,"TIB.MPDL":5,"TIB.PANGAEA":67085,"TIB.PTB":14,"TIB.R-GATE":85,"TIB.RADS":1025,"TIB.TUDO":2,"TIB.UBMR":2,"TIB.UKON":1,"TIB.UNIBI":2,"TIB.WDCC":791,"TIB.WIP":4,"TIB.ZALF":1,"ZBMED.ZFPG":1,"TIB.TROPOS":1,"BL.CRAN":12,"TIB.HANDBUCH":73,"ANDS.CENTRE78":1,"BIBSYS.UIT-ORD":2,"BL.CAM":32,"CDL.SIMTK":6,"DELFT.DATA4TU":4168,"ZBMED.BFS":7}},"contributions":[{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808212","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Dataset
-        of photos showing tree branches of a tree devoid of leaves","published":"2016","issued":"2016-09-07T11:53:47Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3808212","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-25T06:22:30Z"},{"subj_id":"http://orcid.org/0000-0003-0006-8729","credit_name":"Guillaume
-        Rousselet","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V3","author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:23:07Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V3","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-22T15:50:08Z"},{"subj_id":"http://orcid.org/0000-0002-0998-6676","credit_name":"Shyeni
-        Paul","obj_id":"http://doi.org/10.14469/HPC/1477","author":[{"family":"Paul","given":"Shyeni","ORCID":"http://orcid.org/0000-0002-0998-6676"}],"title":"Shyeni_Paul_Thesis_C2","published":"2016","issued":"2016-09-05T13:53:16Z","container-title":"Imperial
-        College London","DOI":"10.14469/HPC/1477","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"BL.IMPERIAL","contributor_role_id":"contribution","timestamp":"2016-09-22T15:50:08Z"},{"subj_id":"http://orcid.org/0000-0001-8305-6605","credit_name":"Thomas
-        Ezard","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1508558.V2","author":[{"family":"Cooke","given":"Robert","ORCID":"http://orcid.org/0000-0003-0601-8888"},{"family":"Ezard","given":"Thomas","ORCID":"http://orcid.org/0000-0001-8305-6605"}],"title":"Resource
-        partitioning between ungulate populations in arid environments","published":"2016","issued":"2016-09-07T11:10:47Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1508558.V2","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-21T21:37:25Z"},{"subj_id":"http://orcid.org/0000-0002-8698-6143","credit_name":"Jason
-        Moore","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310.V1","author":[{"family":"Moore","given":"Jason","ORCID":"http://orcid.org/0000-0002-8698-6143"},{"family":"Hubbard","given":"Mont"},{"family":"Hess","given":"Ronald
-        A."}],"title":"An Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806310.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:49Z"},{"subj_id":"http://orcid.org/0000-0002-8635-8390","credit_name":"Henry
-        Rzepa","obj_id":"http://doi.org/10.14469/HPC/1478","author":[{"family":"Rzepa","given":"Henry","ORCID":"http://orcid.org/0000-0002-8635-8390"}],"title":"Neutral
-        reactant, NN contraction + NMe3 to sequester proton, phenyl, tert-butyl","published":"2016","issued":"2016-09-05T16:08:18Z","container-title":"Imperial
-        College London","DOI":"10.14469/HPC/1478","results":{},"source_id":"datacite_orcid","publisher_id":"BL.IMPERIAL","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:48Z"},{"subj_id":"http://orcid.org/0000-0003-0006-8729","credit_name":"Guillaume
-        Rousselet","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V4","author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:46:50Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V4","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:47Z"},{"subj_id":"http://orcid.org/0000-0002-4000-4167","credit_name":"Peter
-        Arend","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V221","author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
-        ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T13:58:46Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V221","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:47Z"},{"subj_id":"http://orcid.org/0000-0001-9191-7903","credit_name":"Theo
-        Mertzimekis","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V2","author":[{"family":"Mertzimekis","given":"Theo
-        J.","ORCID":"http://orcid.org/0000-0001-9191-7903"}],"title":"A New Online
-        Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-05T10:48:29Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806268.V2","work_type_id":"graphic","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://orcid.org/0000-0003-0006-8729","credit_name":"Guillaume
-        Rousselet","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V1","author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V1","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:45Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806439.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 5 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T08:41:58Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806439.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:44Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806451","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 7 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:11:44Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806451","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:44Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 6 (NUS ChBE, AY 2004/2005
-        Semester 1)","published":"2016","issued":"2016-09-05T08:50:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806445","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:44Z"},{"subj_id":"http://orcid.org/0000-0001-9341-2861","credit_name":"Suresh
-        Kannan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806355.V2","author":[{"family":"Panneerselvam","given":"Suresh","ORCID":"http://orcid.org/0000-0001-9341-2861"},{"family":"Choi","given":"Sangdun"}],"title":"Python
-        script for pattern search in Sox2 binding sequences","published":"2016","issued":"2016-09-05T04:39:24Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806355.V2","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:42Z"},{"subj_id":"http://orcid.org/0000-0001-9341-2861","credit_name":"Suresh
-        Kannan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806355.V1","author":[{"family":"Panneerselvam","given":"Suresh","ORCID":"http://orcid.org/0000-0001-9341-2861"},{"family":"choi"}],"title":"Python
-        script for pattern search in Sox2 binding sequences","published":"2016","issued":"2016-09-05T04:20:38Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806355.V1","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-19T16:16:42Z"},{"subj_id":"http://orcid.org/0000-0002-0416-9546","credit_name":"Norbert
-        Frank","obj_id":"http://doi.org/10.1594/PANGAEA.830565","author":[{"family":"Hämmerle","given":"Martin"},{"family":"Höfle","given":"Bernhard","ORCID":"http://orcid.org/0000-0001-5849-1461"},{"family":"Fuchs","given":"Johannes"},{"family":"Schröder-Ritzrau","given":"Andrea"},{"family":"Vollweiler","given":"Nicole"},{"family":"Frank","given":"Norbert","ORCID":"http://orcid.org/0000-0002-0416-9546"}],"title":"Point
-        cloud of a stalagmite measured with a structured light camera","published":"2014","issued":"2014-03-24T14:46:03Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.830565","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+      string: '{"meta":{"status":"ok","message-type":"contribution-list","message-version":"v7","total":67085,"total_pages":2684,"page":1,"sources":{"datacite_related":1526,"datacite_orcid":65557,"datacite_search_link":2},"publishers":{"tib.pangaea":67085}},"contributions":[{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821669","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
+        A"},{"family":"Huhn","given":"Katrin"}],"title":"Mixing experiment with 600
+        g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:33Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821669","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
         R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.807895","author":[{"family":"Badesab","given":"Firoz
         Kadar"},{"family":"Dobeneck","given":"Tilo"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Müller","given":"Hendrik"},{"family":"Briggs","given":"Roger
@@ -105,12 +71,7 @@ http_interactions:
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
         A"},{"family":"Huhn","given":"Katrin"}],"title":"Layering experiment with
         10 g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:25Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821659","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821669","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
-        A"},{"family":"Huhn","given":"Katrin"}],"title":"Mixing experiment with 600
-        g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:33Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821669","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821659","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
         Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.763824","author":[{"family":"Inoue","given":"Mayuri"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Harada","given":"Mariko"},{"family":"Suzuki","given":"Atsushi"},{"family":"Kawahata","given":"Hodaka"},{"family":"Matsuzaki","given":"Hiroyuki"},{"family":"Iryu","given":"Yasufumi"}],"title":"(Table
         1) Trace element and age analysis from the Porites coral from IODP Exp 310,
         supplement to: Inoue, Mayuri; Yokoyama, Yusuke; Harada, Mariko; Suzuki, Atsushi;
@@ -118,7 +79,10 @@ http_interactions:
         variations in fossil corals from Tahiti collected by IODP Expedition 310:
         Reconstruction of marine environments during the last deglaciation (15 to
         9 ka). Marine Geology, 271(3-4), 303-306","published":"2010","issued":"2011-10-20T01:30:19Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.763824","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.763824","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-0416-9546","credit_name":"Norbert
+        Frank","obj_id":"http://doi.org/10.1594/PANGAEA.830565","author":[{"family":"Hämmerle","given":"Martin"},{"family":"Höfle","given":"Bernhard","ORCID":"http://orcid.org/0000-0001-5849-1461"},{"family":"Fuchs","given":"Johannes"},{"family":"Schröder-Ritzrau","given":"Andrea"},{"family":"Vollweiler","given":"Nicole"},{"family":"Frank","given":"Norbert","ORCID":"http://orcid.org/0000-0002-0416-9546"}],"title":"Point
+        cloud of a stalagmite measured with a structured light camera","published":"2014","issued":"2014-03-24T14:46:03Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.830565","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
         R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821647","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
         A"},{"family":"Huhn","given":"Katrin"}],"title":"Layering experiment with
@@ -136,82 +100,113 @@ http_interactions:
         supplement to: Martinez, Ignacio; Keigwin, Lloyd D; Barrows, Timothy T; Yokoyama,
         Yusuke; Southon, John (2003): La Niña-like conditions in the eastern equatorial
         Pacific and a stronger Choco jet in the northern Andes during the last glaciation.
-        Paleoceanography, 18(2), 1033","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://orcid.org/0000-0003-2028-535X","credit_name":"Michael
-        Bach","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.2062785.V4","author":[{"family":"Bach","given":"Michael","ORCID":"http://orcid.org/0000-0003-2028-535X"}],"title":"Data
-        set and R analysis routines for the paper “Feedback useful in VA testing”","published":"2016","issued":"2016-01-12T17:05:04Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.2062785.V4","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:25Z"},{"subj_id":"http://orcid.org/0000-0002-8698-6143","credit_name":"Jason
-        Moore","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310","author":[],"title":"An
-        Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","DOI":"10.6084/M9.FIGSHARE.3806310","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://orcid.org/0000-0003-4120-0642","credit_name":"Nick
-        Powell","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783","author":[],"title":"CABI
-        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:30Z","DOI":"10.6084/M9.FIGSHARE.3394783","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://orcid.org/0000-0003-4120-0642","credit_name":"Nick
-        Powell","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783.V1","author":[{"family":"Powell","given":"Nick","ORCID":"http://orcid.org/0000-0003-4120-0642"},{"family":"Yu","given":"Yichao"},{"family":"Richardson","given":"Simon"}],"title":"CABI
-        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3394783.V1","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://orcid.org/0000-0003-4120-0642","credit_name":"Nick
-        Powell","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786","author":[],"title":"Tc1
-        and WT brains cohort 2 (C2)","published":"2016","issued":"2016-09-05T21:47:52Z","DOI":"10.6084/M9.FIGSHARE.3394786","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://orcid.org/0000-0002-8635-8390","credit_name":"Henry
-        Rzepa","obj_id":"http://doi.org/10.14469/HPC/1479","author":[{"family":"Rzepa","given":"Henry","ORCID":"http://orcid.org/0000-0002-8635-8390"}],"title":"Stereoscopic
-        display","published":"2016","issued":"2016-09-05T19:19:09Z","container-title":"Imperial
-        College London","DOI":"10.14469/HPC/1479","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"BL.IMPERIAL","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://orcid.org/0000-0003-4578-7049","credit_name":"Sabine
-        Stummeyer","obj_id":"http://doi.org/10.20389/HSH/OER-1","author":[{"family":"Stummeyer","given":"Sabine","ORCID":"http://orcid.org/0000-0003-4578-7049"}],"title":"Open
-        Educational Resources – Eine kurze Einführung","published":"2016","issued":"2016-09-05T14:05:12Z","container-title":"Technische
-        Informationsbibliothek Hannover","DOI":"10.20389/HSH/OER-1","publisher_id":"TIB.HANDBUCH","work_type_id":"report","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://orcid.org/0000-0002-4000-4167","credit_name":"Peter
-        Arend","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V222","author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
-        ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T14:16:16Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V222","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://orcid.org/0000-0001-7879-4531","credit_name":"Ben
-        Marwick","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.985406.V13","author":[{"family":"Marwick","given":"Ben","ORCID":"http://orcid.org/0000-0001-7879-4531"}],"title":"Marwick
-        et al. Pleistocene-aged stone artefacts from Jerimalai, East Timor","published":"2016","issued":"2016-09-05T17:54:02Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.985406.V13","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://orcid.org/0000-0003-0006-8729","credit_name":"Guillaume
-        Rousselet","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V2","author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:22:45Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V2","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://orcid.org/0000-0003-0006-8729","credit_name":"Guillaume
-        Rousselet","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","author":[],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://orcid.org/0000-0003-0318-9147","credit_name":"Milica
-        Gasic","obj_id":"http://doi.org/10.17863/CAM.4190","author":[{"family":"Gasic","given":"Milica","ORCID":"http://orcid.org/0000-0003-0318-9147"}],"title":"Research
-        data supporting “Dialogue manager domain adaptation using Gaussian process
-        reinforcement learning”","published":"2016","issued":"2016-09-05T10:45:30Z","container-title":"Apollo
-        - University of Cambridge Repository","DOI":"10.17863/CAM.4190","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"BL.CAM","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:43Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 9 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:36:22Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 9 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:36:24Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://orcid.org/0000-0002-3039-6849","credit_name":"Martin
-        Hadley","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562.V1","author":[{"family":"kässi"},{"family":"Hadley","given":"Martin","ORCID":"http://orcid.org/0000-0002-3039-6849"},{"family":"Lehdonvirta","given":"Vili"}],"title":"Online
-        Labour Index: Measuring the Online Gig Economy for Policy and Research","published":"2016","issued":"2016-09-05T09:17:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3761562.V1","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:41Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806457.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 8 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:25:13Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806457.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:41Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806457","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 8 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:25:14Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806457","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:41Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 6 (NUS ChBE, AY 2004/2005
-        Semester 1)","published":"2016","issued":"2016-09-05T08:50:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806445.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:40Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806451.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 7 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:11:43Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806451.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:40Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806439","author":[],"title":"Experiment
-        series in environmental engineering: Experiment 5 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T08:41:56Z","DOI":"10.6084/M9.FIGSHARE.3806439","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:39Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806418","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 4 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T08:08:41Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806418","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:39Z"},{"subj_id":"http://orcid.org/0000-0001-7629-2140","credit_name":"Wenfa
-        Ng","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806418.V1","author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
-        series in environmental engineering: Experiment 4 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T08:08:40Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806418.V1","work_type_id":"report","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:39Z"},{"subj_id":"http://orcid.org/0000-0001-9341-2861","credit_name":"Suresh
-        Kannan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806355","author":[],"title":"Python
-        script for pattern search in Sox2 binding sequences","published":"2016","issued":"2016-09-05T04:20:40Z","DOI":"10.6084/M9.FIGSHARE.3806355","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:38Z"},{"subj_id":"http://orcid.org/0000-0001-9341-2861","credit_name":"Suresh
-        Kannan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806355.V3","author":[{"family":"Panneerselvam","given":"Suresh","ORCID":"http://orcid.org/0000-0001-9341-2861"},{"family":"Choi","given":"Sangdun"}],"title":"Python
-        script for pattern search in Sox2 binding sequences","published":"2016","issued":"2016-09-05T04:45:51Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806355.V3","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:38Z"},{"subj_id":"http://orcid.org/0000-0002-7200-0099","credit_name":"Wilken-Jon
+        Paleoceanography, 18(2), 1033","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://orcid.org/0000-0002-7200-0099","credit_name":"Wilken-Jon
         von Appen","obj_id":"http://doi.org/10.1594/PANGAEA.863063","author":[{"family":"Appen","given":"Wilken-Jon","ORCID":"http://orcid.org/0000-0002-7200-0099"},{"family":"Stein","given":"Ruediger"},{"family":"Wisotzki","given":"Andreas"}],"title":"Physical
         oceanography during POLARSTERN cruise PS93.1 (ARK-XXIX/2.1)","published":"2016","issued":"2016-09-05T03:04:25Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863063","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:37Z"},{"subj_id":"http://orcid.org/0000-0001-9191-7903","credit_name":"Theo
-        Mertzimekis","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268","author":[],"title":"A
-        New Online Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-04T16:20:24Z","DOI":"10.6084/M9.FIGSHARE.3806268","work_type_id":"graphic","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:36Z"},{"subj_id":"http://orcid.org/0000-0001-9191-7903","credit_name":"Theo
-        Mertzimekis","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V1","author":[{"family":"Mertzimekis","given":"Theo
-        J.","ORCID":"http://orcid.org/0000-0001-9191-7903"}],"title":"A New Online
-        Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-04T16:20:25Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806268.V1","work_type_id":"graphic","results":{},"source_id":"datacite_orcid","publisher_id":"CDL.DIGSCI","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:36Z"}]}'
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863063","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:37Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861201","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Lithofacies
+        distribution in the western Bay of Plenty, New Zealand, supplement to: Kulgemeyer,
+        Tobias; von Dobeneck, Tilo; Müller, Hendrik; Bryan, Karin R; de Lange, Willem
+        P; Battershill, Christopher N (2016): Lithofacies distribution and sediment
+        dynamics on a storm-dominated shelf from combined photographic, acoustic and
+        sedimentological profiling methods (Bay of Plenty, New Zealand). Marine Geology,
+        376, 158-174","published":"2016","issued":"2016-07-07T03:24:41Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861201","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-5257-604X","credit_name":"Janna
+        Just","obj_id":"http://doi.org/10.1594/PANGAEA.848639","author":[{"family":"Just","given":"Janna","ORCID":"http://orcid.org/0000-0002-5257-604X"},{"family":"Nowaczyk","given":"Norbert
+        R"},{"family":"Sagnotti","given":"Leonardo","ORCID":"http://orcid.org/0000-0003-3944-201X"},{"family":"Francke","given":"Alexander","ORCID":"http://orcid.org/0000-0002-0370-5802"},{"family":"Vogel","given":"Hendrik","ORCID":"http://orcid.org/0000-0002-9902-8120"},{"family":"Lacey","given":"Jack
+        H"},{"family":"Wagner","given":"Bernd"}],"title":"Downcore rock-magnetic properties
+        of ICDP Core 5045-1, Lake Ohrid, supplement to: Just, Janna; Nowaczyk, Norbert
+        R; Sagnotti, Leonardo; Francke, Alexander; Vogel, Hendrik; Lacey, Jack H;
+        Wagner, Bernd (2016): Environmental control on the occurrence of high-coercivity
+        magnetic minerals and formation of iron sulfides in a 640 ka sediment sequence
+        from Lake Ohrid (Balkans). Biogeosciences, 13(7), 2093-2109","published":"2015","issued":"2015-09-07T03:04:07Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.848639","URL":"https://doi.pangaea.de/10.1594/PANGAEA.848639","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861143","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        subaquatic dunes","published":"2016","issued":"2016-07-07T03:24:26Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861143","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861181","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Collection
+        of seafloor photos from the western Bay of Plenty","published":"2016","issued":"2016-07-07T03:24:27Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861181","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834639","author":[{"family":"Obrochta","given":"Stephen
+        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Crowley","given":"Thomas
+        J"},{"family":"Channell","given":"James ET"},{"family":"Hodell","given":"David
+        A"},{"family":"Baker","given":"Paul A"},{"family":"Seki","given":"A"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"}],"title":"Elemental
+        composition of detrital carbonates from IODP Site 303-U1308","published":"2014","issued":"2014-09-22T03:04:36Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834639","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861052","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        grain size measurements","published":"2016","issued":"2016-07-07T03:24:23Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861052","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834640","author":[],"title":"Petrologic
+        data from Site U1308 over the last three glaciations, supplement to: Obrochta,
+        Stephen P; Crowley, Thomas J; Channell, James ET; Hodell, David A; Baker,
+        Paul A; Seki, A; Yokoyama, Yusuke (2014): Climate variability and ice-sheet
+        dynamics during the last three glaciations. Earth and Planetary Science Letters,
+        406, 198-212","published":"2014","issued":"2014-09-22T03:04:37Z","DOI":"10.1594/PANGAEA.834640","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861138","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        facies classification","published":"2016","issued":"2016-07-07T03:24:24Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861138","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834700","author":[{"family":"Obrochta","given":"Stephen
+        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
+        J"}],"title":"(Table 3) Revised age model of DSDP Site 94-609","published":"2012","issued":"2014-09-04T03:07:06Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834700","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834691","author":[{"family":"Obrochta","given":"Stephen
+        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
+        J"},{"family":"Bond","given":"Gerard C"}],"title":"(Table S4) Stable carbon
+        and oxygen isotope ratios of Neogloboquadrina pachyderma (s) in MIS4-2 of
+        DSDP Site 94-609","published":"2012","issued":"2014-09-04T03:06:56Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834691","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.705420","author":[{"family":"Kawahata","given":"Hodaka"},{"family":"Yamamoto","given":"Hisashi"},{"family":"Ohkushi","given":"Ken´ichi"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Kimoto","given":"Katsunori"},{"family":"Ohshima","given":"Hideki"},{"family":"Matsuzaki","given":"Hiroyuki"}],"title":"(Table
+        1) Ages, dry bulk densities, and UK''37, sea surface temperatures, contents
+        and fluxes of C37 alkenone of sediment core KT05-7_PC-02","published":"2009","issued":"2008-11-10T02:07:03Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.705420","URL":"https://doi.pangaea.de/10.1594/PANGAEA.705420","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
+        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.807896","author":[{"family":"Badesab","given":"Firoz
+        Kadar"},{"family":"Dobeneck","given":"Tilo"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Müller","given":"Hendrik"},{"family":"Briggs","given":"Roger
+        M"},{"family":"Frederichs","given":"Thomas"},{"family":"Kwoll","given":"Eva"}],"title":"An
+        environmental magnetic study, sedimentological and numerical methods around
+        Tauranga Harbour, New Zealand, supplement to: Badesab, Firoz Kadar; von Dobeneck,
+        Tilo; Bryan, Karin R; Müller, Hendrik; Briggs, Roger M; Frederichs, Thomas;
+        Kwoll, Eva (2012): Formation of magnetite-enriched zones in and offshore of
+        a mesotidal estuarine lagoon: An environmental magnetic study of Tauranga
+        Harbour and Bay of Plenty, New Zealand. Geochemistry, Geophysics, Geosystems,
+        13","published":"2012","issued":"2013-03-26T20:21:38Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.807896","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834698","author":[{"family":"Obrochta","given":"Stephen
+        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
+        J"},{"family":"Bond","given":"Gerard C"}],"title":"(Table 1) DSDP Site 94-609
+        radiocarbon dates","published":"2012","issued":"2014-09-04T03:06:59Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834698","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-9859-0026","credit_name":"Karen
+        Heywood","obj_id":"http://doi.org/10.1594/PANGAEA.418198","author":[{"family":"Heywood","given":"Karen
+        J","ORCID":"http://orcid.org/0000-0001-9859-0026"}],"title":"Bathymetry along
+        track line of JAMES CLARK ROSS cruise 74JC10_1","published":"2006","issued":"2006-05-22T01:59:30Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.418198","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
+        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.787781","author":[{"family":"Thomas","given":"Alexander
+        L","ORCID":"http://orcid.org/0000-0002-0734-9593"},{"family":"Fujita","given":"Kazuhiko"},{"family":"Iryu","given":"Yasufumi"},{"family":"Bard","given":"Edouard"},{"family":"Cabioch","given":"Guy"},{"family":"Camoin","given":"Gilbert"},{"family":"Cole","given":"Julia
+        E"},{"family":"Deschamps","given":"Pierre","ORCID":"http://orcid.org/0000-0003-1687-3765"},{"family":"Durand","given":"Nicolas"},{"family":"Hamelin","given":"Bruno"},{"family":"Heindel","given":"Katrin"},{"family":"Henderson","given":"Gideon
+        M","ORCID":"http://orcid.org/0000-0002-6279-7137"},{"family":"Mason","given":"Andrew
+        J"},{"family":"Matsuda","given":"Hiroki"},{"family":"Menabreaz","given":"Lucie"},{"family":"Omori","given":"Akitoshi"},{"family":"Quinn","given":"Terry"},{"family":"Sakai","given":"Saburo"},{"family":"Sato","given":"Tokiyuki"},{"family":"Sugihara","given":"Kaoru"},{"family":"Takahashi","given":"Yasunari"},{"family":"Thouveny","given":"Nicolas"},{"family":"Tudhope","given":"Alexander
+        W"},{"family":"Webster","given":"Jody M"},{"family":"Westphal","given":"Hildegard"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"}],"title":"(Table
+        1) Uranium and thorium concentrations as well as isotope ratios from IODP
+        Hole 310-M0005D","published":"2012","issued":"2012-09-24T03:08:53Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.787781","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-5849-1461","credit_name":"Bernhard
+        Höfle","obj_id":"http://doi.org/10.1594/PANGAEA.830565","author":[{"family":"Hämmerle","given":"Martin"},{"family":"Höfle","given":"Bernhard","ORCID":"http://orcid.org/0000-0001-5849-1461"},{"family":"Fuchs","given":"Johannes"},{"family":"Schröder-Ritzrau","given":"Andrea"},{"family":"Vollweiler","given":"Nicole"},{"family":"Frank","given":"Norbert","ORCID":"http://orcid.org/0000-0002-0416-9546"}],"title":"Point
+        cloud of a stalagmite measured with a structured light camera","published":"2014","issued":"2014-03-24T14:46:03Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.830565","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","publisher_id":"TIB.PANGAEA","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:43 GMT
+  recorded_at: Mon, 26 Sep 2016 14:15:46 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/publishers?ids=ANDS.CENTRE-1,ANDS.CENTRE-3,ANDS.CENTRE39,ANDS.CENTRE47,ANDS.CENTRE49,ANDS.CENTRE53,ANDS.CENTRE66,ANDS.CENTRE75,BL.ADS,BL.ASTON,BL.BATH,BL.BGI,BL.BRUNEL,BL.CCDC,BL.DUNDEE,BL.DURHAM,BL.ED,BL.HALLAM,BL.HWU,BL.IMPERIAL,BL.LBORO,BL.LEEDS,BL.NERC,BL.QUB,BL.SHEF,BL.SOTON,BL.STANDREW,BL.STRATH,BL.YORK,CDL.AUL,CDL.BOISESTA,CDL.CDL,CDL.DATABRAR,CDL.DIGSCI,CDL.DRYAD,CDL.IPLANT,CDL.LCRNZ,CDL.LTERNET,CDL.NCAR,CDL.NIST,CDL.OCONTEXT,CDL.OSU,CDL.PEERJ,CDL.PGERR,CDL.TACC,CDL.UCB,CDL.UCDIRL,CDL.UCLA,CDL.UCSD,CDL.UKY,CDL.UOA,CDL.UTAUSTIN,CDL.UWYO,CERN.INSPIRE,CERN.JACOW,CERN.ZENODO,CISTI.NRC,CRUI.GEM,CRUI.INGV,CRUI.OGSTS,CRUI.POLITO,CRUI.UNIFE,CRUI.UNIFI,DELFT.DATACENT,DK.DTIC,DK.GBIF,DK.GBIF-CO,DK.GBIF-ES,ETHZ.BORIS,ETHZ.E-COLL,ETHZ.FSW,ETHZ.PHSG,ETHZ.SEALS,ETHZ.ZORA,GESIS.BSB,GESIS.CSES,GESIS.MDA,GESIS.UBHD,INIST.IFREMER,INIST.ILL,INIST.INRA,JALC.JALC,PURDUE.EZID,PURDUE.IUPUI,PURDUE.NCIPH,PURDUE.UIUCLIB,SND.BILS,SND.SND,SND.SU,TIB.ADLNET,TIB.ETA,TIB.GFZ,TIB.GFZBIB,TIB.HBRS,TIB.HSD,TIB.MPDL,TIB.PANGAEA,TIB.PTB,TIB.R-GATE,TIB.RADS,TIB.TUDO,TIB.UBMR,TIB.UKON,TIB.UNIBI,TIB.WDCC,TIB.WIP,TIB.ZALF,ZBMED.ZFPG,TIB.TROPOS,BL.CRAN,TIB.HANDBUCH,ANDS.CENTRE78,BIBSYS.UIT-ORD,BL.CAM,CDL.SIMTK,DELFT.DATA4TU,ZBMED.BFS&page=1&per_page=25
+    uri: https://eventdata.datacite.org/api/publishers?ids=tib.pangaea&page=1&per_page=25
     body:
       encoding: US-ASCII
       string: ''
@@ -228,7 +223,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:43 GMT
+      - Mon, 26 Sep 2016 14:15:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -246,48 +241,27 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 34d16d61-d034-4682-a98c-7fe7af638ab4
+      - 1b21e3e2-66a1-4e3e-b358-8c9f4c0f4e10
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"7a642e85480a9bfa83bf5e5e72426f9d"
+      - W/"1b954cd2256dfe241fcb0b56720b5327"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.059114'
+      - '0.016981'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":117,"total_pages":5,"page":1,"registration_agencies":{"datacite":117},"members":{"DELFT":2,"CDL":25,"BL":23,"GESIS":4,"ETHZ":6,"SND":3,"ZBMED":2,"DK":4,"CRUI":6,"ANDS":9,"CERN":3,"INIST":3,"JALC":1,"CISTI":1,"PURDUE":4,"TIB":20,"BIBSYS":1}},"publishers":[{"id":"DELFT.DATACENT","title":"3TU
-        Datacentrum","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-09-26T12:09:14Z"},{"id":"DELFT.DATA4TU","title":"4TU.Centre
-        for Research Data","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-09-26T11:20:49Z"},{"id":"CDL.AUL","title":"American
-        University Library","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:06:10Z"},{"id":"BL.ADS","title":"Archaeology
-        Data Service","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T11:34:25Z"},{"id":"BL.ASTON","title":"Aston
-        University","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T14:07:07Z"},{"id":"ANDS.CENTRE66","title":"Australian
-        Catholic University","prefixes":[],"registration_agency_id":"datacite","member_id":"ANDS","timestamp":"2016-09-26T13:07:10Z"},{"id":"GESIS.BSB","title":"Bavarian
-        State Library","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-26T13:07:11Z"},{"id":"BL.BGI","title":"Beijing
-        Genomics Institute","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T11:12:01Z"},{"id":"ETHZ.BORIS","title":"Bern
-        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T12:14:52Z"},{"id":"TIB.GFZBIB","title":"Bibliothek
-        des Wissenschaftsparks Albert Einstein","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T11:19:01Z"},{"id":"SND.BILS","title":"Bioinformatics
-        Infrastructure for Life Sciences","prefixes":[],"registration_agency_id":"datacite","member_id":"SND","timestamp":"2016-09-26T14:07:28Z"},{"id":"CDL.BOISESTA","title":"Boise
-        State University","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T11:58:10Z"},{"id":"BL.BRUNEL","title":"Brunel
-        University London","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T11:41:43Z"},{"id":"ZBMED.BFS","title":"Bundesamt
-        für Strahlenschutz","prefixes":[],"registration_agency_id":"datacite","member_id":"ZBMED","timestamp":"2016-09-26T12:16:14Z"},{"id":"CDL.CDL","title":"California
-        Digital Library","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:16:24Z"},{"id":"GESIS.CSES","title":"Comparative
-        Study of Electoral Systems","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-26T11:24:56Z"},{"id":"BL.CRAN","title":"Cranfield
-        University","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T11:30:08Z"},{"id":"CDL.DATABRAR","title":"Databrary","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:06:35Z"},{"id":"CDL.DIGSCI","title":"Digital
-        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:08:54Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:08:55Z"},{"id":"DK.DTIC","title":"DTIC
-        Datacenter","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-09-26T12:08:55Z"},{"id":"BL.DURHAM","title":"Durham
-        University","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T12:08:55Z"},{"id":"ETHZ.SEALS","title":"E-Periodica","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T12:08:56Z"},{"id":"ANDS.CENTRE75","title":"Edith
-        Cowan University","prefixes":[],"registration_agency_id":"datacite","member_id":"ANDS","timestamp":"2016-09-26T14:09:53Z"},{"id":"TIB.ETA","title":"ETA-Florence
-        Renewable Energies","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T13:25:30Z"}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":1,"total_pages":1,"page":1,"registration_agencies":{"datacite":1},"members":{"TIB":1}},"publishers":[{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T12:55:02Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:43 GMT
+  recorded_at: Mon, 26 Sep 2016 14:15:46 GMT
 - request:
     method: get
     uri: https://profiles.datacite.org/api/members
@@ -307,7 +281,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:43 GMT
+      - Mon, 26 Sep 2016 14:15:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -325,7 +299,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c13ac9cf-9d29-41b3-985f-292734f89998
+      - 4b483946-6e58-4d64-ab0c-05e562b189ae
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -335,7 +309,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.061585'
+      - '0.040052'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -912,7 +886,7 @@ http_interactions:
         use of digital object identifiers for datasets.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Netherlands","year":2009,"logo-url":"https://assets.datacite.org/images/members/DELFT.png","email":"library@tudelft.nl","website":"http://www.library.tudelft.nl/en","phone":"+31
         15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":36,"total-pages":1,"page":1,"member-types":{"allocating":28,"non-allocating":8},"regions":{"amer":8,"apac":5,"emea":23},"years":{"2016":2,"2015":5,"2014":4,"2013":4,"2012":2,"2011":1,"2010":11,"2009":7}}}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:43 GMT
+  recorded_at: Mon, 26 Sep 2016 14:15:47 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/sources
@@ -932,7 +906,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:44 GMT
+      - Mon, 26 Sep 2016 14:15:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -950,7 +924,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 16e7ca4f-e451-46c5-8a42-ca91cd205d54
+      - 6ec96c24-9cbd-4fdf-94d8-eeed1b22bbb9
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -960,7 +934,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.038456'
+      - '0.039476'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -995,7 +969,7 @@ http_interactions:
         is a web-based Git repository hosting service.","state":"active","timestamp":"2016-09-26T11:20:34Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
         is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-09-26T11:33:59Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:44 GMT
+  recorded_at: Mon, 26 Sep 2016 14:15:47 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/groups
@@ -1015,7 +989,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:44 GMT
+      - Mon, 26 Sep 2016 14:15:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -1033,7 +1007,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 56a6c9b6-c5db-4a1e-8acc-6dcf08f9fc96
+      - 6a2efd9b-249d-477f-babc-eb261afdb784
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -1043,7 +1017,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.017003'
+      - '0.025259'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -1052,5 +1026,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:44 GMT
+  recorded_at: Mon, 26 Sep 2016 14:15:47 GMT
 recorded_with: VCR 2.9.3
