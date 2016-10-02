@@ -88,7 +88,7 @@ class Work < Base
   def self.get_lagotto_query_url(options={})
     if options[:id].present?
       # workaround, as nginx and the rails router swallow double backslashes
-      options["id"] = options["id"].gsub(/(http|https):\/+(\w+)/, '\1://\2')
+      options[:id] = options[:id].gsub(/(http|https):\/+(\w+)/, '\1://\2')
 
       lagotto_url + "?id=" + CGI.escape(options[:id])
     else
