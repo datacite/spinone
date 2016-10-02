@@ -88,7 +88,7 @@ describe Work, type: :model, vcr: true do
 
     it "doi_as_url" do
       response = subject.doi_as_url(doi)
-      expect(response).to eq("http://doi.org/10.5061/DRYAD.8515")
+      expect(response).to eq("https://doi.org/10.5061/DRYAD.8515")
     end
 
     it "github_as_owner_url" do
