@@ -6,7 +6,7 @@ class Publisher < Base
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
-    @member_id = attributes.fetch("member_id", nil)
+    @member_id = attributes["member_id"].present? ? attributes["member_id"].downcase : nil
     @publisher_id = attributes.fetch("publisher_id", nil)
     @ids = attributes.fetch("ids", nil)
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
