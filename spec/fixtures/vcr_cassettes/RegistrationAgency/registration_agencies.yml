@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:08:32 GMT
+      - Tue, 04 Oct 2016 20:04:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b5dcb76b-9fde-4528-ae2e-4903390cd612
+      - 54354e70-95bd-4c92-8eee-a9b9a63890d3
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
-      - POST, GET, PUT, DELETE, OPTIONS
+      - GET, POST, OPTIONS
       Etag:
       - W/"307dfe0132d87009c4ac66b3e82fe5d6"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.019766'
+      - '0.056738'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"registration-agency-list","message-version":"v7","total":6},"registration_agencies":[{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"},{"id":"datacite","title":"DataCite","timestamp":"2016-04-27T02:23:01Z"},{"id":"github","title":"GitHub","timestamp":"2016-04-27T02:23:01Z"},{"id":"orcid","title":"ORCID","timestamp":"2016-04-27T02:23:01Z"},{"id":"twitter","title":"Twitter","timestamp":"2016-04-27T02:23:01Z"},{"id":"wikipedia","title":"Wikipedia","timestamp":"2016-04-27T02:23:01Z"}]}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:08:32 GMT
+  recorded_at: Tue, 04 Oct 2016 20:04:55 GMT
 recorded_with: VCR 2.9.3

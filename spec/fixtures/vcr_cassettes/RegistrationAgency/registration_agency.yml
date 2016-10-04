@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:08:32 GMT
+      - Tue, 04 Oct 2016 20:04:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - cdbbeeb9-c1e8-45fe-8a6b-1b68803e1438
+      - 87cbcf4b-20bc-492a-8801-e256c8f9be18
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
-      - POST, GET, PUT, DELETE, OPTIONS
+      - GET, POST, OPTIONS
       Etag:
       - W/"b377f2275a7c1de0aa2f7303391338f5"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.015919'
+      - '0.011670'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"registration-agency","message-version":"v7"},"registration_agency":{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"}}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:08:32 GMT
+  recorded_at: Tue, 04 Oct 2016 20:04:55 GMT
 recorded_with: VCR 2.9.3

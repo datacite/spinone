@@ -1,7 +1,7 @@
 class RegistrationAgency < Base
   attr_reader :id, :title, :updated_at
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("id", nil)
     @title = attributes.fetch("title", nil)
     @updated_at = attributes.fetch("timestamp", nil)
@@ -29,10 +29,6 @@ class RegistrationAgency < Base
 
       { data: parse_items(items), meta: { total: total } }
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url
