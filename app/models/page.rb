@@ -1,7 +1,7 @@
 class Page < Base
   attr_reader :id, :author, :title, :container_title, :description, :license, :image_url, :tags, :issued, :updated_at
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("url").underscore.dasherize
     @author = attributes.fetch("author", [])
     @title = attributes.fetch("title", nil)
@@ -47,10 +47,6 @@ class Page < Base
       i["tags"].each { |tag| sum[tag] = sum[tag].to_i + 1 }
       sum
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url
