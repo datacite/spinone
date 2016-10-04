@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:07:29 GMT
+      - Tue, 04 Oct 2016 16:53:02 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c54aa8d1-5d5a-42fc-9e89-2278a037161b
+      - ae7f9600-fdf0-4e1d-a61c-45677bc417a8
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
-      - POST, GET, PUT, DELETE, OPTIONS
+      - GET, POST, OPTIONS
       Etag:
-      - W/"ac5cadcdcd9446532f090d504802491e"
+      - W/"7c0115d559bcfdef95a80ccf205a1f2d"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.014571'
+      - '0.014791'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,12 +56,12 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"source","message-version":"v7"},"source":{"id":"datacite_related","title":"DataCite
         (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-09-21T20:28:19Z","work_count":283370,"relation_count":420690,"result_count":2964588,"by_day":{"with_results":0,"without_results":0,"not_updated":420631},"by_month":{"with_results":694,"without_results":217,"not_updated":419720}}}'
+        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}}}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:07:30 GMT
+  recorded_at: Tue, 04 Oct 2016 16:53:02 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/groups/relations
+    uri: https://eventdata.datacite.org/api/groups
     body:
       encoding: US-ASCII
       string: ''
@@ -78,7 +78,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:07:30 GMT
+      - Tue, 04 Oct 2016 16:53:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -96,24 +96,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 875d984d-a582-40b1-b375-7754d8c5f125
+      - dc37864a-1841-4ec3-82aa-24f090400e21
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
-      - POST, GET, PUT, DELETE, OPTIONS
+      - GET, POST, OPTIONS
       Etag:
-      - W/"1b027c17ab34aef1a555628f55341322"
+      - W/"bdb91c439c4c90224189c7eb36197501"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.009931'
+      - '0.016497'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"group","message-version":"v7"},"group":{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"}}'
+      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:07:30 GMT
+  recorded_at: Tue, 04 Oct 2016 16:53:03 GMT
 recorded_with: VCR 2.9.3
