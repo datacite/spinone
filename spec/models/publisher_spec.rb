@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Publisher, type: :model, vcr: true do
   it "publishers" do
     publishers = Publisher.where(rows: 50)[:data]
-    expect(publishers.length).to eq(74)
+    expect(publishers.length).to eq(50)
     publisher = publishers.first
     expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
@@ -17,13 +17,13 @@ describe Publisher, type: :model, vcr: true do
 
   it "publishers with registration_agency_id" do
     publishers = Publisher.where(registration_agency_id: "datacite")[:data]
-    expect(publishers.length).to eq(49)
+    expect(publishers.length).to eq(25)
     publisher = publishers.first
-    expect(publisher.title).to eq("Public Library of Science (PLoS)")
+    expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
 
   it "publisher" do
-    publishers = Publisher.where(id: "ETHZ.UBASOJS")[:data]
-    expect(publishers.first.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
+    publisher = Publisher.where(id: "ETHZ.UBASOJS")[:data]
+    expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
 end
