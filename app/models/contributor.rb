@@ -4,7 +4,7 @@ class Contributor < Base
   # include helper module for extracting identifier
   include Identifiable
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("id", nil)
     @given = attributes.fetch("given", nil)
     @family = attributes.fetch("family", nil)
@@ -39,17 +39,13 @@ class Contributor < Base
       item = result.fetch("data", {}).fetch("contributor", {})
       return nil if item.blank?
 
-      { data: parse_items([item]) }
+      { data: parse_item(item) }
     else
       items = result.fetch("data", {}).fetch("contributors", [])
       total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
 
       { data: parse_items(items), meta: { total: total } }
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url
