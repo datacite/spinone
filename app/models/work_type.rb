@@ -1,7 +1,7 @@
 class WorkType < Base
   attr_reader :id, :title, :container, :updated_at
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @container = attributes.fetch("container", nil)
@@ -30,10 +30,6 @@ class WorkType < Base
 
       { data: parse_items(items), meta: { total: total } }
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url

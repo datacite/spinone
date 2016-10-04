@@ -1,10 +1,10 @@
 class ResourceType < Base
   attr_reader :id, :title, :updated_at
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
-    @updated_at = DATACITE_SCHEMA_DATE
+    @updated_at = DATACITE_SCHEMA_DATE + "T00:00:00Z"
   end
 
   def self.get_query_url(options={})
@@ -15,20 +15,19 @@ class ResourceType < Base
     return nil if result.blank? || result['errors']
 
     items = result.fetch("data", {}).fetch("schema", {}).fetch("simpleType", {}).fetch('restriction', {}).fetch('enumeration', [])
+    items = items.map do |item|
+      id = item.fetch("value").underscore.dasherize
+
+      { "id" => id, "title" => id.underscore.humanize }
+    end
 
     if options[:id]
-      item = items.find { |i| i["value"] == options[:id] }
+      item = items.find { |i| i["id"] == options[:id] }
       return nil if item.nil?
 
       { data: parse_item(item) }
     else
       { data: parse_items(items), meta: { total: items.length } }
     end
-  end
-
-  def self.parse_item(item)
-    id = item.fetch("value")
-    title = id.underscore.humanize
-    self.new("id" => id, "title" => title)
   end
 end
