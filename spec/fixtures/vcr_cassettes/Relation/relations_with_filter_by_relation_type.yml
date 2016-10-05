@@ -1,0 +1,382 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/relations?page=1&per_page=25&relation_type_id=references
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 22:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 86b91775-8a44-4eca-9cc3-6ab0aa6c5032
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"25edc1bb54347d14300f14c198bd8d3b"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '19.300453'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"relation-list","message-version":"v7","total":2562699,"total_pages":102508,"page":1,"sources":{"datacite_related":2497532,"datacite_orcid":1,"datacite_crossref":65166},"relation_types":{"references":2562699}},"relations":[{"subj_id":"http://doi.org/10.1594/PANGAEA.857257","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
+        Diana","ORCID":"http://orcid.org/0000-0003-2359-7340"},{"family":"Fleitmann","given":"Dominik"},{"family":"Cheng","given":"Hai"},{"family":"Tabersky","given":"Daniel"},{"family":"Günther","given":"Detlef"},{"family":"Edwards","given":"R
+        Lawrence"}],"title":"Trace element concent of Stagamite MF-3 from Schafsloch
+        Cave","published":"2015","issued":"2016-02-19T03:04:38Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857257","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1007/S00300-016-1995-X","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
+        of macrozoobenthic organisms settled in artificial soft sediment at Brandal","published":"2016","issued":"2016-05-12T03:05:50Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863063","obj_id":"http://doi.org/10.2312/BZPM_0695_2016","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Appen","given":"Wilken-Jon","ORCID":"http://orcid.org/0000-0002-7200-0099"},{"family":"Stein","given":"Ruediger"},{"family":"Wisotzki","given":"Andreas"}],"title":"Physical
+        oceanography during POLARSTERN cruise PS93.1 (ARK-XXIX/2.1)","published":"2016","issued":"2016-09-05T03:04:25Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863063","work_type_id":"dataset","results":{},"timestamp":"2016-09-17T19:07:37Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861143","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        subaquatic dunes","published":"2016","issued":"2016-07-07T03:24:26Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861143","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861181","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Collection
+        of seafloor photos from the western Bay of Plenty","published":"2016","issued":"2016-07-07T03:24:27Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861181","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861052","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        grain size measurements","published":"2016","issued":"2016-07-07T03:24:23Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861052","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861138","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
+        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
+        facies classification","published":"2016","issued":"2016-07-07T03:24:24Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861138","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.807895","obj_id":"http://doi.org/10.1029/2012GC004125","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Badesab","given":"Firoz
+        Kadar"},{"family":"Dobeneck","given":"Tilo"},{"family":"Bryan","given":"Karin
+        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Müller","given":"Hendrik"},{"family":"Briggs","given":"Roger
+        M"},{"family":"Frederichs","given":"Thomas"},{"family":"Kwoll","given":"Eva"}],"title":"(Figure
+        6a) Computed wave parameters and critical velocities for two dominant grain
+        sizes","published":"2012","issued":"2013-03-26T20:21:35Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.807895","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857256","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
+        Diana","ORCID":"http://orcid.org/0000-0003-2359-7340"},{"family":"Fleitmann","given":"Dominik"},{"family":"Cheng","given":"Hai"},{"family":"Tabersky","given":"Daniel"},{"family":"Günther","given":"Detlef"},{"family":"Edwards","given":"R
+        Lawrence"}],"title":"Chronology and stable isotopes of Stagamite MF-3 from
+        Schafsloch Cave","published":"2015","issued":"2016-02-19T03:04:36Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857256","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:20Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863598","obj_id":"http://doi.org/10.1002/2015JC011228","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2003","published":"2016","issued":"2016-09-02T03:02:30Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863598","work_type_id":"dataset","results":{},"timestamp":"2016-09-06T00:06:23Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863600","obj_id":"http://doi.org/10.1002/2015JC011228","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2005","published":"2016","issued":"2016-09-02T03:02:33Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863600","work_type_id":"dataset","results":{},"timestamp":"2016-09-06T00:06:23Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863599","obj_id":"http://doi.org/10.1002/2015JC011228","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2004","published":"2016","issued":"2016-09-02T03:02:32Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863599","work_type_id":"dataset","results":{},"timestamp":"2016-09-06T00:06:23Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863598","obj_id":"http://doi.org/10.1002/JGRC.20303","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2003","published":"2016","issued":"2016-09-02T03:02:30Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863598","work_type_id":"dataset","results":{},"timestamp":"2016-09-06T00:06:22Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863599","obj_id":"http://doi.org/10.1002/JGRC.20303","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2004","published":"2016","issued":"2016-09-02T03:02:32Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863599","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T20:46:47Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.863600","obj_id":"http://doi.org/10.1002/JGRC.20303","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Mata","given":"Mauricio
+        M","ORCID":"http://orcid.org/0000-0002-9028-8284"},{"family":"Garcia","given":"Carlos
+        Alberto Eiras"}],"title":"Physical oceanography during Ary Rongel cruise GOAL2005","published":"2016","issued":"2016-09-02T03:02:33Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863600","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T20:46:47Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.860669","obj_id":"http://doi.org/10.1016/J.GEOMORPH.2016.07.017","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Fraccascia","given":"Serena"},{"family":"Winter","given":"Christian"},{"family":"Ernstsen","given":"Verner
+        Brandbyge","ORCID":"http://orcid.org/0000-0003-0849-2938"},{"family":"Hebbeln","given":"Dierk"}],"title":"3.
+        Scale average variance of dune class large dunes (10-100 m) from Knudedyb,
+        Danish Wadden Sea","published":"2016","issued":"2016-09-01T03:11:05Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.860669","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T20:46:30Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.860668","obj_id":"http://doi.org/10.1016/J.GEOMORPH.2016.07.017","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Fraccascia","given":"Serena"},{"family":"Winter","given":"Christian"},{"family":"Ernstsen","given":"Verner
+        Brandbyge","ORCID":"http://orcid.org/0000-0003-0849-2938"},{"family":"Hebbeln","given":"Dierk"}],"title":"2.
+        Scale average variance of dune class medium dunes (5-10 m) from Knudedyb,
+        Danish Wadden Sea","published":"2016","issued":"2016-09-01T03:11:04Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.860668","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T14:15:51Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861740","obj_id":"http://doi.org/10.1002/2015PA002819","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kretschmer","given":"Kerstin"},{"family":"Kucera","given":"Michal","ORCID":"http://orcid.org/0000-0002-7817-9018"},{"family":"Schulz","given":"Michael"}],"title":"Compilation
+        of planktonic foraminiferal census data for Heinrich Stadial 1 for the North
+        Atlantic Ocean","published":"2016","issued":"2016-09-01T03:10:54Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861740","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T14:15:49Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861742","obj_id":"http://doi.org/10.1002/2015PA002819","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kretschmer","given":"Kerstin"},{"family":"Kucera","given":"Michal","ORCID":"http://orcid.org/0000-0002-7817-9018"},{"family":"Schulz","given":"Michael"}],"title":"Planktonic
+        foraminifera model PLAFOM coupled to an ecosystem model","published":"2016","issued":"2016-09-01T03:10:56Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861742","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T14:15:49Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.848654","obj_id":"http://doi.org/10.1007/S11104-016-3036-5","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Ali","given":"Hamada
+        E","ORCID":"http://orcid.org/0000-0002-7062-9344"},{"family":"Reineking","given":"Björn","ORCID":"http://orcid.org/0000-0001-5277-9181"},{"family":"Münkemüller","given":"Tamara"}],"title":"Plant
+        parameters of agricultural field margins of South Korea","published":"2015","issued":"2015-09-08T03:03:03Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.848654","URL":"https://doi.pangaea.de/10.1594/PANGAEA.848654","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T14:15:33Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.848653","obj_id":"http://doi.org/10.1007/S11104-016-3036-5","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Ali","given":"Hamada
+        E","ORCID":"http://orcid.org/0000-0002-7062-9344"},{"family":"Reineking","given":"Björn","ORCID":"http://orcid.org/0000-0001-5277-9181"},{"family":"Münkemüller","given":"Tamara"}],"title":"Soil
+        composition and physical parameters of agricultural field margins of South
+        Korea","published":"2015","issued":"2015-09-08T03:03:02Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.848653","URL":"https://doi.pangaea.de/10.1594/PANGAEA.848653","work_type_id":"dataset","results":{},"timestamp":"2016-09-04T14:15:32Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.860619","obj_id":"http://doi.org/10.1016/J.GEOMORPH.2016.07.017","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Fraccascia","given":"Serena"},{"family":"Winter","given":"Christian"},{"family":"Ernstsen","given":"Verner
+        Brandbyge","ORCID":"http://orcid.org/0000-0003-0849-2938"},{"family":"Hebbeln","given":"Dierk"}],"title":"1.
+        Scale average variance of dune class small dunes (1-5 m) from Knudedyb, Danish
+        Wadden Sea","published":"2016","issued":"2016-09-01T03:10:32Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.860619","work_type_id":"dataset","results":{},"timestamp":"2016-09-03T13:47:03Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.860676","obj_id":"http://doi.org/10.1016/J.GEOMORPH.2016.07.017","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Fraccascia","given":"Serena"},{"family":"Winter","given":"Christian"},{"family":"Ernstsen","given":"Verner
+        Brandbyge","ORCID":"http://orcid.org/0000-0003-0849-2938"},{"family":"Hebbeln","given":"Dierk"}],"title":"4.
+        Scale average variance of dune class very large dunes (100-500 m) from Knudedyb,
+        Danish Wadden Sea","published":"2016","issued":"2016-09-01T03:11:03Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.860676","work_type_id":"dataset","results":{},"timestamp":"2016-09-03T13:47:03Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.831499","obj_id":"http://doi.org/10.5194/ESSD-6-317-2014","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Lehodey","given":"Patrick","ORCID":"http://orcid.org/0000-0002-2753-4796"},{"family":"Senina","given":"Inna"},{"family":"Dragon","given":"Anne-Cécile"},{"family":"Arrizabalaga","given":"Haritz"}],"title":"Spatially
+        explicit estimates of North Atlantic albacore tuna (Thunnus alalunga) biomass
+        in the North Atlantic for the period 1956-2010 - Gridded data product (NetCDF)","published":"2014","issued":"2014-05-13T03:05:52Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.831499","work_type_id":"dataset","results":{},"timestamp":"2016-09-01T22:08:40Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.828226","obj_id":"http://doi.org/10.5194/ESSD-6-317-2014","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[],"title":"Spatially
+        explicit estimates of stock size, structure and biomass of North Atlantic
+        albacore tuna (Thunnus alalunga) in the North Atlantic for the period 1973-2011,
+        compiled from statistics about ICCAT fishery region L2","published":"2014","issued":"2014-03-04T03:05:23Z","DOI":"10.1594/PANGAEA.828226","work_type_id":"dataset","results":{},"timestamp":"2016-09-01T22:08:40Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 22:22:31 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 22:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e19a8ff9-2722-467d-ba35-7e82c16ae11d
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"f30871765f14db30e6470b920fd27b42"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.021013'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
+        (DataCite)","group_id":"relations","description":"Import works linked to a
+        DataCite DOI from Crossref.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
+        (Crossref)","group_id":"relations","description":"Import works with Crossref
+        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":12,"without_results":32,"not_updated":225368}},{"id":"datacite_github","title":"DataCite
+        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
+        via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
+        (RelatedIdentifier)","group_id":"relations","description":"Import works with
+        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}},{"id":"europe_pmc_fulltext","title":"Europe
+        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
+        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-10-04T16:28:13Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
+        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
+        citations.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
+        (ORCID Search and Link)","group_id":"contributions","description":"Import
+        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
+        (ORCID)","group_id":"contributions","description":"Import works with ORCID
+        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
+        (Contributor)","group_id":"contributions","description":"Import contributors
+        with works via the Github API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
+        works via the ORCID API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
+        (Publisher)","group_id":"publishers","description":"Import publishers via
+        the Crossref REST API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
+        (Datacentre)","group_id":"publishers","description":"Import data centres via
+        the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
+        is the largest social network.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
+        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
+        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 22:22:31 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 22:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a045d2e3-6f0e-4cb8-a71a-679fc01e90e2
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"bdb91c439c4c90224189c7eb36197501"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.026512'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 22:22:31 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/relation_types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 22:22:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 850fdc92-25ad-4609-85d0-6afd970c4bf2
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"ddd1a36f9fddddf9e5cc51894c8d4a2a"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.044037'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"relation_type-list","message-version":"v7","total":39},"relation_types":[{"id":"bookmarks","title":"Bookmarks","inverse_title":"Is
+        bookmarked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"cites","title":"Cites","inverse_title":"Is
+        cited by","timestamp":"2016-03-21T15:05:03Z"},{"id":"compiles","title":"Compiles","inverse_title":"Is
+        compiled by","timestamp":"2016-03-21T15:05:03Z"},{"id":"continues","title":"Continues","inverse_title":"Is
+        continued by","timestamp":"2016-03-21T15:05:03Z"},{"id":"corrects","title":"Corrects","inverse_title":"Is
+        corrected by","timestamp":"2016-03-21T15:05:04Z"},{"id":"discusses","title":"Discusses","inverse_title":"Is
+        discussed by","timestamp":"2016-03-21T15:05:04Z"},{"id":"documents","title":"Documents","inverse_title":"Is
+        documented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"downloads","title":"Downloads","inverse_title":"Is
+        downloaded by","timestamp":"2016-03-21T15:05:04Z"},{"id":"has_metadata","title":"Has
+        metadata","inverse_title":"Is metadata for","timestamp":"2016-03-21T15:05:03Z"},{"id":"has_part","title":"Has
+        part","inverse_title":"Is part of","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_bookmarked_by","title":"Is
+        Bookmarked by","inverse_title":"Bookmarks","timestamp":"2016-04-08T12:43:04Z"},{"id":"is_cited_by","title":"Is
+        cited by","inverse_title":"Cites","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_compiled_by","title":"Is
+        compiled by","inverse_title":"Compiles","timestamp":"2016-03-22T17:41:55Z"},{"id":"is_continued_by","title":"Is
+        continued by","inverse_title":"Continues","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_corrected_by","title":"Is
+        corrected by","inverse_title":"Corrects","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_derived_from","title":"Is
+        derived from","inverse_title":"Is source of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_discussed_by","title":"Is
+        discussed by","inverse_title":"Discusses","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_documented_by","title":"Is
+        documented by","inverse_title":"Documents","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_downloaded_by","title":"Is
+        downloaded by","inverse_title":"Downloads","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_identical_to","title":"Is
+        identical to","inverse_title":"Is identical to","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_liked_by","title":"Is
+        Liked by","inverse_title":"Likes","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_metadata_for","title":"Is
+        metadata for","inverse_title":"Has metadata","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_new_version_of","title":"Is
+        new version of","inverse_title":"Is previous version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_original_form_of","title":"Is
+        original form of","inverse_title":"Is variant form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_part_of","title":"Is
+        part of","inverse_title":"Has part","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_previous_version_of","title":"Is
+        previous version of","inverse_title":"Is new version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_recommended_by","title":"Is
+        recommended by","inverse_title":"Recommends","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_referenced_by","title":"Is
+        referenced by","inverse_title":"References","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_reviewed_by","title":"Is
+        reviewed by","inverse_title":"reviews","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_source_of","title":"Is
+        source of","inverse_title":"Is derived from","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_supplement_to","title":"Is
+        supplement to","inverse_title":"Is supplemented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_supplemented_by","title":"Is
+        supplemented by","inverse_title":"Is supplement to","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_variant_form_of","title":"Is
+        variant form of","inverse_title":"Is original form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_viewed_by","title":"Is
+        viewed by","inverse_title":"Views","timestamp":"2016-03-21T15:05:04Z"},{"id":"likes","title":"Likes","inverse_title":"Is
+        Liked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"recommends","title":"Recommends","inverse_title":"Is
+        recommended by","timestamp":"2016-03-21T15:05:04Z"},{"id":"references","title":"References","inverse_title":"Is
+        referenced by","timestamp":"2016-03-21T15:05:03Z"},{"id":"reviews","title":"Reviews","inverse_title":"Is
+        reviewed by","timestamp":"2016-03-21T15:05:03Z"},{"id":"views","title":"Views","inverse_title":"Is
+        viewed by","timestamp":"2016-03-21T15:05:04Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 22:22:31 GMT
+recorded_with: VCR 2.9.3
