@@ -61,7 +61,7 @@ class Contribution < Base
 
   def self.parse_included(meta, options={})
     sources = Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
-    publishers = Publisher.collect_data(ids: meta.fetch(:publishers, {}).keys.join(",")).fetch(:data, [])
+    publishers = Publisher.collect_data(ids: meta.fetch(:publishers, {}).keys.join(","), rows: DEFAULT_ROWS).fetch(:data, [])
     sources + publishers
   end
 
