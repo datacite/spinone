@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:39 GMT
+      - Tue, 04 Oct 2016 20:26:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a9390662-3d38-461c-9c95-7535b5190733
+      - cf3fb9ec-a01e-4780-ac7a-ce8329941fd8
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.047232'
+      - '0.054673'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -111,7 +111,147 @@ http_interactions:
         analysis for the quartet (missing grandfather), (missing grandmother), mother
         and aunt","published":"2012","issued":"2012-07-15T09:30:24Z","DOI":"10.6084/M9.FIGSHARE.92820","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:45Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:39 GMT
+  recorded_at: Tue, 04 Oct 2016 20:26:05 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 20:26:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 78426fe7-0d24-466a-bb2d-f7955547fa18
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"09b45ca3006e82801502cdd5f010acd6"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.024366'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
+        (DataCite)","group_id":"relations","description":"Import works linked to a
+        DataCite DOI from Crossref.","state":"active","timestamp":"2016-10-04T20:05:12Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
+        (Crossref)","group_id":"relations","description":"Import works with Crossref
+        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T20:05:12Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":12,"without_results":32,"not_updated":225368}},{"id":"datacite_github","title":"DataCite
+        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
+        via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
+        (RelatedIdentifier)","group_id":"relations","description":"Import works with
+        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}},{"id":"europe_pmc_fulltext","title":"Europe
+        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
+        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-10-04T16:28:13Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
+        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
+        citations.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
+        (ORCID Search and Link)","group_id":"contributions","description":"Import
+        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
+        (ORCID)","group_id":"contributions","description":"Import works with ORCID
+        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T19:37:24Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
+        (Contributor)","group_id":"contributions","description":"Import contributors
+        with works via the Github API.","state":"active","timestamp":"2016-10-04T19:37:45Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
+        works via the ORCID API.","state":"active","timestamp":"2016-10-04T19:37:25Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
+        (Publisher)","group_id":"publishers","description":"Import publishers via
+        the Crossref REST API.","state":"active","timestamp":"2016-10-04T19:37:45Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
+        (Datacentre)","group_id":"publishers","description":"Import data centres via
+        the DataCite Solr API.","state":"active","timestamp":"2016-10-04T19:37:25Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
+        is the largest social network.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
+        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
+        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 20:26:05 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 20:26:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f09cce08-58f9-43bf-8878-df65c935c34a
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"bdb91c439c4c90224189c7eb36197501"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.018649'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 20:26:05 GMT
 - request:
     method: get
     uri: https://eventdata.datacite.org/api/publishers?ids=BL.BGI,BL.CCDC,CDL.BOISESTA,CDL.DIGSCI,CDL.DRYAD,CDL.LTERNET,CERN.JACOW,CERN.ZENODO,CRUI.POLITO,CRUI.UNIFI,ETHZ.BORIS,ETHZ.E-COLL,ETHZ.FSW,ETHZ.PHSG,ETHZ.SEALS,ETHZ.ZORA,GESIS.BSB,GESIS.CSES,GESIS.MDA,GESIS.UBHD,INIST.IFREMER,PURDUE.IUPUI,TIB.ADLNET,TIB.ETA,TIB.GFZBIB,TIB.PANGAEA,TIB.R-GATE,TIB.RADS,TIB.TUDO,TIB.UBMR,TIB.UKON,TIB.WIP,TIB.ZALF&page=1&per_page=25
@@ -131,7 +271,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:39 GMT
+      - Tue, 04 Oct 2016 20:26:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -149,17 +289,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - f6a13e33-41cb-4bdc-b277-0fb09fe2b0f3
+      - e5f2bfe2-8f48-4c23-8b67-82c7cdcce6fe
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"2b60a82fc85dafa5623767cde57a9213"
+      - W/"f002e76d036ae76cf57cea8cff417e79"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.042947'
+      - '0.105789'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -167,28 +307,28 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":33,"total_pages":2,"page":1,"registration_agencies":{"datacite":33},"members":{"GESIS":4,"BL":2,"ETHZ":6,"CDL":4,"PURDUE":1,"INIST":1,"CERN":2,"CRUI":2,"TIB":11}},"publishers":[{"id":"GESIS.BSB","title":"Bavarian
-        State Library","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-26T13:07:11Z"},{"id":"BL.BGI","title":"Beijing
-        Genomics Institute","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-09-26T11:12:01Z"},{"id":"ETHZ.BORIS","title":"Bern
-        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T12:14:52Z"},{"id":"TIB.GFZBIB","title":"Bibliothek
-        des Wissenschaftsparks Albert Einstein","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T11:19:01Z"},{"id":"CDL.BOISESTA","title":"Boise
-        State University","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T11:58:10Z"},{"id":"GESIS.CSES","title":"Comparative
-        Study of Electoral Systems","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-26T11:24:56Z"},{"id":"CDL.DIGSCI","title":"Digital
-        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:08:54Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T12:08:55Z"},{"id":"ETHZ.SEALS","title":"E-Periodica","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T12:08:56Z"},{"id":"TIB.ETA","title":"ETA-Florence
-        Renewable Energies","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T13:25:30Z"},{"id":"ETHZ.E-COLL","title":"ETH
-        E-Collection","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T11:36:03Z"},{"id":"ETHZ.FSW","title":"Foucault-Blog","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T11:35:38Z"},{"id":"GESIS.MDA","title":"GESIS
-        MDA Zeitschriften","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-09-26T12:16:22Z"},{"id":"PURDUE.IUPUI","title":"Indiana
-        University-Purdue University Indianapolis","prefixes":[],"registration_agency_id":"datacite","member_id":"PURDUE","timestamp":"2016-09-26T12:30:07Z"},{"id":"INIST.IFREMER","title":"Institut
-        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-09-26T11:39:57Z"},{"id":"CERN.JACOW","title":"JACOW","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-09-26T11:28:11Z"},{"id":"TIB.ZALF","title":"Leibniz-Zentrum
-        für Agrarlandschaftsforschung (ZALF) e. V.","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T12:24:42Z"},{"id":"CDL.LTERNET","title":"Long
-        Term Ecological Research (LTER) Network","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-09-26T11:26:33Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T12:55:02Z"},{"id":"ETHZ.PHSG","title":"PH
-        St. Gallen","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-09-26T11:21:43Z"},{"id":"CRUI.POLITO","title":"Politecnico
-        di Torino","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-09-26T12:38:12Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T12:57:48Z"},{"id":"TIB.ADLNET","title":"Romania
-        ADL Association","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T11:28:17Z"},{"id":"TIB.RADS","title":"Russian
-        Agency for Digital Standardization","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T11:08:54Z"},{"id":"TIB.TUDO","title":"Technische
-        Universität Dortmund","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-09-26T12:25:45Z"}]}'
+        State Library","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-04T20:23:05Z"},{"id":"BL.BGI","title":"Beijing
+        Genomics Institute","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-04T20:23:06Z"},{"id":"ETHZ.BORIS","title":"Bern
+        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-04T20:23:08Z"},{"id":"TIB.GFZBIB","title":"Bibliothek
+        des Wissenschaftsparks Albert Einstein","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T17:57:24Z"},{"id":"CDL.BOISESTA","title":"Boise
+        State University","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-04T18:15:44Z"},{"id":"GESIS.CSES","title":"Comparative
+        Study of Electoral Systems","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-04T18:58:14Z"},{"id":"CDL.DIGSCI","title":"Digital
+        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-04T17:08:56Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-04T20:08:54Z"},{"id":"ETHZ.SEALS","title":"E-Periodica","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-04T17:13:35Z"},{"id":"TIB.ETA","title":"ETA-Florence
+        Renewable Energies","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T18:10:13Z"},{"id":"ETHZ.E-COLL","title":"ETH
+        E-Collection","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-04T19:10:23Z"},{"id":"ETHZ.FSW","title":"Foucault-Blog","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-04T18:25:43Z"},{"id":"GESIS.MDA","title":"GESIS
+        MDA Zeitschriften","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-04T17:15:06Z"},{"id":"PURDUE.IUPUI","title":"Indiana
+        University-Purdue University Indianapolis","prefixes":[],"registration_agency_id":"datacite","member_id":"PURDUE","timestamp":"2016-10-04T20:11:26Z"},{"id":"INIST.IFREMER","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-04T20:11:31Z"},{"id":"CERN.JACOW","title":"JACOW","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-04T20:08:52Z"},{"id":"TIB.ZALF","title":"Leibniz-Zentrum
+        für Agrarlandschaftsforschung (ZALF) e. V.","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T17:20:53Z"},{"id":"CDL.LTERNET","title":"Long
+        Term Ecological Research (LTER) Network","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-04T19:26:26Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T17:29:54Z"},{"id":"ETHZ.PHSG","title":"PH
+        St. Gallen","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-04T19:35:11Z"},{"id":"CRUI.POLITO","title":"Politecnico
+        di Torino","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-10-04T20:17:35Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T18:53:57Z"},{"id":"TIB.ADLNET","title":"Romania
+        ADL Association","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T19:48:41Z"},{"id":"TIB.RADS","title":"Russian
+        Agency for Digital Standardization","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T17:29:13Z"},{"id":"TIB.TUDO","title":"Technische
+        Universität Dortmund","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-04T18:55:30Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:39 GMT
+  recorded_at: Tue, 04 Oct 2016 20:26:06 GMT
 - request:
     method: get
     uri: https://profiles.datacite.org/api/members
@@ -208,7 +348,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:40 GMT
+      - Tue, 04 Oct 2016 20:26:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -226,17 +366,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 108930d6-c00c-4834-84df-8215f4a5c3b7
+      - 3ed614c9-6321-4e4c-8d01-d180f70f03d0
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"50164e1d776b0e16ad3a8a1187a643b6"
+      - W/"5d6e5e75fe587a4148f6bedb0fd84566"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.067427'
+      - '0.042326'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -410,7 +550,17 @@ http_interactions:
         level and analyzable data and software from the LHC experiments.\u003c/p\u003e\n\n\u003cp\u003eFurthermore,
         CERN is also providing DOIs to ZENODO, a multidisciplinary data repository
         for the “long tail” of research results. It allows researchers to share and
-        preserve their output independent of size, type of material or discipline.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2014,"logo-url":"https://assets.datacite.org/images/members/CERN.png","email":"doi-service@cern.ch","website":"http://doi.web.cern.ch/","phone":null,"updated":"2016-07-31T21:30:25.000Z"}},{"id":"zbmed","type":"members","attributes":{"title":"German
+        preserve their output independent of size, type of material or discipline.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2014,"logo-url":"https://assets.datacite.org/images/members/CERN.png","email":"doi-service@cern.ch","website":"http://doi.web.cern.ch/","phone":null,"updated":"2016-07-31T21:30:25.000Z"}},{"id":"figshare","type":"members","attributes":{"title":"figshare","description":"\u003cp\u003efigshare
+        is a repository where users can make all of their research outputs available
+        in a citable, shareable and discoverable manner.\u003c/p\u003e\n\n\u003cp\u003efigshare
+        allows users to upload any file format to be previewed in the browser so that
+        any research output, from posters and presentations to datasets and code,
+        can be disseminated in a way that the current scholarly publishing model does
+        not allow.\u003c/p\u003e\n\n\u003cp\u003eOur mission is to change the face
+        of academic publishing with the improved dissemination and discoverability
+        and reusability of all scholarly research.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"United
+        Kingdom","year":2016,"logo-url":"https://assets.datacite.org/images/members/figshare.png","email":"info@figshare.com","website":"https://figshare.com","phone":"+44
+        (0) 20 7418 5573","updated":"2016-10-04T11:41:30.000Z"}},{"id":"zbmed","type":"members","attributes":{"title":"German
         National Library of Medicine","description":"\u003cp\u003e\u0026quot;ZB MED
         (German National Library of Medicine) – Leibniz Information Centre for Life
         Sciences\u0026quot; is Germany\u0026#39;s main service centre for specialist
@@ -811,12 +961,12 @@ http_interactions:
         contributions to scientific record through trustworthy registration and identification
         of datasets. The current focus of DataCite Netherlands is on promoting the
         use of digital object identifiers for datasets.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Netherlands","year":2009,"logo-url":"https://assets.datacite.org/images/members/DELFT.png","email":"library@tudelft.nl","website":"http://www.library.tudelft.nl/en","phone":"+31
-        15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":36,"total-pages":1,"page":1,"member-types":{"allocating":28,"non-allocating":8},"regions":{"amer":8,"apac":5,"emea":23},"years":{"2016":2,"2015":5,"2014":4,"2013":4,"2012":2,"2011":1,"2010":11,"2009":7}}}'
+        15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":37,"total-pages":1,"page":1,"member-types":{"allocating":29,"non-allocating":8},"regions":{"amer":8,"apac":5,"emea":24},"years":{"2016":3,"2015":5,"2014":4,"2013":4,"2012":2,"2011":1,"2010":11,"2009":7}}}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:40 GMT
+  recorded_at: Tue, 04 Oct 2016 20:26:06 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/sources
+    uri: https://eventdata.datacite.org/api/registration_agencies
     body:
       encoding: US-ASCII
       string: ''
@@ -833,7 +983,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Mon, 26 Sep 2016 14:15:40 GMT
+      - Tue, 04 Oct 2016 20:26:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -851,107 +1001,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2c3be491-5dbc-4b28-a509-9068e3b68267
+      - b3a6314c-fb6e-482b-8f17-ca29faf88f03
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"72afd6dff65cf070357a7ae0d216e606"
+      - W/"307dfe0132d87009c4ac66b3e82fe5d6"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.028788'
+      - '0.024027'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
-        (DataCite)","group_id":"relations","description":"Import works linked to a
-        DataCite DOI from Crossref.","state":"active","timestamp":"2016-09-26T12:05:10Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
-        (Crossref)","group_id":"relations","description":"Import works with Crossref
-        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-09-26T12:05:10Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":25,"without_results":58,"not_updated":225329}},{"id":"datacite_github","title":"DataCite
-        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
-        via the DataCite Solr API.","state":"active","timestamp":"2016-09-26T11:41:40Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
-        (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-09-26T11:20:20Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":2,"without_results":0,"not_updated":420632},"by_month":{"with_results":455,"without_results":77,"not_updated":420102}},{"id":"europe_pmc_fulltext","title":"Europe
-        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
-        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-09-26T13:48:08Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
-        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
-        citations.","state":"active","timestamp":"2016-09-26T13:48:08Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
-        (ORCID Search and Link)","group_id":"contributions","description":"Import
-        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-09-26T13:48:09Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
-        (ORCID)","group_id":"contributions","description":"Import works with ORCID
-        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-09-26T13:48:09Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
-        (Contributor)","group_id":"contributions","description":"Import contributors
-        with works via the Github API.","state":"active","timestamp":"2016-09-26T11:35:22Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
-        works via the ORCID API.","state":"active","timestamp":"2016-09-26T11:42:44Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
-        (Publisher)","group_id":"publishers","description":"Import publishers via
-        the Crossref REST API.","state":"active","timestamp":"2016-09-26T11:42:44Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
-        (Datacentre)","group_id":"publishers","description":"Import data centres via
-        the DataCite Solr API.","state":"active","timestamp":"2016-09-26T11:42:44Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
-        is the largest social network.","state":"active","timestamp":"2016-09-26T11:42:44Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
-        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-09-26T11:20:34Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
-        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-09-26T11:33:59Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+      string: '{"meta":{"status":"ok","message-type":"registration-agency-list","message-version":"v7","total":6},"registration_agencies":[{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"},{"id":"datacite","title":"DataCite","timestamp":"2016-04-27T02:23:01Z"},{"id":"github","title":"GitHub","timestamp":"2016-04-27T02:23:01Z"},{"id":"orcid","title":"ORCID","timestamp":"2016-04-27T02:23:01Z"},{"id":"twitter","title":"Twitter","timestamp":"2016-04-27T02:23:01Z"},{"id":"wikipedia","title":"Wikipedia","timestamp":"2016-04-27T02:23:01Z"}]}'
     http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:40 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/groups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Mon, 26 Sep 2016 14:15:41 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - fe0cb570-b8a9-49de-9fe9-aa6920911fb6
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"bdb91c439c4c90224189c7eb36197501"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.016032'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
-    http_version: 
-  recorded_at: Mon, 26 Sep 2016 14:15:41 GMT
+  recorded_at: Tue, 04 Oct 2016 20:26:06 GMT
 recorded_with: VCR 2.9.3
