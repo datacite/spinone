@@ -59,7 +59,7 @@ describe DataciteRelated, type: :model, vcr: true do
       response = subject.get_data
       expect(response["data"]["response"]["numFound"]).to eq(714)
       doc = response["data"]["response"]["docs"].first
-      expect(doc["doi"]).to eq("10.5061/DRYAD.MM5M1/1")
+      expect(doc["doi"]).to eq("10.7480/KNOB.113.2014.3")
     end
 
     it "should catch errors with the Datacite Metadata Search API" do
@@ -84,15 +84,15 @@ describe DataciteRelated, type: :model, vcr: true do
 
       expect(response.length).to eq(208)
       expect(response.first[:prefix]).to eq("10.5061")
-      expect(response.first[:relation]).to eq("subj_id"=>"http://doi.org/10.5061/DRYAD.56M2G/1",
-                                              "obj_id"=>"http://doi.org/10.5061/DRYAD.56M2G",
+      expect(response.first[:relation]).to eq("subj_id"=>"https://doi.org/10.5061/DRYAD.56M2G/1",
+                                              "obj_id"=>"https://doi.org/10.5061/DRYAD.56M2G",
                                               "relation_type_id"=>"is_part_of",
                                               "source_id"=>"datacite_related",
                                               "publisher_id"=>"CDL.DRYAD",
                                               "registration_agency_id" => "datacite",
                                               "occurred_at"=>"2015-04-08T13:54:45Z")
 
-      expect(response.first[:subj]).to eq("pid"=>"http://doi.org/10.5061/DRYAD.56M2G/1",
+      expect(response.first[:subj]).to eq("pid"=>"https://doi.org/10.5061/DRYAD.56M2G/1",
                                           "DOI"=>"10.5061/DRYAD.56M2G/1",
                                           "author"=>[{"family"=>"Bataillon", "given"=>"Thomas"}, {"family"=>"Duan", "given"=>"Jinjie"}],
                                           "title"=>"Zip archive VCF files",
@@ -105,8 +105,8 @@ describe DataciteRelated, type: :model, vcr: true do
                                           "type"=>"dataset")
 
       expect(response[2][:prefix]).to eq("10.5061")
-      expect(response[2][:relation]).to eq("subj_id"=>"http://doi.org/10.5061/DRYAD.HT0HS",
-                                           "obj_id"=>"http://doi.org/10.1186/S12864-015-1469-5",
+      expect(response[2][:relation]).to eq("subj_id"=>"https://doi.org/10.5061/DRYAD.HT0HS",
+                                           "obj_id"=>"https://doi.org/10.1186/S12864-015-1469-5",
                                            "relation_type_id"=>"is_referenced_by",
                                            "source_id"=>"datacite_crossref",
                                            "publisher_id"=>"CDL.DRYAD",

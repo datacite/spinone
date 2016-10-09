@@ -84,7 +84,7 @@ describe DataciteGithub, type: :model, vcr: true do
 
       expect(response.length).to eq(60)
       expect(response[2][:prefix]).to eq("10.5281")
-      expect(response[2][:relation]).to eq("subj_id"=>"http://doi.org/10.5281/ZENODO.16396",
+      expect(response[2][:relation]).to eq("subj_id"=>"https://doi.org/10.5281/ZENODO.16396",
                                            "obj_id"=>"https://github.com/SlicerProstate/SlicerProstate",
                                            "relation_type_id"=>"is_supplement_to",
                                            "source_id"=>"datacite_github",
@@ -92,7 +92,7 @@ describe DataciteGithub, type: :model, vcr: true do
                                            "registration_agency_id" => "github",
                                            "occurred_at"=>"2015-03-26T20:45:10Z")
 
-      expect(response[2][:subj]).to eq("pid"=>"http://doi.org/10.5281/ZENODO.16396",
+      expect(response[2][:subj]).to eq("pid"=>"https://doi.org/10.5281/ZENODO.16396",
                                        "DOI"=>"10.5281/ZENODO.16396",
                                        "author"=>[{"family"=>"Fedorov", "given"=>"Andrey"}, {"family"=>"Nguyen", "given"=>"Paul L"}, {"family"=>"Tuncali", "given"=>"Kemal"}, {"family"=>"Tempany", "given"=>"Clare"}],
                                        "title"=>"Annotated MRI and ultrasound volume images of the prostate",

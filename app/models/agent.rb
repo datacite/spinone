@@ -211,7 +211,7 @@ class Agent < ActiveRecord::Base
                                  "source_token" => uuid,
                                  "callback" => callback } }
 
-      Maremma.post push_url, data: deposit, token: access_token
+      Maremma.post push_url, data: deposit.to_json, content_type: 'json', token: access_token
     end
   end
 

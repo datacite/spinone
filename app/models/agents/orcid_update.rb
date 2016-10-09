@@ -30,7 +30,7 @@ class OrcidUpdate < Agent
                              "doi" => doi_from_url(relation.fetch("obj_id", nil)),
                              "source_id" => relation.fetch("source_id", nil) } }
 
-      Maremma.post push_url, data: claim, token: access_token
+      Maremma.post push_url, data: claim.to_json, token: access_token
     end
   end
 end

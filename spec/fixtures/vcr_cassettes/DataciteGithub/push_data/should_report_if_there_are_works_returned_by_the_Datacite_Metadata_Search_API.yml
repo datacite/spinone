@@ -1,0 +1,3398 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16396","obj_id":"https://doi.org/10.1007/S11548-015-1180-7","relation_type_id":"is_supplement_to","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - bffe744f-383e-4aee-b783-496c080ed217
+      X-Runtime:
+      - '0.009021'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:50 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16396","obj_id":"https://doi.org/10.1016/J.MRI.2012.05.001","relation_type_id":"cites","source_id":"datacite_crossref","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 609f73bc-47ae-49ec-8b0a-4dd2409646ab
+      X-Runtime:
+      - '0.008513'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:51 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5fcd3998-bb15-4fb5-b01a-186e38a05b6b
+      X-Runtime:
+      - '0.007838'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:51 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/SlicerProstate","obj_id":"https://github.com/SlicerProstate/SlicerProstate","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 73dcffb5-82cb-485b-8ae9-2a4b7c4fd3ba
+      X-Runtime:
+      - '0.005733'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:51 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16396","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16396","DOI":"10.5281/ZENODO.16396","author":[{"family":"Fedorov","given":"Andrey"},{"family":"Nguyen","given":"Paul
+        L"},{"family":"Tuncali","given":"Kemal"},{"family":"Tempany","given":"Clare"}],"title":"Annotated
+        MRI and ultrasound volume images of the prostate","container-title":"Zenodo","published":"2015","issued":"2015-03-26T20:45:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"dataset"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e26aa01b-a2eb-41c7-9512-57e1407223eb
+      X-Runtime:
+      - '0.008266'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:51 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/siavashk","obj_id":"https://github.com/siavashk/GMM-FEM","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1d8baf4d-9376-4a31-a905-6dfd827d98f9
+      X-Runtime:
+      - '0.007689'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:52 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16650","obj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16650","DOI":"10.5281/ZENODO.16650","author":[{"literal":"Jason
+        K. Moore"},{"literal":"Christopher Dembia"}],"title":"DynamicistToolKit: Version
+        0.4.0","container-title":"Zenodo","published":"2015","issued":"2015-04-07T05:43:27Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 8df1f45f-df89-4cca-8e08-de2901a23659
+      X-Runtime:
+      - '0.009594'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:52 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/moorepants/DynamicistToolKit/tree/v0.4.0","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - fb21133b-2aba-4c68-9816-8d2f3eb336b9
+      X-Runtime:
+      - '0.006682'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:52 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/moorepants","obj_id":"https://github.com/moorepants/DynamicistToolKit","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5e7576ad-a8ec-44a4-ac15-f14770c6d19d
+      X-Runtime:
+      - '0.007341'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:53 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16651","obj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16651","DOI":"10.5281/ZENODO.16651","author":[{"family":"Silva","given":"Anders"},{"family":"Russello","given":"Michael
+        A"}],"title":"irelr: an R package for reconstructing pedigrees with molecular
+        data","container-title":"Zenodo","published":"2015","issued":"2015-04-07T07:46:04Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 20240820-767c-4ebe-b554-59ec7322cd92
+      X-Runtime:
+      - '0.008839'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:53 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/andersgs/irelr/tree/v0.0.1","obj_id":"https://github.com/andersgs/irelr","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 17688b49-c6da-4aba-8111-f47dcd810f33
+      X-Runtime:
+      - '0.020133'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:53 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/andersgs","obj_id":"https://github.com/andersgs/irelr","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 7db519db-546b-4ca1-8981-aa923775a0d3
+      X-Runtime:
+      - '0.006670'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:53 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16655","obj_id":"https://github.com/scrm/scrm/tree/v1.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16655","DOI":"10.5281/ZENODO.16655","author":[{"literal":"Paul
+        Staab"},{"literal":"Joe Zhu"},{"literal":"gerton"},{"literal":"Jonathan Terhorst"},{"literal":"Jerome
+        Kelleher"}],"title":"scrm: Version 1.5.0","container-title":"Zenodo","published":"2015","issued":"2015-04-07T09:20:03Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6baa038d-83af-442f-acfc-08140722b92e
+      X-Runtime:
+      - '0.009200'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:54 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/scrm/scrm/tree/v1.5.0","obj_id":"https://github.com/scrm/scrm","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 464d79d4-04a8-4d52-92fb-1d8e666a226a
+      X-Runtime:
+      - '0.007665'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:54 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/scrm","obj_id":"https://github.com/scrm/scrm","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5eae4587-9bdd-48e6-92d5-e60cb629b293
+      X-Runtime:
+      - '0.010548'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:54 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16659","obj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16659","DOI":"10.5281/ZENODO.16659","author":[{"literal":"Marlene
+        Mengoni"}],"title":"opti4Abq: release under GPL License","container-title":"Zenodo","published":"2015","issued":"2015-04-07T13:35:57Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 037928de-0a4b-4370-bd08-5e511a9f9b49
+      X-Runtime:
+      - '0.006432'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:54 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/mengomarlene/opti4Abq/tree/0.2","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 83840c75-0fdf-411f-b1e9-c548e2cedd04
+      X-Runtime:
+      - '0.004939'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:55 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/mengomarlene","obj_id":"https://github.com/mengomarlene/opti4Abq","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c18c9790-ebd7-4163-9131-15b55c2cc1b4
+      X-Runtime:
+      - '0.007832'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:55 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16662","obj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16662","DOI":"10.5281/ZENODO.16662","author":[{"literal":"xs-admin"},{"literal":"xkp"}],"title":"Excess:
+        Working Prototype","container-title":"Zenodo","published":"2015","issued":"2015-04-07T19:12:20Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 038fd4a3-57da-4215-8442-ff904daf7ddb
+      X-Runtime:
+      - '0.008144'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:55 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/xs-admin/Excess/tree/0.5.0","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 240fd70f-1894-4d57-88f2-610cb27c6f26
+      X-Runtime:
+      - '0.011726'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:56 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/xs-admin","obj_id":"https://github.com/xs-admin/Excess","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 481ea30c-f712-49e2-81a0-1280bff60998
+      X-Runtime:
+      - '0.006565'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:56 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16666","obj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16666","DOI":"10.5281/ZENODO.16666","author":[{"literal":"Tyler
+        Rinker"}],"title":"qdapRegex: qdapRegex Version 0.3.2","container-title":"Zenodo","published":"2015","issued":"2015-04-07T22:15:06Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - cdf9c403-917e-4401-8778-25ae5bb6d963
+      X-Runtime:
+      - '0.006894'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:56 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker/qdapRegex/tree/version0.3.2","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 37ec1ac6-1dbf-4f3a-b537-25d660dfd912
+      X-Runtime:
+      - '0.005526'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:57 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapRegex","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 940443de-1cd4-47e3-93a8-eec3832b2217
+      X-Runtime:
+      - '0.005331'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:57 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16667","obj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16667","DOI":"10.5281/ZENODO.16667","author":[{"literal":"Tyler
+        Rinker"}],"title":"qdapDictionaries: qdapDictionaries Version 1.0.5","container-title":"Zenodo","published":"2015","issued":"2015-04-07T22:16:25Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 2930e502-cda7-4bad-8f2c-cfc7b4345320
+      X-Runtime:
+      - '0.013732'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:57 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker/qdapDictionaries/tree/version1.0.5","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 791316cb-f4cf-475c-8893-e12fa7e45dc7
+      X-Runtime:
+      - '0.006757'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:57 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/trinker","obj_id":"https://github.com/trinker/qdapDictionaries","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 47651011-fbe6-412e-bdcd-871666f3dadb
+      X-Runtime:
+      - '0.007314'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:58 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16668","obj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16668","DOI":"10.5281/ZENODO.16668","author":[{"literal":"Konrad
+        Karczewski"},{"literal":"Eli Roberson"},{"literal":"Evan Staton"},{"literal":"Brad
+        Chapman"},{"literal":"Eric Minikel"}],"title":"loftee: v0.2.1-beta","container-title":"Zenodo","published":"2015","issued":"2015-04-07T23:49:45Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 38fbac95-8ffb-4459-8b6c-9f1de6945ce2
+      X-Runtime:
+      - '0.008513'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:58 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/konradjk/loftee/tree/v0.2.1-beta","obj_id":"https://github.com/konradjk/loftee","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 546443e8-d1cc-4825-a144-591820eb7f9e
+      X-Runtime:
+      - '0.009955'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:58 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/konradjk","obj_id":"https://github.com/konradjk/loftee","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - bd0c2a43-0fa8-4641-9000-944b82de878d
+      X-Runtime:
+      - '0.006890'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:58 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16670","obj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16670","DOI":"10.5281/ZENODO.16670","author":[{"literal":"Timothy
+        Morton"}],"title":"VESPA: Bug fix","container-title":"Zenodo","published":"2015","issued":"2015-04-08T02:09:46Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 29e48b78-a518-4485-8c3d-d107f878870c
+      X-Runtime:
+      - '0.010046'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:59 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/timothydmorton/VESPA/tree/0.2.1","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 71b3aa84-ba99-4f34-9449-56c639479dfe
+      X-Runtime:
+      - '0.005447'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:59 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/timothydmorton","obj_id":"https://github.com/timothydmorton/VESPA","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e790d7bf-7bfb-4e4d-9d27-6c6463dec44b
+      X-Runtime:
+      - '0.007983'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:59 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16672","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16672","DOI":"10.5281/ZENODO.16672","author":[{"literal":"Ivan
+        Seidel"}],"title":"ArduinoThread: 1.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T04:23:09Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 66ad9a50-c596-4bf7-b402-5df51db22937
+      X-Runtime:
+      - '0.006812'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:44:59 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/1.0","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a482f97e-6604-48c9-bcc1-a4a689a4581c
+      X-Runtime:
+      - '0.010003'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:00 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 66360b92-a398-4ec6-9d73-c63bf3a46191
+      X-Runtime:
+      - '0.004959'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:00 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16673","obj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16673","DOI":"10.5281/ZENODO.16673","author":[{"literal":"Ivan
+        Seidel"},{"literal":"ecdr"},{"literal":"Philipp Klaus"},{"literal":"SomeRandomGuy"},{"literal":"feilb"},{"literal":"colombod"},{"literal":"Marek
+        Šuppa"},{"literal":"Marc Alexander"},{"literal":"Jurgen Van Gael"},{"literal":"Jock
+        Murphy"}],"title":"DueTimer: Adapt to 1.5.x library specification","container-title":"Zenodo","published":"2015","issued":"2015-04-08T04:49:04Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 077ae792-6719-4809-991c-22a6d24c281a
+      X-Runtime:
+      - '0.006809'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:00 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/DueTimer/tree/1.4.5","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 7be91bfb-6c4d-4b7c-b0ab-25957568d7c6
+      X-Runtime:
+      - '0.005122'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:00 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/DueTimer","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 978e0d21-e9af-4605-8e95-fbbe40c3b17c
+      X-Runtime:
+      - '0.005934'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:01 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16677","obj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16677","DOI":"10.5281/ZENODO.16677","author":[{"literal":"Matthew
+        Wakefield"}],"title":"xenomapper: v1.0b1","container-title":"Zenodo","published":"2015","issued":"2015-04-08T09:37:50Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 8ff54339-c407-47b1-b42a-b853977530cd
+      X-Runtime:
+      - '0.010168'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:01 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/genomematt/xenomapper/tree/v1.0b1","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9a713e3c-1808-449b-afc1-4a3968ee6a29
+      X-Runtime:
+      - '0.007806'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:01 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/genomematt","obj_id":"https://github.com/genomematt/xenomapper","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 02ae2c1c-0b9c-4fb8-b302-886ea26946ce
+      X-Runtime:
+      - '0.007080'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:01 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16683","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16683","DOI":"10.5281/ZENODO.16683","author":[{"literal":"Hanspeter
+        Portner"},{"literal":"Marti Bolivar"}],"title":"chimaera_firmware: Chimaera
+        Firmware Version 0.6.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T14:29:33Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0ee5a189-a886-49a0-8237-8e453ce5d94a
+      X-Runtime:
+      - '0.008720'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:02 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware/tree/0.6.0","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 58cd8701-e5dd-48ac-85f1-ba443e6ec0a0
+      X-Runtime:
+      - '0.006906'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:02 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/OpenMusicKontrollers","obj_id":"https://github.com/OpenMusicKontrollers/chimaera_firmware","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c2b1c5e1-fab6-4c5e-b752-c103b839b96e
+      X-Runtime:
+      - '0.008760'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:02 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16685","obj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16685","DOI":"10.5281/ZENODO.16685","author":[{"literal":"megabyte22"}],"title":"maternal_effects:
+        Maternal Effects Source Code","container-title":"Zenodo","published":"2015","issued":"2015-04-08T16:07:10Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f9fccc51-948c-4c91-bbd2-bdf1b99f2a6e
+      X-Runtime:
+      - '0.007816'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:02 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/megabyte22/maternal_effects/tree/1.0","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1547cda0-1f3f-4ae1-8d94-812a09d3d951
+      X-Runtime:
+      - '0.007764'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:03 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/megabyte22","obj_id":"https://github.com/megabyte22/maternal_effects","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6628e676-f39d-4992-a2f8-6228677e2674
+      X-Runtime:
+      - '0.007809'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:03 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16687","obj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16687","DOI":"10.5281/ZENODO.16687","author":[{"literal":"Albert"}],"title":"geombest-plus:
+        Release 1.0","container-title":"Zenodo","published":"2015","issued":"2015-04-08T17:23:03Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b1f535a1-456a-459b-b22b-2255b85b879b
+      X-Runtime:
+      - '0.006458'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:03 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/csdms-contrib/geombest-plus/tree/1.0","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b65aad1d-e059-4529-a0b7-14ddfff163a8
+      X-Runtime:
+      - '0.007316'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:03 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/csdms-contrib","obj_id":"https://github.com/csdms-contrib/geombest-plus","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 23feba23-bc31-4694-add4-46e2e15776f9
+      X-Runtime:
+      - '0.007526'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:04 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16688","obj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16688","DOI":"10.5281/ZENODO.16688","author":[{"literal":"Anthony
+        J Geneva"},{"literal":"Sarah B. Kingan"}],"title":"spectrum2stats: spectrum2stats:
+        An R package to calculate population genetic summary statistics from site
+        frequency spectra","container-title":"Zenodo","published":"2015","issued":"2015-04-08T18:50:06Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 177e50f1-1bcf-431a-a57d-ac9feba48177
+      X-Runtime:
+      - '0.008314'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:04 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/geneva/spectrum2stats/tree/v0.0.1","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9c7be615-ec8f-419c-9d52-04beec76e182
+      X-Runtime:
+      - '0.006178'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:04 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/geneva","obj_id":"https://github.com/geneva/spectrum2stats","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3cc8124e-571c-4d39-ab69-8e3474ba9ea0
+      X-Runtime:
+      - '0.006775'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:04 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16692","obj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16692","DOI":"10.5281/ZENODO.16692","author":[{"literal":"Rubén
+        Rellán Álvarez"},{"literal":"Guillaume Lobet"}],"title":"glo_roots: pre-print","container-title":"Zenodo","published":"2015","issued":"2015-04-08T21:12:26Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 7f4726dd-22fc-4602-b09a-617c88d1fa82
+      X-Runtime:
+      - '0.009001'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:05 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/rr-lab/glo_roots/tree/v0.11","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 2287c0cb-4c70-484d-809d-8e8a11777ed0
+      X-Runtime:
+      - '0.007826'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:05 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/rr-lab","obj_id":"https://github.com/rr-lab/glo_roots","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0e4102c9-3d0d-453b-bba7-72089b2ff7b3
+      X-Runtime:
+      - '0.008859'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:05 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://doi.org/10.5281/ZENODO.16693","obj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","relation_type_id":"is_supplement_to","source_id":"datacite_github","publisher_id":"CERN.ZENODO","subj":{"pid":"https://doi.org/10.5281/ZENODO.16693","DOI":"10.5281/ZENODO.16693","author":[{"literal":"Ivan
+        Seidel"}],"title":"ArduinoThread: 2.0.2","container-title":"Zenodo","published":"2015","issued":"2015-04-08T23:08:22Z","publisher_id":"CERN.ZENODO","registration_agency_id":"datacite","tracked":true,"type":"computer_program"},"obj":{},"message_type":"relation","prefix":"10.5281","source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d2d99d8a-f226-4822-aaf4-aa3038ee3f2c
+      X-Runtime:
+      - '0.013132'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:05 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel/ArduinoThread/tree/2.0.2","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":"is_part_of","source_id":"datacite_github","publisher_id":"github","subj":{},"obj":{},"message_type":"relation","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b548e4d2-8b5e-4b73-b8fa-e8de87c78dd8
+      X-Runtime:
+      - '0.009207'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:06 GMT
+- request:
+    method: post
+    uri: https://eventdata.datacite.org/api/deposits
+    body:
+      encoding: UTF-8
+      string: '{"deposit":{"subj_id":"https://github.com/ivanseidel","obj_id":"https://github.com/ivanseidel/ArduinoThread","relation_type_id":null,"source_id":"github_contributor","publisher_id":null,"subj":{},"obj":{},"message_type":"contribution","prefix":null,"source_token":"1c583380-ca29-4a4f-b38d-0c3f6d994ec4","callback":"http://localhost:8040/api/callbacks"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - application/json
+      Authorization:
+      - Token token=<LAGOTTO_TOKEN>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Sun, 09 Oct 2016 12:44:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f065d731-8922-4768-9c00-80103e58f7b0
+      X-Runtime:
+      - '0.008322'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"error","error":"You are not authorized to access
+        this page."}}'
+    http_version: 
+  recorded_at: Sun, 09 Oct 2016 11:45:06 GMT
+recorded_with: VCR 2.9.3

@@ -86,13 +86,13 @@ describe OrcidUpdate, type: :model, vcr: true do
       expect(response.first[:prefix]).to eq("10.6084")
       expect(response.first[:message_type]).to eq("contribution")
       expect(response.first[:relation]).to eq("subj_id"=>"http://orcid.org/0000-0001-8478-7549",
-                                              "obj_id"=>"http://doi.org/10.6084/M9.FIGSHARE.1226424",
+                                              "obj_id"=>"https://doi.org/10.6084/M9.FIGSHARE.1226424",
                                               "source_id"=>"orcid_update",
                                               "publisher_id"=>"CDL.DIGSCI",
                                               "registration_agency_id" => "datacite",
                                               "occurred_at" => "2015-04-08T10:13:29Z")
 
-      expect(response.first[:obj]).to eq("pid"=>"http://doi.org/10.6084/M9.FIGSHARE.1226424",
+      expect(response.first[:obj]).to eq("pid"=>"https://doi.org/10.6084/M9.FIGSHARE.1226424",
                                          "DOI"=>"10.6084/M9.FIGSHARE.1226424",
                                          "author"=>[{"literal"=>"Carlos Cotta", "ORCID"=>"http://orcid.org/0000-0001-8478-7549"}, {"literal"=>"Rafael Nogueras"}],
                                          "title"=>"Color mememaps of self-balancing strategies",
