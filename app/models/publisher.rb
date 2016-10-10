@@ -1,6 +1,9 @@
 class Publisher < Base
   attr_reader :id, :title, :other_names, :prefixes, :member, :registration_agency, :updated_at, :publisher_id, :ids
 
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
   def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
@@ -36,14 +39,11 @@ class Publisher < Base
   def self.parse_data(result, options={})
     return nil if result.blank? || result['errors']
 
-    members = Member.all[:data]
-    registration_agencies = RegistrationAgency.all[:data]
-
     if options[:id]
       item = result.fetch("data", {}).fetch("publisher", {})
       return nil if item.blank?
 
-      { data: parse_item(item, members: members, registration_agencies: registration_agencies) }
+      { data: parse_item(item, members: cached_members, registration_agencies: cached_registration_agencies) }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
       meta = result.fetch("data", {}).fetch("meta", {})
@@ -51,7 +51,7 @@ class Publisher < Base
                registration_agencies: meta.fetch("registration_agencies", {}),
                members: meta.fetch("members", {}) }
 
-      { data: parse_items(items, members: members, registration_agencies: registration_agencies), meta: meta }
+      { data: parse_items(items, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
     end
   end
 

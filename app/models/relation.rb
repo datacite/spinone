@@ -4,6 +4,9 @@ class Relation < Base
   # include helper module for extracting identifier
   include Identifiable
 
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
   def initialize(attributes, options={})
     @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
@@ -50,14 +53,13 @@ class Relation < Base
     return result if result['errors']
 
     items = result.fetch("data", {}).fetch("relations", [])
+
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
              sources: meta["sources"],
              relation_types: meta["relation_types"] }
-    sources = Source.all[:data]
-    relation_types = RelationType.all[:data]
 
-    { data: parse_items(items, sources: sources, relation_types: relation_types), meta: meta }
+    { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types), meta: meta }
   end
 
   def self.url

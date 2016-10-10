@@ -1,6 +1,9 @@
 class Source < Base
   attr_reader :id, :title, :description, :state, :group, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at, :publisher_id
 
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
   def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
@@ -32,20 +35,18 @@ class Source < Base
   def self.parse_data(result, options={})
     return nil if result.blank? || result['errors']
 
-    groups = Group.all[:data]
-
     if options[:id]
       item = result.fetch("data", {}).fetch("source", {})
       return nil if item.blank?
 
-      { data: parse_item(item, groups: groups) }
+      { data: parse_item(item, groups: cached_groups) }
     else
       items = result.fetch("data", {}).fetch("sources", [])
 
       meta = result.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"], groups: meta["groups"] }
 
-      { data: parse_items(items, groups: groups), meta: meta }
+      { data: parse_items(items, groups: cached_groups), meta: meta }
     end
   end
 

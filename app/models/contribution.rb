@@ -4,6 +4,9 @@ class Contribution < Base
   # include helper module for extracting identifier
   include Identifiable
 
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
   def initialize(attributes, options={})
     @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
@@ -56,10 +59,10 @@ class Contribution < Base
              sources: meta["sources"],
              publishers: meta["publishers"]
            }
-    sources = Source.all[:data]
+
     publishers = Publisher.collect_data(ids: meta.fetch(:publishers, {}).keys.join(",")).fetch(:data, [])
 
-    { data: parse_items(items, sources: sources, publishers: publishers), meta: meta}
+    { data: parse_items(items, sources: cached_sources, publishers: publishers), meta: meta}
   end
 
   def self.url

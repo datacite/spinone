@@ -30,7 +30,6 @@ class Member < Base
   end
 
   def self.parse_data(result, options={})
-    Rails.logger.info result
     return nil if result.blank? || result['errors']
 
     if options[:id].present?
