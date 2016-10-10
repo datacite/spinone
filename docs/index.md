@@ -6,6 +6,7 @@ title: "Home"
 ## Version History
 
 * v.1: June 25, 2016, first draft.
+* v.1.1: October 10, 2016, follow JSONAPI spec for side-loading associations
 
 ## Overview
 
@@ -26,10 +27,11 @@ Singletons are single results. Retrieving metadata for a specific identifier (e.
 
 ### Lists
 
-Lists results can contain multiple entries. Searching or filtering typically returns a list result. A list has two parts:
+Lists results can contain multiple entries. Searching or filtering typically returns a list result. A list has three parts:
 
 * **meta**, which includes information about the query, e.g. number of results returned.
-* **data**, which will will contain the items matching the query or filter.
+* **data**, which will contain the items matching the query or filter.
+* **included**, which will contain side-loaded associations, via the `?include=x` parameter.
 
 ### Sort order
 
@@ -96,6 +98,7 @@ Parameters can be used to query, filter and control the results returned by the 
 | `offset`                     | result offset |
 | `sort`                       | sort results by a certain field |
 | `order`                      | set the sort order to `asc` or `desc` |
+| `include`                    | side-load associations |
 
 ### Example query using URI parameters
 
@@ -149,7 +152,7 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 
 The prefix of a DataCite DOI does **NOT** indicate who currently owns the DOI.
 
-DataCite also has publisher IDs for depositing organisations. A single publisher may control multiple owner prefixes, which in turn may control a number of DOIs. When looking at works published by a certain organisaton, publisher IDs and the publisher routes should be used.
+DataCite also has `publisher_id` (`datacentre_symbol` in the DataCite metadata) for depositing organisations. A single publisher may control multiple owner prefixes, which in turn may control a number of DOIs. When looking at works published by a certain organisaton, publisher IDs and the publisher routes should be used.
 
 ## Notes on dates
 
@@ -178,6 +181,17 @@ The number of returned items is controlled by the `rows` parameter, but you can 
 ```
 https://api.datacite.org/works?query=allen+renear&rows=5&offset=5
 ```
+
+## Includes
+
+To sideload associations use the `include` parameter, for example:
+
+```
+https://api.datacite.org/works?query=climate&include=publisher,resource-type
+```
+
+Sideload multiple assocations by providing them in a comma-separated list.
+
 ## Example Queries
 
 **All works published by data center `cdl.digsci` (Figshare)**
