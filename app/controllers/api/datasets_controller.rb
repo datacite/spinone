@@ -1,15 +1,24 @@
 class Api::DatasetsController < Api::BaseController
-  def index
-    collection = Dataset.where(params)
-    fail ActiveRecord::RecordNotFound unless collection.present?
+  before_filter :set_include
 
-    render json: collection[:data], meta: collection[:meta]
+  def set_include
+    if params[:include].present?
+      @include = params[:include].split(",").map { |i| i.downcase.underscore }.join(",")
+      @include = [@include]
+    else
+      @include = nil
+    end
+  end
+
+  def index
+    @works = Work.where(params)
+    render jsonapi: @works[:data], meta: @works[:meta], each_serializer: DatasetSerializer, include: @include
   end
 
   def show
-    item = Dataset.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless item.present?
+    @work = Work.where(id: params[:id])
+    fail ActiveRecord::RecordNotFound unless @work.present?
 
-    render json: item[:data]
+    render jsonapi: @work[:data], each_serializer: DatasetSerializer, include: @include
   end
 end

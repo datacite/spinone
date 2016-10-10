@@ -1,6 +1,8 @@
 class DatasetSerializer < ActiveModel::Serializer
   cache key: 'dats'
-  attributes :identifiers, :title, :types, :creators, :dates, :container_title, :description, :keywords
+  attributes :identifiers, :title, :types, :creators, :dates, :container_title, :description
+
+  type :dats
 
   def identifiers
     [{ "identifier" => "doi:#{object.doi}",
@@ -15,7 +17,7 @@ class DatasetSerializer < ActiveModel::Serializer
     [{ "date" => object.published,
        "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "publicationYear" }
      },
-     { "date" => object.deposited,
+     { "date" => object.created,
        "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "Issued" }
      },
      { "date" => object.updated_at,
@@ -29,9 +31,5 @@ class DatasetSerializer < ActiveModel::Serializer
 
   def creators
     object.author.map { |a| { "first-name" => a["given"], "last-name" => a["family"] } }
-  end
-
-  def keywords
-    object.subject
   end
 end
