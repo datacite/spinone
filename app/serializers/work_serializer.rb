@@ -1,6 +1,6 @@
 class WorkSerializer < ActiveModel::Serializer
   cache key: 'work'
-  attributes :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :license, :schema_version, :results, :published, :created, :updated
+  attributes :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :license, :schema_version, :results, :published, :deposited, :updated
 
   belongs_to :resource_type, serializer: ResourceTypeSerializer
   belongs_to :work_type, serializer: WorkTypeSerializer

@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :license, :publisher, :results, :schema_version, :published, :created, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :license, :publisher, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -31,7 +31,7 @@ class Work < Base
     @container_title = attributes.fetch("publisher", nil)
     @description = attributes.fetch("description", []).first
     @published = attributes.fetch("publicationYear", nil)
-    @created = attributes.fetch("minted", nil)
+    @deposited = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
@@ -76,9 +76,7 @@ class Work < Base
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
-                 'facet.limit' => 10,
-                 'f.resourceType_facet.facet.limit' => 15,
-                 'f.publicationYear.facet.limit' => 15,
+                 'facet.limit' => 15,
                  'facet.mincount' => 1,
                  sort: "#{sort} #{order}",
                  wt: "json" }.compact
@@ -171,6 +169,7 @@ class Work < Base
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
 
+      resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
       publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
@@ -181,7 +180,7 @@ class Work < Base
         parse_include(item.first, item.last)
       end
 
-      { data: parse_items(items, resource_types: cached_resource_types, publishers: publishers, sources: cached_sources), meta: meta }
+      { data: parse_items(items, resource_types: resource_types, publishers: publishers, sources: cached_sources), meta: meta }
     end
   end
 
