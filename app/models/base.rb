@@ -24,9 +24,13 @@ class Base
     Maremma.get(query_url, options)
   end
 
-  def self.parse_items(items)
+  def self.parse_item(item, options={})
+    self.new(item, options)
+  end
+
+  def self.parse_items(items, options={})
     Array(items).map do |item|
-      parse_item(item)
+      parse_item(item, options)
     end
   end
 

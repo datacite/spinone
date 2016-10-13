@@ -1,10 +1,13 @@
 class Relation < Base
-  attr_reader :id, :subj_id, :obj_id, :doi, :author, :title, :container_title, :source_id, :publisher_id, :registration_agency_id, :relation_type_id, :type, :total, :published, :issued, :updated_at
+  attr_reader :id, :subj_id, :obj_id, :doi, :author, :title, :container_title, :source, :publisher_id, :registration_agency_id, :relation_type, :work_type, :total, :published, :issued, :updated_at
 
   # include helper module for extracting identifier
   include Identifiable
 
-  def initialize(attributes)
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
+  def initialize(attributes, options={})
     @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
     @obj_id = attributes.fetch("obj_id")
@@ -13,15 +16,17 @@ class Relation < Base
     @author = attributes.fetch("author", nil)
     @title = attributes.fetch("title", nil)
     @container_title = attributes.fetch("container-title", nil)
-    @source_id = attributes.fetch("source_id").underscore.dasherize
     @publisher_id = attributes.fetch("publisher_id", nil)
     @registration_agency_id = attributes.fetch("registration_agency_id", nil)
-    @relation_type_id = attributes.fetch("relation_type_id").underscore.dasherize
     @total = attributes.fetch("total", nil)
     @published = attributes.fetch("published", nil)
     @issued = attributes.fetch("issued", nil)
     @updated_at = attributes.fetch("timestamp", nil)
-    @type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
+    @work_type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
+
+    # associations
+    @source = Array(options[:sources]).find { |s| s.id.underscore == attributes.fetch("source_id", nil) }
+    @relation_type = Array(options[:relation_types]).find { |r| r.id.underscore == attributes.fetch("relation_type_id", nil) }
   end
 
   def self.get_query_url(options={})
@@ -48,20 +53,13 @@ class Relation < Base
     return result if result['errors']
 
     items = result.fetch("data", {}).fetch("relations", [])
+
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
              sources: meta["sources"],
              relation_types: meta["relation_types"] }
-    { data: parse_items(items) + parse_included(meta, options), meta: meta }
-  end
 
-  def self.parse_included(meta, options={})
-    sources = Source.all[:data].select { |s| meta[:sources].has_key?(s.id.underscore) }
-    sources + RelationType.all[:data].select { |s| meta[:relation_types].has_key?(s.id.underscore) }
-  end
-
-  def self.parse_item(item)
-    self.new(item)
+    { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types), meta: meta }
   end
 
   def self.url

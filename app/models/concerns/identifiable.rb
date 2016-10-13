@@ -41,7 +41,7 @@ module Identifiable
     end
 
     def doi_as_url(doi)
-      Addressable::URI.encode("http://doi.org/#{clean_doi(doi)}") if doi.present?
+      Addressable::URI.encode("https://doi.org/#{clean_doi(doi)}") if doi.present?
     end
 
     def pmid_as_url(pmid)

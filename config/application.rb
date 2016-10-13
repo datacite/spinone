@@ -77,11 +77,6 @@ module Spinone
     # TODO: do I need to add salt here?
     config.filter_parameters += [:password, :authentication_token]
 
-    # Use a different cache store
-    # dalli uses ENV['MEMCACHE_SERVERS']
-    ENV['MEMCACHE_SERVERS'] ||= ENV['HOSTNAME']
-    config.cache_store = :dalli_store, nil, { :namespace => ENV['APPLICATION'], :compress => true }
-
     # Skip validation of locale
     I18n.enforce_available_locales = false
 

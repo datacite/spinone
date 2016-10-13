@@ -15,7 +15,7 @@ describe Agent, :type => :model, vcr: true do
     subject { FactoryGirl.create(:agent) }
 
     it "no delay" do
-      expect(subject.wait_time.to_i).to eq(1)
+      expect(subject.wait_time.to_i).to eq(0)
     end
 
     it "low rate-limiting" do
@@ -32,6 +32,8 @@ describe Agent, :type => :model, vcr: true do
   end
 
   context "update_count" do
+    before(:each) { subject.count = 0 }
+
     it "should report if there are no works returned by the Datacite Metadata Search API" do
       subject.update_count(0)
       expect(subject.count).to eq(0)
@@ -39,7 +41,7 @@ describe Agent, :type => :model, vcr: true do
 
     it "should report if there are works returned by the Datacite Metadata Search API" do
       subject.update_count(12)
-      expect(subject.count).to eq(72)
+      expect(subject.count).to eq(12)
     end
   end
 end

@@ -1,16 +1,21 @@
 class Publisher < Base
-  attr_reader :id, :title, :other_names, :prefixes, :member_id, :registration_agency_id, :updated_at, :publisher_id, :ids
+  attr_reader :id, :title, :other_names, :prefixes, :member, :registration_agency, :updated_at, :publisher_id, :ids
 
-  def initialize(attributes)
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
+  def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
-    @member_id = attributes.fetch("member_id", nil)
     @publisher_id = attributes.fetch("publisher_id", nil)
     @ids = attributes.fetch("ids", nil)
-    @registration_agency_id = attributes.fetch("registration_agency_id", nil)
     @updated_at = attributes.fetch("timestamp", nil)
+
+    # associations
+    @member = Array(options[:members]).find { |s| s.id.upcase == attributes.fetch("member_id", nil) }
+    @registration_agency = Array(options[:registration_agencies]).find { |s| s.id == attributes.fetch("registration_agency_id", nil) }
   end
 
   def self.get_query_url(options={})
@@ -38,11 +43,7 @@ class Publisher < Base
       item = result.fetch("data", {}).fetch("publisher", {})
       return nil if item.blank?
 
-      member_id = item.fetch("member_id", nil)
-      member = member_id.present? ? Member.where(id: member_id) : nil
-      member = member[:data] if member.present?
-
-      { data: parse_items([item]) + [member].compact }
+      { data: parse_item(item, members: cached_members, registration_agencies: cached_registration_agencies) }
     else
       items = result.fetch("data", {}).fetch("publishers", [])
       meta = result.fetch("data", {}).fetch("meta", {})
@@ -50,16 +51,8 @@ class Publisher < Base
                registration_agencies: meta.fetch("registration_agencies", {}),
                members: meta.fetch("members", {}) }
 
-      { data: parse_items(items) + parse_included(meta, options), meta: meta }
+      { data: parse_items(items, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
     end
-  end
-
-  def self.parse_included(meta, options={})
-    Member.all[:data].select { |s| meta.fetch(:members, {}).has_key?(s.id.upcase) }
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url

@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_general, :resource_type, :type, :license, :publisher_id, :member_id, :registration_agency_id, :results, :schema_version, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :license, :publisher, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -10,7 +10,10 @@ class Work < Base
   # include metadata helper methods
   include Metadatable
 
-  def initialize(attributes={})
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
+  def initialize(attributes={}, options={})
     @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
 
     @author = attributes.fetch("author", nil)
@@ -30,18 +33,16 @@ class Work < Base
     @published = attributes.fetch("publicationYear", nil)
     @deposited = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
-    @resource_type_general = attributes.fetch("resourceTypeGeneral", nil)
-    @type = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
-    @resource_type_general = @resource_type_general.underscore.dasherize if @resource_type_general.present?
-    @resource_type = attributes.fetch("resourceType", nil).presence || nil
+    @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
-    @publisher_id = attributes.fetch("datacentre_symbol", nil)
-    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
-    @member_id = attributes.fetch("allocator_symbol", nil)
-    @member_id = @member_id.underscore.dasherize if @member_id.present?
-    @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
     @schema_version = attributes.fetch("schema_version", nil)
     @results = attributes.fetch("results", {})
+
+    # associations
+    @publisher = Array(options[:publishers]).find { |p| p.id == attributes.fetch("datacentre_symbol", "").downcase.underscore.dasherize }
+    @resource_type = Array(options[:resource_types]).find { |r| r.id == attributes.fetch("resourceTypeGeneral", "").downcase.underscore.dasherize }
+    work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]]
+    @work_type = Array(options[:work_types]).find { |r| r.id == work_type_id.downcase.underscore.dasherize }
   end
 
   def self.get_query_url(options={})
@@ -75,8 +76,7 @@ class Work < Base
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
-                 'facet.limit' => 10,
-                 'f.resourceType_facet.facet.limit' => 15,
+                 'facet.limit' => 15,
                  'facet.mincount' => 1,
                  sort: "#{sort} #{order}",
                  wt: "json" }.compact
@@ -88,7 +88,7 @@ class Work < Base
   def self.get_lagotto_query_url(options={})
     if options[:id].present?
       # workaround, as nginx and the rails router swallow double backslashes
-      options["id"] = options["id"].gsub(/(http|https):\/+(\w+)/, '\1://\2')
+      options[:id] = options[:id].gsub(/(http|https):\/+(\w+)/, '\1://\2')
 
       lagotto_url + "?id=" + CGI.escape(options[:id])
     else
@@ -136,68 +136,52 @@ class Work < Base
       items = result[:data]
       return nil if items.blank?
 
-      meta = result[:meta]
       item = items.first
 
+      meta = result[:meta]
+
+      resource_type_id = item.fetch("resourceTypeGeneral", nil)
+      if resource_type_id.present?
+        resource_type = ResourceType.where(id: resource_type_id.downcase.underscore.dasherize)[:data]
+      else
+        resource_type = nil
+      end
       publisher_id = item.fetch("datacentre_symbol", nil)
-      publishers = Publisher.where(id: publisher_id)
-      publishers = publishers.present? ? publishers[:data] : []
+      if publisher_id.present?
+        publisher = Publisher.where(id: publisher_id.downcase.underscore.dasherize)[:data]
+      else
+        publisher = nil
+      end
 
-      member_id = item.fetch("allocator_symbol", nil)
-      member = member_id.present? ? Member.where(id: member_id) : nil
-      member = member[:data] if member.present?
-
-      { data: parse_items([item]) + publishers + [member].compact + parse_lagotto_included(items, meta, options), meta: meta }
+      { data: parse_item(item, resource_types: cached_resource_types, relation_types: cached_relation_types, work_types: cached_work_types, publishers: [publisher], sources: cached_sources), meta: meta }
     elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
       meta = result[:meta]
 
-      { data: parse_items(items) + parse_lagotto_included(items, meta, options), meta: meta }
+      { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types, work_types: cached_work_types), meta: meta }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       items = get_results(items, options)[:data]
-      sources = get_sources(items)
+
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
 
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
 
-      { data: parse_items(items) + parse_included(facets, options) + sources, meta: meta }
-    end
-  end
-
-  def self.parse_included(facets, options={})
-    resource_types = facets.fetch("resourceType_facet", [])
-                           .each_slice(2)
-                           .map { |r| [ResourceType, { "id" => r.first,
-                                                       "title" => r.first.underscore.humanize }] }
-    resource_types = Array(resource_types).map do |item|
-      parse_include(item.first, item.last)
-    end
-
-    publishers = facets.fetch("datacentre_facet", [])
+      resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
+      publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
                               [Publisher, { "id" => id, "title" => title }]
                             end
-    publishers = Array(publishers).map do |item|
-      parse_include(item.first, item.last)
+      publishers = Array(publishers).map do |item|
+        parse_include(item.first, item.last)
+      end
+
+      { data: parse_items(items, resource_types: resource_types, publishers: publishers, sources: cached_sources), meta: meta }
     end
-
-    if options["publisher-id"].present? && publishers.empty?
-      publishers = Publisher.where(id: options["publisher-id"])
-      publishers = publishers[:data] if publishers.present?
-    end
-
-    resource_types + Array(publishers)
-  end
-
-  def self.parse_lagotto_included(items, meta, options={})
-    included = get_work_types(items)
-    included += Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
-    included += RelationType.all[:data].select { |s| meta.fetch(:relation_types).has_key?(s.id.underscore) }
   end
 
   def self.parse_facet_counts(facets, options={})
@@ -219,10 +203,6 @@ class Work < Base
       "years" => years,
       "publishers" => publishers,
       "schema-versions" => schema_versions }
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   # fetch results hash from Event Data server
@@ -282,16 +262,6 @@ class Work < Base
     else
       { data: [] }
     end
-  end
-
-  def self.get_sources(items)
-    used_sources = items.map { |item| item.fetch("results", {}).keys.map { |k| k.underscore.dasherize } }.flatten.uniq
-    Source.all[:data].select { |s| used_sources.include?(s.id) }
-  end
-
-  def self.get_work_types(items)
-    used_work_types = items.map { |item| item.fetch("work_type_id", nil) }.compact
-    WorkType.all[:data].select { |s| used_work_types.include?(s.id) }
   end
 
   def self.url

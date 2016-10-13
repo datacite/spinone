@@ -42,7 +42,7 @@ module Authorable
     def get_name_identifier(author)
       name_identifier = author.fetch("nameIdentifier", nil)
       name_identifier_scheme = author.fetch("nameIdentifierScheme", "orcid").downcase
-      if name_identifier_scheme == "orcid" && validate_orcid(name_identifier)
+      if name_identifier_scheme == "orcid" && name_identifier = validate_orcid(name_identifier)
         "http://orcid.org/#{name_identifier}"
       else
         nil

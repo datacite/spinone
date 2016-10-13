@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/work_types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 19:27:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - b2fd1e1b-3d63-40b5-bd0e-b654be75efc5
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"5087c6c0840d62d9da57069282864a7a"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.023019'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"work_type-list","message-version":"v7","total":36},"work_types":[{"id":"article","title":"Article","timestamp":"2016-03-21T15:05:02Z"},{"id":"bill","title":"Bill","timestamp":"2016-03-21T15:05:02Z"},{"id":"post-weblog","title":"Blog
+        Post","container":"Blog","timestamp":"2016-03-21T15:05:03Z"},{"id":"book","title":"Book","timestamp":"2016-03-21T15:05:02Z"},{"id":"review-book","title":"Book
+        Review","timestamp":"2016-03-21T15:05:03Z"},{"id":"broadcase","title":"Broadcast","timestamp":"2016-03-21T15:05:03Z"},{"id":"chapter","title":"Chapter","container":"Book","timestamp":"2016-03-21T15:05:03Z"},{"id":"computer_program","title":"Computer
+        Program","timestamp":"2016-03-21T15:05:03Z"},{"id":"paper-conference","title":"Conference
+        Paper","container":"Conference","timestamp":"2016-03-21T15:05:03Z"},{"id":"dataset","title":"Dataset","timestamp":"2016-03-21T15:05:03Z"},{"id":"entry-dictionary","title":"Dictionary
+        Entry","container":"Dictionary","timestamp":"2016-03-21T15:05:03Z"},{"id":"entry-encyclopedia","title":"Encyclopedia
+        Entry","container":"Encyclopedia","timestamp":"2016-03-21T15:05:03Z"},{"id":"entry","title":"Entry","timestamp":"2016-03-21T15:05:03Z"},{"id":"figure","title":"Figure","timestamp":"2016-03-21T15:05:03Z"},{"id":"graphic","title":"Graphic","timestamp":"2016-03-21T15:05:03Z"},{"id":"interview","title":"Interview","timestamp":"2016-03-21T15:05:03Z"},{"id":"article-journal","title":"Journal
+        Article","container":"Journal","timestamp":"2016-03-21T15:05:02Z"},{"id":"legal_case","title":"Legal
+        Case","timestamp":"2016-03-21T15:05:03Z"},{"id":"legislation","title":"Legislation","timestamp":"2016-03-21T15:05:03Z"},{"id":"article-magazine","title":"Magazine
+        Article","container":"Magazine","timestamp":"2016-03-21T15:05:02Z"},{"id":"manuscript","title":"Manuscript","timestamp":"2016-03-21T15:05:03Z"},{"id":"map","title":"Map","timestamp":"2016-03-21T15:05:03Z"},{"id":"motion_picture","title":"Motion
+        Picture","timestamp":"2016-03-21T15:05:03Z"},{"id":"musical_score","title":"Musical
+        Score","timestamp":"2016-03-21T15:05:03Z"},{"id":"article-newspaper","title":"Newspaper
+        Article","container":"Newspaper","timestamp":"2016-03-21T15:05:02Z"},{"id":"pamphlet","title":"Pamphlet","timestamp":"2016-03-21T15:05:03Z"},{"id":"patent","title":"Patent","timestamp":"2016-03-21T15:05:03Z"},{"id":"personal_communication","title":"Personal
+        Communication","timestamp":"2016-03-21T15:05:03Z"},{"id":"post","title":"Post","timestamp":"2016-03-21T15:05:03Z"},{"id":"report","title":"Report","timestamp":"2016-03-21T15:05:03Z"},{"id":"review","title":"Review","timestamp":"2016-03-21T15:05:03Z"},{"id":"song","title":"Song","timestamp":"2016-03-21T15:05:03Z"},{"id":"speech","title":"Speech","timestamp":"2016-03-21T15:05:03Z"},{"id":"thesis","title":"Thesis","timestamp":"2016-03-21T15:05:03Z"},{"id":"treaty","title":"Treaty","timestamp":"2016-03-21T15:05:03Z"},{"id":"webpage","title":"Webpage","container":"Website","timestamp":"2016-03-21T15:05:03Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 19:27:36 GMT
+recorded_with: VCR 2.9.3

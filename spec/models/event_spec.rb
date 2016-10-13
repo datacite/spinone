@@ -5,18 +5,18 @@ describe Event, type: :model, vcr: true do
     events = Event.where(rows: 50)[:data]
     expect(events.length).to eq(50)
     event = events.first
-    expect(event.subj_id).to eq("http://orcid.org/0000-0002-6495-1759")
+    expect(event.subj_id).to eq("ZBW.ZOEBIS")
   end
 
   it "events with query" do
-    events = Event.where(query: "fd49e100-33a6-4dd2-98cf-143d94093958")[:data]
+    events = Event.where(query: "49f6eb94-f3cc-42a5-b95b-50f0e53f301c")[:data]
     expect(events.length).to eq(1)
     event = events.first
-    expect(event.subj_id).to eq("http://doi.org/10.5517/CCSMT39")
+    expect(event.subj_id).to eq("ZBW.ZOEBIS")
   end
 
   it "event" do
-    event = Event.where(id: "fd49e100-33a6-4dd2-98cf-143d94093958")[:data]
-    expect(event.subj_id).to eq("http://doi.org/10.5517/CCSMT39")
+    event = Event.where(id: "49f6eb94-f3cc-42a5-b95b-50f0e53f301c")[:data]
+    expect(event.subj_id).to eq("ZBW.ZOEBIS")
   end
 end

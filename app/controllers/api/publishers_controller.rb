@@ -1,13 +1,24 @@
 class Api::PublishersController < Api::BaseController
+  before_filter :set_include
+
+  def set_include
+    if params[:include].present?
+      @include = params[:include].split(",").map { |i| i.downcase.underscore }.join(",")
+      @include = [@include]
+    else
+      @include = nil
+    end
+  end
+
   def index
     @publishers = Publisher.where(params)
-    render json: @publishers[:data], meta: @publishers[:meta]
+    render jsonapi: @publishers[:data], meta: @publishers[:meta], include: @include
   end
 
   def show
     @publisher = Publisher.where(id: params[:id])
     fail ActiveRecord::RecordNotFound unless @publisher.present?
 
-    render json: @publisher[:data]
+    render jsonapi: @publisher[:data], include: @include
   end
 end

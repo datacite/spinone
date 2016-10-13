@@ -1,10 +1,13 @@
 class Contribution < Base
-  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :source_id, :contributor_role_id, :type, :published, :issued, :updated_at, :publisher_id
+  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :contributor_role_id, :source, :publisher, :work_type, :published, :issued, :updated_at
 
   # include helper module for extracting identifier
   include Identifiable
 
-  def initialize(attributes)
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
+  def initialize(attributes, options={})
     @id = SecureRandom.uuid
     @subj_id = attributes.fetch("subj_id")
     @obj_id = attributes.fetch("obj_id")
@@ -19,15 +22,16 @@ class Contribution < Base
     @author = attributes.fetch("author", nil)
     @title = attributes.fetch("title", nil)
     @container_title = attributes.fetch("container-title", nil)
-    @source_id = attributes.fetch("source_id", nil)
-    @source_id = @source_id.underscore.dasherize if @source_id.present?
     @contributor_role_id = attributes.fetch("contributor_role_id", nil)
     @contributor_role_id = @contributor_role_id.underscore.dasherize if @contributor_role_id.present?
     @published = attributes.fetch("published", nil)
-    @publisher_id = attributes.fetch("publisher_id", nil)
     @issued = attributes.fetch("issued", nil)
     @updated_at = attributes.fetch("timestamp", nil)
-    @type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
+    @work_type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
+
+    # associations
+    @publisher = Array(options[:publishers]).find { |p| p.id.upcase == attributes.fetch("publisher_id", nil) }
+    @source = Array(options[:sources]).find { |p| p.id.underscore == attributes.fetch("source_id", nil) }
   end
 
   def self.get_query_url(options={})
@@ -56,18 +60,9 @@ class Contribution < Base
              publishers: meta["publishers"]
            }
 
-    { data: parse_items(items) + parse_included(meta, options), meta: meta}
-  end
-
-  def self.parse_included(meta, options={})
-    sources = Source.all[:data].select { |s| meta.fetch(:sources, {}).has_key?(s.id.underscore) }
     publishers = Publisher.collect_data(ids: meta.fetch(:publishers, {}).keys.join(",")).fetch(:data, [])
-    sources + publishers
-  end
 
-
-  def self.parse_item(item)
-    self.new(item)
+    { data: parse_items(items, sources: cached_sources, publishers: publishers), meta: meta}
   end
 
   def self.url

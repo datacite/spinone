@@ -31,6 +31,11 @@ Rails.application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = false
 
+  # Use a different cache store
+  # dalli uses ENV['MEMCACHE_SERVERS']
+  ENV['MEMCACHE_SERVERS'] ||= ENV['HOSTNAME']
+  config.cache_store = :dalli_store, nil, { :namespace => ENV['APPLICATION'], :compress => true }
+
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.

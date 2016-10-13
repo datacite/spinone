@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:08:21 GMT
+      - Tue, 04 Oct 2016 09:32:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 15a9ca87-58c6-4548-98b4-882fb96e748f
+      - 10ddaea0-a188-4785-a1af-8171053aabfb
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
-      - POST, GET, PUT, DELETE, OPTIONS
+      - GET, POST, OPTIONS
       Etag:
-      - W/"9244e6ba32eb21f2f25958b1c8e59d24"
+      - W/"0e90955979497eecb8918cc3eb0b925f"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.044747'
+      - '0.043208'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,9 +56,9 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":1,"total_pages":1,"page":1,"registration_agencies":{"crossref":1},"members":{}},"publishers":[{"id":"340","title":"Public
         Library of Science (PLoS)","other_names":["Public Library of Science (PLoS)","Public
-        Library of Science"],"prefixes":[],"registration_agency_id":"crossref","timestamp":"2016-09-21T20:22:28Z"}]}'
+        Library of Science"],"prefixes":[],"registration_agency_id":"crossref","timestamp":"2016-10-04T09:02:44Z"}]}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:08:22 GMT
+  recorded_at: Tue, 04 Oct 2016 09:32:56 GMT
 - request:
     method: get
     uri: https://profiles.datacite.org/api/members
@@ -78,7 +78,7 @@ http_interactions:
       Server:
       - nginx/1.11.3
       Date:
-      - Wed, 21 Sep 2016 21:08:22 GMT
+      - Tue, 04 Oct 2016 09:32:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -96,9 +96,9 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 1a00fac4-a59c-4507-b601-8944e407c95f
+      - 2e1b63b0-1a5e-4ca1-ac29-d12935150a88
       Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - POST, GET, PUT, DELETE, OPTIONS
       Etag:
@@ -106,7 +106,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.069021'
+      - '0.061111'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -683,5 +683,62 @@ http_interactions:
         use of digital object identifiers for datasets.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Netherlands","year":2009,"logo-url":"https://assets.datacite.org/images/members/DELFT.png","email":"library@tudelft.nl","website":"http://www.library.tudelft.nl/en","phone":"+31
         15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":36,"total-pages":1,"page":1,"member-types":{"allocating":28,"non-allocating":8},"regions":{"amer":8,"apac":5,"emea":23},"years":{"2016":2,"2015":5,"2014":4,"2013":4,"2012":2,"2011":1,"2010":11,"2009":7}}}'
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:08:22 GMT
+  recorded_at: Tue, 04 Oct 2016 09:32:57 GMT
+- request:
+    method: get
+    uri: https://eventdata.datacite.org/api/registration_agencies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Tue, 04 Oct 2016 09:32:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 64db2025-7891-4b0b-82a2-3ede3e38fc1a
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"307dfe0132d87009c4ac66b3e82fe5d6"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.023104'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"registration-agency-list","message-version":"v7","total":6},"registration_agencies":[{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"},{"id":"datacite","title":"DataCite","timestamp":"2016-04-27T02:23:01Z"},{"id":"github","title":"GitHub","timestamp":"2016-04-27T02:23:01Z"},{"id":"orcid","title":"ORCID","timestamp":"2016-04-27T02:23:01Z"},{"id":"twitter","title":"Twitter","timestamp":"2016-04-27T02:23:01Z"},{"id":"wikipedia","title":"Wikipedia","timestamp":"2016-04-27T02:23:01Z"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Oct 2016 09:32:57 GMT
 recorded_with: VCR 2.9.3

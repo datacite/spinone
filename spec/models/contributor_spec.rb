@@ -16,7 +16,7 @@ describe Contributor, type: :model, vcr: true do
   end
 
   it "contributor" do
-    contributors = Contributor.where(id: "http://orcid.org/0000-0002-4000-4167")[:data]
-    expect(contributors.first.family).to eq("Arend")
+    contributor = Contributor.where(id: "http://orcid.org/0000-0002-4000-4167")[:data]
+    expect(contributor.family).to eq("Arend")
   end
 end

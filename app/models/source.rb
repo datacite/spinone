@@ -1,12 +1,14 @@
 class Source < Base
-  attr_reader :id, :title, :description, :state, :group_id, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at, :publisher_id
+  attr_reader :id, :title, :description, :state, :group, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at, :publisher_id
 
-  def initialize(attributes)
+  # include helper module for caching infrequently changing resources
+  include Cacheable
+
+  def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @description = attributes.fetch("description", nil)
     @state = attributes.fetch("state", nil)
-    @group_id = attributes.fetch("group_id", nil)
     @work_count = attributes.fetch("work_count", 0)
     @relation_count = attributes.fetch("relation_count", 0)
     @result_count = attributes.fetch("result_count", 0)
@@ -14,6 +16,9 @@ class Source < Base
     @by_month = attributes.fetch("by_month", {})
     @publisher_id = attributes.fetch("publisher_id", {})
     @updated_at = attributes.fetch("timestamp", nil)
+
+    # associations
+    @group = Array(options[:groups]).find { |s| s.id == attributes.fetch("group_id", nil) }
   end
 
   def self.get_query_url(options={})
@@ -34,27 +39,15 @@ class Source < Base
       item = result.fetch("data", {}).fetch("source", {})
       return nil if item.blank?
 
-      group = Group.where(id: item.fetch("group_id", nil))
-      group = group[:data] if group.present?
-
-      { data: parse_items([item]) + [group] }
+      { data: parse_item(item, groups: cached_groups) }
     else
       items = result.fetch("data", {}).fetch("sources", [])
 
       meta = result.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"], groups: meta["groups"] }
 
-      { data: parse_items(items) + parse_included(items, options), meta: meta }
+      { data: parse_items(items, groups: cached_groups), meta: meta }
     end
-  end
-
-  def self.parse_included(items, options={})
-    used_groups = items.map { |i| i.fetch("group_id").underscore.dasherize }.uniq
-    Group.all[:data].select { |s| used_groups.include?(s.id) }
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url

@@ -1,0 +1,2803 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-8478-7549","doi":"10.6084/M9.FIGSHARE.1226424","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 34ccebc6-99a8-4e83-a5b7-5aeab28d320c
+      X-Runtime:
+      - '0.029735'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:14 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371006","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0e33661c-d7a7-4e85-b9c5-9316d3936df2
+      X-Runtime:
+      - '0.036198'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:15 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371005","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 122fbba9-734a-46ae-a035-b4285413712d
+      X-Runtime:
+      - '0.039122'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:15 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-4000-4167","doi":"10.6084/M9.FIGSHARE.1368269","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f643d0f6-9591-4b34-9e22-0d9f689bcd8c
+      X-Runtime:
+      - '0.028523'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:15 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368484","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ea013453-12c1-417f-82a4-4afd4d775dc2
+      X-Runtime:
+      - '0.031542'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:16 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-3796-827X","doi":"10.6084/M9.FIGSHARE.1368488","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3c0e16fe-1394-4ca1-9b9c-74cce4671b47
+      X-Runtime:
+      - '0.029416'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:16 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-1073-887X","doi":"10.6084/M9.FIGSHARE.1368581","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e537e9a1-51c6-45aa-a0a7-e05551282a4c
+      X-Runtime:
+      - '0.028638'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:16 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368663","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3e7d4151-24a1-47d1-b719-1921d9209302
+      X-Runtime:
+      - '0.041313'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:17 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3437-4911","doi":"10.6084/M9.FIGSHARE.1368671","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - bd8cf5a5-f21a-454b-b263-16f166213c9a
+      X-Runtime:
+      - '0.039454'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:17 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9873-8342","doi":"10.6084/M9.FIGSHARE.1368728","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 479f84af-4db9-408e-942c-ecff5c23d319
+      X-Runtime:
+      - '0.026577'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:18 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368744","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 599a3cea-7351-4ca6-83c6-2256321d5d05
+      X-Runtime:
+      - '0.028597'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:19 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368745","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9a386c4a-086f-4dcd-8618-269434ffc308
+      X-Runtime:
+      - '0.027570'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:19 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-7757-8001","doi":"10.6084/M9.FIGSHARE.1368746","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5f6ce336-93e3-4045-82d3-c507a696931d
+      X-Runtime:
+      - '0.028488'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:19 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6176-2816","doi":"10.6084/M9.FIGSHARE.1368761","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 66784b7f-61af-4bba-936e-77fd96e35c03
+      X-Runtime:
+      - '0.028615'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:20 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-0311-9774","doi":"10.6084/M9.FIGSHARE.1368774","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e226b163-e518-40bd-b0d0-f77304cb5a78
+      X-Runtime:
+      - '0.028305'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:20 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-6921-5307","doi":"10.6084/M9.FIGSHARE.1370882","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4e51ab33-3298-433c-ba76-0e6212a58981
+      X-Runtime:
+      - '0.137647'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:23 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0003-3938-899X","doi":"10.5284/1030449","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c51dc10e-fba9-40d1-9a88-a85dfcad4131
+      X-Runtime:
+      - '0.028336'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:24 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-2725-6730","doi":"10.5284/1030449","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5d60b15e-5b36-409d-9112-2cd993e04372
+      X-Runtime:
+      - '0.027048'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:24 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745301","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d3122498-8111-40da-8061-a55b0086e067
+      X-Runtime:
+      - '0.030041'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:24 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.745313","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ca066f74-d030-4d19-bce6-7a261ab870f6
+      X-Runtime:
+      - '0.028911'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:24 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.746960","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5bd6bcab-94d4-4a5f-8036-67b6667741ca
+      X-Runtime:
+      - '0.029446'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:25 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735810","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f1795fd3-f36b-432e-8c06-51ed08e4b2ae
+      X-Runtime:
+      - '0.033034'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:25 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.735811","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 322295b2-01ec-4538-b285-7f78775814e6
+      X-Runtime:
+      - '0.027301'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:25 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.999239","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 11437d9f-2635-4bbd-beba-0ea85dcffb9b
+      X-Runtime:
+      - '0.035335'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:26 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371077","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1f8f0ca3-2285-4b5f-a1f8-685041775fa0
+      X-Runtime:
+      - '0.034394'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:26 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371009","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3931b4e4-c666-4f55-a5cc-2cbb6fa4f5b4
+      X-Runtime:
+      - '0.030829'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:26 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371008","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - fc77460d-c66c-4713-ae8e-27e2aa2caccb
+      X-Runtime:
+      - '0.028566'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:27 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371010","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 22f04024-9904-4be2-b006-6fb30e0a45d0
+      X-Runtime:
+      - '0.027437'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:27 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371011","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 28c5f90e-cc7d-4b4c-ab99-8dd12d38b761
+      X-Runtime:
+      - '0.028908'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:27 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371013","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 736c95e1-7646-47a3-9d48-30fa16af8a49
+      X-Runtime:
+      - '0.029163'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:28 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371014","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6fb7e2ee-38e0-4b28-8ae9-248d940d9b8c
+      X-Runtime:
+      - '0.028193'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:28 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371012","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4b8e3fac-793b-4de2-9d51-759fa50bbf49
+      X-Runtime:
+      - '0.032478'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:28 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371015","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 234df958-ad95-4768-a6f7-ca44e5faf4ee
+      X-Runtime:
+      - '0.033047'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:29 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371017","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 382858fa-a196-4e94-b748-e6f253a677bb
+      X-Runtime:
+      - '0.028868'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:29 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371018","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 407034eb-f347-4e03-80b9-faf686cd1056
+      X-Runtime:
+      - '0.035295'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:29 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371016","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6c32b73e-d229-4f31-93f5-342fc95c1bda
+      X-Runtime:
+      - '0.029829'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:30 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5921-2399","doi":"10.6084/M9.FIGSHARE.1371019","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1a46cbf4-a112-44a9-83d9-a34f83b56b7e
+      X-Runtime:
+      - '0.029927'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:30 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1371114","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5718f044-f32e-4961-95b2-6bdf54eb7c65
+      X-Runtime:
+      - '0.028404'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:30 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-5882-6823","doi":"10.6084/M9.FIGSHARE.1337953","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 072d0ec5-d08b-4737-add2-6b393b2d3e17
+      X-Runtime:
+      - '0.026426'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:30 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371137","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 07db25fa-9989-4d2d-9d8a-2b44639a5900
+      X-Runtime:
+      - '0.028056'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:31 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371138","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 909cdfba-558b-4dab-ba79-75f134e2a699
+      X-Runtime:
+      - '0.029128'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:31 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1371139","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 9a447432-c162-43db-ad61-e0b4e2766340
+      X-Runtime:
+      - '0.027209'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:31 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707350","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 49d59175-e5b7-4db9-93f6-206ed1ce0f2a
+      X-Runtime:
+      - '0.027438'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:32 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0001-9964-6984","doi":"10.6084/M9.FIGSHARE.707351","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d8685d7e-4989-43e4-b391-8e98822a61c6
+      X-Runtime:
+      - '0.032209'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:32 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.778701","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e96493f4-a28e-4793-9c15-a940e96032d0
+      X-Runtime:
+      - '0.029520'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:33 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.779705","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 3bdf6216-2c7f-41d9-92a9-94c49ba0e661
+      X-Runtime:
+      - '0.038232'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:33 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.760716","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4acc869c-eef5-427c-a808-5a38a443a216
+      X-Runtime:
+      - '0.030209'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:33 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769272","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 71f129d2-ef09-47ba-9b6d-e6a4e05dbd7c
+      X-Runtime:
+      - '0.028428'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:34 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769271","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f4614c47-c6d2-46b1-89f9-c94dc4e14521
+      X-Runtime:
+      - '0.027260'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:34 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.769270","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ede5f84e-b605-4431-8954-76556b608ab7
+      X-Runtime:
+      - '0.040355'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:39 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1041547","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - cb7c4dc0-2004-4bdb-97c4-e04a67e80941
+      X-Runtime:
+      - '0.030720'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:39 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014351","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 62c335db-7ae1-4434-80a4-28a9981b986b
+      X-Runtime:
+      - '0.030367'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:40 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014348","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1e17f0a9-215f-4913-8c16-42b647b4140c
+      X-Runtime:
+      - '0.031807'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:40 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1014352","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 88dc5080-a72d-46e3-bea5-8cd13f74fdd4
+      X-Runtime:
+      - '0.035608'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:50 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008321","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f60a7d4e-7be2-4984-aff5-ea61ad4430d5
+      X-Runtime:
+      - '0.029088'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:50 GMT
+- request:
+    method: post
+    uri: https://profiles.datacite.org/api/claims
+    body:
+      encoding: UTF-8
+      string: '{"claim":{"orcid":"0000-0002-3546-1048","doi":"10.6084/M9.FIGSHARE.1008320","source_id":"orcid_update"}}'
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+      Authorization:
+      - Token token=<VOLPINO_TOKEN>
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.3
+      Date:
+      - Wed, 05 Oct 2016 20:06:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 752dd896-6832-4b5d-baa2-f154d67e8a48
+      X-Runtime:
+      - '0.028322'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":"401","title":"You are not authorized to access
+        this page."}]}'
+    http_version: 
+  recorded_at: Wed, 05 Oct 2016 20:06:50 GMT
+recorded_with: VCR 2.9.3

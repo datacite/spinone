@@ -1,7 +1,7 @@
 class Member < Base
   attr_reader :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :updated_at
 
-  def initialize(item)
+  def initialize(item, options={})
     attributes = item.fetch('attributes', {})
     @id = item.fetch("id", nil).underscore
     @title = attributes.fetch("title", nil)
@@ -30,7 +30,6 @@ class Member < Base
   end
 
   def self.parse_data(result, options={})
-    Rails.logger.info result
     return nil if result.blank? || result['errors']
 
     if options[:id].present?
@@ -44,10 +43,6 @@ class Member < Base
 
       { data: parse_items(items), meta: meta }
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url

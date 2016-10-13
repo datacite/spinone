@@ -9,7 +9,7 @@ describe RelationType, type: :model, vcr: true do
   end
 
   it "relation type" do
-    relation_type = RelationType.find("IsCitedBy")
+    relation_type = RelationType.where(id: "is-cited-by")[:data]
     expect(relation_type.title).to eq("Is cited by")
   end
 end

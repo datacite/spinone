@@ -1,7 +1,7 @@
 class Event < Base
   attr_reader :id, :state, :message_type, :message_action, :source_token, :prefix, :subj_id, :obj_id, :subj, :obj, :source_id, :relation_type_id, :registration_agency_id, :total, :occurred_at, :updated_at
 
-  def initialize(attributes)
+  def initialize(attributes, options={})
     @id = attributes.fetch("id", nil)
     @state = attributes.fetch("state", nil)
     @message_type = attributes.fetch("message_type", nil)
@@ -54,10 +54,6 @@ class Event < Base
 
       { data: parse_items(items), meta: { total: total } }
     end
-  end
-
-  def self.parse_item(item)
-    self.new(item)
   end
 
   def self.url
