@@ -41,6 +41,10 @@
                 <% settings.development_links.each do |item| %>
                   <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
                 <% end %>
+              <% elsif Rails.env.stage? %>
+                <% settings.stage_links.each do |item| %>
+                  <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
+                <% end %>
               <% else %>
                 <% settings.production_links.each do |item| %>
                   <li><%= link_to "#{icon(item['icon'])} #{item['name']}".html_safe, item['url'] %></li>
