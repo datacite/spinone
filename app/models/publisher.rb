@@ -47,9 +47,16 @@ class Publisher < Base
     else
       items = result.fetch("data", {}).fetch("publishers", [])
       meta = result.fetch("data", {}).fetch("meta", {})
-      meta = { total: meta.fetch("total", {}),
-               registration_agencies: meta.fetch("registration_agencies", {}),
-               members: meta.fetch("members", {}) }
+      members = meta.fetch("members", [])
+                    .sort { |a, b| b.fetch("count") <=> a.fetch("count") }
+                    .map do |i|
+                           member = cached_members.find { |m| m.id == i.fetch("id") } || OpenStruct.new(title: i.fetch("title"))
+                           { id: i.fetch("id"), title: member.title, count: i.fetch("count") }
+                         end
+
+      meta = { total: meta.fetch("total", 0),
+               registration_agencies: meta.fetch("registration_agencies", []),
+               members: members }
 
       { data: parse_items(items, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
     end
