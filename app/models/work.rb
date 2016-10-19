@@ -277,6 +277,7 @@ class Work < Base
     response = Maremma.get(query_url, options)
     response.fetch("data", {}).fetch("publishers", [])
             .map { |p| { id: p.fetch("id"), title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
+            .sort { |a, b| b[:count] <=> a[:count] }
   end
 
   def self.url
