@@ -276,7 +276,7 @@ class Work < Base
     query_url = ENV['LAGOTTO_URL'] + "/publishers?ids=" + publishers.keys.join(",")
     response = Maremma.get(query_url, options)
     response.fetch("data", {}).fetch("publishers", [])
-            .map { |p| { id: p.fetch("id"), title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
+            .map { |p| { id: p.fetch("id").underscore.dasherize, title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 
