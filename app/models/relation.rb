@@ -57,9 +57,12 @@ class Relation < Base
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
              sources: meta["sources"],
+             publishers: meta["publishers"],
              relation_types: meta["relation_types"] }
 
-    { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types), meta: meta }
+    publishers = Publisher.collect_data(ids: meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")).fetch(:data, [])
+
+    { data: parse_items(items, sources: cached_sources, publishers: publishers, relation_types: cached_relation_types), meta: meta }
   end
 
   def self.url
