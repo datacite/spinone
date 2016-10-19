@@ -41,7 +41,7 @@ class Work < Base
     # associations
     @publisher = Array(options[:publishers]).find { |p| p.id == attributes.fetch("datacentre_symbol", "").downcase.underscore.dasherize }
     @resource_type = Array(options[:resource_types]).find { |r| r.id == attributes.fetch("resourceTypeGeneral", "").downcase.underscore.dasherize }
-    work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]]
+    work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
     @work_type = Array(options[:work_types]).find { |r| r.id == work_type_id.downcase.underscore.dasherize }
   end
 
@@ -169,7 +169,6 @@ class Work < Base
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
 
-      resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
       publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
@@ -180,20 +179,29 @@ class Work < Base
         parse_include(item.first, item.last)
       end
 
-      { data: parse_items(items, resource_types: resource_types, publishers: publishers, sources: cached_sources), meta: meta }
+      { data: parse_items(items, resource_types: cached_resource_types, publishers: publishers, work_types: cached_work_types, sources: cached_sources), meta: meta }
     end
   end
 
   def self.parse_facet_counts(facets, options={})
-    resource_types = facets.fetch("resourceType_facet", []).each_slice(2).to_h
-    years = facets.fetch("publicationYear", []).each_slice(2).sort { |a, b| b.first <=> a.first }.to_h
+    resource_types = facets.fetch("resourceType_facet", [])
+                           .each_slice(2)
+                           .map { |k,v| { id: k.underscore.dasherize, title: k, count: v } }
+    years = facets.fetch("publicationYear", [])
+                  .each_slice(2)
+                  .sort { |a, b| b.first <=> a.first }
+                  .map { |i| { id: i[0], title: i[0], count: i[1] } }
     publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
                               [id, p.last]
                             end.to_h
-    schema_versions = facets.fetch("schema_version", []).each_slice(2).sort { |a, b| b.first <=> a.first }.to_h
+    publishers = get_publisher_facets(publishers)
+    schema_versions = facets.fetch("schema_version", [])
+                            .each_slice(2)
+                            .sort { |a, b| b.first <=> a.first }
+                            .map { |i| { id: i[0], title: "Schema #{i[0]}", count: i[1] } }
 
     if options["publisher-id"].present? && publishers.empty?
       publishers = { options["publisher-id"] => 0 }
@@ -262,6 +270,13 @@ class Work < Base
     else
       { data: [] }
     end
+  end
+
+  def self.get_publisher_facets(publishers, options={})
+    query_url = ENV['LAGOTTO_URL'] + "/publishers?ids=" + publishers.keys.join(",")
+    response = Maremma.get(query_url, options)
+    response.fetch("data", {}).fetch("publishers", [])
+            .map { |p| { id: p.fetch("id"), title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
   end
 
   def self.url
