@@ -60,7 +60,8 @@ class Contribution < Base
              publishers: meta["publishers"]
            }
 
-    publishers = Publisher.collect_data(ids: meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")).fetch(:data, [])
+    publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
+    publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
 
     { data: parse_items(items, sources: cached_sources, publishers: publishers), meta: meta}
   end
