@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :license, :publisher, :results, :schema_version, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :member, :registration_agency, :license, :publisher, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -40,6 +40,10 @@ class Work < Base
 
     # associations
     @publisher = Array(options[:publishers]).find { |p| p.id == attributes.fetch("datacentre_symbol", "").downcase.underscore.dasherize }
+    @member = Array(options[:members]).find { |r| r.id == attributes.fetch("allocator_symbol", "").downcase.underscore.dasherize }
+    registration_agency_id = @member.present? ? "datacite" : attributes.fetch("registration_agency_id", "").downcase.underscore.dasherize
+    @registration_agency = Array(options[:registration_agencies]).find { |r| r.id == registration_agency_id }
+
     @resource_type = Array(options[:resource_types]).find { |r| r.id == attributes.fetch("resourceTypeGeneral", "").downcase.underscore.dasherize }
     work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
     @work_type = Array(options[:work_types]).find { |r| r.id == work_type_id.downcase.underscore.dasherize }
@@ -153,13 +157,13 @@ class Work < Base
         publisher = nil
       end
 
-      { data: parse_item(item, resource_types: cached_resource_types, relation_types: cached_relation_types, work_types: cached_work_types, publishers: [publisher], sources: cached_sources), meta: meta }
+      { data: parse_item(item, resource_types: cached_resource_types, relation_types: cached_relation_types, work_types: cached_work_types, publishers: [publisher], members: cached_members, registration_agencies: cached_registration_agencies, sources: cached_sources), meta: meta }
     elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
       meta = result[:meta]
 
-      { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types, work_types: cached_work_types), meta: meta }
+      { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types, work_types: cached_work_types, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       items = get_results(items, options)[:data]
@@ -179,7 +183,7 @@ class Work < Base
         parse_include(item.first, item.last)
       end
 
-      { data: parse_items(items, resource_types: cached_resource_types, publishers: publishers, work_types: cached_work_types, sources: cached_sources), meta: meta }
+      { data: parse_items(items, resource_types: cached_resource_types, publishers: publishers, work_types: cached_work_types, members: cached_members, registration_agencies: cached_registration_agencies, sources: cached_sources), meta: meta }
     end
   end
 
