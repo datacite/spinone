@@ -157,13 +157,27 @@ class Work < Base
         publisher = nil
       end
 
-      { data: parse_item(item, resource_types: cached_resource_types, relation_types: cached_relation_types, work_types: cached_work_types, publishers: [publisher], members: cached_members, registration_agencies: cached_registration_agencies, sources: cached_sources), meta: meta }
+      { data: parse_item(item,
+        relation_types: cached_relation_types,
+        resource_types: cached_resource_types,
+        work_types: cached_work_types,
+        publishers: [publisher],
+        members: cached_members,
+        registration_agencies: cached_registration_agencies,
+        sources: cached_sources), meta: meta }
     elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
       meta = result[:meta]
 
-      { data: parse_items(items, sources: cached_sources, relation_types: cached_relation_types, work_types: cached_work_types, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
+      { data: parse_items(items,
+        relation_types: cached_relation_types,
+        resource_types: cached_resource_types,
+        work_types: cached_work_types,
+        publishers: [],
+        members: cached_members,
+        registration_agencies: cached_registration_agencies,
+        sources: cached_sources,), meta: meta }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       items = get_results(items, options)[:data]
@@ -183,14 +197,21 @@ class Work < Base
         parse_include(item.first, item.last)
       end
 
-      { data: parse_items(items, resource_types: cached_resource_types, publishers: publishers, work_types: cached_work_types, members: cached_members, registration_agencies: cached_registration_agencies, sources: cached_sources), meta: meta }
+      { data: parse_items(items,
+        relation_types: cached_relation_types,
+        resource_types: cached_resource_types,
+        work_types: cached_work_types,
+        publishers: publishers, ,
+        members: cached_members,
+        registration_agencies: cached_registration_agencies,
+        sources: cached_sources), meta: meta }
     end
   end
 
   def self.parse_facet_counts(facets, options={})
     resource_types = facets.fetch("resourceType_facet", [])
                            .each_slice(2)
-                           .map { |k,v| { id: k.underscore.dasherize, title: k, count: v } }
+                           .map { |k,v| { id: k.underscore.dasherize, title: k.underscore.humanize, count: v } }
     years = facets.fetch("publicationYear", [])
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
