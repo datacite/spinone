@@ -144,24 +144,21 @@ class Work < Base
 
       meta = result[:meta]
 
+      resource_type = nil
       resource_type_id = item.fetch("resourceTypeGeneral", nil)
-      if resource_type_id.present?
-        resource_type = ResourceType.where(id: resource_type_id.downcase.underscore.dasherize)[:data]
-      else
-        resource_type = nil
-      end
+      resource_type = ResourceType.where(id: resource_type_id.downcase.underscore.dasherize) if resource_type_id.present?
+      resource_type = resource_type[:data] if resource_type.present?
+
+      publisher = nil
       publisher_id = item.fetch("datacentre_symbol", nil)
-      if publisher_id.present?
-        publisher = Publisher.where(id: publisher_id.downcase.underscore.dasherize)[:data]
-      else
-        publisher = nil
-      end
+      publisher = Publisher.where(id: publisher_id.downcase.underscore.dasherize) if publisher_id.present?
+      publisher = publisher[:data] if publisher.present?
 
       { data: parse_item(item,
         relation_types: cached_relation_types,
         resource_types: cached_resource_types,
         work_types: cached_work_types,
-        publishers: [publisher],
+        publishers: [publisher].compact,
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
@@ -201,7 +198,7 @@ class Work < Base
         relation_types: cached_relation_types,
         resource_types: cached_resource_types,
         work_types: cached_work_types,
-        publishers: publishers, ,
+        publishers: publishers,
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
