@@ -269,8 +269,9 @@ class Work < Base
 
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
-               sources: meta["sources"],
-               relation_types: meta["relation_types"] }.compact
+               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
+               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
+               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }} }.compact
 
       { data: data, meta: meta }
     elsif options[:id].present? || options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
