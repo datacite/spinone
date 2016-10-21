@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type, :resource_type_subtype, :work_type, :member, :registration_agency, :license, :publisher, :results, :schema_version, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
