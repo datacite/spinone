@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 08:56:21 GMT
+      - Fri, 21 Oct 2016 17:30:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 518d635c-5471-4614-b64f-b3fe2c648907
+      - 1414b29c-e69c-4c95-a89c-05f8590e88d5
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '28.521712'
+      - '22.624607'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -155,7 +155,7 @@ http_interactions:
         albacore tuna (Thunnus alalunga) in the North Atlantic for the period 1973-2011,
         compiled from statistics about ICCAT fishery region L2","published":"2014","issued":"2014-03-04T03:05:23Z","DOI":"10.1594/PANGAEA.828226","work_type_id":"dataset","results":{},"timestamp":"2016-09-01T22:08:40Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 08:56:22 GMT
+  recorded_at: Fri, 21 Oct 2016 17:30:23 GMT
 - request:
     method: get
     uri: http://eventdata.labs.datacite.org/api/publishers?ids=dk.gbif,tib.pangaea,cdl.dryad,cdl.ucdirl,cisti.nrc,bl.imperial,delft.datacent,tib.ldeo,estdoi.qdb,tib.gfz,cdl.ucsd,tib.wdcc,inist.resif,osti.pegasus,cdl.pgerr&page=1&per_page=25
@@ -175,7 +175,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 08:56:22 GMT
+      - Fri, 21 Oct 2016 17:30:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -193,17 +193,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a9da0706-40d0-4d4c-bf07-aabbae8d1179
+      - 39e78f0c-3591-4597-bf8d-8c2b9f1e5d40
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"581deeeb831504402a808db7fbb29e4e"
+      - W/"af581663c644d329d4d592358692a1c8"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.081767'
+      - '0.091766'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -211,19 +211,19 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"delft","title":"DELFT","count":1},{"id":"cdl","title":"CDL","count":4},{"id":"tib","title":"TIB","count":4},{"id":"dk","title":"DK","count":1},{"id":"bl","title":"BL","count":1},{"id":"cisti","title":"CISTI","count":1},{"id":"osti","title":"OSTI","count":1},{"id":"estdoi","title":"ESTDOI","count":1},{"id":"inist","title":"INIST","count":1}]},"publishers":[{"id":"DELFT.DATACENT","title":"3TU
-        Datacentrum","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-10-21T08:53:37Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:54:20Z"},{"id":"TIB.GFZ","title":"Geoforschungszentrum
-        Potsdam","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T08:54:38Z"},{"id":"DK.GBIF","title":"Global
-        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T08:54:39Z"},{"id":"BL.IMPERIAL","title":"Imperial
-        College London","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T08:54:47Z"},{"id":"TIB.LDEO","title":"LDEO
-        - Lamont-Doherty Earth Observatory, Columbia University","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T08:55:43Z"},{"id":"CISTI.NRC","title":"National
-        Research Council","prefixes":[],"registration_agency_id":"datacite","member_id":"CISTI","timestamp":"2016-10-21T08:55:54Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T08:56:02Z"},{"id":"OSTI.PEGASUS","title":"Pegasus
-        Toroidal Experiment, University of Wisconsin-Madison","prefixes":[],"registration_agency_id":"datacite","member_id":"OSTI","timestamp":"2016-10-21T08:56:03Z"},{"id":"ESTDOI.QDB","title":"Qsardb
-        repository","prefixes":[],"registration_agency_id":"datacite","member_id":"ESTDOI","timestamp":"2016-10-21T08:56:09Z"},{"id":"INIST.RESIF","title":"Réseau
-        sismologique et géodésique français","prefixes":[],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-21T08:56:12Z"},{"id":"CDL.UCSD","title":"UCSD","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:53:20Z"},{"id":"CDL.UCDIRL","title":"University
-        College Dublin","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:53:23Z"},{"id":"CDL.PGERR","title":"UTA
-        Petroleum Engineering","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:53:30Z"},{"id":"TIB.WDCC","title":"World
-        Data Center for Climate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T08:53:34Z"}]}'
+        Datacentrum","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-10-21T17:13:13Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:07:36Z"},{"id":"TIB.GFZ","title":"Geoforschungszentrum
+        Potsdam","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:18:42Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T17:20:47Z"},{"id":"BL.IMPERIAL","title":"Imperial
+        College London","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:20:21Z"},{"id":"TIB.LDEO","title":"LDEO
+        - Lamont-Doherty Earth Observatory, Columbia University","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:23:12Z"},{"id":"CISTI.NRC","title":"National
+        Research Council","prefixes":[],"registration_agency_id":"datacite","member_id":"CISTI","timestamp":"2016-10-21T17:14:33Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:08:38Z"},{"id":"OSTI.PEGASUS","title":"Pegasus
+        Toroidal Experiment, University of Wisconsin-Madison","prefixes":[],"registration_agency_id":"datacite","member_id":"OSTI","timestamp":"2016-10-21T17:08:39Z"},{"id":"ESTDOI.QDB","title":"Qsardb
+        repository","prefixes":[],"registration_agency_id":"datacite","member_id":"ESTDOI","timestamp":"2016-10-21T17:16:06Z"},{"id":"INIST.RESIF","title":"Réseau
+        sismologique et géodésique français","prefixes":[],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-21T17:11:19Z"},{"id":"CDL.UCSD","title":"UCSD","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:21:36Z"},{"id":"CDL.UCDIRL","title":"University
+        College Dublin","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:09:50Z"},{"id":"CDL.PGERR","title":"UTA
+        Petroleum Engineering","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:09:57Z"},{"id":"TIB.WDCC","title":"World
+        Data Center for Climate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:22:55Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 08:56:22 GMT
+  recorded_at: Fri, 21 Oct 2016 17:30:23 GMT
 recorded_with: VCR 2.9.3

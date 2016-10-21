@@ -23,7 +23,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
     work = works[:data].first
-    expect(work.title).to eq("Impact of Article Page Count and Number of Authors on Citations in Disability Related Fields: A Systematic Review Article")
+    expect(work.title).to eq("PERSUASIVE ADVERTISING TECHNIQUES OF 2016 PRESIDENTIAL CANDIDATES AND THE LEVEL OF PERSUASION AMONG TECHNOLOGY COMMUNICATION MANAGEMENT STUDENTS")
     expect(work.resource_type.title).to eq("Text")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
@@ -67,7 +67,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(registration_agency_id: "datacite")[:data]
     expect(works.length).to eq(25)
     work = works.first
-    expect(work.title).to eq("A Comparison of Methods to Describe Macular Pigment Optical Density Spatial Distribution")
+    expect(work.title).to eq("PERSUASIVE ADVERTISING TECHNIQUES OF 2016 PRESIDENTIAL CANDIDATES AND THE LEVEL OF PERSUASION AMONG TECHNOLOGY COMMUNICATION MANAGEMENT STUDENTS")
   end
 
   it "work" do

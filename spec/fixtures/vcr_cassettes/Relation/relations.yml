@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 08:59:31 GMT
+      - Fri, 21 Oct 2016 17:30:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 87fdfbb0-d62d-4e34-8f3b-41cd32261792
+      - 94458437-2736-4b0d-ab42-dba7f8303c49
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '50.307759'
+      - '46.167391'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -175,7 +175,7 @@ http_interactions:
         Semester 1)","published":"2016","issued":"2016-09-05T09:36:24Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466","work_type_id":"report","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"kässi"},{"family":"Hadley","given":"Martin","ORCID":"http://orcid.org/0000-0002-3039-6849"},{"family":"Lehdonvirta","given":"Vili"}],"title":"Online
         Labour Index: Measuring the Online Gig Economy for Policy and Research","published":"2016","issued":"2016-09-05T09:17:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3761562.V1","results":{},"timestamp":"2016-09-17T19:07:41Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 08:59:31 GMT
+  recorded_at: Fri, 21 Oct 2016 17:30:00 GMT
 - request:
     method: get
     uri: http://eventdata.labs.datacite.org/api/publishers?ids=dk.gbif,bl.ccdc,gesis.die,tib.pangaea,cdl.digsci,cdl.pisco,ands.centre72,cdl.lternet,cdl.dryad,cdl.r2-r,delft.data4-tu,cdl.ucdirl,cdl.nceas,inist.ifremer,snd.snd&page=1&per_page=25
@@ -195,7 +195,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 08:59:31 GMT
+      - Fri, 21 Oct 2016 17:30:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -213,17 +213,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 628a9747-25ba-4338-9b9e-e08b7b00f32a
+      - f0bc8e93-3d51-420b-af5e-29fa49ad328c
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"eb3ec609b02e7f033e34faad24ae3324"
+      - W/"e8e8b283fb42d0bf2e0175aa52819b31"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.087385'
+      - '0.058287'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -231,17 +231,17 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":13,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":13}],"members":[{"id":"gesis","title":"GESIS","count":1},{"id":"cdl","title":"CDL","count":6},{"id":"dk","title":"DK","count":1},{"id":"inist","title":"INIST","count":1},{"id":"tib","title":"TIB","count":1},{"id":"ands","title":"ANDS","count":1},{"id":"snd","title":"SND","count":1},{"id":"bl","title":"BL","count":1}]},"publishers":[{"id":"GESIS.DIE","title":"Deutsches
-        Institut für Erwachsenenbildung","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T08:58:08Z"},{"id":"CDL.DIGSCI","title":"Digital
-        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:58:09Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:58:10Z"},{"id":"DK.GBIF","title":"Global
-        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T08:58:30Z"},{"id":"INIST.IFREMER","title":"Institut
-        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-21T08:58:41Z"},{"id":"CDL.LTERNET","title":"Long
-        Term Ecological Research (LTER) Network","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:56:12Z"},{"id":"CDL.NCEAS","title":"National
-        Center for Ecological Analysis and Synthesis (NCEAS)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:57:13Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T08:56:02Z"},{"id":"ANDS.CENTRE72","title":"PARADISEC","prefixes":[],"registration_agency_id":"datacite","member_id":"ANDS","timestamp":"2016-10-21T08:56:02Z"},{"id":"CDL.PISCO","title":"Partnership
-        for Interdisciplinary Studies of Coastal Oceans (PISCO)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:56:02Z"},{"id":"SND.SND","title":"Swedish
-        National Data Service","prefixes":[],"registration_agency_id":"datacite","member_id":"SND","timestamp":"2016-10-21T08:56:34Z"},{"id":"BL.CCDC","title":"The
-        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T08:56:39Z"},{"id":"CDL.UCDIRL","title":"University
-        College Dublin","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T08:57:14Z"}]}'
+        Institut für Erwachsenenbildung","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:07:30Z"},{"id":"CDL.DIGSCI","title":"Digital
+        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:09:15Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:07:36Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T17:20:47Z"},{"id":"INIST.IFREMER","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-21T17:20:26Z"},{"id":"CDL.LTERNET","title":"Long
+        Term Ecological Research (LTER) Network","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:10:01Z"},{"id":"CDL.NCEAS","title":"National
+        Center for Ecological Analysis and Synthesis (NCEAS)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:23:54Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:08:38Z"},{"id":"ANDS.CENTRE72","title":"PARADISEC","prefixes":[],"registration_agency_id":"datacite","member_id":"ANDS","timestamp":"2016-10-21T17:15:46Z"},{"id":"CDL.PISCO","title":"Partnership
+        for Interdisciplinary Studies of Coastal Oceans (PISCO)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:08:38Z"},{"id":"SND.SND","title":"Swedish
+        National Data Service","prefixes":[],"registration_agency_id":"datacite","member_id":"SND","timestamp":"2016-10-21T17:13:17Z"},{"id":"BL.CCDC","title":"The
+        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:13:44Z"},{"id":"CDL.UCDIRL","title":"University
+        College Dublin","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:09:50Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 08:59:31 GMT
+  recorded_at: Fri, 21 Oct 2016 17:30:00 GMT
 recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/registration_agencies/crossref
+    uri: http://eventdata.labs.datacite.org/api/registration_agencies/crossref
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 20:04:55 GMT
+      - Fri, 21 Oct 2016 17:27:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 87cbcf4b-20bc-492a-8801-e256c8f9be18
+      - 99b5faee-62b6-412d-8ba8-7dea67eeaf61
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.011670'
+      - '0.014624'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"registration-agency","message-version":"v7"},"registration_agency":{"id":"crossref","title":"Crossref","timestamp":"2016-04-27T02:23:01Z"}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 20:04:55 GMT
+  recorded_at: Fri, 21 Oct 2016 17:27:29 GMT
 recorded_with: VCR 2.9.3

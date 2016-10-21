@@ -17,21 +17,21 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 08:57:18 GMT
+      - Fri, 21 Oct 2016 17:31:19 GMT
       Content-Length:
       - '1252'
       Connection:
       - keep-alive
       X-Amz-Id-2:
-      - tw+Mh9uMsB4YOBOY009z/hlNw8V+bKC/ebZ0otNktUc5INUcqgVTcEpMI0Wf1/BSL3FPsbWMKWU=
+      - SZJ71yNGhy4VgRMB7sOCkzZ2vOFR+xkyM2YPAwBCz6dNhj3ZvBH/VH1khhuuEWO4pYt5AxXFGdY=
       X-Amz-Request-Id:
-      - 44E54AF6DC9725B0
+      - C1B186E097734BFF
       Content-Encoding:
       - text
       Last-Modified:
-      - Mon, 19 Sep 2016 22:10:30 GMT
+      - Fri, 14 Oct 2016 12:10:01 GMT
       Etag:
       - '"bfc0582894b33ec97a324cdc44748aec"'
       Access-Control-Allow-Origin:
@@ -68,5 +68,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 08:57:18 GMT
+  recorded_at: Fri, 21 Oct 2016 17:31:19 GMT
 recorded_with: VCR 2.9.3

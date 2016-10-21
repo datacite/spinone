@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://profiles.datacite.org/api/members/ands
+    uri: http://profiles/api/members/ands
     body:
       encoding: US-ASCII
       string: ''
@@ -16,10 +16,6 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 19:58:43 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,21 +33,25 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 911c938f-7792-4d94-998d-46e901142270
+      - 23e3b1f4-91ff-4c48-87d1-ff5e895bb775
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"0c0d8135e307079b58ceba16459e7efc"
+      - W/"96f72bb33d8ccf2be52eeed14543cda1"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.008781'
+      - '0.147494'
       X-Content-Type-Options:
       - nosniff
+      Date:
+      - Fri, 21 Oct 2016 17:27:30 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.30
+      Server:
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
@@ -77,8 +77,8 @@ http_interactions:
         to our discussion list: \u003ca href=\"https://groups.google.com/forum/?hl=en#!forum/ands-general\"\u003eANDS
         Google Group\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eSubscribe to our
         e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","region":"Asia
-        Pacific","country":"Australia","year":2010,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
+        Pacific","country":"Australia","year":2010,"logo-url":"https://localhost:8010/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
         3 9902 0585","updated":"2016-09-09T06:45:50.000Z"}}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:58:43 GMT
+  recorded_at: Fri, 21 Oct 2016 17:27:30 GMT
 recorded_with: VCR 2.9.3

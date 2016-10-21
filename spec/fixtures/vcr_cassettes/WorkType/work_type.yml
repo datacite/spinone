@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/work_types/dataset
+    uri: http://eventdata.labs.datacite.org/api/work_types/dataset
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:27:36 GMT
+      - Fri, 21 Oct 2016 17:31:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 72fe0bc1-7561-4feb-8ec3-032dd0e566cf
+      - 14c61097-5d65-4932-a933-b218549944f4
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.011296'
+      - '0.013892'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work_type","message-version":"v7"},"work_type":{"id":"dataset","title":"Dataset","timestamp":"2016-03-21T15:05:03Z"}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:27:36 GMT
+  recorded_at: Fri, 21 Oct 2016 17:31:18 GMT
 recorded_with: VCR 2.9.3
