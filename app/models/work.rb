@@ -175,11 +175,14 @@ class Work < Base
       items = result[:data]
       meta = result[:meta]
 
+      publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
+      publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
+
       { data: parse_items(items,
         relation_types: cached_relation_types,
         resource_types: cached_resource_types,
         work_types: cached_work_types,
-        publishers: [],
+        publishers: publishers,
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources,), meta: meta }
