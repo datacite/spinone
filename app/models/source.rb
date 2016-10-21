@@ -1,5 +1,5 @@
 class Source < Base
-  attr_reader :id, :title, :description, :state, :group, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at, :publisher_id
+  attr_reader :id, :title, :description, :state, :group, :group_id, :work_count, :relation_count, :result_count, :by_day, :by_month, :updated_at
 
   # include helper module for caching infrequently changing resources
   include Cacheable
@@ -14,11 +14,11 @@ class Source < Base
     @result_count = attributes.fetch("result_count", 0)
     @by_day = attributes.fetch("by_day", {})
     @by_month = attributes.fetch("by_month", {})
-    @publisher_id = attributes.fetch("publisher_id", {})
+    @group_id = attributes.fetch("group_id", {})
     @updated_at = attributes.fetch("timestamp", nil)
 
     # associations
-    @group = Array(options[:groups]).find { |s| s.id == attributes.fetch("group_id", nil) }
+    @group = Array(options[:groups]).find { |s| s.id == @group_id }
   end
 
   def self.get_query_url(options={})

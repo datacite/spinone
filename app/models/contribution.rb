@@ -1,5 +1,5 @@
 class Contribution < Base
-  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :contributor_role_id, :source, :publisher, :work_type, :published, :issued, :updated_at
+  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :contributor_role_id, :work_type_id, :source_id, :publisher_id, :source, :publisher, :published, :issued, :updated_at
 
   # include helper module for extracting identifier
   include Identifiable
@@ -27,11 +27,17 @@ class Contribution < Base
     @published = attributes.fetch("published", nil)
     @issued = attributes.fetch("issued", nil)
     @updated_at = attributes.fetch("timestamp", nil)
-    @work_type = DATACITE_TYPE_TRANSLATIONS[@resource_type_general]
+    @work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
+    @work_type_id = @work_type_id.underscore.dasherize if @work_type_id.present?
+
+    @publisher_id = attributes.fetch("publisher_id", nil)
+    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
+    @source_id = attributes.fetch("source_id", nil)
+    @source_id = @source_id.underscore.dasherize if @source_id.present?
 
     # associations
-    @publisher = Array(options[:publishers]).find { |p| p.id.upcase == attributes.fetch("publisher_id", nil) }
-    @source = Array(options[:sources]).find { |p| p.id.underscore == attributes.fetch("source_id", nil) }
+    @publisher = Array(options[:publishers]).find { |p| p.id == @publisher_id  }
+    @source = Array(options[:sources]).find { |p| p.id == @source_id  }
   end
 
   def self.get_query_url(options={})

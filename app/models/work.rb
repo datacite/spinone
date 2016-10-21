@@ -38,15 +38,23 @@ class Work < Base
     @schema_version = attributes.fetch("schema_version", nil)
     @results = attributes.fetch("results", {})
 
-    # associations
-    @publisher = Array(options[:publishers]).find { |p| p.id == attributes.fetch("datacentre_symbol", "").downcase.underscore.dasherize }
-    @member = Array(options[:members]).find { |r| r.id == attributes.fetch("allocator_symbol", "").downcase.underscore.dasherize }
-    registration_agency_id = @member.present? ? "datacite" : attributes.fetch("registration_agency_id", "").downcase.underscore.dasherize
-    @registration_agency = Array(options[:registration_agencies]).find { |r| r.id == registration_agency_id }
+    @publisher_id = attributes.fetch("datacentre_symbol", nil)
+    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
+    @member_id = attributes.fetch("allocator_symbol", nil)
+    @member_id = @member_id.underscore.dasherize if @member_id.present?
+    @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
+    @registration_agency_id = @registration_agency_id.underscore.dasherize if @registration_agency_id.present?
+    @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
+    @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
+    @work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
+    @work_type_id = @work_type_id.underscore.dasherize if @work_type_id.present?
 
-    @resource_type = Array(options[:resource_types]).find { |r| r.id == attributes.fetch("resourceTypeGeneral", "").downcase.underscore.dasherize }
-    work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
-    @work_type = Array(options[:work_types]).find { |r| r.id == work_type_id.downcase.underscore.dasherize }
+    # associations
+    @publisher = Array(options[:publishers]).find { |p| p.id == @publisher_id }
+    @member = Array(options[:members]).find { |r| r.id == @member_id }
+    @registration_agency = Array(options[:registration_agencies]).find { |r| r.id == @registration_agency_id }
+    @resource_type = Array(options[:resource_types]).find { |r| r.id == @resource_type_id }
+    @work_type = Array(options[:work_types]).find { |r| r.id == @work_type_id }
   end
 
   def self.get_query_url(options={})
