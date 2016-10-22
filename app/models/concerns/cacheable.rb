@@ -43,5 +43,12 @@ module Cacheable
         WorkType.all[:data]
       end
     end
+
+    def cached_lagotto_response(options={})
+      Rails.cache.fetch("lagotto_response", expires_in: 1.day) do
+        lagotto_query_url = get_lagotto_query_url(options)
+        Maremma.get(lagotto_query_url, options)
+      end
+    end
   end
 end

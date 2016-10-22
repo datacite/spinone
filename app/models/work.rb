@@ -254,8 +254,20 @@ class Work < Base
   def self.get_results(items, options={})
     return { data: items } unless ENV["LAGOTTO_URL"].present?
 
-    lagotto_query_url = get_lagotto_query_url(options)
-    response = Maremma.get(lagotto_query_url, options)
+    # cache meta hash if no query or filters
+    if options[:query].present?
+      response = { "data" => { "meta" => { "sources" => [], "publishers" => [], "relation_types" => [] } } }
+    elsif options[:id].present? ||
+      options['source-id'].present? ||
+      options['publisher-id'].present? ||
+      options['relation-type-id'].present? ||
+      options[:year].present?
+
+      lagotto_query_url = get_lagotto_query_url(options)
+      response = Maremma.get(lagotto_query_url, options)
+    else
+      response = cached_lagotto_response(options)
+    end
 
     if items.present?
       dois = items.map { |item| CGI.escape(item.fetch("doi")) }
