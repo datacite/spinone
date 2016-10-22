@@ -189,12 +189,14 @@ class Work < Base
         sources: cached_sources,), meta: meta }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      items = get_results(items, options)[:data]
+      lagotto_result = get_results(items, options)
+      items = lagotto_result[:data]
 
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
-
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      meta[:sources] = lagotto_result.fetch(:meta, {}).fetch(:sources, [])
+      meta[:relation_types] = lagotto_result.fetch(:meta, {}).fetch(:relation_types, [])
 
       publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
@@ -252,15 +254,18 @@ class Work < Base
   def self.get_results(items, options={})
     return { data: items } unless ENV["LAGOTTO_URL"].present?
 
+    lagotto_query_url = get_lagotto_query_url(options)
+    response = Maremma.get(lagotto_query_url, options)
+
     if items.present?
       dois = items.map { |item| CGI.escape(item.fetch("doi")) }
       data = "ids=" + dois.join(",") + "&type=doi"
-      response = Maremma.post(lagotto_url, data: data, headers: { 'X-HTTP-Method-Override' => 'GET' }, content_type: 'html', token: ENV['LAGOTTO_TOKEN'])
+      items_response = Maremma.post(lagotto_url, data: data, headers: { 'X-HTTP-Method-Override' => 'GET' }, content_type: 'html', token: ENV['LAGOTTO_TOKEN'])
 
-      return items if response.fetch("data", {}).fetch("meta", {}).fetch("status", nil) == "error"
+      return items if items_response.fetch("data", {}).fetch("meta", {}).fetch("status", nil) == "error"
 
       data = items.map do |item|
-        work = response.fetch("data", {}).fetch("works", []).find { |r| r["DOI"] == item["doi"] }
+        work = items_response.fetch("data", {}).fetch("works", []).find { |r| r["DOI"] == item["doi"] }
         if work.present?
           item.merge("results" => work.fetch("results", {}))
         else
@@ -277,9 +282,6 @@ class Work < Base
 
       { data: data, meta: meta }
     elsif options[:id].present? || options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
-      lagotto_query_url = get_lagotto_query_url(options)
-      response = Maremma.get(lagotto_query_url, options)
-
       data = response.fetch("data", {}).fetch("works", []).map do |item|
         { "id" => item.fetch("id"),
           "doi" => item.fetch("DOI", nil),
