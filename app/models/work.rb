@@ -123,6 +123,7 @@ class Work < Base
                  source_id: source_id,
                  relation_type_id: relation_type_id,
                  publisher_id: publisher_id,
+                 year: options.fetch(:year, nil),
                  sort: sort }.compact
       lagotto_url + "?" + URI.encode_www_form(params)
     end
@@ -170,7 +171,7 @@ class Work < Base
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
-    elsif options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
+    elsif options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       result = get_results(result, options)
       items = result[:data]
       meta = result[:meta]
@@ -270,9 +271,9 @@ class Work < Base
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
                years: meta["years"],
-               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
-               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
-               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }} }.compact
+               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
     elsif options[:id].present? || options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
@@ -298,8 +299,10 @@ class Work < Base
 
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
-               sources: meta["sources"],
-               relation_types: meta["relation_types"] }.compact
+               years: meta["years"],
+               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
     else
