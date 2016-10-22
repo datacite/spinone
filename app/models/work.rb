@@ -269,6 +269,7 @@ class Work < Base
 
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
+               years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
                publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }},
                relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "value" => i["value"] }} }.compact
