@@ -50,5 +50,12 @@ module Cacheable
         Maremma.get(lagotto_query_url, options)
       end
     end
+
+    def cached_lagotto_member_response(id, options={})
+      Rails.cache.fetch("lagotto_member_response/#{id}", expires_in: 1.day) do
+        lagotto_query_url = get_lagotto_query_url(options)
+        Maremma.get(lagotto_query_url, options)
+      end
+    end
   end
 end

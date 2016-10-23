@@ -110,10 +110,15 @@ class Work < Base
       source_id = options.fetch("source-id", nil)
       source_id = source_id.underscore if source_id.present?
 
+      resource_type_id = options.fetch("resource-type-id", nil)
+      resource_type_id = resource_type_id.underscore if resource_type_id.present?
+
       relation_type_id = options.fetch("relation-type-id", nil)
       relation_type_id = relation_type_id.underscore if relation_type_id.present?
 
       publisher_id = options.fetch("publisher-id", nil)
+
+      member_id = options.fetch("member-id", nil)
 
       sort = options.fetch("sort", nil)
       sort = sort.underscore if sort.present?
@@ -121,8 +126,10 @@ class Work < Base
       params = { page: page,
                  per_page: options.fetch(:rows, 25),
                  source_id: source_id,
+                 resource_type_id: resource_type_id,
                  relation_type_id: relation_type_id,
                  publisher_id: publisher_id,
+                 member_id: member_id,
                  year: options.fetch(:year, nil),
                  sort: sort }.compact
       lagotto_url + "?" + URI.encode_www_form(params)
@@ -172,7 +179,7 @@ class Work < Base
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
     elsif options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
-      result = get_results(result, options)
+      result = get_results([], options)
       items = result[:data]
       meta = result[:meta]
 
@@ -258,13 +265,16 @@ class Work < Base
     if options[:query].present?
       response = { "data" => { "meta" => { "sources" => [], "publishers" => [], "relation_types" => [] } } }
     elsif options[:id].present? ||
-      options['source-id'].present? ||
-      options['publisher-id'].present? ||
-      options['relation-type-id'].present? ||
-      options[:year].present?
+          options['source-id'].present? ||
+          options['relation-type-id'].present? ||
+          options['resource-type-id'].present? ||
+          options['publisher-id'].present? ||
+          options[:year].present?
 
       lagotto_query_url = get_lagotto_query_url(options)
       response = Maremma.get(lagotto_query_url, options)
+    elsif options['member-id'].present?
+      response = cached_lagotto_member_response(options['member-id'], options)
     else
       response = cached_lagotto_response(options)
     end
@@ -290,10 +300,11 @@ class Work < Base
                years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
-    elsif options[:id].present? || options["source-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
+    elsif options[:id].present? || options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
       data = response.fetch("data", {}).fetch("works", []).map do |item|
         { "id" => item.fetch("id"),
           "doi" => item.fetch("DOI", nil),
@@ -316,6 +327,7 @@ class Work < Base
                years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
