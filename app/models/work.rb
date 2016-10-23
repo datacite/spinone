@@ -300,8 +300,8 @@ class Work < Base
                years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
+               resource_types: Array(meta["resource_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               relation_types: Array(meta["relation_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
     elsif options[:id].present? || options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
