@@ -76,10 +76,10 @@ class Work < Base
 
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
-      fq << "datacentre_symbol:#{options['publisher-id'].underscore.camelize}" if options['publisher-id'].present?
-      fq << "allocator_symbol:#{options['member-id'].underscore.camelize}" if options['member-id'].present?
+      fq << "datacentre_symbol:#{options['publisher-id'].upcase}" if options['publisher-id'].present?
+      fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
       fq << "publicationYear:#{options['year']}" if options['year'].present?
-      fq << "schema_version:#{options['schema-version'].underscore.camelize}" if options['schema-version'].present?
+      fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
