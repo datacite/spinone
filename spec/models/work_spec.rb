@@ -17,6 +17,10 @@ describe Work, type: :model, vcr: true do
     it "with q sort by minted" do
       expect(Work.get_query_url(query: "cancer", sort: "minted")).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
     end
+
+    it "with date created range" do
+      expect(Work.get_query_url("until-created-date" => 2015)).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
+    end
   end
 
   it "works" do

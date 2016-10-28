@@ -13,6 +13,9 @@ class Work < Base
   # include helper module for caching infrequently changing resources
   include Cacheable
 
+  # include helper module for date calculations
+  include Dateable
+
   def initialize(attributes={}, options={})
     @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
 
@@ -36,7 +39,7 @@ class Work < Base
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
     @schema_version = attributes.fetch("schema_version", nil)
-    @results = attributes.fetch("results", {})
+    @results = attributes.fetch("results", [])
 
     @publisher_id = attributes.fetch("datacentre_symbol", nil)
     @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
@@ -74,11 +77,19 @@ class Work < Base
       end
       order = options[:order] == "asc" ? "asc" : "desc"
 
+      created_date = options['from-created-date'].present? || options['until-created-date'].present?
+      created_date = get_solr_date_range(options['from-created-date'], options['until-created-date']) if created_date
+
+      update_date = options["from-update-date"].present? || options["until-update-date"].present?
+      update_date = get_solr_date_range(options['from-update-date'], options['until-update-date']) if update_date
+
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['publisher-id'].upcase}" if options['publisher-id'].present?
       fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
-      fq << "publicationYear:#{options['year']}" if options['year'].present?
+      fq << "minted:#{created_date}" if created_date
+      fq << "updated:#{update_date}" if update_date
+      fq << "publicationYear:#{options[:year]}" if options[:year].present?
       fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
@@ -130,6 +141,10 @@ class Work < Base
                  relation_type_id: relation_type_id,
                  publisher_id: publisher_id,
                  member_id: member_id,
+                 from_created_date: options.fetch("from-created-date", nil),
+                 until_created_date: options.fetch("until-created-date", nil),
+                 from_update_date: options.fetch("from-update-date", nil),
+                 until_update_date: options.fetch("until-update-date", nil),
                  year: options.fetch(:year, nil),
                  sort: sort }.compact
       lagotto_url + "?" + URI.encode_www_form(params)
@@ -289,7 +304,7 @@ class Work < Base
       data = items.map do |item|
         work = items_response.fetch("data", {}).fetch("works", []).find { |r| r["DOI"] == item["doi"] }
         if work.present?
-          item.merge("results" => work.fetch("results", {}))
+          item.merge("results" => work.fetch("results", []))
         else
           item
         end

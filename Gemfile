@@ -30,6 +30,7 @@ gem "simple_form", "~> 3.1.0"
 gem 'country_select', '~> 2.5', '>= 2.5.1'
 gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 gem "github-markdown", "~> 0.6.3"
+gem 'iso8601', '~> 0.9.0'
 gem "rouge", "~> 1.7.2"
 gem 'hashie', '~> 3.3.2'
 gem 'bibtex-ruby', '~> 4.2'
