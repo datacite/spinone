@@ -282,12 +282,18 @@ class Work < Base
     elsif options[:id].present? ||
           options['source-id'].present? ||
           options['relation-type-id'].present? ||
-          options['resource-type-id'].present? ||
           options['publisher-id'].present? ||
+          options['from-created-date'].present? ||
+          options['until-created-date'].present? ||
+          options['from-update-date'].present? ||
+          options['until-update-date'].present? ||
+          (options['resource-type-id'].present? && options['member-id'].present?) ||
           options[:year].present?
 
       lagotto_query_url = get_lagotto_query_url(options)
       response = Maremma.get(lagotto_query_url, options)
+    elsif options['resource-type-id'].present?
+      response = cached_lagotto_resource_type_response(options['resource-type-id'], options)
     elsif options['member-id'].present?
       response = cached_lagotto_member_response(options['member-id'], options)
     else

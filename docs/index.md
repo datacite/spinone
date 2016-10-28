@@ -6,7 +6,7 @@ title: "Home"
 ## Version History
 
 * v.1: June 25, 2016, first draft.
-* v.1.1: October 10, 2016, follow JSONAPI spec for side-loading associations
+* v.1.1: October 31, 2016, follow JSONAPI spec for side-loading associations
 
 ## Overview
 
@@ -98,12 +98,12 @@ Parameters can be used to query, filter and control the results returned by the 
 | `offset`                     | result offset |
 | `sort`                       | sort results by a certain field |
 | `order`                      | set the sort order to `asc` or `desc` |
-| `include`                    | side-load associations |
+| `include`                    | side-load associations (see below) |
 
 ### Example query using URI parameters
 
 ```
-https://api.datacite.org/members/cern/works?query=python&rows=1
+https://api.datacite.org/works?query=python&member-id=cern&rows=1
 ```
 
 ### Queries
@@ -130,7 +130,7 @@ Results from a listy response can be sorted by applying the `sort` and `order` p
 An example that sorts results in order of publication, beginning with the least recent:
 
 ```
-https://api.datacite.org/works?query=josiah+carberry&sort=published&order=asc
+https://api.datacite.org/works?query=climate&sort=published&order=asc
 ```
 
 ### Facet Counts
@@ -145,8 +145,13 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 |:-----------|:----------------|:-----------|
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
 | `publisher-id` | `{publisher-id}` | metadata associated with a specific DataCite data center |
-| `from-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
-| `until-date` | `{date}` | metadata where published date is before (inclusive)  `{date}` |
+| `resource-id` | `{resource-type-id}` | metadata for a specific resourceTypeGeneral |
+| `source-id` | `{source-id}` | metadata associated with a specific source |
+| `relation-type-id` | `{relation-type-id}` | metadata associated with a specific relation type |
+| `from-created-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
+| `until-created-date` | `{date}` | metadata where published date is before (inclusive)  `{date}` |
+| `from-update-date` | `{date}` | metadata where updated date is since (inclusive) `{date}` |
+| `until-update-date` | `{date}` | metadata where updated date is before (inclusive)  `{date}` |
 
 ## Notes on owner prefixes
 
@@ -194,10 +199,10 @@ Sideload multiple assocations by providing them in a comma-separated list.
 
 ## Example Queries
 
-**All works published by data center `cdl.digsci` (Figshare)**
+**All works published by data center `cdl.dryad` (Dryad)**
 
 ```
-https://api.datacite.org/works?publisher-id=cdl.digsci
+https://api.datacite.org/works?publisher-id=cdl.dryad
 ```
 
 **All members with `data` in their name (e.g. Australian National Data Service)**
