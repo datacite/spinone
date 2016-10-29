@@ -6,12 +6,13 @@ module Authorable
   included do
     # parse author string into CSL format
     # only assume personal name when using sort-order: "Turing, Alan"
-    def get_one_author(author, options = { sep: " " })
+    def get_one_author(author, options = {})
       return { "literal" => "" } if author.strip.blank?
 
-      author = author.split(options[:sep]).reverse.join(" ") if options[:reversed]
+      author = cleanup_author(author)
       names = Namae.parse(author)
-      if names.blank? || !author.include?(",")
+
+      if names.blank? || is_personal_name?(author).blank?
         { "literal" => author }
       else
         name = names.first
@@ -19,6 +20,23 @@ module Authorable
         { "family" => name.family,
           "given" => name.given }.compact
       end
+    end
+
+    def cleanup_author(author)
+      # detect pattern "Smith J.", but not "Smith, John K."
+      author = author.gsub(/[[:space:]]([A-Z]\.)?(-?[A-Z]\.)$/, ', \1\2') unless author.include?(",")
+
+      # titleize strings
+      # remove non-standard space characters
+      author.my_titleize
+            .gsub(/[[:space:]]/, ' ')
+    end
+
+    def is_personal_name?(author)
+      return true if author.include?(",")
+
+      # lookup given name
+      ::NameDetector.name_exists?(author.split.first)
     end
 
     # parse array of author strings into CSL format

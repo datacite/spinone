@@ -35,6 +35,7 @@ gem "rouge", "~> 1.7.2"
 gem 'hashie', '~> 3.3.2'
 gem 'bibtex-ruby', '~> 4.2'
 gem 'namae', '~> 0.10.2'
+gem 'gender_detector', '~> 0.1.2'
 gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 
