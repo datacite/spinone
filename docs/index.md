@@ -6,7 +6,7 @@ title: "Home"
 ## Version History
 
 * v.1: June 25, 2016, first draft.
-* v.1.1: October 31, 2016, follow JSONAPI spec for side-loading associations
+* v.1.1: October 31, 2016, follow JSONAPI spec for side-loading associations [Changelog](https://github.com/datacite/spinone/blob/master/CHANGELOG.md)
 
 ## Overview
 
@@ -135,7 +135,17 @@ https://api.datacite.org/works?query=climate&sort=published&order=asc
 
 ### Facet Counts
 
-Facet counts are returned via the `meta` object. Facet counts give counts per field value for an entire result set.
+Facet counts are returned via the `meta` object. Facet counts give counts per field value for an entire result set. The following facet counts are returned:
+
+| Resource                 | Facet counts                                                                       |
+|:-------------------------|:-----------------------------------------------------------------------------------|
+| `/contributions`         | total, publishers, sources                                                         |
+| `/publishers`            | total, members, registration-agencies                                              |
+| `/relations`             | total, publishers, sources, relation-types                                         |
+| `/sources`               | total, groups                                                                      |
+| `/works`                 | total, publishers, relation-types, resource-types, schema-versions, sources, years |
+
+All other resources return only `total` in the `meta` object.
 
 ### Filter Names
 
@@ -189,26 +199,35 @@ https://api.datacite.org/works?query=allen+renear&rows=5&offset=5
 
 ## Includes
 
-To sideload associations use the `include` parameter, for example:
+To sideload associations (as [specified](http://jsonapi.org/format/#fetching-includes) in the JSONAPI documentation) use the `include` parameter, for example:
 
 ```
 https://api.datacite.org/works?query=climate&include=publisher,resource-type
 ```
 
-Sideload multiple assocations by providing them in a comma-separated list.
+Sideload multiple assocations by providing them in a comma-separated list. The following resources can be sideloaded:
+
+| Resource                 | Resources that can be included                                   |
+|:-------------------------|:-----------------------------------------------------------------|
+| `/contributions`         | publisher, source                                                |
+| `/publishers`            | member, registration-agency                                      |
+| `/relations`             | publisher, source, relation-type                                 |
+| `/sources`               | group                                                            |
+| `/works`                 | publisher, member, registration-agency, resource-type, work-type |
+
 
 ## Example Queries
 
-**All works published by data center `cdl.dryad` (Dryad)**
+**All works published by data center `cdl.dryad` (Dryad), with included resource-type**
 
 ```
-https://api.datacite.org/works?publisher-id=cdl.dryad
+https://api.datacite.org/works?publisher-id=cdl.dryad&include=resource-type
 ```
 
-**All members with `data` in their name (e.g. Australian National Data Service)**
+**All members with `data` in their name (e.g. Australian National Data Service), with included publishers**
 
 ```
-https://api.datacite.org/members?query=data
+https://api.datacite.org/members?query=data&include=publisher
 ```
 
 ## Error messages

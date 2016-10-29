@@ -13,6 +13,8 @@ https://api.datacite.org/pages?tag=orcid
 
 ```
 
+The full documentation can be found [here](https://github.com/datacite/spinone/blob/master/docs/index.md).
+
 ## Installation
 
 Using Docker.
