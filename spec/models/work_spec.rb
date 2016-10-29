@@ -3,23 +3,23 @@ require 'rails_helper'
 describe Work, type: :model, vcr: true do
   context "get_query_url" do
     it "default" do
-      expect(Work.get_query_url).to eq("https://search.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=minted+desc&wt=json")
+      expect(Work.get_query_url).to eq("https://search.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&wt=json")
     end
 
     it "with rows" do
-      expect(Work.get_query_url(rows: 50)).to eq("https://search.datacite.org/api?q=*%3A*&start=0&rows=50&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=minted+desc&wt=json")
+      expect(Work.get_query_url(rows: 50)).to eq("https://search.datacite.org/api?q=*%3A*&start=0&rows=50&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&wt=json")
     end
 
     it "with q" do
-      expect(Work.get_query_url(query: "cancer")).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
+      expect(Work.get_query_url(query: "cancer")).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
     end
 
     it "with q sort by minted" do
-      expect(Work.get_query_url(query: "cancer", sort: "minted")).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
+      expect(Work.get_query_url(query: "cancer", sort: "minted")).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
     end
 
     it "with date created range" do
-      expect(Work.get_query_url("until-created-date" => 2015)).to eq("https://search.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=10&f.resourceType_facet.facet.limit=15&f.publicationYear.facet.limit=15&facet.mincount=1&sort=score+desc&wt=json")
+      expect(Work.get_query_url("until-created-date" => 2015)).to eq("https://search.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue+AND+minted%3A%5B*+TO+*%5D&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&wt=json")
     end
   end
 
@@ -27,7 +27,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
     work = works[:data].first
-    expect(work.title).to eq("PERSUASIVE ADVERTISING TECHNIQUES OF 2016 PRESIDENTIAL CANDIDATES AND THE LEVEL OF PERSUASION AMONG TECHNOLOGY COMMUNICATION MANAGEMENT STUDENTS")
+    expect(work.title).to eq("Fe2O3 nanomaterials from an iron (II) diketonate – diamino complex")
     expect(work.resource_type.title).to eq("Text")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
@@ -60,10 +60,10 @@ describe Work, type: :model, vcr: true do
   end
 
   it "works with query and resource-type-id and publisher-id" do
-    works = Work.where(query: "cancer", "resource-type-id" => "dataset", "publisher-id" => "CDL.DIGSCI")
+    works = Work.where(query: "cancer", "resource-type-id" => "dataset", "publisher-id" => "FIGSHARE.ARS")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Anonymized Full data set-CA72-4-111012")
+    expect(work.title).to eq("A solitary hepatic metastasis (SUV 7")
     expect(work.resource_type.title).to eq("Dataset")
   end
 
@@ -71,7 +71,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(registration_agency_id: "datacite")[:data]
     expect(works.length).to eq(25)
     work = works.first
-    expect(work.title).to eq("PERSUASIVE ADVERTISING TECHNIQUES OF 2016 PRESIDENTIAL CANDIDATES AND THE LEVEL OF PERSUASION AMONG TECHNOLOGY COMMUNICATION MANAGEMENT STUDENTS")
+    expect(work.title).to eq("Fe2O3 nanomaterials from an iron (II) diketonate – diamino complex")
   end
 
   it "work" do

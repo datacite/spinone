@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:53 GMT
+      - Sat, 29 Oct 2016 05:42:55 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,7 +30,7 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":21},"response":{"numFound":3421,"start":0,"docs":[{"minted":"2016-02-26T18:39:52Z","datacentre_symbol":"CDL.UCSD","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA3NS9KMEgxMlpYVzwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlBpZXJjZSwgSm9obiBQPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RmFlcmJlciwgU3VzYW48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5XcmlnaHQsIEZyZWQgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlJvY2ssIENoZXJ5bCBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmV3bWFuLCBWaWNreTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkZsYXR0LCBTaGlybGV5IFc8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5LZWFsZXksIFNoZWlsYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkpvbmVzLCBWaWNreSBFPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Q2FhbiwgQmV0dGUgSjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdvbGQsIEVsbGVuIEI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWFuLCBNYXJ5PC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SG9sbGVuYmFjaCwgS2F0aHJ5biBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Sm9uZXMsIExvdmVsbCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TWFyc2hhbGwsIEphbWVzIFI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5SaXRlbmJhdWdoLCBDaGVyeWw8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5TdGVmYW5pY2ssIE1hcmNpYSBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+VGhvbXNvbiwgQ3ludGhpYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldhc3Nlcm1hbiwgTGluZGE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5OYXRhcmFqYW4sIExva2k8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5UaG9tYXMsIFJvbmFsZCBHPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2lscGluLCBFbGl6YWJldGg8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5QYXJrZXIsIEJhcmJhcmEgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdyZWVuYmVyZywgRSBSb2JlcnQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5BbC1EZWxhaW15LCBXYWVsIEs8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5CYXJkd2VsbCwgV2F5bmUgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkNhcmxzb24sIFJvYmVydCBXPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RW1vbmQsIEplbm5pZmVyIEE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWplaywgUmljaGFyZCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+S2FyYW5qYSwgTmplcmk8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5NYWRsZW5za3ksIExpc2E8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5Xb21lbidzIEhlYWx0aHkgRWF0aW5nIGFuZCBMaXZpbmcgKFdIRUwpIFN0dWR5PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlVDIFNhbiBEaWVnbyBMaWJyYXJ5IERpZ2l0YWwgQ29sbGVjdGlvbnM8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGE8L3Jlc291cmNlVHlwZT4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBXb21lbidzIEhlYWx0aHkgRWF0aW5nICZhbXA7IExpdmluZyAoV0hFTCkgU3R1ZHkgd2FzIGFuIE5JSC1zdXBwb3J0ZWQgY2xpbmljYWwgdHJpYWwuIEluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgTklIJ3MgRGF0YSBTaGFyaW5nIFBvbGljeSBhcyB3ZWxsIGFzIHRvIHByb21vdGUgdGhlIGNvbmNlcHQgb2YgZGF0YSBzaGFyaW5nLCB0aGVzZSBkYXRhIGFyZSBiZWluZyBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZS4gQWxzbyBpbiBhY2NvcmRhbmNlIHdpdGggTklIIHBvbGljeSwgdGhlIGRhdGFzZXRzIGluY2x1ZGUgb25seSBkZS1pZGVudGlmaWVkIGRhdGEgYW5kIGRvY3VtZW50YXRpb24uIEFsbCBwZXJzb25hbGx5IGlkZW50aWZpYWJsZSBoZWFsdGggaW5mb3JtYXRpb24gc3VjaCBhcyBkYXRlcyBvciBzdHVkeSBzaXRlcyBoYXMgYmVlbiByZW1vdmVkIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgSElQQUEgcHJpdmFjeSBydWxlLiBUaGUgV29tZW4ncyBIZWFsdGh5IEVhdGluZyBhbmQgTGl2aW5nIChXSEVMKSBTdHVkeSB3YXMgYSBtdWx0aXNpdGUgcmFuZG9taXplZCBjb250cm9sbGVkIHRyaWFsIG9mIHRoZSBlZmZlY3RpdmVuZXNzIG9mIGEgaGlnaC12ZWdldGFibGUsIGxvdy1mYXQgZGlldCwgYWltZWQgYXQgbWFya2VkbHkgcmFpc2luZyBjaXJjdWxhdGluZyBjYXJvdGVub2lkIGNvbmNlbnRyYXRpb25zIGZyb20gZm9vZCBzb3VyY2VzLCBpbiByZWR1Y2luZyBhZGRpdGlvbmFsIGJyZWFzdCBjYW5jZXIgZXZlbnRzIGFuZCBlYXJseSBkZWF0aCBpbiB3b21lbiB3aXRoIGVhcmx5LXN0YWdlIGludmFzaXZlIGJyZWFzdCBjYW5jZXIgKHdpdGhpbiA0IHllYXJzIG9mIGRpYWdub3NpcykuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5CcmVhc3QgY2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Q2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+RGlldDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkhlYWx0aHkgZWF0aW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ikhvc3RpbmdJbnN0aXR1dGlvbiI+CiAgICAgIDxjb250cmlidXRvck5hbWU+TW9vcmVzIENhbmNlciBDZW50ZXIsIENhbmNlciBQcmV2ZW50aW9uIGFuZCBDb250cm9sIFByb2dyYW08L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxNjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJDb2xsZWN0ZWQiPjE5OTUgdG8gMjAwNjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRpb25UeXBlPSJJc1JlZmVyZW5jZWRCeSIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEwMTYvUzAxOTctMjQ1NigwMikwMDI0MS02PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzUmVmZXJlbmNlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTAwMS9qYW1hLjI5OC4zLjI4OTwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CjwvcmVzb3VyY2U+","allocator_symbol":"CDL","updated":"2016-06-02T23:50:08Z","doi":"10.6075/J0H12ZXW","schema_version":"3","publisher":"UC
+      string: '{"responseHeader":{"status":0,"QTime":552},"response":{"numFound":3449,"start":0,"docs":[{"minted":"2016-02-26T18:39:52Z","datacentre_symbol":"CDL.UCSD","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA3NS9KMEgxMlpYVzwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlBpZXJjZSwgSm9obiBQPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RmFlcmJlciwgU3VzYW48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5XcmlnaHQsIEZyZWQgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlJvY2ssIENoZXJ5bCBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmV3bWFuLCBWaWNreTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkZsYXR0LCBTaGlybGV5IFc8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5LZWFsZXksIFNoZWlsYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkpvbmVzLCBWaWNreSBFPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Q2FhbiwgQmV0dGUgSjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdvbGQsIEVsbGVuIEI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWFuLCBNYXJ5PC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SG9sbGVuYmFjaCwgS2F0aHJ5biBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Sm9uZXMsIExvdmVsbCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TWFyc2hhbGwsIEphbWVzIFI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5SaXRlbmJhdWdoLCBDaGVyeWw8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5TdGVmYW5pY2ssIE1hcmNpYSBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+VGhvbXNvbiwgQ3ludGhpYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldhc3Nlcm1hbiwgTGluZGE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5OYXRhcmFqYW4sIExva2k8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5UaG9tYXMsIFJvbmFsZCBHPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2lscGluLCBFbGl6YWJldGg8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5QYXJrZXIsIEJhcmJhcmEgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdyZWVuYmVyZywgRSBSb2JlcnQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5BbC1EZWxhaW15LCBXYWVsIEs8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5CYXJkd2VsbCwgV2F5bmUgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkNhcmxzb24sIFJvYmVydCBXPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RW1vbmQsIEplbm5pZmVyIEE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWplaywgUmljaGFyZCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+S2FyYW5qYSwgTmplcmk8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5NYWRsZW5za3ksIExpc2E8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5Xb21lbidzIEhlYWx0aHkgRWF0aW5nIGFuZCBMaXZpbmcgKFdIRUwpIFN0dWR5PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlVDIFNhbiBEaWVnbyBMaWJyYXJ5IERpZ2l0YWwgQ29sbGVjdGlvbnM8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGE8L3Jlc291cmNlVHlwZT4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBXb21lbidzIEhlYWx0aHkgRWF0aW5nICZhbXA7IExpdmluZyAoV0hFTCkgU3R1ZHkgd2FzIGFuIE5JSC1zdXBwb3J0ZWQgY2xpbmljYWwgdHJpYWwuIEluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgTklIJ3MgRGF0YSBTaGFyaW5nIFBvbGljeSBhcyB3ZWxsIGFzIHRvIHByb21vdGUgdGhlIGNvbmNlcHQgb2YgZGF0YSBzaGFyaW5nLCB0aGVzZSBkYXRhIGFyZSBiZWluZyBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZS4gQWxzbyBpbiBhY2NvcmRhbmNlIHdpdGggTklIIHBvbGljeSwgdGhlIGRhdGFzZXRzIGluY2x1ZGUgb25seSBkZS1pZGVudGlmaWVkIGRhdGEgYW5kIGRvY3VtZW50YXRpb24uIEFsbCBwZXJzb25hbGx5IGlkZW50aWZpYWJsZSBoZWFsdGggaW5mb3JtYXRpb24gc3VjaCBhcyBkYXRlcyBvciBzdHVkeSBzaXRlcyBoYXMgYmVlbiByZW1vdmVkIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgSElQQUEgcHJpdmFjeSBydWxlLiBUaGUgV29tZW4ncyBIZWFsdGh5IEVhdGluZyBhbmQgTGl2aW5nIChXSEVMKSBTdHVkeSB3YXMgYSBtdWx0aXNpdGUgcmFuZG9taXplZCBjb250cm9sbGVkIHRyaWFsIG9mIHRoZSBlZmZlY3RpdmVuZXNzIG9mIGEgaGlnaC12ZWdldGFibGUsIGxvdy1mYXQgZGlldCwgYWltZWQgYXQgbWFya2VkbHkgcmFpc2luZyBjaXJjdWxhdGluZyBjYXJvdGVub2lkIGNvbmNlbnRyYXRpb25zIGZyb20gZm9vZCBzb3VyY2VzLCBpbiByZWR1Y2luZyBhZGRpdGlvbmFsIGJyZWFzdCBjYW5jZXIgZXZlbnRzIGFuZCBlYXJseSBkZWF0aCBpbiB3b21lbiB3aXRoIGVhcmx5LXN0YWdlIGludmFzaXZlIGJyZWFzdCBjYW5jZXIgKHdpdGhpbiA0IHllYXJzIG9mIGRpYWdub3NpcykuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5CcmVhc3QgY2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Q2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+RGlldDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkhlYWx0aHkgZWF0aW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ikhvc3RpbmdJbnN0aXR1dGlvbiI+CiAgICAgIDxjb250cmlidXRvck5hbWU+TW9vcmVzIENhbmNlciBDZW50ZXIsIENhbmNlciBQcmV2ZW50aW9uIGFuZCBDb250cm9sIFByb2dyYW08L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxNjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJDb2xsZWN0ZWQiPjE5OTUgdG8gMjAwNjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRpb25UeXBlPSJJc1JlZmVyZW5jZWRCeSIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEwMTYvUzAxOTctMjQ1NigwMikwMDI0MS02PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzUmVmZXJlbmNlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTAwMS9qYW1hLjI5OC4zLjI4OTwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CjwvcmVzb3VyY2U+","allocator_symbol":"CDL","updated":"2016-06-02T23:50:08Z","doi":"10.6075/J0H12ZXW","schema_version":"3","publisher":"UC
         San Diego Library Digital Collections","resourceType":"Data","title":["Women''s
         Healthy Eating and Living (WHEL) Study"],"description":["The Women''s Healthy
         Eating & Living (WHEL) Study was an NIH-supported clinical trial. In compliance
@@ -519,19 +519,19 @@ http_interactions:
         and acquisition protocols.  In most cases the images were acquired as part
         of routine care and not as part of a controlled research study or clinical
         trial."],"publicationYear":"2016","resourceTypeGeneral":"Dataset","publisher":"The
-        Cancer Imaging Archive","resourceType":"DICOM"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2015",1164,"2014",755,"2016",656,"2013",216,"2012",127,"2010",111,"2008",82,"2011",69,"2009",24,"1999",18,"2004",16,"1988",14,"2002",13,"2005",13,"1990",11],"datacentre_facet":["FIGSHARE.ARS
-        - figshare Academic Research System",1525,"BL.YORK - University of York",618,"GESIS.ICPSR
-        - ICPSR",422,"CDL.DRYAD - Dryad",286,"TIB.PANGAEA - PANGAEA - Publishing Network
+        Cancer Imaging Archive","resourceType":"DICOM"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2015",1164,"2014",755,"2016",684,"2013",216,"2012",127,"2010",111,"2008",82,"2011",69,"2009",24,"1999",18,"2004",16,"1988",14,"2002",13,"2005",13,"1990",11],"datacentre_facet":["FIGSHARE.ARS
+        - figshare Academic Research System",1543,"BL.YORK - University of York",618,"GESIS.ICPSR
+        - ICPSR",422,"CDL.DRYAD - Dryad",295,"TIB.PANGAEA - PANGAEA - Publishing Network
         for Geoscientific and Environmental Data",103,"DK.GBIF - Global Biodiversity
         Information Facility",73,"CDL.TCIA - The Cancer Imaging Archive",65,"GESIS.ARCHIV
         - GESIS Data Archive",57,"CDL.PEERJ - PeerJ",35,"BL.UKDA - UK Data Archive",32,"NRCT.DB1
         - NRCT Data Center",32,"PURDUE.NCIPH - National Cancer Informatics Program
         Hub, NIH",23,"CERN.ZENODO - ZENODO - Research. Shared.",22,"CDL.DATAVERS -
-        Harvard Dataverse",19,"DELFT.EASY - DANS-EASY",17],"resourceType_facet":["Dataset",3421],"schema_version":["3",3032,"2.2",389]},"facet_dates":{},"facet_ranges":{}}}
+        Harvard Dataverse",19,"DELFT.EASY - DANS-EASY",17],"resourceType_facet":["Dataset",3449],"schema_version":["3",3051,"2.2",398]},"facet_dates":{},"facet_ranges":{}}}
 
 '
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:53 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:55 GMT
 - request:
     method: post
     uri: http://eventdata.labs.datacite.org/api/works
@@ -555,7 +555,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:54 GMT
+      - Sat, 29 Oct 2016 05:42:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -573,17 +573,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3ed20e62-1f07-435f-82f2-bfe00d669f5d
+      - c2565d50-e8fa-43ef-960c-4c50da93b5a9
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"d0799b66d3952c2de347b650bf12bf54"
+      - W/"defbce6b659eaa169f64a54c9bdc90dd"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.053876'
+      - '0.048716'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -591,7 +591,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":[],"publishers":[],"relation_types":[{"id":"is_referenced_by","title":"Is
-        referenced by","count":2}]},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
+        referenced by","count":1}],"resource_types":[{"id":"dataset","title":"Dataset","count":1}],"years":[{"id":"2016","title":"2016","count":1}]},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
         P","family":"Pierce"},{"given":"Susan","family":"Faerber"},{"given":"Fred
         A","family":"Wright"},{"given":"Cheryl L","family":"Rock"},{"given":"Vicky","family":"Newman"},{"given":"Shirley
         W","family":"Flatt"},{"given":"Sheila","family":"Kealey"},{"given":"Vicky
@@ -605,9 +605,9 @@ http_interactions:
         W","family":"Carlson"},{"given":"Jennifer A","family":"Emond"},{"given":"Richard
         A","family":"Hajek"},{"given":"Njeri","family":"Karanja"},{"given":"Lisa","family":"Madlensky"}],"title":"Women''s
         Healthy Eating and Living (WHEL) Study","published":"2016","issued":"2016-02-26T18:39:52Z","updated":"2016-06-17T05:33:29Z","container-title":"UC
-        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","results":{}}]}'
+        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","resource_type_id":"dataset","results":[]}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:54 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:56 GMT
 - request:
     method: get
     uri: http://eventdata.labs.datacite.org/api/publishers?ids=FIGSHARE.ARS,BL.YORK,GESIS.ICPSR,CDL.DRYAD,TIB.PANGAEA,DK.GBIF,CDL.TCIA,GESIS.ARCHIV,CDL.PEERJ,BL.UKDA,NRCT.DB1,PURDUE.NCIPH,CERN.ZENODO,CDL.DATAVERS,DELFT.EASY
@@ -627,7 +627,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:54 GMT
+      - Sat, 29 Oct 2016 05:42:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -645,35 +645,35 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 705b24ac-f7be-49b4-ba6a-3df2a869f060
+      - 25f22399-9f99-486f-9de4-e66c4098286c
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"f31f97bac47ef11b23274278254d6997"
+      - W/"a88ef9cebc8152c59278e658157b344d"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.069741'
+      - '0.046964'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"delft","title":"DELFT","count":1},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"gesis","title":"GESIS","count":2},{"id":"dk","title":"DK","count":1},{"id":"cdl","title":"CDL","count":4},{"id":"purdue","title":"PURDUE","count":1},{"id":"nrct","title":"NRCT","count":1},{"id":"tib","title":"TIB","count":1},{"id":"bl","title":"BL","count":2},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"DELFT.EASY","title":"DANS-EASY","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-10-21T17:18:02Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:07:36Z"},{"id":"FIGSHARE.ARS","title":"figshare
-        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-21T17:08:14Z"},{"id":"GESIS.ARCHIV","title":"GESIS
-        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:19:43Z"},{"id":"DK.GBIF","title":"Global
-        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T17:20:47Z"},{"id":"CDL.DATAVERS","title":"Harvard
-        Dataverse","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:07:15Z"},{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:08:47Z"},{"id":"PURDUE.NCIPH","title":"National
-        Cancer Informatics Program Hub, NIH","prefixes":[],"registration_agency_id":"datacite","member_id":"PURDUE","timestamp":"2016-10-21T17:23:54Z"},{"id":"NRCT.DB1","title":"NRCT
-        Data Center","prefixes":[],"registration_agency_id":"datacite","member_id":"NRCT","timestamp":"2016-10-21T17:24:20Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:08:38Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:08:39Z"},{"id":"CDL.TCIA","title":"The
-        Cancer Imaging Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:13:44Z"},{"id":"BL.UKDA","title":"UK
-        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:15:57Z"},{"id":"BL.YORK","title":"University
-        of York","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:10:50Z"},{"id":"CERN.ZENODO","title":"ZENODO
-        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-21T17:24:20Z"}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"delft","title":"DELFT","count":1},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"gesis","title":"GESIS","count":2},{"id":"dk","title":"DK","count":1},{"id":"cdl","title":"CDL","count":4},{"id":"purdue","title":"PURDUE","count":1},{"id":"nrct","title":"NRCT","count":1},{"id":"tib","title":"TIB","count":1},{"id":"bl","title":"BL","count":2},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"DELFT.EASY","title":"DANS-EASY","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-10-29T05:05:52Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:13:02Z"},{"id":"FIGSHARE.ARS","title":"figshare
+        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-29T05:06:06Z"},{"id":"GESIS.ARCHIV","title":"GESIS
+        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:06:10Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-29T05:06:11Z"},{"id":"CDL.DATAVERS","title":"Harvard
+        Dataverse","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:06:13Z"},{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:17:32Z"},{"id":"PURDUE.NCIPH","title":"National
+        Cancer Informatics Program Hub, NIH","prefixes":[],"registration_agency_id":"datacite","member_id":"PURDUE","timestamp":"2016-10-29T05:25:51Z"},{"id":"NRCT.DB1","title":"NRCT
+        Data Center","prefixes":[],"registration_agency_id":"datacite","member_id":"NRCT","timestamp":"2016-10-29T05:07:14Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:41:21Z"},{"id":"CDL.TCIA","title":"The
+        Cancer Imaging Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:32:28Z"},{"id":"BL.UKDA","title":"UK
+        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:08:11Z"},{"id":"BL.YORK","title":"University
+        of York","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:36:27Z"},{"id":"CERN.ZENODO","title":"ZENODO
+        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-29T05:08:26Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:54 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:56 GMT
 recorded_with: VCR 2.9.3

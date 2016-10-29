@@ -88,6 +88,7 @@ describe DataciteOrcid, type: :model, vcr: true do
       expect(response.first[:relation]).to eq("subj_id"=>"http://orcid.org/0000-0001-8478-7549",
                                               "obj_id"=>"https://doi.org/10.6084/M9.FIGSHARE.1226424",
                                               "source_id"=>"datacite_orcid",
+                                              "relation_type_id" => nil,
                                               "publisher_id"=>"CDL.DIGSCI",
                                               "registration_agency_id" => "datacite",
                                               "occurred_at" => "2015-04-08T10:13:29Z")

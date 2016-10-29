@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:13 GMT
+      - Sat, 29 Oct 2016 05:40:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 608c02db-05f6-40c7-8af1-c5139a96d4a2
+      - 5b5030c3-7988-49a4-a44e-94bcbe5484e4
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"321f354faf0183d5aaf2c815b1ec0ac2"
+      - W/"0118c14b0f5466c56d0b2a4e0169e91f"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.121228'
+      - '0.144799'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,75 +56,109 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"contribution-list","message-version":"v7","total":3646,"total_pages":146,"page":1,"sources":[{"id":"datacite_search_link","title":"DataCite
         (ORCID Search and Link)","count":3646}],"publishers":[{"id":"tib.r-gate","title":"ResearchGate","count":1710},{"id":"cern.zenodo","title":"ZENODO
-        - Research. Shared.","count":364},{"id":"cdl.digsci","title":"Digital Science","count":271},{"id":"tib.pangaea","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","count":123},{"id":"cdl.dryad","title":"Dryad","count":113},{"id":"bl.ccdc","title":"The
+        - Research. Shared.","count":364},{"id":"figshare.ars","title":"figshare Academic
+        Research System","count":271},{"id":"tib.pangaea","title":"PANGAEA - Publishing
+        Network for Geoscientific and Environmental Data","count":123},{"id":"cdl.dryad","title":"Dryad","count":113},{"id":"bl.ccdc","title":"The
         Cambridge Crystallographic Data Centre","count":96},{"id":"cdl.peerj","title":"PeerJ","count":55},{"id":"gesis.ubhd","title":"UBHD","count":43},{"id":"tib.tuhh","title":"Technische
         Universität Hamburg-Harburg","count":42},{"id":"zbmed.gms","title":"German
         Medical Science","count":41},{"id":"crui.infncnaf","title":"Istituto Nazionale
         di Fisica Nucleare. Centro Nazionale Analisi Fotogrammi","count":35},{"id":"ethz.boris","title":"Bern
         Open Repository and Information System (BORIS)","count":29},{"id":"datacite.datacite","title":"DataCite","count":27},{"id":"dk.gbif","title":"Global
         Biodiversity Information Facility","count":20},{"id":"mtakik.elteppk","title":"ELTE
-        Pedagógiai és Pszichológiai Kar","count":20}]},"contributions":[{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.90829.V1","author":[],"title":"CrowdoMeter
-        Tweet Classifications","published":"2012","issued":"2016-01-11T11:03:28Z","DOI":"10.6084/M9.FIGSHARE.90829.V1","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T11:00:26Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.154691","author":[],"title":"D2.1
-        Kick off preparation, Communication plan and Website","published":"2013","issued":"2013-01-29T15:26:49Z","DOI":"10.6084/M9.FIGSHARE.154691","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:57:20Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.90828","author":[],"title":"CrowdoMeter
-        Tweets","published":"2012","issued":"2012-06-11T16:48:58Z","DOI":"10.6084/M9.FIGSHARE.90828","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:56:53Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.107019.V4","author":[],"title":"D2.2
-        Kickoff report","published":"2013","issued":"2016-01-12T14:05:50Z","DOI":"10.6084/M9.FIGSHARE.107019.V4","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:53:50Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.90829","author":[],"title":"CrowdoMeter
-        Tweet Classifications","published":"2012","issued":"2012-06-11T16:48:58Z","DOI":"10.6084/M9.FIGSHARE.90829","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:52:18Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3479141","author":[],"title":"Organisation
-        Identifiers - Minimum viable product requirements","published":"2016","issued":"2016-07-11T10:40:48Z","DOI":"10.6084/M9.FIGSHARE.3479141","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:46:19Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.154691.V1","author":[],"title":"D2.1
-        Kick off preparation, Communication plan and Website","published":"2013","issued":"2016-01-11T15:51:41Z","DOI":"10.6084/M9.FIGSHARE.154691.V1","publisher_id":"CDL.DIGSCI","work_type_id":"report","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:43:16Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3479141.V1","author":[],"title":"Organisation
-        Identifiers - Minimum viable product requirements","published":"2016","issued":"2016-07-11T10:40:50Z","DOI":"10.6084/M9.FIGSHARE.3479141.V1","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T10:41:45Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.1594/PANGAEA.863588","author":[{"family":"Ramírez-Pérez","given":"Marta"},{"family":"Gonçalves-Araujo","given":"Rafael","ORCID":"http://orcid.org/0000-0001-8344-8326"},{"family":"Wiegmann","given":"Sonja"},{"family":"Torrecilla","given":"Elena","ORCID":"http://orcid.org/0000-0002-7025-1206"},{"family":"Bracher","given":"Astrid","ORCID":"http://orcid.org/0000-0003-3025-5517"},{"family":"Piera","given":"Jaume","ORCID":"http://orcid.org/0000-0001-5818-9836"}],"title":"Physical,
-        optical and biogeochemical parameters in June of 2013 in Alfacs Bay (NW Mediterranean)
-        at station Alfacs2013_Phytoscope_2","published":"2016","issued":"2016-09-01T03:11:01Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863588","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-06T00:19:43Z"},{"subj_id":"http://orcid.org/0000-0003-1419-2405","credit_name":"Martin
-        Fenner","obj_id":"http://doi.org/10.5281/ZENODO.21429","author":[],"title":"omniauth-orcid:
-        v.1.0","published":"2015","issued":"2015-01-01T00:00:00Z","DOI":"10.5281/ZENODO.21429","URL":"http://zenodo.org/record/21429","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-09-05T16:28:11Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92820.V4","author":[],"title":"ISCA
-        analysis for the quartet (missing grandfather), (missing grandmother), mother
-        and aunt","published":"2013","issued":"2016-01-11T11:23:34Z","DOI":"10.6084/M9.FIGSHARE.92820.V4","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-07-19T23:45:00Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92821.V1","author":[],"title":"A
-        deletion inferred from mismatching genotype data","published":"2012","issued":"2016-01-11T11:23:41Z","DOI":"10.6084/M9.FIGSHARE.92821.V1","publisher_id":"CDL.DIGSCI","work_type_id":"graphic","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-07-10T06:07:18Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.C.1640903.V1","author":[{"family":"Glusman","given":"Gustavo"},{"family":"Cariaso","given":"Mike"},{"family":"Jimenez","given":"Rafael"},{"family":"Swan","given":"Daniel"},{"family":"Greshake","given":"Bastian"},{"family":"Bhak","given":"Jong"},{"family":"Logan","given":"Darren
-        W"},{"family":"Corpas","given":"Manuel"}],"title":"Son exome files","published":"2015","issued":"2015-12-04T14:26:04Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.C.1640903.V1","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-07-10T06:07:14Z"},{"subj_id":"http://orcid.org/0000-0001-5539-0999","credit_name":"Alexander
-        Nederbragt","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3413887.V1","author":[],"title":"Genomic
-        variation detection in Atlantic cod using long reads","published":"2016","issued":"2016-06-06T09:49:56Z","DOI":"10.6084/M9.FIGSHARE.3413887.V1","publisher_id":"CDL.DIGSCI","work_type_id":"motion_picture","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-28T20:20:57Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92820.V3","author":[],"title":"ISCA
-        analysis for the quartet (missing grandfather), (missing grandmother), mother
-        and aunt","published":"2013","issued":"2016-01-11T11:23:32Z","DOI":"10.6084/M9.FIGSHARE.92820.V3","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-28T18:31:49Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92819.V1","author":[],"title":"SNPs
-        from the Son’s exome data","published":"2012","issued":"2016-01-11T11:23:33Z","DOI":"10.6084/M9.FIGSHARE.92819.V1","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:21:31Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92584","author":[],"title":"Son
-        exome files","published":"2012","issued":"2012-07-15T09:35:19Z","DOI":"10.6084/M9.FIGSHARE.92584","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:49Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92682.V1","author":[],"title":"23andMe
-        SNP chip genotype data","published":"2012","issued":"2016-01-11T11:20:34Z","DOI":"10.6084/M9.FIGSHARE.92682.V1","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:47Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92757","author":[],"title":"23andMe
-        SNPs for which SNPedia annotations are available","published":"2012","issued":"2012-07-15T09:34:37Z","DOI":"10.6084/M9.FIGSHARE.92757","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92819","author":[],"title":"SNPs
-        from the Son’s exome data","published":"2012","issued":"2012-07-15T09:33:43Z","DOI":"10.6084/M9.FIGSHARE.92819","publisher_id":"CDL.DIGSCI","work_type_id":"dataset","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92682","author":[],"title":"23andMe
-        SNP chip genotype data","published":"2012","issued":"2012-07-15T09:35:00Z","DOI":"10.6084/M9.FIGSHARE.92682","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92584.V1","author":[],"title":"Son
-        exome files","published":"2012","issued":"2016-01-11T11:18:58Z","DOI":"10.6084/M9.FIGSHARE.92584.V1","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92757.V1","author":[],"title":"23andMe
-        SNPs for which SNPedia annotations are available","published":"2012","issued":"2016-01-11T11:21:55Z","DOI":"10.6084/M9.FIGSHARE.92757.V1","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.C.1640903","author":[{"family":"Glusman","given":"Gustavo"},{"family":"Cariaso","given":"Mike"},{"family":"Jimenez","given":"Rafael"},{"family":"Swan","given":"Daniel"},{"family":"Greshake","given":"Bastian"},{"family":"Bhak","given":"Jong"},{"family":"Logan","given":"Darren
-        W"},{"family":"Corpas","given":"Manuel"}],"title":"Son exome files","published":"2015","issued":"2015-12-04T14:24:03Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.C.1640903","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:46Z"},{"subj_id":"http://orcid.org/0000-0001-8978-8129","credit_name":"Daniel
-        Swan","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.92820","author":[],"title":"ISCA
-        analysis for the quartet (missing grandfather), (missing grandmother), mother
-        and aunt","published":"2012","issued":"2012-07-15T09:30:24Z","DOI":"10.6084/M9.FIGSHARE.92820","publisher_id":"CDL.DIGSCI","results":{},"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-06-24T05:18:45Z"}]}'
+        Pedagógiai és Pszichológiai Kar","count":20}]},"contributions":[{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.1482.2163","author":[{"family":"Ferri","given":"Giovanni"}],"title":"Why
+        Cooperative Banks Are Particularly Important at a Time of Credit Crunch","published":"2010","issued":"2016-03-03T21:45:07Z","container-title":"European
+        Association of Cooperative Banks","DOI":"10.13140/RG.2.1.1482.2163","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.1503.6642","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Kalmi","given":"Panu"}],"title":"Only
+        Up: Regulatory Burden and Its Effects on Credit Unions","published":"2014","issued":"2015-09-07T18:38:19Z","container-title":"Filene
+        Research Institute","DOI":"10.13140/RG.2.1.1503.6642","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.2195.4321","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Barca","given":"Fabrizio"}],"title":"Crescita,
+        finanziamento e riallocazione del controllo: Teoria e prime evidenze empiriche
+        per l''Italia","published":"1993","issued":"2016-03-01T00:00:24Z","container-title":"Unpublished","DOI":"10.13140/RG.2.1.2195.4321","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4239.8083","author":[{"family":"Noor","given":"Mazlee
+        Mohd"},{"family":"Jamaludin","given":"Shamsul Baharin"}],"title":"THE EFFECTS
+        OF SOLUTIONIZING TEMPERATURES ON MICROSTRUCTURES OF AS-RECEIVED A357 ALLOY","published":"2009","issued":"2014-09-14T09:06:16Z","container-title":"Unpublished","DOI":"10.13140/2.1.4239.8083","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4540.8646","author":[{"family":"Rizam","given":"S
+        S"},{"family":"Azmi","given":"K"},{"family":"Nazree","given":"D M"},{"family":"Shamsul","given":"J
+        B"},{"family":"Azrem","given":"A A"},{"family":"Firdaus","given":"A M H"},{"family":"Mazlee","given":"M
+        N"},{"family":"Mahdi","given":"C I"},{"family":"Daud","given":"A R"},{"family":"Roslinda","given":"S"}],"title":"DEVELOPMENT
+        OF A LID SEALED FURNACE FOR THE PRODUCTION OF MAGNESIUM ALLOYS","published":"2008","issued":"2014-09-11T11:35:28Z","container-title":"Unpublished","DOI":"10.13140/2.1.4540.8646","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4919.5207","author":[{"family":"Jamaludin","given":"Shamsul
+        Baharin"},{"family":"Noor","given":"Mazlee Mohd"}],"title":"Report on activities
+        research cluster (sustainable engineering 2012)","published":"2012","issued":"2014-11-14T13:50:37Z","container-title":"Unpublished","DOI":"10.13140/2.1.4919.5207","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-5334-972X","credit_name":"Dave
+        Bridges","obj_id":"http://doi.org/10.5281/ZENODO.50802","author":[{"given":"Erin
+        J.","family":"Stephenson"},{"given":"Alyse","family":"Ragauskas"},{"given":"Sridhar","family":"Jaligama"},{"given":"JeAnna
+        R.","family":"Redd"},{"given":"Jyothi","family":"Parvathareddy"},{"given":"Matthew
+        J.","family":"Peloquin"},{"given":"Jordy","family":"Saravia"},{"given":"Joan
+        C","family":"Han"},{"given":"Stephania A.","family":"Cormier"},{"given":"Dave","family":"Bridges"}],"title":"Dataset
+        for Particulate Studies and Obesity","published":"2016","issued":"2016-05-02T15:16:28Z","container-title":"Zenodo","DOI":"10.5281/ZENODO.50802","publisher_id":"CERN.ZENODO","work_type_id":"dataset","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4251.0726","author":[{"family":"Shamsul","given":"J
+        B"},{"family":"Kamarudin","given":"H"},{"family":"Nizar","given":"K"},{"family":"Ruzaidi","given":"C
+        M"},{"family":"Rafezi","given":"K"},{"family":"Bukhari","given":"M N"},{"family":"Mazlee","given":"D"},{"given":"Murizam"}],"title":"METALLURGICAL
+        ENGINEERING IN KOLEJ UNIVERSITI KEJURUTERAAN UTARA MALAYSIA","published":"2006","issued":"2014-09-10T14:42:56Z","container-title":"Unpublished","DOI":"10.13140/2.1.4251.0726","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.2360.2888","author":[{"family":"Jamaludin","given":"Shamsul
+        Baharin"},{"family":"Idris","given":"Mohd Sobri"},{"family":"Noor","given":"Mazlee
+        Mohd"}],"title":"REPORT ON RESEARCH CLUSTER 2005-2014","published":"2014","issued":"2014-11-15T14:23:36Z","container-title":"Unpublished","DOI":"10.13140/2.1.2360.2888","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.1651.7124","author":[{"family":"Noor","given":"Mazlee
+        Mohd"},{"family":"Jamaludin","given":"Shamsul Baharin"}],"title":"Enviro composite
+        pulley","published":"2005","issued":"2014-10-25T13:41:31Z","container-title":"Unpublished","DOI":"10.13140/2.1.1651.7124","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.4836.8404","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Cecco","given":"Marcello"}],"title":"Origini
+        e natura speciale dell''attività di banca d''affari in Italia -- second part","published":"1994","issued":"2016-03-03T00:06:06Z","container-title":"Banca
+        d''Italia","DOI":"10.13140/RG.2.1.4836.8404","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.3331.7523","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Pesaresi","given":"Nicola"}],"title":"The
+        missing link: banking and non banking financial institutions in Italian corporate
+        governance","published":"1996","issued":"2016-03-12T23:13:00Z","container-title":"Banca
+        d''Italia","DOI":"10.13140/RG.2.1.3331.7523","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.4312.5525","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Cecco","given":"Marcello"}],"title":"Origini
+        e natura speciale dell''attività di banca d''affari in Italia -- first part","published":"1994","issued":"2016-03-02T23:47:14Z","container-title":"Banca
+        d''Italia","DOI":"10.13140/RG.2.1.4312.5525","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.4904.6167","author":[{"family":"Ferri","given":"Giovanni"}],"title":"Confidi,
+        banche locali e finanziamento delle piccole e medie imprese","published":"1997","issued":"2016-03-13T00:04:48Z","container-title":"Federconfidi","DOI":"10.13140/RG.2.1.4904.6167","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4011.0083","author":[{"family":"Noor","given":"Mazlee
+        Mohd"},{"family":"Jamaludin","given":"Shamsul Baharin"}],"title":"Recycled
+        aluminium composite pulley","published":"2006","issued":"2014-10-25T13:51:34Z","container-title":"Unpublished","DOI":"10.13140/2.1.4011.0083","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.4498.9201","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Gobbi","given":"Giorgio"}],"title":"Concorrenza
+        e discriminazione di prezzo nel mercato del credito in Italia","published":"1992","issued":"2016-03-01T22:41:52Z","container-title":"Unpublished","DOI":"10.13140/RG.2.1.4498.9201","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.1973.7361","author":[],"title":"Banche
+        locali e sviluppo economico decentrato","published":"1997","issued":"2016-03-03T23:29:22Z","DOI":"10.13140/RG.2.1.1973.7361","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-7825-7098","credit_name":"Giovanni
+        Ferri","obj_id":"http://doi.org/10.13140/RG.2.1.4595.1760","author":[{"family":"Ferri","given":"Giovanni"},{"family":"Mattesini","given":"Fabrizio"}],"title":"Accounting
+        for local economic growth in postwar Italian provinces: can cooperative banks
+        make a difference?","published":"1996","issued":"2016-03-03T23:25:45Z","container-title":"Banca
+        d''Italia -- Servizio Studi","DOI":"10.13140/RG.2.1.4595.1760","publisher_id":"TIB.R-GATE","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:39Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.3453.3766","author":[{"family":"Mazlee","given":"M
+        N"},{"family":"Shamsul","given":"J B"}],"title":"INTERFACIAL REACTION LAYER
+        AND TENSILE SHEAR STRENGTH OF AI 6063 ALLOY/STAINLESS STEEL 316L SPOT WELDED
+        JOINT","published":"2010","issued":"2014-09-14T09:40:44Z","container-title":"Unpublished","DOI":"10.13140/2.1.3453.3766","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4731.3289","author":[{"family":"Rizam","given":"S
+        S"},{"family":"Mazlee","given":"M N"},{"family":"Shamsul","given":"J B"},{"family":"Ahmad","given":"K
+        R"}],"title":"EFFECT OF COLLOIDAL SIO 2 CONTENT ON THE MORPHOLOGY OF COATED
+        CERAMIC PARTICLES","published":"2007","issued":"2014-09-14T10:31:49Z","container-title":"Unpublished","DOI":"10.13140/2.1.4731.3289","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.2535.8725","author":[{"family":"Rizam","given":"S
+        S"},{"family":"Fitri","given":"M W M"},{"family":"Mazlee","given":"M N"},{"family":"Shamsul","given":"J
+        B"}],"title":"EFFECT OF PARTICLE COATING ON MATRIX-REINFORCEMENT BONDING","published":"2007","issued":"2014-09-14T10:23:28Z","container-title":"Unpublished","DOI":"10.13140/2.1.2535.8725","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4054.4640","author":[{"family":"Mazlee","given":"M
+        N"},{"family":"Shamsul","given":"J B"},{"family":"Hussin","given":"K"},{"family":"Shamsudin","given":"S
+        R"},{"family":"Abdullah","given":"M F"}],"title":"Phase Evolution of A356
+        Alloy","published":"2006","issued":"2014-09-10T14:40:35Z","container-title":"Unpublished","DOI":"10.13140/2.1.4054.4640","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.2153.9205","author":[{"family":"Rizam","given":"S
+        S"},{"family":"Harun","given":"M"},{"family":"Hafizal","given":"Y"},{"family":"Mazlee","given":"M
+        N"},{"family":"Fitri","given":"M W M"},{"family":"Shamsul","given":"J B"}],"title":"Fabrication
+        of A356 Al Alloy -SiC p Composites by Stir Casting Method","published":"2006","issued":"2014-09-10T14:42:07Z","container-title":"Unpublished","DOI":"10.13140/2.1.2153.9205","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.3445.1848","author":[{"family":"Mazlee","given":"M
+        N"},{"family":"Shamsul","given":"J B"},{"family":"Hussin","given":"K"},{"family":"Rizam","given":"S
+        S"},{"family":"Ahmad","given":"K R"},{"family":"Fitri","given":"M W M"},{"family":"Ruhiyuddin","given":"M
+        Z"},{"family":"Abdullah","given":"M F"}],"title":"DAMPING BEHAVIOUR OF AS-RECEIVED
+        AND AS-CAST Al-Si-Mg ALLOYS","published":"2007","issued":"2014-09-13T14:33:11Z","container-title":"Unpublished","DOI":"10.13140/2.1.3445.1848","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"},{"subj_id":"http://orcid.org/0000-0002-8317-6014","credit_name":"Mazlee
+        Mohd Noor","obj_id":"http://doi.org/10.13140/2.1.4633.0245","author":[{"family":"Mazlee","given":"M
+        N"},{"family":"Shamsul","given":"J B"},{"family":"Hussin","given":"K"},{"family":"Rizam","given":"S
+        S"},{"family":"Ismail","given":"K"}],"title":"PRELIMINARY MICROSTRUCTURE AND
+        HARDNESS STUDIES OF A356/STAINLESS STEEL COMPOSITE VIA GRAVITY DIE CASTING
+        TECHNIQUE","published":"2007","issued":"2014-09-14T10:24:25Z","container-title":"Unpublished","DOI":"10.13140/2.1.4633.0245","publisher_id":"TIB.R-GATE","work_type_id":"report","results":[],"source_id":"datacite_search_link","contributor_role_id":"contribution","timestamp":"2016-10-22T12:26:38Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:13 GMT
+  recorded_at: Sat, 29 Oct 2016 05:40:46 GMT
 - request:
     method: get
-    uri: http://eventdata.labs.datacite.org/api/publishers?ids=tib.r-gate,cern.zenodo,cdl.digsci,tib.pangaea,cdl.dryad,bl.ccdc,cdl.peerj,gesis.ubhd,tib.tuhh,zbmed.gms,crui.infncnaf,ethz.boris,datacite.datacite,dk.gbif,mtakik.elteppk&page=1&per_page=25
+    uri: http://eventdata.labs.datacite.org/api/publishers?ids=tib.r-gate,cern.zenodo,figshare.ars,tib.pangaea,cdl.dryad,bl.ccdc,cdl.peerj,gesis.ubhd,tib.tuhh,zbmed.gms,crui.infncnaf,ethz.boris,datacite.datacite,dk.gbif,mtakik.elteppk&page=1&per_page=25
     body:
       encoding: US-ASCII
       string: ''
@@ -141,7 +175,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:13 GMT
+      - Sat, 29 Oct 2016 05:40:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -159,34 +193,34 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3d84c82c-9f45-47da-a71f-54959bd8d6cf
+      - 81b88d2a-3c13-40a1-97da-e064b964c0d9
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"81743edcb37ada91f69a403781bdbe8d"
+      - W/"992c1209dcbc34495fa7ba0d0e92b122"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.046105'
+      - '0.033949'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"ethz","title":"ETHZ","count":1},{"id":"datacite","title":"DATACITE","count":1},{"id":"cdl","title":"CDL","count":3},{"id":"mtakik","title":"MTAKIK","count":1},{"id":"zbmed","title":"ZBMED","count":1},{"id":"dk","title":"DK","count":1},{"id":"crui","title":"CRUI","count":1},{"id":"tib","title":"TIB","count":3},{"id":"bl","title":"BL","count":1},{"id":"gesis","title":"GESIS","count":1},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"ETHZ.BORIS","title":"Bern
-        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-21T17:07:06Z"},{"id":"DATACITE.DATACITE","title":"DataCite","prefixes":["10.1673"],"registration_agency_id":"datacite","member_id":"DATACITE","timestamp":"2016-10-21T17:18:02Z"},{"id":"CDL.DIGSCI","title":"Digital
-        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:09:15Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:07:36Z"},{"id":"MTAKIK.ELTEPPK","title":"ELTE
-        Pedagógiai és Pszichológiai Kar","prefixes":[],"registration_agency_id":"datacite","member_id":"MTAKIK","timestamp":"2016-10-21T17:07:57Z"},{"id":"ZBMED.GMS","title":"German
-        Medical Science","prefixes":[],"registration_agency_id":"datacite","member_id":"ZBMED","timestamp":"2016-10-21T17:19:49Z"},{"id":"DK.GBIF","title":"Global
-        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-21T17:20:47Z"},{"id":"CRUI.INFNCNAF","title":"Istituto
-        Nazionale di Fisica Nucleare. Centro Nazionale Analisi Fotogrammi","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-10-21T17:20:59Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:08:38Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:08:39Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:16:12Z"},{"id":"TIB.TUHH","title":"Technische
-        Universität Hamburg-Harburg","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:28:17Z"},{"id":"BL.CCDC","title":"The
-        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:13:44Z"},{"id":"GESIS.UBHD","title":"UBHD","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:21:35Z"},{"id":"CERN.ZENODO","title":"ZENODO
-        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-21T17:24:20Z"}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"ethz","title":"ETHZ","count":1},{"id":"datacite","title":"DATACITE","count":1},{"id":"cdl","title":"CDL","count":2},{"id":"mtakik","title":"MTAKIK","count":1},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"zbmed","title":"ZBMED","count":1},{"id":"dk","title":"DK","count":1},{"id":"crui","title":"CRUI","count":1},{"id":"tib","title":"TIB","count":3},{"id":"bl","title":"BL","count":1},{"id":"gesis","title":"GESIS","count":1},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"ETHZ.BORIS","title":"Bern
+        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-29T05:05:36Z"},{"id":"DATACITE.DATACITE","title":"DataCite","prefixes":["10.1673"],"registration_agency_id":"datacite","member_id":"DATACITE","timestamp":"2016-10-29T05:12:33Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:13:02Z"},{"id":"MTAKIK.ELTEPPK","title":"ELTE
+        Pedagógiai és Pszichológiai Kar","prefixes":[],"registration_agency_id":"datacite","member_id":"MTAKIK","timestamp":"2016-10-29T05:05:59Z"},{"id":"FIGSHARE.ARS","title":"figshare
+        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-29T05:06:06Z"},{"id":"ZBMED.GMS","title":"German
+        Medical Science","prefixes":[],"registration_agency_id":"datacite","member_id":"ZBMED","timestamp":"2016-10-29T05:06:10Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-29T05:06:11Z"},{"id":"CRUI.INFNCNAF","title":"Istituto
+        Nazionale di Fisica Nucleare. Centro Nazionale Analisi Fotogrammi","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-10-29T05:28:07Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:07:19Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:26Z"},{"id":"TIB.TUHH","title":"Technische
+        Universität Hamburg-Harburg","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:32:24Z"},{"id":"BL.CCDC","title":"The
+        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:32:28Z"},{"id":"GESIS.UBHD","title":"UBHD","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:08:10Z"},{"id":"CERN.ZENODO","title":"ZENODO
+        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-29T05:08:26Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:13 GMT
+  recorded_at: Sat, 29 Oct 2016 05:40:46 GMT
 recorded_with: VCR 2.9.3

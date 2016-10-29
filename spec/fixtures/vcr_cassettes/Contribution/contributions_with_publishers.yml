@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:12 GMT
+      - Sat, 29 Oct 2016 05:40:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,17 +37,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 76849efd-3fe2-4d77-99fc-e193f1820a76
+      - 4c0233df-3a9c-4074-a1a2-f0f1309683a2
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"ef07aa71ce8b92b31a2e9c3e9a39d359"
+      - W/"0453ceacc012e1b7efbd868409876e11"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '1.835867'
+      - '2.160158'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -57,156 +57,126 @@ http_interactions:
       string: '{"meta":{"status":"ok","message-type":"contribution-list","message-version":"v7","total":67307,"total_pages":2693,"page":1,"sources":[{"id":"datacite_orcid","title":"DataCite
         (ORCID)","count":65562},{"id":"datacite_related","title":"DataCite (RelatedIdentifier)","count":1622},{"id":"datacite_search_link","title":"DataCite
         (ORCID Search and Link)","count":123}],"publishers":[{"id":"tib.pangaea","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","count":67307}]},"contributions":[{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821669","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
-        A"},{"family":"Huhn","given":"Katrin"}],"title":"Mixing experiment with 600
-        g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:33Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821669","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.807895","author":[{"family":"Badesab","given":"Firoz
-        Kadar"},{"family":"Dobeneck","given":"Tilo"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Müller","given":"Hendrik"},{"family":"Briggs","given":"Roger
-        M"},{"family":"Frederichs","given":"Thomas"},{"family":"Kwoll","given":"Eva"}],"title":"(Figure
-        6a) Computed wave parameters and critical velocities for two dominant grain
-        sizes","published":"2012","issued":"2013-03-26T20:21:35Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.807895","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821659","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
-        A"},{"family":"Huhn","given":"Katrin"}],"title":"Layering experiment with
-        10 g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:25Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821659","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.763824","author":[{"family":"Inoue","given":"Mayuri"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Harada","given":"Mariko"},{"family":"Suzuki","given":"Atsushi"},{"family":"Kawahata","given":"Hodaka"},{"family":"Matsuzaki","given":"Hiroyuki"},{"family":"Iryu","given":"Yasufumi"}],"title":"(Table
-        1) Trace element and age analysis from the Porites coral from IODP Exp 310,
-        supplement to: Inoue, Mayuri; Yokoyama, Yusuke; Harada, Mariko; Suzuki, Atsushi;
-        Kawahata, Hodaka; Matsuzaki, Hiroyuki; Iryu, Yasufumi (2010): Trace element
-        variations in fossil corals from Tahiti collected by IODP Expedition 310:
-        Reconstruction of marine environments during the last deglaciation (15 to
-        9 ka). Marine Geology, 271(3-4), 303-306","published":"2010","issued":"2011-10-20T01:30:19Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.763824","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-0416-9546","credit_name":"Norbert
-        Frank","obj_id":"http://doi.org/10.1594/PANGAEA.830565","author":[{"family":"Hämmerle","given":"Martin"},{"family":"Höfle","given":"Bernhard","ORCID":"http://orcid.org/0000-0001-5849-1461"},{"family":"Fuchs","given":"Johannes"},{"family":"Schröder-Ritzrau","given":"Andrea"},{"family":"Vollweiler","given":"Nicole"},{"family":"Frank","given":"Norbert","ORCID":"http://orcid.org/0000-0002-0416-9546"}],"title":"Point
-        cloud of a stalagmite measured with a structured light camera","published":"2014","issued":"2014-03-24T14:46:03Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.830565","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.821647","author":[{"family":"Bartzke","given":"Gerhard"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Pilditch","given":"Conrad
-        A"},{"family":"Huhn","given":"Katrin"}],"title":"Layering experiment with
-        3 g/m**3 silt concentration","published":"2013","issued":"2014-01-14T03:10:24Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821647","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.821828","author":[{"family":"Schlolaut","given":"Gordon"},{"family":"Brauer","given":"Achim"},{"family":"Marshall","given":"Michael
-        H"},{"family":"Nakagawa","given":"Takeshi"},{"family":"Staff","given":"Richard
-        A"},{"family":"Bronk Ramsey","given":"Christopher"},{"family":"Lamb","given":"Henry
-        F"},{"family":"Bryant","given":"Charlotte L"},{"family":"Naumann","given":"Rudolf"},{"family":"Dulski","given":"Peter"},{"family":"Brock","given":"Fiona","ORCID":"http://orcid.org/0000-0003-0728-6091"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Tada","given":"Ryuji"},{"family":"Haraguchi","given":"Tsuyoshi"},{"literal":"Suigetsu
-        2006 Project members"}],"title":"Flood layer frequency from Lake Suigetsu
-        per 1000 years","published":"2014","issued":"2013-12-04T03:05:35Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.821828","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.841739","author":[],"title":"Age
-        model and stable isotope record of eastern equatorial Pacific sediment cores,
-        supplement to: Martinez, Ignacio; Keigwin, Lloyd D; Barrows, Timothy T; Yokoyama,
-        Yusuke; Southon, John (2003): La Niña-like conditions in the eastern equatorial
-        Pacific and a stronger Choco jet in the northern Andes during the last glaciation.
-        Paleoceanography, 18(2), 1033","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://orcid.org/0000-0002-7200-0099","credit_name":"Wilken-Jon
-        von Appen","obj_id":"http://doi.org/10.1594/PANGAEA.863063","author":[{"family":"Appen","given":"Wilken-Jon","ORCID":"http://orcid.org/0000-0002-7200-0099"},{"family":"Stein","given":"Ruediger"},{"family":"Wisotzki","given":"Andreas"}],"title":"Physical
-        oceanography during POLARSTERN cruise PS93.1 (ARK-XXIX/2.1)","published":"2016","issued":"2016-09-05T03:04:25Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.863063","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-17T19:07:37Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861201","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
-        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Lithofacies
-        distribution in the western Bay of Plenty, New Zealand, supplement to: Kulgemeyer,
-        Tobias; von Dobeneck, Tilo; Müller, Hendrik; Bryan, Karin R; de Lange, Willem
-        P; Battershill, Christopher N (2016): Lithofacies distribution and sediment
-        dynamics on a storm-dominated shelf from combined photographic, acoustic and
-        sedimentological profiling methods (Bay of Plenty, New Zealand). Marine Geology,
-        376, 158-174","published":"2016","issued":"2016-07-07T03:24:41Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861201","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-5257-604X","credit_name":"Janna
-        Just","obj_id":"http://doi.org/10.1594/PANGAEA.848639","author":[{"family":"Just","given":"Janna","ORCID":"http://orcid.org/0000-0002-5257-604X"},{"family":"Nowaczyk","given":"Norbert
-        R"},{"family":"Sagnotti","given":"Leonardo","ORCID":"http://orcid.org/0000-0003-3944-201X"},{"family":"Francke","given":"Alexander","ORCID":"http://orcid.org/0000-0002-0370-5802"},{"family":"Vogel","given":"Hendrik","ORCID":"http://orcid.org/0000-0002-9902-8120"},{"family":"Lacey","given":"Jack
-        H"},{"family":"Wagner","given":"Bernd"}],"title":"Downcore rock-magnetic properties
-        of ICDP Core 5045-1, Lake Ohrid, supplement to: Just, Janna; Nowaczyk, Norbert
-        R; Sagnotti, Leonardo; Francke, Alexander; Vogel, Hendrik; Lacey, Jack H;
-        Wagner, Bernd (2016): Environmental control on the occurrence of high-coercivity
-        magnetic minerals and formation of iron sulfides in a 640 ka sediment sequence
-        from Lake Ohrid (Balkans). Biogeosciences, 13(7), 2093-2109","published":"2015","issued":"2015-09-07T03:04:07Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.848639","URL":"https://doi.pangaea.de/10.1594/PANGAEA.848639","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861143","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
-        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
-        subaquatic dunes","published":"2016","issued":"2016-07-07T03:24:26Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861143","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861181","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
-        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Collection
-        of seafloor photos from the western Bay of Plenty","published":"2016","issued":"2016-07-07T03:24:27Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861181","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834639","author":[{"family":"Obrochta","given":"Stephen
-        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Crowley","given":"Thomas
-        J"},{"family":"Channell","given":"James ET"},{"family":"Hodell","given":"David
-        A"},{"family":"Baker","given":"Paul A"},{"family":"Seki","given":"A"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"}],"title":"Elemental
-        composition of detrital carbonates from IODP Site 303-U1308","published":"2014","issued":"2014-09-22T03:04:36Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834639","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861052","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
-        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
-        grain size measurements","published":"2016","issued":"2016-07-07T03:24:23Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861052","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834640","author":[],"title":"Petrologic
-        data from Site U1308 over the last three glaciations, supplement to: Obrochta,
-        Stephen P; Crowley, Thomas J; Channell, James ET; Hodell, David A; Baker,
-        Paul A; Seki, A; Yokoyama, Yusuke (2014): Climate variability and ice-sheet
-        dynamics during the last three glaciations. Earth and Planetary Science Letters,
-        406, 198-212","published":"2014","issued":"2014-09-22T03:04:37Z","DOI":"10.1594/PANGAEA.834640","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.861138","author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
-        P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
-        facies classification","published":"2016","issued":"2016-07-07T03:24:24Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861138","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834700","author":[{"family":"Obrochta","given":"Stephen
-        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
-        J"}],"title":"(Table 3) Revised age model of DSDP Site 94-609","published":"2012","issued":"2014-09-04T03:07:06Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834700","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834691","author":[{"family":"Obrochta","given":"Stephen
-        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
-        J"},{"family":"Bond","given":"Gerard C"}],"title":"(Table S4) Stable carbon
-        and oxygen isotope ratios of Neogloboquadrina pachyderma (s) in MIS4-2 of
-        DSDP Site 94-609","published":"2012","issued":"2014-09-04T03:06:56Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834691","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:27Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.705420","author":[{"family":"Kawahata","given":"Hodaka"},{"family":"Yamamoto","given":"Hisashi"},{"family":"Ohkushi","given":"Ken´ichi"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Kimoto","given":"Katsunori"},{"family":"Ohshima","given":"Hideki"},{"family":"Matsuzaki","given":"Hiroyuki"}],"title":"(Table
-        1) Ages, dry bulk densities, and UK''37, sea surface temperatures, contents
-        and fluxes of C37 alkenone of sediment core KT05-7_PC-02","published":"2009","issued":"2008-11-10T02:07:03Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.705420","URL":"https://doi.pangaea.de/10.1594/PANGAEA.705420","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0002-4480-740X","credit_name":"Karin
-        R Bryan","obj_id":"http://doi.org/10.1594/PANGAEA.807896","author":[{"family":"Badesab","given":"Firoz
-        Kadar"},{"family":"Dobeneck","given":"Tilo"},{"family":"Bryan","given":"Karin
-        R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Müller","given":"Hendrik"},{"family":"Briggs","given":"Roger
-        M"},{"family":"Frederichs","given":"Thomas"},{"family":"Kwoll","given":"Eva"}],"title":"An
-        environmental magnetic study, sedimentological and numerical methods around
-        Tauranga Harbour, New Zealand, supplement to: Badesab, Firoz Kadar; von Dobeneck,
-        Tilo; Bryan, Karin R; Müller, Hendrik; Briggs, Roger M; Frederichs, Thomas;
-        Kwoll, Eva (2012): Formation of magnetite-enriched zones in and offshore of
-        a mesotidal estuarine lagoon: An environmental magnetic study of Tauranga
-        Harbour and Bay of Plenty, New Zealand. Geochemistry, Geophysics, Geosystems,
-        13","published":"2012","issued":"2013-03-26T20:21:38Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.807896","publisher_id":"TIB.PANGAEA","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.834698","author":[{"family":"Obrochta","given":"Stephen
-        P","ORCID":"http://orcid.org/0000-0001-9632-0372"},{"family":"Miyahara","given":"Hiroko"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"},{"family":"Crowley","given":"Thomas
-        J"},{"family":"Bond","given":"Gerard C"}],"title":"(Table 1) DSDP Site 94-609
-        radiocarbon dates","published":"2012","issued":"2014-09-04T03:06:59Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.834698","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-9859-0026","credit_name":"Karen
-        Heywood","obj_id":"http://doi.org/10.1594/PANGAEA.418198","author":[{"family":"Heywood","given":"Karen
-        J","ORCID":"http://orcid.org/0000-0001-9859-0026"}],"title":"Bathymetry along
-        track line of JAMES CLARK ROSS cruise 74JC10_1","published":"2006","issued":"2006-05-22T01:59:30Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.418198","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-7869-5891","credit_name":"Yusuke
-        Yokoyama","obj_id":"http://doi.org/10.1594/PANGAEA.787781","author":[{"family":"Thomas","given":"Alexander
-        L","ORCID":"http://orcid.org/0000-0002-0734-9593"},{"family":"Fujita","given":"Kazuhiko"},{"family":"Iryu","given":"Yasufumi"},{"family":"Bard","given":"Edouard"},{"family":"Cabioch","given":"Guy"},{"family":"Camoin","given":"Gilbert"},{"family":"Cole","given":"Julia
-        E"},{"family":"Deschamps","given":"Pierre","ORCID":"http://orcid.org/0000-0003-1687-3765"},{"family":"Durand","given":"Nicolas"},{"family":"Hamelin","given":"Bruno"},{"family":"Heindel","given":"Katrin"},{"family":"Henderson","given":"Gideon
-        M","ORCID":"http://orcid.org/0000-0002-6279-7137"},{"family":"Mason","given":"Andrew
-        J"},{"family":"Matsuda","given":"Hiroki"},{"family":"Menabreaz","given":"Lucie"},{"family":"Omori","given":"Akitoshi"},{"family":"Quinn","given":"Terry"},{"family":"Sakai","given":"Saburo"},{"family":"Sato","given":"Tokiyuki"},{"family":"Sugihara","given":"Kaoru"},{"family":"Takahashi","given":"Yasunari"},{"family":"Thouveny","given":"Nicolas"},{"family":"Tudhope","given":"Alexander
-        W"},{"family":"Webster","given":"Jody M"},{"family":"Westphal","given":"Hildegard"},{"family":"Yokoyama","given":"Yusuke","ORCID":"http://orcid.org/0000-0001-7869-5891"}],"title":"(Table
-        1) Uranium and thorium concentrations as well as isotope ratios from IODP
-        Hole 310-M0005D","published":"2012","issued":"2012-09-24T03:08:53Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.787781","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"},{"subj_id":"http://orcid.org/0000-0001-5849-1461","credit_name":"Bernhard
-        Höfle","obj_id":"http://doi.org/10.1594/PANGAEA.830565","author":[{"family":"Hämmerle","given":"Martin"},{"family":"Höfle","given":"Bernhard","ORCID":"http://orcid.org/0000-0001-5849-1461"},{"family":"Fuchs","given":"Johannes"},{"family":"Schröder-Ritzrau","given":"Andrea"},{"family":"Vollweiler","given":"Nicole"},{"family":"Frank","given":"Norbert","ORCID":"http://orcid.org/0000-0002-0416-9546"}],"title":"Point
-        cloud of a stalagmite measured with a structured light camera","published":"2014","issued":"2014-03-24T14:46:03Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.830565","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":{},"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-09-15T00:49:26Z"}]}'
+        - Publishing Network for Geoscientific and Environmental Data","count":67307}]},"contributions":[{"subj_id":"http://orcid.org/0000-0003-1055-7235","credit_name":"Paul
+        Vallelonga","obj_id":"http://doi.org/10.1594/PANGAEA.833942","author":[],"title":"Halogen
+        deposition in polar snow and ice, supplement to: Spolaor, Andrea; Vallelonga,
+        Paul; Gabrieli, J; Martma, Tõnu; Björkman, MP; Isaksson, Elisabeth; Cozzi,
+        Giulio; Turetta, C; Kjær, Helle A; Curran, MAJ; Moy, AD; Schönhardt, Anja;
+        Blechschmidt, A-M; Burrows, John P; Plane, JMC; Barbante, Carlo (2014): Seasonality
+        of halogen deposition in polar snow and ice. Atmospheric Chemistry and Physics,
+        14(6), 9613-9622","published":"2014","issued":"2014-08-07T03:02:25Z","DOI":"10.1594/PANGAEA.833942","publisher_id":"TIB.PANGAEA","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8796-4176","credit_name":"Giulio
+        Cozzi","obj_id":"http://doi.org/10.1594/PANGAEA.833941","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        3) Halogen deposition at NEEM, Greenland","published":"2014","issued":"2014-08-07T03:02:13Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833941","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0003-1055-7235","credit_name":"Paul
+        Vallelonga","obj_id":"http://doi.org/10.1594/PANGAEA.833939","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        1) Halogen deposition at Holtedahlfonna, Svalbard","published":"2014","issued":"2014-08-07T03:02:10Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833939","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8796-4176","credit_name":"Giulio
+        Cozzi","obj_id":"http://doi.org/10.1594/PANGAEA.833939","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        1) Halogen deposition at Holtedahlfonna, Svalbard","published":"2014","issued":"2014-08-07T03:02:10Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833939","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0003-1055-7235","credit_name":"Paul
+        Vallelonga","obj_id":"http://doi.org/10.1594/PANGAEA.833940","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        2) Halogen deposition at Law Dome, Antarctica","published":"2014","issued":"2014-08-07T03:02:11Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833940","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0002-6491-2274","credit_name":"Luciana
+        Ferraro","obj_id":"http://doi.org/10.1594/PANGAEA.833822","author":[{"family":"Bonomo","given":"Sergio","ORCID":"http://orcid.org/0000-0001-7077-494X"},{"family":"Cascella","given":"A"},{"family":"Alberico","given":"I"},{"family":"Ferraro","given":"Luciana","ORCID":"http://orcid.org/0000-0002-6491-2274"},{"family":"Giordano","given":"L"},{"family":"Lirer","given":"Fabrizio"},{"family":"Vallefuoco","given":"Mattia"},{"family":"Marsella","given":"E"}],"title":"Coccolithophores
+        from near the Volturno estuary surface sediment samples","published":"2014","issued":"2014-08-04T03:02:42Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833822","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8635-9193","credit_name":"Andrea
+        Spolaor","obj_id":"http://doi.org/10.1594/PANGAEA.833939","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        1) Halogen deposition at Holtedahlfonna, Svalbard","published":"2014","issued":"2014-08-07T03:02:10Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833939","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8635-9193","credit_name":"Andrea
+        Spolaor","obj_id":"http://doi.org/10.1594/PANGAEA.833940","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        2) Halogen deposition at Law Dome, Antarctica","published":"2014","issued":"2014-08-07T03:02:11Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833940","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8635-9193","credit_name":"Andrea
+        Spolaor","obj_id":"http://doi.org/10.1594/PANGAEA.833941","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        3) Halogen deposition at NEEM, Greenland","published":"2014","issued":"2014-08-07T03:02:13Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833941","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8796-4176","credit_name":"Giulio
+        Cozzi","obj_id":"http://doi.org/10.1594/PANGAEA.833940","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        2) Halogen deposition at Law Dome, Antarctica","published":"2014","issued":"2014-08-07T03:02:11Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833940","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0003-1055-7235","credit_name":"Paul
+        Vallelonga","obj_id":"http://doi.org/10.1594/PANGAEA.833941","author":[{"given":"Andrea","family":"Spolaor","ORCID":"http://orcid.org/0000-0001-8635-9193"},{"given":"Paul","family":"Vallelonga","ORCID":"http://orcid.org/0000-0003-1055-7235"},{"given":"J","family":"Gabrieli"},{"given":"Tõnu","family":"Martma"},{"given":"MP","family":"Björkman"},{"given":"Elisabeth","family":"Isaksson"},{"given":"Giulio","family":"Cozzi","ORCID":"http://orcid.org/0000-0001-8796-4176"},{"given":"C","family":"Turetta"},{"given":"Helle
+        A","family":"Kjær"},{"literal":"Curran, MAJ"},{"given":"AD","family":"Moy"},{"given":"Anja","family":"Schönhardt"},{"given":"A-M","family":"Blechschmidt"},{"given":"John
+        P","family":"Burrows"},{"given":"JMC","family":"Plane"},{"given":"Carlo","family":"Barbante"}],"title":"(Supplement
+        3) Halogen deposition at NEEM, Greenland","published":"2014","issued":"2014-08-07T03:02:13Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833941","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8796-4176","credit_name":"Giulio
+        Cozzi","obj_id":"http://doi.org/10.1594/PANGAEA.833942","author":[],"title":"Halogen
+        deposition in polar snow and ice, supplement to: Spolaor, Andrea; Vallelonga,
+        Paul; Gabrieli, J; Martma, Tõnu; Björkman, MP; Isaksson, Elisabeth; Cozzi,
+        Giulio; Turetta, C; Kjær, Helle A; Curran, MAJ; Moy, AD; Schönhardt, Anja;
+        Blechschmidt, A-M; Burrows, John P; Plane, JMC; Barbante, Carlo (2014): Seasonality
+        of halogen deposition in polar snow and ice. Atmospheric Chemistry and Physics,
+        14(6), 9613-9622","published":"2014","issued":"2014-08-07T03:02:25Z","DOI":"10.1594/PANGAEA.833942","publisher_id":"TIB.PANGAEA","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-8635-9193","credit_name":"Andrea
+        Spolaor","obj_id":"http://doi.org/10.1594/PANGAEA.833942","author":[],"title":"Halogen
+        deposition in polar snow and ice, supplement to: Spolaor, Andrea; Vallelonga,
+        Paul; Gabrieli, J; Martma, Tõnu; Björkman, MP; Isaksson, Elisabeth; Cozzi,
+        Giulio; Turetta, C; Kjær, Helle A; Curran, MAJ; Moy, AD; Schönhardt, Anja;
+        Blechschmidt, A-M; Burrows, John P; Plane, JMC; Barbante, Carlo (2014): Seasonality
+        of halogen deposition in polar snow and ice. Atmospheric Chemistry and Physics,
+        14(6), 9613-9622","published":"2014","issued":"2014-08-07T03:02:25Z","DOI":"10.1594/PANGAEA.833942","publisher_id":"TIB.PANGAEA","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:38Z"},{"subj_id":"http://orcid.org/0000-0001-7077-494X","credit_name":"Sergio
+        BONOMO","obj_id":"http://doi.org/10.1594/PANGAEA.833822","author":[{"family":"Bonomo","given":"Sergio","ORCID":"http://orcid.org/0000-0001-7077-494X"},{"family":"Cascella","given":"A"},{"family":"Alberico","given":"I"},{"family":"Ferraro","given":"Luciana","ORCID":"http://orcid.org/0000-0002-6491-2274"},{"family":"Giordano","given":"L"},{"family":"Lirer","given":"Fabrizio"},{"family":"Vallefuoco","given":"Mattia"},{"family":"Marsella","given":"E"}],"title":"Coccolithophores
+        from near the Volturno estuary surface sediment samples","published":"2014","issued":"2014-08-04T03:02:42Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.833822","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:45:37Z"},{"subj_id":"http://orcid.org/0000-0002-7391-5768","credit_name":"Joan
+        Grimalt","obj_id":"http://doi.org/10.1594/PANGAEA.831557","author":[{"family":"Incarbona","given":"Alessandro"},{"family":"Martrat","given":"Belen"},{"family":"Di
+        Stefano","given":"Enrico"},{"family":"Grimalt","given":"Joan O","ORCID":"http://orcid.org/0000-0002-7391-5768"},{"family":"Pelosi","given":"Nicola"},{"family":"Patti","given":"Bernardo"},{"family":"Tranchida","given":"Giorgio"}],"title":"Relative
+        abundances of calcareous nannofossil taxa in sediment core MD01-2444","published":"2010","issued":"2014-05-06T03:06:07Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.831557","URL":"https://doi.pangaea.de/10.1594/PANGAEA.831557","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:32:28Z"},{"subj_id":"http://orcid.org/0000-0002-7391-5768","credit_name":"Joan
+        Grimalt","obj_id":"http://doi.org/10.1594/PANGAEA.831555","author":[{"family":"Incarbona","given":"Alessandro"},{"family":"Martrat","given":"Belen"},{"family":"Di
+        Stefano","given":"Enrico"},{"family":"Grimalt","given":"Joan O","ORCID":"http://orcid.org/0000-0002-7391-5768"},{"family":"Pelosi","given":"Nicola"},{"family":"Patti","given":"Bernardo"},{"family":"Tranchida","given":"Giorgio"}],"title":"Absolute
+        abundances of calcareous nannofossil taxa in sediment core MD01-2444","published":"2010","issued":"2014-05-06T03:06:05Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.831555","URL":"https://doi.pangaea.de/10.1594/PANGAEA.831555","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:32:28Z"},{"subj_id":"http://orcid.org/0000-0002-2044-6849","credit_name":"Carolin
+        Löscher","obj_id":"http://doi.org/10.1594/PANGAEA.775074","author":[{"given":"Toste","family":"Tanhua"},{"given":"Lothar","family":"Stramma"},{"given":"Falguni","family":"Desai"},{"given":"Carolin
+        R.","family":"Löscher","ORCID":"http://orcid.org/0000-0002-2044-6849"}],"title":"Hydrochemistry
+        and molecular biology during Maria S. Merian cruise MSM10/1","published":"2012","issued":"2012-02-28T02:07:16Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.775074","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_orcid","contributor_role_id":"contribution","timestamp":"2016-10-22T13:20:27Z"},{"subj_id":"http://orcid.org/0000-0002-7527-7827","credit_name":"Eva-Maria
+        Nöthig","obj_id":"http://doi.org/10.1594/PANGAEA.859548","author":[{"given":"Catherine","family":"Lalande"},{"given":"Eva-Maria","family":"Nöthig","ORCID":"http://orcid.org/0000-0002-7527-7827"},{"given":"Eduard","family":"Bauerfeind"},{"given":"Kristin","family":"Hardge"},{"given":"Agnieszka","family":"Beszczynska-Möller"},{"given":"Kirsten","family":"Fahl"}],"title":"Flux
+        of organisms at AWI HAUSGARTEN from mooring Lander-2007","published":"2016","issued":"2016-05-11T03:09:30Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859548","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:20:25Z"},{"subj_id":"http://orcid.org/0000-0002-7527-7827","credit_name":"Eva-Maria
+        Nöthig","obj_id":"http://doi.org/10.1594/PANGAEA.859545","author":[{"given":"Catherine","family":"Lalande"},{"given":"Eva-Maria","family":"Nöthig","ORCID":"http://orcid.org/0000-0002-7527-7827"},{"given":"Eduard","family":"Bauerfeind"},{"given":"Kristin","family":"Hardge"},{"given":"Agnieszka","family":"Beszczynska-Möller"},{"given":"Kirsten","family":"Fahl"}],"title":"Flux
+        of biomarkers at AWI HAUSGARTEN from mooring Fevi16","published":"2016","issued":"2016-05-11T03:09:26Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859545","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:20:25Z"},{"subj_id":"http://orcid.org/0000-0002-7527-7827","credit_name":"Eva-Maria
+        Nöthig","obj_id":"http://doi.org/10.1594/PANGAEA.859546","author":[{"given":"Catherine","family":"Lalande"},{"given":"Eva-Maria","family":"Nöthig","ORCID":"http://orcid.org/0000-0002-7527-7827"},{"given":"Eduard","family":"Bauerfeind"},{"given":"Kristin","family":"Hardge"},{"given":"Agnieszka","family":"Beszczynska-Möller"},{"given":"Kirsten","family":"Fahl"}],"title":"Flux
+        of biomarkers at AWI HAUSGARTEN from mooring Lander-2007","published":"2016","issued":"2016-05-11T03:09:28Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859546","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:20:25Z"},{"subj_id":"http://orcid.org/0000-0002-7527-7827","credit_name":"Eva-Maria
+        Nöthig","obj_id":"http://doi.org/10.1594/PANGAEA.859547","author":[{"given":"Catherine","family":"Lalande"},{"given":"Eva-Maria","family":"Nöthig","ORCID":"http://orcid.org/0000-0002-7527-7827"},{"given":"Eduard","family":"Bauerfeind"},{"given":"Kristin","family":"Hardge"},{"given":"Agnieszka","family":"Beszczynska-Möller"},{"given":"Kirsten","family":"Fahl"}],"title":"Flux
+        of organisms at AWI HAUSGARTEN from mooring Fevi16","published":"2016","issued":"2016-05-11T03:09:29Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859547","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:20:25Z"},{"subj_id":"http://orcid.org/0000-0002-7110-5470","credit_name":"José
+        Manuel Mogollón","obj_id":"http://doi.org/10.1594/PANGAEA.779903","author":[{"given":"Susann","family":"Henkel","ORCID":"http://orcid.org/0000-0001-7490-0237"},{"given":"José
+        M","family":"Mogollón","ORCID":"http://orcid.org/0000-0002-7110-5470"},{"given":"Kerstin","family":"Nöthen"},{"given":"Christine","family":"Franke"},{"given":"Kara","family":"Bogus","ORCID":"http://orcid.org/0000-0003-4690-0576"},{"given":"Eric","family":"Robin","ORCID":"http://orcid.org/0000-0002-5596-2640"},{"given":"André","family":"Bahr"},{"given":"Martin","family":"Blumenberg"},{"given":"Thomas","family":"Pape","ORCID":"http://orcid.org/0000-0002-6872-2144"},{"given":"Richard","family":"Seifert"},{"given":"Christian","family":"März"},{"given":"Gert
+        Jan","family":"Lange","ORCID":"http://orcid.org/0000-0002-9420-3022"},{"given":"Sabine","family":"Kasten"}],"title":"Geochemistry
+        of sediment core 214 recovered during METEOR cruise M72/1","published":"2012","issued":"2012-05-23T01:07:57Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.779903","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:16:37Z"},{"subj_id":"http://orcid.org/0000-0003-4690-0576","credit_name":"Kara
+        Bogus","obj_id":"http://doi.org/10.1594/PANGAEA.779904","author":[{"given":"Susann","family":"Henkel","ORCID":"http://orcid.org/0000-0001-7490-0237"},{"given":"José
+        M","family":"Mogollón","ORCID":"http://orcid.org/0000-0002-7110-5470"},{"given":"Kerstin","family":"Nöthen"},{"given":"Christine","family":"Franke"},{"given":"Kara","family":"Bogus","ORCID":"http://orcid.org/0000-0003-4690-0576"},{"given":"Eric","family":"Robin","ORCID":"http://orcid.org/0000-0002-5596-2640"},{"given":"André","family":"Bahr"},{"given":"Martin","family":"Blumenberg"},{"given":"Thomas","family":"Pape","ORCID":"http://orcid.org/0000-0002-6872-2144"},{"given":"Richard","family":"Seifert"},{"given":"Christian","family":"März"},{"given":"Gert
+        Jan","family":"Lange","ORCID":"http://orcid.org/0000-0002-9420-3022"},{"given":"Sabine","family":"Kasten"}],"title":"Geochemistry
+        of sediment core 755 recovered during Poseidon cruise POS317/2","published":"2012","issued":"2012-05-22T01:08:54Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.779904","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:16:37Z"},{"subj_id":"http://orcid.org/0000-0003-4690-0576","credit_name":"Kara
+        Bogus","obj_id":"http://doi.org/10.1594/PANGAEA.779903","author":[{"given":"Susann","family":"Henkel","ORCID":"http://orcid.org/0000-0001-7490-0237"},{"given":"José
+        M","family":"Mogollón","ORCID":"http://orcid.org/0000-0002-7110-5470"},{"given":"Kerstin","family":"Nöthen"},{"given":"Christine","family":"Franke"},{"given":"Kara","family":"Bogus","ORCID":"http://orcid.org/0000-0003-4690-0576"},{"given":"Eric","family":"Robin","ORCID":"http://orcid.org/0000-0002-5596-2640"},{"given":"André","family":"Bahr"},{"given":"Martin","family":"Blumenberg"},{"given":"Thomas","family":"Pape","ORCID":"http://orcid.org/0000-0002-6872-2144"},{"given":"Richard","family":"Seifert"},{"given":"Christian","family":"März"},{"given":"Gert
+        Jan","family":"Lange","ORCID":"http://orcid.org/0000-0002-9420-3022"},{"given":"Sabine","family":"Kasten"}],"title":"Geochemistry
+        of sediment core 214 recovered during METEOR cruise M72/1","published":"2012","issued":"2012-05-23T01:07:57Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.779903","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:16:37Z"},{"subj_id":"http://orcid.org/0000-0002-1341-1525","credit_name":"凯
+        许","obj_id":"http://doi.org/10.1594/PANGAEA.820681","author":[{"given":"Kai","family":"Xu","ORCID":"http://orcid.org/0000-0002-1341-1525"},{"given":"Kunshan","family":"Gao"}],"title":"Reduced
+        calcification decreases photoprotective capability in the Coccolithophorid
+        Emiliania huxleyi, supplement to: Xu, Kai; Gao, Kunshan (2012): Reduced Calcification
+        Decreases Photoprotective Capability in the Coccolithophorid Emiliania huxleyi.
+        Plant and Cell Physiology, 53(7), 1267-1274","published":"2012","issued":"2014-03-17T03:02:10Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.820681","publisher_id":"TIB.PANGAEA","work_type_id":"dataset","results":[],"source_id":"datacite_related","contributor_role_id":"contribution","timestamp":"2016-10-22T13:16:37Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:12 GMT
+  recorded_at: Sat, 29 Oct 2016 05:40:48 GMT
 - request:
     method: get
     uri: http://eventdata.labs.datacite.org/api/publishers?ids=tib.pangaea&page=1&per_page=25
@@ -226,7 +196,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:13 GMT
+      - Sat, 29 Oct 2016 05:40:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -244,17 +214,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 3a03c255-e83f-4081-b7f6-21691f93fdfb
+      - 2bb2ddda-bc30-4b62-9d63-3e87a323f53e
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"813797be5b46ee501b3b990d5f091ad8"
+      - W/"dcb922ef2b4dae35cd2bb496a17d8001"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.024821'
+      - '0.014143'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -262,7 +232,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":1,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":1}],"members":[{"id":"tib","title":"TIB","count":1}]},"publishers":[{"id":"TIB.PANGAEA","title":"PANGAEA
-        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:08:38Z"}]}'
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:13 GMT
+  recorded_at: Sat, 29 Oct 2016 05:40:48 GMT
 recorded_with: VCR 2.9.3

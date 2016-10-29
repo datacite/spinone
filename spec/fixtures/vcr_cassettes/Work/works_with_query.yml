@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:08 GMT
+      - Sat, 29 Oct 2016 05:42:49 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,7 +30,7 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":60},"response":{"numFound":39224,"start":0,"docs":[{"minted":"2011-07-18T13:53:04Z","datacentre_symbol":"ETHZ.ZORA","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48cmVzb3VyY2UgeG1sbnM9Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTMvbWV0YWRhdGEueHNkIj48aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC41MTY3L3V6aC0xOTUzMTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlfDvGVzdCwgVDwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5QbGVza28sIE08L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+UmVubmVyLCBDPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlNpZWJlbmJvcm4sIFU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+QWRyaWFuLCBOPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk9sZCwgTCBKPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkZhZGxlLCBOPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkZpc2NoZXIsIEU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+Uml0dGVyLCBHPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkJhdWVyLCBTPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk1lcnRlbnMsIEogQzwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5TdGVubmVyLCBGPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPktudXRoLCBBPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PC9jcmVhdG9ycz48dGl0bGVzPjx0aXRsZT5TZXF1ZW50aWFsIGNhbmNlciBpbW11bm90aGVyYXB5OiB0YXJnZXRlZCBhY3Rpdml0eSBvZiBkaW1lcmljIFRORiBhbmQgSUwtODwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5DYW5jZXIgSW1tdW5pdHk8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMDk8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSI+MjAwOS0wMy0wOTwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+PC9yZXNvdXJjZVR5cGU+PC9yZXNvdXJjZT4=","allocator_symbol":"ETHZ","updated":"2016-04-06T02:03:29Z","doi":"10.5167/UZH-19531","schema_version":"3","title":["Sequential
+      string: '{"responseHeader":{"status":0,"QTime":67},"response":{"numFound":39630,"start":0,"docs":[{"minted":"2011-07-18T13:53:04Z","datacentre_symbol":"ETHZ.ZORA","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48cmVzb3VyY2UgeG1sbnM9Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTMvbWV0YWRhdGEueHNkIj48aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC41MTY3L3V6aC0xOTUzMTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlfDvGVzdCwgVDwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5QbGVza28sIE08L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+UmVubmVyLCBDPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlNpZWJlbmJvcm4sIFU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+QWRyaWFuLCBOPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk9sZCwgTCBKPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkZhZGxlLCBOPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkZpc2NoZXIsIEU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+Uml0dGVyLCBHPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkJhdWVyLCBTPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk1lcnRlbnMsIEogQzwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5TdGVubmVyLCBGPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPktudXRoLCBBPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PC9jcmVhdG9ycz48dGl0bGVzPjx0aXRsZT5TZXF1ZW50aWFsIGNhbmNlciBpbW11bm90aGVyYXB5OiB0YXJnZXRlZCBhY3Rpdml0eSBvZiBkaW1lcmljIFRORiBhbmQgSUwtODwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5DYW5jZXIgSW1tdW5pdHk8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMDk8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSI+MjAwOS0wMy0wOTwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+PC9yZXNvdXJjZVR5cGU+PC9yZXNvdXJjZT4=","allocator_symbol":"ETHZ","updated":"2016-04-06T02:03:29Z","doi":"10.5167/UZH-19531","schema_version":"3","title":["Sequential
         cancer immunotherapy: targeted activity of dimeric TNF and IL-8"],"publicationYear":"2009","resourceTypeGeneral":"Text","publisher":"Cancer
         Immunity","resourceType":""},{"minted":"2016-09-11T21:30:36Z","datacentre_symbol":"TIB.R-GATE","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTMvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4yODQzNi45MTUyNjwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkRhZ29iZXJ0IFNvZXJnZWw8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPkRlc2lnbiBvZiBhbiBJbnRlcmxpbmtlZCBGb29kIERlc2NyaXB0aW9uIChJRkQpIERhdGFiYXNlLiBBIE5ldyBGb29kIERlc2NyaXB0aW9uIFN5c3RlbS4gRXhwYW5kZWQgYW5kIHJldmlzZWQgZnJvbSB0aGUgaW5pdGlhbCBGYWN0b3JlZCBGb29kIFZvY2FidWxhcnkuPC90aXRsZT48L3RpdGxlcz48cHVibGlzaGVyPk5hdGlvbmFsIENhbmNlciBJbnN0aXR1dGU6IERpZXQgYW5kIENhbmNlciBCcmFuY2g8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjE5ODg8L3B1YmxpY2F0aW9uWWVhcj48bGFuZ3VhZ2U+ZW48L2xhbmd1YWdlPjwvcmVzb3VyY2U+","allocator_symbol":"TIB","updated":"2016-09-11T21:30:36Z","doi":"10.13140/RG.2.2.28436.91526","schema_version":"3","title":["Design
         of an Interlinked Food Description (IFD) Database. A New Food Description
@@ -429,19 +429,20 @@ http_interactions:
         (Magnevist, Berlex Laboratories, Wayne, New Jersey) was injected intravenously
         using a syringe pump (0.15 mmol/kg) at the rate of 3 ml/s followed by 20 ml
         saline flush at the same rate. The protocol included ~ 5 baseline scans prior
-        to contrast injection for estimation of baseline tissue properties."],"publicationYear":"2016","resourceTypeGeneral":"Dataset"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2011",12922,"2015",9489,"2016",7370,"2014",2992,"2013",2102,"2012",1489,"2010",854,"2009",399,"2008",365,"2007",173,"2006",128,"2005",104,"2004",89,"2003",75,"2002",73],"datacentre_facet":["FIGSHARE.ARS
-        - figshare Academic Research System",19677,"CDL.DPLANET - Data-Planet",3812,"TIB.ESR
-        - European Society of Radiology",3332,"TIB.R-GATE - ResearchGate",2112,"ETHZ.ZORA
+        to contrast injection for estimation of baseline tissue properties."],"publicationYear":"2016","resourceTypeGeneral":"Dataset"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2011",12922,"2015",9510,"2016",7740,"2014",3004,"2013",2104,"2012",1489,"2010",854,"2009",399,"2008",366,"2007",173,"2006",128,"2005",104,"2004",89,"2003",75,"2002",73],"datacentre_facet":["FIGSHARE.ARS
+        - figshare Academic Research System",19954,"CDL.DPLANET - Data-Planet",3825,"TIB.ESR
+        - European Society of Radiology",3332,"TIB.R-GATE - ResearchGate",2137,"ETHZ.ZORA
         - Universität Zürich, ZORA",895,"CISTI.UBC - University of British Columbia",876,"ETHZ.BORIS
-        - Bern Open Repository and Information System (BORIS)",649,"BL.YORK - University
+        - Bern Open Repository and Information System (BORIS)",650,"BL.YORK - University
         of York",618,"ZBMED.GMS - German Medical Science",610,"CDL.BROAD - Broad Institute
         of MIT and Harvard",563,"CRUI.UNINA - Università degli Studi di Napoli Federico
-        II",445,"GESIS.ICPSR - ICPSR",422,"CERN.ZENODO - ZENODO - Research. Shared.",391,"BL.F1000R
-        - Faculty of 1000 Research Ltd",302,"NRCT.DB1 - NRCT Data Center",302],"resourceType_facet":["Image",12151,"Text",9538,"Collection",4159,"Other",4047,"Dataset",3421,"Audiovisual",108,"Software",48,"PhysicalObject",35,"InteractiveResource",4,"Film",1,"Sound",1],"schema_version":["3",32674,"2.2",6547,"2.1",2,"4",1]},"facet_dates":{},"facet_ranges":{}}}
+        II",445,"GESIS.ICPSR - ICPSR",422,"CERN.ZENODO - ZENODO - Research. Shared.",400,"CDL.CULIS
+        - Columbia University Libraries/Information Services (CUL/IS)",305,"BL.F1000R
+        - Faculty of 1000 Research Ltd",304],"resourceType_facet":["Image",12171,"Text",9752,"Collection",4237,"Other",4059,"Dataset",3449,"Audiovisual",117,"Software",48,"PhysicalObject",35,"InteractiveResource",4,"Film",1,"Sound",1],"schema_version":["3",33060,"2.2",6567,"2.1",2,"4",1]},"facet_dates":{},"facet_ranges":{}}}
 
 '
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:08 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:49 GMT
 - request:
     method: post
     uri: http://eventdata.labs.datacite.org/api/works
@@ -465,7 +466,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:08 GMT
+      - Sat, 29 Oct 2016 05:42:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -483,17 +484,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 2ee13f4a-7261-47fc-b42b-761b2a12a726
+      - 7fc2b880-e3b5-46a9-8ee3-b4bf3d9de46c
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"d0799b66d3952c2de347b650bf12bf54"
+      - W/"defbce6b659eaa169f64a54c9bdc90dd"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.069793'
+      - '0.048761'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -501,7 +502,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":[],"publishers":[],"relation_types":[{"id":"is_referenced_by","title":"Is
-        referenced by","count":2}]},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
+        referenced by","count":1}],"resource_types":[{"id":"dataset","title":"Dataset","count":1}],"years":[{"id":"2016","title":"2016","count":1}]},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
         P","family":"Pierce"},{"given":"Susan","family":"Faerber"},{"given":"Fred
         A","family":"Wright"},{"given":"Cheryl L","family":"Rock"},{"given":"Vicky","family":"Newman"},{"given":"Shirley
         W","family":"Flatt"},{"given":"Sheila","family":"Kealey"},{"given":"Vicky
@@ -515,12 +516,12 @@ http_interactions:
         W","family":"Carlson"},{"given":"Jennifer A","family":"Emond"},{"given":"Richard
         A","family":"Hajek"},{"given":"Njeri","family":"Karanja"},{"given":"Lisa","family":"Madlensky"}],"title":"Women''s
         Healthy Eating and Living (WHEL) Study","published":"2016","issued":"2016-02-26T18:39:52Z","updated":"2016-06-17T05:33:29Z","container-title":"UC
-        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","results":{}}]}'
+        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","resource_type_id":"dataset","results":[]}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:08 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:49 GMT
 - request:
     method: get
-    uri: http://eventdata.labs.datacite.org/api/publishers?ids=FIGSHARE.ARS,CDL.DPLANET,TIB.ESR,TIB.R-GATE,ETHZ.ZORA,CISTI.UBC,ETHZ.BORIS,BL.YORK,ZBMED.GMS,CDL.BROAD,CRUI.UNINA,GESIS.ICPSR,CERN.ZENODO,BL.F1000R,NRCT.DB1
+    uri: http://eventdata.labs.datacite.org/api/publishers?ids=FIGSHARE.ARS,CDL.DPLANET,TIB.ESR,TIB.R-GATE,ETHZ.ZORA,CISTI.UBC,ETHZ.BORIS,BL.YORK,ZBMED.GMS,CDL.BROAD,CRUI.UNINA,GESIS.ICPSR,CERN.ZENODO,CDL.CULIS,BL.F1000R
     body:
       encoding: US-ASCII
       string: ''
@@ -537,7 +538,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:29:08 GMT
+      - Sat, 29 Oct 2016 05:42:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -555,36 +556,36 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 187e7b0f-460e-4ea4-b61a-76a830a40972
+      - dfe1581c-1756-4ae4-b838-3fc7cb6aad8e
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"0fe9c5377e5a52913e352e142e1072c8"
+      - W/"43bc2d7a86321a6e1e00158fc6fa8eef"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.031185'
+      - '0.039398'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"ethz","title":"ETHZ","count":2},{"id":"cdl","title":"CDL","count":2},{"id":"tib","title":"TIB","count":2},{"id":"bl","title":"BL","count":2},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"zbmed","title":"ZBMED","count":1},{"id":"gesis","title":"GESIS","count":1},{"id":"nrct","title":"NRCT","count":1},{"id":"crui","title":"CRUI","count":1},{"id":"cisti","title":"CISTI","count":1},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"ETHZ.BORIS","title":"Bern
-        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-21T17:07:06Z"},{"id":"CDL.BROAD","title":"Broad
-        Institute of MIT and Harvard","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:15:47Z"},{"id":"CDL.DPLANET","title":"Data-Planet","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-21T17:18:02Z"},{"id":"TIB.ESR","title":"European
-        Society of Radiology","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:11:32Z"},{"id":"BL.F1000R","title":"Faculty
-        of 1000 Research Ltd","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:08:06Z"},{"id":"FIGSHARE.ARS","title":"figshare
-        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-21T17:08:14Z"},{"id":"ZBMED.GMS","title":"German
-        Medical Science","prefixes":[],"registration_agency_id":"datacite","member_id":"ZBMED","timestamp":"2016-10-21T17:19:49Z"},{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:08:47Z"},{"id":"NRCT.DB1","title":"NRCT
-        Data Center","prefixes":[],"registration_agency_id":"datacite","member_id":"NRCT","timestamp":"2016-10-21T17:24:20Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-21T17:16:12Z"},{"id":"CRUI.UNINA","title":"Università
-        degli Studi di Napoli Federico II","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-10-21T17:10:21Z"},{"id":"ETHZ.ZORA","title":"Universität
-        Zürich, ZORA","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-21T17:16:30Z"},{"id":"CISTI.UBC","title":"University
-        of British Columbia","prefixes":[],"registration_agency_id":"datacite","member_id":"CISTI","timestamp":"2016-10-21T17:22:18Z"},{"id":"BL.YORK","title":"University
-        of York","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-21T17:10:50Z"},{"id":"CERN.ZENODO","title":"ZENODO
-        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-21T17:24:20Z"}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"ethz","title":"ETHZ","count":2},{"id":"cdl","title":"CDL","count":3},{"id":"tib","title":"TIB","count":2},{"id":"bl","title":"BL","count":2},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"zbmed","title":"ZBMED","count":1},{"id":"gesis","title":"GESIS","count":1},{"id":"crui","title":"CRUI","count":1},{"id":"cisti","title":"CISTI","count":1},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"ETHZ.BORIS","title":"Bern
+        Open Repository and Information System (BORIS)","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-29T05:05:36Z"},{"id":"CDL.BROAD","title":"Broad
+        Institute of MIT and Harvard","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:05:40Z"},{"id":"CDL.CULIS","title":"Columbia
+        University Libraries/Information Services (CUL/IS)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:05:48Z"},{"id":"CDL.DPLANET","title":"Data-Planet","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:05:52Z"},{"id":"TIB.ESR","title":"European
+        Society of Radiology","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:13:02Z"},{"id":"BL.F1000R","title":"Faculty
+        of 1000 Research Ltd","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:06:04Z"},{"id":"FIGSHARE.ARS","title":"figshare
+        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-29T05:06:06Z"},{"id":"ZBMED.GMS","title":"German
+        Medical Science","prefixes":[],"registration_agency_id":"datacite","member_id":"ZBMED","timestamp":"2016-10-29T05:06:10Z"},{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:17:32Z"},{"id":"TIB.R-GATE","title":"ResearchGate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:42:26Z"},{"id":"CRUI.UNINA","title":"Università
+        degli Studi di Napoli Federico II","prefixes":[],"registration_agency_id":"datacite","member_id":"CRUI","timestamp":"2016-10-29T05:35:31Z"},{"id":"ETHZ.ZORA","title":"Universität
+        Zürich, ZORA","prefixes":[],"registration_agency_id":"datacite","member_id":"ETHZ","timestamp":"2016-10-29T05:35:33Z"},{"id":"CISTI.UBC","title":"University
+        of British Columbia","prefixes":[],"registration_agency_id":"datacite","member_id":"CISTI","timestamp":"2016-10-29T05:35:48Z"},{"id":"BL.YORK","title":"University
+        of York","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:36:27Z"},{"id":"CERN.ZENODO","title":"ZENODO
+        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-29T05:08:26Z"}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:29:08 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:49 GMT
 recorded_with: VCR 2.9.3

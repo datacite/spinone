@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:51 GMT
+      - Sat, 29 Oct 2016 05:42:58 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,7 +30,7 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":6},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-04-22T12:55:03Z","refQuality":false,"has_metadata":true,"is_active":true,"datacentre_symbol":"GESIS.ICPSR","uploaded":"2016-05-02T13:13:29Z","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHJlc291cmNlIHhtbG5zPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMycgeG1sbnM6eHNpPSdodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZScgeHNpOnNjaGVtYUxvY2F0aW9uPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCc+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9J0RPSSc+MTAuMzg4Ni9JQ1BTUjM2MzU3LnYxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0czwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlIHhtbDpsYW5nPSdlbic+QXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5JQ1BTUiAtIEludGVydW5pdmVyc2l0eSBDb25zb3J0aXVtIGZvciBQb2xpdGljYWwgYW5kIFNvY2lhbCBSZXNlYXJjaDwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNjwvcHVibGljYXRpb25ZZWFyPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSdGdW5kZXInPgogICAgICA8Y29udHJpYnV0b3JOYW1lPk5hdGlvbmFsIEVuZG93bWVudCBmb3IgdGhlIEFydHM8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9J0NvbGxlY3RlZCc+MTk5ODwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSdDb2xsZWN0ZWQnPjE5OTgvMjAxMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0nRGF0YXNldCc+c3VydmV5IGRhdGE8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0nSUNQU1IgU3R1ZHkgTnVtYmVyJz4zNjM1NzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDx2ZXJzaW9uPnYxPC92ZXJzaW9uPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSdBYnN0cmFjdCcgeG1sOmxhbmc9J2VuJz5UaGUgQXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudCAoQUNQU0EpIGlzIHByb2R1Y2VkIHRocm91Z2ggdGhlIHBhcnRuZXJzaGlwIGJldHdlZW4gdGhlIFVuaXRlZCBTdGF0ZXMgQnVyZWF1IG9mIEVjb25vbWljIEFuYWx5c2lzIChCRUEpIGFuZCB0aGUgTmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0cyAoTkVBKS4gQnVpbHQgd2l0aCB0aGUgQkVBJ3MgaW5wdXQtb3V0cHV0IChJLU8pIGFjY291bnRzLCB0aGUgQUNQU0EgcHJvdmlkZXMgZGV0YWlsZWQgc3RhdGlzdGljcyB0aGF0IGlsbHVzdHJhdGUgdGhlIGltcGFjdCBvZiBhcnRzIGFuZCBjdWx0dXJhbCBwcm9kdWN0aW9uIG9uIHRoZSBVbml0ZWQgU3RhdGVzIGVjb25vbXkuIFNwZWNpZmljYWxseSwgdGhpcyBhY2NvdW50IHByb3ZpZGVzIGFuIGFzc2Vzc21lbnQgb2YgdGhlIGFydHMgYW5kIGN1bHR1cmFsIHNlY3RvcidzIGNvbnRyaWJ1dGlvbnMgdG8gZ3Jvc3MgZG9tZXN0aWMgcHJvZHVjdCAoR0RQKS4gRm9yIHllYXJzIDE5OTggdG8gMjAxMywgdGhlIEFDUFNBIHByZXNlbnRzIGFubnVhbCBzdGF0aXN0aWNzIGFib3V0IHRoZSBmb2xsb3dpbmcgaXRlbXM6ICgxKSBPdXRwdXQgb2YgZGV0YWlsZWQgYXJ0cyBhbmQgY3VsdHVyYWwgY29tbW9kaXRpZXMgYW5kIHRoZSBpbmR1c3RyaWVzIHByb2R1Y2luZyB0aGVzZSBjb21tb2RpdGllczsgKDIpIGVtcGxveW1lbnQgYW5kIGNvbXBlbnNhdGlvbiB3aXRoaW4gdGhlc2UgaW5kdXN0cmllczsgKDMpIGFydHMgYW5kIGN1bHR1cmFsIHZhbHVlIGFkZGVkIGJ5IGluZHVzdHJ5OyBhbmQgKDQpIGNvbW1vZGl0eS1mbG93IGRldGFpbHMgZm9yIGFydHMgYW5kIGN1bHR1cmFsIHByb2R1Y3Rpb24gcHJvZHVjdHMuIEluIHRoZSBkYXRhIHRhYmxlcyBwcm92aWRlZCAoY2xpY2sgb24gIk90aGVyIiBpbiB0aGUgRGF0YXNldChzKSBzZWN0aW9uKSwgdGhlIHN0YXRpc3RpY3MgZmFsbCB1bmRlciB0d28gYnJvYWQgY2F0ZWdvcmllczogKDEpIGNvcmUgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbiBhbmQgKDIpIHN1cHBvcnRpbmcgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbi4gVGhlIGNvcmUgY2F0ZWdvcnkgY29udGFpbnMgdGhlIGNvbW1vZGl0aWVzIGluIHdoaWNoIHRoZSBvdXRwdXQgcHJpbWFyaWx5IGNvbnRyaWJ1dGVzIHRvIGFydHMgYW5kIGN1bHR1cmUuIFBlcmZvcm1pbmcgYXJ0cywgbXVzZXVtcywgZGVzaWduIHNlcnZpY2VzLCBhbmQgYXJ0cyBlZHVjYXRpb24gYXJlIGluY2x1ZGVkIGluIHRoZSBjb3JlIGNhdGVnb3J5LiBUaGUgc3VwcG9ydGluZyBjYXRlZ29yeSBjb25zaXN0cyBvZiBjb21tb2RpdGllcyB0aGF0IHN1cHBvcnQgdGhlIGNvcmUgY2F0ZWdvcnkgdGhyb3VnaCBwdWJsaWNhdGlvbiwgZGlzc2VtaW5hdGlvbiBvZiB0aGUgY3JlYXRpdmUgcHJvY2Vzcywgb3Igb3RoZXIgc3VwcG9ydGl2ZSBmdW5jdGlvbnMuIFRoaXMgY2F0ZWdvcnkgY29udGFpbnMgZXZlbnQgcHJvbW90aW9uLCBwcmludGluZywgYW5kIGJyb2FkY2FzdGluZy4gU2l4IGRhdGEgdGFibGVzIGFyZSBwcm92aWRlZCBmb3IgZWFjaCB5ZWFyIGZyb20gMTk5OCB0byAyMDEzOiBUYWJsZSAxLiBQcm9kdWN0aW9uIG9mIENvbW1vZGl0aWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSAyLiBPdXRwdXQgYW5kIFZhbHVlIEFkZGVkIGJ5IEluZHVzdHJ5OyBUYWJsZSAzLiBTdXBwbHkgYW5kIENvbnN1bXB0aW9uIG9mIENvbW1vZGl0aWVzOyBUYWJsZSA0LiBFbXBsb3ltZW50IGFuZCBDb21wZW5zYXRpb24gb2YgRW1wbG95ZWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSA1LiBUb3RhbCBBQ1BTQS1yZWxhdGVkIEVtcGxveW1lbnQgYnkgSW5kdXN0cnk7IFRhYmxlIDYuIE91dHB1dCBieSBBQ1BTQSBDb21tb2RpdHk7IEluIGFkZGl0aW9uLCBlc3RpbWF0ZXMgb2YgcmVhbCB2YWx1ZSBhZGRlZCBieSBpbmR1c3RyeSBhbmQgZXN0aW1hdGVzIG9mIHJlYWwgZ3Jvc3Mgb3V0cHV0IGFuZCBwcmljZXMgaW5kZXhlcyBieSBBQ1BTQSBjb21tb2RpdHkgYXJlIHByb3ZpZGVkIGluIHNlcGFyYXRlIEV4Y2VsIGZpbGVzIChjbGljayBvbiAiT3RoZXIiIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24pLiBUaGUgaW5kdXN0cmllcyBhbmQgY29tbW9kaXRpZXMgcHJlc2VudGVkIGluIHRoZSBkYXRhIGFyZSBiYXNlZCBvbiB0aGUgMjAwNyBOb3J0aCBBbWVyaWNhbiBJbmR1c3RyaWFsIENsYXNzaWZpY2F0aW9uIFN5c3RlbSAoTkFJQ1MpLiBVc2VycyBhcmUgZW5jb3VyYWdlZCB0byByZXZpZXcgdGhlIFRhYmxlIEd1aWRlIHByb3ZpZGVkIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24gYXMgaXQgZ2l2ZXMgaW1wb3J0YW50IGluZm9ybWF0aW9uIGZvciBhbGwgZGF0YSB0YWJsZXMuIEFsc28sIHVzZXJzIHNob3VsZCByZXZpZXcgVGhlIE5FQSBHdWlkZSB0byB0aGUgVS5TLiBBcnRzIGFuZCBDdWx0dXJhbCBQcm9kdWN0aW9uIFNhdGVsbGl0ZSBBY2NvdW50IGFuZCBvdGhlciByZWxhdGVkIG1hdGVyaWFscyBhdmFpbGFibGUgb24gTkVBJ3MgQXJ0cyBEYXRhIFByb2ZpbGUgcGFnZSBhYm91dCB0aGUgQUNQU0EuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9J1RhYmxlT2ZDb250ZW50cycgeG1sOmxhbmc9J2VuJz4mbHQ7cCZndDtEYXRhc2V0czombHQ7L3AmZ3Q7IAombHQ7dWwmZ3Q7IAogJmx0O2xpJmd0O0RTMTogRGF0YXNldCZsdDsvbGkmZ3Q7IAombHQ7L3VsJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPGdlb0xvY2F0aW9ucz4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+IFVuaXRlZCBTdGF0ZXM8L2dlb0xvY2F0aW9uUGxhY2U+CiAgICA8L2dlb0xvY2F0aW9uPgogIDwvZ2VvTG9jYXRpb25zPgo8L3Jlc291cmNlPg==","allocator_symbol":"GESIS","allocator":"GESIS
+      string: '{"responseHeader":{"status":0,"QTime":4},"response":{"numFound":1,"start":0,"docs":[{"minted":"2016-04-22T12:55:03Z","refQuality":false,"has_metadata":true,"is_active":true,"datacentre_symbol":"GESIS.ICPSR","uploaded":"2016-05-02T13:13:29Z","xml":"PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPHJlc291cmNlIHhtbG5zPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMycgeG1sbnM6eHNpPSdodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZScgeHNpOnNjaGVtYUxvY2F0aW9uPSdodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCc+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9J0RPSSc+MTAuMzg4Ni9JQ1BTUjM2MzU3LnYxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0czwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlIHhtbDpsYW5nPSdlbic+QXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5JQ1BTUiAtIEludGVydW5pdmVyc2l0eSBDb25zb3J0aXVtIGZvciBQb2xpdGljYWwgYW5kIFNvY2lhbCBSZXNlYXJjaDwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNjwvcHVibGljYXRpb25ZZWFyPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSdGdW5kZXInPgogICAgICA8Y29udHJpYnV0b3JOYW1lPk5hdGlvbmFsIEVuZG93bWVudCBmb3IgdGhlIEFydHM8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9J0NvbGxlY3RlZCc+MTk5ODwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSdDb2xsZWN0ZWQnPjE5OTgvMjAxMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0nRGF0YXNldCc+c3VydmV5IGRhdGE8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0nSUNQU1IgU3R1ZHkgTnVtYmVyJz4zNjM1NzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDx2ZXJzaW9uPnYxPC92ZXJzaW9uPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSdBYnN0cmFjdCcgeG1sOmxhbmc9J2VuJz5UaGUgQXJ0cyBhbmQgQ3VsdHVyYWwgUHJvZHVjdGlvbiBTYXRlbGxpdGUgQWNjb3VudCAoQUNQU0EpIGlzIHByb2R1Y2VkIHRocm91Z2ggdGhlIHBhcnRuZXJzaGlwIGJldHdlZW4gdGhlIFVuaXRlZCBTdGF0ZXMgQnVyZWF1IG9mIEVjb25vbWljIEFuYWx5c2lzIChCRUEpIGFuZCB0aGUgTmF0aW9uYWwgRW5kb3dtZW50IGZvciB0aGUgQXJ0cyAoTkVBKS4gQnVpbHQgd2l0aCB0aGUgQkVBJ3MgaW5wdXQtb3V0cHV0IChJLU8pIGFjY291bnRzLCB0aGUgQUNQU0EgcHJvdmlkZXMgZGV0YWlsZWQgc3RhdGlzdGljcyB0aGF0IGlsbHVzdHJhdGUgdGhlIGltcGFjdCBvZiBhcnRzIGFuZCBjdWx0dXJhbCBwcm9kdWN0aW9uIG9uIHRoZSBVbml0ZWQgU3RhdGVzIGVjb25vbXkuIFNwZWNpZmljYWxseSwgdGhpcyBhY2NvdW50IHByb3ZpZGVzIGFuIGFzc2Vzc21lbnQgb2YgdGhlIGFydHMgYW5kIGN1bHR1cmFsIHNlY3RvcidzIGNvbnRyaWJ1dGlvbnMgdG8gZ3Jvc3MgZG9tZXN0aWMgcHJvZHVjdCAoR0RQKS4gRm9yIHllYXJzIDE5OTggdG8gMjAxMywgdGhlIEFDUFNBIHByZXNlbnRzIGFubnVhbCBzdGF0aXN0aWNzIGFib3V0IHRoZSBmb2xsb3dpbmcgaXRlbXM6ICgxKSBPdXRwdXQgb2YgZGV0YWlsZWQgYXJ0cyBhbmQgY3VsdHVyYWwgY29tbW9kaXRpZXMgYW5kIHRoZSBpbmR1c3RyaWVzIHByb2R1Y2luZyB0aGVzZSBjb21tb2RpdGllczsgKDIpIGVtcGxveW1lbnQgYW5kIGNvbXBlbnNhdGlvbiB3aXRoaW4gdGhlc2UgaW5kdXN0cmllczsgKDMpIGFydHMgYW5kIGN1bHR1cmFsIHZhbHVlIGFkZGVkIGJ5IGluZHVzdHJ5OyBhbmQgKDQpIGNvbW1vZGl0eS1mbG93IGRldGFpbHMgZm9yIGFydHMgYW5kIGN1bHR1cmFsIHByb2R1Y3Rpb24gcHJvZHVjdHMuIEluIHRoZSBkYXRhIHRhYmxlcyBwcm92aWRlZCAoY2xpY2sgb24gIk90aGVyIiBpbiB0aGUgRGF0YXNldChzKSBzZWN0aW9uKSwgdGhlIHN0YXRpc3RpY3MgZmFsbCB1bmRlciB0d28gYnJvYWQgY2F0ZWdvcmllczogKDEpIGNvcmUgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbiBhbmQgKDIpIHN1cHBvcnRpbmcgYXJ0cyBhbmQgY3VsdHVyYWwgcHJvZHVjdGlvbi4gVGhlIGNvcmUgY2F0ZWdvcnkgY29udGFpbnMgdGhlIGNvbW1vZGl0aWVzIGluIHdoaWNoIHRoZSBvdXRwdXQgcHJpbWFyaWx5IGNvbnRyaWJ1dGVzIHRvIGFydHMgYW5kIGN1bHR1cmUuIFBlcmZvcm1pbmcgYXJ0cywgbXVzZXVtcywgZGVzaWduIHNlcnZpY2VzLCBhbmQgYXJ0cyBlZHVjYXRpb24gYXJlIGluY2x1ZGVkIGluIHRoZSBjb3JlIGNhdGVnb3J5LiBUaGUgc3VwcG9ydGluZyBjYXRlZ29yeSBjb25zaXN0cyBvZiBjb21tb2RpdGllcyB0aGF0IHN1cHBvcnQgdGhlIGNvcmUgY2F0ZWdvcnkgdGhyb3VnaCBwdWJsaWNhdGlvbiwgZGlzc2VtaW5hdGlvbiBvZiB0aGUgY3JlYXRpdmUgcHJvY2Vzcywgb3Igb3RoZXIgc3VwcG9ydGl2ZSBmdW5jdGlvbnMuIFRoaXMgY2F0ZWdvcnkgY29udGFpbnMgZXZlbnQgcHJvbW90aW9uLCBwcmludGluZywgYW5kIGJyb2FkY2FzdGluZy4gU2l4IGRhdGEgdGFibGVzIGFyZSBwcm92aWRlZCBmb3IgZWFjaCB5ZWFyIGZyb20gMTk5OCB0byAyMDEzOiBUYWJsZSAxLiBQcm9kdWN0aW9uIG9mIENvbW1vZGl0aWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSAyLiBPdXRwdXQgYW5kIFZhbHVlIEFkZGVkIGJ5IEluZHVzdHJ5OyBUYWJsZSAzLiBTdXBwbHkgYW5kIENvbnN1bXB0aW9uIG9mIENvbW1vZGl0aWVzOyBUYWJsZSA0LiBFbXBsb3ltZW50IGFuZCBDb21wZW5zYXRpb24gb2YgRW1wbG95ZWVzIGJ5IEluZHVzdHJ5OyBUYWJsZSA1LiBUb3RhbCBBQ1BTQS1yZWxhdGVkIEVtcGxveW1lbnQgYnkgSW5kdXN0cnk7IFRhYmxlIDYuIE91dHB1dCBieSBBQ1BTQSBDb21tb2RpdHk7IEluIGFkZGl0aW9uLCBlc3RpbWF0ZXMgb2YgcmVhbCB2YWx1ZSBhZGRlZCBieSBpbmR1c3RyeSBhbmQgZXN0aW1hdGVzIG9mIHJlYWwgZ3Jvc3Mgb3V0cHV0IGFuZCBwcmljZXMgaW5kZXhlcyBieSBBQ1BTQSBjb21tb2RpdHkgYXJlIHByb3ZpZGVkIGluIHNlcGFyYXRlIEV4Y2VsIGZpbGVzIChjbGljayBvbiAiT3RoZXIiIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24pLiBUaGUgaW5kdXN0cmllcyBhbmQgY29tbW9kaXRpZXMgcHJlc2VudGVkIGluIHRoZSBkYXRhIGFyZSBiYXNlZCBvbiB0aGUgMjAwNyBOb3J0aCBBbWVyaWNhbiBJbmR1c3RyaWFsIENsYXNzaWZpY2F0aW9uIFN5c3RlbSAoTkFJQ1MpLiBVc2VycyBhcmUgZW5jb3VyYWdlZCB0byByZXZpZXcgdGhlIFRhYmxlIEd1aWRlIHByb3ZpZGVkIGluIHRoZSBEYXRhc2V0KHMpIHNlY3Rpb24gYXMgaXQgZ2l2ZXMgaW1wb3J0YW50IGluZm9ybWF0aW9uIGZvciBhbGwgZGF0YSB0YWJsZXMuIEFsc28sIHVzZXJzIHNob3VsZCByZXZpZXcgVGhlIE5FQSBHdWlkZSB0byB0aGUgVS5TLiBBcnRzIGFuZCBDdWx0dXJhbCBQcm9kdWN0aW9uIFNhdGVsbGl0ZSBBY2NvdW50IGFuZCBvdGhlciByZWxhdGVkIG1hdGVyaWFscyBhdmFpbGFibGUgb24gTkVBJ3MgQXJ0cyBEYXRhIFByb2ZpbGUgcGFnZSBhYm91dCB0aGUgQUNQU0EuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9J1RhYmxlT2ZDb250ZW50cycgeG1sOmxhbmc9J2VuJz4mbHQ7cCZndDtEYXRhc2V0czombHQ7L3AmZ3Q7IAombHQ7dWwmZ3Q7IAogJmx0O2xpJmd0O0RTMTogRGF0YXNldCZsdDsvbGkmZ3Q7IAombHQ7L3VsJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPGdlb0xvY2F0aW9ucz4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+IFVuaXRlZCBTdGF0ZXM8L2dlb0xvY2F0aW9uUGxhY2U+CiAgICA8L2dlb0xvY2F0aW9uPgogIDwvZ2VvTG9jYXRpb25zPgo8L3Jlc291cmNlPg==","allocator_symbol":"GESIS","allocator":"GESIS
         - GESIS - Leibniz Institute for the Social Sciences","allocator_facet":"GESIS
         - GESIS - Leibniz Institute for the Social Sciences","namespace":"http://datacite.org/schema/kernel-3","datacentre":"GESIS.ICPSR
         - ICPSR","datacentre_facet":"GESIS.ICPSR - ICPSR","created":"2016-04-22T12:55:02Z","updated":"2016-05-02T13:13:29Z","prefix":"10.3886","has_media":false,"dataset_id":"8089249","doi":"10.3886/ICPSR36357.V1","schema_version":"3","alternateIdentifier":["ICPSR
@@ -76,7 +76,67 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:51 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:58 GMT
+- request:
+    method: get
+    uri: http://eventdata.labs.datacite.org/api/works?id=10.3886/ICPSR36357.V1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.11.5
+      Date:
+      - Sat, 29 Oct 2016 05:42:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1891f235-f806-43a1-966e-ec50676d5074
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"e1ab5ff0ec6bae6c8131ac3e7e6f524b"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.062164'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":[{"id":"datacite_related","title":"DataCite
+        (RelatedIdentifier)","count":1}],"publishers":[{"id":"gesis.icpsr","title":"ICPSR","count":1}],"relation_types":[{"id":"is_new_version_of","title":"Is
+        new version of","count":1}],"resource_types":[{"id":"dataset","title":"Dataset","count":1}],"years":[{"id":"2016","title":"2016","count":1}]},"works":[{"id":"http://doi.org/10.3886/ICPSR36357.V1","author":[],"title":"Arts
+        and Cultural Production Satellite Account","published":"2016","issued":"2016-04-22T12:55:03Z","updated":"2016-06-15T15:13:48Z","DOI":"10.3886/ICPSR36357.V1","publisher_id":"GESIS.ICPSR","member_id":"GESIS","registration_agency_id":"datacite","work_type_id":"dataset","resource_type_id":"dataset","results":[]}]}'
+    http_version: 
+  recorded_at: Sat, 29 Oct 2016 05:42:58 GMT
 - request:
     method: post
     uri: http://eventdata.labs.datacite.org/api/works
@@ -100,7 +160,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:51 GMT
+      - Sat, 29 Oct 2016 05:42:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -118,17 +178,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 8406ab54-b7e1-4425-8fd2-c4f5476d433e
+      - 776ae690-336c-4421-bc73-0e3d550e140f
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"5931cb24c55952b5298ba259af02f68f"
+      - W/"e1ab5ff0ec6bae6c8131ac3e7e6f524b"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.067347'
+      - '0.054942'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -137,10 +197,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":[{"id":"datacite_related","title":"DataCite
         (RelatedIdentifier)","count":1}],"publishers":[{"id":"gesis.icpsr","title":"ICPSR","count":1}],"relation_types":[{"id":"is_new_version_of","title":"Is
-        new version of","count":1}]},"works":[{"id":"http://doi.org/10.3886/ICPSR36357.V1","author":[],"title":"Arts
-        and Cultural Production Satellite Account","published":"2016","issued":"2016-04-22T12:55:03Z","updated":"2016-06-15T15:13:48Z","DOI":"10.3886/ICPSR36357.V1","publisher_id":"GESIS.ICPSR","registration_agency_id":"datacite","work_type_id":"dataset","results":{}}]}'
+        new version of","count":1}],"resource_types":[{"id":"dataset","title":"Dataset","count":1}],"years":[{"id":"2016","title":"2016","count":1}]},"works":[{"id":"http://doi.org/10.3886/ICPSR36357.V1","author":[],"title":"Arts
+        and Cultural Production Satellite Account","published":"2016","issued":"2016-04-22T12:55:03Z","updated":"2016-06-15T15:13:48Z","DOI":"10.3886/ICPSR36357.V1","publisher_id":"GESIS.ICPSR","member_id":"GESIS","registration_agency_id":"datacite","work_type_id":"dataset","resource_type_id":"dataset","results":[]}]}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:51 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:58 GMT
 - request:
     method: get
     uri: http://schema.datacite.org/meta/kernel-4/include/datacite-resourceType-v4.xsd
@@ -160,19 +220,19 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:52 GMT
+      - Sat, 29 Oct 2016 05:42:58 GMT
       Content-Length:
       - '1252'
       Connection:
       - keep-alive
       X-Amz-Id-2:
-      - "/qX4MTk8CZx6+GMqnDEJzS/ZlTY4oZ4zvJarb9QPWBPeuXI4Y94OdABlnE1VquPcZERSO/pSb8w="
+      - QFTDUrPFo6toGLP00B6GrPV/rWOe9dRiRreG/7nM1wcGvGdhHlRMbr6ybeIeG2I4A3N9E0jeYOc=
       X-Amz-Request-Id:
-      - 329136875875503F
+      - CBAABB8C72040C3F
       Content-Encoding:
       - text
       Last-Modified:
-      - Fri, 14 Oct 2016 12:10:01 GMT
+      - Thu, 27 Oct 2016 14:24:19 GMT
       Etag:
       - '"bfc0582894b33ec97a324cdc44748aec"'
       Access-Control-Allow-Origin:
@@ -209,7 +269,7 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:52 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:58 GMT
 - request:
     method: get
     uri: http://eventdata.labs.datacite.org/api/publishers/gesis.icpsr
@@ -229,7 +289,7 @@ http_interactions:
       Server:
       - nginx/1.11.5
       Date:
-      - Fri, 21 Oct 2016 17:28:52 GMT
+      - Sat, 29 Oct 2016 05:42:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -247,24 +307,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - fd76c8fa-1698-4f3f-ab00-48db5d39be08
+      - f49d259b-119b-4c8a-9cba-0e8d9a4faf79
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"785a2bc6bd9d92606eeb0fb3bb67ffc2"
+      - W/"64b2d41d32e192d4046e1bc14dbb67f0"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.018299'
+      - '0.010931'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"publisher","message-version":"v7"},"publisher":{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-21T17:08:47Z"}}'
+      string: '{"meta":{"status":"ok","message-type":"publisher","message-version":"v7"},"publisher":{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:17:32Z"}}'
     http_version: 
-  recorded_at: Fri, 21 Oct 2016 17:28:52 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:58 GMT
 recorded_with: VCR 2.9.3
