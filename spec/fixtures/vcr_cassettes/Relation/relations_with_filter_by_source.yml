@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/relations?page=1&per_page=25&source_id=datacite_crossref
+    uri: http://eventdata.labs.datacite.org/api/relations?page=1&per_page=25&source_id=datacite_crossref
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 22:21:38 GMT
+      - Sat, 29 Oct 2016 05:41:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,61 +37,82 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d2f25724-9c9c-4043-a1b9-87b991ad3f2a
+      - 9c441ef6-7745-48a3-b726-0c85f10cf468
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"9495d2707629dd0c9f8bf5ab06eea8fe"
+      - W/"61352a15cedd4f83707d45462479a0cf"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '8.050232'
+      - '11.067145'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"relation-list","message-version":"v7","total":1117918,"total_pages":44717,"page":1,"sources":{"datacite_crossref":1117918},"relation_types":{"cites":823,"is_cited_by":823,"is_supplement_to":486725,"is_supplemented_by":486726,"is_part_of":14,"has_part":14,"references":65166,"is_referenced_by":65171,"documents":1022,"is_documented_by":1021,"compiles":24,"reviews":1174,"is_reviewed_by":1174,"is_derived_from":884,"is_source_of":889,"is_new_version_of":2150,"is_previous_version_of":2152,"is_original_form_of":969,"is_variant_form_of":969,"is_identical_to":4,"is_compiled_by":24}},"relations":[{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821568","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
-        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821663","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
-        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857257","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
+      string: '{"meta":{"status":"ok","message-type":"relation-list","message-version":"v7","total":1117918,"total_pages":44717,"page":1,"publishers":[{"id":"bl.ccdc","title":"The
+        Cambridge Crystallographic Data Centre","count":951046},{"id":"tib.pangaea","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","count":134294},{"id":"dk.gbif","title":"Global
+        Biodiversity Information Facility","count":16398},{"id":"cdl.digsci","title":"Digital
+        Science","count":6280},{"id":"cdl.peerj","title":"PeerJ","count":2192},{"id":"cdl.dryad","title":"Dryad","count":1998},{"id":"cdl.culis","title":"Columbia
+        University Libraries/Information Services (CUL/IS)","count":1918},{"id":"inist.ifremer","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","count":872},{"id":"cisti.nrc","title":"National
+        Research Council","count":458},{"id":"cern.zenodo","title":"ZENODO - Research.
+        Shared.","count":392},{"id":"tib.wdcc","title":"World Data Center for Climate","count":378},{"id":"cdl.sbgrid","title":"Harvard
+        Medical School","count":302},{"id":"tib.ldeo","title":"LDEO - Lamont-Doherty
+        Earth Observatory, Columbia University","count":200},{"id":"bl.bgi","title":"Beijing
+        Genomics Institute","count":156},{"id":"estdoi.qdb","title":"Qsardb repository","count":156}],"relation_types":[{"id":"is_supplemented_by","title":"Is
+        supplemented by","count":486726},{"id":"is_supplement_to","title":"Is supplement
+        to","count":486725},{"id":"is_referenced_by","title":"Is referenced by","count":65171},{"id":"references","title":"References","count":65166},{"id":"is_previous_version_of","title":"Is
+        previous version of","count":2152},{"id":"is_new_version_of","title":"Is new
+        version of","count":2150},{"id":"reviews","title":"Reviews","count":1174},{"id":"is_reviewed_by","title":"Is
+        reviewed by","count":1174},{"id":"documents","title":"Documents","count":1022},{"id":"is_documented_by","title":"Is
+        documented by","count":1021},{"id":"is_original_form_of","title":"Is original
+        form of","count":969},{"id":"is_variant_form_of","title":"Is variant form
+        of","count":969},{"id":"is_source_of","title":"Is source of","count":889},{"id":"is_derived_from","title":"Is
+        derived from","count":884},{"id":"cites","title":"Cites","count":823}],"sources":[{"id":"datacite_crossref","title":"DataCite
+        (Crossref)","count":1117918}]},"relations":[{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821568","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
+        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821663","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
+        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857257","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
         Diana","ORCID":"http://orcid.org/0000-0003-2359-7340"},{"family":"Fleitmann","given":"Dominik"},{"family":"Cheng","given":"Hai"},{"family":"Tabersky","given":"Daniel"},{"family":"Günther","given":"Detlef"},{"family":"Edwards","given":"R
         Lawrence"}],"title":"Trace element concent of Stagamite MF-3 from Schafsloch
-        Cave","published":"2015","issued":"2016-02-19T03:04:38Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857257","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","obj_id":"http://doi.org/10.1594/PANGAEA.857257","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Timing
+        Cave","registration_agency_id":"datacite","published":"2015","issued":"2016-02-19T03:04:38Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857257","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","obj_id":"http://doi.org/10.1594/PANGAEA.857257","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Timing
         and nature of the penultimate deglaciation in a high alpine stalagmite from
-        Switzerland","registration_agency_id":"crossref","published":"2015-10","issued":"2015-10-01T00:00:00Z","DOI":"10.1016/j.quascirev.2015.08.026","URL":"http://www.sciencedirect.com/science/article/pii/S0277379115300925","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1007/S00300-016-1995-X","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
+        Switzerland","registration_agency_id":"crossref","published":"2015-10","issued":"2015-10-01T00:00:00Z","DOI":"10.1016/j.quascirev.2015.08.026","URL":"http://www.sciencedirect.com/science/article/pii/S0277379115300925","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1007/S00300-016-1995-X","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
         of macrozoobenthic organisms settled in artificial soft sediment at Brandal","published":"2016","issued":"2016-05-12T03:05:50Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1007/S00300-016-1995-X","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_crossref","publisher_id":"297","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Rising
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1007/S00300-016-1995-X","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_crossref","publisher_id":"297","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Rising
         temperatures and sea-ice-free winters affect the succession of Arctic macrozoobenthic
-        soft-sediment communities (Kongsfjorden, Svalbard)","published":"2016-07-13","issued":"2016-07-13T00:00:00Z","DOI":"10.1007/s00300-016-1995-x","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1029/2002PA000877","obj_id":"http://doi.org/10.1594/PANGAEA.841739","source_id":"datacite_crossref","publisher_id":"311","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"La
+        soft-sediment communities (Kongsfjorden, Svalbard)","published":"2016-07-13","issued":"2016-07-13T00:00:00Z","DOI":"10.1007/s00300-016-1995-x","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1029/2002PA000877","obj_id":"http://doi.org/10.1594/PANGAEA.841739","source_id":"datacite_crossref","publisher_id":"311","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"La
         Niña-like conditions in the eastern equatorial Pacific and a stronger Choco
-        jet in the northern Andes during the last glaciation","registration_agency_id":"crossref","published":"2003-05-14","issued":"2003-05-14T00:00:00Z","DOI":"10.1029/2002pa000877","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205461","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        jet in the northern Andes during the last glaciation","registration_agency_id":"crossref","published":"2003-05-14","issued":"2003-05-14T00:00:00Z","DOI":"10.1029/2002pa000877","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205461","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205462","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205462","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205463","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205463","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205464","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205464","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205465","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205465","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205460","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:34Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205460","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:33Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205444","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:33Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205444","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:32Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205445","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:32Z"},{"subj_id":"http://doi.org/10.1016/S0037-0738(02)00187-2","obj_id":"http://doi.org/10.1594/PANGAEA.205445","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Bengal
         Fan sediment transport activity and response to climate forcing inferred from
-        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T18:55:32Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861143","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        sediment physical properties","registration_agency_id":"crossref","published":"2003-02","issued":"2003-02-01T00:00:00Z","DOI":"10.1016/s0037-0738(02)00187-2","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T18:55:32Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861143","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
         P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
         subaquatic dunes","published":"2016","issued":"2016-07-07T03:24:26Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861143","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861143","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861143","work_type_id":"dataset","results":[],"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861143","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
         distribution and sediment dynamics on a storm-dominated shelf from combined
         photographic, acoustic and sedimentological profiling methods (Bay of Plenty,
-        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861201","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"is_supplement_to","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861201","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"is_supplement_to","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
         P"},{"family":"Battershill","given":"Christopher N"}],"title":"Lithofacies
         distribution in the western Bay of Plenty, New Zealand, supplement to: Kulgemeyer,
@@ -100,35 +121,35 @@ http_interactions:
         dynamics on a storm-dominated shelf from combined photographic, acoustic and
         sedimentological profiling methods (Bay of Plenty, New Zealand). Marine Geology,
         376, 158-174","published":"2016","issued":"2016-07-07T03:24:41Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861201","results":{},"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861201","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"Lithofacies
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861201","results":[],"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861201","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"Lithofacies
         distribution and sediment dynamics on a storm-dominated shelf from combined
         photographic, acoustic and sedimentological profiling methods (Bay of Plenty,
-        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.5194/BG-13-2093-2016","obj_id":"http://doi.org/10.1594/PANGAEA.848639","source_id":"datacite_crossref","publisher_id":"3145","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"Environmental
+        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T00:49:29Z"},{"subj_id":"http://doi.org/10.5194/BG-13-2093-2016","obj_id":"http://doi.org/10.1594/PANGAEA.848639","source_id":"datacite_crossref","publisher_id":"3145","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"Environmental
         control on the occurrence of high-coercivity magnetic minerals and formation
-        of iron sulfides in a 640 ka sediment sequence from Lake Ohrid (Balkans)","published":"2016-04-08","issued":"2016-04-08T00:00:00Z","DOI":"10.5194/bg-13-2093-2016","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861181","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        of iron sulfides in a 640 ka sediment sequence from Lake Ohrid (Balkans)","published":"2016-04-08","issued":"2016-04-08T00:00:00Z","DOI":"10.5194/bg-13-2093-2016","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861181","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
         P"},{"family":"Battershill","given":"Christopher N"}],"title":"Collection
         of seafloor photos from the western Bay of Plenty","published":"2016","issued":"2016-07-07T03:24:27Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861181","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861181","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861181","work_type_id":"dataset","results":[],"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861181","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
         distribution and sediment dynamics on a storm-dominated shelf from combined
         photographic, acoustic and sedimentological profiling methods (Bay of Plenty,
-        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861052","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861052","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
         P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
         grain size measurements","published":"2016","issued":"2016-07-07T03:24:23Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861052","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861052","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861052","work_type_id":"dataset","results":[],"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","obj_id":"http://doi.org/10.1594/PANGAEA.861052","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Lithofacies
         distribution and sediment dynamics on a storm-dominated shelf from combined
         photographic, acoustic and sedimentological profiling methods (Bay of Plenty,
-        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861138","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
+        New Zealand)","published":"2016-06","issued":"2016-06-01T00:00:00Z","DOI":"10.1016/j.margeo.2016.03.005","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-15T00:49:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.861138","obj_id":"http://doi.org/10.1016/J.MARGEO.2016.03.005","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Kulgemeyer","given":"Tobias"},{"family":"Dobeneck","given":"Tilo"},{"family":"Müller","given":"Hendrik"},{"family":"Bryan","given":"Karin
         R","ORCID":"http://orcid.org/0000-0002-4480-740X"},{"family":"Lange","given":"Willem
         P"},{"family":"Battershill","given":"Christopher N"}],"title":"Bay of Plenty
         facies classification","published":"2016","issued":"2016-07-07T03:24:24Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861138","work_type_id":"dataset","results":{},"timestamp":"2016-09-15T00:49:28Z"}]}'
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.861138","work_type_id":"dataset","results":[],"timestamp":"2016-09-15T00:49:28Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:21:38 GMT
+  recorded_at: Sat, 29 Oct 2016 05:41:51 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/sources
+    uri: http://eventdata.labs.datacite.org/api/publishers?ids=bl.ccdc,tib.pangaea,dk.gbif,cdl.digsci,cdl.peerj,cdl.dryad,cdl.culis,inist.ifremer,cisti.nrc,cern.zenodo,tib.wdcc,cdl.sbgrid,tib.ldeo,bl.bgi,estdoi.qdb&page=1&per_page=25
     body:
       encoding: US-ASCII
       string: ''
@@ -143,9 +164,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 22:21:38 GMT
+      - Sat, 29 Oct 2016 05:41:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -163,203 +184,37 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 57b7dca0-7765-4ce8-99b7-815454d3cace
+      - a7ad6002-d17a-4f9f-8c09-28f43c30501b
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"f30871765f14db30e6470b920fd27b42"
+      - W/"54a5e7e22b495d821a57b8f3973c4141"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.032311'
+      - '0.044154'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
-        (DataCite)","group_id":"relations","description":"Import works linked to a
-        DataCite DOI from Crossref.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
-        (Crossref)","group_id":"relations","description":"Import works with Crossref
-        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":12,"without_results":32,"not_updated":225368}},{"id":"datacite_github","title":"DataCite
-        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
-        via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
-        (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}},{"id":"europe_pmc_fulltext","title":"Europe
-        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
-        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-10-04T16:28:13Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
-        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
-        citations.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
-        (ORCID Search and Link)","group_id":"contributions","description":"Import
-        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
-        (ORCID)","group_id":"contributions","description":"Import works with ORCID
-        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
-        (Contributor)","group_id":"contributions","description":"Import contributors
-        with works via the Github API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
-        works via the ORCID API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
-        (Publisher)","group_id":"publishers","description":"Import publishers via
-        the Crossref REST API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
-        (Datacentre)","group_id":"publishers","description":"Import data centres via
-        the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
-        is the largest social network.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
-        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
-        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"bl","title":"BL","count":2},{"id":"cdl","title":"CDL","count":5},{"id":"dk","title":"DK","count":1},{"id":"inist","title":"INIST","count":1},{"id":"tib","title":"TIB","count":3},{"id":"cisti","title":"CISTI","count":1},{"id":"estdoi","title":"ESTDOI","count":1},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"BL.BGI","title":"Beijing
+        Genomics Institute","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:05:36Z"},{"id":"CDL.CULIS","title":"Columbia
+        University Libraries/Information Services (CUL/IS)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:05:48Z"},{"id":"CDL.DIGSCI","title":"Digital
+        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:07:49Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:13:02Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-29T05:06:11Z"},{"id":"CDL.SBGRID","title":"Harvard
+        Medical School","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:06:13Z"},{"id":"INIST.IFREMER","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-29T05:23:48Z"},{"id":"TIB.LDEO","title":"LDEO
+        - Lamont-Doherty Earth Observatory, Columbia University","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:38:34Z"},{"id":"CISTI.NRC","title":"National
+        Research Council","prefixes":[],"registration_agency_id":"datacite","member_id":"CISTI","timestamp":"2016-10-29T05:07:12Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:41:21Z"},{"id":"ESTDOI.QDB","title":"Qsardb
+        repository","prefixes":[],"registration_agency_id":"datacite","member_id":"ESTDOI","timestamp":"2016-10-29T05:07:24Z"},{"id":"BL.CCDC","title":"The
+        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:32:28Z"},{"id":"TIB.WDCC","title":"World
+        Data Center for Climate","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:08:25Z"},{"id":"CERN.ZENODO","title":"ZENODO
+        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-29T05:08:26Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:21:38 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/groups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 22:21:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - dfd8921c-b270-41ae-95cd-6f841dd5620a
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"bdb91c439c4c90224189c7eb36197501"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.024718'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:21:39 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/relation_types
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 22:21:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - a5260834-ccca-4649-ab5e-5f18d58a2a5e
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"ddd1a36f9fddddf9e5cc51894c8d4a2a"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.027350'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"relation_type-list","message-version":"v7","total":39},"relation_types":[{"id":"bookmarks","title":"Bookmarks","inverse_title":"Is
-        bookmarked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"cites","title":"Cites","inverse_title":"Is
-        cited by","timestamp":"2016-03-21T15:05:03Z"},{"id":"compiles","title":"Compiles","inverse_title":"Is
-        compiled by","timestamp":"2016-03-21T15:05:03Z"},{"id":"continues","title":"Continues","inverse_title":"Is
-        continued by","timestamp":"2016-03-21T15:05:03Z"},{"id":"corrects","title":"Corrects","inverse_title":"Is
-        corrected by","timestamp":"2016-03-21T15:05:04Z"},{"id":"discusses","title":"Discusses","inverse_title":"Is
-        discussed by","timestamp":"2016-03-21T15:05:04Z"},{"id":"documents","title":"Documents","inverse_title":"Is
-        documented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"downloads","title":"Downloads","inverse_title":"Is
-        downloaded by","timestamp":"2016-03-21T15:05:04Z"},{"id":"has_metadata","title":"Has
-        metadata","inverse_title":"Is metadata for","timestamp":"2016-03-21T15:05:03Z"},{"id":"has_part","title":"Has
-        part","inverse_title":"Is part of","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_bookmarked_by","title":"Is
-        Bookmarked by","inverse_title":"Bookmarks","timestamp":"2016-04-08T12:43:04Z"},{"id":"is_cited_by","title":"Is
-        cited by","inverse_title":"Cites","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_compiled_by","title":"Is
-        compiled by","inverse_title":"Compiles","timestamp":"2016-03-22T17:41:55Z"},{"id":"is_continued_by","title":"Is
-        continued by","inverse_title":"Continues","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_corrected_by","title":"Is
-        corrected by","inverse_title":"Corrects","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_derived_from","title":"Is
-        derived from","inverse_title":"Is source of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_discussed_by","title":"Is
-        discussed by","inverse_title":"Discusses","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_documented_by","title":"Is
-        documented by","inverse_title":"Documents","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_downloaded_by","title":"Is
-        downloaded by","inverse_title":"Downloads","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_identical_to","title":"Is
-        identical to","inverse_title":"Is identical to","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_liked_by","title":"Is
-        Liked by","inverse_title":"Likes","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_metadata_for","title":"Is
-        metadata for","inverse_title":"Has metadata","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_new_version_of","title":"Is
-        new version of","inverse_title":"Is previous version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_original_form_of","title":"Is
-        original form of","inverse_title":"Is variant form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_part_of","title":"Is
-        part of","inverse_title":"Has part","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_previous_version_of","title":"Is
-        previous version of","inverse_title":"Is new version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_recommended_by","title":"Is
-        recommended by","inverse_title":"Recommends","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_referenced_by","title":"Is
-        referenced by","inverse_title":"References","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_reviewed_by","title":"Is
-        reviewed by","inverse_title":"reviews","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_source_of","title":"Is
-        source of","inverse_title":"Is derived from","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_supplement_to","title":"Is
-        supplement to","inverse_title":"Is supplemented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_supplemented_by","title":"Is
-        supplemented by","inverse_title":"Is supplement to","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_variant_form_of","title":"Is
-        variant form of","inverse_title":"Is original form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_viewed_by","title":"Is
-        viewed by","inverse_title":"Views","timestamp":"2016-03-21T15:05:04Z"},{"id":"likes","title":"Likes","inverse_title":"Is
-        Liked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"recommends","title":"Recommends","inverse_title":"Is
-        recommended by","timestamp":"2016-03-21T15:05:04Z"},{"id":"references","title":"References","inverse_title":"Is
-        referenced by","timestamp":"2016-03-21T15:05:03Z"},{"id":"reviews","title":"Reviews","inverse_title":"Is
-        reviewed by","timestamp":"2016-03-21T15:05:03Z"},{"id":"views","title":"Views","inverse_title":"Is
-        viewed by","timestamp":"2016-03-21T15:05:04Z"}]}'
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:21:39 GMT
+  recorded_at: Sat, 29 Oct 2016 05:41:51 GMT
 recorded_with: VCR 2.9.3

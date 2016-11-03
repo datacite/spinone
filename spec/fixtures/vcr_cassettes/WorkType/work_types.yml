@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/work_types
+    uri: http://eventdata.labs.datacite.org/api/work_types
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:27:36 GMT
+      - Fri, 21 Oct 2016 17:31:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - b2fd1e1b-3d63-40b5-bd0e-b654be75efc5
+      - 7316acbe-b63c-4d11-98f1-c8d73107b8ae
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.023019'
+      - '0.054353'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -69,5 +69,5 @@ http_interactions:
         Article","container":"Newspaper","timestamp":"2016-03-21T15:05:02Z"},{"id":"pamphlet","title":"Pamphlet","timestamp":"2016-03-21T15:05:03Z"},{"id":"patent","title":"Patent","timestamp":"2016-03-21T15:05:03Z"},{"id":"personal_communication","title":"Personal
         Communication","timestamp":"2016-03-21T15:05:03Z"},{"id":"post","title":"Post","timestamp":"2016-03-21T15:05:03Z"},{"id":"report","title":"Report","timestamp":"2016-03-21T15:05:03Z"},{"id":"review","title":"Review","timestamp":"2016-03-21T15:05:03Z"},{"id":"song","title":"Song","timestamp":"2016-03-21T15:05:03Z"},{"id":"speech","title":"Speech","timestamp":"2016-03-21T15:05:03Z"},{"id":"thesis","title":"Thesis","timestamp":"2016-03-21T15:05:03Z"},{"id":"treaty","title":"Treaty","timestamp":"2016-03-21T15:05:03Z"},{"id":"webpage","title":"Webpage","container":"Website","timestamp":"2016-03-21T15:05:03Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:27:36 GMT
+  recorded_at: Fri, 21 Oct 2016 17:31:18 GMT
 recorded_with: VCR 2.9.3

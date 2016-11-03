@@ -7,16 +7,16 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: 6c6e45b23f464bd0bb92ae05a4284b72b017be21
+  revision: cb20b957edbd393c3d09e4bb7b4623ea522cf45b
   specs:
     active_model_serializers (0.10.2)
       actionpack (>= 4.1, < 6)
       activemodel (>= 4.1, < 6)
-      jsonapi (~> 0.1.1.beta2)
+      jsonapi (= 0.1.1.beta2)
 
 GIT
   remote: https://github.com/tchandy/octopus.git
-  revision: a138b936316351a109534dec75de31659888b78d
+  revision: 46f0b4c8244f19cf6ac3c89baa0884b8b3a572fb
   specs:
     ar-octopus (0.8.6)
       activerecord (>= 3.2.0)
@@ -150,6 +150,8 @@ GEM
     faraday_middleware (0.10.0)
       faraday (>= 0.7.4, < 0.10)
     fastercsv (1.5.5)
+    gender_detector (0.1.2)
+      unicode_utils (>= 1.3.0)
     github-markdown (0.6.9)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -173,12 +175,10 @@ GEM
       colorize
     i18n (0.7.0)
     i18n_data (0.7.0)
+    iso8601 (0.9.1)
     json (1.8.3)
-    jsonapi (0.1.1.beta5)
-      jsonapi-parser (= 0.1.1.beta2)
-      jsonapi-renderer (= 0.1.1.beta1)
-    jsonapi-parser (0.1.1.beta2)
-    jsonapi-renderer (0.1.1.beta1)
+    jsonapi (0.1.1.beta2)
+      json (~> 1.8)
     jwt (1.5.6)
     latex-decode (0.2.2)
       unicode (~> 0.4)
@@ -309,10 +309,10 @@ GEM
     sexp_processor (4.7.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
-    sidekiq (4.2.2)
+    sidekiq (4.2.3)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
-      rack-protection (~> 1.5)
+      rack-protection (>= 1.5.0)
       redis (~> 3.2, >= 3.2.1)
     simple_form (3.1.1)
       actionpack (~> 4.0)
@@ -404,10 +404,12 @@ DEPENDENCIES
   dotenv (~> 1.0.2)
   email_spec (~> 1.6.0)
   factory_girl_rails (~> 4.5.0)
+  gender_detector (~> 0.1.2)
   github-markdown (~> 0.6.3)
   haml-rails (~> 0.9)
   hashie (~> 3.3.2)
   httplog
+  iso8601 (~> 0.9.0)
   jwt (~> 1.5, >= 1.5.4)
   launchy (~> 2.4.2)
   lograge (~> 0.3.5)

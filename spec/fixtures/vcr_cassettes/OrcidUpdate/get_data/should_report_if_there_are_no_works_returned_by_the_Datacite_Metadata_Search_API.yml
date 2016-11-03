@@ -17,22 +17,22 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Wed, 21 Sep 2016 21:07:50 GMT
+      - Fri, 21 Oct 2016 17:28:38 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
       - keep-alive
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
     body:
       encoding: UTF-8
       string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Wed, 21 Sep 2016 21:07:50 GMT
+  recorded_at: Fri, 21 Oct 2016 17:28:38 GMT
 recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/contributors?page=1&per_page=25&q=0000-0002-4000-4167
+    uri: http://eventdata.labs.datacite.org/api/contributors?page=1&per_page=25&q=0000-0002-4000-4167
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 21:53:34 GMT
+      - Fri, 21 Oct 2016 17:31:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 77ebd61b-72ea-43ae-a843-88b3547ecfa2
+      - fcf42bd1-f703-4187-b322-708c84e9e102
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.051423'
+      - '0.024671'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":"ok","message-type":"contributor-list","message-version":"v7","total":1,"total_pages":1,"page":1},"contributors":[{"id":"http://orcid.org/0000-0002-4000-4167","family":"Arend","given":"Peter","timestamp":"1970-01-01T00:00:00Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 21:53:36 GMT
+  recorded_at: Fri, 21 Oct 2016 17:31:19 GMT
 recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/deposits/49f6eb94-f3cc-42a5-b95b-50f0e53f301c
+    uri: http://eventdata.labs.datacite.org/api/deposits/49f6eb94-f3cc-42a5-b95b-50f0e53f301c
     body:
       encoding: US-ASCII
       string: ''
@@ -13,49 +13,43 @@ http_interactions:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
-      code: 200
+      code: 404
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 21:46:27 GMT
+      - Fri, 21 Oct 2016 17:28:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
       - keep-alive
       Status:
-      - 200 OK
+      - 404 Not Found
       Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
+      - no-cache
       Vary:
       - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 53cfe72d-70de-4482-88ae-731daa9dbe56
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"0c0a743a61617dd6db5b32b3a5ef375b"
+      - 95d2b347-b61f-4501-949c-088dc270efc4
+      X-Runtime:
+      - '33.310497'
       X-Frame-Options:
       - SAMEORIGIN
-      X-Runtime:
-      - '2.951635'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"deposit","message-version":"v7"},"deposit":{"id":"49f6eb94-f3cc-42a5-b95b-50f0e53f301c","state":"waiting","message_type":"publisher","message_action":"create","source_token":"1e2f84dc-ecda-4b62-bb8e-fb0536cc73b6","subj_id":"ZBW.ZOEBIS","relation_type_id":"references","source_id":"datacite_datacentre","total":1,"occurred_at":"2016-10-03T19:45:14Z","timestamp":"2016-10-03T19:45:14Z","subj":{"name":"ZBW.ZOEBIS","title":"Zentrum
-        für ökonomische Bildung in Siegen","registration_agency_id":"datacite","active":true},"obj":{}}}'
+      string: '{"meta":{"status":"error","error":"The page you are looking for doesn''t
+        exist."}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 21:46:29 GMT
+  recorded_at: Fri, 21 Oct 2016 17:28:05 GMT
 recorded_with: VCR 2.9.3

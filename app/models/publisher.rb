@@ -1,5 +1,5 @@
 class Publisher < Base
-  attr_reader :id, :title, :other_names, :prefixes, :member, :registration_agency, :updated_at, :publisher_id, :ids
+  attr_reader :id, :title, :other_names, :prefixes, :publisher_id, :member_id, :registration_agency_id, :ids, :member, :registration_agency, :updated_at
 
   # include helper module for caching infrequently changing resources
   include Cacheable
@@ -13,9 +13,14 @@ class Publisher < Base
     @ids = attributes.fetch("ids", nil)
     @updated_at = attributes.fetch("timestamp", nil)
 
+    @member_id = attributes.fetch("member_id", nil)
+    @member_id = @member_id.underscore.dasherize if @member_id.present?
+    @registration_agency_id = attributes.fetch("registration_agency_id", nil)
+    @registration_agency_id = @registration_agency_id.underscore.dasherize if @registration_agency_id.present?
+
     # associations
-    @member = Array(options[:members]).find { |s| s.id.upcase == attributes.fetch("member_id", nil) }
-    @registration_agency = Array(options[:registration_agencies]).find { |s| s.id == attributes.fetch("registration_agency_id", nil) }
+    @member = Array(options[:members]).find { |s| s.id == @member_id }
+    @registration_agency = Array(options[:registration_agencies]).find { |s| s.id == @registration_agency_id }
   end
 
   def self.get_query_url(options={})
@@ -47,9 +52,16 @@ class Publisher < Base
     else
       items = result.fetch("data", {}).fetch("publishers", [])
       meta = result.fetch("data", {}).fetch("meta", {})
-      meta = { total: meta.fetch("total", {}),
-               registration_agencies: meta.fetch("registration_agencies", {}),
-               members: meta.fetch("members", {}) }
+      members = meta.fetch("members", [])
+                    .sort { |a, b| b.fetch("count") <=> a.fetch("count") }
+                    .map do |i|
+                           member = cached_members.find { |m| m.id == i.fetch("id") } || OpenStruct.new(title: i.fetch("title"))
+                           { id: i.fetch("id"), title: member.title, count: i.fetch("count") }
+                         end
+
+      meta = { total: meta.fetch("total", 0),
+               registration_agencies: meta.fetch("registration_agencies", []),
+               members: members }
 
       { data: parse_items(items, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
     end

@@ -28,6 +28,8 @@ DATACITE_VERSION = "4"
 # Date of DataCite Schema
 DATACITE_SCHEMA_DATE = "2016-09-21"
 
+# CSL types: https://github.com/citation-style-language/schema/blob/master/csl-types.rnc
+
 # CrossRef types from http://api.crossref.org/types
 CROSSREF_TYPE_TRANSLATIONS = {
   "proceedings" => nil,
@@ -57,7 +59,7 @@ CROSSREF_TYPE_TRANSLATIONS = {
   "book-set" => nil
 }
 
-# DataCite resourceTypeGeneral from DataCite metadata schema: http://dx.doi.org/10.5438/0010
+# DataCite resourceTypeGeneral from DataCite metadata schema: https://doi.org/10.5438/0012
 DATACITE_TYPE_TRANSLATIONS = {
   "Audiovisual" => "motion_picture",
   "Collection" => nil,

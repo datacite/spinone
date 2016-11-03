@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Member, type: :model, vcr: true do
   it "members" do
     members = Member.all[:data]
-    expect(members.length).to eq(37)
+    expect(members.length).to eq(38)
     member = members.first
     expect(member.title).to eq("Australian National Data Service")
   end

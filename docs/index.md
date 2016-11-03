@@ -6,7 +6,7 @@ title: "Home"
 ## Version History
 
 * v.1: June 25, 2016, first draft.
-* v.1.1: October 10, 2016, follow JSONAPI spec for side-loading associations
+* v.1.1: October 31, 2016, follow JSONAPI spec for side-loading associations [Changelog](https://github.com/datacite/spinone/blob/master/CHANGELOG.md)
 
 ## Overview
 
@@ -98,12 +98,12 @@ Parameters can be used to query, filter and control the results returned by the 
 | `offset`                     | result offset |
 | `sort`                       | sort results by a certain field |
 | `order`                      | set the sort order to `asc` or `desc` |
-| `include`                    | side-load associations |
+| `include`                    | side-load associations (see below) |
 
 ### Example query using URI parameters
 
 ```
-https://api.datacite.org/members/cern/works?query=python&rows=1
+https://api.datacite.org/works?query=python&member-id=cern&rows=1
 ```
 
 ### Queries
@@ -130,12 +130,22 @@ Results from a listy response can be sorted by applying the `sort` and `order` p
 An example that sorts results in order of publication, beginning with the least recent:
 
 ```
-https://api.datacite.org/works?query=josiah+carberry&sort=published&order=asc
+https://api.datacite.org/works?query=climate&sort=published&order=asc
 ```
 
 ### Facet Counts
 
-Facet counts are returned via the `meta` object. Facet counts give counts per field value for an entire result set.
+Facet counts are returned via the `meta` object. Facet counts give counts per field value for an entire result set. The following facet counts are returned:
+
+| Resource                 | Facet counts                                                                       |
+|:-------------------------|:-----------------------------------------------------------------------------------|
+| `/contributions`         | total, publishers, sources                                                         |
+| `/publishers`            | total, members, registration-agencies                                              |
+| `/relations`             | total, publishers, sources, relation-types                                         |
+| `/sources`               | total, groups                                                                      |
+| `/works`                 | total, publishers, relation-types, resource-types, schema-versions, sources, years |
+
+All other resources return only `total` in the `meta` object.
 
 ### Filter Names
 
@@ -145,8 +155,14 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 |:-----------|:----------------|:-----------|
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
 | `publisher-id` | `{publisher-id}` | metadata associated with a specific DataCite data center |
-| `from-date` | `{date}` | metadata where published date is since (inclusive) `{date}` |
-| `until-date` | `{date}` | metadata where published date is before (inclusive)  `{date}` |
+| `resource-id` | `{resource-type-id}` | metadata for a specific resourceTypeGeneral |
+| `source-id` | `{source-id}` | metadata associated with a specific source |
+| `relation-type-id` | `{relation-type-id}` | metadata associated with a specific relation type |
+| `from-created-date` | `{date}` | metadata where deposited date is since (inclusive) `{date}` |
+| `until-created-date` | `{date}` | metadata where deposited date is before (inclusive)  `{date}` |
+| `from-update-date` | `{date}` | metadata where updated date is since (inclusive) `{date}` |
+| `until-update-date` | `{date}` | metadata where updated date is before (inclusive)  `{date}` |
+| `year` | `{year}` | publication year of the resource `{year}` |
 
 ## Notes on owner prefixes
 
@@ -184,26 +200,35 @@ https://api.datacite.org/works?query=allen+renear&rows=5&offset=5
 
 ## Includes
 
-To sideload associations use the `include` parameter, for example:
+To sideload associations (as [specified](http://jsonapi.org/format/#fetching-includes) in the JSONAPI documentation) use the `include` parameter, for example:
 
 ```
 https://api.datacite.org/works?query=climate&include=publisher,resource-type
 ```
 
-Sideload multiple assocations by providing them in a comma-separated list.
+Sideload multiple assocations by providing them in a comma-separated list. The following resources can be sideloaded:
+
+| Resource                 | Resources that can be included                                   |
+|:-------------------------|:-----------------------------------------------------------------|
+| `/contributions`         | publisher, source                                                |
+| `/publishers`            | member, registration-agency                                      |
+| `/relations`             | publisher, source, relation-type                                 |
+| `/sources`               | group                                                            |
+| `/works`                 | publisher, member, registration-agency, resource-type, work-type |
+
 
 ## Example Queries
 
-**All works published by data center `cdl.digsci` (Figshare)**
+**All works published by data center `cdl.dryad` (Dryad), with included resource-type**
 
 ```
-https://api.datacite.org/works?publisher-id=cdl.digsci
+https://api.datacite.org/works?publisher-id=cdl.dryad&include=resource-type
 ```
 
-**All members with `data` in their name (e.g. Australian National Data Service)**
+**All members with `data` in their name (e.g. Australian National Data Service), with included publishers**
 
 ```
-https://api.datacite.org/members?query=data
+https://api.datacite.org/members?query=data&include=publisher
 ```
 
 ## Error messages

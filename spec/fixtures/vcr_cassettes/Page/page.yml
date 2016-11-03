@@ -17,38 +17,83 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:47:54 GMT
+      - Fri, 21 Oct 2016 17:28:51 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '41461'
+      - '44894'
       Connection:
       - keep-alive
       X-Amz-Id-2:
-      - lT2Lt8aCRZitYOCthljRLwH8JvkKkuwU88MjHHdyefud9UdoX0rZvy2WICG7vnvjmvu500gEf5M=
+      - nrFIOYqWDdnOr0QO4P4MLO+AtQJdDPUfloBBTyMmB5lNMT47b+z3kVOP4kGNXm7pGt/2ywtSKNs=
       X-Amz-Request-Id:
-      - A2C4D4585A7D127E
+      - 5914494C68F3E1C6
       Content-Encoding:
       - text
       Last-Modified:
-      - Mon, 03 Oct 2016 08:03:12 GMT
+      - Wed, 19 Oct 2016 14:02:53 GMT
       Etag:
-      - '"aa302d6a183b1c23eb20ec5c8cff162e"'
+      - '"d63ea5c94e1e8dbfb47b7930e6f44a1a"'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: "[\n  {\n    \"url\": \"https://blog.datacite.org/new-metadata-schema-4-0/\",\n
+      string: "[\n  {\n    \"url\": \"https://blog.datacite.org/welcome-united-states-geological-survey-usgs/\",\n
+        \   \"author\": [{ \"given\": \"Patricia\",\n                \"family\": \"Cruse\",\n
+        \               \"orcid\": \"http://orcid.org/0000-0002-9300-5278\" }],\n
+        \   \"title\": \"Welcome United States Geological Survey (USGS)\",\n    \"container-title\":
+        \"DataCite Blog\",\n    \"issued\": \"2016-10-17T00:00:00+00:00\",\n    \"license\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"\",\n
+        \   \"tags\": [\"USGS\",\"members\"],\n    \"description\": \"DataCite is
+        pleased to welcome USGS to the DataCite community. USGS is one of the largest
+        government scientific agencies in the world and was created by an act of the
+        US Congress over 125 years ago. With vast holdings in Earth and biological
+        data, USGS is leading the way with...\"\n  } ,\n  {\n    \"url\": \"https://blog.datacite.org/datacite-welcomes-tind/\",\n
+        \   \"author\": [{ \"given\": \"Patricia\",\n                \"family\": \"Cruse\",\n
+        \               \"orcid\": \"http://orcid.org/0000-0002-9300-5278\" }],\n
+        \   \"title\": \"DataCite Welcomes TIND\",\n    \"container-title\": \"DataCite
+        Blog\",\n    \"issued\": \"2016-10-14T00:00:00+00:00\",\n    \"license\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"\",\n
+        \   \"tags\": [\"tind\",\"members\"],\n    \"description\": \"As we mentioned
+        in our last blog post, DataCite recently changed its membership model, and
+        we now invite members from all types of organisations to join DataCite. As
+        a result, we are happy to announce that several organisations have joined
+        DataCite. Over the coming months, we will introduce DataCite’s newest...\"\n
+        \ } ,\n  {\n    \"url\": \"https://blog.datacite.org/citation-formatting-service-upgrade/\",\n
+        \   \"author\": [{ \"given\": \"Kristian\",\n                \"family\": \"Garza\",\n
+        \               \"orcid\": \"http://orcid.org/0000-0003-3484-6875\" }],\n
+        \   \"title\": \"Three things you should know about our new DOI Citation Formatting
+        service\",\n    \"container-title\": \"DataCite Blog\",\n    \"issued\": \"2016-10-13T00:00:00+00:00\",\n
+        \   \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\":
+        \"https://blog.datacite.org/assets/images/2016/10/citation_formatter.png\",\n
+        \   \"tags\": [\"citation\",\"docker\",\"featured\",\"infrastructure\"],\n
+        \   \"description\": \"We are happy to announce the relaunch of our DOI Citation
+        Formatting service, available at http://citation.crosscite.org. The service
+        uses the citeproc.js library by Frank Bennett together with the more than
+        5,000 citation styles made available by the citationstyles.org project. The
+        service works with DOIs from Crossref, mEDRA and ISTIC in...\"\n  } ,\n  {\n
+        \   \"url\": \"https://blog.datacite.org/datacites-new-membership-model/\",\n
+        \   \"author\": [{ \"given\": \"Patricia\",\n                \"family\": \"Cruse\",\n
+        \               \"orcid\": \"http://orcid.org/0000-0002-9300-5278\" }],\n
+        \   \"title\": \"DataCite’s New Membership Model - Join Us!\",\n    \"container-title\":
+        \"DataCite Blog\",\n    \"issued\": \"2016-10-05T00:00:00+00:00\",\n    \"license\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/10/join.png\",\n
+        \   \"tags\": [\"datacite\",\"featured\"],\n    \"description\": \"It has
+        been a busy few months at DataCite, but we want to share some important information
+        about changes to DataCite’s membership model. Earlier this year DataCite members
+        voted to revise our membership model and open membership up to any organization
+        that shares our data sharing mission. Previously DataCite limited...\"\n  }
+        ,\n  {\n    \"url\": \"https://blog.datacite.org/new-metadata-schema-4-0/\",\n
         \   \"author\": [{ \"given\": \"Laura\",\n                \"family\": \"Rueda\",\n
         \               \"orcid\": \"http://orcid.org/0000-0001-5952-7630\" }],\n
         \   \"title\": \"New DataCite Metadata Schema 4.0\",\n    \"container-title\":
         \"DataCite Blog\",\n    \"issued\": \"2016-09-21T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/09/schemapreview.png\",\n
-        \   \"tags\": [\"datacite\",\"metadata schema\",\"featured\"],\n    \"description\":
+        \   \"tags\": [\"datacite\",\"metadata\",\"featured\"],\n    \"description\":
         \"Many things have changed in the last two years in the research community.
         Data publication and data citation are becoming a standard in different communities,
         and DataCite is proud to support the development of best practices and services
@@ -58,7 +103,7 @@ http_interactions:
         \   \"title\": \"Software Citation Principles\",\n    \"container-title\":
         \"DataCite Blog\",\n    \"issued\": \"2016-09-20T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"\",\n
-        \   \"tags\": [\"datacite\",\"software citation principles\"],\n    \"description\":
+        \   \"tags\": [\"datacite\",\"software citation\"],\n    \"description\":
         \"The FORCE11 Software Citation Working Group has published the results of
         its review of existing community practices, using a consolidated set of Software
         Citation Principles (Smith, Katz, Niemeyer, &amp; FORCE11-Software-Citation-Working-Group,
@@ -92,10 +137,10 @@ http_interactions:
         \   \"title\": \"Dynamic Data Citation Webinar\",\n    \"container-title\":
         \"DataCite Blog\",\n    \"issued\": \"2016-07-18T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/07/dynamic-data.png\",\n
-        \   \"tags\": [\"datacite\",\"rda\",\"citation\",\"thor\",\"featured\"],\n
-        \   \"description\": \"On July 12, 2016, DataCite invited Andreas Rauber to
-        present the recommendations for dynamic data citation of the RDA Data Citation
-        Working Group in a webinar.\"\n  } ,\n  {\n    \"url\": \"https://blog.datacite.org/metadata-schema-4-webinar/\",\n
+        \   \"tags\": [\"datacite\",\"rda\",\"citation\",\"thor\"],\n    \"description\":
+        \"On July 12, 2016, DataCite invited Andreas Rauber to present the recommendations
+        for dynamic data citation of the RDA Data Citation Working Group in a webinar.\"\n
+        \ } ,\n  {\n    \"url\": \"https://blog.datacite.org/metadata-schema-4-webinar/\",\n
         \   \"author\": [{ \"given\": \"Laura\",\n                \"family\": \"Rueda\",\n
         \               \"orcid\": \"http://orcid.org/0000-0001-5952-7630\" }],\n
         \   \"title\": \"DataCite Metadata Schema 4.0 Webinar\",\n    \"container-title\":
@@ -120,17 +165,16 @@ http_interactions:
         Dynamic, Responsive and Adapted to your Needs\",\n    \"container-title\":
         \"DataCite Blog\",\n    \"issued\": \"2016-06-27T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/06/web_featured.jpg\",\n
-        \   \"tags\": [\"datacite\",\"featured\"],\n    \"description\": \"We are
-        very pleased to announce the launch of our new website: www.datacite.org!
-        Our website is the central place for information about DataCite and we love
-        the new look! It has become the hub for all our services and now it delivers
-        our latest news and supports the community with...\"\n  } ,\n  {\n    \"url\":
-        \"https://blog.datacite.org/publishing-tabular-data-as-blog-post/\",\n    \"author\":
-        [{ \"given\": \"Martin\",\n                \"family\": \"Fenner\",\n                \"orcid\":
-        \"http://orcid.org/0000-0003-1419-2405\" }],\n    \"title\": \"Publishing
-        tabular data as blog post\",\n    \"container-title\": \"DataCite Blog\",\n
-        \   \"issued\": \"2016-05-20T00:00:00+00:00\",\n    \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n
-        \   \"image\": \"https://blog.datacite.org/assets/images/2016/05/periodic_table.jpg\",\n
+        \   \"tags\": [\"datacite\"],\n    \"description\": \"We are very pleased
+        to announce the launch of our new website: www.datacite.org! Our website is
+        the central place for information about DataCite and we love the new look!
+        It has become the hub for all our services and now it delivers our latest
+        news and supports the community with...\"\n  } ,\n  {\n    \"url\": \"https://blog.datacite.org/publishing-tabular-data-as-blog-post/\",\n
+        \   \"author\": [{ \"given\": \"Martin\",\n                \"family\": \"Fenner\",\n
+        \               \"orcid\": \"http://orcid.org/0000-0003-1419-2405\" }],\n
+        \   \"title\": \"Publishing tabular data as blog post\",\n    \"container-title\":
+        \"DataCite Blog\",\n    \"issued\": \"2016-05-20T00:00:00+00:00\",\n    \"license\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/05/periodic_table.jpg\",\n
         \   \"tags\": [\"csv\",\"metadata\"],\n    \"description\": \"CSV in many
         ways is for data what Markdown is for text documents: a very simple format
         that is both human- and machine-readable, and that – despite a number of shortcomings
@@ -208,20 +252,21 @@ http_interactions:
         \   \"title\": \"We were out in Force\",\n    \"container-title\": \"DataCite
         Blog\",\n    \"issued\": \"2016-04-19T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"https://blog.datacite.org/assets/images/2016/04/impactstory.png\",\n
-        \   \"tags\": [\"orcid\",\"software\",\"github\",\"impactstory\"],\n    \"description\":
-        \"This week most of the DataCite staff is attending the Force16 conference
-        in Portland, Oregon. Force16 brings together a large group of people who either
-        already work with DataCite in one way or another, or are doing interesting
-        projects of relevance to DataCite.\"\n  } ,\n  {\n    \"url\": \"https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/\",\n
+        \   \"tags\": [\"orcid\",\"software citation\",\"github\",\"impactstory\"],\n
+        \   \"description\": \"This week most of the DataCite staff is attending the
+        Force16 conference in Portland, Oregon. Force16 brings together a large group
+        of people who either already work with DataCite in one way or another, or
+        are doing interesting projects of relevance to DataCite.\"\n  } ,\n  {\n    \"url\":
+        \"https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/\",\n
         \   \"author\": [{ \"given\": \"Daniel S.\",\n                \"family\":
         \"Katz\",\n                \"orcid\": \"http://orcid.org/0000-0001-5934-7525\"
         }],\n    \"title\": \"To better understand research communication, we need
         a GROID (group object identifier)\",\n    \"container-title\": \"DataCite
         Blog\",\n    \"issued\": \"2016-04-17T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"\",\n
-        \   \"tags\": [\"metadata\",\"software\"],\n    \"description\": \"The following
-        is a guest post by Daniel S. Katz, cross-posted from his blog.\"\n  } ,\n
-        \ {\n    \"url\": \"https://blog.datacite.org/its-all-about-relations/\",\n
+        \   \"tags\": [\"metadata\",\"software citation\"],\n    \"description\":
+        \"The following is a guest post by Daniel S. Katz, cross-posted from his blog.\"\n
+        \ } ,\n  {\n    \"url\": \"https://blog.datacite.org/its-all-about-relations/\",\n
         \   \"author\": [{ \"given\": \"Martin\",\n                \"family\": \"Fenner\",\n
         \               \"orcid\": \"http://orcid.org/0000-0003-1419-2405\" }],\n
         \   \"title\": \"It's all about Relations\",\n    \"container-title\": \"DataCite
@@ -422,9 +467,9 @@ http_interactions:
         \   \"title\": \"Software Citation Workflows\",\n    \"container-title\":
         \"DataCite Blog\",\n    \"issued\": \"2015-10-19T00:00:00+00:00\",\n    \"license\":
         \"https://creativecommons.org/licenses/by/4.0/\",\n    \"image\": \"\",\n
-        \   \"tags\": [\"software\",\"github\"],\n    \"description\": \"This blog
-        post provides more detail for a short presentation I will give today at the
-        Software Credit Workshop in London. The aim is to look at the infrastructure
+        \   \"tags\": [\"software citation\",\"github\"],\n    \"description\": \"This
+        blog post provides more detail for a short presentation I will give today
+        at the Software Credit Workshop in London. The aim is to look at the infrastructure
         pieces needed for software discovery and credit, and at the workflows linking
         these different parts of the infrastructure.\"\n  } ,\n  {\n    \"url\": \"https://blog.datacite.org/happy-birthday-orcid/\",\n
         \   \"author\": [{ \"given\": \"Martin\",\n                \"family\": \"Fenner\",\n
@@ -583,5 +628,5 @@ http_interactions:
         (e.g. this blog), this is also a good time to communicate the overall approach
         I am taking. I like to call it...\"\n  } \n]\n"
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:47:54 GMT
+  recorded_at: Fri, 21 Oct 2016 17:28:51 GMT
 recorded_with: VCR 2.9.3

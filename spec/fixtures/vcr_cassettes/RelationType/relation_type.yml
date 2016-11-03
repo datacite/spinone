@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/relation_types/is_cited_by
+    uri: http://eventdata.labs.datacite.org/api/relation_types/is_cited_by
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 09:44:38 GMT
+      - Fri, 21 Oct 2016 17:27:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,7 +37,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 46436ec8-cec8-469e-989b-8b70cabc302c
+      - 73e7be32-e212-4022-a7b4-343e663d9768
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.015807'
+      - '0.014554'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -57,5 +57,5 @@ http_interactions:
       string: '{"meta":{"status":"ok","message-type":"relation_type","message-version":"v7"},"relation_type":{"id":"is_cited_by","title":"Is
         cited by","inverse_title":"Cites","timestamp":"2016-03-21T15:05:03Z"}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 09:44:38 GMT
+  recorded_at: Fri, 21 Oct 2016 17:27:19 GMT
 recorded_with: VCR 2.9.3

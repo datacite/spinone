@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://search.datacite.org/api?f.publicationYear.facet.limit=15&f.resourceType_facet.facet.limit=15&facet=true&facet.field=schema_version&facet.limit=10&facet.mincount=1&fl=doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated&fq=has_metadata:true%20AND%20is_active:true%20AND%20resourceTypeGeneral:Dataset&q=cancer&rows=25&sort=score%20desc&start=0&wt=json
+    uri: https://search.datacite.org/api?facet=true&facet.field=schema_version&facet.limit=15&facet.mincount=1&fl=doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated&fq=has_metadata:true%20AND%20is_active:true%20AND%20resourceTypeGeneral:Dataset&q=cancer&rows=25&sort=score%20desc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:18:23 GMT
+      - Sat, 29 Oct 2016 05:42:55 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,7 +30,7 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":14},"response":{"numFound":3394,"start":0,"docs":[{"minted":"2016-02-26T18:39:52Z","datacentre_symbol":"CDL.UCSD","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA3NS9KMEgxMlpYVzwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlBpZXJjZSwgSm9obiBQPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RmFlcmJlciwgU3VzYW48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5XcmlnaHQsIEZyZWQgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlJvY2ssIENoZXJ5bCBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmV3bWFuLCBWaWNreTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkZsYXR0LCBTaGlybGV5IFc8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5LZWFsZXksIFNoZWlsYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkpvbmVzLCBWaWNreSBFPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Q2FhbiwgQmV0dGUgSjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdvbGQsIEVsbGVuIEI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWFuLCBNYXJ5PC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SG9sbGVuYmFjaCwgS2F0aHJ5biBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Sm9uZXMsIExvdmVsbCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TWFyc2hhbGwsIEphbWVzIFI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5SaXRlbmJhdWdoLCBDaGVyeWw8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5TdGVmYW5pY2ssIE1hcmNpYSBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+VGhvbXNvbiwgQ3ludGhpYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldhc3Nlcm1hbiwgTGluZGE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5OYXRhcmFqYW4sIExva2k8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5UaG9tYXMsIFJvbmFsZCBHPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2lscGluLCBFbGl6YWJldGg8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5QYXJrZXIsIEJhcmJhcmEgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdyZWVuYmVyZywgRSBSb2JlcnQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5BbC1EZWxhaW15LCBXYWVsIEs8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5CYXJkd2VsbCwgV2F5bmUgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkNhcmxzb24sIFJvYmVydCBXPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RW1vbmQsIEplbm5pZmVyIEE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWplaywgUmljaGFyZCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+S2FyYW5qYSwgTmplcmk8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5NYWRsZW5za3ksIExpc2E8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5Xb21lbidzIEhlYWx0aHkgRWF0aW5nIGFuZCBMaXZpbmcgKFdIRUwpIFN0dWR5PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlVDIFNhbiBEaWVnbyBMaWJyYXJ5IERpZ2l0YWwgQ29sbGVjdGlvbnM8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGE8L3Jlc291cmNlVHlwZT4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBXb21lbidzIEhlYWx0aHkgRWF0aW5nICZhbXA7IExpdmluZyAoV0hFTCkgU3R1ZHkgd2FzIGFuIE5JSC1zdXBwb3J0ZWQgY2xpbmljYWwgdHJpYWwuIEluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgTklIJ3MgRGF0YSBTaGFyaW5nIFBvbGljeSBhcyB3ZWxsIGFzIHRvIHByb21vdGUgdGhlIGNvbmNlcHQgb2YgZGF0YSBzaGFyaW5nLCB0aGVzZSBkYXRhIGFyZSBiZWluZyBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZS4gQWxzbyBpbiBhY2NvcmRhbmNlIHdpdGggTklIIHBvbGljeSwgdGhlIGRhdGFzZXRzIGluY2x1ZGUgb25seSBkZS1pZGVudGlmaWVkIGRhdGEgYW5kIGRvY3VtZW50YXRpb24uIEFsbCBwZXJzb25hbGx5IGlkZW50aWZpYWJsZSBoZWFsdGggaW5mb3JtYXRpb24gc3VjaCBhcyBkYXRlcyBvciBzdHVkeSBzaXRlcyBoYXMgYmVlbiByZW1vdmVkIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgSElQQUEgcHJpdmFjeSBydWxlLiBUaGUgV29tZW4ncyBIZWFsdGh5IEVhdGluZyBhbmQgTGl2aW5nIChXSEVMKSBTdHVkeSB3YXMgYSBtdWx0aXNpdGUgcmFuZG9taXplZCBjb250cm9sbGVkIHRyaWFsIG9mIHRoZSBlZmZlY3RpdmVuZXNzIG9mIGEgaGlnaC12ZWdldGFibGUsIGxvdy1mYXQgZGlldCwgYWltZWQgYXQgbWFya2VkbHkgcmFpc2luZyBjaXJjdWxhdGluZyBjYXJvdGVub2lkIGNvbmNlbnRyYXRpb25zIGZyb20gZm9vZCBzb3VyY2VzLCBpbiByZWR1Y2luZyBhZGRpdGlvbmFsIGJyZWFzdCBjYW5jZXIgZXZlbnRzIGFuZCBlYXJseSBkZWF0aCBpbiB3b21lbiB3aXRoIGVhcmx5LXN0YWdlIGludmFzaXZlIGJyZWFzdCBjYW5jZXIgKHdpdGhpbiA0IHllYXJzIG9mIGRpYWdub3NpcykuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5CcmVhc3QgY2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Q2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+RGlldDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkhlYWx0aHkgZWF0aW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ikhvc3RpbmdJbnN0aXR1dGlvbiI+CiAgICAgIDxjb250cmlidXRvck5hbWU+TW9vcmVzIENhbmNlciBDZW50ZXIsIENhbmNlciBQcmV2ZW50aW9uIGFuZCBDb250cm9sIFByb2dyYW08L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxNjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJDb2xsZWN0ZWQiPjE5OTUgdG8gMjAwNjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRpb25UeXBlPSJJc1JlZmVyZW5jZWRCeSIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEwMTYvUzAxOTctMjQ1NigwMikwMDI0MS02PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzUmVmZXJlbmNlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTAwMS9qYW1hLjI5OC4zLjI4OTwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CjwvcmVzb3VyY2U+","allocator_symbol":"CDL","updated":"2016-06-02T23:50:08Z","doi":"10.6075/J0H12ZXW","schema_version":"3","publisher":"UC
+      string: '{"responseHeader":{"status":0,"QTime":552},"response":{"numFound":3449,"start":0,"docs":[{"minted":"2016-02-26T18:39:52Z","datacentre_symbol":"CDL.UCSD","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA3NS9KMEgxMlpYVzwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlBpZXJjZSwgSm9obiBQPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RmFlcmJlciwgU3VzYW48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5XcmlnaHQsIEZyZWQgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlJvY2ssIENoZXJ5bCBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmV3bWFuLCBWaWNreTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkZsYXR0LCBTaGlybGV5IFc8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5LZWFsZXksIFNoZWlsYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkpvbmVzLCBWaWNreSBFPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Q2FhbiwgQmV0dGUgSjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdvbGQsIEVsbGVuIEI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWFuLCBNYXJ5PC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SG9sbGVuYmFjaCwgS2F0aHJ5biBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Sm9uZXMsIExvdmVsbCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TWFyc2hhbGwsIEphbWVzIFI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5SaXRlbmJhdWdoLCBDaGVyeWw8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5TdGVmYW5pY2ssIE1hcmNpYSBMPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+VGhvbXNvbiwgQ3ludGhpYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldhc3Nlcm1hbiwgTGluZGE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5OYXRhcmFqYW4sIExva2k8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5UaG9tYXMsIFJvbmFsZCBHPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2lscGluLCBFbGl6YWJldGg8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5QYXJrZXIsIEJhcmJhcmEgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkdyZWVuYmVyZywgRSBSb2JlcnQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5BbC1EZWxhaW15LCBXYWVsIEs8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5CYXJkd2VsbCwgV2F5bmUgQTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkNhcmxzb24sIFJvYmVydCBXPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RW1vbmQsIEplbm5pZmVyIEE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWplaywgUmljaGFyZCBBPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+S2FyYW5qYSwgTmplcmk8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5NYWRsZW5za3ksIExpc2E8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5Xb21lbidzIEhlYWx0aHkgRWF0aW5nIGFuZCBMaXZpbmcgKFdIRUwpIFN0dWR5PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlVDIFNhbiBEaWVnbyBMaWJyYXJ5IERpZ2l0YWwgQ29sbGVjdGlvbnM8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGE8L3Jlc291cmNlVHlwZT4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBXb21lbidzIEhlYWx0aHkgRWF0aW5nICZhbXA7IExpdmluZyAoV0hFTCkgU3R1ZHkgd2FzIGFuIE5JSC1zdXBwb3J0ZWQgY2xpbmljYWwgdHJpYWwuIEluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgTklIJ3MgRGF0YSBTaGFyaW5nIFBvbGljeSBhcyB3ZWxsIGFzIHRvIHByb21vdGUgdGhlIGNvbmNlcHQgb2YgZGF0YSBzaGFyaW5nLCB0aGVzZSBkYXRhIGFyZSBiZWluZyBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZS4gQWxzbyBpbiBhY2NvcmRhbmNlIHdpdGggTklIIHBvbGljeSwgdGhlIGRhdGFzZXRzIGluY2x1ZGUgb25seSBkZS1pZGVudGlmaWVkIGRhdGEgYW5kIGRvY3VtZW50YXRpb24uIEFsbCBwZXJzb25hbGx5IGlkZW50aWZpYWJsZSBoZWFsdGggaW5mb3JtYXRpb24gc3VjaCBhcyBkYXRlcyBvciBzdHVkeSBzaXRlcyBoYXMgYmVlbiByZW1vdmVkIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgSElQQUEgcHJpdmFjeSBydWxlLiBUaGUgV29tZW4ncyBIZWFsdGh5IEVhdGluZyBhbmQgTGl2aW5nIChXSEVMKSBTdHVkeSB3YXMgYSBtdWx0aXNpdGUgcmFuZG9taXplZCBjb250cm9sbGVkIHRyaWFsIG9mIHRoZSBlZmZlY3RpdmVuZXNzIG9mIGEgaGlnaC12ZWdldGFibGUsIGxvdy1mYXQgZGlldCwgYWltZWQgYXQgbWFya2VkbHkgcmFpc2luZyBjaXJjdWxhdGluZyBjYXJvdGVub2lkIGNvbmNlbnRyYXRpb25zIGZyb20gZm9vZCBzb3VyY2VzLCBpbiByZWR1Y2luZyBhZGRpdGlvbmFsIGJyZWFzdCBjYW5jZXIgZXZlbnRzIGFuZCBlYXJseSBkZWF0aCBpbiB3b21lbiB3aXRoIGVhcmx5LXN0YWdlIGludmFzaXZlIGJyZWFzdCBjYW5jZXIgKHdpdGhpbiA0IHllYXJzIG9mIGRpYWdub3NpcykuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5CcmVhc3QgY2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Q2FuY2VyPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+RGlldDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkhlYWx0aHkgZWF0aW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ikhvc3RpbmdJbnN0aXR1dGlvbiI+CiAgICAgIDxjb250cmlidXRvck5hbWU+TW9vcmVzIENhbmNlciBDZW50ZXIsIENhbmNlciBQcmV2ZW50aW9uIGFuZCBDb250cm9sIFByb2dyYW08L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxNjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJDb2xsZWN0ZWQiPjE5OTUgdG8gMjAwNjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRpb25UeXBlPSJJc1JlZmVyZW5jZWRCeSIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEwMTYvUzAxOTctMjQ1NigwMikwMDI0MS02PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzUmVmZXJlbmNlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTAwMS9qYW1hLjI5OC4zLjI4OTwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CjwvcmVzb3VyY2U+","allocator_symbol":"CDL","updated":"2016-06-02T23:50:08Z","doi":"10.6075/J0H12ZXW","schema_version":"3","publisher":"UC
         San Diego Library Digital Collections","resourceType":"Data","title":["Women''s
         Healthy Eating and Living (WHEL) Study"],"description":["The Women''s Healthy
         Eating & Living (WHEL) Study was an NIH-supported clinical trial. In compliance
@@ -519,19 +519,22 @@ http_interactions:
         and acquisition protocols.  In most cases the images were acquired as part
         of routine care and not as part of a controlled research study or clinical
         trial."],"publicationYear":"2016","resourceTypeGeneral":"Dataset","publisher":"The
-        Cancer Imaging Archive","resourceType":"DICOM"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2015",1165,"2014",755,"2016",628,"2013",216,"2012",127,"2010",111,"2008",82,"2011",69,"2009",24,"1999",18,"2004",16,"1988",14,"2002",13,"2005",13,"1990",11],"datacentre_facet":["CDL.DIGSCI
-        - Digital Science",1515,"BL.YORK - University of York",618,"GESIS.ICPSR -
-        ICPSR",422,"CDL.DRYAD - Dryad",284,"TIB.PANGAEA - PANGAEA - Publishing Network
+        Cancer Imaging Archive","resourceType":"DICOM"}]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":["2015",1164,"2014",755,"2016",684,"2013",216,"2012",127,"2010",111,"2008",82,"2011",69,"2009",24,"1999",18,"2004",16,"1988",14,"2002",13,"2005",13,"1990",11],"datacentre_facet":["FIGSHARE.ARS
+        - figshare Academic Research System",1543,"BL.YORK - University of York",618,"GESIS.ICPSR
+        - ICPSR",422,"CDL.DRYAD - Dryad",295,"TIB.PANGAEA - PANGAEA - Publishing Network
         for Geoscientific and Environmental Data",103,"DK.GBIF - Global Biodiversity
         Information Facility",73,"CDL.TCIA - The Cancer Imaging Archive",65,"GESIS.ARCHIV
-        - GESIS Data Archive",57,"CDL.PEERJ - PeerJ",35,"BL.UKDA - UK Data Archive",32],"resourceType_facet":["Dataset",3394],"schema_version":["3",3010,"2.2",384]},"facet_dates":{},"facet_ranges":{}}}
+        - GESIS Data Archive",57,"CDL.PEERJ - PeerJ",35,"BL.UKDA - UK Data Archive",32,"NRCT.DB1
+        - NRCT Data Center",32,"PURDUE.NCIPH - National Cancer Informatics Program
+        Hub, NIH",23,"CERN.ZENODO - ZENODO - Research. Shared.",22,"CDL.DATAVERS -
+        Harvard Dataverse",19,"DELFT.EASY - DANS-EASY",17],"resourceType_facet":["Dataset",3449],"schema_version":["3",3051,"2.2",398]},"facet_dates":{},"facet_ranges":{}}}
 
 '
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:18:23 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:55 GMT
 - request:
     method: post
-    uri: https://eventdata.datacite.org/api/works
+    uri: http://eventdata.labs.datacite.org/api/works
     body:
       encoding: UTF-8
       string: ids=10.6075%2FJ0H12ZXW,10.7937%2FK9%2FTCIA.2014..UA0JGPDG,10.7937%2FK9%2FTCIA.2016.TNB1KQBU,10.7937%2FK9%2FTCIA.2016.7O02S9CY,10.7937%2FK9%2FTCIA.2014.X7ONY6B1,10.7937%2FK9%2FTCIA.2014.8SIPIY6G,10.7937%2FK9%2FTCIA.2014.A2N1IXOX,10.7937%2FK9%2FTCIA.2016.NQF4GPN2,10.7937%2FK9%2FTCIA.2016.AWORZ1FQ,10.7937%2FK9%2FTCIA.2016.FXL9SESS,10.7937%2FK9%2FTCIA.2016.21JUEBH0,10.7937%2FK9%2FTCIA.2016.FADS26KG,10.7937%2FK9%2FTCIA.2016.6046GUDV,10.7937%2FK9%2FTCIA.2016.6FC8Z46U,10.7937%2FK9%2FTCIA.2016.YXGR4BLU,10.7937%2FK9%2FTCIA.2015.9P42KSE6,10.7937%2FK9%2FTCIA.2016.8LNG8XDR,10.7937%2FK9%2FTCIA.2016.AB2NAZRP,10.7937%2FK9%2FTCIA.2016.SQ4M8YP4,10.7937%2FK9%2FTCIA.2016.HJJHBOXZ,10.7937%2FK9%2FTCIA.2016.VPTNRGFY,10.7937%2FK9%2FTCIA.2016.RNYFUYE9,10.7937%2FK9%2FTCIA.2016.LXKQ47MS,10.7937%2FK9%2FTCIA.2016.YU3RBCZN,10.7937%2FK9%2FTCIA.2016.V6PBVTDR&type=doi
@@ -550,9 +553,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:18:23 GMT
+      - Sat, 29 Oct 2016 05:42:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -570,24 +573,25 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a26c4bbe-4cb2-467a-bfda-6b83fcbaf229
+      - c2565d50-e8fa-43ef-960c-4c50da93b5a9
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"a762ad8aa0525a34523e443cfba6c88b"
+      - W/"defbce6b659eaa169f64a54c9bdc90dd"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.025499'
+      - '0.048716'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":{},"relation_types":{"is_referenced_by":2}},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
+      string: '{"meta":{"status":"ok","message-type":"work-list","message-version":"v7","total":1,"total_pages":1,"page":1,"sources":[],"publishers":[],"relation_types":[{"id":"is_referenced_by","title":"Is
+        referenced by","count":1}],"resource_types":[{"id":"dataset","title":"Dataset","count":1}],"years":[{"id":"2016","title":"2016","count":1}]},"works":[{"id":"http://doi.org/10.6075/J0H12ZXW","author":[{"given":"John
         P","family":"Pierce"},{"given":"Susan","family":"Faerber"},{"given":"Fred
         A","family":"Wright"},{"given":"Cheryl L","family":"Rock"},{"given":"Vicky","family":"Newman"},{"given":"Shirley
         W","family":"Flatt"},{"given":"Sheila","family":"Kealey"},{"given":"Vicky
@@ -601,12 +605,12 @@ http_interactions:
         W","family":"Carlson"},{"given":"Jennifer A","family":"Emond"},{"given":"Richard
         A","family":"Hajek"},{"given":"Njeri","family":"Karanja"},{"given":"Lisa","family":"Madlensky"}],"title":"Women''s
         Healthy Eating and Living (WHEL) Study","published":"2016","issued":"2016-02-26T18:39:52Z","updated":"2016-06-17T05:33:29Z","container-title":"UC
-        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","results":{}}]}'
+        San Diego Library Digital Collections","DOI":"10.6075/J0H12ZXW","work_type_id":"dataset","resource_type_id":"dataset","results":[]}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:18:23 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:56 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/sources
+    uri: http://eventdata.labs.datacite.org/api/publishers?ids=FIGSHARE.ARS,BL.YORK,GESIS.ICPSR,CDL.DRYAD,TIB.PANGAEA,DK.GBIF,CDL.TCIA,GESIS.ARCHIV,CDL.PEERJ,BL.UKDA,NRCT.DB1,PURDUE.NCIPH,CERN.ZENODO,CDL.DATAVERS,DELFT.EASY
     body:
       encoding: US-ASCII
       string: ''
@@ -621,9 +625,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 19:18:23 GMT
+      - Sat, 29 Oct 2016 05:42:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -641,176 +645,35 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a95ffef7-ab4e-447b-bde5-ba0c30793415
+      - 25f22399-9f99-486f-9de4-e66c4098286c
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"623be75cddbace7ad5d78759dcb9b02d"
+      - W/"a88ef9cebc8152c59278e658157b344d"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.024497'
+      - '0.046964'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
-        (DataCite)","group_id":"relations","description":"Import works linked to a
-        DataCite DOI from Crossref.","state":"active","timestamp":"2016-10-04T17:05:11Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
-        (Crossref)","group_id":"relations","description":"Import works with Crossref
-        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T17:05:12Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":12,"without_results":32,"not_updated":225368}},{"id":"datacite_github","title":"DataCite
-        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
-        via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
-        (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}},{"id":"europe_pmc_fulltext","title":"Europe
-        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
-        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-10-04T16:28:13Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
-        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
-        citations.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
-        (ORCID Search and Link)","group_id":"contributions","description":"Import
-        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
-        (ORCID)","group_id":"contributions","description":"Import works with ORCID
-        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
-        (Contributor)","group_id":"contributions","description":"Import contributors
-        with works via the Github API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
-        works via the ORCID API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
-        (Publisher)","group_id":"publishers","description":"Import publishers via
-        the Crossref REST API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
-        (Datacentre)","group_id":"publishers","description":"Import data centres via
-        the DataCite Solr API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
-        is the largest social network.","state":"active","timestamp":"2016-10-04T17:55:06Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
-        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-10-04T16:51:56Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
-        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-10-04T16:51:57Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":15,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":15}],"members":[{"id":"delft","title":"DELFT","count":1},{"id":"figshare","title":"FIGSHARE","count":1},{"id":"gesis","title":"GESIS","count":2},{"id":"dk","title":"DK","count":1},{"id":"cdl","title":"CDL","count":4},{"id":"purdue","title":"PURDUE","count":1},{"id":"nrct","title":"NRCT","count":1},{"id":"tib","title":"TIB","count":1},{"id":"bl","title":"BL","count":2},{"id":"cern","title":"CERN","count":1}]},"publishers":[{"id":"DELFT.EASY","title":"DANS-EASY","prefixes":[],"registration_agency_id":"datacite","member_id":"DELFT","timestamp":"2016-10-29T05:05:52Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:13:02Z"},{"id":"FIGSHARE.ARS","title":"figshare
+        Academic Research System","prefixes":[],"registration_agency_id":"datacite","member_id":"FIGSHARE","timestamp":"2016-10-29T05:06:06Z"},{"id":"GESIS.ARCHIV","title":"GESIS
+        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:06:10Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-29T05:06:11Z"},{"id":"CDL.DATAVERS","title":"Harvard
+        Dataverse","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:06:13Z"},{"id":"GESIS.ICPSR","title":"ICPSR","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:17:32Z"},{"id":"PURDUE.NCIPH","title":"National
+        Cancer Informatics Program Hub, NIH","prefixes":[],"registration_agency_id":"datacite","member_id":"PURDUE","timestamp":"2016-10-29T05:25:51Z"},{"id":"NRCT.DB1","title":"NRCT
+        Data Center","prefixes":[],"registration_agency_id":"datacite","member_id":"NRCT","timestamp":"2016-10-29T05:07:14Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"},{"id":"CDL.PEERJ","title":"PeerJ","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:41:21Z"},{"id":"CDL.TCIA","title":"The
+        Cancer Imaging Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:32:28Z"},{"id":"BL.UKDA","title":"UK
+        Data Archive","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:08:11Z"},{"id":"BL.YORK","title":"University
+        of York","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:36:27Z"},{"id":"CERN.ZENODO","title":"ZENODO
+        - Research. Shared.","prefixes":[],"registration_agency_id":"datacite","member_id":"CERN","timestamp":"2016-10-29T05:08:26Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:18:23 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/groups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 19:18:23 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - c1e2c981-cc35-4d2e-a5e0-b5b1b369d050
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"bdb91c439c4c90224189c7eb36197501"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.025288'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:18:24 GMT
-- request:
-    method: get
-    uri: http://schema.datacite.org/meta/kernel-4/include/datacite-resourceType-v4.xsd
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 19:18:24 GMT
-      Content-Length:
-      - '1252'
-      Connection:
-      - keep-alive
-      X-Amz-Id-2:
-      - UNQe8C7CGZR82DIGRFcUngYFdplHr/7JlCEUx/oNRRz7syXEIteSsgMFflH7jKDAvKgQr4cz8MM=
-      X-Amz-Request-Id:
-      - DF8469293B946FAE
-      Content-Encoding:
-      - text
-      Last-Modified:
-      - Tue, 04 Oct 2016 16:10:15 GMT
-      Etag:
-      - '"bfc0582894b33ec97a324cdc44748aec"'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-    body:
-      encoding: UTF-8
-      string: |
-        <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany
-             2013-05 v3.0: Addition of ID to simpleType element; added values "Audiovisual", "Workflow" & "Other"; deleted value "Film" -->
-        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
-          <xs:simpleType name="resourceType" id="resourceType">
-            <xs:annotation>
-              <xs:documentation>The general type of a resource.</xs:documentation>
-            </xs:annotation>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="Audiovisual"/>
-              <xs:enumeration value="Collection"/>
-              <xs:enumeration value="Dataset"/>
-              <xs:enumeration value="Event"/>
-              <xs:enumeration value="Image"/>
-              <xs:enumeration value="InteractiveResource"/>
-              <xs:enumeration value="Model"/>
-              <xs:enumeration value="PhysicalObject"/>
-              <xs:enumeration value="Service"/>
-              <xs:enumeration value="Software"/>
-              <xs:enumeration value="Sound"/>
-              <xs:enumeration value="Text"/>
-              <xs:enumeration value="Workflow"/>
-              <xs:enumeration value="Other"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:schema>
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:18:24 GMT
+  recorded_at: Sat, 29 Oct 2016 05:42:56 GMT
 recorded_with: VCR 2.9.3

@@ -194,6 +194,7 @@ module Datacitable
                  message_type: "contribution",
                  relation: { "subj_id" => orcid_as_url(orcid),
                              "obj_id" => obj["pid"],
+                             "relation_type_id" => nil,
                              "source_id" => source_id,
                              "publisher_id" => obj["publisher_id"],
                              "registration_agency_id" => "datacite",

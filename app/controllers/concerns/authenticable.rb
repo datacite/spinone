@@ -13,7 +13,7 @@ module Authenticable
       end
     end
 
-    if Rails.env.production?
+    if Rails.env.production? || Rails.env.stage?
       rescue_from *RESCUABLE_EXCEPTIONS do |exception|
         status = case exception.class.to_s
                  when "CanCan::AccessDenied" then 401

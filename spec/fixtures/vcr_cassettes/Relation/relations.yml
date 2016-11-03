@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/relations?page=1&per_page=50
+    uri: http://eventdata.labs.datacite.org/api/relations?page=1&per_page=50
     body:
       encoding: US-ASCII
       string: ''
@@ -17,9 +17,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 22:22:11 GMT
+      - Sat, 29 Oct 2016 05:41:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,122 +37,148 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9a4ebfba-a8e3-44c7-b15a-0af063c1d0d5
+      - d24a170b-c171-446d-a4e7-520e279284bf
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"76116c57ea1293cc117d35d1a7cb2d4c"
+      - W/"1777a73db15f7d77f37b0d68f7c73419"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '31.512439'
+      - '45.219423'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"relation-list","message-version":"v7","total":7419297,"total_pages":148386,"page":1,"sources":{"datacite_related":6296736,"datacite_orcid":6,"datacite_github":4207,"mendeley":2,"github":386,"europe_pmc_fulltext":42,"datacite_crossref":1117918},"relation_types":{"cites":1978,"is_cited_by":1371,"is_supplement_to":489161,"is_supplemented_by":489167,"continues":157757,"is_continued_by":157753,"is_metadata_for":194,"has_metadata":194,"is_part_of":279889,"has_part":281339,"references":2562699,"is_referenced_by":2562761,"documents":1804,"is_documented_by":1786,"compiles":44,"reviews":1174,"is_reviewed_by":1174,"is_derived_from":34743,"is_source_of":35229,"bookmarks":111,"is_new_version_of":101297,"is_previous_version_of":101273,"is_original_form_of":3546,"is_variant_form_of":2996,"is_identical_to":149715,"is_compiled_by":44,"is_bookmarked_by":98}},"relations":[{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V222","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
+      string: '{"meta":{"status":"ok","message-type":"relation-list","message-version":"v7","total":7419297,"total_pages":148386,"page":1,"publishers":[{"id":"dk.gbif","title":"Global
+        Biodiversity Information Facility","count":4995628},{"id":"bl.ccdc","title":"The
+        Cambridge Crystallographic Data Centre","count":952306},{"id":"gesis.die","title":"Deutsches
+        Institut für Erwachsenenbildung","count":643428},{"id":"tib.pangaea","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","count":321630},{"id":"cdl.digsci","title":"Digital
+        Science","count":162212},{"id":"cdl.pisco","title":"Partnership for Interdisciplinary
+        Studies of Coastal Oceans (PISCO)","count":117724},{"id":"ands.centre72","title":"PARADISEC","count":83094},{"id":"cdl.lternet","title":"Long
+        Term Ecological Research (LTER) Network","count":54596},{"id":"cdl.dryad","title":"Dryad","count":16030},{"id":"cdl.r2-r","title":"Rolling
+        Deck to Repository Program","count":9230},{"id":"delft.data4-tu","title":"4TU.Centre
+        for Research Data","count":6790},{"id":"cdl.ucdirl","title":"University College
+        Dublin","count":6084},{"id":"cdl.nceas","title":"National Center for Ecological
+        Analysis and Synthesis (NCEAS)","count":5702},{"id":"inist.ifremer","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","count":5250},{"id":"snd.snd","title":"Swedish
+        National Data Service","count":4050}],"relation_types":[{"id":"is_referenced_by","title":"Is
+        referenced by","count":2562761},{"id":"references","title":"References","count":2562699},{"id":"is_supplemented_by","title":"Is
+        supplemented by","count":489167},{"id":"is_supplement_to","title":"Is supplement
+        to","count":489161},{"id":"has_part","title":"Has part","count":281339},{"id":"is_part_of","title":"Is
+        part of","count":279889},{"id":"continues","title":"Continues","count":157757},{"id":"is_continued_by","title":"Is
+        continued by","count":157753},{"id":"is_identical_to","title":"Is identical
+        to","count":149715},{"id":"is_new_version_of","title":"Is new version of","count":101297},{"id":"is_previous_version_of","title":"Is
+        previous version of","count":101273},{"id":"is_source_of","title":"Is source
+        of","count":35229},{"id":"is_derived_from","title":"Is derived from","count":34743},{"id":"is_original_form_of","title":"Is
+        original form of","count":3546},{"id":"is_variant_form_of","title":"Is variant
+        form of","count":2996}],"sources":[{"id":"datacite_related","title":"DataCite
+        (RelatedIdentifier)","count":6296736},{"id":"datacite_crossref","title":"DataCite
+        (Crossref)","count":1117918},{"id":"datacite_github","title":"DataCite (Github)","count":4207},{"id":"github","title":"Github","count":386},{"id":"europe_pmc_fulltext","title":"Europe
+        PMC (Fulltext)","count":42},{"id":"datacite_orcid","title":"DataCite (ORCID)","count":6},{"id":"mendeley","title":"Mendeley","count":2}]},"relations":[{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V222","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
         ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T14:16:16Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V222","results":{},"timestamp":"2016-09-26T01:00:00Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V222","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Early
+        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T14:16:16Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V222","results":[],"timestamp":"2016-09-26T01:00:00Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V222","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Early
         ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2014-12-26T11:43:26Z","DOI":"10.6084/M9.FIGSHARE.1279394","work_type_id":"graphic","results":{},"implicit":true,"timestamp":"2016-09-26T01:00:00Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rodea-Palomares","given":"Ismael","ORCID":"http://orcid.org/0000-0002-4630-7345"},{"family":"Gonzalez-Pleiter","given":"Miguel"},{"family":"Gonzalo","given":"Soledad"},{"family":"Rosal","given":"Roberto"},{"family":"Leganes","given":"Francisco"},{"family":"Sabater","given":"Sergi"},{"family":"Casellas","given":"Maria"},{"family":"Muñoz-Carpena","given":"Rafael"},{"family":"Fernández-Piñas","given":"Francisca"}],"title":"GSA_QHTS_PPCPs_Sci_Adv_2016","published":"2016","issued":"2016-09-07T20:49:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.2060766.V1","work_type_id":"dataset","results":{},"timestamp":"2016-09-25T06:22:30Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[{"family":"Rodea-Palomares","given":"Ismael","ORCID":"http://orcid.org/0000-0002-4630-7345"},{"family":"Gonzalez-Pleiter","given":"Miguel"},{"family":"Gonzalo","given":"Soledad"},{"family":"Rosal","given":"Roberto"},{"family":"Leganes","given":"Francisco"},{"family":"Sabater","given":"Sergi"},{"family":"Casellas","given":"Maria"},{"family":"Muñoz-Carpena","given":"Rafael"},{"family":"Fernández-Piñas","given":"Francisca"}],"title":"Datasets_Scripts_Hidden
+        IgM reflecting developmental malignancy.","published":"2016","issued":"2014-12-26T11:43:26Z","DOI":"10.6084/M9.FIGSHARE.1279394","work_type_id":"graphic","results":[],"implicit":true,"timestamp":"2016-09-26T01:00:00Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rodea-Palomares","given":"Ismael","ORCID":"http://orcid.org/0000-0002-4630-7345"},{"family":"Gonzalez-Pleiter","given":"Miguel"},{"family":"Gonzalo","given":"Soledad"},{"family":"Rosal","given":"Roberto"},{"family":"Leganes","given":"Francisco"},{"family":"Sabater","given":"Sergi"},{"family":"Casellas","given":"Maria"},{"family":"Muñoz-Carpena","given":"Rafael"},{"family":"Fernández-Piñas","given":"Francisca"}],"title":"GSA_QHTS_PPCPs_Sci_Adv_2016","published":"2016","issued":"2016-09-07T20:49:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.2060766.V1","work_type_id":"dataset","results":[],"timestamp":"2016-09-25T06:22:30Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.2060766.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[{"family":"Rodea-Palomares","given":"Ismael","ORCID":"http://orcid.org/0000-0002-4630-7345"},{"family":"Gonzalez-Pleiter","given":"Miguel"},{"family":"Gonzalo","given":"Soledad"},{"family":"Rosal","given":"Roberto"},{"family":"Leganes","given":"Francisco"},{"family":"Sabater","given":"Sergi"},{"family":"Casellas","given":"Maria"},{"family":"Muñoz-Carpena","given":"Rafael"},{"family":"Fernández-Piñas","given":"Francisca"}],"title":"Datasets_Scripts_Hidden
         drivers of low-dose pharmaceutical pollutant mixtures revealed by the novel
-        GSA-QHTS screening method","published":"2016","issued":"2016-09-07T20:49:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.2060766","work_type_id":"dataset","results":{},"implicit":true,"timestamp":"2016-09-25T06:22:30Z"},{"subj_id":"http://doi.org/10.20389/HSH/OER","obj_id":"http://doi.org/10.20389/HSH/OER-1","source_id":"datacite_related","publisher_id":"TIB.HANDBUCH","relation_type_id":"has_part","total":1,"author":[],"title":"Leitfaden
-        zu Open Educational Resources für Bibliotheken und Informationseinrichtungen","published":"2016","issued":"2016-07-04T15:21:24Z","DOI":"10.20389/HSH/OER","work_type_id":"report","results":{},"implicit":true,"timestamp":"2016-09-22T15:50:09Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
+        GSA-QHTS screening method","published":"2016","issued":"2016-09-07T20:49:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.2060766","work_type_id":"dataset","results":[],"implicit":true,"timestamp":"2016-09-25T06:22:30Z"},{"subj_id":"http://doi.org/10.20389/HSH/OER","obj_id":"http://doi.org/10.20389/HSH/OER-1","source_id":"datacite_related","publisher_id":"TIB.HANDBUCH","relation_type_id":"has_part","total":1,"author":[],"title":"Leitfaden
+        zu Open Educational Resources für Bibliotheken und Informationseinrichtungen","published":"2016","issued":"2016-07-04T15:21:24Z","DOI":"10.20389/HSH/OER","work_type_id":"report","results":[],"implicit":true,"timestamp":"2016-09-22T15:50:09Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
         series in environmental engineering: Experiment 6 (NUS ChBE, AY 2004/2005
-        Semester 1)","published":"2016","issued":"2016-09-05T08:50:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806445.V1","work_type_id":"report","results":{},"timestamp":"2016-09-22T15:50:07Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Experiment
+        Semester 1)","published":"2016","issued":"2016-09-05T08:50:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806445.V1","work_type_id":"report","results":[],"timestamp":"2016-09-22T15:50:07Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806445.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Experiment
         series in environmental engineering: Experiment 6 (NUS ChBE, AY 2004/2005
-        Semester 1)","published":"2016","issued":"2016-09-05T08:50:32Z","DOI":"10.6084/M9.FIGSHARE.3806445","work_type_id":"report","results":{},"implicit":true,"timestamp":"2016-09-22T15:50:07Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Minor","given":"David","ORCID":"http://orcid.org/0000-0001-7082-6340"}],"title":"trustworthy_repositories_large.pptx","published":"2016","issued":"2016-09-07T15:00:39Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3808530.V1","work_type_id":"motion_picture","results":{},"timestamp":"2016-09-21T21:37:25Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Presentation
-        on trustworthy repositories","published":"2016","issued":"2016-09-07T15:00:41Z","DOI":"10.6084/M9.FIGSHARE.3808530","work_type_id":"motion_picture","results":{},"implicit":true,"timestamp":"2016-09-21T21:37:25Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.841739","obj_id":"http://doi.org/10.1594/PANGAEA.841738","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Age
+        Semester 1)","published":"2016","issued":"2016-09-05T08:50:32Z","DOI":"10.6084/M9.FIGSHARE.3806445","work_type_id":"report","results":[],"implicit":true,"timestamp":"2016-09-22T15:50:07Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Minor","given":"David","ORCID":"http://orcid.org/0000-0001-7082-6340"}],"title":"trustworthy_repositories_large.pptx","published":"2016","issued":"2016-09-07T15:00:39Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3808530.V1","work_type_id":"motion_picture","results":[],"timestamp":"2016-09-21T21:37:25Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3808530.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Presentation
+        on trustworthy repositories","published":"2016","issued":"2016-09-07T15:00:41Z","DOI":"10.6084/M9.FIGSHARE.3808530","work_type_id":"motion_picture","results":[],"implicit":true,"timestamp":"2016-09-21T21:37:25Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.841739","obj_id":"http://doi.org/10.1594/PANGAEA.841738","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Age
         model and stable isotope record of eastern equatorial Pacific sediment cores,
         supplement to: Martinez, Ignacio; Keigwin, Lloyd D; Barrows, Timothy T; Yokoyama,
         Yusuke; Southon, John (2003): La Niña-like conditions in the eastern equatorial
         Pacific and a stronger Choco jet in the northern Andes during the last glaciation.
-        Paleoceanography, 18(2), 1033","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","results":{},"implicit":true,"timestamp":"2016-09-20T05:40:28Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Mertzimekis","given":"Theo
+        Paleoceanography, 18(2), 1033","registration_agency_id":"datacite","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","results":[],"implicit":true,"timestamp":"2016-09-20T05:40:28Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Mertzimekis","given":"Theo
         J.","ORCID":"http://orcid.org/0000-0001-9191-7903"}],"title":"A New Online
-        Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-05T10:48:29Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806268.V2","work_type_id":"graphic","results":{},"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V2","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"A
-        New Online Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-04T16:20:24Z","DOI":"10.6084/M9.FIGSHARE.3806268","work_type_id":"graphic","results":{},"implicit":true,"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:22:45Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V2","results":{},"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V2","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":{},"implicit":true,"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821647","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
+        Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-05T10:48:29Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806268.V2","work_type_id":"graphic","results":[],"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806268.V2","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"A
+        New Online Database of Nuclear Electromagnetic Moments","published":"2016","issued":"2016-09-04T16:20:24Z","DOI":"10.6084/M9.FIGSHARE.3806268","work_type_id":"graphic","results":[],"implicit":true,"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:22:45Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V2","results":[],"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V2","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":[],"implicit":true,"timestamp":"2016-09-19T16:16:46Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821647","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
         conductivity and experiments of sediment beds, supplement to: Bartzke, Gerhard;
         Bryan, Karin R; Pilditch, Conrad A; Huhn, Katrin (2013): On the stabilizing
-        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821665","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
+        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","registration_agency_id":"datacite","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821665","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
         conductivity and experiments of sediment beds, supplement to: Bartzke, Gerhard;
         Bryan, Karin R; Pilditch, Conrad A; Huhn, Katrin (2013): On the stabilizing
-        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821668","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
+        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","registration_agency_id":"datacite","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821668","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
         conductivity and experiments of sediment beds, supplement to: Bartzke, Gerhard;
         Bryan, Karin R; Pilditch, Conrad A; Huhn, Katrin (2013): On the stabilizing
-        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821669","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
+        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","registration_agency_id":"datacite","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.821648","obj_id":"http://doi.org/10.1594/PANGAEA.821669","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Hydraulic
         conductivity and experiments of sediment beds, supplement to: Bartzke, Gerhard;
         Bryan, Karin R; Pilditch, Conrad A; Huhn, Katrin (2013): On the stabilizing
-        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.14469/HPC/1227","obj_id":"http://doi.org/10.14469/HPC/333","source_id":"datacite_related","publisher_id":"BL.IMPERIAL","relation_type_id":"is_part_of","total":1,"author":[],"title":"iron
-        oxalate singlet","published":"2016","issued":"2016-08-09T05:13:01Z","DOI":"10.14469/HPC/1227","work_type_id":"dataset","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821568","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
-        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821663","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
-        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857256","obj_id":"http://doi.org/10.1594/PANGAEA.857258","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"is_part_of","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
+        influence of silt on sand beds. Journal of Sedimentary Research, 83(8), 691-703","registration_agency_id":"datacite","published":"2013","issued":"2014-01-14T03:10:37Z","DOI":"10.1594/PANGAEA.821648","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:29Z"},{"subj_id":"http://doi.org/10.14469/HPC/1227","obj_id":"http://doi.org/10.14469/HPC/333","source_id":"datacite_related","publisher_id":"BL.IMPERIAL","relation_type_id":"is_part_of","total":1,"author":[],"title":"iron
+        oxalate singlet","published":"2016","issued":"2016-08-09T05:13:01Z","DOI":"10.14469/HPC/1227","work_type_id":"dataset","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821568","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
+        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.2110/JSR.2013.57","obj_id":"http://doi.org/10.1594/PANGAEA.821663","source_id":"datacite_crossref","publisher_id":"860","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"On
+        the Stabilizing Influence of Silt On Sand Beds","registration_agency_id":"crossref","published":"2013-07-30","issued":"2013-07-30T00:00:00Z","DOI":"10.2110/jsr.2013.57","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:28Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857256","obj_id":"http://doi.org/10.1594/PANGAEA.857258","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"is_part_of","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
         Diana","ORCID":"http://orcid.org/0000-0003-2359-7340"},{"family":"Fleitmann","given":"Dominik"},{"family":"Cheng","given":"Hai"},{"family":"Tabersky","given":"Daniel"},{"family":"Günther","given":"Detlef"},{"family":"Edwards","given":"R
         Lawrence"}],"title":"Chronology and stable isotopes of Stagamite MF-3 from
-        Schafsloch Cave","published":"2015","issued":"2016-02-19T03:04:36Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857256","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857258","obj_id":"http://doi.org/10.1594/PANGAEA.857256","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Termination
+        Schafsloch Cave","registration_agency_id":"datacite","published":"2015","issued":"2016-02-19T03:04:36Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857256","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857258","obj_id":"http://doi.org/10.1594/PANGAEA.857256","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Termination
         II record, stable isotopes and trace elements of Stagamite MF-3 from Schafsloch
         Cave, supplement to: Häuselmann, Anamaria Diana; Fleitmann, Dominik; Cheng,
         Hai; Tabersky, Daniel; Günther, Detlef; Edwards, R Lawrence (2015): Timing
         and nature of the penultimate deglaciation in a high alpine stalagmite from
-        Switzerland. Quaternary Science Reviews, 126, 264-275","published":"2015","issued":"2016-02-19T03:04:40Z","DOI":"10.1594/PANGAEA.857258","URL":"https://doi.pangaea.de/10.1594/PANGAEA.857258","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857257","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
+        Switzerland. Quaternary Science Reviews, 126, 264-275","registration_agency_id":"datacite","published":"2015","issued":"2016-02-19T03:04:40Z","DOI":"10.1594/PANGAEA.857258","URL":"https://doi.pangaea.de/10.1594/PANGAEA.857258","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.857257","obj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Häuselmann","given":"Anamaria
         Diana","ORCID":"http://orcid.org/0000-0003-2359-7340"},{"family":"Fleitmann","given":"Dominik"},{"family":"Cheng","given":"Hai"},{"family":"Tabersky","given":"Daniel"},{"family":"Günther","given":"Detlef"},{"family":"Edwards","given":"R
         Lawrence"}],"title":"Trace element concent of Stagamite MF-3 from Schafsloch
-        Cave","published":"2015","issued":"2016-02-19T03:04:38Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857257","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","obj_id":"http://doi.org/10.1594/PANGAEA.857257","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Timing
+        Cave","registration_agency_id":"datacite","published":"2015","issued":"2016-02-19T03:04:38Z","container-title":"PANGAEA
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.857257","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1016/J.QUASCIREV.2015.08.026","obj_id":"http://doi.org/10.1594/PANGAEA.857257","source_id":"datacite_crossref","publisher_id":"78","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Timing
         and nature of the penultimate deglaciation in a high alpine stalagmite from
-        Switzerland","registration_agency_id":"crossref","published":"2015-10","issued":"2015-10-01T00:00:00Z","DOI":"10.1016/j.quascirev.2015.08.026","URL":"http://www.sciencedirect.com/science/article/pii/S0277379115300925","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1007/S00300-016-1995-X","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
+        Switzerland","registration_agency_id":"crossref","published":"2015-10","issued":"2015-10-01T00:00:00Z","DOI":"10.1016/j.quascirev.2015.08.026","URL":"http://www.sciencedirect.com/science/article/pii/S0277379115300925","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:27Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1007/S00300-016-1995-X","source_id":"datacite_crossref","publisher_id":"TIB.PANGAEA","relation_type_id":"references","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
         of macrozoobenthic organisms settled in artificial soft sediment at Brandal","published":"2016","issued":"2016-05-12T03:05:50Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1007/S00300-016-1995-X","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_crossref","publisher_id":"297","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Rising
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1007/S00300-016-1995-X","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_crossref","publisher_id":"297","relation_type_id":"is_referenced_by","total":1,"author":[],"title":"Rising
         temperatures and sea-ice-free winters affect the succession of Arctic macrozoobenthic
-        soft-sediment communities (Kongsfjorden, Svalbard)","published":"2016-07-13","issued":"2016-07-13T00:00:00Z","DOI":"10.1007/s00300-016-1995-x","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.841739","obj_id":"http://doi.org/10.1594/PANGAEA.841737","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Age
+        soft-sediment communities (Kongsfjorden, Svalbard)","published":"2016-07-13","issued":"2016-07-13T00:00:00Z","DOI":"10.1007/s00300-016-1995-x","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.841739","obj_id":"http://doi.org/10.1594/PANGAEA.841737","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Age
         model and stable isotope record of eastern equatorial Pacific sediment cores,
         supplement to: Martinez, Ignacio; Keigwin, Lloyd D; Barrows, Timothy T; Yokoyama,
         Yusuke; Southon, John (2003): La Niña-like conditions in the eastern equatorial
         Pacific and a stronger Choco jet in the northern Andes during the last glaciation.
-        Paleoceanography, 18(2), 1033","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1594/PANGAEA.859583","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"is_part_of","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
+        Paleoceanography, 18(2), 1033","registration_agency_id":"datacite","published":"2003","issued":"2015-02-18T03:23:53Z","DOI":"10.1594/PANGAEA.841739","URL":"https://doi.pangaea.de/10.1594/PANGAEA.841739","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859581","obj_id":"http://doi.org/10.1594/PANGAEA.859583","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"is_part_of","total":1,"author":[{"family":"Nowak","given":"Christopher","ORCID":"http://orcid.org/0000-0002-5405-9126"},{"family":"Laudien","given":"Jürgen"},{"family":"Sahade","given":"Ricardo"}],"title":"Counts
         of macrozoobenthic organisms settled in artificial soft sediment at Brandal","published":"2016","issued":"2016-05-12T03:05:50Z","container-title":"PANGAEA
-        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":{},"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859583","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Counts
+        - Data Publisher for Earth & Environmental Science","DOI":"10.1594/PANGAEA.859581","work_type_id":"dataset","results":[],"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1594/PANGAEA.859583","obj_id":"http://doi.org/10.1594/PANGAEA.859581","source_id":"datacite_related","publisher_id":"TIB.PANGAEA","relation_type_id":"has_part","total":1,"author":[],"title":"Counts
         and abundance of macrozoobenthic organisms settled in artificial soft sediment
         at Brandal, Kongsfjorden, Spitsbergen, supplement to: Nowak, Christopher;
         Laudien, Jürgen; Sahade, Ricardo (2016): Rising temperatures and sea ice-free
         winters affect the succession of Arctic macrozoobenthic soft-sediment communities
-        (Kongsfjorden, Svalbard). Polar Biology, in press, 1-17","published":"2016","issued":"2016-05-12T03:05:53Z","DOI":"10.1594/PANGAEA.859583","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1029/2002PA000877","obj_id":"http://doi.org/10.1594/PANGAEA.841739","source_id":"datacite_crossref","publisher_id":"311","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"La
+        (Kongsfjorden, Svalbard). Polar Biology, in press, 1-17","published":"2016","issued":"2016-05-12T03:05:53Z","DOI":"10.1594/PANGAEA.859583","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.1029/2002PA000877","obj_id":"http://doi.org/10.1594/PANGAEA.841739","source_id":"datacite_crossref","publisher_id":"311","relation_type_id":"is_supplemented_by","total":1,"author":[],"title":"La
         Niña-like conditions in the eastern equatorial Pacific and a stronger Choco
-        jet in the northern Andes during the last glaciation","registration_agency_id":"crossref","published":"2003-05-14","issued":"2003-05-14T00:00:00Z","DOI":"10.1029/2002pa000877","work_type_id":"article-journal","results":{},"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Angelo","given":"Anton","ORCID":"http://orcid.org/0000-0002-2265-1299"},{"family":"Walsh","given":"Lucy-Jane"},{"family":"Thompson","given":"Christopher"}],"title":"Scopus
-        IR aggregated data","published":"2016","issued":"2016-09-05T00:17:34Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806307.V2","work_type_id":"dataset","results":{},"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307.V2","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Scopus
-        IR aggregated data","published":"2016","issued":"2016-09-05T00:12:57Z","DOI":"10.6084/M9.FIGSHARE.3806307","work_type_id":"dataset","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Moore","given":"Jason","ORCID":"http://orcid.org/0000-0002-8698-6143"},{"family":"Hubbard","given":"Mont"},{"family":"Hess","given":"Ronald
-        A."}],"title":"An Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806310.V1","work_type_id":"report","results":{},"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"An
-        Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","DOI":"10.6084/M9.FIGSHARE.3806310","work_type_id":"report","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Powell","given":"Nick","ORCID":"http://orcid.org/0000-0003-4120-0642"},{"family":"Yu","given":"Yichao"},{"family":"Richardson","given":"Simon"}],"title":"CABI
-        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3394783.V1","work_type_id":"dataset","results":{},"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"CABI
-        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:30Z","DOI":"10.6084/M9.FIGSHARE.3394783","work_type_id":"dataset","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Powell","given":"Nick","ORCID":"http://orcid.org/0000-0003-4120-0642"}],"title":"Tc1
-        and WT brains cohort 2 (C2)","published":"2016","issued":"2016-09-05T21:47:53Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3394786.V1","results":{},"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Tc1
-        and WT brains cohort 2 (C2)","published":"2016","issued":"2016-09-05T21:47:52Z","DOI":"10.6084/M9.FIGSHARE.3394786","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V4","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:46:50Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V4","results":{},"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V4","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V221","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
+        jet in the northern Andes during the last glaciation","registration_agency_id":"crossref","published":"2003-05-14","issued":"2003-05-14T00:00:00Z","DOI":"10.1029/2002pa000877","work_type_id":"article-journal","results":[],"implicit":true,"timestamp":"2016-09-18T06:22:26Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307.V2","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Angelo","given":"Anton","ORCID":"http://orcid.org/0000-0002-2265-1299"},{"family":"Walsh","given":"Lucy-Jane"},{"family":"Thompson","given":"Christopher"}],"title":"Scopus
+        IR aggregated data","published":"2016","issued":"2016-09-05T00:17:34Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806307.V2","work_type_id":"dataset","results":[],"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806307.V2","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Scopus
+        IR aggregated data","published":"2016","issued":"2016-09-05T00:12:57Z","DOI":"10.6084/M9.FIGSHARE.3806307","work_type_id":"dataset","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Moore","given":"Jason","ORCID":"http://orcid.org/0000-0002-8698-6143"},{"family":"Hubbard","given":"Mont"},{"family":"Hess","given":"Ronald
+        A."}],"title":"An Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806310.V1","work_type_id":"report","results":[],"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806310.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"An
+        Optimal Handling Bicycle","published":"2016","issued":"2016-09-05T00:20:26Z","DOI":"10.6084/M9.FIGSHARE.3806310","work_type_id":"report","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:47Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Powell","given":"Nick","ORCID":"http://orcid.org/0000-0003-4120-0642"},{"family":"Yu","given":"Yichao"},{"family":"Richardson","given":"Simon"}],"title":"CABI
+        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:31Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3394783.V1","work_type_id":"dataset","results":[],"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394783.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"CABI
+        Mouse Brain Holder (3 brain)","published":"2016","issued":"2016-09-05T20:14:30Z","DOI":"10.6084/M9.FIGSHARE.3394783","work_type_id":"dataset","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Powell","given":"Nick","ORCID":"http://orcid.org/0000-0003-4120-0642"}],"title":"Tc1
+        and WT brains cohort 2 (C2)","published":"2016","issued":"2016-09-05T21:47:53Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3394786.V1","results":[],"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3394786.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"Tc1
+        and WT brains cohort 2 (C2)","published":"2016","issued":"2016-09-05T21:47:52Z","DOI":"10.6084/M9.FIGSHARE.3394786","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:46Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V4","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:46:50Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V4","results":[],"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V4","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V221","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Arend","given":"Peter","ORCID":"http://orcid.org/0000-0002-4000-4167"}],"title":"Early
         ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T13:58:46Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V221","results":{},"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V221","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Early
+        IgM reflecting developmental malignancy.","published":"2016","issued":"2016-09-05T13:58:46Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.1279394.V221","results":[],"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.1279394.V221","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"Early
         ovariectomy reveals the germline encoding of the “natural” mammalian anti-A-reactive
-        IgM reflecting developmental malignancy.","published":"2016","issued":"2014-12-26T11:43:26Z","DOI":"10.6084/M9.FIGSHARE.1279394","work_type_id":"graphic","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V3","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:23:07Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V3","results":{},"timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V3","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V1","results":{},"timestamp":"2016-09-17T19:07:43Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
-        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:43Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
+        IgM reflecting developmental malignancy.","published":"2016","issued":"2014-12-26T11:43:26Z","DOI":"10.6084/M9.FIGSHARE.1279394","work_type_id":"graphic","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:45Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V3","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T11:23:07Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V3","results":[],"timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V3","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:44Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"Rousselet","given":"Guillaume","ORCID":"http://orcid.org/0000-0003-0006-8729"}],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806487.V1","results":[],"timestamp":"2016-09-17T19:07:43Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806487.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_new_version_of","total":1,"author":[],"title":"A
+        few simple steps to improve the description of group results in neuroscience","published":"2016","issued":"2016-09-05T10:45:27Z","DOI":"10.6084/M9.FIGSHARE.3806487","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:43Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
         series in environmental engineering: Experiment 9 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:36:22Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466.V1","work_type_id":"report","results":{},"timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466.V1","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
+        Semester 1)","published":"2016","issued":"2016-09-05T09:36:22Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466.V1","work_type_id":"report","results":[],"timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3806466.V1","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_identical_to","total":1,"author":[{"family":"Ng","given":"Wenfa","ORCID":"http://orcid.org/0000-0001-7629-2140"}],"title":"Experiment
         series in environmental engineering: Experiment 9 (NUS ChBE, AY 2004/2005,
-        Semester 1)","published":"2016","issued":"2016-09-05T09:36:24Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466","work_type_id":"report","results":{},"implicit":true,"timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562","source_id":"datacite_related","publisher_id":"CDL.DIGSCI","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"kässi"},{"family":"Hadley","given":"Martin","ORCID":"http://orcid.org/0000-0002-3039-6849"},{"family":"Lehdonvirta","given":"Vili"}],"title":"Online
-        Labour Index: Measuring the Online Gig Economy for Policy and Research","published":"2016","issued":"2016-09-05T09:17:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3761562.V1","results":{},"timestamp":"2016-09-17T19:07:41Z"}]}'
+        Semester 1)","published":"2016","issued":"2016-09-05T09:36:24Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3806466","work_type_id":"report","results":[],"implicit":true,"timestamp":"2016-09-17T19:07:42Z"},{"subj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562.V1","obj_id":"http://doi.org/10.6084/M9.FIGSHARE.3761562","source_id":"datacite_related","publisher_id":"FIGSHARE.ARS","relation_type_id":"is_previous_version_of","total":1,"author":[{"family":"kässi"},{"family":"Hadley","given":"Martin","ORCID":"http://orcid.org/0000-0002-3039-6849"},{"family":"Lehdonvirta","given":"Vili"}],"title":"Online
+        Labour Index: Measuring the Online Gig Economy for Policy and Research","published":"2016","issued":"2016-09-05T09:17:32Z","container-title":"Figshare","DOI":"10.6084/M9.FIGSHARE.3761562.V1","results":[],"timestamp":"2016-09-17T19:07:41Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:22:11 GMT
+  recorded_at: Sat, 29 Oct 2016 05:41:40 GMT
 - request:
     method: get
-    uri: https://eventdata.datacite.org/api/sources
+    uri: http://eventdata.labs.datacite.org/api/publishers?ids=dk.gbif,bl.ccdc,gesis.die,tib.pangaea,cdl.digsci,cdl.pisco,ands.centre72,cdl.lternet,cdl.dryad,cdl.r2-r,delft.data4-tu,cdl.ucdirl,cdl.nceas,inist.ifremer,snd.snd&page=1&per_page=25
     body:
       encoding: US-ASCII
       string: ''
@@ -167,9 +193,9 @@ http_interactions:
       message: ''
     headers:
       Server:
-      - nginx/1.11.3
+      - nginx/1.11.5
       Date:
-      - Tue, 04 Oct 2016 22:22:11 GMT
+      - Sat, 29 Oct 2016 05:41:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -187,203 +213,35 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 9d5ca5fc-c679-495b-beb6-26d7ab45d5ab
+      - 03548598-1b44-4f1e-bfba-b60461ceb893
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Etag:
-      - W/"f30871765f14db30e6470b920fd27b42"
+      - W/"f9eee899310d8e83dde5ea6796a91610"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.020980'
+      - '0.029524'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
       - Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"source-list","message-version":"v7","total":15,"groups":{"relations":6,"contributions":4,"publishers":2,"results":3}},"sources":[{"id":"crossref_datacite","title":"Crossref
-        (DataCite)","group_id":"relations","description":"Import works linked to a
-        DataCite DOI from Crossref.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_crossref","title":"DataCite
-        (Crossref)","group_id":"relations","description":"Import works with Crossref
-        DOIs as relatedIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:56:33Z","work_count":19893,"relation_count":225467,"result_count":74369,"by_day":{"with_results":0,"without_results":0,"not_updated":225412},"by_month":{"with_results":12,"without_results":32,"not_updated":225368}},{"id":"datacite_github","title":"DataCite
-        (Github)","group_id":"relations","description":"Import works with Github relatedIdentifiers
-        via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":960,"relation_count":1756,"result_count":1190,"by_day":{"with_results":0,"without_results":0,"not_updated":444},"by_month":{"with_results":0,"without_results":0,"not_updated":444}},{"id":"datacite_related","title":"DataCite
-        (RelatedIdentifier)","group_id":"relations","description":"Import works with
-        relatedIdentifiers via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T15:15:43Z","work_count":283372,"relation_count":420693,"result_count":2964592,"by_day":{"with_results":0,"without_results":0,"not_updated":420634},"by_month":{"with_results":190,"without_results":20,"not_updated":420424}},{"id":"europe_pmc_fulltext","title":"Europe
-        PMC (Fulltext)","group_id":"relations","description":"Europe PubMed Central
-        (Europe PMC) Database is an archive of life sciences journal data.","state":"active","timestamp":"2016-10-04T16:28:13Z","work_count":21,"relation_count":23,"result_count":21,"by_day":{"with_results":0,"without_results":0,"not_updated":23},"by_month":{"with_results":0,"without_results":0,"not_updated":23}},{"id":"plos_fulltext","title":"PLOS
-        (Fulltext)","group_id":"relations","description":"Search the PLOS corpus for
-        citations.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_search_link","title":"DataCite
-        (ORCID Search and Link)","group_id":"contributions","description":"Import
-        claimed to ORCID via the DataCite Profiles API.","state":"active","timestamp":"2016-10-04T16:28:14Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_orcid","title":"DataCite
-        (ORCID)","group_id":"contributions","description":"Import works with ORCID
-        nameIdentifier via the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":1,"relation_count":3,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}},{"id":"github_contributor","title":"Github
-        (Contributor)","group_id":"contributions","description":"Import contributors
-        with works via the Github API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"orcid","title":"ORCID","group_id":"contributions","description":"Import
-        works via the ORCID API.","state":"active","timestamp":"2016-10-04T21:08:19Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"crossref_publisher","title":"Crossref
-        (Publisher)","group_id":"publishers","description":"Import publishers via
-        the Crossref REST API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"datacite_datacentre","title":"DataCite
-        (Datacentre)","group_id":"publishers","description":"Import data centres via
-        the DataCite Solr API.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"facebook","title":"Facebook","group_id":"results","description":"Facebook
-        is the largest social network.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":0,"relation_count":0,"result_count":0,"by_day":{"with_results":0,"without_results":0,"not_updated":0},"by_month":{"with_results":0,"without_results":0,"not_updated":0}},{"id":"github","title":"Github","group_id":"results","description":"GitHub
-        is a web-based Git repository hosting service.","state":"active","timestamp":"2016-10-04T19:37:46Z","work_count":193,"relation_count":195,"result_count":2603,"by_day":{"with_results":0,"without_results":0,"not_updated":195},"by_month":{"with_results":0,"without_results":0,"not_updated":195}},{"id":"mendeley","title":"Mendeley","group_id":"results","description":"Mendeley
-        is a reference manager and social bookmarking tool.","state":"active","timestamp":"2016-10-04T21:08:20Z","work_count":1,"relation_count":1,"result_count":1,"by_day":{"with_results":0,"without_results":0,"not_updated":1},"by_month":{"with_results":0,"without_results":0,"not_updated":1}}]}'
+      string: '{"meta":{"status":"ok","message-type":"publisher-list","message-version":"v7","total":13,"total_pages":1,"page":1,"registration_agencies":[{"id":"datacite","title":"DataCite","count":13}],"members":[{"id":"gesis","title":"GESIS","count":1},{"id":"cdl","title":"CDL","count":6},{"id":"dk","title":"DK","count":1},{"id":"inist","title":"INIST","count":1},{"id":"tib","title":"TIB","count":1},{"id":"ands","title":"ANDS","count":1},{"id":"snd","title":"SND","count":1},{"id":"bl","title":"BL","count":1}]},"publishers":[{"id":"GESIS.DIE","title":"Deutsches
+        Institut für Erwachsenenbildung","prefixes":[],"registration_agency_id":"datacite","member_id":"GESIS","timestamp":"2016-10-29T05:12:37Z"},{"id":"CDL.DIGSCI","title":"Digital
+        Science","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:07:49Z"},{"id":"CDL.DRYAD","title":"Dryad","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:13:02Z"},{"id":"DK.GBIF","title":"Global
+        Biodiversity Information Facility","prefixes":[],"registration_agency_id":"datacite","member_id":"DK","timestamp":"2016-10-29T05:06:11Z"},{"id":"INIST.IFREMER","title":"Institut
+        Français de Recherche pour l''Exploitation de la Mer","prefixes":["10.3192"],"registration_agency_id":"datacite","member_id":"INIST","timestamp":"2016-10-29T05:23:48Z"},{"id":"CDL.LTERNET","title":"Long
+        Term Ecological Research (LTER) Network","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:07:04Z"},{"id":"CDL.NCEAS","title":"National
+        Center for Ecological Analysis and Synthesis (NCEAS)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:25:51Z"},{"id":"TIB.PANGAEA","title":"PANGAEA
+        - Publishing Network for Geoscientific and Environmental Data","prefixes":[],"registration_agency_id":"datacite","member_id":"TIB","timestamp":"2016-10-29T05:07:18Z"},{"id":"ANDS.CENTRE72","title":"PARADISEC","prefixes":[],"registration_agency_id":"datacite","member_id":"ANDS","timestamp":"2016-10-29T05:27:16Z"},{"id":"CDL.PISCO","title":"Partnership
+        for Interdisciplinary Studies of Coastal Oceans (PISCO)","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:07:18Z"},{"id":"SND.SND","title":"Swedish
+        National Data Service","prefixes":[],"registration_agency_id":"datacite","member_id":"SND","timestamp":"2016-10-29T05:32:20Z"},{"id":"BL.CCDC","title":"The
+        Cambridge Crystallographic Data Centre","prefixes":[],"registration_agency_id":"datacite","member_id":"BL","timestamp":"2016-10-29T05:32:28Z"},{"id":"CDL.UCDIRL","title":"University
+        College Dublin","prefixes":[],"registration_agency_id":"datacite","member_id":"CDL","timestamp":"2016-10-29T05:08:16Z"}]}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:22:11 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/groups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 22:22:11 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - c59685a7-390b-4d7e-92dd-ea7d6324ebd5
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"bdb91c439c4c90224189c7eb36197501"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.028585'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"group-list","message-version":"v7","total":13},"groups":[{"id":"cited","title":"Cited","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"contributions","title":"Contributions","sources":["datacite_search_link","datacite_orcid","github_contributor","orcid"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"deposits","title":"Deposits","sources":[],"timestamp":"2016-04-27T19:31:51Z"},{"id":"discussed","title":"Discussed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"events","title":"Events","sources":[],"timestamp":"2016-03-28T15:25:06Z"},{"id":"other","title":"Other","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"publishers","title":"Publishers","sources":["crossref_publisher","datacite_datacentre"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"recommended","title":"Recommended","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"relations","title":"Relations","sources":["crossref_datacite","datacite_crossref","datacite_github","datacite_related","europe_pmc_fulltext","plos_fulltext"],"timestamp":"2016-03-28T15:25:06Z"},{"id":"results","title":"Results","sources":["facebook","github","mendeley"],"timestamp":"2016-04-07T20:46:44Z"},{"id":"saved","title":"Saved","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"viewed","title":"Viewed","sources":[],"timestamp":"2016-06-27T21:18:29Z"},{"id":"works","title":"Works","sources":[],"timestamp":"2016-03-28T15:25:06Z"}]}'
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:22:11 GMT
-- request:
-    method: get
-    uri: https://eventdata.datacite.org/api/relation_types
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 22:22:11 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - eb978e98-b4d4-4062-a604-dad176f102ba
-      Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Etag:
-      - W/"ddd1a36f9fddddf9e5cc51894c8d4a2a"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.024544'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.0.30
-    body:
-      encoding: UTF-8
-      string: '{"meta":{"status":"ok","message-type":"relation_type-list","message-version":"v7","total":39},"relation_types":[{"id":"bookmarks","title":"Bookmarks","inverse_title":"Is
-        bookmarked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"cites","title":"Cites","inverse_title":"Is
-        cited by","timestamp":"2016-03-21T15:05:03Z"},{"id":"compiles","title":"Compiles","inverse_title":"Is
-        compiled by","timestamp":"2016-03-21T15:05:03Z"},{"id":"continues","title":"Continues","inverse_title":"Is
-        continued by","timestamp":"2016-03-21T15:05:03Z"},{"id":"corrects","title":"Corrects","inverse_title":"Is
-        corrected by","timestamp":"2016-03-21T15:05:04Z"},{"id":"discusses","title":"Discusses","inverse_title":"Is
-        discussed by","timestamp":"2016-03-21T15:05:04Z"},{"id":"documents","title":"Documents","inverse_title":"Is
-        documented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"downloads","title":"Downloads","inverse_title":"Is
-        downloaded by","timestamp":"2016-03-21T15:05:04Z"},{"id":"has_metadata","title":"Has
-        metadata","inverse_title":"Is metadata for","timestamp":"2016-03-21T15:05:03Z"},{"id":"has_part","title":"Has
-        part","inverse_title":"Is part of","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_bookmarked_by","title":"Is
-        Bookmarked by","inverse_title":"Bookmarks","timestamp":"2016-04-08T12:43:04Z"},{"id":"is_cited_by","title":"Is
-        cited by","inverse_title":"Cites","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_compiled_by","title":"Is
-        compiled by","inverse_title":"Compiles","timestamp":"2016-03-22T17:41:55Z"},{"id":"is_continued_by","title":"Is
-        continued by","inverse_title":"Continues","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_corrected_by","title":"Is
-        corrected by","inverse_title":"Corrects","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_derived_from","title":"Is
-        derived from","inverse_title":"Is source of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_discussed_by","title":"Is
-        discussed by","inverse_title":"Discusses","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_documented_by","title":"Is
-        documented by","inverse_title":"Documents","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_downloaded_by","title":"Is
-        downloaded by","inverse_title":"Downloads","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_identical_to","title":"Is
-        identical to","inverse_title":"Is identical to","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_liked_by","title":"Is
-        Liked by","inverse_title":"Likes","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_metadata_for","title":"Is
-        metadata for","inverse_title":"Has metadata","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_new_version_of","title":"Is
-        new version of","inverse_title":"Is previous version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_original_form_of","title":"Is
-        original form of","inverse_title":"Is variant form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_part_of","title":"Is
-        part of","inverse_title":"Has part","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_previous_version_of","title":"Is
-        previous version of","inverse_title":"Is new version of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_recommended_by","title":"Is
-        recommended by","inverse_title":"Recommends","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_referenced_by","title":"Is
-        referenced by","inverse_title":"References","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_reviewed_by","title":"Is
-        reviewed by","inverse_title":"reviews","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_source_of","title":"Is
-        source of","inverse_title":"Is derived from","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_supplement_to","title":"Is
-        supplement to","inverse_title":"Is supplemented by","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_supplemented_by","title":"Is
-        supplemented by","inverse_title":"Is supplement to","timestamp":"2016-03-21T15:05:03Z"},{"id":"is_variant_form_of","title":"Is
-        variant form of","inverse_title":"Is original form of","timestamp":"2016-03-21T15:05:04Z"},{"id":"is_viewed_by","title":"Is
-        viewed by","inverse_title":"Views","timestamp":"2016-03-21T15:05:04Z"},{"id":"likes","title":"Likes","inverse_title":"Is
-        Liked by","timestamp":"2016-03-21T15:05:04Z"},{"id":"recommends","title":"Recommends","inverse_title":"Is
-        recommended by","timestamp":"2016-03-21T15:05:04Z"},{"id":"references","title":"References","inverse_title":"Is
-        referenced by","timestamp":"2016-03-21T15:05:03Z"},{"id":"reviews","title":"Reviews","inverse_title":"Is
-        reviewed by","timestamp":"2016-03-21T15:05:03Z"},{"id":"views","title":"Views","inverse_title":"Is
-        viewed by","timestamp":"2016-03-21T15:05:04Z"}]}'
-    http_version: 
-  recorded_at: Tue, 04 Oct 2016 22:22:11 GMT
+  recorded_at: Sat, 29 Oct 2016 05:41:40 GMT
 recorded_with: VCR 2.9.3

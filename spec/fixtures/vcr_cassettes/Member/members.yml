@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://profiles.datacite.org/api/members
+    uri: http://profiles/api/members
     body:
       encoding: US-ASCII
       string: ''
@@ -16,10 +16,6 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Server:
-      - nginx/1.11.3
-      Date:
-      - Tue, 04 Oct 2016 19:58:43 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -37,21 +33,25 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 05204aac-e883-4c72-89c7-a818b66c081a
+      - e53593b7-80a5-4e4e-b04a-37bc4df3eb9f
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - POST, GET, PUT, DELETE, OPTIONS
       Etag:
-      - W/"5d6e5e75fe587a4148f6bedb0fd84566"
+      - W/"e821938f29918a97c6e28cb58c3b6f85"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.060257'
+      - '0.309529'
       X-Content-Type-Options:
       - nosniff
+      Date:
+      - Fri, 21 Oct 2016 17:27:30 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.30
+      Server:
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"ands","type":"members","attributes":{"title":"Australian
@@ -77,7 +77,7 @@ http_interactions:
         to our discussion list: \u003ca href=\"https://groups.google.com/forum/?hl=en#!forum/ands-general\"\u003eANDS
         Google Group\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eSubscribe to our
         e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","region":"Asia
-        Pacific","country":"Australia","year":2010,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
+        Pacific","country":"Australia","year":2010,"logo-url":"https://localhost:8010/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
         3 9902 0585","updated":"2016-09-09T06:45:50.000Z"}},{"id":"bgi","type":"members","attributes":{"title":"Beijing
         Genomics Institute","description":"\u003cp\u003eBGI was founded in 1999 with
         the vision of using genomics to benefit mankind and has since become the largest
@@ -97,7 +97,7 @@ http_interactions:
         enabling medical providers and patients worldwide to realize the promise of
         genomics-based diagnostics and personalized healthcare. BGI’s services and
         solutions are available in more than 50 countries around the world.\u003c/p\u003e\n","member-type":"non-allocating","region":"Asia
-        Pacific","country":"China","year":2012,"logo-url":"https://assets.datacite.org/images/members/bgi.png","email":null,"website":"http://www.genomics.cn","phone":null,"updated":"2016-09-01T17:17:41.000Z"}},{"id":"bibsys","type":"members","attributes":{"title":"BIBSYS","description":"\u003cp\u003eBIBSYS
+        Pacific","country":"China","year":2012,"logo-url":"https://localhost:8010/images/members/bgi.png","email":null,"website":"http://www.genomics.cn","phone":null,"updated":"2016-09-01T17:17:41.000Z"}},{"id":"bibsys","type":"members","attributes":{"title":"BIBSYS","description":"\u003cp\u003eBIBSYS
         is an administrative agency set up and organised by the Ministry of Education
         and Research in Norway. We are a service provider, focusing on the exchange,
         storage and retrieval of data pertaining to research, teaching and learning.
@@ -106,7 +106,7 @@ http_interactions:
         students and others an easy access to library resources by providing a unified
         search service and other library services. We also deliver integrated products
         for the internal operation for research and special libraries as well as open
-        educational resources and to some degree research related data.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Norway","year":2015,"logo-url":"https://assets.datacite.org/images/members/BIBSYS.png","email":"firmapost@bibsys.no","website":"http://www.bibsys.no/en","phone":"+47
+        educational resources and to some degree research related data.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Norway","year":2015,"logo-url":"https://localhost:8010/images/members/BIBSYS.png","email":"firmapost@bibsys.no","website":"http://www.bibsys.no/en","phone":"+47
         958 24 000","updated":"2016-08-30T12:06:14.000Z"}},{"id":"bl","type":"members","attributes":{"title":"British
         Library","description":"\u003cp\u003eThe British Library is the national library
         of the United Kingdom and a founding member of DataCite. As DataCite’s only
@@ -116,7 +116,7 @@ http_interactions:
         who manage and archive data, from government bodies to charities, universities
         and publishers. If you manage data in the UK and would like to find out more
         about DataCite, please contact us directly.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"United
-        Kingdom","year":2009,"logo-url":"https://assets.datacite.org/images/members/BL.png","email":"datasets@bl.uk","website":"http://www.bl.uk/datasets","phone":"+44
+        Kingdom","year":2009,"logo-url":"https://localhost:8010/images/members/BL.png","email":"datasets@bl.uk","website":"http://www.bl.uk/datasets","phone":"+44
         (0) 207 412 7167","updated":"2016-07-31T22:53:09.000Z"}},{"id":"cdl","type":"members","attributes":{"title":"California
         Digital Library","description":"\u003cp\u003eCalifornia Digital Library (CDL)
         handles scholarly information at every stage of its life. CDL provides technology
@@ -126,7 +126,7 @@ http_interactions:
         offers DataCite DOIs and other identifiers via the EZID service, a service
         CDL developed to help educational, non-profit, governmental and commercial
         clients create and manage globally unique identifiers for data and other sources.\u003c/p\u003e\n","member-type":"allocating","region":"Americas","country":"United
-        States","year":2009,"logo-url":"https://assets.datacite.org/images/members/CDL.png","email":"ezid@ucop.edu","website":"http://ezid.cdlib.org","phone":"1-510-987-0469","updated":"2016-09-09T17:46:16.000Z"}},{"id":"crui","type":"members","attributes":{"title":"Conferenza
+        States","year":2009,"logo-url":"https://localhost:8010/images/members/CDL.png","email":"ezid@ucop.edu","website":"http://ezid.cdlib.org","phone":"1-510-987-0469","updated":"2016-09-09T17:46:16.000Z"}},{"id":"crui","type":"members","attributes":{"title":"Conferenza
         dei Rettori delle Università Italiane","description":"\u003cp\u003eThe CRUI
         is the association of the Italian state and private universities.\u003c/p\u003e\n\n\u003cp\u003eEstablished
         in 1963 as a private association of Rectors, the Conference of Italian University
@@ -137,7 +137,7 @@ http_interactions:
         managerial and executive functions by the CRUI Foundation, which is entrusted
         with developing projects and services in conformity with the strategies of
         the Conference of Italian University Rectors.\u003c/p\u003e\n\n\u003cp\u003eCRUI
-        is member of DataCite and is its DOI allocation agent for Italy.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Italy","year":2011,"logo-url":"https://assets.datacite.org/images/members/CRUI.png","email":"rossi@fondazionecrui.it","website":"http://www.crui.it/HomePage.aspx?ref=2120","phone":"+39
+        is member of DataCite and is its DOI allocation agent for Italy.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Italy","year":2011,"logo-url":"https://localhost:8010/images/members/CRUI.png","email":"rossi@fondazionecrui.it","website":"http://www.crui.it/HomePage.aspx?ref=2120","phone":"+39
         06 684411","updated":"2016-07-31T22:55:30.000Z"}},{"id":"zbw","type":"members","attributes":{"title":"Deutsche
         Zentralbibliothek für Wirtschaftswissenschaften am Leibniz-Informationszentrum
         Wirtschaft","description":"\u003cp\u003eThe German National Library of Economics
@@ -162,7 +162,7 @@ http_interactions:
         services for German research data centres in the fields of social sciences
         and economics. Besides DOI name registration we operate a comprehensive metadata
         schema (compatible to DataCite MDS) to ensure proper citation, and in future
-        peer review, of registered social and economic data.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://assets.datacite.org/images/members/ZBW.png","email":"r.toepfer@zbw.eu","website":"http://www.zbw.eu","phone":"+49
+        peer review, of registered social and economic data.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://localhost:8010/images/members/ZBW.png","email":"r.toepfer@zbw.eu","website":"http://www.zbw.eu","phone":"+49
         40 428 34 449","updated":"2016-07-31T21:26:56.000Z"}},{"id":"dcc","type":"members","attributes":{"title":"Digital
         Curation Center","description":"\u003cp\u003eFunded by JISC, the Digital Curation
         Centre (DCC) is the UK\u0026#39;s leading hub of expertise in curating digital
@@ -177,7 +177,7 @@ http_interactions:
         curation issues at a variety of levels: from high-level briefing papers, through
         practical \u0026#39;how-to\u0026#39; guides, to our in-depth Curation Reference
         Manual.\u003c/p\u003e\n","member-type":"non-allocating","region":"EMEA","country":"United
-        Kingdom","year":2010,"logo-url":"https://assets.datacite.org/images/members/DCC.png","email":"info@dcc.ac.uk","website":"http://www.dcc.ac.uk/","phone":"+44
+        Kingdom","year":2010,"logo-url":"https://localhost:8010/images/members/DCC.png","email":"info@dcc.ac.uk","website":"http://www.dcc.ac.uk/","phone":"+44
         131 651 1239","updated":"2016-07-31T21:27:36.000Z"}},{"id":"dk","type":"members","attributes":{"title":"DTU
         (Technical Information Center of Denmark)","description":"\u003cp\u003eThe
         Technical Information Center of Denmark is the library of the Technical University
@@ -185,7 +185,7 @@ http_interactions:
         and the natural sciences and the library offers search in the metadata of
         170 million articles, books, e-books and journals. DTU Library is the Danish
         allocator for DataCite and offers DOI registration for universities and other
-        research institutions.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Denmark","year":2009,"logo-url":"https://assets.datacite.org/images/members/DK.png","email":"datacite@dtu.dk","website":"http://www.datacite.dtu.dk","phone":"+45
+        research institutions.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Denmark","year":2009,"logo-url":"https://localhost:8010/images/members/DK.png","email":"datacite@dtu.dk","website":"http://www.datacite.dtu.dk","phone":"+45
         45 25 72 50","updated":"2016-09-07T09:05:46.000Z"}},{"id":"ethz","type":"members","attributes":{"title":"ETH
         Zurich","description":"\u003cp\u003eThe Swiss Federal Institute of Technology
         (ETH) Zurich is one of the leading international universities for technology
@@ -202,7 +202,7 @@ http_interactions:
         from the field of higher education and research in Switzerland are authorised
         to register DOIs. Digital objects can be primary data (research data) or secondary
         data (e.g. documents in an Institutional Repository). Before registration,
-        an agreement is made with the ETH Zurich DOI desk.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2010,"logo-url":"https://assets.datacite.org/images/members/ETHZ.png","email":"doi@library.ethz.ch","website":"http://www.doi.ethz.ch","phone":"+41
+        an agreement is made with the ETH Zurich DOI desk.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2010,"logo-url":"https://localhost:8010/images/members/ETHZ.png","email":"doi@library.ethz.ch","website":"http://www.doi.ethz.ch","phone":"+41
         44 632 21 35","updated":"2016-08-03T15:46:34.000Z"}},{"id":"cern","type":"members","attributes":{"title":"European
         Organization for Nuclear Research","description":"\u003cp\u003eCERN, the European
         Organization for Nuclear Research, is the world\u0026#39;s largest particle
@@ -221,7 +221,7 @@ http_interactions:
         level and analyzable data and software from the LHC experiments.\u003c/p\u003e\n\n\u003cp\u003eFurthermore,
         CERN is also providing DOIs to ZENODO, a multidisciplinary data repository
         for the “long tail” of research results. It allows researchers to share and
-        preserve their output independent of size, type of material or discipline.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2014,"logo-url":"https://assets.datacite.org/images/members/CERN.png","email":"doi-service@cern.ch","website":"http://doi.web.cern.ch/","phone":null,"updated":"2016-07-31T21:30:25.000Z"}},{"id":"figshare","type":"members","attributes":{"title":"figshare","description":"\u003cp\u003efigshare
+        preserve their output independent of size, type of material or discipline.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2014,"logo-url":"https://localhost:8010/images/members/CERN.png","email":"doi-service@cern.ch","website":"http://doi.web.cern.ch/","phone":null,"updated":"2016-07-31T21:30:25.000Z"}},{"id":"figshare","type":"members","attributes":{"title":"figshare","description":"\u003cp\u003efigshare
         is a repository where users can make all of their research outputs available
         in a citable, shareable and discoverable manner.\u003c/p\u003e\n\n\u003cp\u003efigshare
         allows users to upload any file format to be previewed in the browser so that
@@ -230,7 +230,7 @@ http_interactions:
         not allow.\u003c/p\u003e\n\n\u003cp\u003eOur mission is to change the face
         of academic publishing with the improved dissemination and discoverability
         and reusability of all scholarly research.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"United
-        Kingdom","year":2016,"logo-url":"https://assets.datacite.org/images/members/figshare.png","email":"info@figshare.com","website":"https://figshare.com","phone":"+44
+        Kingdom","year":2016,"logo-url":"https://localhost:8010/images/members/figshare.png","email":"info@figshare.com","website":"https://figshare.com","phone":"+44
         (0) 20 7418 5573","updated":"2016-10-04T11:41:30.000Z"}},{"id":"zbmed","type":"members","attributes":{"title":"German
         National Library of Medicine","description":"\u003cp\u003e\u0026quot;ZB MED
         (German National Library of Medicine) – Leibniz Information Centre for Life
@@ -252,7 +252,7 @@ http_interactions:
         and it provides accepted visible proof that a publication is citable. By offering
         this service, ZB MED facilitates and promotes online publication of scientific
         texts and data from its fields. Researchers and institutions in these fields
-        interested in DOI registration are invited to contact us.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://assets.datacite.org/images/members/ZBMED.png","email":"doi-service@zbmed.de","website":"http://www.zbmed.de/en","phone":"+49
+        interested in DOI registration are invited to contact us.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://localhost:8010/images/members/ZBMED.png","email":"doi-service@zbmed.de","website":"http://www.zbmed.de/en","phone":"+49
         221 478 7085","updated":"2016-09-07T11:27:24.000Z"}},{"id":"tib","type":"members","attributes":{"title":"German
         National Library of Science and Technology","description":"\u003cp\u003eThe
         TIB is the German National Library for all areas of engineering as well as
@@ -266,13 +266,13 @@ http_interactions:
         members of DataCite and is currently the Business Office. We provide DOI registration
         services for all German data centres in the fields of engineering, architecture,
         chemistry, information technology, mathematics and physics. Our current focus
-        is on providing DOI names for primary data and grey literature.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2009,"logo-url":"https://assets.datacite.org/images/members/TIB.png","email":"doi-info@tib.eu","website":"
+        is on providing DOI names for primary data and grey literature.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2009,"logo-url":"https://localhost:8010/images/members/TIB.png","email":"doi-info@tib.eu","website":"
         http://www.tib.eu","phone":"+49 511 762 14226","updated":"2016-08-01T11:13:04.000Z"}},{"id":"gwdg","type":"members","attributes":{"title":"Gesellschaft
         für wissenschaftliche Datenverarbeitung mbH Göttingen","description":"\u003cp\u003eAs
         the university computing centre for the Georg-August-Universität Göttingen,
         and as a computing and IT competence centre for the Max Planck Society, we
         offer a wide range of information and communication services for science.
-        \u003c/p\u003e\n","member-type":"non-allocating","region":"EMEA","country":"Germany","year":2013,"logo-url":"https://assets.datacite.org/images/members/GWDG.png","email":null,"website":"http://www.gwdg.de/","phone":null,"updated":"2016-07-31T21:33:22.000Z"}},{"id":"harvard","type":"members","attributes":{"title":"Harvard
+        \u003c/p\u003e\n","member-type":"non-allocating","region":"EMEA","country":"Germany","year":2013,"logo-url":"https://localhost:8010/images/members/GWDG.png","email":null,"website":"http://www.gwdg.de/","phone":null,"updated":"2016-07-31T21:33:22.000Z"}},{"id":"harvard","type":"members","attributes":{"title":"Harvard
         University Library","description":"\u003cp\u003eThe Harvard Library’s holdings
         range from traditional print collections to rapidly expanding digital resources.
         It is the mission of the Harvard Library to provide the University\u0026#39;s
@@ -286,7 +286,7 @@ http_interactions:
         software developed at the Institute for Quantitative Social Science (IQSS),
         is open to all scientific data, from all disciplines and researchers worldwide.
         \u003c/p\u003e\n","member-type":"non-allocating","region":"Americas","country":"United
-        States","year":2013,"logo-url":"https://assets.datacite.org/images/members/HARVARD.png","email":"support@dataverse.org","website":"
+        States","year":2013,"logo-url":"https://localhost:8010/images/members/HARVARD.png","email":"support@dataverse.org","website":"
         http://dataverse.org","phone":null,"updated":"2016-07-31T21:34:16.000Z"}},{"id":"inist","type":"members","attributes":{"title":"Institute
         for Scientific and Technical Information","description":"\u003cp\u003eThe
         Institute for Scientific and Technical Information (INIST-CNRS), a unit of
@@ -307,13 +307,13 @@ http_interactions:
         their data.\u003c/p\u003e\n\n\u003cp\u003eWorking currently with several French
         data producers for the assignment of DOIs, INIST sees itself as having a key
         role in the promotion of DataCite and persistent identifiers for digital objects
-        at a national level.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"France","year":2010,"logo-url":"https://assets.datacite.org/images/members/INIST.png","email":"datasets@inist.fr","website":"http://www.inist.fr","phone":"+33
+        at a national level.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"France","year":2010,"logo-url":"https://localhost:8010/images/members/INIST.png","email":"datasets@inist.fr","website":"http://www.inist.fr","phone":"+33
         383 504759","updated":"2016-07-31T21:35:45.000Z"}},{"id":"ieee","type":"members","attributes":{"title":"Institute
         of Electrical and Electronics Engineers","description":"\u003cp\u003eIEEE
         is the world\u0026#39;s largest professional organization for the advancement
         of technology. IEEE\u0026#39;s core purpose is to foster technological innovation
         and excellence for the benefit of humanity.\u003c/p\u003e\n","member-type":"non-allocating","region":"Americas","country":"United
-        States","year":2013,"logo-url":"https://assets.datacite.org/images/members/IEEE.png","email":null,"website":"https://www.ieee.org/index.html","phone":null,"updated":"2016-07-31T21:36:22.000Z"}},{"id":"icpsr","type":"members","attributes":{"title":"Inter-University
+        States","year":2013,"logo-url":"https://localhost:8010/images/members/IEEE.png","email":null,"website":"https://www.ieee.org/index.html","phone":null,"updated":"2016-07-31T21:36:22.000Z"}},{"id":"icpsr","type":"members","attributes":{"title":"Inter-University
         Consortium for Political and Social Research","description":"\u003cp\u003eAn
         international consortium of more than 750 academic institutions and research
         organizations established in 1962, the Inter-university Consortium for Political
@@ -330,10 +330,10 @@ http_interactions:
         of intensive courses in research design, statistics, data analysis, and social
         methodology. ICPSR also leads several initiatives that encourage use of data
         in teaching, particularly in undergraduate instruction.\u003c/p\u003e\n","member-type":"non-allocating","region":"Americas","country":"United
-        States","year":2010,"logo-url":"https://assets.datacite.org/images/members/ICPSR.png","email":"netmail@icpsr.umich.edu","website":"http://www.icpsr.umich.edu","phone":"+1
+        States","year":2010,"logo-url":"https://localhost:8010/images/members/ICPSR.png","email":"netmail@icpsr.umich.edu","website":"http://www.icpsr.umich.edu","phone":"+1
         734 647-2200","updated":"2016-07-31T21:37:51.000Z"}},{"id":"jalc","type":"members","attributes":{"title":"Japan
         Link Center","description":null,"member-type":"allocating","region":"Asia
-        Pacific","country":"Japan","year":2014,"logo-url":"https://assets.datacite.org/images/members/JALC.png","email":null,"website":"https://japanlinkcenter.org/top/english.html","phone":null,"updated":"2016-07-31T21:38:39.000Z"}},{"id":"kisti","type":"members","attributes":{"title":"Korea
+        Pacific","country":"Japan","year":2014,"logo-url":"https://localhost:8010/images/members/JALC.png","email":null,"website":"https://japanlinkcenter.org/top/english.html","phone":null,"updated":"2016-07-31T21:38:39.000Z"}},{"id":"kisti","type":"members","attributes":{"title":"Korea
         Institute of Science and Technology Information","description":"\u003cp\u003eSince
         its foundation in 1962 as the national institute for science and technology
         information, KISTI has been contributing to the promotion of national competiveness
@@ -349,7 +349,7 @@ http_interactions:
         one-stop service for integrated national R\u0026amp;D projects\u003c/li\u003e\n\u003cli\u003eSemantic
         web-based technology\u003c/li\u003e\n\u003cli\u003eScientific data project,
         aiming to deposit, access and share the scientific data in Korea\u003c/li\u003e\n\u003c/ul\u003e\n","member-type":"non-allocating","region":"Asia
-        Pacific","country":"Korea, Republic of","year":2010,"logo-url":"https://assets.datacite.org/images/members/KISTI.png","email":"stkim@kisti.re.kr","website":"http://www.kisti.re.kr/eng/","phone":"+82
+        Pacific","country":"Korea, Republic of","year":2010,"logo-url":"https://localhost:8010/images/members/KISTI.png","email":"stkim@kisti.re.kr","website":"http://www.kisti.re.kr/eng/","phone":"+82
         42 869 1892","updated":"2016-09-01T17:17:04.000Z"}},{"id":"gesis","type":"members","attributes":{"title":"Leibniz
         Institute for the Social Sciences","description":"\u003cp\u003eGESIS is the
         largest infrastructure institution in Germany serving to promote scientific
@@ -373,7 +373,7 @@ http_interactions:
         ensure proper citation, and in future peer review, of registered social and
         economic data. Our current focus is on providing DOI names for primary data
         occurring in the research data cycle. Via our open access repository SSOAR
-        we offer an additional service for open access publications.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://assets.datacite.org/images/members/GESIS.png","email":"brigitte.hausstein@gesis(dot)org","website":"http://www.gesis.org/dara","phone":"+49
+        we offer an additional service for open access publications.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2010,"logo-url":"https://localhost:8010/images/members/GESIS.png","email":"brigitte.hausstein@gesis(dot)org","website":"http://www.gesis.org/dara","phone":"+49
         30 233611314","updated":"2016-07-31T21:40:37.000Z"}},{"id":"mtakik","type":"members","attributes":{"title":"Library
         and Information Centre of the Hungarian Academy of Sciences","description":"\u003cp\u003eThe
         Library and Information Centre of the Hungarian Academy of Sciences (the Hungarian
@@ -389,7 +389,7 @@ http_interactions:
         Scientific Bibliography (MTMT) database is operated here, and the MTA KIK
         houses the publication repository of the Academy (the REAL). The MTMT database
         lists all PhD theses produced in Hungary, and the MTA KIK offers universities
-        DOI registration for PhD theses.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Hungary","year":2013,"logo-url":"https://assets.datacite.org/images/members/MTAKIK.png","email":"doi-info@konyvtar.mta.hu","website":"http://konyvtar.mta.hu/index_en.php","phone":"+36
+        DOI registration for PhD theses.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Hungary","year":2013,"logo-url":"https://localhost:8010/images/members/MTAKIK.png","email":"doi-info@konyvtar.mta.hu","website":"http://konyvtar.mta.hu/index_en.php","phone":"+36
         14116100","updated":"2016-08-01T05:00:56.000Z"}},{"id":"cisti","type":"members","attributes":{"title":"National
         Research Council Canada","description":"\u003cp\u003eThe \u003ca href=\"http://www.nrc-cnrc.gc.ca/eng/\"\u003eNational
         Research Council (NRC)\u003c/a\u003e is the Government of Canada’s premier
@@ -407,7 +407,7 @@ http_interactions:
         \u003ca href=\"http://www.nrc-cnrc.gc.ca/eng/publications/library_services/datacite/\"\u003eDataCite
         Canada\u003c/a\u003e to serve as a central research dataset registration service
         that will enable Canadian data centres to register research datasets and assign
-        digital object identifiers (DOIs) to them.\u003c/p\u003e\n","member-type":"allocating","region":"Americas","country":"Canada","year":2009,"logo-url":"https://assets.datacite.org/images/members/CISTI.png","email":"NRC.DataCiteCanada.CNRC@nrc-cnrc.gc.ca","website":"http://www.nrc-cnrc.gc.ca/eng/publications/library_services/datacite/","phone":"+1
+        digital object identifiers (DOIs) to them.\u003c/p\u003e\n","member-type":"allocating","region":"Americas","country":"Canada","year":2009,"logo-url":"https://localhost:8010/images/members/CISTI.png","email":"NRC.DataCiteCanada.CNRC@nrc-cnrc.gc.ca","website":"http://www.nrc-cnrc.gc.ca/eng/publications/library_services/datacite/","phone":"+1
         800 668-1222","updated":"2016-07-31T21:43:21.000Z"}},{"id":"nrct","type":"members","attributes":{"title":"National
         Research Council of Thailand","description":"\u003cp\u003eThe National Research
         Council of Thailand (NRCT) was inaugurated by the National Research Council
@@ -435,7 +435,7 @@ http_interactions:
         and international research results and innovations for future use by our country.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003ePromote
         and encourage research or research development and invention which can be
         utilized for the country’s development.\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n","member-type":"allocating","region":"Asia
-        Pacific","country":"Thailand","year":2012,"logo-url":"https://assets.datacite.org/images/members/NRCT.png","email":"doi@nrct.go.th","website":"http://www.doi.nrct.go.th","phone":"+66
+        Pacific","country":"Thailand","year":2012,"logo-url":"https://localhost:8010/images/members/NRCT.png","email":"doi@nrct.go.th","website":"http://www.doi.nrct.go.th","phone":"+66
         2 561 2445 ext 353, 570","updated":"2016-07-31T21:44:44.000Z"}},{"id":"subgoe","type":"members","attributes":{"title":"Niedersächsische
         Staats- und Universitätsbibliothek Göttingen","description":"\u003cp\u003eThe
         Göttingen State and University Library (Niedersächsische Staats- und Universitätsbibliothek
@@ -457,7 +457,7 @@ http_interactions:
         Digitization Centre (GDZ)\u003cbr\u003e\u003c/li\u003e\n\u003cli\u003eDirectory
         of Digitized Prints in Germany (ZVDD)\u003cbr\u003e\u003c/li\u003e\n\u003cli\u003eDARIAH
         — Humanities Infrastructure Germany (also Europe)\u003cbr\u003e\u003c/li\u003e\n\u003cli\u003eHumanities
-        Data Center\u003c/li\u003e\n\u003cli\u003eGöttingen Centre for Digital Humanities\u003c/li\u003e\n\u003c/ul\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2015,"logo-url":"https://assets.datacite.org/images/members/SUBGOE.png","email":"brase@sub.uni-goettingen.de","website":"http://www.sub.uni-goettingen.de","phone":"+49
+        Data Center\u003c/li\u003e\n\u003cli\u003eGöttingen Centre for Digital Humanities\u003c/li\u003e\n\u003c/ul\u003e\n","member-type":"allocating","region":"EMEA","country":"Germany","year":2015,"logo-url":"https://localhost:8010/images/members/SUBGOE.png","email":"brase@sub.uni-goettingen.de","website":"http://www.sub.uni-goettingen.de","phone":"+49
         551 39-33878","updated":"2016-07-31T21:46:01.000Z"}},{"id":"osti","type":"members","attributes":{"title":"Office
         of Scientific and Technical Information, US Department of Energy","description":"\u003cp\u003eOSTI
         provides access to U.S. Department of Energy (DOE) R\u0026amp;D results published
@@ -470,7 +470,7 @@ http_interactions:
         research to DOE. Search across DOE science information collections. Find U.S.
         government R\u0026amp;D results from 14 federal agencies. Access global science
         information from over 70 countries.\u003c/p\u003e\n","member-type":"allocating","region":"Americas","country":"United
-        States","year":2010,"logo-url":"https://assets.datacite.org/images/members/OSTI.png","email":"martinm@osti.gov","website":"http://www.osti.gov","phone":"+1
+        States","year":2010,"logo-url":"https://localhost:8010/images/members/OSTI.png","email":"martinm@osti.gov","website":"http://www.osti.gov","phone":"+1
         865-576-2097","updated":"2016-07-31T21:46:57.000Z"}},{"id":"orcid","type":"members","attributes":{"title":"ORCID","description":"\u003cp\u003eORCID’s
         vision is a world where all who participate in research, scholarship, and
         innovation are uniquely identified and connected to their contributions across
@@ -480,7 +480,7 @@ http_interactions:
         transparent and trustworthy connections between researchers, their contributions,
         and affiliations. We provide this service to help people find information
         and to simplify reporting and analysis.\u003c/p\u003e\n","member-type":"non-allocating","region":"Americas","country":"United
-        States","year":2016,"logo-url":"https://assets.datacite.org/images/members/orcid.png","email":null,"website":"http://orcid.org","phone":null,"updated":"2016-09-12T15:56:41.000Z"}},{"id":"polytech","type":"members","attributes":{"title":"Peter
+        States","year":2016,"logo-url":"https://localhost:8010/images/members/orcid.png","email":null,"website":"http://orcid.org","phone":null,"updated":"2016-09-12T15:56:41.000Z"}},{"id":"polytech","type":"members","attributes":{"title":"Peter
         the Great St. Petersburg Polytechnic University","description":"\u003cp\u003ePeter
         the Great St.Petersburg Polytechnic University (SPbPU) is a national research
         university, a multidisciplinary university ranked first in Russia in polytechnic
@@ -491,7 +491,7 @@ http_interactions:
         the first DOI allocator in Russia for\u003cbr\u003e\nresearch data objects.
         Academic and research organisations in Russia are encouraged to establish
         relations with SPbPU to register DOIs.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Russian
-        Federation","year":2015,"logo-url":"https://assets.datacite.org/images/members/POLYTECH.png","email":"doi@unilib.spbstu.ru","website":"http://english.spbstu.ru","phone":"+7
+        Federation","year":2015,"logo-url":"https://localhost:8010/images/members/POLYTECH.png","email":"doi@unilib.spbstu.ru","website":"http://english.spbstu.ru","phone":"+7
         812 552 76 54","updated":"2016-07-31T21:47:38.000Z"}},{"id":"purdue","type":"members","attributes":{"title":"Purdue
         University Libraries","description":"\u003cp\u003eThe Purdue University Libraries
         system includes the divisions of Archives and Special Collections; Health
@@ -507,7 +507,7 @@ http_interactions:
         pharmacy, and veterinary medicine. Purdue Libraries faculty are collaborating
         with disciplinary faculty to develop methodologies and repositories for discovering,
         sharing, and stewarding research data.\u003c/p\u003e\n","member-type":"allocating","region":"Americas","country":"United
-        States","year":2009,"logo-url":"https://assets.datacite.org/images/members/PURDUE.png","email":"mwitt@purdue.edu","website":"http://www.lib.purdue.edu/identifiers","phone":"+1
+        States","year":2009,"logo-url":"https://localhost:8010/images/members/PURDUE.png","email":"mwitt@purdue.edu","website":"http://www.lib.purdue.edu/identifiers","phone":"+1
         765 494 2900","updated":"2016-09-07T12:04:29.000Z"}},{"id":"saeon","type":"members","attributes":{"title":"South
         African Environmental Observation Network","description":"\u003cp\u003eEarth
         and environmental observation science is urgently required to bring more understanding
@@ -521,7 +521,7 @@ http_interactions:
         network of departments, universities, science institutions and industrial
         partners. Our responsibilities rest on three mandates: observation, information
         and education.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"South
-        Africa","year":2014,"logo-url":"https://assets.datacite.org/images/members/SAEON.png","email":"wim@saeon.ac.za","website":"http://www.saeon.ac.za/","phone":"+27
+        Africa","year":2014,"logo-url":"https://localhost:8010/images/members/SAEON.png","email":"wim@saeon.ac.za","website":"http://www.saeon.ac.za/","phone":"+27
         12 349 7700","updated":"2016-07-31T21:49:32.000Z"}},{"id":"csic","type":"members","attributes":{"title":"Spanish
         National Research Council","description":"\u003cp\u003eThe Spanish National
         Research Council (CSIC) is the largest public institution dedicated to research
@@ -560,7 +560,7 @@ http_interactions:
         assign DOIs to their own research datasets providing researchers with a means
         of citing their published data and achieving recognition for their research
         data output.\u003c/p\u003e\n\n\u003cp\u003eCurrently, CSIC only supports DOI
-        registration internally and does not provide this service to other institutions.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Spain","year":2015,"logo-url":"https://assets.datacite.org/images/members/CSIC.png","email":null,"website":"http://bibliotecas.csic.es","phone":null,"updated":"2016-08-01T11:32:44.000Z"}},{"id":"snd","type":"members","attributes":{"title":"Swedish
+        registration internally and does not provide this service to other institutions.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Spain","year":2015,"logo-url":"https://localhost:8010/images/members/CSIC.png","email":null,"website":"http://bibliotecas.csic.es","phone":null,"updated":"2016-08-01T11:32:44.000Z"}},{"id":"snd","type":"members","attributes":{"title":"Swedish
         National Data Service","description":"\u003cp\u003eThe Swedish National Data
         Service (SND) is a national infrastructure for Swedish research within the
         humanities, social sciences and health sciences. SND offers support to Swedish
@@ -574,7 +574,7 @@ http_interactions:
         SND’s fields of responsibility.\u003c/p\u003e\n\n\u003cp\u003eSND is the Swedish
         node in an international network of data archives (CESSDA). This network is
         an important part of the global research infrastructure and helps SND to present
-        Swedish research outside of Sweden.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Sweden","year":2010,"logo-url":"https://assets.datacite.org/images/members/snd.png","email":"pid@snd.gu.se","website":"http://snd.gu.se/en","phone":"+46
+        Swedish research outside of Sweden.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Sweden","year":2010,"logo-url":"https://localhost:8010/images/members/snd.png","email":"pid@snd.gu.se","website":"http://snd.gu.se/en","phone":"+46
         31 786 12 06","updated":"2016-09-01T17:15:12.000Z"}},{"id":"estdoi","type":"members","attributes":{"title":"Tartu
         University","description":"\u003cp\u003eThe University of Tartu (UT) is the
         oldest research university in Estonia, established in 1632. Magazine Times
@@ -591,7 +591,7 @@ http_interactions:
         Research Council. DataCite Estonia platform is coordinated by the University
         of Tartu Library, a leading research library in Estonia and the first library
         openly promoting Open Access from 2009. The University of Tartu Library is
-        now also taking the lead into promoting Open Data movement as well.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Estonia","year":2014,"logo-url":"https://assets.datacite.org/images/members/estdoi.png","email":"liisi.lembinen@ut.ee","website":"http://www.ut.ee/en","phone":"+372
+        now also taking the lead into promoting Open Data movement as well.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Estonia","year":2014,"logo-url":"https://localhost:8010/images/members/estdoi.png","email":"liisi.lembinen@ut.ee","website":"http://www.ut.ee/en","phone":"+372
         737 5704","updated":"2016-09-07T11:06:32.000Z"}},{"id":"itpgrfa","type":"members","attributes":{"title":"The
         International Treaty on Plant Genetic Resources for Food and Agriculture","description":"\u003cp\u003eThe
         International Treaty on Plant Genetic Resource for Food and Agriculture (ITPGRFA)
@@ -612,13 +612,19 @@ http_interactions:
         to plant genetic resources for food and agriculture. The participation of
         the Treaty in the DataCite consortium enables this System to allocate DOIs
         to plant genetic material for the benefit of farmers, researchers, genebanks
-        and the entire plant genetic resources community.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Italy","year":2015,"logo-url":"https://assets.datacite.org/images/members/ITPGRFA.png","email":"pgrfa-treaty@fao.org","website":"http://www.planttreaty.org","phone":"+39
+        and the entire plant genetic resources community.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Italy","year":2015,"logo-url":"https://localhost:8010/images/members/ITPGRFA.png","email":"pgrfa-treaty@fao.org","website":"http://www.planttreaty.org","phone":"+39
         06570 53233","updated":"2016-09-07T08:43:57.000Z"}},{"id":"tind","type":"members","attributes":{"title":"TIND","description":"\u003cp\u003eTIND
         is an official spin-off from the European Organization for Nuclear Research
         (CERN), providing services for library management and data management based
         on CERN-developed, open source technology. Established in 2013, TIND is providing
         it’s services to leading research institutions and IGOs such as Caltech and
-        the United Nations.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2016,"logo-url":"https://assets.datacite.org/images/members/tind.png","email":null,"website":"http://tind.io","phone":null,"updated":"2016-09-12T15:53:05.000Z"}},{"id":"delft","type":"members","attributes":{"title":"TU
+        the United Nations.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Switzerland","year":2016,"logo-url":"https://localhost:8010/images/members/tind.png","email":null,"website":"http://tind.io","phone":null,"updated":"2016-09-12T15:53:05.000Z"}},{"id":"tsinghua","type":"members","attributes":{"title":"Tsinghua
+        University Library","description":"\u003cp\u003eTsinghua University Library
+        was established in 1912.\u003c/p\u003e\n\n\u003cp\u003eIn recent years, an
+        increasing number of electronic resources and virtual resources have been
+        made available in the Library or online. These form an information system
+        which is all-direction, open, multi-level, efficient and service-centered.
+        \u003c/p\u003e\n","member-type":"allocating","region":"Asia Pacific","country":"China","year":2016,"logo-url":"https://localhost:8010/images/members/tsinghua.png","email":null,"website":"http://www.lib.tsinghua.edu.cn/english/","phone":null,"updated":"2016-10-11T08:11:32.000Z"}},{"id":"delft","type":"members","attributes":{"title":"TU
         Delft Library","description":"\u003cp\u003eThe TU Delft Library is the hub
         of knowledge for technical and scientific information and the largest technical-scientific
         library in the Netherlands. We support research and education at the national
@@ -631,8 +637,9 @@ http_interactions:
         data and to increase acceptance of the research data as legitimate, citable
         contributions to scientific record through trustworthy registration and identification
         of datasets. The current focus of DataCite Netherlands is on promoting the
-        use of digital object identifiers for datasets.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Netherlands","year":2009,"logo-url":"https://assets.datacite.org/images/members/DELFT.png","email":"library@tudelft.nl","website":"http://www.library.tudelft.nl/en","phone":"+31
-        15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":37,"total-pages":1,"page":1,"member-types":{"allocating":29,"non-allocating":8},"regions":{"amer":8,"apac":5,"emea":24},"years":{"2016":3,"2015":5,"2014":4,"2013":4,"2012":2,"2011":1,"2010":11,"2009":7}}}'
+        use of digital object identifiers for datasets.\u003c/p\u003e\n","member-type":"allocating","region":"EMEA","country":"Netherlands","year":2009,"logo-url":"https://localhost:8010/images/members/DELFT.png","email":"library@tudelft.nl","website":"http://www.library.tudelft.nl/en","phone":"+31
+        15 27 85678","updated":"2016-07-31T23:38:25.000Z"}}],"links":{},"meta":{"total":38,"total-pages":1,"page":1,"member-types":[{"id":"allocating","title":"Allocating","count":30},{"id":"non-allocating","title":"Non-allocating","count":8}],"regions":[{"id":"amer","title":"Americas","count":8},{"id":"apac","title":"Asia
+        and Pacific","count":6},{"id":"emea","title":"Europe, Middle East and Africa","count":24}],"years":[{"id":"2016","title":"2016","count":4},{"id":"2015","title":"2015","count":5},{"id":"2014","title":"2014","count":4},{"id":"2013","title":"2013","count":4},{"id":"2012","title":"2012","count":2},{"id":"2011","title":"2011","count":1},{"id":"2010","title":"2010","count":11},{"id":"2009","title":"2009","count":7}]}}'
     http_version: 
-  recorded_at: Tue, 04 Oct 2016 19:58:43 GMT
+  recorded_at: Fri, 21 Oct 2016 17:27:30 GMT
 recorded_with: VCR 2.9.3
