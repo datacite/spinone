@@ -1,5 +1,5 @@
 class Contribution < Base
-  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :credit_name, :doi, :url, :author, :title, :container_title, :contributor_role_id, :work_type_id, :source_id, :publisher_id, :source, :publisher, :published, :issued, :updated_at
+  attr_reader :id, :subj_id, :obj_id, :orcid, :github, :given, :family, :credit_name, :doi, :url, :author, :title, :container_title, :contributor_role_id, :work_type_id, :source_id, :publisher_id, :source, :publisher, :published, :issued, :updated_at
 
   # include helper module for extracting identifier
   include Identifiable
@@ -15,6 +15,8 @@ class Contribution < Base
     @orcid = orcid_from_url(attributes.fetch("subj_id"))
     @github = github_owner_from_url(attributes.fetch("subj_id"))
 
+    @given = attributes.fetch("given", nil)
+    @family = attributes.fetch("family", nil)
     @credit_name = attributes.fetch("credit_name", nil)
 
     @doi = attributes.fetch("DOI", nil)
