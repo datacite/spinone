@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :results, :schema_version, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -38,6 +38,7 @@ class Work < Base
     @updated_at = attributes.fetch("updated", nil)
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
+    @version = attributes.fetch("version", nil)
     @schema_version = attributes.fetch("schema_version", nil)
     @results = attributes.fetch("results", [])
 
@@ -95,7 +96,7 @@ class Work < Base
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
-                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated",
+                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated",
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
