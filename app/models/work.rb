@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :xml, :media, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -19,9 +19,12 @@ class Work < Base
   def initialize(attributes={}, options={})
     @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
 
+    @xml = attributes.fetch('xml', "PGhzaD48L2hzaD4=\n")
+    @media = attributes.fetch('media', nil)
+
     @author = attributes.fetch("author", nil)
     if author.nil?
-      xml = Base64.decode64(attributes.fetch('xml', "PGhzaD48L2hzaD4=\n"))
+      xml = Base64.decode64(@xml)
       xml = Hash.from_xml(xml).fetch("resource", {})
       authors = xml.fetch("creators", {}).fetch("creator", [])
       authors = [authors] if authors.is_a?(Hash)
@@ -96,7 +99,7 @@ class Work < Base
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
-                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,minted,updated",
+                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
