@@ -2,15 +2,17 @@ class Page < Base
   attr_reader :id, :author, :title, :container_title, :description, :license, :image_url, :tags, :issued, :updated_at
 
   def initialize(attributes, options={})
-    @id = attributes.fetch("url").underscore.dasherize
-    @author = attributes.fetch("author", [])
-    @title = attributes.fetch("title", nil)
-    @container_title = attributes.fetch("container-title", nil)
+    @id = attributes.fetch("@id")
+    @author = attributes.fetch("author", []).map { |a| { "given" => a["givenName"],
+                                                         "family" => a["familyName"],
+                                                         "orcid" => a["@id"] } }
+    @title = attributes.fetch("name", nil)
+    @container_title = attributes.fetch("publisher", nil)
     @description = attributes.fetch("description", nil)
     @license = attributes.fetch("license", nil)
     @image_url = attributes.fetch("image", nil)
-    @tags = attributes.fetch("tags", [])
-    @issued = attributes.fetch("issued", nil)
+    @tags = attributes.fetch("keywords", "").split(", ")
+    @issued = attributes.fetch("datePublished", nil)
     @updated_at = @issued
   end
 
@@ -44,9 +46,9 @@ class Page < Base
 
   def self.parse_meta(items)
     items.reduce({}) do |sum, i|
-      i["tags"].each { |tag| sum[tag] = sum[tag].to_i + 1 }
+      i.fetch("keywords", "").split(", ").each { |tag| sum[tag] = sum[tag].to_i + 1 }
       sum
-    end
+    end.sort_by {|_key, value| -value}[0..14].to_h
   end
 
   def self.url
