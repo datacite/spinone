@@ -26,13 +26,13 @@ class Page < Base
     items = result.fetch("data", [])
 
     if options[:id]
-      item = items.find { |i| i["url"] == "https://#{options[:id]}/" }
+      item = items.find { |i| i["@id"] == "https://doi.org/#{options[:id]}" }
       return nil if item.nil?
 
       { data: parse_item(item) }
     else
       items = items.select { |i| i.values.join("\n").downcase.include?(options[:query]) } if options[:query]
-      items = items.select { |i| Array(i["tags"]).include?(options[:tag]) } if options[:tag]
+      items = items.select { |i| i.fetch("keywords", "").split(", ").include?(options[:tag]) } if options[:tag]
 
       meta = { total: items.length, tags: parse_meta(items) }
 
