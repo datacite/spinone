@@ -24,6 +24,10 @@
         "@type": "Organization",
         "name": "DataCite"
     },
+    "provider": {
+        "@type": "Organization",
+        "name": "GitHub"
+    },
     "dateCreated": "2015-11-26",
     "datePublished": "2016-07-05",
     "dateModified": "2016-12-21",
