@@ -1,12 +1,3 @@
----
-layout: post
-title: Software Citation Principles
-author: lrueda
-date: 2016-09-20
-tags:
-- datacite
-- software citation
----
 # Spinone
 
 [![Build Status](https://travis-ci.org/datacite/spinone.svg?branch=master)](https://travis-ci.org/datacite/spinone) [![Code Climate](https://codeclimate.com/github/datacite/spinone/badges/gpa.svg)](https://codeclimate.com/github/datacite/spinone) [![Test Coverage](https://codeclimate.com/github/datacite/spinone/badges/coverage.svg)](https://codeclimate.com/github/datacite/spinone/coverage)
