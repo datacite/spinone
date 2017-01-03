@@ -1,0 +1,34 @@
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareSourceCode",
+    "@id": "https://github.com/datacite/spinone",
+    "name": "Spinone",
+    "codeRepository": "https://github.com/datacite/spinone",
+    "author": [
+        {
+            "@type": "Person",
+            "@id": "http://orcid.org/0000-0003-1419-2405",
+            "givenName": "Martin",
+            "familyName": "Fenner",
+            "name": "Martin Fenner"
+        },
+        {
+            "@type": "Person",
+            "@id": "http://orcid.org/0000-0003-3484-6875",
+            "givenName": "Kristian",
+            "familyName": "Garza",
+            "name": "Kristian Garza"
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "DataCite"
+    },
+    "dateCreated": "2015-11-26",
+    "datePublished": "2016-07-05",
+    "dateModified": "2016-12-21",
+    "keywords": "api, datacite, jsonapi",
+    "description": "REST API for the DataCite DOI registration agency.",
+    "programmingLanguage": "Ruby",
+    "license": "https://opensource.org/licenses/MIT",
+}
