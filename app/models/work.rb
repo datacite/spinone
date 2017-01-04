@@ -171,8 +171,8 @@ class Work < Base
       return nil if result.blank?
 
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      result = get_results(items, options)
-      items = result[:data]
+      #result = get_results(items, options)
+      #items = result[:data]
       return nil if items.blank?
 
       item = items.first
@@ -197,32 +197,32 @@ class Work < Base
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
-    elsif options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
-      result = get_results([], options)
-      items = result[:data]
-      meta = result[:meta]
+    # elsif options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
+    #   result = get_results([], options)
+    #   items = result[:data]
+    #   meta = result[:meta]
 
-      publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
-      publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
+    #   publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
+    #   publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
 
-      { data: parse_items(items,
-        relation_types: cached_relation_types,
-        resource_types: cached_resource_types,
-        work_types: cached_work_types,
-        publishers: publishers,
-        members: cached_members,
-        registration_agencies: cached_registration_agencies,
-        sources: cached_sources,), meta: meta }
+    #   { data: parse_items(items,
+    #     relation_types: cached_relation_types,
+    #     resource_types: cached_resource_types,
+    #     work_types: cached_work_types,
+    #     publishers: publishers,
+    #     members: cached_members,
+    #     registration_agencies: cached_registration_agencies,
+    #     sources: cached_sources,), meta: meta }
     else
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      lagotto_result = get_results(items, options)
-      items = lagotto_result[:data]
+      #lagotto_result = get_results(items, options)
+      #items = lagotto_result[:data]
 
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
-      meta[:sources] = lagotto_result.fetch(:meta, {}).fetch(:sources, [])
-      meta[:relation_types] = lagotto_result.fetch(:meta, {}).fetch(:relation_types, [])
+      meta[:sources] = [] #lagotto_result.fetch(:meta, {}).fetch(:sources, [])
+      meta[:relation_types] = [] #lagotto_result.fetch(:meta, {}).fetch(:relation_types, [])
 
       publishers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)

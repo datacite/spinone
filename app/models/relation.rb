@@ -57,6 +57,13 @@ class Relation < Base
     url + "?" + URI.encode_www_form(params)
   end
 
+  def self.get_data(options={})
+    return {}
+
+    query_url = get_query_url(options)
+    Maremma.get(query_url, options)
+  end
+
   def self.parse_data(result, options={})
     return result if result['errors']
 
