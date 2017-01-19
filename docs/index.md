@@ -83,7 +83,7 @@ Resource components can be used in conjunction with identifiers to retrieve the 
 | Resource                     | Description                                      |
 |:-----------------------------|:-------------------------------------------------|
 | `/members/{member-id}`       | returns metadata for a DataCite member           |
-| `/publisher/{publisher-id}`  | returns metadata for a DataCite data center      |
+| `/publishers/{publisher-id}`  | returns metadata for a DataCite data center      |
 | `/works/{doi}`               | returns metadata for the specified DataCite DOI. |
 | `/work-types/{work-type-id}` | returns information about a specified work type  |
 
