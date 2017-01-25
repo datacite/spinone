@@ -11,12 +11,12 @@ class Api::PublishersController < Api::BaseController
   end
 
   def index
-    @publishers = Publisher.where(params)
+    @publishers = DataCenter.where(params)
     render jsonapi: @publishers[:data], meta: @publishers[:meta], include: @include
   end
 
   def show
-    @publisher = Publisher.where(id: params[:id])
+    @publisher = DataCenter.where(id: params[:id])
     fail ActiveRecord::RecordNotFound unless @publisher.present?
 
     render jsonapi: @publisher[:data], include: @include
