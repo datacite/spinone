@@ -37,6 +37,7 @@ gem 'namae', '~> 0.10.2'
 gem 'gender_detector', '~> 0.1.2'
 gem 'httplog'
 gem 'lograge', '~> 0.3.5'
+gem 'bergamasco', '~> 0.3.11'
 
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
