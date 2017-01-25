@@ -33,9 +33,9 @@ class Work < Base
 
     @doi = attributes.fetch("doi", nil)
     @url = attributes.fetch("url", nil)
-    @title = attributes.fetch("title", []).first
+    @title = Work.sanitize(attributes.fetch("title", []).first)
     @container_title = attributes.fetch("publisher", nil)
-    @description = attributes.fetch("description", []).first
+    @description = Work.sanitize(attributes.fetch("description", []).first)
     @published = attributes.fetch("publicationYear", nil)
     @deposited = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
