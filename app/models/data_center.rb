@@ -67,7 +67,7 @@ class DataCenter < Base
       total = query.count
       registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
 
-      data = query.limit(rows).offset(offset).order(:symbol)
+      data = query.limit(rows).offset(offset).order(:name)
       meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
 
       { "data" => { "data-centers" => data, "meta" => meta } }
