@@ -64,5 +64,43 @@ module Cacheable
         Maremma.get(lagotto_query_url, options)
       end
     end
+
+    def cached_members_response(options={})
+      Rails.cache.fetch("member_response", expires_in: 1.day) do
+        self.db[:allocator].select(:id, :symbol, :name, :created).all
+      end
+    end
+
+    def cached_member_response(id, options={})
+      Rails.cache.fetch("member_response", expires_in: 1.day) do
+        self.db[:allocator].where(symbol: id).select(:id, :symbol, :name, :created).first
+      end
+    end
+
+    def cached_data_center_response(id, options={})
+      Rails.cache.fetch("data_center_response/#{id}", expires_in: 1.day) do
+        data = self.ds.where(symbol: id).first
+        { "data" => { "data-center" => data } }
+      end
+    end
+
+    def cached_data_centers_response(query, options={})
+      Rails.cache.fetch("data_center_response", expires_in: 1.day) do
+        allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
+        members = cached_members_response
+        members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
+
+        years = query.group_and_count(Sequel.extract(:year, :created)).all
+        years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
+                     .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
+        total = query.count
+        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
+
+        data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
+        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+
+        { "data" => { "data-centers" => data, "meta" => meta } }
+      end
+    end
   end
 end

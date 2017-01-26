@@ -33,48 +33,52 @@ class DataCenter < Base
 
   def self.get_query(options={})
     if options[:id].present?
-      data = ds.where(symbol: options[:id]).first
-      { "data" => { "data-center" => data } }
+      cached_data_center_response(options[:id])
     else
-      offset = options.fetch(:offset, 0).to_i
-      rows = options.fetch(:rows, 25)
-      q = options.fetch(:query, nil)
-      year = options.fetch(:year, nil)
-
       query = ds.where{(is_active = true) & (allocator > 100)}
-      query = query.where(Sequel.ilike(:name, "%#{q}%")) if q.present?
-      query = query.where(symbol: options[:ids].split(",")) if options[:ids].present?
-      query = query.where('YEAR(created) = ?', options[:year]) if options[:year].present?
 
-      if options["member-id"].present?
-        member = self.db[:allocator].where(symbol: options["member-id"].upcase).select(:id, :symbol, :name, :created).first
-        members = [{ symbol: member.fetch(:symbol),
-                     name: member.fetch(:name),
-                     count: query.where(allocator: member.fetch(:id)).count }]
-        query = query.where(allocator: member.fetch(:id))
+      if options[:query].present? ||
+        options[:ids].present? ||
+        options[:year].present? ||
+        options["member-id"].present? ||
+        options["year"].present?
+
+        query = query.where(Sequel.ilike(:name, "%#{options[:query]}%")) if options[:query].present?
+        query = query.where(symbol: options[:ids].split(",")) if options[:ids].present?
+        query = query.where('YEAR(created) = ?', options[:year]) if options[:year].present?
+
+        if options["member-id"].present?
+          member = cached_member_response(options["member-id"].upcase)
+          members = [{ symbol: member.fetch(:symbol),
+                       name: member.fetch(:name),
+                       count: query.where(allocator: member.fetch(:id)).count }]
+          query = query.where(allocator: member.fetch(:id))
+        else
+          allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
+          members = cached_members_response
+          members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
+        end
+
+        if options["year"].present?
+          years = [{ id: options["year"],
+                     title: options["year"],
+                     count: query.where('YEAR(created) = ?', options["year"]).count }]
+        else
+          years = query.group_and_count(Sequel.extract(:year, :created)).all
+          years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
+                       .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
+        end
+
+        total = query.count
+        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
+
+        data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
+        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+
+        { "data" => { "data-centers" => data, "meta" => meta } }
       else
-        allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
-        members = self.db[:allocator].select(:id, :symbol, :name, :created).all
-        members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
+        cached_data_centers_response(query)
       end
-
-      if options["year"].present?
-        years = [{ id: options["year"],
-                   title: options["year"],
-                   count: query.where('YEAR(created) = ?', options["year"]).count }]
-      else
-        years = query.group_and_count(Sequel.extract(:year, :created)).all
-        years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
-                     .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
-      end
-
-      total = query.count
-      registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-
-      data = query.limit(rows).offset(offset).order(:name)
-      meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
-
-      { "data" => { "data-centers" => data, "meta" => meta } }
     end
   end
 
