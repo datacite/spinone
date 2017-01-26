@@ -35,14 +35,14 @@ class DataCenter < Base
     if options[:id].present?
       cached_data_center_response(options[:id])
     else
-      query = ds.where{(is_active = true) & (allocator > 100)}
-
       if options[:query].present? ||
         options[:ids].present? ||
         options[:year].present? ||
-        options["member-id"].present? ||
-        options["year"].present?
+        options[:rows] != 25 ||
+        options[:offset] != 0 ||
+        options["member-id"].present?
 
+        query = ds.where{(is_active = true) & (allocator > 100)}
         query = query.where(Sequel.ilike(:name, "%#{options[:query]}%")) if options[:query].present?
         query = query.where(symbol: options[:ids].split(",")) if options[:ids].present?
         query = query.where('YEAR(created) = ?', options[:year]) if options[:year].present?
@@ -77,7 +77,15 @@ class DataCenter < Base
 
         { "data" => { "data-centers" => data, "meta" => meta } }
       else
-        cached_data_centers_response(query)
+        members = cached_allocators_response
+        years = cached_years_response
+        years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
+                     .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
+
+        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
+
+        total = cached_total_response
+        cached_data_centers_response
       end
     end
   end
