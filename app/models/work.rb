@@ -46,11 +46,11 @@ class Work < Base
     @results = attributes.fetch("results", [])
 
     @data_center_id = attributes.fetch("datacentre_symbol", nil)
-    @data_center_id = @data_center_id.underscore.dasherize if @data_center_id.present?
+    @data_center_id = @data_center_id.downcase if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
-    @member_id = @member_id.underscore.dasherize if @member_id.present?
+    @member_id = @member_id.downcase if @member_id.present?
     @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
-    @registration_agency_id = @registration_agency_id.underscore.dasherize if @registration_agency_id.present?
+    @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
     @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
     @work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
@@ -186,7 +186,7 @@ class Work < Base
 
       data_center = nil
       data_center_id = item.fetch("datacentre_symbol", nil)
-      data_center = DataCenter.where(id: data_center_id.downcase.underscore.dasherize) if data_center_id.present?
+      data_center = DataCenter.where(id: data_center_id.downcase) if data_center_id.present?
       data_center = data_center[:data] if data_center.present?
 
       { data: parse_item(item,
@@ -323,8 +323,8 @@ class Work < Base
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
                years: meta["years"],
-               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               data_centers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               sources: meta["sources"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
+               data_centers: meta["publishers"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
                resource_types: Array(meta["resource_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: Array(meta["relation_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
@@ -350,8 +350,8 @@ class Work < Base
       meta = response.fetch("data", {}).fetch("meta", {})
       meta = { total: meta["total"],
                years: meta["years"],
-               sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               data_centers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               sources: meta["sources"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
+               data_centers: meta["publishers"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
                resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
@@ -365,7 +365,7 @@ class Work < Base
     query_url = ENV['LAGOTTO_URL'] + "/publishers?ids=" + publishers.keys.join(",")
     response = Maremma.get(query_url, options)
     response.fetch("data", {}).fetch("publishers", [])
-            .map { |p| { id: p.fetch("id").underscore.dasherize, title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
+            .map { |p| { id: p.fetch("id").downcase, title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 
