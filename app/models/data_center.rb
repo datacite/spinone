@@ -11,9 +11,11 @@ class DataCenter < Base
     @prefixes = attributes.fetch("prefixes", [])
     @data_center_id = attributes.fetch("data_center_id", nil)
     @ids = attributes.fetch("ids", nil)
-    @created = attributes.fetch("created").to_time.utc.iso8601
-    @updated = attributes.fetch("updated").to_time.utc.iso8601
-    @year = attributes.fetch("created").year
+    @created = attributes.fetch("created", nil)
+    @created = @created.to_time.utc.iso8601 if @created.present?
+    @updated = attributes.fetch("updated", nil)
+    @updated = @updated.to_time.utc.iso8601 if @updated.present?
+    @year = attributes.fetch("created").year if @created.present?
 
     @member_id = @id.split('.', 2).first
     @member_id = @member_id.underscore.dasherize if @member_id.present?
