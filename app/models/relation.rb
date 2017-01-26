@@ -1,5 +1,5 @@
 class Relation < Base
-  attr_reader :id, :subj_id, :obj_id, :doi, :author, :title, :container_title, :publisher_id, :source_id, :relation_type_id, :registration_agency_id, :work_type_id, :publisher, :source, :relation_type, :total, :published, :issued, :updated_at
+  attr_reader :id, :subj_id, :obj_id, :doi, :author, :title, :container_title, :data_center_id, :source_id, :relation_type_id, :registration_agency_id, :work_type_id, :data_center, :source, :relation_type, :total, :published, :issued, :updated_at
 
   # include helper module for extracting identifier
   include Identifiable
@@ -24,15 +24,15 @@ class Relation < Base
     @work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
     @work_type_id = @work_type_id.underscore.dasherize if @work_type_id.present?
 
-    @publisher_id = attributes.fetch("publisher_id", nil)
-    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
+    @data_center_id = attributes.fetch("publisher_id", nil)
+    @data_center_id = @data_center_id.underscore.dasherize if @data_center_id.present?
     @source_id = attributes.fetch("source_id", nil)
     @source_id = @source_id.underscore.dasherize if @source_id.present?
     @relation_type_id = attributes.fetch("relation_type_id", nil)
     @relation_type_id = @relation_type_id.underscore.dasherize if @relation_type_id.present?
 
     # associations
-    @publisher = Array(options[:publishers]).find { |p| p.id == @publisher_id  }
+    @data_center = Array(options[:data_centers]).find { |p| p.id == @data_center_id  }
     @source = Array(options[:sources]).find { |p| p.id == @source_id  }
     @relation_type = Array(options[:relation_types]).find { |r| r.id == @relation_type_id }
   end
@@ -72,13 +72,13 @@ class Relation < Base
     meta = result.fetch("data", {}).fetch("meta", {})
     meta = { total: meta["total"],
              sources: meta["sources"],
-             publishers: meta["publishers"],
+             data_centers: meta["publishers"],
              relation_types: meta["relation_types"] }
 
-    publisher_ids = Array(meta.fetch(:publishers, [])).map { |i| i["id"] }.join(",")
-    publishers = DataCenter.collect_data(ids: publisher_ids).fetch(:data, [])
+    data_center_ids = Array(meta.fetch(:data_centers, [])).map { |i| i["id"] }.join(",")
+    data_centers = DataCenter.collect_data(ids: data_center_ids).fetch(:data, [])
 
-    { data: parse_items(items, sources: cached_sources, publishers: publishers, relation_types: cached_relation_types), meta: meta }
+    { data: parse_items(items, sources: cached_sources, data_centers: data_centers, relation_types: cached_relation_types), meta: meta }
   end
 
   def self.url

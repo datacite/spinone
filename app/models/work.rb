@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :publisher_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :publisher, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :xml, :media, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :data_center, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :xml, :media, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -45,8 +45,8 @@ class Work < Base
     @schema_version = attributes.fetch("schema_version", nil)
     @results = attributes.fetch("results", [])
 
-    @publisher_id = attributes.fetch("datacentre_symbol", nil)
-    @publisher_id = @publisher_id.underscore.dasherize if @publisher_id.present?
+    @data_center_id = attributes.fetch("datacentre_symbol", nil)
+    @data_center_id = @data_center_id.underscore.dasherize if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
     @member_id = @member_id.underscore.dasherize if @member_id.present?
     @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
@@ -57,7 +57,7 @@ class Work < Base
     @work_type_id = @work_type_id.underscore.dasherize if @work_type_id.present?
 
     # associations
-    @publisher = Array(options[:publishers]).find { |p| p.id == @publisher_id }
+    @data_center = Array(options[:data_centers]).find { |p| p.id == @data_center_id }
     @member = Array(options[:members]).find { |r| r.id == @member_id }
     @registration_agency = Array(options[:registration_agencies]).find { |r| r.id == @registration_agency_id }
     @resource_type = Array(options[:resource_types]).find { |r| r.id == @resource_type_id }
@@ -89,7 +89,7 @@ class Work < Base
 
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
-      fq << "datacentre_symbol:#{options['publisher-id'].upcase}" if options['publisher-id'].present?
+      fq << "datacentre_symbol:#{options['data-center-id'].upcase}" if options['data-center-id'].present?
       fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
       fq << "minted:#{created_date}" if created_date
       fq << "updated:#{update_date}" if update_date
@@ -131,7 +131,7 @@ class Work < Base
       relation_type_id = options.fetch("relation-type-id", nil)
       relation_type_id = relation_type_id.underscore if relation_type_id.present?
 
-      publisher_id = options.fetch("publisher-id", nil)
+      data_center_id = options.fetch("data-center-id", nil)
 
       member_id = options.fetch("member-id", nil)
 
@@ -143,7 +143,7 @@ class Work < Base
                  source_id: source_id,
                  resource_type_id: resource_type_id,
                  relation_type_id: relation_type_id,
-                 publisher_id: publisher_id,
+                 data_center_id: data_center_id,
                  member_id: member_id,
                  from_created_date: options.fetch("from-created-date", nil),
                  until_created_date: options.fetch("until-created-date", nil),
@@ -158,7 +158,7 @@ class Work < Base
   def self.get_data(options={})
     # sometimes don't query DataCite MDS
     return {} if options["source-id"].present? ||
-                 (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
+                 (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
 
     query_url = get_query_url(options)
     Maremma.get(query_url, options)
@@ -184,16 +184,16 @@ class Work < Base
       resource_type = ResourceType.where(id: resource_type_id.downcase.underscore.dasherize) if resource_type_id.present?
       resource_type = resource_type[:data] if resource_type.present?
 
-      publisher = nil
-      publisher_id = item.fetch("datacentre_symbol", nil)
-      publisher = DataCenter.where(id: publisher_id.downcase.underscore.dasherize) if publisher_id.present?
-      publisher = publisher[:data] if publisher.present?
+      data_center = nil
+      data_center_id = item.fetch("datacentre_symbol", nil)
+      data_center = DataCenter.where(id: data_center_id.downcase.underscore.dasherize) if data_center_id.present?
+      data_center = data_center[:data] if data_center.present?
 
       { data: parse_item(item,
         relation_types: cached_relation_types,
         resource_types: cached_resource_types,
         work_types: cached_work_types,
-        publishers: [publisher].compact,
+        data_centers: [data_center].compact,
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
@@ -224,13 +224,13 @@ class Work < Base
       meta[:sources] = [] #lagotto_result.fetch(:meta, {}).fetch(:sources, [])
       meta[:relation_types] = [] #lagotto_result.fetch(:meta, {}).fetch(:relation_types, [])
 
-      publishers = facets.fetch("datacentre_facet", [])
+      data_centers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
                               [DataCenter, { "id" => id, "title" => title }]
                             end
-      publishers = Array(publishers).map do |item|
+      data_centers = Array(data_centers).map do |item|
         parse_include(item.first, item.last)
       end
 
@@ -238,7 +238,7 @@ class Work < Base
         relation_types: cached_relation_types,
         resource_types: cached_resource_types,
         work_types: cached_work_types,
-        publishers: publishers,
+        data_centers: data_centers,
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
@@ -253,20 +253,20 @@ class Work < Base
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0], title: i[0], count: i[1] } }
-    publishers = facets.fetch("datacentre_facet", [])
+    data_centers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
                               [id, p.last]
                             end.to_h
-    publishers = get_publisher_facets(publishers)
+    data_centers = get_publisher_facets(data_centers)
     schema_versions = facets.fetch("schema_version", [])
                             .each_slice(2)
                             .sort { |a, b| b.first <=> a.first }
                             .map { |i| { id: i[0], title: "Schema #{i[0]}", count: i[1] } }
 
-    if options["publisher-id"].present? && publishers.empty?
-      publishers = { options["publisher-id"] => 0 }
+    if options["data-center-id"].present? && data_centers.empty?
+      data_centers = { options["data-center-id"] => 0 }
     end
 
     { "resource-types" => resource_types,
@@ -286,7 +286,7 @@ class Work < Base
     elsif options[:id].present? ||
           options['source-id'].present? ||
           options['relation-type-id'].present? ||
-          options['publisher-id'].present? ||
+          options['data-center-id'].present? ||
           options['from-created-date'].present? ||
           options['until-created-date'].present? ||
           options['from-update-date'].present? ||
@@ -324,12 +324,12 @@ class Work < Base
       meta = { total: meta["total"],
                years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               data_centers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                resource_types: Array(meta["resource_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: Array(meta["relation_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
       { data: data, meta: meta }
-    elsif options[:id].present? || options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
+    elsif options[:id].present? || options["source-id"].present? || options["relation-type-id"].present? || (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
       data = response.fetch("data", {}).fetch("works", []).map do |item|
         { "id" => item.fetch("id"),
           "doi" => item.fetch("DOI", nil),
@@ -351,7 +351,7 @@ class Work < Base
       meta = { total: meta["total"],
                years: meta["years"],
                sources: meta["sources"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               publishers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
+               data_centers: meta["publishers"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
                relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
 
