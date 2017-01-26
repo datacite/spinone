@@ -31,7 +31,8 @@ class DataCenter < Base
 
   def self.get_query(options={})
     if options[:id].present?
-      ds.where(symbol: options[:id])
+      data = ds.where(symbol: options[:id]).first
+      { "data" => { "data-center" => data } }
     else
       offset = options.fetch(:offset, 0).to_i
       rows = options.fetch(:rows, 25)
@@ -82,8 +83,10 @@ class DataCenter < Base
     return nil if result.blank?
 
     if options[:id]
-      item = result.fetch("data", {}).fetch("publisher", {})
+      item = result.fetch("data", {}).fetch("data-center", {})
       return nil if item.blank?
+
+      item = { "id" => item[:symbol], "title" => item[:name], "created" => item[:created], "updated" => item[:updated] }
 
       { data: parse_item(item, members: cached_members, registration_agencies: cached_registration_agencies) }
     else
