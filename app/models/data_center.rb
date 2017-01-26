@@ -39,11 +39,12 @@ class DataCenter < Base
       offset = options.fetch(:offset, 0).to_i
       rows = options.fetch(:rows, 25)
       q = options.fetch(:query, nil)
-      year = options.fetch("year", nil)
+      year = options.fetch(:year, nil)
 
       query = ds.where{(is_active = true) & (allocator > 100)}
       query = query.where(Sequel.ilike(:name, "%#{q}%")) if q.present?
-      query = query.where('YEAR(created) = ?', options["year"]) if options["year"].present?
+      query = query.where(symbol: options[:ids].split(",")) if options[:ids].present?
+      query = query.where('YEAR(created) = ?', options[:year]) if options[:year].present?
 
       if options["member-id"].present?
         member = self.db[:allocator].where(symbol: options["member-id"].upcase).select(:id, :symbol, :name, :created).first
