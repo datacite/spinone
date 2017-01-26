@@ -271,7 +271,7 @@ class Work < Base
 
     { "resource-types" => resource_types,
       "years" => years,
-      "publishers" => publishers,
+      "data_centers" => data_centers,
       "schema-versions" => schema_versions }
   end
 
