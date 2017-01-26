@@ -83,7 +83,7 @@ module ApplicationHelper
     Source.order("group_id, title")
   end
 
-  def publishers
+  def data_centers
     DataCenters.active.order("name")
   end
 
@@ -168,7 +168,7 @@ module ApplicationHelper
     data[:pid] = @work.pid if @work.present?
     data[:q] = @q if @q.present?
     data[:class_name] = @class_name if @class_name.present?
-    data[:publisher_id] = @publisher.name if @publisher.present?
+    data[:data_center_id] = @data_center.name if @data_center.present?
     data[:source_id] = @source.name if @source.present?
     data[:relation_type_id] = @relation_type.name if @relation_type.present?
     data[:work_type_id] = @work_type.name if @work_type.present?
