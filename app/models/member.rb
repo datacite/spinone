@@ -3,7 +3,7 @@ class Member < Base
 
   def initialize(item, options={})
     attributes = item.fetch('attributes', {})
-    @id = item.fetch("id", nil).underscore
+    @id = item.fetch("id", nil).downcase
     @title = attributes.fetch("title", nil)
     @description = attributes.fetch("description", nil)
     @member_type = attributes.fetch("member-type", nil)

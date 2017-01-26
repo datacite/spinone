@@ -5,7 +5,7 @@ class DataCenter < Base
   include Cacheable
 
   def initialize(attributes, options={})
-    @id = attributes.fetch("id").underscore.dasherize
+    @id = attributes.fetch("id").downcase
     @title = attributes.fetch("title", nil)
     @other_names = attributes.fetch("other_names", [])
     @prefixes = attributes.fetch("prefixes", [])
@@ -18,9 +18,9 @@ class DataCenter < Base
     @year = attributes.fetch("created").year if @created.present?
 
     @member_id = @id.split('.', 2).first
-    @member_id = @member_id.underscore.dasherize if @member_id.present?
+    @member_id = @member_id.downcase if @member_id.present?
     @registration_agency_id = "datacite"
-    @registration_agency_id = @registration_agency_id.underscore.dasherize if @registration_agency_id.present?
+    @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
 
     # associations
     @member = Array(options[:members]).find { |s| s.id == @member_id }
