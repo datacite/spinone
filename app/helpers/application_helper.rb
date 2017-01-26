@@ -84,7 +84,7 @@ module ApplicationHelper
   end
 
   def publishers
-    Publisher.active.order("name")
+    DataCenters.active.order("name")
   end
 
   def contributors

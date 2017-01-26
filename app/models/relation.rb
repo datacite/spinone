@@ -76,7 +76,7 @@ class Relation < Base
              relation_types: meta["relation_types"] }
 
     publisher_ids = Array(meta.fetch(:publishers, [])).map { |i| i["id"] }.join(",")
-    publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
+    publishers = DataCenter.collect_data(ids: publisher_ids).fetch(:data, [])
 
     { data: parse_items(items, sources: cached_sources, publishers: publishers, relation_types: cached_relation_types), meta: meta }
   end

@@ -186,7 +186,7 @@ class Work < Base
 
       publisher = nil
       publisher_id = item.fetch("datacentre_symbol", nil)
-      publisher = Publisher.where(id: publisher_id.downcase.underscore.dasherize) if publisher_id.present?
+      publisher = DataCenter.where(id: publisher_id.downcase.underscore.dasherize) if publisher_id.present?
       publisher = publisher[:data] if publisher.present?
 
       { data: parse_item(item,
@@ -203,7 +203,7 @@ class Work < Base
     #   meta = result[:meta]
 
     #   publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
-    #   publishers = Publisher.collect_data(ids: publisher_ids).fetch(:data, [])
+    #   publishers = DataCenter.collect_data(ids: publisher_ids).fetch(:data, [])
 
     #   { data: parse_items(items,
     #     relation_types: cached_relation_types,
@@ -228,7 +228,7 @@ class Work < Base
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
-                              [Publisher, { "id" => id, "title" => title }]
+                              [DataCenter, { "id" => id, "title" => title }]
                             end
       publishers = Array(publishers).map do |item|
         parse_include(item.first, item.last)
