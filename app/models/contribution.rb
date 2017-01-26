@@ -68,7 +68,7 @@ class Contribution < Base
              data_centers: meta["publishers"]
            }
 
-    data_centers_ids = meta.fetch(:data_centers, []).map { |i| i["id"] }.join(",")
+    data_center_ids = meta.fetch(:data_centers, []).map { |i| i["id"] }.join(",")
     data_centers = DataCenter.collect_data(ids: data_center_ids).fetch(:data, [])
 
     { data: parse_items(items, sources: cached_sources, data_centers: data_centers), meta: meta}
