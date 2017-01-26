@@ -72,7 +72,7 @@ module Cacheable
     end
 
     def cached_member_response(id, options={})
-      Rails.cache.fetch("member_response", expires_in: 1.day) do
+      Rails.cache.fetch("member_response/#{id}", expires_in: 1.day) do
         self.db[:allocator].where(symbol: id).select(:id, :symbol, :name, :created).first
       end
     end
@@ -84,21 +84,34 @@ module Cacheable
       end
     end
 
-    def cached_data_centers_response(query, options={})
-      Rails.cache.fetch("data_center_response", expires_in: 1.day) do
-        allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
+    def cached_total_response(options={})
+      Rails.cache.fetch("total_response", expires_in: 1.day) do
+        query = self.ds.where{(is_active = true) & (allocator > 100)}
+        query.count
+      end
+    end
+
+    def cached_years_response(options={})
+      Rails.cache.fetch("years_response", expires_in: 1.day) do
+        query = self.ds.where{(is_active = true) & (allocator > 100)}
+        query.group_and_count(Sequel.extract(:year, :created)).all
+      end
+    end
+
+    def cached_allocators_response(options={})
+      Rails.cache.fetch("allocator_response", expires_in: 1.day) do
+        query = self.ds.where{(is_active = true) & (allocator > 100)}
+        allocators = query.group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
         members = cached_members_response
         members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
+      end
+    end
 
-        years = query.group_and_count(Sequel.extract(:year, :created)).all
-        years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
-                     .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
-        total = query.count
-        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-
-        data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
+    def cached_data_centers_response(options={})
+      Rails.cache.fetch("data_center_response", expires_in: 1.day) do
+        query = self.ds.where{(is_active = true) & (allocator > 100)}
+        data = query.limit(25).offset(0).order(:name)
         meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
-
         { "data" => { "data-centers" => data, "meta" => meta } }
       end
     end
