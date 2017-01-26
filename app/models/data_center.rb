@@ -44,9 +44,9 @@ class DataCenter < Base
 
       if options["member-id"].present?
         member = self.db[:allocator].where(symbol: options["member-id"].upcase).select(:id, :symbol, :name, :created).first
-        members = [{ "id" => member.fetch(:symbol),
-                     "title" => member.fetch(:name),
-                     "count" => query.where(allocator: member.fetch(:id)).count }]
+        members = [{ symbol: member.fetch(:symbol),
+                     name: member.fetch(:name),
+                     count: query.where(allocator: member.fetch(:id)).count }]
         query = query.where(allocator: member.fetch(:id))
       else
         allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
@@ -92,7 +92,7 @@ class DataCenter < Base
       members = meta.fetch("members", [])
                     .sort { |a, b| b.fetch(:count) <=> a.fetch(:count) }
                     .map do |i|
-                           member = cached_members.find { |m| m.id == i.fetch(:id) } || OpenStruct.new(title: i.fetch(:name))
+                           member = cached_members.find { |m| m.id == i.fetch(:symbol) } || OpenStruct.new(title: i.fetch(:name))
                            { id: i.fetch(:symbol).downcase, title: member.title, count: i.fetch(:count) }
                          end
 
