@@ -1,4 +1,4 @@
-class Contributor < Base
+class Person < Base
   attr_reader :id, :given, :family, :literal, :orcid, :github, :updated_at
 
   # include helper module for extracting identifier
@@ -10,7 +10,7 @@ class Contributor < Base
     @family = attributes.fetch("family", nil)
     @literal = attributes.fetch("literal", nil)
     unless @literal.present? || @given.present? || @family.present?
-      @literal = github_owner_from_url(@id).presence || orcid_from_url(@id)
+      @literal = orcid_from_url(@id)
     end
     @orcid = orcid_from_url(@id)
     @github = github_owner_from_url(@id)
@@ -19,8 +19,8 @@ class Contributor < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      id = options[:id] # || "https://github.com/#{options[:id]}"
-      "#{url}/#{id}"
+      id = options[:id]
+      "#{url}/orcid.org/#{id}"
     else
       offset = options.fetch(:offset, 0).to_f
       page = (offset / 25).ceil + 1
