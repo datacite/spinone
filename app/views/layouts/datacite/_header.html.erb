@@ -86,6 +86,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><%= current_user.name %> <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><%= link_to "#{icon('user')} Settings".html_safe, "#{ENV['JWT_HOST']}/users/me" %></li>
+                <li><%= link_to "#{icon('files-o')} Works".html_safe, "#{ENV['SEARCH_URL']}/people/#{current_user.orcid}" %></li>
                 <li class="divider"></li>
                 <% if ENV['ORCID_CLIENT_ID'].present? %>
                   <li><%= link_to "#{icon('external-link')} ORCID Record".html_safe, current_user.orcid %></li>
