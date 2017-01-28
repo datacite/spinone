@@ -91,6 +91,7 @@ class Work < Base
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['data-center-id'].upcase}" if options['data-center-id'].present?
       fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
+      fq << "nameIdentifier:ORCID\\:#{options['person-id']}" if options['person-id'].present?
       fq << "minted:#{created_date}" if created_date
       fq << "updated:#{update_date}" if update_date
       fq << "publicationYear:#{options[:year]}" if options[:year].present?

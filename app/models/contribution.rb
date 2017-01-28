@@ -49,9 +49,12 @@ class Contribution < Base
     source_id = options.fetch("source-id", nil)
     source_id = source_id.underscore if source_id.present?
 
+    person_id = options.fetch("person-id", nil)
+    person_id = "orcid.org/#{person_id}" if person_id.present?
+
     params = { page: page,
                per_page: options.fetch(:rows, 25),
-               contributor_id: options.fetch("contributor-id", nil),
+               contributor_id: person_id,
                work_id: options.fetch("work-id", nil),
                publisher_id: options.fetch("data-center-id", nil),
                source_id: source_id }.compact
