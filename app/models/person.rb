@@ -4,30 +4,30 @@ class Person < Base
   # include helper module for extracting identifier
   include Identifiable
 
-  def initialize(attributes, options={})
-    @id = attributes.fetch("id", nil)
-    @given = attributes.fetch("given", nil)
-    @family = attributes.fetch("family", nil)
-    @literal = attributes.fetch("literal", nil)
+  def initialize(item, options={})
+    attributes = item.fetch('attributes', {})
+    @id = item.fetch("id", nil)
+    @given = attributes.fetch("given-names", nil)
+    @family = attributes.fetch("family-name", nil)
+    @literal = attributes.fetch("credit-name", nil)
     unless @literal.present? || @given.present? || @family.present?
       @literal = orcid_from_url(@id)
     end
-    @orcid = orcid_from_url(@id)
-    @github = github_owner_from_url(@id)
-    @updated_at = attributes.fetch("timestamp", nil)
+    @orcid = attributes.fetch("orcid", nil)
+    @github = attributes.fetch("github", nil)
+    @updated_at = attributes.fetch("updated", nil)
   end
 
   def self.get_query_url(options={})
     if options[:id].present?
-      id = options[:id]
-      "#{url}/orcid.org/#{id}"
+      "#{url}/#{options[:id]}"
     else
       offset = options.fetch(:offset, 0).to_f
       page = (offset / 25).ceil + 1
 
-      params = { page: page,
-                 per_page: options.fetch(:rows, 25),
-                 q: options.fetch(:query, nil) }.compact
+      params = { "page[number]" => page,
+                 "page[size]" => options.fetch(:rows, 25),
+                 query: options.fetch(:query, nil) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end
@@ -35,20 +35,20 @@ class Person < Base
   def self.parse_data(result, options={})
     return nil if result.blank? || result['errors']
 
-    if options[:id]
-      item = result.fetch("data", {}).fetch("contributor", {})
-      return nil if item.blank?
+    if options[:id].present?
+      item = result.fetch("data", {})
+      return {} unless item.present?
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", {}).fetch("contributors", [])
-      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
+      items = result.fetch("data", [])
+      meta = result.fetch("meta", {}).except("total-pages", "page")
 
-      { data: parse_items(items), meta: { total: total } }
+      { data: parse_items(items), meta: meta }
     end
   end
 
   def self.url
-    "#{ENV["LAGOTTO_URL"]}/contributors"
+    "#{ENV["VOLPINO_URL"]}/users"
   end
 end
