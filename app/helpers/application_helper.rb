@@ -88,7 +88,11 @@ module ApplicationHelper
   end
 
   def contributors
-    Contributor.order("family_name")
+    Person.order("family_name")
+  end
+
+  def people
+    Person.order("family_name")
   end
 
   def author_format(author)
@@ -98,7 +102,7 @@ module ApplicationHelper
         name = [a.fetch("given", nil), a.fetch("family", nil)].compact.join(' ')
         if a["ORCID"].present?
           pid_short = CGI.escape(a["ORCID"].gsub(/(http|https):\/+(\w+)/, '\2'))
-          "<a href=\"/contributors/#{pid_short}\">#{name}</a>"
+          "<a href=\"/people/#{pid_short}\">#{name}</a>"
         else
           name
         end
