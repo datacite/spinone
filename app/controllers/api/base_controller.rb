@@ -2,6 +2,9 @@ class Api::BaseController < ActionController::Base
   # include base controller methods
   include Authenticable
 
+  # for access to current_user
+  include ApplicationHelper
+
   before_filter :miniprofiler, :default_format_json
   after_filter :cors_set_access_control_headers, :set_jsonp_format
 
