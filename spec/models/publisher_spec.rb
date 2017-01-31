@@ -1,29 +1,29 @@
 require 'rails_helper'
 
-describe Publisher, type: :model, vcr: true do
+describe DataCenter, type: :model, vcr: true do
   it "publishers" do
-    publishers = Publisher.where(rows: 50)[:data]
+    publishers = DataCenter.where(rows: 50)[:data]
     expect(publishers.length).to eq(50)
     publisher = publishers.first
     expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
 
   it "publishers with query" do
-    publishers = Publisher.where(query: "plos")[:data]
+    publishers = DataCenter.where(query: "plos")[:data]
     expect(publishers.length).to eq(1)
     publisher = publishers.first
     expect(publisher.title).to eq("Public Library of Science (PLoS)")
   end
 
   it "publishers with registration_agency_id" do
-    publishers = Publisher.where(registration_agency_id: "datacite")[:data]
+    publishers = DataCenter.where(registration_agency_id: "datacite")[:data]
     expect(publishers.length).to eq(25)
     publisher = publishers.first
     expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
 
   it "publisher" do
-    publisher = Publisher.where(id: "ETHZ.UBASOJS")[:data]
+    publisher = DataCenter.where(id: "ETHZ.UBASOJS")[:data]
     expect(publisher.title).to eq("027.7 - Zeitschrift für Bibliothekskultur")
   end
 end
