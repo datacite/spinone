@@ -79,3 +79,5 @@ group :test do
   gem "poltergeist", "~> 1.8.1"
   gem "with_env", "~> 1.1.0"
 end
+
+gem 'rack-mini-profiler', '~> 0.10.1', require: false
