@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: 9ccdb15610a200870135635fd346e895916a0096
+  revision: 2d1c68044e220e185a12a7c66cb307bd7fa4dcd4
   specs:
     active_model_serializers (0.10.4)
       actionpack (>= 4.1, < 6)
@@ -178,7 +178,7 @@ GEM
       ruby_parser (~> 3.5)
     httplog (0.3.3)
       colorize
-    i18n (0.7.0)
+    i18n (0.8.0)
     i18n_data (0.7.0)
     iso8601 (0.9.1)
     json (1.8.6)
