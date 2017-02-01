@@ -54,9 +54,7 @@ class DataCenter < Base
                        count: query.where(allocator: member.fetch(:id)).count }]
           query = query.where(allocator: member.fetch(:id))
         else
-          allocators = query.exclude(allocator: nil).group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
-          members = cached_members_response
-          members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
+          members = cached_allocators_response
         end
 
         if options["year"].present?

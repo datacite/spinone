@@ -32,16 +32,6 @@ FactoryGirl.define do
     initialize_with { DataciteRelated.where(name: name).first_or_initialize }
   end
 
-  factory :datacite_orcid, class: DataciteOrcid do
-    type "DataciteOrcid"
-    name "datacite_orcid"
-    title "Datacite ORCID"
-    state_event "activate"
-    count 0
-
-    initialize_with { DataciteOrcid.where(name: name).first_or_initialize }
-  end
-
   factory :datacite_github, class: DataciteGithub do
     type "DataciteGithub"
     name "datacite_github"
@@ -50,15 +40,5 @@ FactoryGirl.define do
     count 0
 
     initialize_with { DataciteGithub.where(name: name).first_or_initialize }
-  end
-
-  factory :orcid_update, class: OrcidUpdate do
-    type "OrcidUpdate"
-    name "orcid_update"
-    title "ORCID (Auto-Update)"
-    state_event "activate"
-    count 0
-
-    initialize_with { OrcidUpdate.where(name: name).first_or_initialize }
   end
 end
