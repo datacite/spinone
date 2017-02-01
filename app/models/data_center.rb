@@ -39,8 +39,7 @@ class DataCenter < Base
         options[:ids].present? ||
         options[:year].present? ||
         options[:rows] != 25 ||
-        options[:offset] != 0 ||
-        options["member-id"].present?
+        options[:offset] != 0
 
         query = ds.where{(is_active = true) & (allocator > 100)}
         query = query.where(Sequel.ilike(:name, "%#{options[:query]}%")) if options[:query].present?
@@ -68,22 +67,35 @@ class DataCenter < Base
         end
 
         total = query.count
-        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-
         data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
+
+        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
+        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+
+        { "data" => { "data-centers" => data, "meta" => meta } }
+      elsif options["member-id"].present?
+        total = query.count
+        data = cached_data_centers_by_member_response(options["member-id"], options)
+
+        member = cached_member_response(options["member-id"].upcase)
+        members = [{ symbol: member.fetch(:symbol),
+                     name: member.fetch(:name),
+                     count: query.where(allocator: member.fetch(:id)).count }]
+
+        years = cached_years_by_member_response(options["member-id"], options)
+        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
         meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
 
         { "data" => { "data-centers" => data, "meta" => meta } }
       else
+        total = cached_total_response
+        data = cached_data_centers_response
+
         members = cached_allocators_response
         years = cached_years_response
-        years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
-                     .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
-
         registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-
-        total = cached_total_response
-        cached_data_centers_response
+        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+        { "data" => { "data-centers" => data, "meta" => meta } }
       end
     end
   end

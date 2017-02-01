@@ -94,7 +94,18 @@ module Cacheable
     def cached_years_response(options={})
       Rails.cache.fetch("years_response", expires_in: 1.day) do
         query = self.ds.where{(is_active = true) & (allocator > 100)}
-        query.group_and_count(Sequel.extract(:year, :created)).all
+        years = query.group_and_count(Sequel.extract(:year, :created)).all
+        years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
+             .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
+      end
+    end
+
+    def cached_years_by_member_response(id, options={})
+      Rails.cache.fetch("years_response", expires_in: 1.day) do
+        query = self.ds.where(is_active: true, allocator: id)
+        years = query.group_and_count(Sequel.extract(:year, :created)).all
+        years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
+             .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
       end
     end
 
@@ -110,9 +121,14 @@ module Cacheable
     def cached_data_centers_response(options={})
       Rails.cache.fetch("data_center_response", expires_in: 1.day) do
         query = self.ds.where{(is_active = true) & (allocator > 100)}
-        data = query.limit(25).offset(0).order(:name)
-        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
-        { "data" => { "data-centers" => data, "meta" => meta } }
+        query.limit(25).offset(0).order(:name)
+      end
+    end
+
+    def cached_data_centers_by_member_response(id, options={})
+      Rails.cache.fetch("data_center_by_member_response/#{id}", expires_in: 1.day) do
+        query = self.ds.where(is_active: true, allocator: id)
+        query.limit(25).offset(0).order(:name)
       end
     end
   end
