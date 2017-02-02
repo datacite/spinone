@@ -48,10 +48,15 @@ class DataCenter < Base
 
         if options["member-id"].present?
           member = cached_member_response(options["member-id"].upcase)
-          members = [{ symbol: member.fetch(:symbol),
-                       name: member.fetch(:name),
-                       count: query.where(allocator: member.fetch(:id)).count }]
           query = query.where(allocator: member.fetch(:id))
+        end
+
+        total = query.count
+
+        if options["member-id"].present?
+          members = [{ symbol: member.fetch(:symbol),
+             name: member.fetch(:name),
+             count: total }]
         else
           members = cached_allocators_response
         end
@@ -59,14 +64,13 @@ class DataCenter < Base
         if options["year"].present?
           years = [{ id: options["year"],
                      title: options["year"],
-                     count: query.where('YEAR(created) = ?', options["year"]).count }]
+                     count: total }]
         else
           years = query.group_and_count(Sequel.extract(:year, :created)).all
           years = years.map { |y| { id: y.values.first.to_s, title: y.values.first.to_s, count: y.values.last } }
                        .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
         end
 
-        total = query.count
         data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
 
         registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
