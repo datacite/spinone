@@ -42,21 +42,11 @@ If the API call includes a query, then the sort order will be by the relevance s
 
 Major resource components supported by the DataCite API are (in alphabetical order):
 
-* agents
-* contributions
-* contributors
-* events
-* groups
+* data-centers
 * members
 * pages
-* publishers
-* registration-agencies
-* relations
-* relation-types
-* resource-types
-* sources
+* people
 * works
-* work-types
 
 These can be used alone like this
 
@@ -198,11 +188,9 @@ Sideload multiple assocations by providing them in a comma-separated list. The f
 
 | Resource                 | Resources that can be included                                   |
 |:-------------------------|:-----------------------------------------------------------------|
-| `/contributions`         | publisher, source                                                |
-| `/publishers`            | member, registration-agency                                      |
-| `/relations`             | publisher, source, relation-type                                 |
-| `/sources`               | group                                                            |
-| `/works`                 | publisher, member, registration-agency, resource-type, work-type |
+| `/data-centers`          | member, registration-agency                                      |
+| `/members`               | data-center, registration-agency                                 |
+| `/works`                 | data-center, member, registration-agency, resource-type, work-type |
 
 
 ## Example Queries
@@ -210,13 +198,13 @@ Sideload multiple assocations by providing them in a comma-separated list. The f
 **All works published by data center `cdl.dryad` (Dryad), with included resource-type**
 
 ```
-https://api.datacite.org/works?publisher-id=cdl.dryad&include=resource-type
+https://api.datacite.org/works?data-center-id=cdl.dryad&include=resource-type
 ```
 
-**All members with `data` in their name (e.g. Australian National Data Service), with included publishers**
+**All members with `data` in their name (e.g. Australian National Data Service), with included data centers**
 
 ```
-https://api.datacite.org/members?query=data&include=publisher
+https://api.datacite.org/members?query=data&include=data-center
 ```
 
 ## Error messages
