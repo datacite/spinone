@@ -14,17 +14,9 @@ class Status < ActiveRecord::Base
   end
 
   def collect_status_info
-    self.datacite_orcid_count = agent_counts.fetch("datacite_orcid", 0)
-    self.datacite_github_count = agent_counts.fetch("datacite_github", 0)
-    self.datacite_related_count = agent_counts.fetch("datacite_related", 0)
-    self.orcid_update_count = agent_counts.fetch("orcid_update", 0)
     self.db_size = get_db_size
     self.version = Spinone::VERSION
     self.current_version = get_current_version unless current_version.present?
-  end
-
-  def agent_counts
-    Agent.all.to_a.map { |a| [a.name, a.count] }.to_h
   end
 
   def get_current_version

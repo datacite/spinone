@@ -189,8 +189,7 @@ class Work < Base
         work_types: cached_work_types,
         data_centers: [data_center].compact,
         members: cached_members,
-        registration_agencies: cached_registration_agencies,
-        sources: cached_sources), meta: meta }
+        registration_agencies: cached_registration_agencies), meta: meta }
     else
       if options["work-id"].present?
         return { data: [], meta: [] } if result.blank?
@@ -231,8 +230,7 @@ class Work < Base
         work_types: cached_work_types,
         data_centers: data_centers,
         members: cached_members,
-        registration_agencies: cached_registration_agencies,
-        sources: cached_sources), meta: meta }
+        registration_agencies: cached_registration_agencies), meta: meta }
     end
   end
 
@@ -267,9 +265,10 @@ class Work < Base
   end
 
   def self.get_data_center_facets(data_centers, options={})
+    puts data_centers
     response = DataCenter.where(ids: data_centers.keys.join(","))
-    response.fetch("data", {}).fetch("data_centers", [])
-            .map { |p| { id: p.fetch("id").downcase, title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
+    response.fetch(:data, [])
+            .map { |p| { id: p.id.downcase, title: p.title, count: data_centers.fetch(p.id.upcase, 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 

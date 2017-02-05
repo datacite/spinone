@@ -5,11 +5,18 @@ describe Page, type: :model, vcr: true do
     pages = Page.all[:data]
     expect(pages.length).to eq(25)
     page = pages.first
-    expect(page.title).to eq("Welcome United States Geological Survey (USGS)")
+    expect(page.title).to eq("Using Schema.org for DOI Registration")
+  end
+
+  it "query" do
+    pages = Page.where(query: "thor")[:data]
+    expect(pages.length).to eq(13)
+    page = pages.first
+    expect(page.title).to eq("Dynamic Data Citation Webinar")
   end
 
   it "page" do
-    page = Page.where(id: "blog.datacite.org/new-metadata-schema-4-0")[:data]
-    expect(page.title).to eq("New DataCite Metadata Schema 4.0")
+    page = Page.where(id: "10.5438/PE54-ZJ5T")[:data]
+    expect(page.title).to eq("It's all about Relations")
   end
 end
