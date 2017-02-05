@@ -43,26 +43,20 @@ class Work < Base
     @license = normalize_license(attributes.fetch("rightsURI", []))
     @version = attributes.fetch("version", nil)
     @schema_version = attributes.fetch("schema_version", nil)
-    @results = attributes.fetch('relatedIdentifier', [])
-                         .select { |id| id =~ /:DOI:.+/ }
-                         .map do |i|
-                           relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
-                           { "relation-type-id" => relation_type,
-                             "related-identifier" => doi_as_url(related_identifier) }
-                         end.reduce({}) do |sum, i|
-                           k = i["relation-type-id"]
-                           v = sum[k].to_i + 1
-                           sum[k] = v
-                           sum
-                         end.map { |k,v| { id: k, title: k.underscore.humanize, count: v } }
-                            .sort { |a, b| b[:count] <=> a[:count] }
     @related_identifiers = attributes.fetch('relatedIdentifier', [])
-                                     .select { |id| id =~ /:DOI:.+/ }
-                                     .map do |i|
-                                       relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
-                                       { "relation-type-id" => relation_type,
-                                         "related-identifier" => doi_as_url(related_identifier) }
-                                     end
+      .select { |id| id =~ /:DOI:.+/ }
+      .map do |i|
+        relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
+        { "relation-type-id" => relation_type,
+          "related-identifier" => doi_as_url(related_identifier) }
+      end
+    @results = @related_identifiers.reduce({}) do |sum, i|
+      k = i["relation-type-id"]
+      v = sum[k].to_i + 1
+      sum[k] = v
+      sum
+    end.map { |k,v| { id: k, title: k.underscore.humanize, count: v } }
+      .sort { |a, b| b[:count] <=> a[:count] }
     @data_center_id = attributes.fetch("datacentre_symbol", nil)
     @data_center_id = @data_center_id.downcase if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
