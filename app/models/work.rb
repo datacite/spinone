@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :data_center, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :schema_version, :xml, :media, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :data_center, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -43,8 +43,26 @@ class Work < Base
     @license = normalize_license(attributes.fetch("rightsURI", []))
     @version = attributes.fetch("version", nil)
     @schema_version = attributes.fetch("schema_version", nil)
-    @results = attributes.fetch("results", [])
-
+    @results = attributes.fetch('relatedIdentifier', [])
+                         .select { |id| id =~ /:DOI:.+/ }
+                         .map do |i|
+                           relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
+                           { "relation-type-id" => relation_type,
+                             "related-identifier" => doi_as_url(related_identifier) }
+                         end.reduce({}) do |sum, i|
+                           k = i["relation-type-id"]
+                           v = sum[k].to_i + 1
+                           sum[k] = v
+                           sum
+                         end.map { |k,v| { id: k, title: k.underscore.humanize, count: v } }
+                            .sort { |a, b| b[:count] <=> a[:count] }
+    @related_identifiers = attributes.fetch('relatedIdentifier', [])
+                                     .select { |id| id =~ /:DOI:.+/ }
+                                     .map do |i|
+                                       relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
+                                       { "relation-type-id" => relation_type,
+                                         "related-identifier" => doi_as_url(related_identifier) }
+                                     end
     @data_center_id = attributes.fetch("datacentre_symbol", nil)
     @data_center_id = @data_center_id.downcase if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
@@ -66,9 +84,26 @@ class Work < Base
 
   def self.get_query_url(options={})
     if options[:id].present?
-      params = { q: "doi:#{options[:id]}",
+      params = { q: options[:id],
+                 qf: "doi",
+                 defType: "edismax",
+                 wt: "json" }
+    elsif options["work-id"].present?
+      params = { q: options['work-id'],
+                 qf: "doi",
+                 fl: "doi,relatedIdentifier",
+                 defType: "edismax",
                  wt: "json" }
     else
+      if options[:ids].present?
+        ids = options[:ids].split(",")[0..99]
+        options[:query] = options[:query].to_s + " " + ids.join(" ")
+        options[:qf] = "doi"
+        options[:rows] = ids.length
+        options[:sort] = "deposited"
+        options[:mm] = 1
+      end
+
       if options[:sort].present?
         sort = case options[:sort]
                when "deposited" then "minted"
@@ -101,65 +136,25 @@ class Work < Base
                  start: options.fetch(:offset, 0),
                  rows: options[:rows].presence || 25,
                  fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
+                 qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
                  'facet.limit' => 15,
                  'facet.mincount' => 1,
                  sort: "#{sort} #{order}",
+                 defType: "edismax",
+                 bq: "updated:[NOW/DAY-1YEAR TO NOW/DAY]",
+                 mm: options[:mm].presence || 3,
                  wt: "json" }.compact
     end
 
     url + "?" + URI.encode_www_form(params)
   end
 
-  def self.get_lagotto_query_url(options={})
-    if options[:id].present?
-      # workaround, as nginx and the rails router swallow double backslashes
-      options[:id] = options[:id].gsub(/(http|https):\/+(\w+)/, '\1://\2')
-
-      lagotto_url + "?id=" + CGI.escape(options[:id])
-    else
-      offset = options.fetch(:offset, 0).to_f
-      page = (offset / 25).ceil + 1
-
-      source_id = options.fetch("source-id", nil)
-      source_id = source_id.underscore if source_id.present?
-
-      resource_type_id = options.fetch("resource-type-id", nil)
-      resource_type_id = resource_type_id.underscore if resource_type_id.present?
-
-      relation_type_id = options.fetch("relation-type-id", nil)
-      relation_type_id = relation_type_id.underscore if relation_type_id.present?
-
-      data_center_id = options.fetch("data-center-id", nil)
-
-      member_id = options.fetch("member-id", nil)
-
-      sort = options.fetch("sort", nil)
-      sort = sort.underscore if sort.present?
-
-      params = { page: page,
-                 per_page: options.fetch(:rows, 25),
-                 source_id: source_id,
-                 resource_type_id: resource_type_id,
-                 relation_type_id: relation_type_id,
-                 data_center_id: data_center_id,
-                 member_id: member_id,
-                 from_created_date: options.fetch("from-created-date", nil),
-                 until_created_date: options.fetch("until-created-date", nil),
-                 from_update_date: options.fetch("from-update-date", nil),
-                 until_update_date: options.fetch("until-update-date", nil),
-                 year: options.fetch(:year, nil),
-                 sort: sort }.compact
-      lagotto_url + "?" + URI.encode_www_form(params)
-    end
-  end
-
   def self.get_data(options={})
     # sometimes don't query DataCite MDS
-    return {} if options["source-id"].present? ||
-                 (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
+    return {} if (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
 
     query_url = get_query_url(options)
     Maremma.get(query_url, options)
@@ -169,12 +164,10 @@ class Work < Base
     return result if result['errors']
 
     if options[:id].present?
-      return nil if result.blank?
+      return { data: [], meta: [] } if result.blank?
 
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      #result = get_results(items, options)
-      #items = result[:data]
-      return nil if items.blank?
+      return { data: [], meta: [] } if items.blank?
 
       item = items.first
 
@@ -198,32 +191,29 @@ class Work < Base
         members: cached_members,
         registration_agencies: cached_registration_agencies,
         sources: cached_sources), meta: meta }
-    # elsif options["source-id"].present? || options["relation-type-id"].present? || (options["publisher-id"].present? && options["publisher-id"].exclude?("."))
-    #   result = get_results([], options)
-    #   items = result[:data]
-    #   meta = result[:meta]
-
-    #   publisher_ids = meta.fetch(:publishers, []).map { |i| i["id"] }.join(",")
-    #   publishers = DataCenter.collect_data(ids: publisher_ids).fetch(:data, [])
-
-    #   { data: parse_items(items,
-    #     relation_types: cached_relation_types,
-    #     resource_types: cached_resource_types,
-    #     work_types: cached_work_types,
-    #     publishers: publishers,
-    #     members: cached_members,
-    #     registration_agencies: cached_registration_agencies,
-    #     sources: cached_sources,), meta: meta }
     else
+      if options["work-id"].present?
+        return { data: [], meta: [] } if result.blank?
+
+        items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+        return { data: [], meta: [] } if items.blank?
+
+        item = items.first
+        related_doi_identifiers = item.fetch('relatedIdentifier', [])
+                                      .select { |id| id =~ /:DOI:.+/ }
+                                      .map { |i| i.split(':', 3).last.strip.upcase }
+        return { data: [], meta: [] } if related_doi_identifiers.blank?
+
+        options = options.except("work-id")
+        query_url = get_query_url(options.merge(ids: related_doi_identifiers.join(",")))
+        result = Maremma.get(query_url, options)
+      end
+
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      #lagotto_result = get_results(items, options)
-      #items = lagotto_result[:data]
 
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
       meta = parse_facet_counts(facets, options)
       meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
-      meta[:sources] = [] #lagotto_result.fetch(:meta, {}).fetch(:sources, [])
-      meta[:relation_types] = [] #lagotto_result.fetch(:meta, {}).fetch(:relation_types, [])
 
       data_centers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
@@ -260,7 +250,7 @@ class Work < Base
                               id, title = p.first.split(' - ', 2)
                               [id, p.last]
                             end.to_h
-    data_centers = get_publisher_facets(data_centers)
+    data_centers = get_data_center_facets(data_centers)
     schema_versions = facets.fetch("schema_version", [])
                             .each_slice(2)
                             .sort { |a, b| b.first <=> a.first }
@@ -276,106 +266,15 @@ class Work < Base
       "schema-versions" => schema_versions }
   end
 
-  # fetch results hash from Event Data server
-  # merge with hash from MDS
-  def self.get_results(items, options={})
-    return { data: items } unless ENV["LAGOTTO_URL"].present?
-
-    # cache meta hash if no query or filters
-    if options[:query].present?
-      response = { "data" => { "meta" => { "sources" => [], "publishers" => [], "relation_types" => [] } } }
-    elsif options[:id].present? ||
-          options['source-id'].present? ||
-          options['relation-type-id'].present? ||
-          options['data-center-id'].present? ||
-          options['from-created-date'].present? ||
-          options['until-created-date'].present? ||
-          options['from-update-date'].present? ||
-          options['until-update-date'].present? ||
-          (options['resource-type-id'].present? && options['member-id'].present?) ||
-          options[:year].present?
-
-      lagotto_query_url = get_lagotto_query_url(options)
-      response = Maremma.get(lagotto_query_url, options)
-    elsif options['resource-type-id'].present?
-      response = cached_lagotto_resource_type_response(options['resource-type-id'], options)
-    elsif options['member-id'].present?
-      response = cached_lagotto_member_response(options['member-id'], options)
-    else
-      response = cached_lagotto_response(options)
-    end
-
-    if items.present?
-      dois = items.map { |item| CGI.escape(item.fetch("doi")) }
-      data = "ids=" + dois.join(",") + "&type=doi"
-      items_response = Maremma.post(lagotto_url, data: data, headers: { 'X-HTTP-Method-Override' => 'GET' }, content_type: 'html', token: ENV['LAGOTTO_TOKEN'])
-
-      return items if items_response.fetch("data", {}).fetch("meta", {}).fetch("status", nil) == "error"
-
-      data = items.map do |item|
-        work = items_response.fetch("data", {}).fetch("works", []).find { |r| r["DOI"] == item["doi"] }
-        if work.present?
-          item.merge("results" => work.fetch("results", []))
-        else
-          item
-        end
-      end
-
-      meta = response.fetch("data", {}).fetch("meta", {})
-      meta = { total: meta["total"],
-               years: meta["years"],
-               sources: meta["sources"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
-               data_centers: meta["publishers"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
-               resource_types: Array(meta["resource_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               relation_types: Array(meta["relation_types"]).map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
-
-      { data: data, meta: meta }
-    elsif options[:id].present? || options["source-id"].present? || options["relation-type-id"].present? || (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
-      data = response.fetch("data", {}).fetch("works", []).map do |item|
-        { "id" => item.fetch("id"),
-          "doi" => item.fetch("DOI", nil),
-          "url" => item.fetch("URL", nil),
-          "author" => item.fetch("author", []),
-          "title" => [item.fetch("title", nil)],
-          "publisher" => item.fetch("container-title", nil),
-          "datacentre_symbol" => item.fetch("publisher_id", nil),
-          "allocator_symbol" => item.fetch("member_id", nil),
-          "registration_agency_id" => item.fetch("registration_agency_id", nil),
-          "work_type_id" => item.fetch("work_type_id", nil),
-          "results" => item.fetch("results", {}),
-          "publicationYear" => item.fetch("published", nil),
-          "minted" => item.fetch("issued", nil),
-          "updated" => item.fetch("updated", nil) }
-      end
-
-      meta = response.fetch("data", {}).fetch("meta", {})
-      meta = { total: meta["total"],
-               years: meta["years"],
-               sources: meta["sources"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
-               data_centers: meta["publishers"].map { |i| { "id" => i["id"].downcase, "title" => i["title"], "count" => i["count"] }},
-               resource_types: meta["resource_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }},
-               relation_types: meta["relation_types"].map { |i| { "id" => i["id"].underscore.dasherize, "title" => i["title"], "count" => i["count"] }} }.compact
-
-      { data: data, meta: meta }
-    else
-      { data: [] }
-    end
-  end
-
-  def self.get_publisher_facets(publishers, options={})
-    query_url = ENV['LAGOTTO_URL'] + "/publishers?ids=" + publishers.keys.join(",")
-    response = Maremma.get(query_url, options)
-    response.fetch("data", {}).fetch("publishers", [])
+  def self.get_data_center_facets(data_centers, options={})
+    response = DataCenter.where(ids: data_centers.keys.join(","))
+    response.fetch("data", {}).fetch("data_centers", [])
             .map { |p| { id: p.fetch("id").downcase, title: p.fetch("title"), count: publishers.fetch(p.fetch("id"), 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 
   def self.url
     "#{ENV["SOLR_URL"]}"
-  end
-
-  def self.lagotto_url
-    "#{ENV['LAGOTTO_URL']}/works"
   end
 
   # find Creative Commons or OSI license in rightsURI array
