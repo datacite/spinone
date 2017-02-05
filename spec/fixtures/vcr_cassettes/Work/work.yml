@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.1
       Date:
-      - Sun, 05 Feb 2017 09:13:59 GMT
+      - Sun, 05 Feb 2017 21:46:28 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -76,7 +76,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sun, 05 Feb 2017 09:13:59 GMT
+  recorded_at: Sun, 05 Feb 2017 21:46:28 GMT
 - request:
     method: get
     uri: http://schema.datacite.org/meta/kernel-4/include/datacite-resourceType-v4.xsd
@@ -96,15 +96,15 @@ http_interactions:
       Server:
       - openresty/1.11.2.1
       Date:
-      - Sun, 05 Feb 2017 09:13:59 GMT
+      - Sun, 05 Feb 2017 21:46:28 GMT
       Content-Length:
       - '1252'
       Connection:
       - keep-alive
       X-Amz-Id-2:
-      - 8oqmioKpXiWU0d4fMRLXN3JEyaVWKCkvg3zgHqgj3S5gz9R7Sz4jv3U+1tbJxWTzeU0xFs/+n8o=
+      - 2raSJhAi3MoMsuoc6EtPi6ROsAOhxzmhweZIwglTz2+knEzMoG/5RhTUrmJMwpVbOY/1vLjaGvU=
       X-Amz-Request-Id:
-      - BFDF83F4C2954AE1
+      - 2791DF9D19B9FC62
       Content-Encoding:
       - text
       Last-Modified:
@@ -147,5 +147,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sun, 05 Feb 2017 09:13:59 GMT
+  recorded_at: Sun, 05 Feb 2017 21:46:28 GMT
 recorded_with: VCR 2.9.3

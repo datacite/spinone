@@ -1,22 +1,22 @@
 require 'rails_helper'
 
 describe Person, type: :model, vcr: true do
-  it "contributors" do
-    contributors = Person.where(rows: 50)[:data]
-    expect(contributors.length).to eq(50)
-    contributor = contributors.first
-    expect(contributor.literal).to eq("mne-tools")
+  it "people" do
+    people = Person.where(rows: 50)[:data]
+    expect(people.length).to eq(50)
+    person = people.first
+    expect(person.literal).to eq("Ramesh A")
   end
 
-  it "contributors with query" do
-    contributors = Person.where(query: "0000-0002-4000-4167")[:data]
-    expect(contributors.length).to eq(1)
-    contributor = contributors.first
-    expect(contributor.family).to eq("Arend")
+  it "people with query" do
+    people = Person.where(query: "0000-0001-6528-2027")[:data]
+    expect(people.length).to eq(1)
+    person = people.first
+    expect(person.family).to eq("Fenner")
   end
 
-  it "contributor" do
-    contributor = Person.where(id: "http://orcid.org/0000-0002-4000-4167")[:data]
-    expect(contributor.family).to eq("Arend")
+  it "person" do
+    person = Person.where(id: "0000-0001-6528-2027")[:data]
+    expect(person.family).to eq("Fenner")
   end
 end
