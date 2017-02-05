@@ -7,6 +7,7 @@ title: "Home"
 
 * v.1: June 25, 2016, first draft.
 * v.1.1: October 31, 2016, follow JSONAPI spec for side-loading associations [Changelog](https://github.com/datacite/spinone/blob/master/CHANGELOG.md)
+* v.1.2: February 5, 2017, simplified API
 
 ## Overview
 
@@ -61,31 +62,21 @@ These can be used alone like this
 
 | Resource                 | Description                       |
 |:-------------------------|:----------------------------------|
-| `/agents`                | returns a list of agents used by the Event Data service |
-| `/contributions`         | returns a list of all contributions from the Event Data service |
-| `/contributors`          | returns a list of all contributors |
-| `/events`                | returns a list of recent events from the Event Data service |
-| `/groups`                | returns a list of groups for sources used by Event Data service |
+| `/data-centers`          | returns a list of all DataCite data centers |
 | `/members`               | returns a list of all DataCite members |
 | `/pages`                 | returns a list of posts from the DataCite blog |
-| `/publishers`            | returns a list of all DataCite publishers |
-| `/registration-agencies` | returns a list of registration agencies used by the Event Data service |
-| `/relations`             | returns a list of all relations from the Event Data service |
-| `/relation-types`        | returns a list of valid relation types |
-| `/resource-types`        | returns a list of valid resource types |
-| `/sources`               | returns a list of sources used by the Event Data service |
+| `/people`                | returns a list of all people registered with the Profiles service |
 | `/works`                 | returns a list of all works (datasets, text documents, etc.), 25 per page
-| `/work-types`            | returns a list of valid work types |
 
 ### Resource components and identifiers
 Resource components can be used in conjunction with identifiers to retrieve the metadata for that identifier.
 
 | Resource                     | Description                                      |
 |:-----------------------------|:-------------------------------------------------|
+| `/data-centers/{data-center-id}` | returns metadata for a DataCite data center      |
 | `/members/{member-id}`       | returns metadata for a DataCite member           |
-| `/publishers/{publisher-id}`  | returns metadata for a DataCite data center      |
+| `/people/{orcid}`            | returns metadata for a person registered with DataCite Profiles      |
 | `/works/{doi}`               | returns metadata for the specified DataCite DOI. |
-| `/work-types/{work-type-id}` | returns information about a specified work type  |
 
 ## Parameters
 
@@ -139,11 +130,8 @@ Facet counts are returned via the `meta` object. Facet counts give counts per fi
 
 | Resource                 | Facet counts                                                                       |
 |:-------------------------|:-----------------------------------------------------------------------------------|
-| `/contributions`         | total, publishers, sources                                                         |
-| `/publishers`            | total, members, registration-agencies                                              |
-| `/relations`             | total, publishers, sources, relation-types                                         |
-| `/sources`               | total, groups                                                                      |
-| `/works`                 | total, publishers, relation-types, resource-types, schema-versions, sources, years |
+| `/data-centers`          | total, members, registration-agencies                                              |
+| `/works`                 | total, data-centers, relation-types, resource-types, schema-versions, sources, years |
 
 All other resources return only `total` in the `meta` object.
 
@@ -154,7 +142,7 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 | Filter     | Possible values | Description|
 |:-----------|:----------------|:-----------|
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
-| `publisher-id` | `{publisher-id}` | metadata associated with a specific DataCite data center |
+| `data-center-id` | `{data-center-id}` | metadata associated with a specific DataCite data center |
 | `resource-id` | `{resource-type-id}` | metadata for a specific resourceTypeGeneral |
 | `source-id` | `{source-id}` | metadata associated with a specific source |
 | `relation-type-id` | `{relation-type-id}` | metadata associated with a specific relation type |
