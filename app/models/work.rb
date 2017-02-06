@@ -48,7 +48,7 @@ class Work < Base
       .map do |i|
         relation_type, _related_identifier_type, related_identifier = i.split(':', 3)
         { "relation-type-id" => relation_type,
-          "related-identifier" => doi_as_url(related_identifier) }
+          "related-identifier" => doi_as_url(related_identifier.upcase) }
       end
     @results = @related_identifiers.reduce({}) do |sum, i|
       k = i["relation-type-id"]
