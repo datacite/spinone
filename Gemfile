@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.2', '>= 4.2.7'
 gem 'mysql2', '0.3.18'
 gem 'sequel', '~> 4.40'
+gem 'redis', '~> 3.3', '>= 3.3.1'
 
 gem "dotenv", '~> 1.0.2'
 gem 'sinatra', :require => nil
