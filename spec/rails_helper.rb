@@ -14,15 +14,12 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
 require "shoulda-matchers"
 require "email_spec"
-require "factory_girl_rails"
 require "capybara/rspec"
 require "capybara/rails"
 require "capybara/poltergeist"
 require "capybara-screenshot/rspec"
-require "database_cleaner"
 require "webmock/rspec"
 require "rack/test"
-require "sidekiq/testing"
 require "colorize"
 require "maremma"
 
@@ -69,17 +66,7 @@ end
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures/"
 
-  # If you're not using ActiveRecord, or you'd prefer not to run each of your
-  # examples within a transaction, remove the following line or assign false
-  # instead of true.
-  config.use_transactional_fixtures = false
-  config.infer_base_class_for_anonymous_controllers = false
-  config.infer_spec_type_from_file_location!
-  config.order = :random
-
   # config.include WebMock::API
-  config.include FactoryGirl::Syntax::Methods
-
   config.include Rack::Test::Methods, :type => :api
   config.include Rack::Test::Methods, :type => :controller
 
@@ -90,42 +77,6 @@ RSpec.configure do |config|
   # restore application-specific ENV variables after each example
   config.after(:each) do
     ENV_VARS.each { |k,v| ENV[k] = v }
-  end
-
-  config.before(:suite) do
-    DatabaseCleaner.clean_with(:truncation)
-    FactoryGirl.lint
-  end
-
-  config.before(:each) do
-    DatabaseCleaner.strategy = :transaction
-  end
-
-  config.before(:each, js: true) do
-    DatabaseCleaner.strategy = :truncation
-  end
-
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
-
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
-
-  config.before(:each) do |example|
-    # Clears out the jobs for tests using the fake testing
-    Sidekiq::Worker.clear_all
-
-    if example.metadata[:sidekiq] == :fake
-      Sidekiq::Testing.fake!
-    elsif example.metadata[:sidekiq] == :inline
-      Sidekiq::Testing.inline!
-    elsif example.metadata[:type] == :feature
-      Sidekiq::Testing.inline!
-    else
-      Sidekiq::Testing.fake!
-    end
   end
 
   def capture_stdout(&block)

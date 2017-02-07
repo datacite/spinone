@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://profiles.test.datacite.org/api/members/ands
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty/1.11.2.1
+      Date:
+      - Tue, 07 Feb 2017 09:17:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 2237aea6-9d4a-43d7-90e7-4a4b2977ce98
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"62c45dace372d719510c5994c0af359d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.004566'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
+        National Data Service","description":"\u003cp\u003eThe Australian National
+        Data Service (ANDS) makes Australia\u0026#39;s research data assets more valuable
+        for researchers, research institutions and the nation.\u003c/p\u003e\n\n\u003cp\u003eWe
+        do this through working in trusted partnerships on research data projects,
+        delivering reliable national services and enhancing the capability of Australia\u0026#39;s
+        research data system.\u003c/p\u003e\n\n\u003cp\u003eA key ANDS service is
+        the \u003ca href=\"http://researchdata.ands.org.au/\"\u003eResearch Data Australia\u003c/a\u003e
+        discovery portal where you can find, access and reuse Australian research
+        data.\u003c/p\u003e\n\n\u003cp\u003eANDS is a partnership led by Monash University,
+        in collaboration with the Australian National University and CSIRO. It is
+        funded by the Australian Government through the National Collaborative Research
+        Infrastructure Strategy (NCRIS).\u003c/p\u003e\n\n\u003cp\u003eANDS involvement
+        in the DataCite consortium ensures that we are active in global initiatives
+        addressing the issues surrounding research data, including those of publication,
+        citation and standards. ANDS has run its \u003ca href=\"http://ands.org.au/services/cite-my-data.html\"\u003eCite
+        My Data\u003c/a\u003e service since 2011. This service allows Australian research
+        organisations to assign DOIs to their own research collections. This, in turn,
+        provides researchers with a means of citing their published data and achieving
+        recognition for their research data output.\u003c/p\u003e\n\n\u003cp\u003eSubscribe
+        to our discussion list: \u003ca href=\"https://groups.google.com/forum/?hl=en#!forum/ands-general\"\u003eANDS
+        Google Group\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eSubscribe to our
+        e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","region":"Asia
+        Pacific","country":"Australia","year":2010,"logo-url":"https://assets.test.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
+        3 9902 0585","updated":"2017-01-12T21:48:51.000Z"}}}'
+    http_version: 
+  recorded_at: Tue, 07 Feb 2017 09:17:42 GMT
+recorded_with: VCR 2.9.3
