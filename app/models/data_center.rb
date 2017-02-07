@@ -28,7 +28,7 @@ class DataCenter < Base
   end
 
   def self.ds
-    self.db[:datacentre]
+    DB[:datacentre]
   end
 
   def self.get_query(options={})
@@ -42,7 +42,7 @@ class DataCenter < Base
         options[:offset] != 0
 
         query = ds.where{(is_active = true) & (allocator > 100)}
-        query = query.where(Sequel.ilike(:name, "%#{options[:query]}%")) if options[:query].present?
+        query = query.where("name LIKE ? OR SYMBOL = ?", "%#{options[:query]}%", options[:query]) if options[:query].present?
         query = query.where(symbol: options[:ids].split(",")) if options[:ids].present?
         query = query.where('YEAR(created) = ?', options[:year]) if options[:year].present?
 
@@ -58,7 +58,9 @@ class DataCenter < Base
              name: member.fetch(:name),
              count: total }]
         else
-          members = cached_allocators_response
+          allocators = query.group_and_count(:allocator).all.map { |a| { id: a[:allocator], count: a[:count] } }
+          members = cached_members_response
+          members = (allocators + members).group_by { |h| h[:id] }.map { |k,v| v.reduce(:merge) }.select { |h| h[:count].present? }
         end
 
         if options["year"].present?
