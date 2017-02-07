@@ -6,17 +6,14 @@ gem 'mysql2', '0.3.18'
 gem 'sequel', '~> 4.40'
 
 gem "dotenv", '~> 1.0.2'
-gem 'sidekiq', '~> 4.0', '>= 4.0.1'
 gem 'sinatra', :require => nil
 gem 'config', '~> 1.0.0'
-gem 'sprig', '~> 0.1.7'
 gem 'rake', '~> 10.5'
 gem 'parse-cron', '~> 0.1.4'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 2.2', '>= 2.2.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
-gem 'nilify_blanks', '~> 1.2.0'
 gem "state_machine", "~> 1.2.0", :git => 'https://github.com/fly1tkg/state_machine.git', :branch => 'issue/334'
 gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers.git'
 gem 'colorize', '~> 0.7.7'
@@ -63,10 +60,8 @@ group :development, :test do
 end
 
 group :test do
-  gem "factory_girl_rails", "~> 4.5.0", :require => false
   gem "capybara", "~> 2.4.4"
   gem 'capybara-screenshot', '~> 1.0.3'
-  gem "database_cleaner", "~> 1.3.0"
   gem "launchy", "~> 2.4.2"
   gem "email_spec", "~> 1.6.0"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"
@@ -78,5 +73,3 @@ group :test do
   gem "poltergeist", "~> 1.8.1"
   gem "with_env", "~> 1.1.0"
 end
-
-gem 'rack-mini-profiler', '~> 0.10.1', require: false

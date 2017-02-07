@@ -259,7 +259,6 @@ class Work < Base
   end
 
   def self.get_data_center_facets(data_centers, options={})
-    puts data_centers
     response = DataCenter.where(ids: data_centers.keys.join(","))
     response.fetch(:data, [])
             .map { |p| { id: p.id.downcase, title: p.title, count: data_centers.fetch(p.id.upcase, 0) } }

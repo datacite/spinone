@@ -87,7 +87,7 @@ module Spinone
     config.middleware.use Rack::Deflater
 
     # set Active Job queueing backend
-    config.active_job.queue_adapter = :sidekiq
+    # config.active_job.queue_adapter = :sidekiq
 
     # Minimum Sass number precision required by bootstrap-sass
     #::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
