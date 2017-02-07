@@ -67,13 +67,13 @@ module Cacheable
 
     def cached_members_response(options={})
       Rails.cache.fetch("member_response", expires_in: 1.day) do
-        self.db[:allocator].select(:id, :symbol, :name, :created).all
+        Base::DB[:allocator].select(:id, :symbol, :name, :created).all
       end
     end
 
     def cached_member_response(id, options={})
       Rails.cache.fetch("member_response/#{id}", expires_in: 1.day) do
-        self.db[:allocator].where(symbol: id).select(:id, :symbol, :name, :created).first
+        Base::DB[:allocator].where(symbol: id).select(:id, :symbol, :name, :created).first
       end
     end
 

@@ -5,6 +5,8 @@ class Base
   include ActiveModel::Serialization
 
   DEFAULT_ROWS = 1000
+  DB = Sequel.connect("mysql2://#{ENV['MDS_DB_USERNAME']}:#{ENV['MDS_DB_PASSWORD']}@#{ENV['MDS_DB_HOST']}/#{ENV['MDS_DB_NAME']}",
+    max_connections: 10)
 
   def self.all
     collect_data
@@ -40,14 +42,5 @@ class Base
 
   def self.sanitize(text, options={})
     Bergamasco::Sanitize.sanitize(text, options)
-  end
-
-  def self.db
-    db_name = ENV['MDS_DB_NAME']
-    db_username = ENV['MDS_DB_USERNAME']
-    db_password = ENV['MDS_DB_PASSWORD']
-    db_host = ENV['MDS_DB_HOST']
-
-    Sequel.connect("mysql2://#{db_username}:#{db_password}@#{db_host}/#{db_name}")
   end
 end
