@@ -13,7 +13,6 @@ before_script:
   - mkdir -p tmp/pids log
   - cd vendor && npm install
   - cd ../ && npm install -g istanbul codeclimate-test-reporter
-  - bundle exec rake db:setup RAILS_ENV=test
 
 script:
   - bundle exec rspec
