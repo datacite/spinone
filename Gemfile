@@ -11,7 +11,6 @@ gem 'sinatra', :require => nil
 gem 'config', '~> 1.0.0'
 gem 'sprig', '~> 0.1.7'
 gem 'rake', '~> 10.5'
-gem "whenever", "~> 0.9.0", require: false
 gem 'parse-cron', '~> 0.1.4'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 2.2', '>= 2.2.1'

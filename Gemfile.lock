@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/rails-api/active_model_serializers.git
-  revision: 2d1c68044e220e185a12a7c66cb307bd7fa4dcd4
+  revision: 58e3983e4c18baea937535038c1324017793f166
   specs:
     active_model_serializers (0.10.4)
       actionpack (>= 4.1, < 6)
@@ -58,9 +58,9 @@ GEM
     ast (2.3.0)
     astrolabe (1.3.1)
       parser (~> 2.2)
-    bergamasco (0.3.11)
+    bergamasco (0.3.12)
       activesupport (~> 4.2, >= 4.2.5)
-      addressable (~> 2.3.8)
+      addressable (>= 2.3.6)
       builder (~> 3.2, >= 3.2.2)
       loofah (~> 2.0, >= 2.0.3)
       multi_json (~> 1.11.2)
@@ -103,7 +103,6 @@ GEM
       launchy
     case_transform (0.2)
       activesupport
-    chronic (0.10.2)
     cliver (0.3.2)
     codeclimate-test-reporter (0.4.8)
       simplecov (>= 0.7.1, < 1.0.0)
@@ -317,8 +316,8 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    sequel (4.42.1)
-    sexp_processor (4.7.0)
+    sequel (4.43.0)
+    sexp_processor (4.8.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
     sidekiq (4.2.9)
@@ -381,8 +380,6 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    whenever (0.9.7)
-      chronic (>= 0.6.3)
     will_paginate (3.0.7)
     will_paginate-bootstrap (1.0.1)
       will_paginate (>= 3.0.3)
@@ -456,7 +453,6 @@ DEPENDENCIES
   uglifier (~> 2.7, >= 2.7.2)
   vcr (~> 2.9.3)
   webmock (~> 1.20.0)
-  whenever (~> 0.9.0)
   will_paginate (= 3.0.7)
   will_paginate-bootstrap (~> 1.0.1)
   with_env (~> 1.1.0)
