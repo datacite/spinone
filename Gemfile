@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 #ruby '2.3.1'
 
 gem 'rails', '~> 4.2', '>= 4.2.7'
-gem 'mysql2', '0.3.18'
 gem 'sequel', '~> 4.40'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 
@@ -15,7 +14,6 @@ gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 2.2', '>= 2.2.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
-gem "state_machine", "~> 1.2.0", :git => 'https://github.com/fly1tkg/state_machine.git', :branch => 'issue/334'
 gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers.git'
 gem 'colorize', '~> 0.7.7'
 
@@ -39,11 +37,6 @@ gem 'bergamasco', '~> 0.3.11'
 
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
-
-gem 'sprockets-rails', '~> 2.2.0', :require => 'sprockets/railtie'
-gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
-gem 'sass-rails', '~> 4.0.4'
-gem 'uglifier', '~> 2.7', '>= 2.7.2'
 
 group :development do
   gem 'pry-rails', '~> 0.3.2'

@@ -46,8 +46,6 @@ RUN gem install bundler && \
 
 # Run additional scripts during container startup (i.e. not at build time)
 RUN mkdir -p /etc/my_init.d
-COPY vendor/docker/70_precompile.sh /etc/my_init.d/70_precompile.sh
-COPY vendor/docker/90_migrate.sh /etc/my_init.d/90_migrate.sh
 
 # Expose web
 EXPOSE 80

@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/fly1tkg/state_machine.git
-  revision: 181f758a50698c4564b46a48d5704b48e9b3cf33
-  branch: issue/334
-  specs:
-    state_machine (1.2.0)
-
-GIT
   remote: https://github.com/rails-api/active_model_serializers.git
   revision: 58e3983e4c18baea937535038c1324017793f166
   specs:
@@ -209,14 +202,13 @@ GEM
     minitest (5.10.1)
     multi_json (1.11.3)
     multipart-post (2.0.0)
-    mysql2 (0.3.18)
     namae (0.10.2)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     oj (2.13.1)
     pandoc-ruby (2.0.1)
     parse-cron (0.1.4)
-    parser (2.3.3.1)
+    parser (2.4.0.0)
       ast (~> 2.2)
     poltergeist (1.8.1)
       capybara (~> 2.1)
@@ -402,7 +394,6 @@ DEPENDENCIES
   launchy (~> 2.4.2)
   lograge (~> 0.3.5)
   maremma (~> 2.2, >= 2.2.1)
-  mysql2 (= 0.3.18)
   namae (~> 0.10.2)
   nokogiri (~> 1.6, >= 1.6.7.2)
   parse-cron (~> 0.1.4)
@@ -424,7 +415,6 @@ DEPENDENCIES
   sinatra
   spring
   sprockets-rails (~> 2.2.0)
-  state_machine (~> 1.2.0)!
   teaspoon-jasmine (~> 2.2.0)
   uglifier (~> 2.7, >= 2.7.2)
   vcr (~> 2.9.3)
