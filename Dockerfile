@@ -34,11 +34,6 @@ RUN mkdir -p /home/app/webapp/tmp/pids && \
     chown -R app:app /home/app/webapp && \
     chmod -R 755 /home/app/webapp
 
-# Install npm and bower packages
-WORKDIR /home/app/webapp/vendor
-RUN /sbin/setuser app npm install && \
-    npm install -g phantomjs-prebuilt
-
 # Install Ruby gems
 WORKDIR /home/app/webapp
 RUN gem install bundler && \

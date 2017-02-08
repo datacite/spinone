@@ -2,31 +2,26 @@ source 'https://rubygems.org'
 #ruby '2.3.1'
 
 gem 'rails', '~> 4.2', '>= 4.2.7'
+gem 'mysql2', '0.3.18'
 gem 'sequel', '~> 4.40'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 
 gem "dotenv", '~> 1.0.2'
-gem 'sinatra', :require => nil
 gem 'config', '~> 1.0.0'
-gem 'rake', '~> 10.5'
-gem 'parse-cron', '~> 0.1.4'
+gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 2.2', '>= 2.2.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
-gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers.git'
+gem 'active_model_serializers', '~> 0.10.4'
 gem 'colorize', '~> 0.7.7'
 
-gem "haml-rails", "~> 0.9"
 gem "dalli", "~> 2.7.0"
 gem 'will_paginate', '3.0.7'
 gem "will_paginate-bootstrap", "~> 1.0.1"
-gem "simple_form", "~> 3.1.0"
-gem 'country_select', '~> 2.5', '>= 2.5.1'
 gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
-gem "rouge", "~> 1.7.2"
 gem 'hashie', '~> 3.3.2'
 gem 'bibtex-ruby', '~> 4.2'
 gem 'namae', '~> 0.10.2'
@@ -34,6 +29,7 @@ gem 'gender_detector', '~> 0.1.2'
 gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 gem 'bergamasco', '~> 0.3.11'
+gem 'rouge', '~> 1.10', '>= 1.10.1'
 
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
@@ -48,14 +44,12 @@ group :development, :test do
   gem "rspec-rails", "~> 3.1.0"
   gem 'byebug'
   gem 'spring'
-  gem 'teaspoon-jasmine', '~> 2.2.0'
   gem "brakeman", "~> 2.6.0", :require => false
   gem 'rubocop', '~> 0.27.0'
 end
 
 group :test do
   gem "capybara", "~> 2.4.4"
-  gem 'capybara-screenshot', '~> 1.0.3'
   gem "launchy", "~> 2.4.2"
   gem "email_spec", "~> 1.6.0"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"

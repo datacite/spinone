@@ -16,8 +16,6 @@ require "shoulda-matchers"
 require "email_spec"
 require "capybara/rspec"
 require "capybara/rails"
-require "capybara/poltergeist"
-require "capybara-screenshot/rspec"
 require "webmock/rspec"
 require "rack/test"
 require "colorize"
@@ -26,23 +24,6 @@ require "maremma"
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
-
-Capybara.register_driver :poltergeist do |app|
-  Capybara::Poltergeist::Driver.new(app, {
-    timeout: 180,
-    inspector: true,
-    debug: false,
-    window_size: [1024, 768]
-  })
-end
-
-Capybara.javascript_driver = :poltergeist
-Capybara.default_selector = :css
-
-Capybara.configure do |config|
-  config.match = :prefer_exact
-  config.ignore_hidden_elements = true
-end
 
 WebMock.disable_net_connect!(
   allow: ['codeclimate.com:443', ENV['PRIVATE_IP'], ENV['HOSTNAME']],
