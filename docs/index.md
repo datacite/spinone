@@ -134,7 +134,6 @@ Filters allow you to narrow queries. All filter results are lists.  The followin
 | `member-id` | `{member-id}` | metadata associated with a specific DataCite member |
 | `data-center-id` | `{data-center-id}` | metadata associated with a specific DataCite data center |
 | `resource-id` | `{resource-type-id}` | metadata for a specific resourceTypeGeneral |
-| `source-id` | `{source-id}` | metadata associated with a specific source |
 | `relation-type-id` | `{relation-type-id}` | metadata associated with a specific relation type |
 | `from-created-date` | `{date}` | metadata where deposited date is since (inclusive) `{date}` |
 | `until-created-date` | `{date}` | metadata where deposited date is before (inclusive)  `{date}` |

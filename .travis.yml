@@ -6,13 +6,15 @@ rvm:
 
 services:
   - redis-server
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE test;'
 
 before_script:
   - memcached -p 11211 &
   - cp .env.travis .env
   - mkdir -p tmp/pids log
-  - cd vendor && npm install
-  - cd ../ && npm install -g istanbul codeclimate-test-reporter
 
 script:
   - bundle exec rspec

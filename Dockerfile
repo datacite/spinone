@@ -34,11 +34,6 @@ RUN mkdir -p /home/app/webapp/tmp/pids && \
     chown -R app:app /home/app/webapp && \
     chmod -R 755 /home/app/webapp
 
-# Install npm and bower packages
-WORKDIR /home/app/webapp/vendor
-RUN /sbin/setuser app npm install && \
-    npm install -g phantomjs-prebuilt
-
 # Install Ruby gems
 WORKDIR /home/app/webapp
 RUN gem install bundler && \
@@ -46,8 +41,6 @@ RUN gem install bundler && \
 
 # Run additional scripts during container startup (i.e. not at build time)
 RUN mkdir -p /etc/my_init.d
-COPY vendor/docker/70_precompile.sh /etc/my_init.d/70_precompile.sh
-COPY vendor/docker/90_migrate.sh /etc/my_init.d/90_migrate.sh
 
 # Expose web
 EXPOSE 80
