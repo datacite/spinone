@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root :to => 'docs#index'
+  root :to => 'index#index'
 
-  resources :docs, :only => [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
+  resources :index, only: [:index]
   resources :heartbeat, only: [:index]
 
   scope module: :api, defaults: { format: "json" } do
@@ -9,13 +9,8 @@ Rails.application.routes.draw do
       resources :works
     end
 
-    resources :callbacks, only: [:create]
-    resources :contributors, only: [:show, :index], constraints: { :id => /.+/ } do
-      resources :contributions, only: [:index]
-    end
     resources :data_centers, only: [:show, :index], constraints: { :id => /.+/ }, concerns: :workable, path: "/data-centers"
     resources :datasets, only: [:show, :index], constraints: { :id => /.+/ }, path: "/dats"
-    resources :docs, only: [:index, :show], :constraints => { :id => /[0-z\-\.\(\)]+/ }
     resources :members, only: [:show, :index], concerns: :workable
     resources :pages, only: [:show, :index], constraints: { :id => /.+/ }
     resources :people, only: [:show, :index], constraints: { :id => /.+/ } do
