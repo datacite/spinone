@@ -13,29 +13,25 @@ module Authenticable
       end
     end
 
-    if Rails.env.production? || Rails.env.stage?
-      rescue_from *RESCUABLE_EXCEPTIONS do |exception|
-        status = case exception.class.to_s
-                 when "CanCan::AccessDenied" then 401
-                 when "ActiveRecord::RecordNotFound" then 404
-                 when "ActiveModel::ForbiddenAttributesError", "ActionController::UnpermittedParameters", "NoMethodError" then 422
-                 else 400
-                 end
-
-        if status == 404
-          message = "The page you are looking for doesn't exist."
-        elsif status == 401
-          message = "You are not authorized to access this page."
+    rescue_from *RESCUABLE_EXCEPTIONS do |exception|
+      status, message = case exception.class.to_s
+        when "CanCan::AccessDenied", "JWT::DecodeError"
+          [401, "You are not authorized to access this resource."]
+        when "AbstractController::ActionNotFound", "ActionController::RoutingError"
+          [404, "The resource you are looking for doesn't exist."]
+        when "ActiveModel::ForbiddenAttributesError", "ActionController::UnpermittedParameters", "ActionController::ParameterMissing"
+          [422, exception.message]
+        when "NoMethodError"
+          Rails.env.development? || Rails.env.test? ? [422, exception.message] : [422, "The request could not be processed."]
         else
-          message = exception.message
+          [400, exception.message]
         end
 
-        respond_to do |format|
-          format.all { render json: { errors: [{ status: status.to_s,
-                                                 title: message }]
-                                    }, status: status
-                     }
-        end
+      respond_to do |format|
+        format.all { render json: { errors: [{ status: status.to_s,
+                                               title: message }]
+                                  }, status: status, content_type: "application/json"
+                   }
       end
     end
   end

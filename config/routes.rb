@@ -18,4 +18,7 @@ Rails.application.routes.draw do
     end
     resources :works, only: [:show, :index], constraints: { :id => /.+/ }
   end
+
+  # rescue routing errors
+  match "*path", to: "index#routing_error", via: :all
 end
