@@ -1,4 +1,4 @@
-FROM phusion/passenger-full:0.9.19
+FROM phusion/passenger-full:0.9.20
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
 # Set correct environment variables
@@ -9,6 +9,9 @@ RUN usermod -a -G docker_env app
 
 # Use baseimage-docker's init process
 CMD ["/sbin/my_init"]
+
+# Install Ruby 2.3.3
+RUN bash -lc 'rvm --default use ruby-2.3.3'
 
 # Update installed APT packages, clean up when done
 RUN apt-get update && \
@@ -36,7 +39,8 @@ RUN mkdir -p /home/app/webapp/tmp/pids && \
 
 # Install Ruby gems
 WORKDIR /home/app/webapp
-RUN gem install bundler && \
+RUN gem update --system && \
+    gem install bundler && \
     /sbin/setuser app bundle install --path vendor/bundle
 
 # Run additional scripts during container startup (i.e. not at build time)

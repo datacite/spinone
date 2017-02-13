@@ -6,7 +6,7 @@ module Identifiable
       if /(http|https):\/\/(dx\.)?doi\.org\/(\w+)/.match(url)
         uri = Addressable::URI.parse(url)
         uri.path[1..-1].upcase
-      elsif url.starts_with?("doi:")
+      elsif id.is_a?(String) && id.starts_with?("doi:")
         url[4..-1].upcase
       end
     end
