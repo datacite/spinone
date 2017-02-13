@@ -34,6 +34,8 @@ gem 'rouge', '~> 1.10', '>= 1.10.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 
+gem 'librato-rails', '~> 2.0'
+
 group :development do
   gem 'pry-rails', '~> 0.3.2'
   gem 'better_errors', '~> 2.0.0'
