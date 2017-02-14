@@ -139,7 +139,7 @@ class Work < Base
                  sort: "#{sort} #{order}",
                  defType: "edismax",
                  bq: "updated:[NOW/DAY-1YEAR TO NOW/DAY]",
-                 mm: options[:mm].presence || 3,
+                 mm: options[:mm],
                  wt: "json" }.compact
     end
 
