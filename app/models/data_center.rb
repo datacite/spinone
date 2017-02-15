@@ -126,7 +126,7 @@ class DataCenter < Base
       members = meta.fetch("members", [])
                     .sort { |a, b| b.fetch(:count) <=> a.fetch(:count) }
                     .map do |i|
-                           member = cached_members.find { |m| m.id == i.fetch(:symbol) } || OpenStruct.new(title: i.fetch(:name))
+                           member = cached_members.find { |m| m.id == i.fetch(:symbol, nil) } || OpenStruct.new(title: i.fetch(:name, nil))
                            { id: i.fetch(:symbol).downcase, title: member.title, count: i.fetch(:count) }
                          end
 
