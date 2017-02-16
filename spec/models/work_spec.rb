@@ -35,6 +35,28 @@ describe Work, type: :model, vcr: true do
     end
   end
 
+  context "normalize license" do
+    it "cc0" do
+      rights_uri = ["http://creativecommons.org/publicdomain/zero/1.0/"]
+      expect(subject.normalize_license(rights_uri)).to eq("https://creativecommons.org/publicdomain/zero/1.0/")
+    end
+
+    it "cc-by" do
+      rights_uri = ["https://creativecommons.org/licenses/by/4.0/"]
+      expect(subject.normalize_license(rights_uri)).to eq("https://creativecommons.org/licenses/by/4.0/")
+    end
+
+    it "cc-by no trailing slash" do
+      rights_uri = ["https://creativecommons.org/licenses/by/4.0"]
+      expect(subject.normalize_license(rights_uri)).to eq("https://creativecommons.org/licenses/by/4.0/")
+    end
+
+    it "by-nc-nd" do
+      rights_uri = ["https://creativecommons.org/licenses/by-nc-nd/4.0/"]
+      expect(subject.normalize_license(rights_uri)).to eq("https://creativecommons.org/licenses/by-nc-nd/4.0/")
+    end
+  end
+
   it "works" do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
