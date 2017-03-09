@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://doi.org/api/handles/10.5061
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2209'
+      Date:
+      - Thu, 09 Mar 2017 22:39:07 GMT
+    body:
+      encoding: UTF-8
+      string: '{"responseCode":1,"handle":"10.5061","values":[{"index":100,"type":"HS_ADMIN","data":{"format":"admin","value":{"handle":"0.NA/10","index":200,"permissions":"111111110010","legacyByteLength":true}},"ttl":86400,"timestamp":"2010-01-11T16:26:17Z"},{"index":101,"type":"HS_ADMIN","data":{"format":"admin","value":{"handle":"10.SERV/DATACITE","index":200,"permissions":"111001110001"}},"ttl":86400,"timestamp":"2016-09-21T20:27:07Z"},{"index":1,"type":"HS_SERV","data":{"format":"string","value":"10.SERV/DATACITE"},"ttl":86400,"timestamp":"2016-09-21T20:27:07Z"},{"index":2,"type":"EMAIL","data":{"format":"string","value":"tech@datacite.org"},"ttl":86400,"timestamp":"2012-11-15T18:16:09Z"},{"index":3,"type":"DESC","data":{"format":"string","value":"TIB
+        prefix 1/11/2010"},"ttl":86400,"timestamp":"2010-01-11T16:26:17Z"},{"index":500,"type":"HS_NAMESPACE","data":{"format":"string","value":"<namespace><locs>10.SERV/DATACITE</locs></namespace>"},"ttl":86400,"timestamp":"2016-09-21T20:27:07Z"},{"index":400,"type":"HS_SIGNATURE","data":{"format":"string","value":"eyJhbGciOiJSUzI1NiJ9.eyJkaWdlc3RzIjp7ImFsZyI6IlNIQS0yNTYiLCJkaWdlc3RzIjpbeyJpbmRleCI6MTAwLCJkaWdlc3QiOiJqd2tnVWwwVjNJRENybm1MOHJVcXpWQmJ1UUU1cS9LRm5SaFYrUXNGdHJrPSJ9LHsiaW5kZXgiOjEwMSwiZGlnZXN0IjoiOVEySmdCZ21Nc2NoMnFvVzE5Z09FajlPS04vSTNPbEtrNSt2eis2bzdvYz0ifSx7ImluZGV4IjoxLCJkaWdlc3QiOiI5MDRXUG80RHBlT2cvTW9XYWY4U2xQNnd2dFFTUUp6YUIzT0JDZ2c2ZHNJPSJ9LHsiaW5kZXgiOjIsImRpZ2VzdCI6IlJmQ09TUmpMUTBTbVZZRS9QUW5JT3BiYVdIaitiTm5tU2tyS3N4RFphd0E9In0seyJpbmRleCI6MywiZGlnZXN0IjoidmJOYkkwbExSRFltNXpCemN3Ny9IMGwvOWgrUGxINkVpN2RkQ2UyNFNNVT0ifSx7ImluZGV4Ijo1MDAsImRpZ2VzdCI6IjdZKzh3Z1JjTnd3S1FjSmJWWUxTbnhvbkNLVE5QKzV3MC9lQjRmb3pOck09In1dfSwiaXNzIjoiMzAwOjAuTkEvMTAiLCJzdWIiOiIwLk5BLzEwLjUwNjEiLCJleHAiOjE2MzI2MDEyOTIsIm5iZiI6MTQ3NDQ4OTI5MiwiaWF0IjoxNDc0NDg5NTkyfQ.CnkXh449dFdoS3FBf3wJQMWEoXBPVbuIHE_OFzSPajY7qsWjwpVIMesDQQq53y_pOqxhG3H2EY6ELNb1Hwr0Mlx66EXrcCofdukDvuImY2VDXbRW22na8KnPIHJwxNkCitFxjzYcucxY5yfggGDCPY8UzVkCHNZPovxvY9sx4Im-qBUQdNpMVv8HMXKEjQVRmjoZ09YE80gqUE7L82PPCFqacBJ-dmCEZQhfpFJoxJogtRthq0t5AxbGf9x3NuqAnYBB1CDjoZlS3hvyHyTgL8FhHiiClEb4T0qDBwudtXHQmyr44RBp2PF8uEJh3mg0-TBboxuEeRTOr-4H4E4O4Q"},"ttl":86400,"timestamp":"2016-09-21T20:27:07Z"}]}'
+    http_version: 
+  recorded_at: Thu, 09 Mar 2017 22:39:08 GMT
+recorded_with: VCR 2.9.3

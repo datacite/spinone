@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :people, only: [:show, :index], constraints: { :id => /.+/ } do
       resources :contributions, only: [:index]
     end
+    resources :prefixes, only: [:show], constraints: { :id => /.+/ }
     resources :works, only: [:show, :index], constraints: { :id => /.+/ }
   end
 
