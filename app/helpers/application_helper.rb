@@ -119,14 +119,6 @@ module ApplicationHelper
     fa.html_safe
   end
 
-  def metadata_format(work)
-    work_type = work.work_type.present? ? work.work_type.title : "Work"
-    publication_date = "published " + l(work.published_on, format: date_format(work))
-    container_title = work.container_title.present? ? "via " + work.container_title : ""
-
-    [work_type, publication_date, container_title].join(" ")
-  end
-
   def date_format(work)
     if work.day
       :long
@@ -163,26 +155,6 @@ module ApplicationHelper
 
   def settings
     Settings[ENV['MODE']]
-  end
-
-  def data_tags_for_api
-    data = { per_page: 15, model: controller.controller_name }
-    data[:api_key] = cookies[:jwt].to_s
-    data[:page] = @page if @page.present?
-    data[:pid] = @work.pid if @work.present?
-    data[:q] = @q if @q.present?
-    data[:class_name] = @class_name if @class_name.present?
-    data[:data_center_id] = @data_center.name if @data_center.present?
-    data[:source_id] = @source.name if @source.present?
-    data[:relation_type_id] = @relation_type.name if @relation_type.present?
-    data[:work_type_id] = @work_type.name if @work_type.present?
-    data[:registration_agency_id] = @registration_agency.name if @registration_agency.present?
-    data[:contributor_role_id] = @contributor_role.name if @contributor_role.present?
-    data[:contributor_id] = @contributor.pid if @contributor.present?
-    data[:sort] = @sort.name if @sort.present?
-    data[:state] = states[@state] if @state.present?
-
-    { class: "logo", id: "api_key", data: data }
   end
 
   def current_user
