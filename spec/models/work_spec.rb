@@ -61,8 +61,8 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
     work = works[:data].last
-    expect(work.title).to eq("Erdc-Cm/Rapidpy: 2.4.0")
-    expect(work.resource_type.title).to eq("Software")
+    expect(work.title).to eq("Measurements of microbial processes, dissolution, water and porewater chemistry during experiments on two coral reef sediments: Seawater carbonate chemistry")
+    expect(work.resource_type.title).to eq("Dataset")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
     expect(meta["years"]).not_to be_empty
@@ -97,15 +97,8 @@ describe Work, type: :model, vcr: true do
     works = Work.where(query: "cancer", "resource-type-id" => "dataset", "data-center-id" => "FIGSHARE.ARS")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Anonymized Full data set-CA72-4-111012")
+    expect(work.title).to eq("Achilles_v3.3.7_README.txt")
     expect(work.resource_type.title).to eq("Dataset")
-  end
-
-  it "works with registration_agency_id" do
-    works = Work.where(registration_agency_id: "datacite")[:data]
-    expect(works.length).to eq(25)
-    work = works.first
-    expect(work.title).to eq("Nerodia sipedon")
   end
 
   it "work" do

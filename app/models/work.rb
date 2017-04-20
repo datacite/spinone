@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :registration_agency_id, :resource_type_id, :work_type_id, :data_center, :member, :registration_agency, :resource_type, :work_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :deposited, :updated_at
 
   # include author methods
   include Authorable
@@ -65,15 +65,11 @@ class Work < Base
     @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
     @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
-    @work_type_id = attributes.fetch("work_type_id", nil).presence || DATACITE_TYPE_TRANSLATIONS[attributes["resourceTypeGeneral"]] || "work"
-    @work_type_id = @work_type_id.underscore.dasherize if @work_type_id.present?
 
     # associations
     @data_center = Array(options[:data_centers]).find { |p| p.id == @data_center_id }
     @member = Array(options[:members]).find { |r| r.id == @member_id }
-    @registration_agency = Array(options[:registration_agencies]).find { |r| r.id == @registration_agency_id }
     @resource_type = Array(options[:resource_types]).find { |r| r.id == @resource_type_id }
-    @work_type = Array(options[:work_types]).find { |r| r.id == @work_type_id }
   end
 
   def self.get_query_url(options={})
@@ -178,12 +174,10 @@ class Work < Base
       data_center = data_center[:data] if data_center.present?
 
       { data: parse_item(item,
-        relation_types: cached_relation_types,
+        relation_types: RelationType.all,
         resource_types: cached_resource_types,
-        work_types: cached_work_types,
         data_centers: [data_center].compact,
-        members: cached_members,
-        registration_agencies: cached_registration_agencies), meta: meta }
+        members: cached_members), meta: meta }
     else
       if options["work-id"].present?
         return { data: [], meta: [] } if result.blank?
@@ -219,12 +213,10 @@ class Work < Base
       end
 
       { data: parse_items(items,
-        relation_types: cached_relation_types,
+        relation_types: RelationType.all,
         resource_types: cached_resource_types,
-        work_types: cached_work_types,
         data_centers: data_centers,
-        members: cached_members,
-        registration_agencies: cached_registration_agencies), meta: meta }
+        members: cached_members), meta: meta }
     end
   end
 

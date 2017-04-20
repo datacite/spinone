@@ -78,7 +78,7 @@ class Relation < Base
     data_center_ids = Array(meta.fetch(:data_centers, [])).map { |i| i["id"] }.join(",")
     data_centers = DataCenter.collect_data(ids: data_center_ids).fetch(:data, [])
 
-    { data: parse_items(items, sources: cached_sources, data_centers: data_centers, relation_types: cached_relation_types), meta: meta }
+    { data: parse_items(items, sources: cached_sources, data_centers: data_centers, relation_types: RelationType.all), meta: meta }
   end
 
   def self.url
