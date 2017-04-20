@@ -1,5 +1,5 @@
 class DataCenter < Base
-  attr_reader :id, :title, :other_names, :prefixes, :data_center_id, :member_id, :registration_agency_id, :ids, :member, :registration_agency, :year, :created, :updated
+  attr_reader :id, :title, :other_names, :prefixes, :data_center_id, :member_id, :ids, :member, :year, :created, :updated
 
   # include helper module for caching infrequently changing resources
   include Cacheable
@@ -19,12 +19,9 @@ class DataCenter < Base
 
     @member_id = @id.split('.', 2).first
     @member_id = @member_id.downcase if @member_id.present?
-    @registration_agency_id = "datacite"
-    @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
 
     # associations
     @member = Array(options[:members]).find { |s| s.id == @member_id }
-    @registration_agency = Array(options[:registration_agencies]).find { |s| s.id == @registration_agency_id }
   end
 
   def self.ds
@@ -75,8 +72,7 @@ class DataCenter < Base
 
         data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
 
-        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+        meta = { "total" => total, "members" => members, "years" => years }
 
         { "data" => { "data-centers" => data, "meta" => meta } }
       elsif options["member-id"].present?
@@ -89,8 +85,7 @@ class DataCenter < Base
                      count: query.where(allocator: member.fetch(:id)).count }]
 
         years = cached_years_by_member_response(options["member-id"], options)
-        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+        meta = { "total" => total, "members" => members, "years" => years }
 
         { "data" => { "data-centers" => data, "meta" => meta } }
       else
@@ -99,8 +94,7 @@ class DataCenter < Base
 
         members = cached_allocators_response
         years = cached_years_response
-        registration_agencies = [{ id: "datacite", title: "DataCite", count: total }]
-        meta = { "total" => total, "registration-agencies" => registration_agencies, "members" => members, "years" => years }
+        meta = { "total" => total, "members" => members, "years" => years }
         { "data" => { "data-centers" => data, "meta" => meta } }
       end
     end
@@ -119,7 +113,7 @@ class DataCenter < Base
 
       item = { "id" => item[:symbol], "title" => item[:name], "created" => item[:created], "updated" => item[:updated] }
 
-      { data: parse_item(item, members: cached_members, registration_agencies: cached_registration_agencies) }
+      { data: parse_item(item, members: cached_members) }
     else
       items = result.fetch("data", {}).fetch("data-centers", []).map { |i| { "id" => i[:symbol], "title" => i[:name], "created" => i[:created], "updated" => i[:updated]} }
       meta = result.fetch("data", {}).fetch("meta", {})
@@ -131,11 +125,10 @@ class DataCenter < Base
                          end
 
       meta = { total: meta.fetch("total", 0),
-               registration_agencies: meta.fetch("registration-agencies", []),
                members: members,
                years: meta.fetch("years", []) }
 
-      { data: parse_items(items, members: cached_members, registration_agencies: cached_registration_agencies), meta: meta }
+      { data: parse_items(items, members: cached_members), meta: meta }
     end
   end
 end
