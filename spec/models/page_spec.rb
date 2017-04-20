@@ -5,7 +5,7 @@ describe Page, type: :model, vcr: true do
     pages = Page.all[:data]
     expect(pages.length).to eq(25)
     page = pages.first
-    expect(page.title).to eq("Using Schema.org for DOI Registration")
+    expect(page.title).to eq("The OI Project gets underway planning an Open Organization Identifier Registry")
   end
 
   it "query" do
