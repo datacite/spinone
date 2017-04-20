@@ -12,12 +12,5 @@ services:
       - ./config:/home/app/webapp/config
       - ./db:/home/app/webapp/db
       - ./spec:/home/app/webapp/spec
-  db:
-    env_file: .env
-    image: mysql:5.6
-    ports:
-      - "3307:3306"
-  redis:
-    image: redis:2.8
   memcached:
     image: memcached:1.4.31
