@@ -55,11 +55,6 @@ RSpec.configure do |config|
     Rails.application
   end
 
-  # restore application-specific ENV variables after each example
-  config.after(:each) do
-    ENV_VARS.each { |k,v| ENV[k] = v }
-  end
-
   def capture_stdout(&block)
     original_stdout = $stdout
     $stdout = fake = StringIO.new
