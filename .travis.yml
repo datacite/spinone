@@ -2,14 +2,7 @@ language: ruby
 cache: bundler
 sudo: false
 rvm:
-  - 2.3.1
-
-services:
-  - redis-server
-  - mysql
-
-before_install:
-  - mysql -e 'CREATE DATABASE test;'
+  - 2.3.3
 
 before_script:
   - memcached -p 11211 &
