@@ -6,7 +6,7 @@ gem 'mysql2', '0.3.18'
 gem 'sequel', '~> 4.40'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 
-gem "dotenv", '~> 1.0.2'
+gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'config', '~> 1.0.0'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
@@ -14,7 +14,7 @@ gem 'maremma', '~> 2.2', '>= 2.2.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
 gem 'active_model_serializers', '~> 0.10.4'
-gem 'colorize', '~> 0.7.7'
+gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
 gem 'will_paginate', '3.0.7'
@@ -30,11 +30,9 @@ gem 'httplog'
 gem 'lograge', '~> 0.3.5'
 gem 'bergamasco', '~> 0.3.11'
 gem 'rouge', '~> 1.10', '>= 1.10.1'
-
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
-
-gem 'librato-rails', '~> 2.0'
+gem 'librato-rails', '~> 1.4.2'
 
 group :development do
   gem 'pry-rails', '~> 0.3.2'
