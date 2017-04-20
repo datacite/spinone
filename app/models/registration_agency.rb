@@ -15,19 +15,25 @@ class RegistrationAgency < Base
     end
   end
 
-  def self.parse_data(result, options={})
-    return nil if result.blank? || result['errors']
+  def get_data(options={})
+    [{ "id" => "crossref",
+       "title" => "Crossref",
+       "timestamp" => "2016-04-27T02:23:01Z"
+     },
+     { "id" => "datacite",
+       "title" => "DataCite",
+       "timestamp" => "2016-04-27T02:23:01Z"
+    }]
+  end
 
+  def self.parse_data(items, options={})
     if options[:id]
-      item = result.fetch("data", {}).fetch("registration_agency", {})
-      return nil if item.blank?
+      item = items.find { |i| i["id"] == options[:id] }
+      return nil if item.nil?
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", {}).fetch("registration_agencies", [])
-      total = result.fetch("data", {}).fetch("meta", {}).fetch("total", nil)
-
-      { data: parse_items(items), meta: { total: total } }
+      { data: parse_items(items), meta: { total: items.length } }
     end
   end
 

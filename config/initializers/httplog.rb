@@ -1,2 +1,3 @@
-HttpLog.options[:logger] = Rails.logger
-HttpLog.options[:severity] = Logger::Severity::DEBUG
+HttpLog.configure do |config|
+  config.logger = Rails.logger
+end

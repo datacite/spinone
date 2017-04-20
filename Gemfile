@@ -33,6 +33,7 @@ gem 'rouge', '~> 1.10', '>= 1.10.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 gem 'librato-rails', '~> 1.4.2'
+gem 'rails_12factor', '~> 0.0.3'
 
 group :development do
   gem 'pry-rails', '~> 0.3.2'
