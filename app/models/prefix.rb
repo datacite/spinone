@@ -3,7 +3,9 @@ class Prefix < Base
 
   RA_HANDLES = {
     "10.SERV/CROSSREF" => "Crossref",
+    "10.SERV/DEFAULT"=> "Crossref",
     "10.SERV/DATACITE" => "DataCite",
+    "10.SERV/ETH" => "DataCite",
     "10.SERV/EIDR" => "EIDR",
     "10.SERV/KISTI" => "KISTI",
     "10.SERV/MEDRA" => "mEDRA",
