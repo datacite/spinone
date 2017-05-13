@@ -9,6 +9,10 @@ class Prefix < Base
     "10.SERV/EIDR" => "EIDR",
     "10.SERV/KISTI" => "KISTI",
     "10.SERV/MEDRA" => "mEDRA",
+    "10.SERV/ISTIC" => "ISTIC",
+    "10.SERV/JALC" => "JaLC",
+    "10.SERV/AIRITI" => "Airiti",
+    "10.SERV/CNKI" => "CNKI",
     "10.SERV/OP" => "OP"
   }
 
