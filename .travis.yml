@@ -1,8 +1,14 @@
 language: ruby
 cache: bundler
-sudo: false
+sudo: required
 rvm:
   - 2.3.3
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::8}
+
+services:
+  - docker
 
 before_script:
   - memcached -p 11211 &
@@ -15,6 +21,14 @@ script:
 addons:
   code_climate:
     repo_token: d3d49b55abedc77746ee6f87ddc16ae72b56bb759507a593d085569b8cc6199f
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS";
+    export REPO=datacite/spinone;
+    docker build -f Dockerfile -t $REPO:$COMMIT .;
+    docker push $REPO:$COMMIT;
+    fi
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
