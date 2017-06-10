@@ -6,7 +6,7 @@ class Api::PeopleController < Api::BaseController
 
   def show
     @person = Person.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless @person.present?
+    fail AbstractController::ActionNotFound unless @person.present?
 
     render jsonapi: @person[:data]
   end

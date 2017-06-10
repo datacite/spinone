@@ -6,7 +6,7 @@ class Api::PagesController < Api::BaseController
 
   def show
     @page = Page.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless @page.present?
+    fail AbstractController::ActionNotFound unless @page.present?
 
     render jsonapi: @page[:data]
   end

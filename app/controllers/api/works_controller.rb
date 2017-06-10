@@ -17,7 +17,7 @@ class Api::WorksController < Api::BaseController
 
   def show
     @work = Work.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless @work.present?
+    fail AbstractController::ActionNotFound unless @work.present?
 
     render jsonapi: @work[:data], include: @include
   end

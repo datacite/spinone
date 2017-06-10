@@ -6,7 +6,7 @@ class Api::MilestonesController < Api::BaseController
 
   def show
     @milestone = Milestone.where({ id: params[:id] }.merge(github_token: ENV['GITHUB_PERSONAL_ACCESS_TOKEN']))
-    fail ActiveRecord::RecordNotFound unless @milestone.present?
+    fail AbstractController::ActionNotFound unless @milestone.present?
 
     render jsonapi: @milestone[:data]
   end

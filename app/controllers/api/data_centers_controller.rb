@@ -17,7 +17,7 @@ class Api::DataCentersController < Api::BaseController
 
   def show
     @data_center = DataCenter.where(id: params[:id])
-    fail ActiveRecord::RecordNotFound unless @data_center.present?
+    fail AbstractController::ActionNotFound unless @data_center.present?
 
     render jsonapi: @data_center[:data], include: @include
   end
