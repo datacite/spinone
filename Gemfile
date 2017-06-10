@@ -10,7 +10,7 @@ gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'config', '~> 1.0.0'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
-gem 'maremma', '2.4'
+gem 'maremma', '2.4.2'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
 gem 'active_model_serializers', '~> 0.10.4'
