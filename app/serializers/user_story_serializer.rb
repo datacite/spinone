@@ -9,14 +9,6 @@ class UserStorySerializer < ActiveModel::Serializer
     GitHub::Markdown.render_gfm(object.description)
   end
 
-  def categories
-    object.categories.presence
-  end
-
-  def stakeholders
-    object.stakeholders.presence
-  end
-
   def milestone
     m = object.milestone
     if m.present?
