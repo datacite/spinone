@@ -1,7 +1,7 @@
 class UserStorySerializer < ActiveModel::Serializer
-  attributes :title, :description, :comments, :categories, :stakeholders, :state, :milestone, :created, :updated, :closed
+  attributes :url, :title, :description, :comments, :categories, :stakeholders, :state, :milestone, :created, :updated, :closed
 
-  def id
+  def url
     "#{ENV["GITHUB_ISSUES_REPO_URL"]}/issues/#{object.id}"
   end
 

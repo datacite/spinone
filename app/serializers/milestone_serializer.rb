@@ -1,7 +1,7 @@
 class MilestoneSerializer < ActiveModel::Serializer
-  attributes :title, :description, :open_issues, :closed_issues, :year, :quarter, :created, :updated, :closed, :released
+  attributes :url, :title, :description, :open_issues, :closed_issues, :year, :quarter, :created, :updated, :closed, :released
 
-  def id
+  def url
     "#{ENV["GITHUB_ISSUES_REPO_URL"]}/milestone/#{object.id}"
   end
 

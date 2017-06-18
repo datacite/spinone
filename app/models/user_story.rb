@@ -52,22 +52,27 @@ class UserStory < Base
   end
 
   def self.get_data(options={})
-    total = get_total(options)
-    data = []
+    if options[:id].present?
+      query_url = get_query_url(options)
+      Maremma.get(query_url, options)
+    else
+      total = get_total(options)
+      data = []
 
-    if total > 0
-      # walk through paginated results
-      total_pages = (total.to_f / 100).ceil
+      if total > 0
+        # walk through paginated results
+        total_pages = (total.to_f / 100).ceil
 
-      (1..total_pages).each do |page|
-        options[:page] = page
-        query_url = get_query_url(options)
-        result = Maremma.get(query_url, options)
-        data += (result.dig("data", "items") || [])
+        (1..total_pages).each do |page|
+          options[:page] = page
+          query_url = get_query_url(options)
+          result = Maremma.get(query_url, options)
+          data += (result.dig("data", "items") || [])
+        end
       end
-    end
 
-    { data: data, total: total }
+      { data: data, total: total }
+    end
   end
 
   def self.parse_data(result, options={})
