@@ -39,7 +39,9 @@ class UserStory < Base
     else
       label = ["user story", options[:category], options[:stakeholder]].compact
         .map { |l| "label:\"#{l}\"" }.join(" ")
-      params = { q: ["repo:datacite/datacite", label, options[:query]].compact.join(" "),
+      milestone = [options[:milestone]].compact
+        .map { |m| "milestone:\"#{m}\"" }.first
+      params = { q: ["repo:datacite/datacite", label, milestone, options[:query]].compact.join(" "),
                  page: options[:page] || 1,
                  per_page: options[:per_page] || 100,
                  sort: "created",
