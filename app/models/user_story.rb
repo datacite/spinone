@@ -44,6 +44,8 @@ class UserStory < Base
 
       if options[:state] == "done"
         state = "state:closed"
+      elsif options[:state] == "open"
+          state = "state:open"
       elsif options[:state] == "inbox"
         state = "state:open -label:discussion -label:planning -label:ready -label:\"in progress\" -label:\"needs review\""
       else
