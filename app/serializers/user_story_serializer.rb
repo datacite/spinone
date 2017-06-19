@@ -1,5 +1,5 @@
 class UserStorySerializer < ActiveModel::Serializer
-  attributes :url, :title, :description, :comments, :categories, :stakeholders, :state, :milestone, :created, :updated, :closed
+  attributes :url, :title, :description, :comments, :categories, :stakeholders, :state, :inactive, :milestone, :created, :updated, :closed
 
   def url
     "#{ENV["GITHUB_ISSUES_REPO_URL"]}/issues/#{object.id}"
@@ -12,7 +12,7 @@ class UserStorySerializer < ActiveModel::Serializer
   def milestone
     m = object.milestone
     if m.present?
-      { "url" => "#{ENV["GITHUB_ISSUES_REPO_URL"]}/milestone/#{m['number']}",
+      { "id" => m['number'],
         "title" => m["title"] }
     end
   end

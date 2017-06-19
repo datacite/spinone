@@ -1,10 +1,11 @@
 class UserStory < Base
-  attr_reader :id, :title, :description, :state, :milestone, :comments, :categories, :stakeholders, :created_at, :updated_at, :closed_at
+  attr_reader :id, :title, :description, :state, :milestone, :comments, :categories, :stakeholders, :inactive, :created_at, :updated_at, :closed_at
 
   LABEL_COLORS = {
     "category" => "b1c9f0",
     "stakeholder" => "f9cfb9",
-    "state" => "ededed"
+    "state" => "ededed",
+    "inactive" => "c8d1da"
   }
   def initialize(attributes, options={})
     @id = attributes.fetch("number", nil)
@@ -23,6 +24,9 @@ class UserStory < Base
     @state = labels
       .select { |l| l["color"] == LABEL_COLORS["state"] }
       .map { |l| l["name"] }.first || state
+    @inactive = labels
+      .select { |l| l["color"] == LABEL_COLORS["inactive"] }
+      .map { |l| l["name"] }
     @milestone = attributes.fetch("milestone", nil).to_h.extract!("number", "title")
     @created_at = attributes.fetch("created_at", nil)
     @updated_at = attributes.fetch("updated_at", nil)
