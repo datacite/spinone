@@ -9,14 +9,6 @@ class UserStorySerializer < ActiveModel::Serializer
     GitHub::Markdown.render_gfm(object.description)
   end
 
-  def milestone
-    m = object.milestone
-    if m.present?
-      { "id" => m['number'],
-        "title" => m["title"] }
-    end
-  end
-
   def created
     object.created_at
   end

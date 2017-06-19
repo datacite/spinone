@@ -27,7 +27,7 @@ class UserStory < Base
     @inactive = labels
       .select { |l| l["color"] == LABEL_COLORS["inactive"] }
       .map { |l| l["name"] }
-    @milestone = attributes.fetch("milestone", nil).to_h.extract!("number", "title")
+    @milestone = attributes.dig("milestone", "title")
     @created_at = attributes.fetch("created_at", nil)
     @updated_at = attributes.fetch("updated_at", nil)
     @closed_at = attributes.fetch("closed_at", nil)
@@ -92,6 +92,7 @@ class UserStory < Base
     else
       data = parse_items(result[:data])
       meta = { total: result[:total],
+               milestones: parse_meta(data, "milestone"),
                categories: parse_meta(data, "categories"),
                stakeholders: parse_meta(data, "stakeholders"),
                state: parse_meta(data, "state") }
