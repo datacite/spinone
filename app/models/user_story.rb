@@ -11,7 +11,7 @@ class UserStory < Base
     @id = attributes.fetch("number", nil)
     @title = attributes.fetch("title", nil)
     @description = attributes.fetch("body", nil).presence
-    state = attributes.fetch("state", nil) == "closed" ? "done" : "backlog"
+    state = attributes.fetch("state", nil) == "closed" ? "done" : "inbox"
     @comments = attributes.fetch("comments", nil)
     labels = Array.wrap(attributes.fetch("labels", nil))
       .select { |l| l["name"] != "user story" }
@@ -41,7 +41,17 @@ class UserStory < Base
         .map { |l| "label:\"#{l}\"" }.join(" ")
       milestone = [options[:milestone]].compact
         .map { |m| "milestone:\"#{m}\"" }.first
-      params = { q: ["repo:datacite/datacite", label, milestone, options[:query]].compact.join(" "),
+
+      if options[:state] == "done"
+        state = "state:closed"
+      elsif options[:state] == "inbox"
+        state = "state:open -label:discussion -label:planning -label:ready -label:\"in progress\" -label:\"needs review\""
+      else
+        state = [options[:state]].compact
+          .map { |m| "label:\"#{m}\"" }.first
+      end
+
+      params = { q: ["repo:datacite/datacite", label, milestone, state, options[:query]].compact.join(" "),
                  page: options[:page] || 1,
                  per_page: options[:per_page] || 100,
                  sort: "created",
@@ -112,7 +122,7 @@ class UserStory < Base
     end
 
     if label == "state"
-      { "backlog" => it["backlog"].to_i,
+      { "inbox" => it["inbox"].to_i,
         "discussion" => it["discussion"].to_i,
         "planning" => it["planning"].to_i,
         "ready" => it["ready"].to_i,
