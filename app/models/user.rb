@@ -1,14 +1,26 @@
 class User
-  attr_accessor :name, :uid, :email, :role, :api_key, :orcid, :authentication_token
+  attr_accessor :name, :uid, :email, :role, :jwt, :orcid
 
-  def initialize(jwt={})
-    @uid = jwt.fetch("uid", nil)
-    @name = jwt.fetch("name", nil)
-    @email = jwt.fetch("email", nil)
-    @role = jwt.fetch("role", nil)
-    @api_key = jwt.fetch("api_key", nil)
-    @authentication_token = jwt.fetch("authentication_token", nil)
+  def initialize(jwt)
+    # decode token using SHA-256 hash algorithm
+    public_key = OpenSSL::PKey::RSA.new(ENV['JWT_PUBLIC_KEY'].to_s.gsub('\n', "\n"))
+    jwt_hsh = JWT.decode(jwt, public_key, true, { :algorithm => 'RS256' }).first
+
+    # check whether token has expired
+    return false unless Time.now.to_i < jwt_hsh["exp"]
+
+    @jwt = jwt
+    @uid = jwt_hsh.fetch("uid", nil)
+    @name = jwt_hsh.fetch("name", nil)
+    @email = jwt_hsh.fetch("email", nil)
+    @role = jwt_hsh.fetch("role", nil)
   end
+
+
+  public_key = OpenSSL::PKey::RSA.new(ENV['JWT_PUBLIC_KEY'].to_s.gsub('\n', "\n"))
+  jwt = (JWT.decode token, public_key, true, { :algorithm => 'RS256' }).first
+
+
 
   alias_method :orcid, :uid
   alias_method :id, :uid

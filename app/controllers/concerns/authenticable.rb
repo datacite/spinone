@@ -6,10 +6,12 @@ module Authenticable
       request.format = :json if request.format.html?
     end
 
-    # looking for header "Authorization: Token token=12345"
     def authenticate_user_from_token!
       authenticate_with_http_token do |token, options|
-        current_user = token && User.new((JWT.decode token, ENV['JWT_SECRET_KEY']).first)
+        return false unless token.present?
+
+        # create user from token
+        current_user = User.new(token)
       end
     end
 
