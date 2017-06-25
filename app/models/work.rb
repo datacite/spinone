@@ -154,10 +154,10 @@ class Work < Base
     return result if result['errors']
 
     if options[:id].present?
-      return { data: [], meta: [] } if result.blank?
+      return nil if result.blank?
 
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
-      return { data: [], meta: [] } if items.blank?
+      return nil if items.blank?
 
       item = items.first
 

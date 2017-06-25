@@ -34,7 +34,7 @@ class Member < Base
 
     if options[:id].present?
       item = result.fetch("data", {})
-      return {} unless item.present?
+      return nil unless item.present?
 
       { data: parse_item(item) }
     else
