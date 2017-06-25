@@ -2,6 +2,8 @@ class User
   attr_accessor :name, :uid, :email, :role, :jwt, :orcid
 
   def initialize(jwt)
+    return false unless jwt.present?
+
     # decode token using SHA-256 hash algorithm
     public_key = OpenSSL::PKey::RSA.new(ENV['JWT_PUBLIC_KEY'].to_s.gsub('\n', "\n"))
     jwt_hsh = JWT.decode(jwt, public_key, true, { :algorithm => 'RS256' }).first
@@ -15,12 +17,6 @@ class User
     @email = jwt_hsh.fetch("email", nil)
     @role = jwt_hsh.fetch("role", nil)
   end
-
-
-  public_key = OpenSSL::PKey::RSA.new(ENV['JWT_PUBLIC_KEY'].to_s.gsub('\n', "\n"))
-  jwt = (JWT.decode token, public_key, true, { :algorithm => 'RS256' }).first
-
-
 
   alias_method :orcid, :uid
   alias_method :id, :uid
