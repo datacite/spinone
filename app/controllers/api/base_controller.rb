@@ -22,6 +22,10 @@ class Api::BaseController < ActionController::Base
     headers['Access-Control-Max-Age'] = "1728000"
   end
 
+  def default_format_json
+    request.format = :json if request.format.html?
+  end
+
   def authenticate_user_from_token!
     token = token_from_request_headers
     raise CanCan::AccessDenied unless token.present?
