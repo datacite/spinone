@@ -1,21 +1,19 @@
 class User
-  attr_accessor :name, :uid, :email, :role, :jwt, :orcid
+  # include jwt encode and decode
+  include Authenticable
 
-  def initialize(jwt)
-    return false unless jwt.present?
+  attr_accessor :name, :uid, :email, :role, :jwt, :orcid, :member_id, :datacenter_id
 
-    # decode token using SHA-256 hash algorithm
-    public_key = OpenSSL::PKey::RSA.new(ENV['JWT_PUBLIC_KEY'].to_s.gsub('\n', "\n"))
-    jwt_hsh = JWT.decode(jwt, public_key, true, { :algorithm => 'RS256' }).first
+  def initialize(token)
+    payload = decode_token(token)
 
-    # check whether token has expired
-    return false unless Time.now.to_i < jwt_hsh["exp"]
-
-    @jwt = jwt
-    @uid = jwt_hsh.fetch("uid", nil)
-    @name = jwt_hsh.fetch("name", nil)
-    @email = jwt_hsh.fetch("email", nil)
-    @role = jwt_hsh.fetch("role", nil)
+    @jwt = token
+    @uid = payload.fetch("uid", nil)
+    @name = payload.fetch("name", nil)
+    @email = payload.fetch("email", nil)
+    @role = payload.fetch("role", nil)
+    @member_id = payload.fetch("member_id", nil)
+    @datacenter_id = payload.fetch("datacenter_id", nil)
   end
 
   alias_method :orcid, :uid
@@ -23,11 +21,11 @@ class User
 
   # Helper method to check for admin user
   def is_admin?
-    role == "admin"
+    role == "staff_admin"
   end
 
   # Helper method to check for admin or staff user
   def is_admin_or_staff?
-    ["admin", "staff"].include?(role)
+    ["staff_admin", "staff_user"].include?(role)
   end
 end

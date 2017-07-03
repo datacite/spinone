@@ -1,6 +1,5 @@
 require 'github/markdown'
 require 'rouge'
-require 'jwt'
 
 module ApplicationHelper
   def icon(icon, text = nil, html_options = {})
@@ -37,42 +36,6 @@ module ApplicationHelper
 
   def states
      %w(waiting working failed done)
-  end
-
-  def state_label(state)
-    case state
-    when "working" then '<span class="label label-success">working</span>'
-    when "inactive" then '<span class="label label-info">inactive</span>'
-    when "disabled" then '<span class="label label-warning">disabled</span>'
-    when "available" then '<span class="label label-default">available</span>'
-    when "retired" then '<span class="label label-primary">retired</span>'
-    else state
-    end
-  end
-
-  def level_label(level)
-    case level
-    when 1 then '<span class="label label-info">Info</span>'
-    when 2 then '<span class="label label-warning">Warn</span>'
-    when 3 then '<span class="label label-danger">Error</span>'
-    when 4 then '<span class="label label-fatal">Fatal</span>'
-    else '<span class="label label-default">Other</span>'
-    end
-  end
-
-  def worker_label(status)
-    case status
-    when "working" then "panel-success"
-    when "waiting" then "panel-default"
-    else "panel-warning"
-    end
-  end
-
-  def status_label(name, status)
-    case status
-    when "OK" then name
-    else "<span class='label label-warning'>#{name}</span>"
-    end
   end
 
   def number_hiding_zero(number)
@@ -129,43 +92,7 @@ module ApplicationHelper
     end
   end
 
-  def date_from_iso8601(date)
-    DateTime.parse(date).to_s(:short)
-  end
-
-  def description_with_link(report)
-    if report.name == 'work_statistics_report'
-      h(report.description) #+ link_to("Download", work_statistics_report_path, :class => 'pull-right')
-    else
-      h(report.description)
-    end
-  end
-
-  def work_notifications
-    %w(EventCountDecreasingError EventCountIncreasingTooFastError ApiResponseTooSlowError HtmlRatioTooHighError WorkNotUpdatedError CitationMilestoneAlert)
-  end
-
-  def documents
-    %w(Installation Deployment Setup - Agents Deposits Rake Notifications Styleguide - Releases Roadmap Contributors)
-  end
-
-  def roles
-    %w(user contributor staff admin)
-  end
-
   def settings
     Settings[ENV['MODE']]
-  end
-
-  def current_user
-    @current_user ||= cookies[:jwt].present? ? User.new((JWT.decode cookies[:jwt], ENV['JWT_SECRET_KEY']).first) : nil
-  end
-
-  def user_signed_in?
-    !!current_user
-  end
-
-  def is_admin_or_staff?
-    current_user && current_user.is_admin_or_staff?
   end
 end

@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 sudo: required
 rvm:
-  - 2.3.3
+  - 2.4.1
 env:
   global:
     - COMMIT=${TRAVIS_COMMIT::8}
@@ -24,10 +24,10 @@ addons:
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS";
-    export REPO=datacite/spinone;
-    docker build -f Dockerfile -t $REPO:$COMMIT .;
-    docker push $REPO:$COMMIT;
+      docker login -u="$DOCKER_USER" -p="$DOCKER_PASS";
+      export REPO=datacite/spinone;
+      docker build -f Dockerfile -t $REPO:$COMMIT .;
+      docker push $REPO:$COMMIT;
     fi
 
 notifications:

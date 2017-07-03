@@ -1,4 +1,5 @@
 RESCUABLE_EXCEPTIONS = [CanCan::AccessDenied,
+                        JWT::DecodeError,
                         JWT::VerificationError,
                         AbstractController::ActionNotFound,
                         ActionController::RoutingError,
