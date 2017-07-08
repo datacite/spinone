@@ -50,7 +50,7 @@ describe Work do
       author = { "creatorName" => "Moore, Jonathan",
                  "nameIdentifier" => "0000-0002-5486-0407" }
       result = subject.get_one_hashed_author(author)
-      expect(result).to eq("family"=>"Moore", "given"=>"Jonathan", "ORCID"=>"http://orcid.org/0000-0002-5486-0407")
+      expect(result).to eq("family"=>"Moore", "given"=>"Jonathan", "ORCID"=>"https://orcid.org/0000-0002-5486-0407")
     end
 
     it 'should handle incorrect ORCID identifiers' do

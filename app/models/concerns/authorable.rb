@@ -4,6 +4,10 @@ module Authorable
   require "namae"
 
   included do
+    IDENTIFIER_SCHEME_URIS = {
+      "ORCID" => "http://orcid.org/"
+    }
+
     # parse author string into CSL format
     # only assume personal name when using sort-order: "Turing, Alan"
     def get_one_author(author, options = {})
@@ -53,18 +57,39 @@ module Authorable
       raw_name = author.fetch("creatorName", nil)
 
       author_hsh = get_one_author(raw_name)
-      author_hsh["ORCID"] = get_name_identifier(author)
+      author_hsh["ORCID"] = get_name_identifiers(author).first
       author_hsh.compact
     end
 
-    def get_name_identifier(author)
-      name_identifier = author.fetch("nameIdentifier", nil)
-      name_identifier_scheme = author.fetch("nameIdentifierScheme", "orcid").downcase
-      if name_identifier_scheme == "orcid" && name_identifier = validate_orcid(name_identifier)
-        "http://orcid.org/#{name_identifier}"
-      else
-        nil
+    # parse nameIdentifier from DataCite
+    def get_name_identifiers(author)
+      name_identifiers = Array.wrap(author.fetch("nameIdentifier", nil)).reduce([]) do |sum, n|
+        n = { "__content__" => n } if n.is_a?(String)
+
+        # fetch scheme_uri, default to ORCID
+        scheme = n.fetch("nameIdentifierScheme", nil)
+        scheme_uri = n.fetch("schemeURI", nil) || IDENTIFIER_SCHEME_URIS.fetch(scheme, "https://orcid.org")
+        scheme_uri = "https://orcid.org/" if validate_orcid_scheme(scheme_uri)
+        scheme_uri << '/' unless scheme_uri.present? && scheme_uri.end_with?('/')
+
+        identifier = n.fetch("__content__", nil)
+        if scheme_uri == "https://orcid.org/"
+          identifier = validate_orcid(identifier)
+        else
+          identifier = identifier.gsub(" ", "-")
+        end
+
+        if identifier.present? && scheme_uri.present?
+          sum << scheme_uri + identifier
+        else
+          sum
+        end
       end
+
+      # return array of name identifiers, ORCID ID is first element if multiple
+      name_identifiers.select { |n| n.start_with?("https://orcid.org") } +
+      name_identifiers.reject { |n| n.start_with?("https://orcid.org") }
     end
+
   end
 end
