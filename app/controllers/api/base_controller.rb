@@ -30,11 +30,8 @@ class Api::BaseController < ActionController::Base
     token = token_from_request_headers
     raise CanCan::AccessDenied unless token.present?
 
-    payload = decode_token(token)
-    raise CanCan::AccessDenied unless payload.present?
-
     # create user from token
-    @current_user = User.new(payload)
+    @current_user = User.new(token)
   end
 
   # from https://github.com/nsarno/knock/blob/master/lib/knock/authenticable.rb
