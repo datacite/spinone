@@ -5,7 +5,7 @@ module Authorable
 
   included do
     IDENTIFIER_SCHEME_URIS = {
-      "ORCID" => "http://orcid.org/"
+      "ORCID" => "https://orcid.org/"
     }
 
     # parse author string into CSL format

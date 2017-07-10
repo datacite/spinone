@@ -33,8 +33,20 @@ describe Work, type: :model, vcr: true do
       expect(response).to eq("0000-0002-2590-225X")
     end
 
+    it "orcid_from_url https" do
+      url = "https://orcid.org/0000-0002-2590-225X"
+      response = subject.orcid_from_url(url)
+      expect(response).to eq("0000-0002-2590-225X")
+    end
+
     it "validate_orcid" do
       orcid = "http://orcid.org/0000-0002-2590-225X"
+      response = subject.validate_orcid(orcid)
+      expect(response).to eq("0000-0002-2590-225X")
+    end
+
+    it "validate_orcid https" do
+      orcid = "https://orcid.org/0000-0002-2590-225X"
       response = subject.validate_orcid(orcid)
       expect(response).to eq("0000-0002-2590-225X")
     end

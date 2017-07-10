@@ -61,8 +61,8 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
     work = works[:data].last
-    expect(work.title).to eq("Measurements of microbial processes, dissolution, water and porewater chemistry during experiments on two coral reef sediments: Seawater carbonate chemistry")
-    expect(work.resource_type.title).to eq("Dataset")
+    expect(work.title).to eq("Referee report. For: FL Wellcome Grants Test [version 1; referees: 1 approved, 1 approved with reservations]")
+    expect(work.resource_type.title).to eq("Text")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
     expect(meta["years"]).not_to be_empty
@@ -73,7 +73,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where(query: "cancer")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Sequential cancer immunotherapy: targeted activity of dimeric TNF and IL-8")
+    expect(work.title).to eq("Cooking the Books: the Golem and the Ethics of Biotechnology")
     expect(work.resource_type.title).to eq("Text")
   end
 
@@ -81,15 +81,15 @@ describe Work, type: :model, vcr: true do
     works = Work.where(query: "cancer", sort: "minted")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Sequential cancer immunotherapy: targeted activity of dimeric TNF and IL-8")
+    expect(work.title).to eq("Cooking the Books: the Golem and the Ethics of Biotechnology")
     expect(work.resource_type.title).to eq("Text")
   end
 
   it "works with query and resource-type-id" do
     works = Work.where(query: "cancer", "resource-type-id" => "dataset")
-    expect(works[:data].length).to eq(25)
+    expect(works[:data].length).to eq(3)
     work = works[:data].first
-    expect(work.title).to eq("Women's Healthy Eating and Living (WHEL) Study")
+    expect(work.title).to eq("Landings of European lobster (Homarus gammarus) and edible crab (Cancer pagurus) in 2011, Helgoland, North Sea")
     expect(work.resource_type.title).to eq("Dataset")
   end
 

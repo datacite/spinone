@@ -16,46 +16,48 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Server:
-      - openresty/1.11.2.1
-      Date:
-      - Tue, 07 Feb 2017 09:17:44 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 26980336-79e4-4954-97ef-500b5fe438ff
       Access-Control-Allow-Headers:
       - Origin, Content-Type, Accept, Authorization, Token
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 10 Jul 2017 12:31:21 GMT
       Etag:
-      - W/"997bafe7c1f5fa948efe5b8b07f160a1"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.011979'
+      - W/"d05bf76e532e92ef6733010821af01eb"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
       X-Content-Type-Options:
       - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.2
+      - Phusion Passenger 5.1.5
+      X-Request-Id:
+      - 4fed158c-c3ef-4cf0-8f7b-41f693910764
+      X-Runtime:
+      - '0.004709'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '303'
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
       string: '{"data":{"id":"http://orcid.org/0000-0001-6528-2027","type":"users","attributes":{"given-names":"Martin","family-name":"Fenner","credit-name":"Martin
-        Fenner","orcid":"http://orcid.org/0000-0001-6528-2027","github":null,"updated":"2016-11-26T22:30:26.000Z"},"relationships":{"claims":{"data":[{"id":"e3a9e9d2-0ef7-4ba6-81fc-33055f5d79b5","type":"claims"},{"id":"bf971415-59cf-4b26-80ff-e8401ced6d5a","type":"claims"},{"id":"d5d4e6d4-4c5c-4749-ab89-c3ddacef0f34","type":"claims"},{"id":"ca1ab081-dc5c-4f9e-b20c-f6f01ffda22e","type":"claims"},{"id":"5fb98400-d5b4-4e61-895f-468b1add9964","type":"claims"},{"id":"1075af43-98aa-4d95-9a59-be3eacdfe43a","type":"claims"},{"id":"a01db9eb-2e92-45b3-93ce-cdccbd39495b","type":"claims"},{"id":"5b7dc357-608b-4515-9cc3-a16359b94feb","type":"claims"},{"id":"919cbf5f-2dfd-4eee-85ab-8cf7859a6ec8","type":"claims"},{"id":"d0fffbc7-2fe9-450b-ba5e-4eae227671bb","type":"claims"},{"id":"9557c640-609b-4037-b2b3-93c0a1b92f19","type":"claims"},{"id":"6b2ca0e6-f8ae-4f76-b967-e126bc24ad19","type":"claims"},{"id":"57ce75d1-a7ad-45c9-ba55-4e05d82e3238","type":"claims"},{"id":"5b324a26-02ea-48aa-aabf-f37ef8525c68","type":"claims"},{"id":"f07b018b-dfc4-41b2-9bfa-adac228ff81c","type":"claims"},{"id":"fcb49f71-3a3a-42bf-b7fc-97262cb42dd1","type":"claims"},{"id":"6dc4c7f2-fe6e-4836-a422-89b1735dd26b","type":"claims"},{"id":"0f1f5a9c-2fe0-49f4-8ee7-34dfd16c35f9","type":"claims"},{"id":"cdeb5aa7-5e79-49a0-a9d4-c5b3bf9e0c51","type":"claims"},{"id":"a50182e9-7f9d-43f0-995b-dc6f8dd5f584","type":"claims"},{"id":"a368ee67-9569-4acd-9b8f-a4adba61b115","type":"claims"},{"id":"84839fca-71de-426b-b7e8-8c7ecd4cb47e","type":"claims"},{"id":"1f2d0369-1a20-410b-a8c7-8ee430ecaaf0","type":"claims"},{"id":"8d1310dd-6aa7-4e75-8447-2d513d7c0e63","type":"claims"},{"id":"3ff887ad-22f4-43ee-b56d-c764d7eb786c","type":"claims"},{"id":"153b8e5c-c81e-45ac-bc8d-a0fa80568064","type":"claims"},{"id":"d2c5519d-d18d-42e7-aba6-c0f4d3552ef6","type":"claims"},{"id":"888c5b5f-ef7a-4aa5-b76f-daccc8db9661","type":"claims"},{"id":"3bcffb0f-964d-4299-b567-25c92373ba2d","type":"claims"},{"id":"5ea21681-8228-4758-951a-025286abcca5","type":"claims"},{"id":"c03f5ea2-78e4-407f-b7d6-4d0030c2a40f","type":"claims"},{"id":"7932a00b-8ba4-416c-a413-d6a887b917fd","type":"claims"},{"id":"fa11b91c-7be8-4f47-ad54-69854503e7b9","type":"claims"},{"id":"b523af71-4644-4a41-86ee-05c36c17e948","type":"claims"},{"id":"fa1967ed-dd1a-49db-94c2-ab832cdc3279","type":"claims"},{"id":"dff9f5db-4269-4335-95c1-71a0ce146690","type":"claims"},{"id":"252635e3-2413-4c00-94c2-c513d90d66ce","type":"claims"}]}}}}'
+        Fenner","orcid":"0000-0001-6528-2027","github":"https://github.com/datacite-support","created":"2016-11-26T22:16:15Z","updated":"2017-07-01T20:55:18Z"}}}'
     http_version: 
-  recorded_at: Tue, 07 Feb 2017 09:17:44 GMT
+  recorded_at: Mon, 10 Jul 2017 12:31:21 GMT
 recorded_with: VCR 2.9.3

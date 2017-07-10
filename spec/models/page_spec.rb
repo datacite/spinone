@@ -5,14 +5,14 @@ describe Page, type: :model, vcr: true do
     pages = Page.all[:data]
     expect(pages.length).to eq(25)
     page = pages.first
-    expect(page.title).to eq("The OI Project gets underway planning an Open Organization Identifier Registry")
+    expect(page.title).to eq("Development Roadmap")
   end
 
   it "query" do
     pages = Page.where(query: "thor")[:data]
-    expect(pages.length).to eq(13)
+    expect(pages.length).to eq(14)
     page = pages.first
-    expect(page.title).to eq("Dynamic Data Citation Webinar")
+    expect(page.title).to eq("A Content Negotiation Update")
   end
 
   it "page" do

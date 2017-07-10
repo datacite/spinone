@@ -7,14 +7,14 @@
     "author": [
         {
             "@type": "Person",
-            "@id": "http://orcid.org/0000-0003-1419-2405",
+            "@id": "https://orcid.org/0000-0003-1419-2405",
             "givenName": "Martin",
             "familyName": "Fenner",
             "name": "Martin Fenner"
         },
         {
             "@type": "Person",
-            "@id": "http://orcid.org/0000-0003-3484-6875",
+            "@id": "https://orcid.org/0000-0003-3484-6875",
             "givenName": "Kristian",
             "familyName": "Garza",
             "name": "Kristian Garza"

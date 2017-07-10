@@ -16,30 +16,30 @@ http_interactions:
       code: 200
       message: ''
     headers:
-      Server:
-      - openresty/1.11.2.1
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Encoding:
+      - text
       Date:
-      - Tue, 07 Feb 2017 09:22:59 GMT
+      - Mon, 10 Jul 2017 12:31:21 GMT
+      Etag:
+      - '"bfc0582894b33ec97a324cdc44748aec"'
+      Last-Modified:
+      - Tue, 04 Jul 2017 10:41:40 GMT
+      Server:
+      - openresty/1.11.2.2
+      X-Amz-Id-2:
+      - 5lRI9dSTU3uDjKt3JnVMj702x64j82PCSuXH6oic+LoJ7l4+DWRVRpapIktcvQRE75hAV1SOoIY=
+      X-Amz-Request-Id:
+      - AE3AFAC0594D2F28
+      X-Amz-Version-Id:
+      - N_fIZ.T5Cu7r7c7VtTFwlbc7m2bFT7bD
       Content-Length:
       - '1252'
       Connection:
       - keep-alive
-      X-Amz-Id-2:
-      - GuT6aE2JWEgA7pFIGNcHXZO+stBDsyPsqLCacxp+IEb6HZCzrKGBEwgHzJ2MYg+1r1Xu3/xu9hk=
-      X-Amz-Request-Id:
-      - D59BF5C602E28D0F
-      Content-Encoding:
-      - text
-      Last-Modified:
-      - Sun, 15 Jan 2017 07:46:13 GMT
-      X-Amz-Version-Id:
-      - AQ0eBZ9k4ZvUSvsNzh6Dnc87MLyHH7Hb
-      Etag:
-      - '"bfc0582894b33ec97a324cdc44748aec"'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
     body:
       encoding: UTF-8
       string: |
@@ -70,5 +70,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Tue, 07 Feb 2017 09:22:59 GMT
+  recorded_at: Mon, 10 Jul 2017 12:31:21 GMT
 recorded_with: VCR 2.9.3

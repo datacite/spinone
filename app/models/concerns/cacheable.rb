@@ -64,6 +64,10 @@ module Cacheable
         data = self.ds.where(symbol: id).first
         { "data" => { "data-center" => data } }
       end
+    rescue StandardError => e
+      Rails.logger.error e
+
+      { "data" => {} }
     end
 
     def cached_total_response(options={})

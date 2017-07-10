@@ -98,6 +98,10 @@ class DataCenter < Base
         { "data" => { "data-centers" => data, "meta" => meta } }
       end
     end
+  rescue StandardError => e
+    Rails.logger.error e
+
+    { "data" => {} }
   end
 
   def self.get_data(options={})
