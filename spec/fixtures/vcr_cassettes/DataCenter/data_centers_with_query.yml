@@ -19,7 +19,7 @@ http_interactions:
       Content-Type:
       - text/html
       Date:
-      - Sun, 23 Jul 2017 10:34:41 GMT
+      - Sun, 23 Jul 2017 10:34:40 GMT
       Location:
       - https://profiles.test.datacite.org/api/members
       Server:
@@ -33,7 +33,7 @@ http_interactions:
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.11.2.2</center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:39 GMT
+  recorded_at: Sun, 23 Jul 2017 10:34:38 GMT
 - request:
     method: get
     uri: https://profiles.test.datacite.org/api/members
@@ -63,7 +63,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 23 Jul 2017 10:34:41 GMT
+      - Sun, 23 Jul 2017 10:34:40 GMT
       Etag:
       - W/"5364592afb9a0cc4809dd4f0410949bd"
       Server:
@@ -79,9 +79,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.5
       X-Request-Id:
-      - a53bfc9c-9f48-4748-b342-faec919b6b11
+      - 95c9aadb-a54e-42b8-8bfa-23dbae17e695
       X-Runtime:
-      - '0.043878'
+      - '0.040724'
       X-Xss-Protection:
       - 1; mode=block
       Connection:

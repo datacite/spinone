@@ -61,8 +61,8 @@ describe Work, type: :model, vcr: true do
     works = Work.where(rows: 60)
     expect(works[:data].length).to eq(60)
     work = works[:data].last
-    expect(work.title).to eq("Referee report. For: FL Wellcome Grants Test [version 1; referees: 1 approved, 1 approved with reservations]")
-    expect(work.resource_type.title).to eq("Text")
+    expect(work.title).to eq("IMG_0134.jpg")
+    expect(work.resource_type.title).to eq("Dataset")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
     expect(meta["years"]).not_to be_empty

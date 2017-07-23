@@ -5,7 +5,7 @@ describe Page, type: :model, vcr: true do
     pages = Page.all[:data]
     expect(pages.length).to eq(25)
     page = pages.first
-    expect(page.title).to eq("Development Roadmap")
+    expect(page.title).to eq("Announcing our new DataCite Support Center")
   end
 
   it "query" do

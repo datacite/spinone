@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :deposited, :updated_at
+  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
 
   # include author methods
   include Authorable
@@ -31,13 +31,13 @@ class Work < Base
       @author = get_hashed_authors(authors)
     end
 
-    @doi = attributes.fetch("doi", nil)
+    @doi = attributes.fetch("doi", "").downcase.presence
     @url = attributes.fetch("url", nil)
     @title = Work.sanitize(attributes.fetch("title", []).first)
     @container_title = attributes.fetch("publisher", nil)
     @description = Work.sanitize(attributes.fetch("description", []).first)
     @published = attributes.fetch("publicationYear", nil)
-    @deposited = attributes.fetch("minted", nil)
+    @registered = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
@@ -90,13 +90,13 @@ class Work < Base
         options[:query] = options[:query].to_s + " " + ids.join(" ")
         options[:qf] = "doi"
         options[:rows] = ids.length
-        options[:sort] = "deposited"
+        options[:sort] = "registered"
         options[:mm] = 1
       end
 
       if options[:sort].present?
         sort = case options[:sort]
-               when "deposited" then "minted"
+               when "registered" then "minted"
                when "published" then "publicationYear"
                when "updated" then "updated"
                else "score"

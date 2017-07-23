@@ -25,32 +25,39 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 10 Jul 2017 12:31:19 GMT
+      - Sun, 23 Jul 2017 10:34:43 GMT
       Etag:
-      - '"49b109b8f499f8b2d33269e6c1adbadd"'
+      - '"587929106d7a0f1cf0b4f82869956b21"'
       Last-Modified:
-      - Tue, 04 Jul 2017 10:54:22 GMT
+      - Sat, 22 Jul 2017 08:08:43 GMT
       Server:
       - openresty/1.11.2.2
       Via:
       - kong/0.10.3
       X-Amz-Id-2:
-      - "+mAo2Cmde4J4Hx/8/oKrZ9CWZU85J0QnZeQFpvx4hoXEdCtPETyLtC4GkSs6X/K59lcW4apJnXg="
+      - 7UUMZYjDI9ZuJnl23OGTwLFyMBCgllKSDbRTd4eM/VuQi5q0+TpFmJv2y8bX6h+VMbjkD/nWTYM=
       X-Amz-Request-Id:
-      - 70C4A5DC9ACE1748
+      - E7FE8FD4105225EF
       X-Amz-Version-Id:
-      - Z_TC9f5VzDaTO1.CCia7r2vAQiW_X0Es
+      - f07jAfKaPKueqJcfTIcz76b0xkZbYheM
       X-Kong-Proxy-Latency:
-      - '1'
+      - '17'
       X-Kong-Upstream-Latency:
-      - '16'
+      - '58'
       Content-Length:
-      - '98412'
+      - '99571'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/9TC-71YB-2JDG","name":"Development
+      string: '[{"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/C-YYXJ-ZGKR","name":"Announcing
+        our new DataCite Support Center","alternateName":"MS-445566778899","url":"https://blog.datacite.org/announcing-support/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
+        Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2017-07-11","datePublished":"2017-07-11","dateModified":"2017-07-11","keywords":"support","version":"1.0","description":"New
+        services, APIs, enhanced functions, and even websites can be hard to grasp.
+        At DataCite we understand how difficult it is to get started and stay up-to-date
+        with all the developments in the scholarly communications ecosystem. That
+        is why we decided...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2017/07/support.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-support/announcing-support.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/9TC-71YB-2JDG","name":"Development
         Roadmap","alternateName":"MS-0345666549549645","url":"https://blog.datacite.org/roadmap/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2017-06-26","datePublished":"2017-06-26","dateModified":"2017-06-26","keywords":"roadmap","version":"1.0","description":"Over
         the next several months DataCite will embark on a new development path focusing
@@ -91,7 +98,7 @@ http_interactions:
         Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-02ZN","name":"One
         step closer towards instant DOI search results","alternateName":"MS-95-6142-5623","url":"https://blog.datacite.org/docker-solr/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-3484-6875","givenName":"Kristian","familyName":"Garza","name":"Kristian
         Garza"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2017-04-25","datePublished":"2017-04-25","dateModified":"2017-04-25","keywords":"docker,
-        solr, featured","version":"1.0","description":"Art? You might be wondering,
+        solr, featured","version":"1.0","description":"Art Art? You might be wondering,
         what this pink and green picture illustrates? A few months ago we couldn’t
         show you this picture; the data that we used to created it, did not exist.
         And the answer to what this illustrates – this is simply a distorted...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2017/04/new_db_index.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/docker-solr/docker-solr.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
@@ -133,7 +140,7 @@ http_interactions:
         implemented uses a new command line utility and integrates well with our the
         publishing workflow, with (almost) no extra effort compared to how we...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/12/schema-org.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/schema-org-register-dois/schema-org-register-dois.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0000-00SS"},{"@type":"CreativeWork","@id":"http://dublincore.org/documents/2012/06/14/dces"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/TNHX-54CG"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/55E5-T5C0"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/4K3M-NYVG"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/CT8B-X1CE","name":"Mysteries
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-049T","name":"Mysteries
         in Reference Lists","alternateName":"MS-137-6609-5916","url":"https://blog.datacite.org/mysteries-in-reference-lists/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-12-23","datePublished":"2016-12-23","dateModified":"2016-12-23","keywords":"doi,
         citation","version":"1.0","description":"On Tuesday the journal PLOS ONE celebrated
@@ -141,7 +148,7 @@ http_interactions:
         and blog post by PLOS ONE Managing Editor Iratxe Puebla and PLOS Advocacy
         Director Catriona MacCallum). PLOS ONE (and PLOS) have changed...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/12/journal.pone.0105948.g004.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/mysteries-in-reference-lists/mysteries-in-reference-lists.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://arxiv.org/abs/1501.04916"},{"@type":"CreativeWork","@id":"https://doi.org/10.3398/064.075.0213"},{"@type":"CreativeWork","@id":"https://doi.org/10.1002/2015JE004895"},{"@type":"CreativeWork","@id":"https://doi.org/10.1371/journal.pbio.1001687"},{"@type":"CreativeWork","@id":"https://doi.org/10.1016/j.jas.2015.02.009"},{"@type":"CreativeWork","@id":"http://hdl.handle.net/10536/DRO/DU:30088291"},{"@type":"CreativeWork","@id":"https://doi.org/10.1016/j.aeolia.2015.08.001"},{"@type":"CreativeWork","@id":"https://doi.org/10.1007/s12209-016-2596-z"},{"@type":"CreativeWork","@id":"https://doi.org/10.5194/esurfd-2-1005-2014"},{"@type":"CreativeWork","@id":"https://doi.org/10.1371/journal.pone.0105948"},{"@type":"CreativeWork","@id":"https://www.ncbi.nlm.nih.gov/books/NBK7256"},{"@type":"CreativeWork","@id":"https://doi.org/10.1016/j.bpj.2015.04.023"},{"@type":"CreativeWork","@id":"https://doi.org/10.1002/esp.3677"},{"@type":"CreativeWork","@id":"https://doi.org/10.1016/j.aeolia.2016.01.003"},{"@type":"CreativeWork","@id":"https://doi.org/10.4172/2381-8719.1000256"},{"@type":"CreativeWork","@id":"https://doi.org/10.1371/journal.pone.0134826"},{"@type":"CreativeWork","@id":"https://doi.org/10.1016/j.tree.2010.11.006"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/4K3M-NYVG","name":"Eating
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01HC","name":"Eating
         your own Dog Food","alternateName":"MS-49-3632-5083","url":"https://blog.datacite.org/eating-your-own-dog-food/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-12-20","datePublished":"2016-12-20","dateModified":"2016-12-20","keywords":"datacite,
         doi, metadata, featured","version":"1.0","description":"Eating your own dog
@@ -150,7 +157,7 @@ http_interactions:
         use DOIs with appropriate metadata and strategies for long-term preservation
         for...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/12/230785.jpg","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/eating-your-own-dog-food/eating-your-own-dog-food.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0012"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/55E5-T5C0"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/ZWSF-4Y7Y","name":"2016
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0AP9","name":"2016
         in review","alternateName":"MS-342-5223-1623","url":"https://blog.datacite.org/2016-in-review/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-12-19","datePublished":"2016-12-19","dateModified":"2016-12-19","keywords":"datacite,
         featured","version":"1.0","description":"2016 has been a year of many changes
@@ -158,7 +165,7 @@ http_interactions:
         has become a more dynamic and highly engaged organisation. Structural, technical
         and cultural changes have helped us see our biggest...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/12/year_featured.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/2016-in-review/2016-in-review.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.154592"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0012"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.48705"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.58971"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/55E5-T5C0","name":"Cool
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01QJ","name":"Cool
         DOI''s","alternateName":"MS-55-5135-1980","url":"https://blog.datacite.org/cool-dois/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-12-15","datePublished":"2016-12-15","dateModified":"2016-12-15","keywords":"doi,
         featured","version":"1.0","description":"In 1998 Tim Berners-Lee coined the
@@ -166,14 +173,14 @@ http_interactions:
         in the scholarly literature are often not cool, leading to link rot (Klein
         et al., 2014) and making it hard or impossible to find...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/12/cool-dois.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/cool-dois/cool-dois.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://www.w3.org/Provider/Style/URI"},{"@type":"CreativeWork","@id":"https://doi.org/10.1371/journal.pone.0115253"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/6WCF-EFW5","name":"A
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-029=","name":"A
         common API for retrieving DataCite Metadata","alternateName":"MS-73-9506-4316","url":"https://blog.datacite.org/common-api-datacite-metadata/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-11-03","datePublished":"2016-11-03","dateModified":"2016-11-03","keywords":"api,
         search","version":"1.0","description":"Today we are launching a new version
         of the DataCite API at http://api.datacite.org. This new version includes
         numerous bug fixes and now includes related resources (e.g. data centers,
         members or contributors) according to the JSONAPI spec. The changelog...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/common-api-datacite-metadata/common-api-datacite-metadata.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/TNHX-54CG","name":"Announcing
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-08YV","name":"Announcing
         the Organization Identifier Project: a Way Forward","alternateName":"MS-286-4071-1820","url":"https://blog.datacite.org/announcing-organization-identifier-project/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-11-01","datePublished":"2016-11-01","dateModified":"2016-11-01","keywords":"organization
         identifier, orcid, crossref, featured","version":"1.0","description":"The
@@ -182,27 +189,27 @@ http_interactions:
         (through DataCite and Crossref) and contributor identifiers (through ORCID)
         have become foundational...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/11/london_institute.jpg","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-organization-identifier-project/announcing-organization-identifier-project.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5438/4716"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/2906"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0012"},{"@type":"CreativeWork","@id":"https://doi.org/10.6084/M9.FIGSHARE.3479141"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/ZENODO.30799"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/7885"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/ESYS-F867","name":"The
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-04ZB","name":"The
         Tsinghua University Library joins DataCite","alternateName":"MS-159-0353-8438","url":"https://blog.datacite.org/the-tsinghua-university-library-joins-datacite/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-10-24","datePublished":"2016-10-24","dateModified":"2016-10-24","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Beijing","addressCountry":"China"},"keywords":"members","version":"1.0","description":"DataCite
         is delighted to welcome the Tsinghua University Library to the DataCite community!
         The Tsinghua University Library supports the University’s mission of education
         and research. It engages with the ongoing environment to deliver world-class...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/the-tsinghua-university-library-joins-datacite/the-tsinghua-university-library-joins-datacite.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/9JWD-TN3A","name":"Welcome
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-036W","name":"Welcome
         United States Geological Survey (USGS)","alternateName":"MS-102-9746-9603","url":"https://blog.datacite.org/welcome-united-states-geological-survey-usgs/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-10-17","datePublished":"2016-10-17","dateModified":"2016-10-17","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Reston","addressRegion":"VA","addressCountry":"USA"},"keywords":"members","version":"1.0","description":"DataCite
         is pleased to welcome USGS to the DataCite community. USGS is one of the largest
         government scientific agencies in the world and was created by an act of the
         US Congress over 125 years ago. With vast holdings in Earth and biological
         data,...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/welcome-united-states-geological-survey-usgs/welcome-united-states-geological-survey-usgs.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/1YAA-K6D1","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-00MM","name":"DataCite
         Welcomes TIND","alternateName":"MS-20-9120-7885","url":"https://blog.datacite.org/datacite-welcomes-tind/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-10-14","datePublished":"2016-10-14","dateModified":"2016-10-14","keywords":"members","version":"1.0","description":"As
         we mentioned in our last blog post, DataCite recently changed its membership
         model, and we now invite members from all types of organisations to join DataCite.
         As a result, we are happy to announce that several organisations have joined
         DataCite...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacite-welcomes-tind/datacite-welcomes-tind.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://blog.datacite.org/citation-formatting-service-upgrade/","name":"Three
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-04F?","name":"Three
         things you should know about our new DOI Citation Formatting service","alternateName":"MS-143-6247-2132","url":"https://blog.datacite.org/citation-formatting-service-upgrade/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-3484-6875","givenName":"Kristian","familyName":"Garza","name":"Kristian
         Garza"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-10-13","datePublished":"2016-10-13","dateModified":"2016-10-13","keywords":"citation,
         docker, featured, infrastructure","version":"1.0","description":"We are happy
@@ -210,14 +217,14 @@ http_interactions:
         service, available at http://citation.crosscite.org. The service uses the
         citeproc.js library by Frank Bennett together with the more than 5,000 citation
         styles made available by...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/10/citation_formatter.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/citation-formatting-service-upgrade/citation-formatting-service-upgrade.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/8SZS-1H0H","name":"DataCite’s
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-02YM","name":"DataCite’s
         New Membership Model - Join Us!","alternateName":"MS-94-6212-2016","url":"https://blog.datacite.org/datacites-new-membership-model/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-10-05","datePublished":"2016-10-05","dateModified":"2016-10-05","keywords":"datacite","version":"1.0","description":"It
         has been a busy few months at DataCite, but we want to share some important
         information about changes to DataCite’s membership model. Earlier this year
         DataCite members voted to revise our membership model and open membership
         up to any organization...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/10/join.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacites-new-membership-model/datacites-new-membership-model.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/VQ3X-QDWT","name":"New
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0991","name":"New
         DataCite Metadata Schema 4.0","alternateName":"MS-297-6690-1180","url":"https://blog.datacite.org/new-metadata-schema-4-0/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-09-21","datePublished":"2016-09-21","dateModified":"2016-09-21","keywords":"datacite,
         metadata","version":"1.0","description":"Many things have changed in the last
@@ -225,7 +232,7 @@ http_interactions:
         becoming a standard in different communities, and DataCite is proud to support
         the development of best practices and services for these...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/09/schemapreview.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/new-metadata-schema-4-0/new-metadata-schema-4-0.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0012"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/WMAS-KM0V","name":"Software
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-09KB","name":"Software
         Citation Principles","alternateName":"MS-307-4718-4768","url":"https://blog.datacite.org/software-citation-principles/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-09-20","datePublished":"2016-09-20","dateModified":"2016-09-20","keywords":"datacite,
         software citation","version":"1.0","description":"The FORCE11 Software Citation
@@ -234,14 +241,14 @@ http_interactions:
         Katz, Niemeyer, \u0026amp; FORCE11-Software-Citation-Working-Group, 2016)
         to...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/software-citation-principles/software-citation-principles.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.7717/peerj-cs.86"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/PRF0-NRXQ","name":"PIDapalooza,
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-07MP","name":"PIDapalooza,
         the festival of persistent identifiers is coming soon!","alternateName":"MS-244-4337-7437","url":"https://blog.datacite.org/pidapalooza-the-festival-of-persistent-identifiers/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-09-01","datePublished":"2016-09-01","dateModified":"2016-09-01","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Reykjavik","addressCountry":"Iceland"},"keywords":"datacite,
         pidapalooza","version":"1.0","description":"Passionate as we are about persistent
         identifiers, we are delighted to invite you to PIDapalooza, the festival of
         PIDs this November in Reykjavik. Together with our colleagues from Crossref,
         ORCID and the California Digital Library, we have envisioned...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/09/crowd.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/pidapalooza-the-festival-of-persistent-identifiers/pidapalooza-the-festival-of-persistent-identifiers.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/Y131-YX9D","name":"Announcing
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0A2T","name":"Announcing
         Our New Application Developer","alternateName":"MS-322-4901-9305","url":"https://blog.datacite.org/announcing-new-application-developer/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"},{"@type":"Person","@id":"http://orcid.org/0000-0003-3484-6875","givenName":"Kristian","familyName":"Garza","name":"Kristian
         Garza"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-08-24","datePublished":"2016-08-24","dateModified":"2016-08-24","keywords":"datacite,
@@ -250,28 +257,28 @@ http_interactions:
         he comes to DataCite with a wealth of experience in Open Science, web development,
         and data repositories. Get to know him better via this interview...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/08/kgarza.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-new-application-developer/announcing-new-application-developer.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.1145/2783446.2783605"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/Y4KS-KSBC","name":"Dynamic
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0A3V","name":"Dynamic
         Data Citation Webinar","alternateName":"MS-323-6723-4859","url":"https://blog.datacite.org/dynamic-data-citation-webinar/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-07-18","datePublished":"2016-07-18","dateModified":"2016-07-18","keywords":"datacite,
         rda, citation, thor","version":"1.0","description":"On July 12, 2016, DataCite
         invited Andreas Rauber to present the recommendations for dynamic data citation
-        of the RDA Data Citation Working Group in a webinar. Andreas is one of the
-        co-chairs of the RDA working group, and he gave a throughout overview...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/07/dynamic-data.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/dynamic-data-citation-webinar/dynamic-data-citation-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/X4JQ-EGT5","name":"DataCite
+        of the RDA Data Citation Working Group in a webinar. Dynamic data Andreas
+        is one of the co-chairs of the RDA working group, and he gave a throughout...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/07/dynamic-data.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/dynamic-data-citation-webinar/dynamic-data-citation-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-09RG","name":"DataCite
         Metadata Schema 4.0 Webinar","alternateName":"MS-312-9237-3530","url":"https://blog.datacite.org/metadata-schema-4-webinar/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-07-08","datePublished":"2016-07-08","dateModified":"2016-07-08","keywords":"datacite","version":"1.0","description":"On
         June 30th, 2016, DataCite organised a webinar to introduce the community to
         the new version of its metadata schema developed by DataCite’s Metadata Working
         Group. and support the different integrators interested in migrating to the
         new schema. http...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/07/schema_featured.jpg","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/metadata-schema-4-webinar/metadata-schema-4-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/VQ2T-VR4K","name":"Relaunching
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0991","name":"Relaunching
         DataCite Search","alternateName":"MS-297-6575-8724","url":"https://blog.datacite.org/relaunching-datacite-search/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-07-05","datePublished":"2016-07-05","dateModified":"2016-07-05","keywords":"infrastructure","version":"1.0","description":"This
         week we relaunched DataCite Search, providing a more user-friendly search
         interface for DataCite metadata. We also added functionality that was not
         available before. The new search uses a single entry box for queries, and
         filters by resource type...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/07/search.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/relaunching-datacite-search/relaunching-datacite-search.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/QW2X-PGCY","name":"Our
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-080~","name":"Our
         New Website: Dynamic, Responsive and Adapted to your Needs","alternateName":"MS-256-3865-6524","url":"https://blog.datacite.org/our-new-website/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-06-27","datePublished":"2016-06-27","dateModified":"2016-06-27","keywords":"datacite","version":"1.0","description":"We
         are very pleased to announce the launch of our new website: www.datacite.org!
@@ -286,14 +293,14 @@ http_interactions:
         machine-readable, and that – despite a number of shortcomings - is widely
         used. Given the popularity of Markdown for writing blog posts,...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/05/periodic_table.jpg","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/publishing-tabular-data-as-blog-post/publishing-tabular-data-as-blog-post.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://cran.r-project.org/web/packages/rio/index.html"},{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0010"},{"@type":"CreativeWork","@id":"https://github.com/datacite/jekyll-csvy"},{"@type":"CreativeWork","@id":"https://blog.datacite.org/thinking-about-csv"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/MRR6-MF3Q","name":"Get
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-06Z1","name":"Get
         involved in the DataCite Community!","alternateName":"MS-223-0552-6243","url":"https://blog.datacite.org/get-involved-in-the-datacite-community/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-05-18","datePublished":"2016-05-18","dateModified":"2016-05-18","keywords":"datacite","version":"1.0","description":"DataCite
         is a community driven organization, and we encourage involvement from people
         that share our data sharing vision. Over the past year, DataCite has seen
         a tremendous amount of growth and uptake in the use of DataCite DOIs. To help
         guide and...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/05/bike_featured.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/get-involved-in-the-datacite-community/get-involved-in-the-datacite-community.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/Q2GH-6EGD","name":"Zotero
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-07QS","name":"Zotero
         for Data Repositories Webinar","alternateName":"MS-247-8051-1696","url":"https://blog.datacite.org/zotero-for-data-repositories-webinar/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-05-17","datePublished":"2016-05-17","dateModified":"2016-05-17","keywords":"citation,
         zotero","version":"1.0","description":"On May 17, 2016, DataCite continued
@@ -301,7 +308,7 @@ http_interactions:
         Qualitative Data Repository (QDR) at Syracuse University, presenting on Zotero
         for data repositories. Sebastian is an expert in scholarly...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/zotero-for-data-repositories-webinar/zotero-for-data-repositories-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.6084/M9.FIGSHARE.3364708.V1"},{"@type":"CreativeWork","@id":"https://doi.org/10.7717/peerj-cs.1"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/CAB5-TEG0","name":"Data
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-044N","name":"Data
         catalog cards: simplifying article/data linking","alternateName":"MS-132-3217-1472","url":"https://blog.datacite.org/data-catalog-cards-simplifying-article-data-linking/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-05-13","datePublished":"2016-05-13","dateModified":"2016-05-13","keywords":"citation,
         metadata","version":"1.0","description":"Data citation is core to DataCite’s
@@ -309,14 +316,14 @@ http_interactions:
         data citation, including THOR, Data Citation Implementation Pilot (DCIP),
         Research Data Alliance (RDA), and COPDESS. The biggest roadblock...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/data-catalog-cards-simplifying-article-data-linking/data-catalog-cards-simplifying-article-data-linking.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://blog.datacite.org/reference-lists-and-tables-of-content"},{"@type":"CreativeWork","@id":"https://figshare.com/blog/Unveiling_figshare_Collections_a_new_way_to_group_content/202"},{"@type":"CreativeWork","@id":"https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier"},{"@type":"CreativeWork","@id":"https://doi.org/10.15252/msb.20156658"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/4QX3-RP8Y","name":"Thinking
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01JD","name":"Thinking
         about CSV","alternateName":"MS-50-9725-1528","url":"https://blog.datacite.org/thinking-about-csv/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-05-04","datePublished":"2016-05-04","dateModified":"2016-05-04","keywords":"csv","version":"1.0","description":"This
         week some of us from DataCite are attending CSVconf in Berlin, and we are
         a conference sponsor and co-organizer. csv,conf is a non-profit community
         conference run by some folks who really love data and sharing knowledge. If
         you are as passionate...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/thinking-about-csv/thinking-about-csv.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/78P9-FNRN","name":"Tip:
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-02E4","name":"Tip:
         Getting data into Impactstory but not your ORCID profile","alternateName":"MS-78-0800-7864","url":"https://blog.datacite.org/tip-getting-data-into-impactstory-but-not-your-orcid-profile/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-7885-715X","givenName":"Lars
         Juhl","familyName":"Jensen","name":"Lars Juhl Jensen"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-05-01","datePublished":"2016-05-01","dateModified":"2016-05-01","keywords":"orcid,
         impactstory, thor","version":"1.0","description":"\u003cem\u003eThe following
@@ -324,14 +331,14 @@ http_interactions:
         I use Impactstory to track altmetrics for my publications. I believe they
         did the right thing by not asking me to maintain yet another online profile
         and instead building...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/tip-getting-data-into-impactstory-but-not-your-orcid-profile/tip-getting-data-into-impactstory-but-not-your-orcid-profile.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/KKJ4-19RN","name":"DC2AP
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-03XE","name":"DC2AP
         and DC2RDF Webinar","alternateName":"MS-125-0400-5006","url":"https://blog.datacite.org/dc2ap-and-dc2rdf-webinar/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
-        Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-25","datePublished":"2016-04-25","dateModified":"2016-04-26","keywords":"dublin
+        Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-26","datePublished":"2016-04-26","dateModified":"2016-04-26","keywords":"dublin
         core","version":"1.0","description":"As we have talked about before, the DataCite
         Metadata Working Group has prepared a DataCite to Dublin Core application
         profile (DC2AP) and an ontology (DC2RDF) and is currently running a public
         review to become a DCMI Community Specification. Two weeks...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/dc2ap-and-dc2rdf-webinar/dc2ap-and-dc2rdf-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/C3BY-VYZS","name":"We
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-041J","name":"We
         were out in Force","alternateName":"MS-129-9811-1199","url":"https://blog.datacite.org/we-were-out-in-force/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-19","datePublished":"2016-04-19","dateModified":"2016-04-19","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Portland","addressRegion":"OR","addressCountry":"USA"},"keywords":"orcid,
         software citation, github, impactstory","version":"1.0","description":"This
@@ -339,7 +346,7 @@ http_interactions:
         Oregon. Force16 brings together a large group of people who either already
         work with DataCite in one way or another, or are doing interesting projects
         of relevance...","license":"https://creativecommons.org/licenses/by/4.0/","image":"https://blog.datacite.org/images/2016/04/impactstory.png","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/we-were-out-in-force/we-were-out-in-force.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/SHR4-2BS2","name":"To
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-08JF","name":"To
         better understand research communication, we need a GROUPID (group object
         identifier)","alternateName":"MS-274-3927-0265","url":"https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5934-7525","givenName":"Daniel
         S.","familyName":"Katz","name":"Daniel S. Katz"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-17","datePublished":"2016-04-17","dateModified":"2016-04-17","keywords":"metadata,
@@ -348,7 +355,7 @@ http_interactions:
         After a number of general discussions in the research communication community,
         mostly focused on software citation, and then a few separate discussions with
         Anita Bandrowski...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/to-better-understand-research-communication-we-need-a-groid-group-object-identifier.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/PE54-ZJ5T","name":"It''s
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-07GJ","name":"It''s
         all about Relations","alternateName":"MS-240-9748-8453","url":"https://blog.datacite.org/its-all-about-relations/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-14","datePublished":"2016-04-14","dateModified":"2016-04-14","keywords":"metadata,
         data-level metrics, crossref","version":"1.0","description":"In a guest post
@@ -357,34 +364,34 @@ http_interactions:
         she also presented at the IDCC conference in February (Mayo, Hull, \u0026amp;
         Vision...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/its-all-about-relations/its-all-about-relations.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5438/0010"},{"@type":"CreativeWork","@id":"https://doi.org/10.3334/CDIAC/00001"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/ZENODO.49516"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.32412"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/KTR7-ZJJH","name":"re3data.org
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-06MV","name":"re3data.org
         Reaches a Milestone and Begins Offering Badges","alternateName":"MS-212-9893-7426","url":"https://blog.datacite.org/re3data-reaches-a-milestone-and-begins-offering-badges/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-3334-2771","givenName":"Heinz","familyName":"Pampel","name":"Heinz
         Pampel"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-04-13","datePublished":"2016-04-13","dateModified":"2016-04-13","keywords":"re3data","version":"1.0","description":"re3data.org
         has reached a milestone of identifying and listing 1,500 research data repositories,
         making it the largest and most comprehensive registry of data repositories
         available on the web. It has grown steadily since its launch four years ago...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/re3data-reaches-a-milestone-and-begins-offering-badges/re3data-reaches-a-milestone-and-begins-offering-badges.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/C81T-HKVP","name":"General
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-043M","name":"General
         Assembly 2016, moving DataCite forward","alternateName":"MS-131-5525-5931","url":"https://blog.datacite.org/general-assembly-2016/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-03-31","datePublished":"2016-03-31","dateModified":"2016-03-31","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Amsterdam","addressCountry":"Netherlands"},"keywords":"datacite","version":"1.0","description":"In
         late February, twenty-four of DataCite’s twenty-seven members gathered in
         Amsterdam for our annual Strategy Meeting and General Assembly. DataCite members
         are the voting body of the organisation and work directly with data centers
         and the data sharing...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/general-assembly-2016/general-assembly-2016.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/MSK0-15R2","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-06Z1","name":"DataCite
         is Hiring an Application Developer","alternateName":"MS-223-3362-1432","url":"https://blog.datacite.org/datacite-hiring-application-developer/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-03-30","datePublished":"2016-03-30","dateModified":"2016-03-30","keywords":"datacite","version":"1.0","description":"As
         DataCite’s Technical Director I am very excited to announce that DataCite
         is looking for an application developer to strengthen our technical team.
         Working for DataCite is an opportunity to work on interesting development
         work around scholarly infrastructure...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacite-hiring-application-developer/datacite-hiring-application-developer.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/BMMQ-YCE9","name":"Dataverse
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-03XE","name":"Dataverse
         is now minting DOIs with DataCite Metadata Store API","alternateName":"MS-125-0400-5006","url":"https://blog.datacite.org/dataverse-is-now-minting-dois-with-datacite/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-9767-8536","givenName":"Eleni","familyName":"Castro","name":"Eleni
         Castro"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-03-30","datePublished":"2016-03-30","dateModified":"2016-03-30","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Cambridge","addressRegion":"MA","addressCountry":"USA"},"keywords":"doi","version":"1.0","description":"With
         the release of Dataverse 4.3 in mid-March, anyone installing or updating to
         the most recent version of the Dataverse software will be able to mint DOIs
         directly through the DataCite Metadata Store API. This functionality was originally
         announced...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/dataverse-is-now-minting-dois-with-datacite/dataverse-is-now-minting-dois-with-datacite.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/F17B-45VZ","name":"The
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-051D","name":"The
         Location of the Citation: are Data Citation Recommendations Having an Effect?","alternateName":"MS-161-4738-6555","url":"https://blog.datacite.org/location-of-the-citation/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-8661-6265","givenName":"Elizabeth","familyName":"Hull","name":"Elizabeth
         Hull"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-03-28","datePublished":"2016-03-28","dateModified":"2016-03-28","keywords":"citation,
         data-level metrics","version":"1.0","description":"I was pleased to present
@@ -393,7 +400,7 @@ http_interactions:
         Repository\u003c/em\u003e (see preprint: Mayo et al, (2015)). Recently, organizations
         including...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/location-of-the-citation/location-of-the-citation.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.32412"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/SS2R-9CNS","name":"Open
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-08MH","name":"Open
         Science, Open Data and DataCite DOIs","alternateName":"MS-276-8529-9605","url":"https://blog.datacite.org/open-science-open-data-and-datacite/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-03-11","datePublished":"2016-03-11","dateModified":"2016-03-11","keywords":"doi","version":"1.0","description":"At
         DataCite we are incredibly proud of supporting Open Science. Over the past
@@ -401,7 +408,7 @@ http_interactions:
         All of these DOIs are an important step towards making data a first-class
         citizen in scholarly...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/open-science-open-data-and-datacite/open-science-open-data-and-datacite.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.7484/INSPIREHEP.DATA.26B4.TY5F"},{"@type":"CreativeWork","@id":"https://doi.org/10.7484/INSPIREHEP.DATA.RF5P.6M3K"},{"@type":"CreativeWork","@id":"https://doi.org/10.7484/INSPIREHEP.DATA.A78C.HK44"},{"@type":"CreativeWork","@id":"https://doi.org/10.1103/physrevlett.116.061102"},{"@type":"CreativeWork","@id":"https://doi.org/10.7935/K5MW2F23"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/6GEP-3S5E","name":"Enhancements
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-025?","name":"Enhancements
         to creating and updating re3data","alternateName":"MS-69-9472-6693","url":"https://blog.datacite.org/enhancements-to-creating-and-updating-re3data/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-3334-2771","givenName":"Heinz","familyName":"Pampel","name":"Heinz
         Pampel"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-02-24","datePublished":"2016-02-24","dateModified":"2016-02-24","keywords":"re3data","version":"1.0","description":"We
         are happy to announce a new feature that enables users to more easily suggest
@@ -415,7 +422,7 @@ http_interactions:
         Group has prepared a DataCite to Dublin Core application profile (DC2AP) and
         would love to hear your comments about it! DataCite loves Dublin Core The
         profile will help you building Dublin Core compatible DataCite metadata...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacite-to-dublin-core-application-profile/datacite-to-dublin-core-application-profile.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/4BY7-B7ZN","name":"New
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01E9","name":"New
         re3data.org Schema and Search Functionality","alternateName":"MS-46-9576-4223","url":"https://blog.datacite.org/new-re3data-schema-and-search-functionality/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-4221-7956","givenName":"Michael","familyName":"Witt","name":"Michael
         Witt"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-01-20","datePublished":"2016-01-20","dateModified":"2016-01-20","keywords":"re3data,
         metadata","version":"1.0","description":"We are pleased to announce the publication
@@ -423,14 +430,14 @@ http_interactions:
         Repositories” (Rücknagel et al., 2015). This updated version of the re3data.org
         schema incorporates feedback from users as well as...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/new-re3data-schema-and-search-functionality/new-re3data-schema-and-search-functionality.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.2312/RE3.008"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/YHCJ-P5HR","name":"Launching
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-0A7Z","name":"Launching
         the DataCite Status Page","alternateName":"MS-327-9587-5505","url":"https://blog.datacite.org/launching-datacite-status-page/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2016-01-11","datePublished":"2016-01-11","dateModified":"2016-01-11","keywords":"infrastructure,
         datacite","version":"1.0","description":"As a provider of crucial scholarly
         infrastructure, it is critical that DataCite not only provides a reliable
         service, but also properly communicates problems. The best way to do this
         is via a central status page, a best practice used by many organizations...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/launching-datacite-status-page/launching-datacite-status-page.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/XCBJ-G7ZY","name":"Announcing
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-09VK","name":"Announcing
         the DataCite Blog Relaunch","alternateName":"MS-315-5330-6879","url":"https://blog.datacite.org/announcing-blog-relaunch/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-12-28","datePublished":"2015-12-28","dateModified":"2015-12-28","keywords":"blog","version":"1.0","description":"The
         DataCite blog has migrated to a new platform, from a hosted version at Ghost
@@ -438,7 +445,7 @@ http_interactions:
         that it gives us more control over the formatting of blog posts. The migration
         was easy as both...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-blog-relaunch/announcing-blog-relaunch.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://blog.datacite.org/recap"},{"@type":"CreativeWork","@id":"https://blog.datacite.org/adding-references-to-the-datacite-blog"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/T0AP-D5W7","name":"Infrastructure
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-08QM","name":"Infrastructure
         Tips for the Non-Profit Startup","alternateName":"MS-279-2850-7580","url":"https://blog.datacite.org/tips-for-the-non-profit-startup/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-12-23","datePublished":"2015-12-23","dateModified":"2015-12-23","keywords":"infrastructure","version":"1.0","description":"When
         I started as DataCite Technical Director four months ago, my first post (Fenner,
@@ -446,7 +453,7 @@ http_interactions:
         The post included a lot of ideas on how to approach development and technical
         infrastructure....","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/tips-for-the-non-profit-startup/tips-for-the-non-profit-startup.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.6084/M9.FIGSHARE.1314859"},{"@type":"CreativeWork","@id":"https://blog.datacite.org/data-driven-development"},{"@type":"CreativeWork","@id":"https://orcid.org/about/what-is-orcid/principles"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/CJT2-T6DZ","name":"DataCite
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-047R","name":"DataCite
         Profiles and ORCID Auto-Update webinar","alternateName":"MS-135-1623-7005","url":"https://blog.datacite.org/datacite-profiles-and-orcid-auto-update-webinar/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0001-5952-7630","givenName":"Laura","familyName":"Rueda","name":"Laura
         Rueda"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-12-05","datePublished":"2015-12-05","dateModified":"2015-12-05","keywords":"orcid,
         thor","version":"1.0","description":"Last Monday, DataCite organized the first
@@ -454,14 +461,14 @@ http_interactions:
         new services, collaborations with different organizations and best practices
         to get the most out of persistent identifiers and data...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacite-profiles-and-orcid-auto-update-webinar/datacite-profiles-and-orcid-auto-update-webinar.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.34670"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.34673"},{"@type":"CreativeWork","@id":"https://blog.datacite.org/explaining-the-datacite-orcid-auto-update"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.34671"},{"@type":"CreativeWork","@id":"https://vimeo.com/147743305"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/MCNV-GA6N","name":"re3data
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-06V~","name":"re3data
         Webinar and DataCite: En Avant!","alternateName":"MS-219-0041-1206","url":"https://blog.datacite.org/re3data-webinar-and-datacite-en-avant/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-4221-7956","givenName":"Michael","familyName":"Witt","name":"Michael
         Witt"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-11-25","datePublished":"2015-11-25","dateModified":"2015-11-25","keywords":"re3data","version":"1.0","description":"The
         inaugural meeting of the DataCite re3data Working Group was convened in Paris
         on September 20th at the offices of the International Council for Science
         (ICSU). Co-chairs Michael Witt and Frank Scholze gave the background and history
         of Databib...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/re3data-webinar-and-datacite-en-avant/re3data-webinar-and-datacite-en-avant.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/15X1-BJ6R","name":"Announcing
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-00CC","name":"Announcing
         the DataCite Profiles Service","alternateName":"MS-12-7196-7302","url":"https://blog.datacite.org/announcing-datacite-profiles-service/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-11-09","datePublished":"2015-11-09","dateModified":"2015-11-09","keywords":"orcid,
         thor","version":"1.0","description":"DataCite Labs today is launching the
@@ -469,21 +476,21 @@ http_interactions:
         using their ORCID credentials. The first version of DataCite Profiles focusses
         on integration with ORCID via the \u003cstrong\u003eSearch \u0026amp; Link\u003c/strong\u003e
         and ","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-datacite-profiles-service/announcing-datacite-profiles-service.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/GA8V-FA94","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-05FV","name":"DataCite
         Is an Exciting Place to Be","alternateName":"MS-175-2470-2537","url":"https://blog.datacite.org/datacite-is-an-exciting-place-to-be/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-11-02","datePublished":"2015-11-02","dateModified":"2015-11-02","keywords":"datacite","version":"1.0","description":"Recently
         I was at a conference and a fellow conference-goer saw on my name badge that
         that I worked for DataCite and they stepped back and said, “\u003cem\u003eWow,
         DataCite must be a very exciting place to be right now.\u003c/em\u003e” I
         agree. It is very exciting and I am thrilled...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/datacite-is-an-exciting-place-to-be/datacite-is-an-exciting-place-to-be.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/3DFW-Z4KQ","name":"Explaining
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-014=","name":"Explaining
         the DataCite/ORCID Auto-update","alternateName":"MS-36-7411-1123","url":"https://blog.datacite.org/explaining-the-datacite-orcid-auto-update/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-29","datePublished":"2015-10-29","dateModified":"2015-10-29","keywords":"orcid,
         crossref, thor","version":"1.0","description":"This Monday ORCID, CrossRef
         and DataCite announced (ORCID post, CrossRef post, DataCite post) the new
         auto-update service that automatically pushes metadata to ORCID when an ORCID
         identifier is found in newly registered DOI names. This is the first...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/explaining-the-datacite-orcid-auto-update/explaining-the-datacite-orcid-auto-update.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/FERW-CWHQ","name":"Auto-Update
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-056J","name":"Auto-Update
         Has Arrived!","alternateName":"MS-166-0198-5937","url":"https://blog.datacite.org/auto-update-has-arrived/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-26","datePublished":"2015-10-26","dateModified":"2015-10-26","keywords":"orcid,
         crossref, thor","version":"1.0","description":"\u003cem\u003eThis post has
@@ -491,7 +498,7 @@ http_interactions:
         later this week explaining the DataCite auto-update implementation.\u003c/em\u003e
         Since ORCID’s inception, our key goal has been to unambiguously identify researchers
         and provide...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/auto-update-has-arrived/auto-update-has-arrived.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/1H7N-3CEN","name":"Software
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-00GG","name":"Software
         Citation Workflows","alternateName":"MS-16-5219-8798","url":"https://blog.datacite.org/software-citation-workflows/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-19","datePublished":"2015-10-19","dateModified":"2015-10-19","keywords":"software
         citation, github","version":"1.0","description":"\u003cem\u003eThis blog post
@@ -500,21 +507,21 @@ http_interactions:
         needed for software discovery and credit, and at the workflows linking these
         different...\u003c/em\u003e","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/software-citation-workflows/software-citation-workflows.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5334/jors.be"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/C61Q-Z2K7","name":"Happy
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-042K","name":"Happy
         Birthday ORCID","alternateName":"MS-130-8806-2547","url":"https://blog.datacite.org/happy-birthday-orcid/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-16","datePublished":"2015-10-16","dateModified":"2015-10-16","keywords":"thor,
         orcid","version":"1.0","description":"Three years ago today Open Researcher
         \u0026amp; Contributor ID (ORCID) launched its service at the Outreach Meeting
         in Berlin. One of many tweets from the launch day: Congrats to (\u003cstrong\u003e???\u003c/strong\u003e)
         the ORCID registry is live (http://t.co/2lxn0nLa) NPG is a proud launch...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/happy-birthday-orcid/happy-birthday-orcid.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/W029-Y6W~","name":"Contributor
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-029=","name":"Contributor
         Information in DataCite Metadata","alternateName":"MS-73-9506-4316","url":"https://blog.datacite.org/contributor-information-in-datacite-metadata/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-12","datePublished":"2015-10-12","dateModified":"2015-10-12","keywords":"thor,
         orcid","version":"1.0","description":"The Force11 Joint Declaration of Data
         Citation Principles highlight the importance of giving scholarly credit to
         all contributors: Data citations should facilitate giving scholarly credit
         and normative and legal attribution to all contributors to the...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/contributor-information-in-datacite-metadata/contributor-information-in-datacite-metadata.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/85SN-MX23","name":"Recap:
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-02QD","name":"Recap:
         Persistent Identifiers in Paris","alternateName":"MS-87-8463-0690","url":"https://blog.datacite.org/recap/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9300-5278","givenName":"Patricia","familyName":"Cruse","name":"Trisha
         Cruse"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-04","datePublished":"2015-10-04","dateModified":"2015-10-04","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"France"},"keywords":"rda","version":"1.0","description":"In
         late September DataCite and ePIC co-hosted a conference, \u003cstrong\u003ePersistent
@@ -522,28 +529,28 @@ http_interactions:
         in Paris on the Monday before the RDA Sixth Plenary meeting. It was a great
         way to kick-off a busy week of data conversations...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/recap/recap.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31782"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31780"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31786"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31787"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31783"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31784"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31788"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31789"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31792"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31785"},{"@type":"CreativeWork","@id":"https://doi.org/10.5281/zenodo.31790"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/D9EQ-9DGA","name":"Discussing
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-04EZ","name":"Discussing
         the Scholarly Container","alternateName":"MS-142-7607-6976","url":"https://blog.datacite.org/discussing-the-scholarly-container/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-02","datePublished":"2015-10-02","dateModified":"2015-10-02","keywords":"rda,
         csv","version":"1.0","description":"One of my personal highlights in last
         week’s Research Data Alliance (RDA) 6th Plenary Meeting in Paris was the Data
         Packages Birds of a Feather (BoF), organized by Rufus Pollock from the Open
         Knowledge Foundation (OKFN). He highlighted the urgent need...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/discussing-the-scholarly-container/discussing-the-scholarly-container.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/7RXD-S8A3","name":"Thoughts
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-02K9","name":"Thoughts
         on the Research Data Alliance 6th Plenary","alternateName":"MS-83-5235-9690","url":"https://blog.datacite.org/thoughts-on-the-research-data-alliance-6th-plenary/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-10-01","datePublished":"2015-10-01","dateModified":"2015-10-01","spatialCoverage":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"France"},"keywords":"thor,
         rda","version":"1.0","description":"The Research Data Alliance 6th Plenary
         last week discussed numerous topics very relevant to DataCite. Below is a
         short subjective list of topics I found interesting. If you attended RDA,
         feel free to add your thoughts in the comments. And if you didn...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/thoughts-on-the-research-data-alliance-6th-plenary/thoughts-on-the-research-data-alliance-6th-plenary.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/JM9F-325F","name":"Persistent
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-068F","name":"Persistent
         Identifiers: Enabling Services for Data Intensive Research","alternateName":"MS-200-0837-3317","url":"https://blog.datacite.org/persistent-identifiers-enabling-services-for-data-intensive-research/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-09-22","datePublished":"2015-09-22","dateModified":"2015-09-22","keywords":"thor,
         rda","version":"1.0","description":"Yesterday DataCite and ePIC co-hosted
         the workshop Persistent Identifiers: Enabling Services for Data Intensive
         Research. Below is a short summary of the tweets, all using the hashtag #pid_paris.
         Full room to discuss Persistent Identifiers for Data...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/persistent-identifiers-enabling-services-for-data-intensive-research/persistent-identifiers-enabling-services-for-data-intensive-research.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/BC11-CQW1","name":"Differences
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-03TB","name":"Differences
         between ORCID and DataCite Metadata","alternateName":"MS-122-1490-7644","url":"https://blog.datacite.org/differences-between-orcid-and-datacite-metadata/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-09-18","datePublished":"2015-09-18","dateModified":"2015-09-18","keywords":"thor,
         orcid, metadata","version":"1.0","description":"One of the first tasks for
@@ -551,14 +558,14 @@ http_interactions:
         June, was to contribute to a comparison of the ORCID and DataCite metadata
         standards. Together with ORCID, CERN, the British Library and Dryad we looked...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/differences-between-orcid-and-datacite-metadata/differences-between-orcid-and-datacite-metadata.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"https://doi.org/10.5281/ZENODO.30799"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/2WFX-2HZ1","name":"Adding
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-00ZZ","name":"Adding
         References to the DataCite Blog","alternateName":"MS-31-0368-9279","url":"https://blog.datacite.org/adding-references-to-the-datacite-blog/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-09-16","datePublished":"2015-09-16","dateModified":"2015-09-16","keywords":"blog","version":"1.0","description":"We
         launched this blog six weeks ago on a hosted version of Ghost, the open source
         blogging platform. Ghost doesn’t have all the features of Wordpress or other
         more mature blogging platforms, but it is a pleasure to use. The other alternative
         would...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/adding-references-to-the-datacite-blog/adding-references-to-the-datacite-blog.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/JZG5-VCQV","name":"Announcing
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-06BJ","name":"Announcing
         Data-Level Metrics in DataCite Labs","alternateName":"MS-203-8450-9335","url":"https://blog.datacite.org/announcing-data-level-metrics-in-datacite-labs/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-09-09","datePublished":"2015-09-09","dateModified":"2015-09-09","keywords":"data-level
         metrics","version":"1.0","description":"Last week Jennifer Lin shared information
@@ -566,14 +573,14 @@ http_interactions:
         on this blog. MDC is a project funded by the U.S. National Science Foundation
         (NSF) to design and develop metrics that track and measure data use – \u003cstrong\u003edata-level
         metrics\u003c/strong\u003e","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/announcing-data-level-metrics-in-datacite-labs/announcing-data-level-metrics-in-datacite-labs.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/5HZJ-5KDS","name":"Using
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01VP","name":"Using
         YAML Frontmatter with CSV","alternateName":"MS-59-7223-5885","url":"https://blog.datacite.org/using-yaml-frontmatter-with-csv/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-09-03","datePublished":"2015-09-03","dateModified":"2015-09-03","keywords":"csv","version":"1.0","description":"CSV
         (comma-separated values) is a popular file format for data. It is popular
         because it is very simple: CSV is text-based and any application that can
         open text files can read or write CSV. This makes it a good fit for digital
         preservation. We don...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/using-yaml-frontmatter-with-csv/using-yaml-frontmatter-with-csv.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/02BH-TGC7","name":"When
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-7QJ4","name":"When
         Counting is Hard","alternateName":"MS-7922-7404","url":"https://blog.datacite.org/when-counting-is-hard/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0002-9680-2328","givenName":"Jennifer","familyName":"Lin","name":"Jennifer
         Lin"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-31","datePublished":"2015-08-31","dateModified":"2015-08-31","keywords":"data-level
         metrics","version":"1.0","description":"\u003cem\u003eThis is a guest post
@@ -582,35 +589,35 @@ http_interactions:
         is hard. But when it comes to research data, not in the way we thought it
         was (example 1...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/when-counting-is-hard/when-counting-is-hard.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
         Blog"},"citation":[{"@type":"CreativeWork","@id":"Eysenbach:2006jo"},{"@type":"CreativeWork","@id":"Irisarri:2012gv"},{"@type":"CreativeWork","@id":"Irisarri:2013"},{"@type":"CreativeWork","@id":"Kratz:2015cr"},{"@type":"CreativeWork","@id":"Piwowar:2013cc"}]},
-        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/1HV8-2GC2","name":"Digging
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-00GG","name":"Digging
         into Metadata using R","alternateName":"MS-16-7274-3436","url":"https://blog.datacite.org/digging-into-data-using-r/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-20","datePublished":"2015-08-20","dateModified":"2015-08-20","keywords":"metadata,
         orcid","version":"1.0","description":"In the first post of this new blog a
         few weeks ago I talked about Data-Driven Development, and that service monitoring
         is an important aspect of this. The main service DataCite is providing is
         registration of digital object identifiers (DOIs) for scholarly...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/digging-into-data-using-r/digging-into-data-using-r.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/S8GF-0CK9","name":"From
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-08FC","name":"From
         Pilot to Service","alternateName":"MS-271-2925-0195","url":"https://blog.datacite.org/from-pilot-to-service/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-17","datePublished":"2015-08-17","dateModified":"2015-08-17","keywords":"thor,
         orcid, crossref","version":"1.0","description":"Today I am pleased to announce
         the launch of a new service, DataCite Labs Search – the service is available
-        immediately at http://search.labs.datacite.org/. This is one of THOR’s first
-        services and is based on work in the earlier EC-funded ODIN Project...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/from-pilot-to-service/from-pilot-to-service.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/5AEG-WEEV","name":"Reference
+        immediately at https://search.datacite.org/. This is one of THOR’s first services
+        and is based on work in the earlier EC-funded ODIN Project...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/from-pilot-to-service/from-pilot-to-service.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-01SM","name":"Reference
         Lists and Tables of Content","alternateName":"MS-57-1948-6926","url":"https://blog.datacite.org/reference-lists-and-tables-of-content/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-15","datePublished":"2015-08-15","dateModified":"2015-08-15","keywords":"metadata","version":"1.0","description":"Geoff
         Bilder from CrossRef likes to show the following slide at scholarly conferences,
         and then asks the audience what they see: Most of us probably immediately
         recognize this document as a scholarly article. This immediate recognition
         includes essential...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/reference-lists-and-tables-of-content/reference-lists-and-tables-of-content.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/8QKH-1R6~","name":"Overcoming
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-080~","name":"Overcoming
         Development Pain","alternateName":"MS-256-3865-6524","url":"https://blog.datacite.org/overcoming-development-pain/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-11","datePublished":"2015-08-11","dateModified":"2015-08-11","keywords":"infrastructure","version":"1.0","description":"Today
         DataCite received an email from a user alerting us that there are some small
         inconsistencies with our recommended data citation format: \u003cpre\u003e\u003ccode\u003eCreator
         (PublicationYear): Title. Publisher. Identifier\u003c/code\u003e\u003c/pre\u003e
         at https://www.datacite.org/services/cite-your-data...","license":"https://creativecommons.org/licenses/by/4.0/","encoding":{"@type":"MediaObject","@id":"https://blog.datacite.org/overcoming-development-pain/overcoming-development-pain.xml","fileFormat":"application/xml"},"isPartOf":{"@type":"Blog","@id":"https://doi.org/10.5438/0000-00SS","name":"DataCite
-        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/5PS5-G3V~","name":"Data-Driven
+        Blog"}}, {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://doi.org/10.5438/0000-044N","name":"Data-Driven
         Development","alternateName":"MS-132-3217-1472","url":"https://blog.datacite.org/data-driven-development/","author":[{"@type":"Person","@id":"http://orcid.org/0000-0003-1419-2405","givenName":"Martin","familyName":"Fenner","name":"Martin
         Fenner"}],"publisher":{"@type":"Organization","name":"DataCite"},"dateCreated":"2015-08-03","datePublished":"2015-08-03","dateModified":"2015-08-03","keywords":"infrastructure","version":"1.0","description":"This
         week I start as the new DataCite Technical Director. While I get up to speed
@@ -621,5 +628,5 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Mon, 10 Jul 2017 12:31:19 GMT
+  recorded_at: Sun, 23 Jul 2017 10:34:41 GMT
 recorded_with: VCR 2.9.3

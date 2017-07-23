@@ -2,6 +2,40 @@
 http_interactions:
 - request:
     method: get
+    uri: http://profiles.test.datacite.org/api/users/0000-0001-6528-2027
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://api.local
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 301
+      message: ''
+    headers:
+      Content-Type:
+      - text/html
+      Date:
+      - Sun, 23 Jul 2017 10:34:45 GMT
+      Location:
+      - https://profiles.test.datacite.org/api/users/0000-0001-6528-2027
+      Server:
+      - openresty/1.11.2.2
+      Content-Length:
+      - '191'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.11.2.2</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sun, 23 Jul 2017 10:34:43 GMT
+- request:
+    method: get
     uri: https://profiles.test.datacite.org/api/users/0000-0001-6528-2027
     body:
       encoding: US-ASCII
@@ -29,7 +63,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 10 Jul 2017 12:31:21 GMT
+      - Sun, 23 Jul 2017 10:34:45 GMT
       Etag:
       - W/"d05bf76e532e92ef6733010821af01eb"
       Server:
@@ -45,9 +79,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.5
       X-Request-Id:
-      - 4fed158c-c3ef-4cf0-8f7b-41f693910764
+      - 3517d598-5bda-4fe8-b04c-25809c7d4e61
       X-Runtime:
-      - '0.004709'
+      - '0.004562'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -59,5 +93,5 @@ http_interactions:
       string: '{"data":{"id":"http://orcid.org/0000-0001-6528-2027","type":"users","attributes":{"given-names":"Martin","family-name":"Fenner","credit-name":"Martin
         Fenner","orcid":"0000-0001-6528-2027","github":"https://github.com/datacite-support","created":"2016-11-26T22:16:15Z","updated":"2017-07-01T20:55:18Z"}}}'
     http_version: 
-  recorded_at: Mon, 10 Jul 2017 12:31:21 GMT
+  recorded_at: Sun, 23 Jul 2017 10:34:44 GMT
 recorded_with: VCR 2.9.3

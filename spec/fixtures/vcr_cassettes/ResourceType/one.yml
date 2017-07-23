@@ -23,7 +23,7 @@ http_interactions:
       Content-Encoding:
       - text
       Date:
-      - Mon, 10 Jul 2017 12:31:21 GMT
+      - Sun, 23 Jul 2017 10:34:46 GMT
       Etag:
       - '"bfc0582894b33ec97a324cdc44748aec"'
       Last-Modified:
@@ -31,9 +31,9 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       X-Amz-Id-2:
-      - HvM9dmfJ4YnUz2R1/A6wMB82lLw2Dn2B23osQ8V4uW62BtpZavbwdvHARV5z2ZfYQsq7o+3MMqA=
+      - 22dBu2HrgN9yMP5Hli+EWkCIRSyTXeRx6xp9kUdMzlxJE5czRL/GqvYVxWqUNcTOAb71qti1NX4=
       X-Amz-Request-Id:
-      - 2BE9DFE93905E97C
+      - BC3E471353FA131A
       X-Amz-Version-Id:
       - N_fIZ.T5Cu7r7c7VtTFwlbc7m2bFT7bD
       Content-Length:
@@ -70,5 +70,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Mon, 10 Jul 2017 12:31:21 GMT
+  recorded_at: Sun, 23 Jul 2017 10:34:45 GMT
 recorded_with: VCR 2.9.3
