@@ -10,15 +10,14 @@ gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'config', '~> 1.0.0'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
-gem 'maremma', '2.4.2'
+gem 'maremma', '~> 2.4.1'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
 gem 'active_model_serializers', '~> 0.10.4'
 gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
-gem 'will_paginate', '3.0.7'
-gem "will_paginate-bootstrap", "~> 1.0.1"
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
@@ -28,7 +27,7 @@ gem 'namae', '~> 0.10.2'
 gem 'gender_detector', '~> 0.1.2'
 gem 'httplog', '~> 0.99.4'
 gem 'lograge', '~> 0.3.5'
-gem 'bergamasco', '~> 0.3.11'
+gem 'bergamasco', '~> 0.3'
 gem 'rouge', '~> 1.10', '>= 1.10.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'

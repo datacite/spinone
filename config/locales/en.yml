@@ -16,9 +16,6 @@ en:
       medium: "%d %b %Y %H:%M UTC"
       long: "%B %d, %Y %H:%M UTC"
       long_date: "%B %d, %Y"
-  will_paginate:
-     previous_label: "&#171; Previous"
-     next_label: "Next &#187;"
   activerecord:
     attributes:
       user:

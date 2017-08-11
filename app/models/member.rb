@@ -24,7 +24,9 @@ class Member < Base
       params = { query: options.fetch(:query, nil),
                  member_type: options.fetch("member-type", nil),
                  region: options.fetch(:region, nil),
-                 year: options.fetch(:year, nil) }.compact
+                 year: options.fetch(:year, nil),
+                 "page[size]" => options.dig(:page, :size),
+                 "page[number]" => options.dig(:page, :number) }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end
@@ -39,7 +41,7 @@ class Member < Base
       { data: parse_item(item) }
     else
       items = result.fetch("data", [])
-      meta = result.fetch("meta", {}).except("total-pages", "page")
+      meta = result.fetch("meta", {})
 
       { data: parse_items(items), meta: meta }
     end
