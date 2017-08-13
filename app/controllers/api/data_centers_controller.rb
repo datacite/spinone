@@ -6,7 +6,7 @@ class Api::DataCentersController < Api::BaseController
       @include = params[:include].split(",").map { |i| i.downcase.underscore }.join(",")
       @include = [@include]
     else
-      @include = nil
+      @include = ["member"]
     end
   end
 
