@@ -35,8 +35,8 @@ class DataCenter < Base
       if options[:query].present? ||
         options[:ids].present? ||
         options[:year].present? ||
-        options[:rows] != 25 ||
-        options[:offset] != 0
+        options.dig(:page, :size) != 25 ||
+        options.dig(:page, :number) != 1
 
         query = ds.where{(is_active = true) & (allocator > 100)}
         query = query.where("name LIKE ? OR SYMBOL = ?", "%#{options[:query]}%", options[:query]) if options[:query].present?
@@ -48,7 +48,11 @@ class DataCenter < Base
           query = query.where(allocator: member.fetch(:id))
         end
 
+        page = (options.dig(:page, :number) || 1).to_i
+        per_page = (options.dig(:page, :size) || 25).to_i
+        offset = (page - 1) * per_page
         total = query.count
+        total_pages = (total.to_f / per_page).ceil
 
         if options["member-id"].present?
           members = [{ symbol: member.fetch(:symbol),
@@ -70,13 +74,21 @@ class DataCenter < Base
                        .sort { |a, b| b.fetch(:id) <=> a.fetch(:id) }
         end
 
-        data = query.limit(options.fetch(:rows, 25)).offset(options.fetch(:offset, 0).to_i).order(:name)
+        data = query.limit(per_page).offset(offset).order(:name)
 
-        meta = { "total" => total, "members" => members, "years" => years }
+        meta = { "total" => total,
+                 "total_pages" => total_pages,
+                 "page" => page,
+                 "members" => members,
+                 "years" => years }
 
         { "data" => { "data-centers" => data, "meta" => meta } }
       elsif options["member-id"].present?
+        page = (options.dig(:page, :number) || 1).to_i
+        per_page = (options.dig(:page, :size) || 25).to_i
         total = query.count
+        total_pages = (total.to_f / per_page).ceil
+
         data = cached_data_centers_by_member_response(options["member-id"], options)
 
         member = cached_member_response(options["member-id"].upcase)
@@ -85,16 +97,27 @@ class DataCenter < Base
                      count: query.where(allocator: member.fetch(:id)).count }]
 
         years = cached_years_by_member_response(options["member-id"], options)
-        meta = { "total" => total, "members" => members, "years" => years }
-
+        meta = { "total" => total,
+                 "total_pages" => total_pages,
+                 "page" => page,
+                 "members" => members,
+                 "years" => years }
         { "data" => { "data-centers" => data, "meta" => meta } }
       else
+        page = (options.dig(:page, :number) || 1).to_i
+        per_page = (options.dig(:page, :size) || 25).to_i
         total = cached_total_response
+        total_pages = (total.to_f / per_page).ceil
+
         data = cached_data_centers_response
 
         members = cached_allocators_response
         years = cached_years_response
-        meta = { "total" => total, "members" => members, "years" => years }
+        meta = { "total" => total,
+                 "total_pages" => total_pages,
+                 "page" => page,
+                 "members" => members,
+                 "years" => years }
         { "data" => { "data-centers" => data, "meta" => meta } }
       end
     end
@@ -121,6 +144,12 @@ class DataCenter < Base
     else
       items = result.fetch("data", {}).fetch("data-centers", []).map { |i| { "id" => i[:symbol], "title" => i[:name], "created" => i[:created], "updated" => i[:updated]} }
       meta = result.fetch("data", {}).fetch("meta", {})
+
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = (options.dig(:page, :size) || 25).to_i
+      total = meta.fetch("total", 0)
+      total_pages = (total.to_f / per_page).ceil
+
       members = meta.fetch("members", [])
                     .sort { |a, b| b.fetch(:count) <=> a.fetch(:count) }
                     .map do |i|
@@ -128,7 +157,9 @@ class DataCenter < Base
                            { id: i.fetch(:symbol).downcase, title: member.title, count: i.fetch(:count) }
                          end
 
-      meta = { total: meta.fetch("total", 0),
+      meta = { total: total,
+               total_pages: total_pages,
+               page: page,
                members: members,
                years: meta.fetch("years", []) }
 
