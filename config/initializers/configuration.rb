@@ -19,6 +19,7 @@ ENV['HOSTNAME'] ||= "api.local"
 ENV['MEMCACHE_SERVERS'] ||= "localhost:11211"
 ENV['SITE_TITLE'] ||= "DataCite API"
 ENV['LOG_LEVEL'] ||= "info"
+ENV['CDN_URL'] ||= "https://assets.datacite.org"
 ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
 ENV['TRUSTED_IP'] ||= "10.0.10.1"
 

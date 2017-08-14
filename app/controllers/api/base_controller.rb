@@ -2,8 +2,11 @@ class Api::BaseController < ActionController::Base
   # include base controller methods
   include Authenticable
 
+  # pass ability into serializer
+  serialization_scope :current_ability
+
   before_filter :default_format_json
-  after_filter :cors_set_access_control_headers, :set_jsonp_format
+  after_filter :set_jsonp_format
 
   attr_reader :current_user
 
@@ -15,23 +18,19 @@ class Api::BaseController < ActionController::Base
     end
   end
 
-  def cors_set_access_control_headers
-    headers['Access-Control-Allow-Origin'] = '*'
-    headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, DELETE, OPTIONS'
-    headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, Accept, Authorization, Token'
-    headers['Access-Control-Max-Age'] = "1728000"
-  end
-
   def default_format_json
     request.format = :json if request.format.html?
   end
 
   def authenticate_user_from_token!
     token = token_from_request_headers
-    raise CanCan::AccessDenied unless token.present?
+    return false unless token.present?
 
-    # create user from token
     @current_user = User.new(token)
+  end
+
+  def current_ability
+    @current_ability ||= Ability.new(@current_user)
   end
 
   # from https://github.com/nsarno/knock/blob/master/lib/knock/authenticable.rb
