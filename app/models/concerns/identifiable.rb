@@ -48,7 +48,7 @@ module Identifiable
       return nil unless doi.present?
 
       # use test handle server unless production environment
-      doi_resolver = Rails.env.production? ? "https://doi.org/" : "https://doi.test.datacite.org/"
+      doi_resolver = Rails.env.production? ? "https://doi.org/" : "https://handle.test.datacite.org/"
 
       # remove non-printing whitespace and downcase
       doi = doi.delete("\u200B").downcase

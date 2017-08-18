@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
+  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
 
   # include author methods
   include Authorable
@@ -17,7 +17,9 @@ class Work < Base
   include Dateable
 
   def initialize(attributes={}, options={})
-    @id = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
+    @id = attributes.fetch("doi", "").downcase.presence
+    @doi = @id
+    @identifier = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
 
     @xml = attributes.fetch('xml', "PGhzaD48L2hzaD4=\n")
     @media = attributes.fetch('media', nil)
@@ -31,7 +33,6 @@ class Work < Base
       @author = get_hashed_authors(authors)
     end
 
-    @doi = attributes.fetch("doi", "").downcase.presence
     @url = attributes.fetch("url", nil)
     @title = Work.sanitize(attributes.fetch("title", []).first)
     @container_title = attributes.fetch("publisher", nil)
@@ -106,6 +107,10 @@ class Work < Base
       end
       order = options[:order] == "asc" ? "asc" : "desc"
 
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = (options.dig(:page, :size) || 25).to_i
+      offset = (page - 1) * per_page
+
       created_date = options['from-created-date'].present? || options['until-created-date'].present?
       created_date = get_solr_date_range(options['from-created-date'], options['until-created-date']) if created_date
 
@@ -123,8 +128,8 @@ class Work < Base
       fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
 
       params = { q: options.fetch(:query, nil).presence || "*:*",
-                 start: options.fetch(:offset, 0),
-                 rows: options[:rows].presence || 25,
+                 start: offset,
+                 rows: per_page,
                  fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
                  qf: options[:qf],
                  fq: fq.join(" AND "),
@@ -199,8 +204,16 @@ class Work < Base
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
 
       facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
+
+
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = (options.dig(:page, :size) || 25).to_i
+      offset = (page - 1) * per_page
+      total = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      total_pages = (total.to_f / per_page).ceil
+
       meta = parse_facet_counts(facets, options)
-      meta[:total] = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      meta = meta.merge(total: total, total_pages: total_pages, page: page)
 
       data_centers = facets.fetch("datacentre_facet", [])
                        .each_slice(2)
