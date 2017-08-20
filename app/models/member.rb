@@ -1,11 +1,11 @@
 class Member < Base
-  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :updated_at
+  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created_at, :updated_at
 
   def initialize(item, options={})
     attributes = item.fetch('attributes', {})
     @id = item.fetch("id", nil).downcase
     @title = attributes.fetch("title", nil)
-    @description = attributes.fetch("description", nil)
+    @description = Member.sanitize(attributes.fetch("description", nil))
     @member_type = attributes.fetch("member-type", nil)
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
@@ -14,6 +14,7 @@ class Member < Base
     @website = attributes.fetch("website", nil)
     @email = attributes.fetch("email", nil)
     @phone = attributes.fetch("phone", nil)
+    @created_at = attributes.fetch("created", nil)
     @updated_at = attributes.fetch("updated", nil)
   end
 
