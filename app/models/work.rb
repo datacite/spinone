@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
+  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :content_type, :checked, :published, :registered, :updated_at
 
   # include author methods
   include Authorable
@@ -35,7 +35,12 @@ class Work < Base
 
     # get url registered in the handle system
     response = Maremma.head(@identifier, limit: 0)
-    @url = response.present? ? response["location"] : nil
+    @url = response.present? ? response["Location"] : nil
+
+    # get content type. Should be text/html, otherwise something is wrong
+    response = Maremma.head(@identifier, timeout: 5)
+    @content_type = response.present? ? response.fetch("Content-Type", "").split(";").first : nil
+    @checked = Time.zone.now.utc.iso8601
 
     @title = Work.sanitize(attributes.fetch("title", []).first)
     @container_title = attributes.fetch("publisher", nil)

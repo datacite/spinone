@@ -23,7 +23,14 @@ ENV['CDN_URL'] ||= "https://assets.datacite.org"
 ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
 ENV['TRUSTED_IP'] ||= "10.0.10.1"
 
+# more detailed error reporting in development
+if Rails.env.development?
+  BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP']
+end
+
 Rails.application.config.log_level = ENV['LOG_LEVEL'].to_sym
 
 # Use memcached as cache store
-Rails.application.config.cache_store = :dalli_store, nil, { :namespace => ENV['APPLICATION'], :compress => true }
+Rails.application.config.cache_store = :dalli_store, nil, { expires_in: 30.days,
+                                                            namespace: ENV['APPLICATION'], 
+                                                            compress: true }
