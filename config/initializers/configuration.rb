@@ -31,6 +31,5 @@ end
 Rails.application.config.log_level = ENV['LOG_LEVEL'].to_sym
 
 # Use memcached as cache store
-Rails.application.config.cache_store = :dalli_store, nil, { expires_in: 30.days,
-                                                            namespace: ENV['APPLICATION'], 
+Rails.application.config.cache_store = :dalli_store, nil, { namespace: ENV['APPLICATION'], 
                                                             compress: true }
