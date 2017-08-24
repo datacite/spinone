@@ -20,6 +20,13 @@ module Authenticable
       return {} unless Time.now.to_i < payload["exp"]
 
       payload
+    rescue JWT::DecodeError => error
+      Rails.logger.error "JWT::DecodeError: " + error.message + " for " + token
+      return {}
+    rescue OpenSSL::PKey::RSAError => error
+      public_key = ENV['JWT_PUBLIC_KEY'].presence || "nil"
+      Rails.logger.error "OpenSSL::PKey::RSAError: " + error.message + " for " + public_key
+      return {}
     end
   end
 end

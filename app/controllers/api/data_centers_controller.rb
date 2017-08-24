@@ -1,5 +1,5 @@
 class Api::DataCentersController < Api::BaseController
-  before_filter :set_include
+  before_filter :authenticate_user_from_token!, :set_include
 
   def set_include
     if params[:include].present?
