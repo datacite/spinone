@@ -14,9 +14,6 @@ Rails.application.routes.draw do
     resources :members, only: [:show, :index], concerns: :workable
     resources :milestones, only: [:show, :index]
     resources :pages, only: [:show, :index], constraints: { :id => /.+/ }
-    resources :people, only: [:show, :index], constraints: { :id => /.+/ } do
-      resources :contributions, only: [:index]
-    end
     resources :prefixes, only: [:show], constraints: { :id => /.+/ }
     resources :user_stories, only: [:show, :index], path: "/user-stories"
     resources :works, only: [:show, :index], constraints: { :id => /.+/ }
