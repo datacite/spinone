@@ -119,6 +119,7 @@ class Work < Base
 
       update_date = options["from-update-date"].present? || options["until-update-date"].present?
       update_date = get_solr_date_range(options['from-update-date'], options['until-update-date']) if update_date
+      registered = get_solr_date_range(options[:registered], options[:registered]) if options[:registered].present?
 
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
@@ -127,6 +128,7 @@ class Work < Base
       fq << "nameIdentifier:ORCID\\:#{options['person-id']}" if options['person-id'].present?
       fq << "minted:#{created_date}" if created_date
       fq << "updated:#{update_date}" if update_date
+      fq << "minted:#{registered}" if registered
       fq << "publicationYear:#{options[:year]}" if options[:year].present?
       fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
 
