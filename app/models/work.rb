@@ -137,9 +137,13 @@ class Work < Base
                  qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
-                 'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version),
+                 'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version minted),
                  'facet.limit' => 15,
                  'facet.mincount' => 1,
+                 'facet.range' => 'minted',
+                 'f.minted.facet.range.start' => '2004-01-01T00:00:00Z',
+                 'f.minted.facet.range.end' => '2024-01-01T00:00:00Z',
+                 'f.minted.facet.range.gap' => '+1YEAR',
                  sort: "#{sort} #{order}",
                  defType: "edismax",
                  bq: "updated:[NOW/DAY-1YEAR TO NOW/DAY]",
@@ -206,8 +210,7 @@ class Work < Base
 
       items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
 
-      facets = result.fetch("data", {}).fetch("facet_counts", {}).fetch("facet_fields", {})
-
+      facets = result.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
       per_page = (options.dig(:page, :size) || 25).to_i
@@ -218,7 +221,7 @@ class Work < Base
       meta = parse_facet_counts(facets, options)
       meta = meta.merge(total: total, total_pages: total_pages, page: page)
 
-      data_centers = facets.fetch("datacentre_facet", [])
+      data_centers = facets.fetch("facet_fields", {}).fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
@@ -240,18 +243,22 @@ class Work < Base
     resource_types = facets.fetch("resourceType_facet", [])
                            .each_slice(2)
                            .map { |k,v| { id: k.underscore.dasherize, title: k.underscore.humanize, count: v } }
-    years = facets.fetch("publicationYear", [])
+    years = facets.fetch("facet_fields", {}).fetch("publicationYear", [])
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0], title: i[0], count: i[1] } }
-    data_centers = facets.fetch("datacentre_facet", [])
+    registered = facets.fetch("facet_ranges", {}).fetch("minted", {}).fetch("counts", [])
+                  .each_slice(2)
+                  .sort { |a, b| b.first <=> a.first }
+                  .map { |i| { id: i[0][0..3], title: i[0][0..3], count: i[1] } }
+    data_centers = facets.fetch("facet_fields", {}).fetch("datacentre_facet", [])
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
                               [id, p.last]
                             end.to_h
     data_centers = get_data_center_facets(data_centers)
-    schema_versions = facets.fetch("schema_version", [])
+    schema_versions = facets.fetch("facet_fields", {}).fetch("schema_version", [])
                             .each_slice(2)
                             .sort { |a, b| b.first <=> a.first }
                             .map { |i| { id: i[0], title: "Schema #{i[0]}", count: i[1] } }
@@ -262,6 +269,7 @@ class Work < Base
 
     { "resource-types" => resource_types,
       "years" => years,
+      "registered" => registered,
       "data_centers" => data_centers,
       "schema-versions" => schema_versions }
   end
