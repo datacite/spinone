@@ -161,11 +161,19 @@ class Work < Base
     return {} if (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
 
     query_url = get_query_url(options)
-    Maremma.get(query_url, options)
+
+    if Rails.logger.level < 2
+      Librato.timing "doi.get_data" do
+        Maremma.get(query_url, options)
+      end
+    else
+      Maremma.get(query_url, options)
+    end
   end
 
   def self.parse_data(result, options={})
     return result if result['errors']
+    data = nil
 
     if options[:id].present?
       return nil if result.blank?
@@ -187,11 +195,23 @@ class Work < Base
       data_center = DataCenter.where(id: data_center_id.downcase) if data_center_id.present?
       data_center = data_center[:data] if data_center.present?
 
-      { data: parse_item(item,
-        relation_types: RelationType.all,
-        resource_types: cached_resource_types,
-        data_centers: [data_center].compact,
-        members: cached_members), meta: meta }
+      if Rails.logger.level < 2
+        Librato.timing "doi.parse_item" do
+          data = parse_item(item,
+            relation_types: RelationType.all,
+            resource_types: cached_resource_types,
+            data_centers: [data_center].compact,
+            members: cached_members)
+        end
+      else
+        data = parse_item(item,
+          relation_types: RelationType.all,
+          resource_types: cached_resource_types,
+          data_centers: [data_center].compact,
+          members: cached_members)
+      end
+
+      { data: data, meta: meta }
     else
       if options["work-id"].present?
         return { data: [], meta: [] } if result.blank?
@@ -233,11 +253,23 @@ class Work < Base
         parse_include(item.first, item.last)
       end
 
-      { data: parse_items(items,
-        relation_types: RelationType.all,
-        resource_types: cached_resource_types,
-        data_centers: data_centers,
-        members: cached_members), meta: meta }
+      if Rails.logger.level < 2
+        Librato.timing "doi.parse_items" do
+          data = parse_items(items,
+            relation_types: RelationType.all,
+            resource_types: cached_resource_types,
+            data_centers: data_centers,
+            members: cached_members)
+        end
+      else
+        data = parse_items(items,
+          relation_types: RelationType.all,
+          resource_types: cached_resource_types,
+          data_centers: data_centers,
+          members: cached_members)
+      end
+
+      { data: data, meta: meta }
     end
   end
 
