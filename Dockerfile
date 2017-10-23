@@ -1,4 +1,4 @@
-FROM phusion/passenger-full:0.9.20
+FROM phusion/passenger-full:0.9.22
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
 # Set correct environment variables
@@ -11,12 +11,13 @@ RUN usermod -a -G docker_env app
 CMD ["/sbin/my_init"]
 
 # Install Ruby 2.4.1
-RUN bash -lc 'rvm --default use ruby-2.3.3'
+RUN bash -lc 'rvm --default use ruby-2.4.1'
 
 # Update installed APT packages, clean up when done
 RUN apt-get update && \
     apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
     apt-get clean && \
+    apt-get install ntp wget tzdata pandoc -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Enable Passenger and Nginx and remove the default site
@@ -25,6 +26,9 @@ RUN rm -f /etc/service/nginx/down && \
     rm /etc/nginx/sites-enabled/default
 COPY vendor/docker/webapp.conf /etc/nginx/sites-enabled/webapp.conf
 COPY vendor/docker/00_app_env.conf /etc/nginx/conf.d/00_app_env.conf
+
+# Remove unused SSH service
+RUN rm -rf /etc/service/sshd /etc/my_init.d/00_regen_ssh_host_keys.sh
 
 # Use Amazon NTP servers
 COPY vendor/docker/ntp.conf /etc/ntp.conf

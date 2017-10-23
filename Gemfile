@@ -20,6 +20,7 @@ gem "dalli", "~> 2.7.0"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 gem "github-markdown", "~> 0.6.3"
+gem 'pandoc-ruby', '~> 2.0'
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
 gem 'bibtex-ruby', '~> 4.2'
