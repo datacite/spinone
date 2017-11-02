@@ -32,7 +32,9 @@ class Milestone < Base
       { data: parse_item(item) }
     else
       items = result.fetch("data", [])
-      data = parse_items(items).sort_by { |m| m.due_on || "1970" }
+      data = parse_items(items)
+        .select { |m| m.due_on.present? }
+        .sort_by { |m| m.due_on }
       data = data.select { |m| m.year == options[:year].to_i } if options[:year].present?
 
       { data: data, meta: { total: data.length } }
