@@ -7,6 +7,10 @@ class WorkSerializer < ActiveModel::Serializer
 
   belongs_to :resource_type, serializer: ResourceTypeSerializer
 
+  def id
+    object.identifier
+  end
+
   def media
     object.media.present? ? object.media.map { |m| { media_type: m.split(":", 2).first, url: m.split(":", 2).last }} : nil
   end
