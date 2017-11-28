@@ -121,7 +121,7 @@ class Work < Base
       update_date = get_solr_date_range(options['from-update-date'], options['until-update-date']) if update_date
       registered = get_solr_date_range(options[:registered], options[:registered]) if options[:registered].present?
 
-      fq = %w(state:findable)
+      fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['data-center-id'].upcase}" if options['data-center-id'].present?
       fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
@@ -135,7 +135,7 @@ class Work < Base
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: offset,
                  rows: per_page,
-                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,state,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
+                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
                  qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
