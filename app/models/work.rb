@@ -33,9 +33,7 @@ class Work < Base
       @author = get_hashed_authors(authors)
     end
 
-    # get url registered in the handle system
-    response = Maremma.head(@identifier, limit: 0)
-    @url = response.present? ? response["Location"] : nil
+    @url = attributes.fetch("url", nil)
 
     @title = Work.sanitize(attributes.fetch("title", []).first)
     @container_title = attributes.fetch("publisher", nil)
