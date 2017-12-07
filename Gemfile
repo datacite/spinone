@@ -46,7 +46,7 @@ group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem "brakeman", "~> 2.6.0", :require => false
-  gem 'rubocop', '~> 0.27.0'
+  gem "rubocop", "~> 0.49.0"
 end
 
 group :test do
