@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
-#ruby '2.3.1'
 
 gem 'rails', '~> 4.2', '>= 4.2.7'
-gem 'mysql2', '0.3.18'
-gem 'sequel', '~> 4.40'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 
 gem "dotenv", '>= 2.1.1', '~> 2.1'
