@@ -27,7 +27,7 @@ class Page < Base
     items = result.fetch("data", [])
 
     if options[:id]
-      item = items.find { |i| i["@id"] == "https://doi.org/#{options[:id]}" }
+      item = items.find { |i| i["@id"] == options[:id] }
       return nil if item.nil?
 
       { data: parse_item(item) }

@@ -5,7 +5,7 @@ describe Page, type: :model, vcr: true do
     pages = Page.all[:data]
     expect(pages.length).to eq(25)
     page = pages.first
-    expect(page.title).to eq("Announcing our new DataCite Support Center")
+    expect(page.title).to eq("Make Data Count Update: November, 2017")
   end
 
   it "query" do
@@ -16,7 +16,7 @@ describe Page, type: :model, vcr: true do
   end
 
   it "page" do
-    page = Page.where(id: "10.5438/PE54-ZJ5T")[:data]
-    expect(page.title).to eq("It's all about Relations")
+    page = Page.where(id: "https://blog.datacite.org/make-data-count-update-november-2017/")[:data]
+    expect(page.title).to eq("Make Data Count Update: November, 2017")
   end
 end
