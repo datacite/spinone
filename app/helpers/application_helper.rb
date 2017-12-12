@@ -93,6 +93,6 @@ module ApplicationHelper
   end
 
   def settings
-    Settings[ENV['MODE']]
+    Settings
   end
 end
