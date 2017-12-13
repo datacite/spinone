@@ -12,9 +12,9 @@ class ResourceType < Base
   end
 
   def self.parse_data(result, options={})
-    return nil if result.blank? || result['errors']
+    return nil if result.body.blank? || result.body['errors']
 
-    items = result.fetch("data", {}).fetch("schema", {}).fetch("simpleType", {}).fetch('restriction', {}).fetch('enumeration', [])
+    items = result.body.fetch("data", {}).fetch("schema", {}).fetch("simpleType", {}).fetch('restriction', {}).fetch('enumeration', [])
     items = items.map do |item|
       id = item.fetch("value").underscore.dasherize
 

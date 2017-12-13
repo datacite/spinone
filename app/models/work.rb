@@ -174,9 +174,9 @@ class Work < Base
     data = nil
 
     if options[:id].present?
-      return nil if result.blank?
+      return nil if result.body.blank?
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       return nil if items.blank?
 
       item = items.first
@@ -196,14 +196,12 @@ class Work < Base
       if Rails.logger.level < 2
         Librato.timing "doi.parse_item" do
           data = parse_item(item,
-            relation_types: RelationType.all,
             resource_types: cached_resource_types,
             data_centers: [data_center].compact,
             members: cached_members)
         end
       else
         data = parse_item(item,
-          relation_types: RelationType.all,
           resource_types: cached_resource_types,
           data_centers: [data_center].compact,
           members: cached_members)
@@ -212,9 +210,9 @@ class Work < Base
       { data: data, meta: meta }
     else
       if options["work-id"].present?
-        return { data: [], meta: [] } if result.blank?
+        return { data: [], meta: [] } if result.body.blank?
 
-        items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+        items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
         return { data: [], meta: [] } if items.blank?
 
         item = items.first
@@ -228,14 +226,14 @@ class Work < Base
         result = Maremma.get(query_url, options)
       end
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
 
-      facets = result.fetch("data", {}).fetch("facet_counts", {})
+      facets = result.body.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
       per_page = (options.dig(:page, :size) || 25).to_i
       offset = (page - 1) * per_page
-      total = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      total = result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
       total_pages = (total.to_f / per_page).ceil
 
       meta = parse_facet_counts(facets, options)
@@ -254,14 +252,12 @@ class Work < Base
       if Rails.logger.level < 2
         Librato.timing "doi.parse_items" do
           data = parse_items(items,
-            relation_types: RelationType.all,
             resource_types: cached_resource_types,
             data_centers: data_centers,
             members: cached_members)
         end
       else
         data = parse_items(items,
-          relation_types: RelationType.all,
           resource_types: cached_resource_types,
           data_centers: data_centers,
           members: cached_members)
@@ -309,7 +305,7 @@ class Work < Base
   def self.get_data_center_facets(data_centers, options={})
     response = DataCenter.where(ids: data_centers.keys.join(","))
     response.fetch(:data, [])
-            .map { |p| { id: p.id.downcase, title: p.title, count: data_centers.fetch(p.id.upcase, 0) } }
+            .map { |p| { id: p.id.downcase, title: p.name, count: data_centers.fetch(p.id.upcase, 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 

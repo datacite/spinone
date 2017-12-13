@@ -94,10 +94,10 @@ class UserStory < Base
   end
 
   def self.parse_data(result, options={})
-    return nil if result.blank? || result['errors']
+    return nil if result.body.blank? || result.body['errors']
 
     if options[:id].present?
-      item = result.fetch("data", {})
+      item = result.body.fetch("data", {})
       return {} unless item.present?
 
       { data: parse_item(item) }
@@ -109,9 +109,10 @@ class UserStory < Base
                stakeholders: parse_meta(data, "stakeholders"),
                state: parse_meta(data, "state") }
 
-      offset = options[:offset].to_i
-      rows = (options[:rows] || 25).to_i
-      data = data[offset...offset + rows] || []
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = (options.dig(:page, :size) || 25).to_i
+      offset = (page - 1) * per_page
+      data = data[offset...offset + per_page] || []
 
       { data: data, meta: meta }
     end

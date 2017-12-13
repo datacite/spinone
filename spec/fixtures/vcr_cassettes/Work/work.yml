@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://api.local
+      - Maremma - http://c66872279acc
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,24 +17,22 @@ http_interactions:
       message: ''
     headers:
       Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 23 Jul 2017 10:34:54 GMT
+      - Tue, 12 Dec 2017 21:39:23 GMT
       Server:
       - openresty/1.11.2.2
-      Content-Length:
-      - '88'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:52 GMT
+  recorded_at: Tue, 12 Dec 2017 21:39:24 GMT
 recorded_with: VCR 2.9.3
