@@ -51,8 +51,8 @@ group :test do
   gem "launchy", "~> 2.4.2"
   gem "email_spec", "~> 1.6.0"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"
-  gem "simplecov", "~> 0.10.0", :require => false
-  gem 'codeclimate-test-reporter', '~> 0.4.8', :require => nil
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '~> 1.0', '>= 1.0.8'
   gem "shoulda-matchers", "~> 2.7.0", :require => false
   gem "webmock", "~> 1.20.0"
   gem 'vcr', '~> 2.9.3'
