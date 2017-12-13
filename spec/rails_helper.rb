@@ -1,14 +1,9 @@
 # set ENV variables for testing
 ENV["RAILS_ENV"] = "test"
-ENV["MODE"] = "datacite"
-ENV["API_KEY"] = "12345"
 
 # set up Code Climate
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.configure do |config|
-  config.logger.level = Logger::WARN
-end
-CodeClimate::TestReporter.start
+require 'simplecov'
+SimpleCov.start
 
 require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
