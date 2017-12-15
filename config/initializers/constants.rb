@@ -24,7 +24,7 @@ ORCID_VERSION = '1.2'
 ORCID_SCHEMA = 'https://raw.githubusercontent.com/ORCID/ORCID-Source/master/orcid-model/src/main/resources/orcid-message-1.2.xsd'
 
 # Version of DataCite API
-DATACITE_VERSION = "4"
+DATACITE_VERSION = "4.1"
 
 # Date of DataCite Schema
 DATACITE_SCHEMA_DATE = "2016-09-21"

@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://schema.test.datacite.org/meta/kernel-4/include/datacite-resourceType-v4.xsd
+    uri: http://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://api.local
+      - Maremma - http://c66872279acc
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,27 +17,35 @@ http_interactions:
       message: ''
     headers:
       Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Content-Encoding:
       - text
       Date:
-      - Sun, 23 Jul 2017 10:34:46 GMT
+      - Fri, 15 Dec 2017 20:55:34 GMT
       Etag:
-      - '"bfc0582894b33ec97a324cdc44748aec"'
+      - '"6cc0617992b21daf1b6785c473f82b64"'
       Last-Modified:
-      - Tue, 04 Jul 2017 10:41:40 GMT
+      - Mon, 23 Oct 2017 10:50:39 GMT
       Server:
       - openresty/1.11.2.2
       X-Amz-Id-2:
-      - 22dBu2HrgN9yMP5Hli+EWkCIRSyTXeRx6xp9kUdMzlxJE5czRL/GqvYVxWqUNcTOAb71qti1NX4=
+      - N1xAXYh3fXrCG8aLXHlNTs2pUI87nJfslEs/2V4jxBrZRTc6lW/J4kk9nxdzycSlGB7g43Tn/28=
       X-Amz-Request-Id:
-      - BC3E471353FA131A
+      - 7A440238551DC148
       X-Amz-Version-Id:
-      - N_fIZ.T5Cu7r7c7VtTFwlbc7m2bFT7bD
+      - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
       Content-Length:
-      - '1252'
+      - '1346'
+      Age:
+      - '24'
+      X-Cache:
+      - HIT from IMP-cache
+      X-Cache-Lookup:
+      - HIT from IMP-cache:3128
+      Via:
+      - 1.0 IMP-cache (squid/3.1.20)
       Connection:
       - keep-alive
     body:
@@ -45,7 +53,8 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany
-             2013-05 v3.0: Addition of ID to simpleType element; added values "Audiovisual", "Workflow" & "Other"; deleted value "Film" -->
+             2013-05 v3.0: Addition of ID to simpleType element; added values "Audiovisual", "Workflow" & "Other"; deleted value "Film"
+             2017-10-23 v4.1: Addition of value "DataPaper" -->
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
           <xs:simpleType name="resourceType" id="resourceType">
             <xs:annotation>
@@ -54,6 +63,7 @@ http_interactions:
             <xs:restriction base="xs:string">
               <xs:enumeration value="Audiovisual"/>
               <xs:enumeration value="Collection"/>
+              <xs:enumeration value="DataPaper"/>
               <xs:enumeration value="Dataset"/>
               <xs:enumeration value="Event"/>
               <xs:enumeration value="Image"/>
@@ -70,5 +80,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:45 GMT
+  recorded_at: Fri, 15 Dec 2017 20:56:06 GMT
 recorded_with: VCR 2.9.3

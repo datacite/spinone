@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Fri, 15 Dec 2017 20:28:45 GMT
+      - Fri, 15 Dec 2017 20:53:47 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
@@ -53,7 +53,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Fri, 15 Dec 2017 20:28:52 GMT
+  recorded_at: Fri, 15 Dec 2017 20:54:04 GMT
 - request:
     method: get
     uri: https://api.test.datacite.org/clients?ids=BL.CAM
@@ -83,7 +83,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Fri, 15 Dec 2017 20:28:46 GMT
+      - Fri, 15 Dec 2017 20:54:09 GMT
       Etag:
       - W/"97733f11b730a6837cf7589c4e0cfa12"
       Server:
@@ -103,9 +103,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - 494c00b8-a3dc-4e66-aec9-b5cbee4d541b
+      - f6c3007c-c68c-423c-bea6-dc67e724ad73
       X-Runtime:
-      - '0.012825'
+      - '0.012898'
       Content-Length:
       - '1002'
       Connection:
@@ -117,5 +117,5 @@ http_interactions:
         British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":1,"total-pages":1,"page":1,"providers":[{"id":"BL","title":"The
         British Library","count":1}],"years":[{"id":"2015","title":"2015","count":1}]}}'
     http_version: 
-  recorded_at: Fri, 15 Dec 2017 20:28:53 GMT
+  recorded_at: Fri, 15 Dec 2017 20:54:19 GMT
 recorded_with: VCR 2.9.3
