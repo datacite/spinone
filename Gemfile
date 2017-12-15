@@ -1,16 +1,13 @@
 source 'https://rubygems.org'
-#ruby '2.3.1'
 
 gem 'rails', '~> 4.2', '>= 4.2.7'
-gem 'mysql2', '0.3.18'
-gem 'sequel', '~> 4.40'
 gem 'redis', '~> 3.3', '>= 3.3.1'
 
 gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'config', '~> 1.0.0'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
-gem 'maremma', '~> 2.4.1'
+gem 'maremma', '~> 3.5'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.18'
 gem 'active_model_serializers', '~> 0.10.4'
@@ -54,8 +51,8 @@ group :test do
   gem "launchy", "~> 2.4.2"
   gem "email_spec", "~> 1.6.0"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"
-  gem "simplecov", "~> 0.10.0", :require => false
-  gem 'codeclimate-test-reporter', '~> 0.4.8', :require => nil
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '~> 1.0', '>= 1.0.8'
   gem "shoulda-matchers", "~> 2.7.0", :require => false
   gem "webmock", "~> 1.20.0"
   gem 'vcr', '~> 2.9.3'

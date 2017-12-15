@@ -23,15 +23,15 @@ class Milestone < Base
   end
 
   def self.parse_data(result, options={})
-    return nil if result.blank? || result['errors']
+    return nil if result.body.blank? || result.body['errors']
 
     if options[:id].present?
-      item = result.fetch("data", {})
+      item = result.body.fetch("data", {})
       return {} unless item.present?
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", [])
+      items = result.body.fetch("data", [])
       data = parse_items(items)
         .select { |m| m.due_on.present? }
         .sort_by { |m| m.due_on }

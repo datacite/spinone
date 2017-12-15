@@ -3,8 +3,10 @@ module Datacitable
 
   included do
     def get_query_url(options={})
-      offset = options[:offset].to_i
-      rows = options[:rows].presence || job_batch_size
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = (options.dig(:page, :size)).to_i || job_batch_size
+      offset = (page - 1) * per_page
+
       from_date = options[:from_date].presence || (Time.zone.now.to_date - 1.day).iso8601
       until_date = options[:until_date].presence || Time.zone.now.to_date.iso8601
 
@@ -13,7 +15,7 @@ module Datacitable
 
       params = { q: q,
                  start: offset,
-                 rows: rows,
+                 rows: per_page,
                  fl: "doi,creator,title,publisher,publicationYear,resourceTypeGeneral,datacentre_symbol,relatedIdentifier,nameIdentifier,xml,minted,updated",
                  fq: fq,
                  wt: "json" }
@@ -21,9 +23,9 @@ module Datacitable
     end
 
     def get_total(options={})
-      query_url = get_query_url(options.merge(rows: 0))
+      query_url = get_query_url(options.merge("page[size]" => 0))
       result = Maremma.get(query_url, options)
-      result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
     end
 
     def queue_jobs(options={})
@@ -57,10 +59,10 @@ module Datacitable
     end
 
     def parse_data(result, options={})
-      result = { error: "No hash returned." } unless result.is_a?(Hash)
+      result = { error: "No hash returned." } unless result.is_a?(OpenStruct)
       return [result] if result[:error]
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
       get_relations_with_related_works(items)
     end
 
@@ -86,7 +88,6 @@ module Datacitable
                  "published" => item.fetch("publicationYear", nil),
                  "issued" => item.fetch("minted", nil),
                  "publisher_id" => publisher_id,
-                 "registration_agency_id" => "datacite",
                  "tracked" => true,
                  "type" => type }
 
@@ -131,7 +132,6 @@ module Datacitable
                              "relation_type_id" => raw_relation_type.underscore,
                              "source_id" => source_id,
                              "publisher_id" => subj["publisher_id"],
-                             "registration_agency_id" => "github",
                              "occurred_at" => subj["issued"] },
                  subj: subj }
 

@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
+  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
 
   # include author methods
   include Authorable
@@ -28,9 +28,7 @@ class Work < Base
     if author.nil?
       xml = Base64.decode64(@xml)
       xml = Hash.from_xml(xml).fetch("resource", {})
-      authors = xml.fetch("creators", {}).fetch("creator", [])
-      authors = [authors] if authors.is_a?(Hash)
-      @author = get_hashed_authors(authors)
+      @author = get_authors(Array.wrap(xml.dig("creators", "creator")))
     end
 
     @url = attributes.fetch("url", nil)
@@ -63,8 +61,6 @@ class Work < Base
     @data_center_id = @data_center_id.downcase if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
     @member_id = @member_id.downcase if @member_id.present?
-    @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
-    @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
     @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
 
@@ -174,9 +170,9 @@ class Work < Base
     data = nil
 
     if options[:id].present?
-      return nil if result.blank?
+      return nil if result.body.blank?
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
       return nil if items.blank?
 
       item = items.first
@@ -196,14 +192,12 @@ class Work < Base
       if Rails.logger.level < 2
         Librato.timing "doi.parse_item" do
           data = parse_item(item,
-            relation_types: RelationType.all,
             resource_types: cached_resource_types,
             data_centers: [data_center].compact,
             members: cached_members)
         end
       else
         data = parse_item(item,
-          relation_types: RelationType.all,
           resource_types: cached_resource_types,
           data_centers: [data_center].compact,
           members: cached_members)
@@ -212,9 +206,9 @@ class Work < Base
       { data: data, meta: meta }
     else
       if options["work-id"].present?
-        return { data: [], meta: [] } if result.blank?
+        return { data: [], meta: [] } if result.body.blank?
 
-        items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+        items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
         return { data: [], meta: [] } if items.blank?
 
         item = items.first
@@ -228,14 +222,14 @@ class Work < Base
         result = Maremma.get(query_url, options)
       end
 
-      items = result.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
 
-      facets = result.fetch("data", {}).fetch("facet_counts", {})
+      facets = result.body.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
       per_page = (options.dig(:page, :size) || 25).to_i
       offset = (page - 1) * per_page
-      total = result.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      total = result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
       total_pages = (total.to_f / per_page).ceil
 
       meta = parse_facet_counts(facets, options)
@@ -254,14 +248,12 @@ class Work < Base
       if Rails.logger.level < 2
         Librato.timing "doi.parse_items" do
           data = parse_items(items,
-            relation_types: RelationType.all,
             resource_types: cached_resource_types,
             data_centers: data_centers,
             members: cached_members)
         end
       else
         data = parse_items(items,
-          relation_types: RelationType.all,
           resource_types: cached_resource_types,
           data_centers: data_centers,
           members: cached_members)
@@ -272,18 +264,18 @@ class Work < Base
   end
 
   def self.parse_facet_counts(facets, options={})
-    resource_types = facets.fetch("resourceType_facet", [])
+    resource_types = Array.wrap(facets.dig("facet_fields", "resourceType_facet"))
                            .each_slice(2)
                            .map { |k,v| { id: k.underscore.dasherize, title: k.underscore.humanize, count: v } }
-    years = facets.fetch("facet_fields", {}).fetch("publicationYear", [])
+    years = Array.wrap(facets.dig("facet_fields", "publicationYear"))
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0], title: i[0], count: i[1] } }
-    registered = facets.fetch("facet_ranges", {}).fetch("minted", {}).fetch("counts", [])
+    registered = Array.wrap(facets.dig("facet_ranges", "minted", "counts"))
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0][0..3], title: i[0][0..3], count: i[1] } }
-    data_centers = facets.fetch("facet_fields", {}).fetch("datacentre_facet", [])
+    data_centers = Array.wrap(facets.dig("facet_fields", "datacentre_facet"))
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
@@ -309,7 +301,7 @@ class Work < Base
   def self.get_data_center_facets(data_centers, options={})
     response = DataCenter.where(ids: data_centers.keys.join(","))
     response.fetch(:data, [])
-            .map { |p| { id: p.id.downcase, title: p.title, count: data_centers.fetch(p.id.upcase, 0) } }
+            .map { |p| { id: p.id.downcase, title: p.name, count: data_centers.fetch(p.id.upcase, 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
   end
 

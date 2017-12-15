@@ -3,19 +3,19 @@ require 'rails_helper'
 describe Work, type: :model, vcr: true do
   context "get_query_url" do
     it "default" do
-      expect(Work.get_query_url).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
+      expect(Work.get_query_url).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
     end
 
     it "with rows" do
-      expect(Work.get_query_url(rows: 50)).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=50&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
+      expect(Work.get_query_url(page: { size: 50 })).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=50&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
     end
 
     it "with q" do
-      expect(Work.get_query_url(query: "cancer")).to eq("https://search.test.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=score+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
+      expect(Work.get_query_url(query: "cancer")).to eq("https://search.test.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=score+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
     end
 
     it "with q sort by minted" do
-      expect(Work.get_query_url(query: "cancer", sort: "minted")).to eq("https://search.test.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=score+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
+      expect(Work.get_query_url(query: "cancer", sort: "minted")).to eq("https://search.test.datacite.org/api?q=cancer&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=score+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
     end
 
     it "with id" do
@@ -27,11 +27,11 @@ describe Work, type: :model, vcr: true do
     end
 
     it "with ids" do
-      expect(Work.get_query_url(ids: "10.5061/DRYAD.Q447C/1,10.5061/DRYAD.Q447C/2,10.5061/DRYAD.Q447C/3")).to eq("https://search.test.datacite.org/api?q=+10.5061%2FDRYAD.Q447C%2F1+10.5061%2FDRYAD.Q447C%2F2+10.5061%2FDRYAD.Q447C%2F3&start=0&rows=3&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&qf=doi&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&mm=1&wt=json")
+      expect(Work.get_query_url(ids: "10.5061/DRYAD.Q447C/1,10.5061/DRYAD.Q447C/2,10.5061/DRYAD.Q447C/3")).to eq("https://search.test.datacite.org/api?q=+10.5061%2FDRYAD.Q447C%2F1+10.5061%2FDRYAD.Q447C%2F2+10.5061%2FDRYAD.Q447C%2F3&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&qf=doi&fq=has_metadata%3Atrue+AND+is_active%3Atrue&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&mm=1&wt=json")
     end
 
     it "with date created range" do
-      expect(Work.get_query_url("until-created-date" => "2015")).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue+AND+minted%3A%5B*+TO+2015-12-31T23%3A59%3A59Z%5D&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.limit=15&facet.mincount=1&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
+      expect(Work.get_query_url("until-created-date" => "2015")).to eq("https://search.test.datacite.org/api?q=*%3A*&start=0&rows=25&fl=doi%2Ctitle%2Cdescription%2Cpublisher%2CpublicationYear%2CresourceType%2CresourceTypeGeneral%2CrightsURI%2Cversion%2Cdatacentre_symbol%2Callocator_symbol%2Cschema_version%2Cxml%2Cmedia%2Cminted%2Cupdated&fq=has_metadata%3Atrue+AND+is_active%3Atrue+AND+minted%3A%5B*+TO+2015-12-31T23%3A59%3A59Z%5D&facet=true&facet.field=publicationYear&facet.field=datacentre_facet&facet.field=resourceType_facet&facet.field=schema_version&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&f.minted.facet.range.start=2004-01-01T00%3A00%3A00Z&f.minted.facet.range.end=2024-01-01T00%3A00%3A00Z&f.minted.facet.range.gap=%2B1YEAR&sort=minted+desc&defType=edismax&bq=updated%3A%5BNOW%2FDAY-1YEAR+TO+NOW%2FDAY%5D&wt=json")
     end
   end
 
@@ -58,11 +58,11 @@ describe Work, type: :model, vcr: true do
   end
 
   it "works" do
-    works = Work.where(rows: 60)
+    works = Work.where(page: { size: 60 })
     expect(works[:data].length).to eq(60)
     work = works[:data].last
-    expect(work.title).to eq("IMG_0134.jpg")
-    expect(work.resource_type.title).to eq("Dataset")
+    expect(work.title).to eq("2017-12-13 09:05:42.339 3 authors public mode (revised)")
+    expect(work.container_title).to eq("Max Planck Society")
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
     expect(meta["years"]).not_to be_empty
@@ -71,40 +71,40 @@ describe Work, type: :model, vcr: true do
 
   it "works with query" do
     works = Work.where(query: "cancer")
-    expect(works[:data].length).to eq(25)
+    expect(works[:data].length).to eq(6)
     work = works[:data].first
-    expect(work.title).to eq("Cooking the Books: the Golem and the Ethics of Biotechnology")
+    expect(work.title).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
     expect(work.resource_type.title).to eq("Text")
   end
 
   it "works with query sort by minted" do
     works = Work.where(query: "cancer", sort: "minted")
-    expect(works[:data].length).to eq(25)
+    expect(works[:data].length).to eq(6)
     work = works[:data].first
-    expect(work.title).to eq("Cooking the Books: the Golem and the Ethics of Biotechnology")
+    expect(work.title).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
     expect(work.resource_type.title).to eq("Text")
   end
 
-  it "works with query and resource-type-id" do
-    works = Work.where(query: "cancer", "resource-type-id" => "dataset")
-    expect(works[:data].length).to eq(3)
+  it "works with resource-type-id" do
+    works = Work.where("resource-type-id" => "dataset")
+    expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Landings of European lobster (Homarus gammarus) and edible crab (Cancer pagurus) in 2011, Helgoland, North Sea")
+    expect(work.title).to eq("DAT-3025 Maintain file ordering for published datasets - 11")
     expect(work.resource_type.title).to eq("Dataset")
   end
 
-  it "works with query and resource-type-id and data-center-id" do
-    works = Work.where(query: "cancer", "resource-type-id" => "dataset", "data-center-id" => "FIGSHARE.ARS")
+  it "works with resource-type-id and data-center-id" do
+    works = Work.where("resource-type-id" => "dataset", "data-center-id" => "bl.mendeley")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("Achilles_v3.3.7_README.txt")
+    expect(work.title).to eq("DAT-3025 Maintain file ordering for published datasets - 11")
     expect(work.resource_type.title).to eq("Dataset")
   end
 
   it "work" do
-    work = Work.where(id: "10.3886/ICPSR36357.V1")[:data]
-    expect(work.title).to eq("Arts and Cultural Production Satellite Account")
+    work = Work.where(id: "10.4124/9f7xnnys8c.5")[:data]
+    expect(work.title).to eq("DAT-3025 Maintain file ordering for published datasets - 4")
     expect(work.resource_type.title).to eq("Dataset")
-    expect(work.data_center.title).to eq("ICPSR")
+    expect(work.data_center.name).to eq("Mendeley Data")
   end
 end

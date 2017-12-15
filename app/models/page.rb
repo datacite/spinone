@@ -22,12 +22,12 @@ class Page < Base
   end
 
   def self.parse_data(result, options={})
-    return nil if result.blank? || result['errors']
+    return nil if result.body.blank? || result.body['errors']
 
-    items = result.fetch("data", [])
+    items = result.body.fetch("data", [])
 
     if options[:id]
-      item = items.find { |i| i["@id"] == "https://doi.org/#{options[:id]}" }
+      item = items.find { |i| i["@id"] == options[:id] }
       return nil if item.nil?
 
       { data: parse_item(item) }
@@ -37,9 +37,10 @@ class Page < Base
 
       meta = { total: items.length, tags: parse_meta(items) }
 
-      offset = (options[:offset] || 0).to_i
-      rows = (options[:rows] || 25).to_i
-      items = items[offset...offset + rows]
+      number = (options["page[number]"] || 1).to_i
+      size = (options["page[size]"] || 25).to_i
+      offset = (number - 1) * size
+      items = items[offset...offset + size] || []
 
       { data: parse_items(items), meta: meta }
     end

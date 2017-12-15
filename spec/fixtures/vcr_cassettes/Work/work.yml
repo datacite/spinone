@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://search.test.datacite.org/api?defType=edismax&q=10.3886/ICPSR36357.V1&qf=doi&wt=json
+    uri: https://search.test.datacite.org/api?defType=edismax&q=10.4124/9f7xnnys8c.5&qf=doi&wt=json
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://api.local
+      - Maremma - http://c66872279acc
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,24 +17,171 @@ http_interactions:
       message: ''
     headers:
       Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sun, 23 Jul 2017 10:34:54 GMT
+      - Fri, 15 Dec 2017 20:55:31 GMT
       Server:
       - openresty/1.11.2.2
       Content-Length:
-      - '88'
+      - '2631'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"is_active":true,"created":"2017-12-15T17:55:44Z","prefix":"10.4124","dataset_id":"2172984","has_media":false,"datacentre_symbol":"BL.MENDELEY","datacentre":"BL.MENDELEY
+        - Mendeley Data","datacentre_facet":"BL.MENDELEY - Mendeley Data","allocator":"BL
+        - The British Library","allocator_facet":"BL - The British Library","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvOWY3eG5ueXM4Yy41PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDQ8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+TWVuZGVsZXk8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTg8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NYXRoZW1hdGljczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTgtMTItMjE8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL2VtYmFyZ29lZEFjY2VzcyIvPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoRW1iYXJnbzogMjAxOC0xMi0yMSk8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+Cg==","has_metadata":true,"allocator_symbol":"BL","uploaded":"2017-12-15T17:55:44Z","namespace":"http://datacite.org/schema/kernel-3","refQuality":false,"minted":"2017-12-15T17:55:44Z","updated":"2017-12-15T17:55:44Z","doi":"10.4124/9F7XNNYS8C.5","schema_version":"3","date":["2018-12-21"],"creator":["Natra,
+        Mahesh"],"resourceTypeGeneral":"Dataset","subject":["Mathematics"],"title":["DAT-3025
+        Maintain file ordering for published datasets - 4"],"dateType":["Available"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0"],"rights":["","Creative
+        Commons Attribution 4.0 International (Embargo: 2018-12-21)"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset","_version_":1586883949472251907,"indexed":"2017-12-15T20:41:05.729Z"}]}}
 
 '
     http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:52 GMT
+  recorded_at: Fri, 15 Dec 2017 20:55:40 GMT
+- request:
+    method: get
+    uri: http://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://c66872279acc
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Encoding:
+      - text
+      Date:
+      - Fri, 15 Dec 2017 20:55:34 GMT
+      Etag:
+      - '"6cc0617992b21daf1b6785c473f82b64"'
+      Last-Modified:
+      - Mon, 23 Oct 2017 10:50:39 GMT
+      Server:
+      - openresty/1.11.2.2
+      X-Amz-Id-2:
+      - N1xAXYh3fXrCG8aLXHlNTs2pUI87nJfslEs/2V4jxBrZRTc6lW/J4kk9nxdzycSlGB7g43Tn/28=
+      X-Amz-Request-Id:
+      - 7A440238551DC148
+      X-Amz-Version-Id:
+      - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
+      Content-Length:
+      - '1346'
+      X-Cache:
+      - MISS from IMP-cache
+      X-Cache-Lookup:
+      - MISS from IMP-cache:3128
+      Via:
+      - 1.0 IMP-cache (squid/3.1.20)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany
+             2013-05 v3.0: Addition of ID to simpleType element; added values "Audiovisual", "Workflow" & "Other"; deleted value "Film"
+             2017-10-23 v4.1: Addition of value "DataPaper" -->
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
+          <xs:simpleType name="resourceType" id="resourceType">
+            <xs:annotation>
+              <xs:documentation>The general type of a resource.</xs:documentation>
+            </xs:annotation>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Audiovisual"/>
+              <xs:enumeration value="Collection"/>
+              <xs:enumeration value="DataPaper"/>
+              <xs:enumeration value="Dataset"/>
+              <xs:enumeration value="Event"/>
+              <xs:enumeration value="Image"/>
+              <xs:enumeration value="InteractiveResource"/>
+              <xs:enumeration value="Model"/>
+              <xs:enumeration value="PhysicalObject"/>
+              <xs:enumeration value="Service"/>
+              <xs:enumeration value="Software"/>
+              <xs:enumeration value="Sound"/>
+              <xs:enumeration value="Text"/>
+              <xs:enumeration value="Workflow"/>
+              <xs:enumeration value="Other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:schema>
+    http_version: 
+  recorded_at: Fri, 15 Dec 2017 20:55:45 GMT
+- request:
+    method: get
+    uri: https://api.test.datacite.org/clients/bl.mendeley
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - http://c66872279acc
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Date:
+      - Fri, 15 Dec 2017 20:55:37 GMT
+      Etag:
+      - W/"a59680bf8c4bd3a518bfc4a61c2d23b3"
+      Server:
+      - openresty/1.11.2.2
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.10.3
+      X-Anonymous-Consumer:
+      - 'true'
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Upstream-Latency:
+      - '176'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      X-Request-Id:
+      - 0e31c0ea-eeaa-4d8a-adc4-15ec7b67f3ee
+      X-Runtime:
+      - '0.173684'
+      Content-Length:
+      - '1024'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"bl.mendeley","type":"clients","attributes":{"name":"Mendeley
+        Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","is-active":true,"password":"yes","created":"2014-10-03T15:53:41Z","updated":"2017-12-02T22:49:08Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"bl","type":"providers","attributes":{"name":"The
+        British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2014,"title":2014,"count":2640},{"id":2015,"title":2015,"count":96215},{"id":2016,"title":2016,"count":19451},{"id":2017,"title":2017,"count":3554}]}}'
+    http_version: 
+  recorded_at: Fri, 15 Dec 2017 20:55:46 GMT
 recorded_with: VCR 2.9.3

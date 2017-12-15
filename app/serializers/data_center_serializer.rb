@@ -1,5 +1,9 @@
 class DataCenterSerializer < ActiveModel::Serializer
-  attributes :title, :other_names, :prefixes, :member_id, :year, :created, :updated
+  attributes :title, :member_id, :year, :created, :updated
 
   belongs_to :member, serializer: MemberSerializer
+
+  def title
+    object.name
+  end
 end
