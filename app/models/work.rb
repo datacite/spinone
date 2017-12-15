@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :registration_agency, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
+  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
 
   # include author methods
   include Authorable
@@ -28,9 +28,7 @@ class Work < Base
     if author.nil?
       xml = Base64.decode64(@xml)
       xml = Hash.from_xml(xml).fetch("resource", {})
-      authors = xml.fetch("creators", {}).fetch("creator", [])
-      authors = [authors] if authors.is_a?(Hash)
-      @author = get_hashed_authors(authors)
+      @author = get_authors(Array.wrap(xml.dig("creators", "creator")))
     end
 
     @url = attributes.fetch("url", nil)
@@ -63,8 +61,6 @@ class Work < Base
     @data_center_id = @data_center_id.downcase if @data_center_id.present?
     @member_id = attributes.fetch("allocator_symbol", nil)
     @member_id = @member_id.downcase if @member_id.present?
-    @registration_agency_id = @member_id.present? ? "datacite" : attributes.fetch("registration_agency_id", nil)
-    @registration_agency_id = @registration_agency_id.downcase if @registration_agency_id.present?
     @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
 

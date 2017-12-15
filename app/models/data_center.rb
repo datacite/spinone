@@ -159,6 +159,8 @@ class DataCenter < Base
       "#{url}/#{options[:id]}"
     else
       params = { query: options.fetch(:query, nil),
+                 ids: options.fetch(:ids, nil),
+                 year: options.fetch(:year, nil),
                  "provider-id": options.fetch("provider-id", nil),
                  "page[size]" => options.dig(:page, :size),
                  "page[number]" => options.dig(:page, :number) }.compact

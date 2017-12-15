@@ -88,7 +88,6 @@ module Datacitable
                  "published" => item.fetch("publicationYear", nil),
                  "issued" => item.fetch("minted", nil),
                  "publisher_id" => publisher_id,
-                 "registration_agency_id" => "datacite",
                  "tracked" => true,
                  "type" => type }
 
@@ -133,7 +132,6 @@ module Datacitable
                              "relation_type_id" => raw_relation_type.underscore,
                              "source_id" => source_id,
                              "publisher_id" => subj["publisher_id"],
-                             "registration_agency_id" => "github",
                              "occurred_at" => subj["issued"] },
                  subj: subj }
 
