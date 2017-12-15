@@ -264,18 +264,18 @@ class Work < Base
   end
 
   def self.parse_facet_counts(facets, options={})
-    resource_types = facets.fetch("resourceType_facet", [])
+    resource_types = Array.wrap(facets.dig("facet_fields", "resourceType_facet"))
                            .each_slice(2)
                            .map { |k,v| { id: k.underscore.dasherize, title: k.underscore.humanize, count: v } }
-    years = facets.fetch("facet_fields", {}).fetch("publicationYear", [])
+    years = Array.wrap(facets.dig("facet_fields", "publicationYear"))
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0], title: i[0], count: i[1] } }
-    registered = facets.fetch("facet_ranges", {}).fetch("minted", {}).fetch("counts", [])
+    registered = Array.wrap(facets.dig("facet_ranges", "minted", "counts"))
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
                   .map { |i| { id: i[0][0..3], title: i[0][0..3], count: i[1] } }
-    data_centers = facets.fetch("facet_fields", {}).fetch("datacentre_facet", [])
+    data_centers = Array.wrap(facets.dig("facet_fields", "datacentre_facet"))
                        .each_slice(2)
                        .map do |p|
                               id, title = p.first.split(' - ', 2)
