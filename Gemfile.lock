@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/postrank-labs/postrank-uri
+  revision: 36d599082507bf37880c7f3bdb3a75e13c98c608
+  specs:
+    postrank-uri (1.0.22)
+      addressable (>= 2.3.0, < 2.6)
+      nokogiri (>= 1.6.1, < 1.9)
+      public_suffix (>= 2.0.0, < 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -164,22 +173,18 @@ GEM
       oj (>= 2.8.3)
     method_source (0.9.0)
     mini_mime (1.0.0)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
     multipart-post (2.0.0)
     namae (0.10.2)
     nio4r (2.1.0)
-    nokogiri (1.7.2)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     oj (3.3.9)
     parallel (1.12.1)
     parser (2.4.0.2)
       ast (~> 2.3)
-    postrank-uri (1.0.22)
-      addressable (>= 2.3.0, < 2.6)
-      nokogiri (>= 1.6.1, < 1.8)
-      public_suffix (>= 2.0.0, < 2.1)
     powerpack (0.1.1)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -327,8 +332,8 @@ DEPENDENCIES
   lograge (~> 0.3.5)
   maremma (~> 3.5)
   namae (~> 0.10.2)
-  nokogiri (~> 1.6, >= 1.6.8)
-  postrank-uri (~> 1.0.18)
+  nokogiri (~> 1.8.1)
+  postrank-uri (~> 1.0.22)!
   pry-rails (~> 0.3.2)
   rack-test (~> 0.6.2)
   rails (~> 5.1, >= 5.1.4)

@@ -7,13 +7,13 @@ gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 3.5'
 gem 'addressable', "~> 2.3.8"
-gem 'postrank-uri', '~> 1.0.18'
+gem 'postrank-uri', '~> 1.0.22', git: 'https://github.com/postrank-labs/postrank-uri'
 gem 'active_model_serializers', '~> 0.10.4'
 gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'nokogiri', '~> 1.8.1'
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
