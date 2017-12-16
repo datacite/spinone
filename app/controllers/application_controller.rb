@@ -58,19 +58,14 @@ end
                end
 
       if status == 404
-        message = "The page you are looking for doesn't exist."
+        message = "The resource you are looking for doesn't exist."
       elsif status == 401
-        message = "You are not authorized to access this page."
+        message = "You are not authorized to access this resource."
       else
         message = exception.message
       end
 
-      respond_to do |format|
-        format.all { render json: { errors: [{ status: status.to_s,
-                                               title: message }]
-                                  }, status: status
-                   }
-      end
+      render json: { errors: [{ status: status.to_s, title: message }] }.to_json, status: status
     end
   end
 
