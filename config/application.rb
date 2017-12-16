@@ -1,9 +1,8 @@
-require File.expand_path('../boot', __FILE__)
+require_relative 'boot'
 
+require "rails"
 require "active_model/railtie"
 require "action_controller/railtie"
-require "action_mailer/railtie"
-require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
 require 'syslog/logger'
@@ -40,7 +39,6 @@ ENV['SOLR_URL'] ||= "https://search.test.datacite.org/api"
 ENV['LAGOTTO_URL'] ||= "https://eventdata.test.datacite.org/api"
 ENV['VOLPINO_URL'] ||= "https://profiles.test.datacite.org/api"
 ENV['BLOG_URL'] ||= "https://blog.test.datacite.org"
-ENV['CDN_URL'] ||= "https://assets.test.datacite.org"
 ENV['GITHUB_URL'] ||= "https://github.com/datacite/spinone"
 ENV['GITHUB_ISSUES_REPO_URL'] ||= "https://github.com/datacite/datacite"
 ENV['GITHUB_MILESTONES_URL'] ||= "https://api.github.com/repos/datacite/datacite"
@@ -48,6 +46,9 @@ ENV['TRUSTED_IP'] ||= "127.0.0.0/8"
 
 module Spinone
   class Application < Rails::Application
+
+    config.api_only = true
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -55,13 +56,6 @@ module Spinone
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += Dir["#{config.root}/app/models/**/**", "#{config.root}/app/controllers/**/"]
-
-    # add assets installed via bower
-    config.assets.paths << "#{Rails.root}/vendor/bower_components"
-
-    # Only load the plugins named here, in the order given (default is alphabetical).
-    # :all can be used as a placeholder for all plugins not explicitly named.
-    # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
 
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
@@ -78,17 +72,14 @@ module Spinone
     # config.log_tags = [ :subdomain, :uuid ]
 
     # configure logging
-    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
     config.lograge.enabled = true
     config.log_level = ENV['LOG_LEVEL'].to_sym
 
-    # Use memcached as cache store
-    config.cache_store = :dalli_store, nil, { :namespace => ENV['APPLICATION'], :compress => true }
-
-    # compress responses with deflate or gzip
-    config.middleware.use Rack::Deflater
+    # configure caching
+    config.cache_store = :dalli_store, nil, { :namespace => ENV['APPLICATION'] }
 
     # Configure the default encoding used in templates for Ruby.
     config.encoding = "utf-8"

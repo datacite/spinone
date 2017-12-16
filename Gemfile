@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2', '>= 4.2.7'
-gem 'redis', '~> 3.3', '>= 3.3.1'
+gem 'rails', '~> 5.1', '>= 5.1.4'
 
 gem "dotenv", '>= 2.1.1', '~> 2.1'
-gem 'config', '~> 1.0.0'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 3.5'
@@ -15,9 +13,8 @@ gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
-gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem "github-markdown", "~> 0.6.3"
-gem 'pandoc-ruby', '~> 2.0'
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
 gem 'bibtex-ruby', '~> 4.2'
@@ -26,7 +23,6 @@ gem 'gender_detector', '~> 0.1.2'
 gem 'httplog', '~> 0.99.4'
 gem 'lograge', '~> 0.3.5'
 gem 'bergamasco', '~> 0.3'
-gem 'rouge', '~> 1.10', '>= 1.10.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 gem 'librato-rails', '~> 1.4.2'
@@ -47,14 +43,12 @@ group :development, :test do
 end
 
 group :test do
-  gem "capybara", "~> 2.4.4"
   gem "launchy", "~> 2.4.2"
-  gem "email_spec", "~> 1.6.0"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"
   gem 'simplecov'
   gem 'codeclimate-test-reporter', '~> 1.0', '>= 1.0.8'
   gem "shoulda-matchers", "~> 2.7.0", :require => false
-  gem "webmock", "~> 1.20.0"
-  gem 'vcr', '~> 2.9.3'
+  gem 'webmock', '~> 3.1'
+  gem 'vcr', '~> 3.0.3'
   gem "with_env", "~> 1.1.0"
 end

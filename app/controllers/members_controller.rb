@@ -1,4 +1,4 @@
-class Api::MembersController < Api::BaseController
+class MembersController < ApplicationController
   def index
     @members = Member.where(params)
     render jsonapi: @members[:data], meta: @members[:meta]

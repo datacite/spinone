@@ -8,13 +8,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://c66872279acc
+      - Maremma - http://2e5a2194b56a
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Access-Control-Allow-Methods:
       - GET, POST, PATCH, PUT, DELETE, OPTIONS
@@ -23,14 +23,14 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Fri, 15 Dec 2017 20:54:51 GMT
+      - Sat, 16 Dec 2017 08:26:32 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":5},"response":{"numFound":97,"start":0,"docs":[{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvdHNoZ2Z6Nnluei4xPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDExPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk1lbmRlbGV5PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE4PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+TWF0aGVtYXRpY3M8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDE4LTEyLTE1PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ij5EYXRhc2V0PC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9lbWJhcmdvZWRBY2Nlc3MiLz4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWwgKEVtYmFyZ286IDIwMTgtMTItMTUpPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0Pgo8L3Jlc291cmNlPgo=","allocator_symbol":"BL","minted":"2017-12-15T18:18:58Z","updated":"2017-12-15T18:18:58Z","doi":"10.4124/TSHGFZ6YNZ.1","schema_version":"3","resourceTypeGeneral":"Dataset","title":["DAT-3025
+      string: '{"responseHeader":{"status":0,"QTime":6},"response":{"numFound":97,"start":0,"docs":[{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvdHNoZ2Z6Nnluei4xPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDExPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk1lbmRlbGV5PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE4PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+TWF0aGVtYXRpY3M8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDE4LTEyLTE1PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ij5EYXRhc2V0PC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9lbWJhcmdvZWRBY2Nlc3MiLz4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWwgKEVtYmFyZ286IDIwMTgtMTItMTUpPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0Pgo8L3Jlc291cmNlPgo=","allocator_symbol":"BL","minted":"2017-12-15T18:18:58Z","updated":"2017-12-15T18:18:58Z","doi":"10.4124/TSHGFZ6YNZ.1","schema_version":"3","resourceTypeGeneral":"Dataset","title":["DAT-3025
         Maintain file ordering for published datasets - 11"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset"},{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvOWY3eG5ueXM4Yy4zPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+TWVuZGVsZXk8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NYXRoZW1hdGljczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMTctMTItMTU8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL29wZW5BY2Nlc3MiLz4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5EQVQtMzAyNSBNYWludGFpbiBmaWxlIG9yZGVyaW5nIGZvciBwdWJsaXNoZWQgZGF0YXNldHMgLSAzPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4K","allocator_symbol":"BL","minted":"2017-12-15T17:55:50Z","updated":"2017-12-15T17:55:50Z","doi":"10.4124/9F7XNNYS8C.3","schema_version":"3","resourceTypeGeneral":"Dataset","description":["DAT-3025
         Maintain file ordering for published datasets - 3"],"title":["DAT-3025 Maintain
         file ordering for published datasets - 3"],"rightsURI":["info:eu-repo/semantics/openAccess","http://creativecommons.org/licenses/by/4.0"],"publisher":"Mendeley","publicationYear":"2017","resourceType":"Dataset"},{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvOWY3eG5ueXM4Yy40PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDQ8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+TWVuZGVsZXk8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NYXRoZW1hdGljczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMTctMTItMTU8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL29wZW5BY2Nlc3MiLz4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5EQVQtMzAyNSBNYWludGFpbiBmaWxlIG9yZGVyaW5nIGZvciBwdWJsaXNoZWQgZGF0YXNldHMgLSA0PC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4K","allocator_symbol":"BL","minted":"2017-12-15T17:55:50Z","updated":"2017-12-15T17:55:50Z","doi":"10.4124/9F7XNNYS8C.4","schema_version":"3","resourceTypeGeneral":"Dataset","description":["DAT-3025
@@ -60,7 +60,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Fri, 15 Dec 2017 20:55:36 GMT
+  recorded_at: Sat, 16 Dec 2017 08:26:32 GMT
 - request:
     method: get
     uri: https://api.test.datacite.org/clients?ids=BL.MENDELEY
@@ -69,13 +69,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://c66872279acc
+      - Maremma - http://2e5a2194b56a
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Access-Control-Allow-Headers:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
@@ -90,7 +90,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Fri, 15 Dec 2017 20:55:30 GMT
+      - Sat, 16 Dec 2017 08:26:32 GMT
       Etag:
       - W/"5a7d520ca7622ae117fccf1c99f161b3"
       Server:
@@ -106,13 +106,13 @@ http_interactions:
       X-Kong-Proxy-Latency:
       - '0'
       X-Kong-Upstream-Latency:
-      - '15'
+      - '14'
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - 5d6ca303-a127-4879-a31f-bb7ea089e9a4
+      - 32e65171-dc0c-43a5-bb31-57c4da096e5d
       X-Runtime:
-      - '0.013298'
+      - '0.013107'
       Content-Length:
       - '1013'
       Connection:
@@ -124,5 +124,5 @@ http_interactions:
         British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":1,"total-pages":1,"page":1,"providers":[{"id":"BL","title":"The
         British Library","count":1}],"years":[{"id":"2014","title":"2014","count":1}]}}'
     http_version: 
-  recorded_at: Fri, 15 Dec 2017 20:55:39 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sat, 16 Dec 2017 08:26:32 GMT
+recorded_with: VCR 3.0.3

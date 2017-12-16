@@ -1,4 +1,4 @@
-class Api::DatasetsController < Api::BaseController
+class DatasetsController < ApplicationController
   before_filter :set_include
 
   def set_include
