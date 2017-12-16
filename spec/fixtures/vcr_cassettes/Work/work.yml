@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 16 Dec 2017 10:07:23 GMT
+      - Sat, 16 Dec 2017 10:19:30 GMT
       Server:
       - openresty/1.11.2.2
       Content-Length:
@@ -41,7 +41,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:27 GMT
+  recorded_at: Sat, 16 Dec 2017 10:19:35 GMT
 - request:
     method: get
     uri: http://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
@@ -65,7 +65,7 @@ http_interactions:
       Content-Encoding:
       - text
       Date:
-      - Sat, 16 Dec 2017 10:07:23 GMT
+      - Sat, 16 Dec 2017 10:19:31 GMT
       Etag:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Last-Modified:
@@ -73,9 +73,9 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       X-Amz-Id-2:
-      - c6O8/RKoCbfDtlrEX+y1cbIrs5RU6nhyk1ZQg+XO17Q4j8uH9uGh3WNWJsia+ez12pUZYhteTGk=
+      - 6P7pjLrQ2cqaoTXlUKX9QW3+NcppB14wwhh4LctWtPOFGyWQ89j3Rpmu6uKmmaZTV24YAWLup0w=
       X-Amz-Request-Id:
-      - 4391A6DF8E062A66
+      - 662E2FC5D7A7C19C
       X-Amz-Version-Id:
       - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
       Content-Length:
@@ -114,7 +114,7 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:27 GMT
+  recorded_at: Sat, 16 Dec 2017 10:19:36 GMT
 - request:
     method: get
     uri: https://api.test.datacite.org/clients/bl.mendeley
@@ -144,7 +144,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 16 Dec 2017 10:07:23 GMT
+      - Sat, 16 Dec 2017 10:19:31 GMT
       Etag:
       - W/"a59680bf8c4bd3a518bfc4a61c2d23b3"
       Server:
@@ -160,13 +160,13 @@ http_interactions:
       X-Kong-Proxy-Latency:
       - '0'
       X-Kong-Upstream-Latency:
-      - '177'
+      - '176'
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - d52c26f6-5c42-4d58-b715-020886c0995e
+      - '0974e190-bcb0-495a-98a6-98e1f6f523d0'
       X-Runtime:
-      - '0.175431'
+      - '0.174333'
       Content-Length:
       - '1024'
       Connection:
@@ -177,5 +177,5 @@ http_interactions:
         Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","is-active":true,"password":"yes","created":"2014-10-03T15:53:41Z","updated":"2017-12-02T22:49:08Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"bl","type":"providers","attributes":{"name":"The
         British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2014,"title":2014,"count":2640},{"id":2015,"title":2015,"count":96215},{"id":2016,"title":2016,"count":19451},{"id":2017,"title":2017,"count":3554}]}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:28 GMT
+  recorded_at: Sat, 16 Dec 2017 10:19:36 GMT
 recorded_with: VCR 3.0.3
