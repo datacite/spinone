@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://ca0ef0d8ea6c
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 16 Dec 2017 10:19:30 GMT
+      - Sat, 16 Dec 2017 10:33:59 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
@@ -85,7 +85,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:19:35 GMT
+  recorded_at: Sat, 16 Dec 2017 10:34:05 GMT
 - request:
     method: get
     uri: https://api.test.datacite.org/clients?ids=BL.MENDELEY
@@ -94,7 +94,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://ca0ef0d8ea6c
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -115,7 +115,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 16 Dec 2017 10:19:30 GMT
+      - Sat, 16 Dec 2017 10:33:59 GMT
       Etag:
       - W/"5a7d520ca7622ae117fccf1c99f161b3"
       Server:
@@ -131,15 +131,13 @@ http_interactions:
       X-Kong-Proxy-Latency:
       - '0'
       X-Kong-Upstream-Latency:
-      - '18'
+      - '16'
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - fdd4257b-ff31-4c03-b56d-ba8ac8db96da
+      - 5528b48c-1732-4e74-9695-f9998dc38761
       X-Runtime:
-      - '0.015990'
-      Content-Length:
-      - '1013'
+      - '0.013974'
       Connection:
       - keep-alive
     body:
@@ -149,5 +147,5 @@ http_interactions:
         British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":1,"total-pages":1,"page":1,"providers":[{"id":"BL","title":"The
         British Library","count":1}],"years":[{"id":"2014","title":"2014","count":1}]}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:19:35 GMT
+  recorded_at: Sat, 16 Dec 2017 10:34:05 GMT
 recorded_with: VCR 3.0.3
