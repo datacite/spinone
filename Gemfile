@@ -17,12 +17,9 @@ gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
-gem 'bibtex-ruby', '~> 4.2'
 gem 'namae', '~> 0.10.2'
-gem 'gender_detector', '~> 0.1.2'
 gem 'httplog', '~> 0.99.4'
 gem 'lograge', '~> 0.3.5'
-gem 'bergamasco', '~> 0.3'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 gem 'librato-rails', '~> 1.4.2'
@@ -32,6 +29,7 @@ group :development do
   gem 'pry-rails', '~> 0.3.2'
   gem 'better_errors', '~> 2.0.0'
   gem 'binding_of_caller', '~> 0.7.2'
+  gem 'listen', '~> 3.1', '>= 3.1.5'
 end
 
 group :development, :test do

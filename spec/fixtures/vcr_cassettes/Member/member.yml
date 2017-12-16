@@ -2,90 +2,58 @@
 http_interactions:
 - request:
     method: get
-    uri: http://profiles.test.datacite.org/api/members/ands
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Maremma - http://api.local
-      Accept:
-      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
-  response:
-    status:
-      code: 301
-      message: ''
-    headers:
-      Content-Type:
-      - text/html
-      Date:
-      - Sun, 23 Jul 2017 10:34:41 GMT
-      Location:
-      - https://profiles.test.datacite.org/api/members/ands
-      Server:
-      - openresty/1.11.2.2
-      Content-Length:
-      - '191'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
-        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.11.2.2</center>\r\n</body>\r\n</html>\r\n"
-    http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:40 GMT
-- request:
-    method: get
     uri: https://profiles.test.datacite.org/api/members/ands
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://api.local
+      - Maremma - http://942edfea859b
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Access-Control-Allow-Headers:
-      - Origin, Content-Type, Accept, Authorization, Token
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
       Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Max-Age:
-      - '1728000'
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 23 Jul 2017 10:34:41 GMT
+      - Sat, 16 Dec 2017 10:07:17 GMT
       Etag:
-      - W/"626950878fe2b37923e0d56d22ab76d3"
+      - W/"3e07606b8356a5e8e6e648559a815b2c"
       Server:
       - openresty/1.11.2.2
       Status:
       - 200 OK
       Vary:
       - Accept-Encoding
+      X-Anonymous-Consumer:
+      - 'true'
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 5.1.5
+      - Phusion Passenger 5.1.12
       X-Request-Id:
-      - 55aed1a0-424e-4ca4-9006-c2a6df05cc13
+      - 645b8cde-55c6-4b63-acf0-7beadbfc2c63
       X-Runtime:
-      - '0.004841'
+      - '0.006381'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '2305'
+      - '2348'
       Connection:
       - keep-alive
     body:
@@ -112,9 +80,9 @@ http_interactions:
         recognition for their research data output.\u003c/p\u003e\n\n\u003cp\u003eSubscribe
         to our discussion list: \u003ca href=\"https://groups.google.com/forum/?hl=en#!forum/ands-general\"\u003eANDS
         Google Group\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eSubscribe to our
-        e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","region":"Asia
+        e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","institution-type":"national_organization","region":"Asia
         Pacific","country":"Australia","year":2010,"logo-url":"https://assets.test.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
-        3 9902 0585","created":"2016-02-15T16:14:25Z","updated":"2017-01-12T21:48:51Z"}}}'
+        3 9902 0585","created":"2016-02-15T16:14:25Z","updated":"2017-12-14T10:25:03Z"}}}'
     http_version: 
-  recorded_at: Sun, 23 Jul 2017 10:34:40 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sat, 16 Dec 2017 10:07:21 GMT
+recorded_with: VCR 3.0.3

@@ -1,5 +1,5 @@
 class DatasetsController < ApplicationController
-  before_filter :set_include
+  before_action :set_include
 
   def set_include
     if params[:include].present?

@@ -7,8 +7,8 @@ class ApplicationController < ActionController::API
   # pass ability into serializer
   serialization_scope :current_ability
 
-  before_filter :default_format_json
-  after_filter :set_jsonp_format, :set_consumer_header
+  before_action :default_format_json
+  after_action :set_jsonp_format, :set_consumer_header
 
   # from https://github.com/spree/spree/blob/master/api/app/controllers/spree/api/base_controller.rb
   def set_jsonp_format

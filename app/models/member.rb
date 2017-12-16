@@ -5,7 +5,7 @@ class Member < Base
     attributes = item.fetch('attributes', {})
     @id = item.fetch("id", nil).downcase
     @title = attributes.fetch("title", nil)
-    @description = Member.sanitize(attributes.fetch("description", nil))
+    @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", nil), tags: %w(strong em b i code pre sub sup br))
     @member_type = attributes.fetch("member-type", nil)
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
