@@ -8,13 +8,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://d5254333dbe8
+      - Maremma - http://942edfea859b
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Access-Control-Allow-Headers:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Tue, 12 Dec 2017 21:11:02 GMT
+      - Sat, 16 Dec 2017 10:07:16 GMT
       Etag:
       - W/"7512bc8f37f709e68b892713b31958c1"
       Server:
@@ -45,13 +45,13 @@ http_interactions:
       X-Kong-Proxy-Latency:
       - '0'
       X-Kong-Upstream-Latency:
-      - '32'
+      - '40'
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - eb5b8a0f-da6b-4aa3-960c-57569816bf51
+      - c63a4514-4a6e-45a1-a257-c1d987cf192c
       X-Runtime:
-      - '0.031017'
+      - '0.038164'
       Content-Length:
       - '3340'
       Connection:
@@ -71,5 +71,5 @@ http_interactions:
         Technologies","symbol":"TIND","year":2016,"contact-name":"Alexander Nietzold","contact-email":"alexander@tind.io","logo-url":"https://assets.datacite.org/images/members/tind.png","is-active":true,"password":"yes","created":"2016-06-08T18:16:18.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":5,"total-pages":1,"page":1,"providers":[{"id":"CDL","title":"California
         Digital Library","count":4},{"id":"TIND","title":"TIND Technologies","count":1}],"years":[{"id":"2016","title":"2016","count":2},{"id":"2014","title":"2014","count":1},{"id":"2013","title":"2013","count":1},{"id":"2012","title":"2012","count":1}]}}'
     http_version: 
-  recorded_at: Tue, 12 Dec 2017 21:11:01 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sat, 16 Dec 2017 10:07:20 GMT
+recorded_with: VCR 3.0.3

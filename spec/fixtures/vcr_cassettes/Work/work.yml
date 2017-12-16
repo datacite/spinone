@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://2e5a2194b56a
+      - Maremma - http://ca0ef0d8ea6c
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -23,23 +23,23 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 16 Dec 2017 08:26:33 GMT
+      - Sat, 16 Dec 2017 10:33:59 GMT
       Server:
       - openresty/1.11.2.2
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"is_active":true,"created":"2017-12-15T17:55:44Z","prefix":"10.4124","dataset_id":"2172984","has_media":false,"datacentre_symbol":"BL.MENDELEY","datacentre":"BL.MENDELEY
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"is_active":true,"created":"2017-12-15T17:55:44Z","prefix":"10.4124","dataset_id":"2172984","has_media":false,"datacentre_symbol":"BL.MENDELEY","datacentre":"BL.MENDELEY
         - Mendeley Data","datacentre_facet":"BL.MENDELEY - Mendeley Data","allocator":"BL
         - The British Library","allocator_facet":"BL - The British Library","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvOWY3eG5ueXM4Yy41PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDQ8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+TWVuZGVsZXk8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTg8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NYXRoZW1hdGljczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTgtMTItMjE8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL2VtYmFyZ29lZEFjY2VzcyIvPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoRW1iYXJnbzogMjAxOC0xMi0yMSk8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+Cg==","has_metadata":true,"allocator_symbol":"BL","uploaded":"2017-12-15T17:55:44Z","namespace":"http://datacite.org/schema/kernel-3","refQuality":false,"minted":"2017-12-15T17:55:44Z","updated":"2017-12-15T17:55:44Z","doi":"10.4124/9F7XNNYS8C.5","schema_version":"3","date":["2018-12-21"],"creator":["Natra,
         Mahesh"],"resourceTypeGeneral":"Dataset","subject":["Mathematics"],"title":["DAT-3025
         Maintain file ordering for published datasets - 4"],"dateType":["Available"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0"],"rights":["","Creative
-        Commons Attribution 4.0 International (Embargo: 2018-12-21)"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset","_version_":1586927990713876480,"indexed":"2017-12-16T08:21:06.73Z"}]}}
+        Commons Attribution 4.0 International (Embargo: 2018-12-21)"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset","_version_":1586935541988851713,"indexed":"2017-12-16T10:21:08.187Z"}]}}
 
 '
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 08:26:33 GMT
+  recorded_at: Sat, 16 Dec 2017 10:34:05 GMT
 - request:
     method: get
     uri: http://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
@@ -48,7 +48,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://2e5a2194b56a
+      - Maremma - http://ca0ef0d8ea6c
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -63,7 +63,7 @@ http_interactions:
       Content-Encoding:
       - text
       Date:
-      - Sat, 16 Dec 2017 08:26:34 GMT
+      - Sat, 16 Dec 2017 10:33:59 GMT
       Etag:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Last-Modified:
@@ -71,9 +71,9 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       X-Amz-Id-2:
-      - oKv3MPMtINUdGI9wJyePrSV1n32Od6PcPcQjAT+tbRgKsxwx3geeY1bMoCGN8BAfrG6pc5g12Ss=
+      - otI6FIE6DsPmhyvV4tYWQup3ZL/kLJH2t1PVGe4NiDEJ0IHlDv4Bf5IWAJqwKMZPquyHeHcnWC8=
       X-Amz-Request-Id:
-      - 326544CA4861454E
+      - 38F09A673E7E0CA0
       X-Amz-Version-Id:
       - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
       Content-Length:
@@ -112,7 +112,7 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 08:26:34 GMT
+  recorded_at: Sat, 16 Dec 2017 10:34:05 GMT
 - request:
     method: get
     uri: https://api.test.datacite.org/clients/bl.mendeley
@@ -121,7 +121,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://2e5a2194b56a
+      - Maremma - http://ca0ef0d8ea6c
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -142,7 +142,7 @@ http_interactions:
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Date:
-      - Sat, 16 Dec 2017 08:26:34 GMT
+      - Sat, 16 Dec 2017 10:34:00 GMT
       Etag:
       - W/"a59680bf8c4bd3a518bfc4a61c2d23b3"
       Server:
@@ -162,9 +162,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.12
       X-Request-Id:
-      - f9945099-a9e5-4a8a-95fd-4a3ecefd8087
+      - aa8c6e2e-9443-4421-8b10-054d3e092d7a
       X-Runtime:
-      - '0.171720'
+      - '0.171914'
       Content-Length:
       - '1024'
       Connection:
@@ -175,5 +175,5 @@ http_interactions:
         Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","is-active":true,"password":"yes","created":"2014-10-03T15:53:41Z","updated":"2017-12-02T22:49:08Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"bl","type":"providers","attributes":{"name":"The
         British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2014,"title":2014,"count":2640},{"id":2015,"title":2015,"count":96215},{"id":2016,"title":2016,"count":19451},{"id":2017,"title":2017,"count":3554}]}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 08:26:34 GMT
+  recorded_at: Sat, 16 Dec 2017 10:34:05 GMT
 recorded_with: VCR 3.0.3

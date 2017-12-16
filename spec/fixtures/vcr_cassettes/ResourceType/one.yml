@@ -8,13 +8,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://c66872279acc
+      - Maremma - http://942edfea859b
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Access-Control-Allow-Methods:
       - GET, POST, PATCH, PUT, DELETE, OPTIONS
@@ -23,7 +23,7 @@ http_interactions:
       Content-Encoding:
       - text
       Date:
-      - Fri, 15 Dec 2017 20:55:34 GMT
+      - Sat, 16 Dec 2017 10:07:20 GMT
       Etag:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Last-Modified:
@@ -31,21 +31,13 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       X-Amz-Id-2:
-      - N1xAXYh3fXrCG8aLXHlNTs2pUI87nJfslEs/2V4jxBrZRTc6lW/J4kk9nxdzycSlGB7g43Tn/28=
+      - OXXpEnCjYSDrfq0YCBk8Jpm7lVoSkRE6wyMxWceIxSGhVVSp2fGompUHQHIhOq4WpGU+cDgutDs=
       X-Amz-Request-Id:
-      - 7A440238551DC148
+      - 6C8F908C78EB630E
       X-Amz-Version-Id:
       - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
       Content-Length:
       - '1346'
-      Age:
-      - '24'
-      X-Cache:
-      - HIT from IMP-cache
-      X-Cache-Lookup:
-      - HIT from IMP-cache:3128
-      Via:
-      - 1.0 IMP-cache (squid/3.1.20)
       Connection:
       - keep-alive
     body:
@@ -80,5 +72,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Fri, 15 Dec 2017 20:56:06 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sat, 16 Dec 2017 10:07:24 GMT
+recorded_with: VCR 3.0.3

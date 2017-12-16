@@ -23,19 +23,12 @@ class Work < Base
 
     @xml = attributes.fetch('xml', "PGhzaD48L2hzaD4=\n")
     @media = attributes.fetch('media', nil)
-
-    @author = attributes.fetch("author", nil)
-    if author.nil?
-      xml = Base64.decode64(@xml)
-      xml = Hash.from_xml(xml).fetch("resource", {})
-      @author = get_authors(Array.wrap(xml.dig("creators", "creator")))
-    end
-
+    @author = get_authors(attributes.fetch("creator", nil))
     @url = attributes.fetch("url", nil)
 
-    @title = Work.sanitize(attributes.fetch("title", []).first)
+    @title = ActionController::Base.helpers.sanitize(attributes.fetch("title", []).first, tags: %w(strong em b i code pre sub sup br))
     @container_title = attributes.fetch("publisher", nil)
-    @description = Work.sanitize(attributes.fetch("description", []).first)
+    @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", []).first, tags: %w(strong em b i code pre sub sup br)).presence || nil
     @published = attributes.fetch("publicationYear", nil)
     @registered = attributes.fetch("minted", nil)
     @updated_at = attributes.fetch("updated", nil)
@@ -129,7 +122,7 @@ class Work < Base
       params = { q: options.fetch(:query, nil).presence || "*:*",
                  start: offset,
                  rows: per_page,
-                 fl: "doi,title,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
+                 fl: "doi,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
                  qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",

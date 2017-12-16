@@ -8,7 +8,7 @@ class ResourceType < Base
   end
 
   def self.get_query_url(options={})
-    "http://schema.test.datacite.org/meta/kernel-#{DATACITE_VERSION}/include/datacite-resourceType-v#{DATACITE_VERSION}.xsd"
+    RESOURCE_TYPES_URL
   end
 
   def self.parse_data(result, options={})
