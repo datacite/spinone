@@ -1,4 +1,4 @@
-class Api::PagesController < Api::BaseController
+class PagesController < ApplicationController
   def index
     @pages = Page.where(params)
     render jsonapi: @pages[:data], meta: @pages[:meta]

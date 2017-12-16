@@ -1,4 +1,4 @@
-class Api::UserStoriesController < Api::BaseController
+class UserStoriesController < ApplicationController
   def index
     @user_stories = UserStory.where(params.merge(github_token: ENV['GITHUB_PERSONAL_ACCESS_TOKEN']))
     render jsonapi: @user_stories[:data], meta: @user_stories[:meta]

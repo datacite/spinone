@@ -5,16 +5,15 @@ ENV["RAILS_ENV"] = "test"
 require 'simplecov'
 SimpleCov.start
 
-require File.expand_path("../../config/environment", __FILE__)
+require File.expand_path('../../config/environment', __FILE__)
+
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 require "rspec/rails"
 require "shoulda-matchers"
-require "email_spec"
-require "capybara/rspec"
-require "capybara/rails"
 require "webmock/rspec"
 require "rack/test"
 require "colorize"
-require "maremma"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.

@@ -1,4 +1,4 @@
-class Api::WorksController < Api::BaseController
+class WorksController < ApplicationController
   before_filter :authenticate_user_from_token!, :set_include
 
   def set_include
