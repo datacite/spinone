@@ -7,7 +7,7 @@ gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 2.8.6'
 gem 'maremma', '~> 3.5'
 gem 'addressable', "~> 2.3.8"
-gem 'postrank-uri', '~> 1.0.22', git: 'https://github.com/postrank-labs/postrank-uri'
+gem 'postrank-uri', '~> 1.0.23'
 gem 'active_model_serializers', '~> 0.10.4'
 gem 'colorize', '~> 0.8'
 
@@ -18,7 +18,6 @@ gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
 gem 'namae', '~> 0.10.2'
-gem 'httplog', '~> 0.99.4'
 gem 'lograge', '~> 0.3.5'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
@@ -30,6 +29,7 @@ group :development do
   gem 'better_errors', '~> 2.0.0'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'listen', '~> 3.1', '>= 3.1.5'
+  gem 'httplog', '~> 0.99.4'
 end
 
 group :development, :test do
