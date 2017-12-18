@@ -4,7 +4,7 @@ gem 'rails', '~> 5.1', '>= 5.1.4'
 
 gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'rake', '~> 12.0'
-gem 'bugsnag', '~> 2.8.6'
+gem 'bugsnag', '~> 6.3'
 gem 'maremma', '~> 3.5'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.23'
