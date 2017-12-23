@@ -18,7 +18,7 @@ gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
 gem 'hashie', '~> 3.3.2'
 gem 'namae', '~> 0.10.2'
-gem 'lograge', '~> 0.3.5'
+gem 'lograge', '~> 0.7.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 gem 'librato-rails', '~> 1.4.2'
