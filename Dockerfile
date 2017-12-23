@@ -46,7 +46,12 @@ RUN gem update --system && \
     gem install bundler && \
     /sbin/setuser app bundle install --path vendor/bundle
 
+# Install Ruby gems for middleman
+WORKDIR /home/app/webapp/vendor/middleman
+RUN /sbin/setuser app bundle install 
+
 # Run additional scripts during container startup (i.e. not at build time)
+WORKDIR /home/app/webapp
 RUN mkdir -p /etc/my_init.d
 COPY vendor/docker/70_index_page.sh /etc/my_init.d/70_index_page.sh
 

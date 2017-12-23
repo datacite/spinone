@@ -1,2 +1,3 @@
 #!/bin/sh
-/sbin/setuser app cd vendor/middleman & bundle exec middleman build -e ${RAILS_ENV}
+cd vendor/middleman
+/sbin/setuser app bundle exec middleman build -e ${RAILS_ENV}
