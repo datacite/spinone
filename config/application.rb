@@ -69,7 +69,7 @@ module Spinone
     # config.log_tags = [ :subdomain, :uuid ]
 
     # serve assets via web server
-    config.public_file_server.enabled = true
+    config.public_file_server.enabled = false
 
     # configure logging
     logger = ActiveSupport::Logger.new(STDOUT)
