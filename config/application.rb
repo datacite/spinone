@@ -68,6 +68,9 @@ module Spinone
     # Prepend all log lines with the following tags.
     # config.log_tags = [ :subdomain, :uuid ]
 
+    # serve assets via web server
+    config.public_file_server.enabled = true
+
     # configure logging
     logger = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
@@ -95,12 +98,6 @@ module Spinone
 
     # compress responses with deflate or gzip
     config.middleware.use Rack::Deflater
-
-    # set Active Job queueing backend
-    # config.active_job.queue_adapter = :sidekiq
-
-    # Minimum Sass number precision required by bootstrap-sass
-    #::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
 
     # parameter keys that are not explicitly permitted will raise error
     config.action_controller.action_on_unpermitted_parameters = :raise
