@@ -17,6 +17,9 @@ URL_FORMAT = %r(\A(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5
 # Version of DataCite API
 DATACITE_VERSION = "4.1"
 
+# Path to resource_types controlled vocabulary
+RESOURCE_TYPES_URL = "#{ENV['SCHEMA_URL']}/meta/kernel-#{DATACITE_VERSION}/include/datacite-resourceType-v#{DATACITE_VERSION}.xsd"
+
 # Date of DataCite Schema
 DATACITE_SCHEMA_DATE = "2016-09-21"
 
