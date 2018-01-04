@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
+    uri: https://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://854b940c8983
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -16,30 +16,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Encoding:
-      - text
-      Date:
-      - Sat, 16 Dec 2017 10:07:20 GMT
-      Etag:
-      - '"6cc0617992b21daf1b6785c473f82b64"'
-      Last-Modified:
-      - Mon, 23 Oct 2017 10:50:39 GMT
-      Server:
-      - openresty/1.11.2.2
-      X-Amz-Id-2:
-      - L6e9Ak0rCDJIhrwDicy4TmabKoY8kdjR+LOA1pqh/JEw5hnzp4lPgGHouzQ6Ww/83L2z8RyqTbg=
-      X-Amz-Request-Id:
-      - A0208D9FB025F8C7
-      X-Amz-Version-Id:
-      - Qpx95vJyFazfG4CCebI5PQNdModg9LOB
       Content-Length:
       - '1346'
       Connection:
       - keep-alive
+      Date:
+      - Thu, 04 Jan 2018 10:16:08 GMT
+      Content-Encoding:
+      - text
+      Last-Modified:
+      - Wed, 03 Jan 2018 12:59:26 GMT
+      Etag:
+      - '"6cc0617992b21daf1b6785c473f82b64"'
+      Server:
+      - AmazonS3
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d9823e657bbd8582e0bc0663df5ca353.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - p7Yngj7hUAg4NDbrcQHikZtVSaIv7prikhHf7oFH457VEnrZsE5qFA==
     body:
       encoding: UTF-8
       string: |
@@ -72,5 +68,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:24 GMT
+  recorded_at: Thu, 04 Jan 2018 10:16:19 GMT
 recorded_with: VCR 3.0.3

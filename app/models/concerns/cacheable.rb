@@ -11,7 +11,8 @@ module Cacheable
 
     def cached_resource_types
       Rails.cache.fetch("resource_types", expires_in: 1.month) do
-        ResourceType.all[:data]
+        resource_type = ResourceType.all
+        resource_type.present? ? resource_type[:data] : []
       end
     end
   end
