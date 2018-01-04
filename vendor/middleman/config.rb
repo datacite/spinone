@@ -34,7 +34,8 @@ activate :data_source do |c|
   ]
 end
 
-# Set markdown options
+# Set markdown template engine
+set :markdown_engine, :pandoc
 set :markdown, smartypants: true
 
 # use asset host
