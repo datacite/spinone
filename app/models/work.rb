@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated_at
+  attr_reader :id, :doi, :identifier, :cache_key, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated
 
   # include author methods
   include Authorable
@@ -17,12 +17,13 @@ class Work < Base
   include Dateable
 
   def initialize(attributes={}, options={})
-    @id = attributes.fetch("doi", "").downcase.presence
-    @doi = @id
+    @doi = attributes.fetch("doi", "").downcase.presence
     @identifier = attributes.fetch("id", nil).presence || doi_as_url(attributes.fetch("doi", nil))
+    @id = @identifier
 
     @xml = attributes.fetch('xml', "PGhzaD48L2hzaD4=\n")
     @media = attributes.fetch('media', nil)
+    @media = @media.map { |m| { media_type: m.split(":", 2).first, url: m.split(":", 2).last }} if @media.present?
     @author = get_authors(attributes.fetch("creator", nil))
     @url = attributes.fetch("url", nil)
 
@@ -31,7 +32,7 @@ class Work < Base
     @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", []).first, tags: %w(strong em b i code pre sub sup br)).presence || nil
     @published = attributes.fetch("publicationYear", nil)
     @registered = attributes.fetch("minted", nil)
-    @updated_at = attributes.fetch("updated", nil)
+    @updated = attributes.fetch("updated", nil)
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
     @version = attributes.fetch("version", nil)
@@ -61,6 +62,33 @@ class Work < Base
     @data_center = Array(options[:data_centers]).find { |p| p.id == @data_center_id }
     @member = Array(options[:members]).find { |r| r.id == @member_id }
     @resource_type = Array(options[:resource_types]).find { |r| r.id == @resource_type_id }
+
+    @cache_key = "works/#{@id}-#{@updated_at}"
+  end
+
+  def identifiers
+    [{ "identifier" => "doi:#{doi}",
+       "identifier-source" => "DataCite" }]
+  end
+
+  def types
+    [{ "information" => { "value" => resource_type } }]
+  end
+
+  def creators
+    author.map { |a| { "first-name" => a["given"], "last-name" => a["family"] } }
+  end
+
+  def dates
+    [{ "date" => published,
+       "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "publicationYear" }
+     },
+     { "date" => registered,
+       "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "Issued" }
+     },
+     { "date" => updated,
+       "type" => { "ontologyTermIRI" => "http://schema.datacite.org/meta/kernel-3.1/metadata.xsd", "value" => "Updated" }
+     }]
   end
 
   def self.get_query_url(options={})

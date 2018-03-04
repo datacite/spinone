@@ -12,13 +12,25 @@ class DatasetsController < ApplicationController
 
   def index
     @works = Work.where(params)
-    render jsonapi: @works[:data], meta: @works[:meta], each_serializer: DatasetSerializer, include: @include
+
+    options = {}
+    options[:meta] = @works[:meta]
+    options[:include] = @include
+
+    @works = @works[:data]
+
+    render json: DatasetSerializer.new(@works, options).serialized_json, status: :ok
   end
 
   def show
     @work = Work.where(id: params[:id])
     fail AbstractController::ActionNotFound unless @work.present?
 
-    render jsonapi: @work[:data], each_serializer: DatasetSerializer, include: @include
+    options = {}
+    options[:include] = @include
+
+    @work = @work[:data]
+
+    render json: DatasetSerializer.new(@work, options).serialized_json, status: :ok
   end
 end

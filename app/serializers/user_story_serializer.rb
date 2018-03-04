@@ -1,23 +1,5 @@
-class UserStorySerializer < ActiveModel::Serializer
-  attributes :url, :title, :description, :comments, :categories, :stakeholders, :state, :inactive, :milestone, :created, :updated, :closed
+class UserStorySerializer
+  include FastJsonapi::ObjectSerializer
 
-  def url
-    "#{ENV["GITHUB_ISSUES_REPO_URL"]}/issues/#{object.id}"
-  end
-
-  def description
-    GitHub::Markdown.render_gfm(object.description)
-  end
-
-  def created
-    object.created_at
-  end
-
-  def updated
-    object.updated_at
-  end
-
-  def closed
-    object.closed_at
-  end
+  attributes :id, :url, :title, :description, :comments, :categories, :stakeholders, :state, :inactive, :milestone, :created, :updated, :closed
 end

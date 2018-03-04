@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://2d089a0d8a1d
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -16,60 +16,53 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Sun, 04 Mar 2018 12:33:03 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 16 Dec 2017 10:07:16 GMT
-      Etag:
-      - W/"7512bc8f37f709e68b892713b31958c1"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.3
-      X-Anonymous-Consumer:
-      - 'true'
-      X-Kong-Proxy-Latency:
-      - '0'
-      X-Kong-Upstream-Latency:
-      - '40'
-      X-Powered-By:
-      - Phusion Passenger 5.1.12
-      X-Request-Id:
-      - c63a4514-4a6e-45a1-a257-c1d987cf192c
-      X-Runtime:
-      - '0.038164'
-      Content-Length:
-      - '3340'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - W/"d1f260a67ad0821ab41e1bee41bc986c"
+      X-Runtime:
+      - '0.073464'
+      X-Request-Id:
+      - 037f0894-d21f-4e54-94be-1a39b9c587dc
+      X-Powered-By:
+      - Phusion Passenger 5.2.0
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"data":[{"id":"cdl.ucsdcca","type":"clients","attributes":{"name":"California
-        Coastal Atlas","symbol":"CDL.UCSDCCA","year":2012,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","domains":"*","is-active":true,"password":"yes","created":"2012-06-27T20:51:59Z","updated":"2017-12-02T22:49:04Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"data":null}}},{"id":"tind.cal","type":"clients","attributes":{"name":"California
-        Institute of Technology","symbol":"TIND.CAL","year":2016,"contact-name":"tech@tind.io","contact-email":"tech@tind.io","domains":"tind.io","is-active":true,"password":"yes","created":"2016-10-25T15:16:46Z","updated":"2017-12-02T22:49:14Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"tind","type":"providers"}},"repository":{"data":null}}},{"id":"cdl.caltech","type":"clients","attributes":{"name":"California
+        Coastal Atlas","symbol":"CDL.UCSDCCA","year":2012,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"created":"2012-06-27T20:51:59Z","updated":"2018-02-26T01:30:29Z"},"relationships":{"provider":{"data":{"id":"csc","type":"providers"}}}},{"id":"tind.cal","type":"clients","attributes":{"name":"California
+        Institute of Technology","symbol":"TIND.CAL","year":2016,"contact-name":"tech@tind.io","contact-email":"tech@tind.io","domains":"tind.io","url":null,"is-active":true,"created":"2016-10-25T15:16:46Z","updated":"2018-02-26T01:30:53Z"},"relationships":{"provider":{"data":{"id":"rice","type":"providers"}}}},{"id":"cdl.caltech","type":"clients","attributes":{"name":"California
         Institute of Technology (Caltech)","symbol":"CDL.CALTECH","year":2013,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","is-active":true,"password":null,"created":"2013-04-16T16:10:03Z","updated":"2017-12-02T22:49:05Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"data":null}}},{"id":"cdl.ucnrs","type":"clients","attributes":{"name":"University
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"created":"2013-04-16T16:10:03Z","updated":"2018-02-26T01:30:31Z"},"relationships":{"provider":{"data":{"id":"csc","type":"providers"}}}},{"id":"cdl.ucnrs","type":"clients","attributes":{"name":"University
         of California Natural Reserve System","symbol":"CDL.UCNRS","year":2016,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","is-active":true,"password":null,"created":"2016-11-15T20:41:13Z","updated":"2017-12-02T22:49:14Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"data":null}}},{"id":"cdl.ucdavis","type":"clients","attributes":{"name":"University
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"created":"2016-11-15T20:41:13Z","updated":"2018-02-26T01:30:54Z"},"relationships":{"provider":{"data":{"id":"csc","type":"providers"}}}},{"id":"cdl.ucdavis","type":"clients","attributes":{"name":"University
         of California, Davis, University Library","symbol":"CDL.UCDAVIS","year":2014,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","is-active":true,"password":null,"created":"2014-09-24T14:54:20Z","updated":"2017-12-02T22:49:07Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"data":null}}}],"included":[{"id":"cdl","type":"providers","attributes":{"name":"California
-        Digital Library","symbol":"CDL","year":2010,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","logo-url":"https://assets.datacite.org/images/members/cdl.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}},{"id":"tind","type":"providers","attributes":{"name":"TIND
-        Technologies","symbol":"TIND","year":2016,"contact-name":"Alexander Nietzold","contact-email":"alexander@tind.io","logo-url":"https://assets.datacite.org/images/members/tind.png","is-active":true,"password":"yes","created":"2016-06-08T18:16:18.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":5,"total-pages":1,"page":1,"providers":[{"id":"CDL","title":"California
-        Digital Library","count":4},{"id":"TIND","title":"TIND Technologies","count":1}],"years":[{"id":"2016","title":"2016","count":2},{"id":"2014","title":"2014","count":1},{"id":"2013","title":"2013","count":1},{"id":"2012","title":"2012","count":1}]}}'
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"created":"2014-09-24T14:54:20Z","updated":"2018-02-26T01:30:37Z"},"relationships":{"provider":{"data":{"id":"csc","type":"providers"}}}}],"included":[{"id":"csc","type":"providers","attributes":{"name":"CSC
+        - IT Center for Science Ltd.","symbol":"CSC","year":2016,"contact-name":"Ari
+        Lukkarinen","contact-email":"ari.lukkarinen@csc.fi","logo-url":"https://assets.test.datacite.org/images/members/csc.png","is-active":true,"created":"2016-09-07T10:16:10Z","updated":"2018-02-26T01:25:40Z"}},{"id":"rice","type":"providers","attributes":{"name":"Fondren
+        Library, Rice University","symbol":"RICE","year":2017,"contact-name":"Shannon
+        Kipphut-Smith","contact-email":"sk60@rice.edu","logo-url":"https://assets.test.datacite.org/images/members/rice.png","is-active":true,"created":"2017-06-13T12:05:10Z","updated":"2018-02-26T01:25:40Z"}}],"meta":{"total":5,"total-pages":1,"page":1,"years":[{"id":"2012","title":"2012","count":1},{"id":"2013","title":"2013","count":1},{"id":"2014","title":"2014","count":1},{"id":"2016","title":"2016","count":2}],"providers":[{"id":"cdl","title":null,"count":4},{"id":"tind","title":null,"count":1}]}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:20 GMT
+  recorded_at: Sun, 04 Mar 2018 12:33:28 GMT
 recorded_with: VCR 3.0.3

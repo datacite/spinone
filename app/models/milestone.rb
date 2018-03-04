@@ -1,24 +1,27 @@
 class Milestone < Base
-  attr_reader :id, :title, :description, :open_issues, :closed_issues, :state, :due_on, :year, :quarter, :created_at, :updated_at, :closed_at
+  attr_reader :id, :title, :description, :open_issues, :closed_issues, :state, :due_on, :year, :quarter, :created, :updated, :closed
 
   def initialize(attributes, options={})
     @id = attributes.fetch("number", nil)
     @title = attributes.fetch("title", nil)
-    @description = attributes.fetch("description", nil).presence
+    @description = attributes.fetch("description", nil)
+    @description = GitHub::Markdown.render_gfm(@description) if @description.present?
     @open_issues = attributes.fetch("open_issues", nil)
     @closed_issues = attributes.fetch("closed_issues", nil)
     @state = attributes.fetch("state", nil)
     @due_on = attributes.fetch("due_on", nil)
-    @created_at = attributes.fetch("created_at", nil)
-    @updated_at = attributes.fetch("updated_at", nil)
-    @closed_at = attributes.fetch("closed_at", nil)
+    @created = attributes.fetch("created_at", nil)
+    @updated = attributes.fetch("updated_at", nil)
+    @closed = attributes.fetch("closed_at", nil)
+
+    @cache_key = "milestones/#{@id}"
   end
 
   def self.get_query_url(options={})
     if options[:id].present?
-      "#{url}/#{options[:id]}"
+      "#{url}/#{options[:id]}?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
     else
-      url + "?state=all"
+      url + "?state=all&github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
     end
   end
 
@@ -41,6 +44,10 @@ class Milestone < Base
     end
   end
 
+  def url
+    "#{ENV["GITHUB_ISSUES_REPO_URL"]}/milestone/#{id}"
+  end
+
   def self.url
     "#{ENV["GITHUB_MILESTONES_URL"]}/milestones"
   end
@@ -61,7 +68,7 @@ class Milestone < Base
     (Time.parse(due_on).month / 3.to_f).ceil
   end
 
-  def released_at
+  def released
     is_closed? ? due_on : nil
   end
 end

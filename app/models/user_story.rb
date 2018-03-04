@@ -1,5 +1,5 @@
 class UserStory < Base
-  attr_reader :id, :title, :description, :state, :milestone, :comments, :categories, :stakeholders, :inactive, :created_at, :updated_at, :closed_at
+  attr_reader :id, :url, :title, :description, :state, :milestone, :comments, :categories, :stakeholders, :inactive, :created, :updated, :closed
 
   LABEL_COLORS = {
     "category" => "b1c9f0",
@@ -10,7 +10,7 @@ class UserStory < Base
   def initialize(attributes, options={})
     @id = attributes.fetch("number", nil)
     @title = attributes.fetch("title", nil)
-    @description = attributes.fetch("body", nil).presence
+    @description = GitHub::Markdown.render_gfm(attributes.fetch("body", nil))
     state = attributes.fetch("state", nil) == "closed" ? "done" : "inbox"
     @comments = attributes.fetch("comments", nil)
     labels = Array.wrap(attributes.fetch("labels", nil))
@@ -28,14 +28,14 @@ class UserStory < Base
       .select { |l| l["color"] == LABEL_COLORS["inactive"] }
       .map { |l| l["name"] }
     @milestone = attributes.dig("milestone", "title")
-    @created_at = attributes.fetch("created_at", nil)
-    @updated_at = attributes.fetch("updated_at", nil)
-    @closed_at = attributes.fetch("closed_at", nil)
+    @created = attributes.fetch("created_at", nil)
+    @updated = attributes.fetch("updated_at", nil)
+    @closed = attributes.fetch("closed_at", nil)
   end
 
   def self.get_query_url(options={})
     if options[:id].present?
-      "#{ENV["GITHUB_MILESTONES_URL"]}/issues/#{options[:id]}"
+      "#{ENV["GITHUB_MILESTONES_URL"]}/issues/#{options[:id]}?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
     else
       label = ["user story", options[:category], options[:stakeholder]].compact
         .map { |l| "label:\"#{l}\"" }.join(" ")
@@ -57,7 +57,8 @@ class UserStory < Base
                  page: options[:page] || 1,
                  per_page: options[:per_page] || 100,
                  sort: "created",
-                 order: "desc" }.compact
+                 order: "desc",
+                 github_token: ENV['GITHUB_PERSONAL_ACCESS_TOKEN'] }.compact
 
       url + "?" + URI.encode_www_form(params)
     end
@@ -66,7 +67,7 @@ class UserStory < Base
   def self.get_total(options={})
     query_url = get_query_url(options.merge(per_page: 0))
     result = Maremma.get(query_url, options)
-    result.dig("data", "total_count").to_i
+    result.body.dig("data", "total_count").to_i
   end
 
   def self.get_data(options={})
@@ -85,7 +86,7 @@ class UserStory < Base
           options[:page] = page
           query_url = get_query_url(options)
           result = Maremma.get(query_url, options)
-          data += (result.dig("data", "items") || [])
+          data += (result.body.dig("data", "items") || [])
         end
       end
 
@@ -94,7 +95,7 @@ class UserStory < Base
   end
 
   def self.parse_data(result, options={})
-    return nil if result.body.blank? || result.body['errors']
+    return nil if result.blank? || result['errors']
 
     if options[:id].present?
       item = result.body.fetch("data", {})
@@ -102,7 +103,8 @@ class UserStory < Base
 
       { data: parse_item(item) }
     else
-      data = parse_items(result[:data])
+      items = result.fetch("data", [])
+      data = parse_items(items)
       meta = { total: result[:total],
                milestones: parse_meta(data, "milestone"),
                categories: parse_meta(data, "categories"),
@@ -134,6 +136,10 @@ class UserStory < Base
     else
       it.sort_by {|_key, value| -value}[0..10].to_h
     end
+  end
+
+  def url
+    "#{ENV["GITHUB_ISSUES_REPO_URL"]}/issues/#{id}"
   end
 
   def self.url

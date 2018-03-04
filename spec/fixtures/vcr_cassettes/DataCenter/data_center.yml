@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://2d089a0d8a1d
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -16,52 +16,42 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Sun, 04 Mar 2018 12:33:03 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
-      Date:
-      - Sat, 16 Dec 2017 10:07:17 GMT
-      Etag:
-      - W/"e9ee5c748b37c35c18cd15079fdb518e"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      Via:
-      - kong/0.10.3
-      X-Anonymous-Consumer:
-      - 'true'
-      X-Kong-Proxy-Latency:
-      - '0'
-      X-Kong-Upstream-Latency:
-      - '16'
-      X-Powered-By:
-      - Phusion Passenger 5.1.12
-      X-Request-Id:
-      - 13bf7930-3255-4d00-aa7b-f0a83f4e4ca6
-      X-Runtime:
-      - '0.014374'
-      Content-Length:
-      - '937'
       Connection:
       - keep-alive
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - W/"f08a20ef49abc4242c322f5593bc08fb"
+      X-Runtime:
+      - '0.086384'
+      X-Request-Id:
+      - 85fa87ef-53a5-4996-b16b-fb8763e6060f
+      X-Powered-By:
+      - Phusion Passenger 5.2.0
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"ethz.ubasojs","type":"clients","attributes":{"name":"027.7
-        - Zeitschrift für Bibliothekskultur","symbol":"ETHZ.UBASOJS","year":2013,"contact-name":"ETH-Bibliothek,
-        Barbara Hirschmann","contact-email":"barbara.hirschmann@library.ethz.ch","domains":"0277.ch","is-active":true,"password":"yes","created":"2013-03-21T11:02:47Z","updated":"2017-12-02T22:49:05Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"ethz","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"ethz","type":"providers","attributes":{"name":"ETH
-        Zurich","symbol":"ETHZ","year":2010,"contact-name":"Angela Gastl","contact-email":"angela.gastl@library.ethz.ch","logo-url":"https://assets.datacite.org/images/members/ethz.png","is-active":true,"password":"yes","created":"2010-01-01T00:00:00.000Z","updated":"2017-12-02T22:48:26.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[]}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiZXRoei51YmFzb2pzIiwidHlwZSI6ImNsaWVudHMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiIwMjcuNyAtIFplaXRzY2hyaWZ0IGbDvHIgQmlibGlvdGhla3NrdWx0dXIiLCJzeW1ib2wiOiJFVEhaLlVCQVNPSlMiLCJ5ZWFyIjoyMDEzLCJjb250YWN0LW5hbWUiOiJFVEgtQmlibGlvdGhlaywgQmFyYmFyYSBIaXJzY2htYW5uIiwiY29udGFjdC1lbWFpbCI6ImJhcmJhcmEuaGlyc2NobWFubkBsaWJyYXJ5LmV0aHouY2giLCJkb21haW5zIjoiMDI3Ny5jaCIsInVybCI6bnVsbCwiaXMtYWN0aXZlIjp0cnVlLCJjcmVhdGVkIjoiMjAxMy0wMy0yMVQxMTowMjo0N1oiLCJ1cGRhdGVkIjoiMjAxOC0wMi0yNlQwMTozMDozMVoifSwicmVsYXRpb25zaGlwcyI6eyJwcm92aWRlciI6eyJkYXRhIjp7ImlkIjoiY2NzciIsInR5cGUiOiJwcm92aWRlcnMifX19fSwiaW5jbHVkZWQiOlt7ImlkIjoiY2NzciIsInR5cGUiOiJwcm92aWRlcnMiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJDZW50ZXIgb2YgQ29tcHV0YXRpb25hbCBTY2llbmNlIFJlc2VhcmNoLCBJbmMuIiwic3ltYm9sIjoiQ0NTUiIsInllYXIiOjIwMTcsImNvbnRhY3QtbmFtZSI6IkxpIEtvIiwiY29udGFjdC1lbWFpbCI6ImxpLmtvQGNjc3ItaW5jLm9yZyIsImxvZ28tdXJsIjoiaHR0cHM6Ly9hc3NldHMudGVzdC5kYXRhY2l0ZS5vcmcvaW1hZ2VzL21lbWJlcnMvY2Nzci5wbmciLCJpcy1hY3RpdmUiOnRydWUsImNyZWF0ZWQiOiIyMDE3LTA5LTI4VDA3OjQ4OjU1WiIsInVwZGF0ZWQiOiIyMDE4LTAyLTI2VDAxOjI1OjQwWiJ9fV0sIm1ldGEiOnsiZG9pcyI6W119fQ==
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:21 GMT
+  recorded_at: Sun, 04 Mar 2018 12:33:29 GMT
 recorded_with: VCR 3.0.3

@@ -1,7 +1,5 @@
-class PageSerializer < ActiveModel::Serializer
-  attributes :author, :title, :container_title, :description, :license, :url, :image_url, :tags, :issued, :updated
+class PageSerializer
+  include FastJsonapi::ObjectSerializer
 
-  def updated
-    object.updated_at
-  end
+  attributes :id, :author, :title, :container_title, :description, :license, :url, :image_url, :tags, :issued, :updated
 end

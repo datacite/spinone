@@ -1,6 +1,4 @@
 class WorksController < ApplicationController
-  before_action :authenticate_user_from_token!, :set_include
-
   def set_include
     if params[:include].present?
       @include = params[:include].split(",").map { |i| i.downcase.underscore }.join(",")
@@ -12,13 +10,25 @@ class WorksController < ApplicationController
 
   def index
     @works = Work.where(params)
-    render jsonapi: @works[:data], meta: @works[:meta], include: @include
+
+    options = {}
+    options[:meta] = @works[:meta]
+    options[:include] = @include
+
+    @works = @works[:data]
+
+    render json: WorkSerializer.new(@works, options).serialized_json, status: :ok
   end
 
   def show
     @work = Work.where(id: params[:id])
     fail AbstractController::ActionNotFound unless @work.present?
 
-    render jsonapi: @work[:data], include: @include
+    options = {}
+    options[:include] = @include
+
+    @work = @work[:data]
+
+    render json: WorkSerializer.new(@work, options).serialized_json, status: :ok
   end
 end

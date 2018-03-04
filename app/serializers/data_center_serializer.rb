@@ -1,9 +1,9 @@
-class DataCenterSerializer < ActiveModel::Serializer
-  attributes :title, :member_id, :year, :created, :updated
+class DataCenterSerializer
+  include FastJsonapi::ObjectSerializer
 
-  belongs_to :member, serializer: MemberSerializer
+  cache_options enabled: true, cache_length: 12.hours
 
-  def title
-    object.name
-  end
+  attributes :id, :title, :member_id, :year, :created, :updated
+
+  belongs_to :member
 end

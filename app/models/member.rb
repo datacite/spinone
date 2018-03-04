@@ -1,5 +1,5 @@
 class Member < Base
-  attr_reader :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created_at, :updated_at
+  attr_reader :id, :cache_key, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created, :updated
 
   def initialize(item, options={})
     attributes = item.fetch('attributes', {})
@@ -14,8 +14,9 @@ class Member < Base
     @website = attributes.fetch("website", nil)
     @email = attributes.fetch("email", nil)
     @phone = attributes.fetch("phone", nil)
-    @created_at = attributes.fetch("created", nil)
-    @updated_at = attributes.fetch("updated", nil)
+    @created = attributes.fetch("created", nil)
+    @updated = attributes.fetch("updated", nil)
+    @cache_key = "members/#{@id}-#{@updated_at}"
   end
 
   def self.get_query_url(options={})

@@ -61,9 +61,9 @@ describe Work, type: :model, vcr: true do
     works = Work.where(page: { size: 60 })
     expect(works[:data].length).to eq(60)
     work = works[:data].last
-    expect(work.title).to eq("2017-12-13 09:05:42.339 3 authors public mode (revised)")
-    expect(work.container_title).to eq("Max Planck Society")
-    expect(work.author).to eq([{"given"=>"Test", "family"=>"Testuser"}, {"family"=>"Thethird"}, {"family"=>"Thesecond"}])
+    expect(work.title).to eq("Dataset A from workspace-1519831024653")
+    expect(work.container_title).to eq("herausgeber-1519831686455")
+    expect(work.author).to eq([{"literal"=>"Ersteller-1519831685128"}])
     meta = works[:meta]
     expect(meta["resource-types"]).not_to be_empty
     expect(meta["years"]).not_to be_empty
@@ -72,7 +72,7 @@ describe Work, type: :model, vcr: true do
 
   it "works with query" do
     works = Work.where(query: "cancer")
-    expect(works[:data].length).to eq(6)
+    expect(works[:data].length).to eq(8)
     work = works[:data].first
     expect(work.title).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
     expect(work.author.length).to eq(230)
@@ -82,7 +82,7 @@ describe Work, type: :model, vcr: true do
 
   it "works with query sort by minted" do
     works = Work.where(query: "cancer", sort: "minted")
-    expect(works[:data].length).to eq(6)
+    expect(works[:data].length).to eq(8)
     work = works[:data].first
     expect(work.title).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
     expect(work.resource_type.title).to eq("Text")
@@ -92,8 +92,8 @@ describe Work, type: :model, vcr: true do
     works = Work.where("resource-type-id" => "dataset")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("DAT-3025 Maintain file ordering for published datasets - 11")
-    expect(work.author).to eq([{"given"=>"Mahesh", "family"=>"Natra"}])
+    expect(work.title).to eq( "One, two, Freddy's coming for you")
+    expect(work.author).to eq([{"given"=>"Vorname", "family"=>"Name"}])
     expect(work.resource_type.title).to eq("Dataset")
   end
 
@@ -101,7 +101,7 @@ describe Work, type: :model, vcr: true do
     works = Work.where("resource-type-id" => "dataset", "data-center-id" => "bl.mendeley")
     expect(works[:data].length).to eq(25)
     work = works[:data].first
-    expect(work.title).to eq("DAT-3025 Maintain file ordering for published datasets - 11")
+    expect(work.title).to eq("Embargo changer")
     expect(work.resource_type.title).to eq("Dataset")
   end
 

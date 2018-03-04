@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/datacite/datacite/milestones/10
+    uri: https://api.github.com/repos/datacite/datacite/milestones/10?github_token=<GITHUB_PERSONAL_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://2d089a0d8a1d
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 16 Dec 2017 10:07:18 GMT
+      - Sun, 04 Mar 2018 12:58:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '58'
+      - '54'
       X-Ratelimit-Reset:
-      - '1513422438'
+      - '1520168497'
       Cache-Control:
       - public, max-age=60, s-maxage=60
       Vary:
@@ -39,7 +39,7 @@ http_interactions:
       Etag:
       - '"da836570a501d6b27badb5a8ef7e3add"'
       Last-Modified:
-      - Mon, 11 Dec 2017 08:22:31 GMT
+      - Thu, 01 Feb 2018 22:54:03 GMT
       X-Github-Media-Type:
       - unknown, github.v3
       Access-Control-Expose-Headers:
@@ -58,15 +58,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.038507'
+      - '0.027576'
       X-Github-Request-Id:
-      - CE58:299D:3C6C8F:892157:5A34F056
+      - D3F5:1035:FD5BE:275A8C:5A9BED79
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"url":"https://api.github.com/repos/datacite/datacite/milestones/10","html_url":"https://github.com/datacite/datacite/milestone/10","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/10/labels","id":2564092,"number":10,"title":"Develop
         new DOI Fabrica Service","description":"The current DataCite Metadata Store
         (MDS) will be renovated to become the new DOI Fabrica Service, including all
         the functionalities needed to manage providers, clients, and prefixes. ","creator":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":9,"closed_issues":11,"state":"closed","created_at":"2017-06-06T07:02:38Z","updated_at":"2017-12-08T07:23:15Z","due_on":"2017-10-19T07:00:00Z","closed_at":"2017-11-01T13:57:48Z"}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:23 GMT
+  recorded_at: Sun, 04 Mar 2018 12:59:00 GMT
 recorded_with: VCR 3.0.3

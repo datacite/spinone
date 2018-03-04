@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://854b940c8983
+      - Maremma - http://2d089a0d8a1d
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 04 Jan 2018 10:16:08 GMT
+      - Sun, 04 Mar 2018 12:33:07 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -33,11 +33,11 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d9823e657bbd8582e0bc0663df5ca353.cloudfront.net (CloudFront)
+      - 1.1 2b7e0587e76bdc8afc2d63bea659b942.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - p7Yngj7hUAg4NDbrcQHikZtVSaIv7prikhHf7oFH457VEnrZsE5qFA==
+      - S5RZoHF2z9QvE72QLWKIGYHRLLN8rjz1D6eDUpMkdtkZ2rsrDqWpHg==
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany
@@ -68,5 +68,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Thu, 04 Jan 2018 10:16:19 GMT
+  recorded_at: Sun, 04 Mar 2018 12:33:32 GMT
 recorded_with: VCR 3.0.3
