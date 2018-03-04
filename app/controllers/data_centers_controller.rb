@@ -12,13 +12,22 @@ class DataCentersController < ApplicationController
 
   def index
     @data_centers = DataCenter.where(params)
-    render jsonapi: @data_centers[:data], meta: @data_centers[:meta], include: @include
+
+    options = {}
+    options[:meta] = @data_centers[:meta]
+    options[:include] = @include
+
+    @data_centers = @data_centers[:data]
+
+    render json: DataCenterSerializer.new(@data_centers, options).serialized_json, status: :ok
   end
 
   def show
     @data_center = DataCenter.where(id: params[:id])
     fail AbstractController::ActionNotFound unless @data_center.present?
 
-    render jsonapi: @data_center[:data], include: @include
+    @data_center = @data_center[:data]
+
+    render json: DataCenterSerializer.new(@data_center).serialized_json, status: :ok
   end
 end

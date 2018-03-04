@@ -1,21 +1,11 @@
-class WorkSerializer < ActiveModel::Serializer
-  cache key: 'work'
-  attributes :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :version, :license, :schema_version, :results, :related_identifiers, :published, :registered, :updated, :media, :xml
+class WorkSerializer
+  include FastJsonapi::ObjectSerializer
 
-  belongs_to :data_center, serializer: DataCenterSerializer
-  belongs_to :member, serializer: MemberSerializer
+  cache_options enabled: true, cache_length: 8.hours
 
-  belongs_to :resource_type, serializer: ResourceTypeSerializer
+  attributes :id, :doi, :identifier, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :version, :license, :schema_version, :results, :related_identifiers, :published, :registered, :updated, :media, :xml
 
-  def id
-    object.identifier
-  end
-
-  def media
-    object.media.present? ? object.media.map { |m| { media_type: m.split(":", 2).first, url: m.split(":", 2).last }} : nil
-  end
-
-  def updated
-    object.updated_at
-  end
+  belongs_to :data_center
+  belongs_to :member
+  belongs_to :resource_type
 end

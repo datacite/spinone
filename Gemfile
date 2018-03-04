@@ -5,10 +5,10 @@ gem 'rails', '~> 5.1', '>= 5.1.4'
 gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'rake', '~> 12.0'
 gem 'bugsnag', '~> 6.3'
-gem 'maremma', '~> 3.5'
+gem 'maremma', '~> 4.0'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.23'
-gem 'active_model_serializers', '~> 0.10.4'
+gem 'fast_jsonapi', git: 'https://github.com/Netflix/fast_jsonapi.git', branch: 'master' 
 gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
@@ -33,7 +33,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "rspec-rails", "~> 3.1.0"
   gem 'byebug'
   gem 'spring'
   gem "brakeman", "~> 2.6.0", :require => false
@@ -41,6 +40,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem "launchy", "~> 2.4.2"
   gem "rack-test", "~> 0.6.2", :require => "rack/test"
   gem 'simplecov'

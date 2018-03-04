@@ -9,7 +9,11 @@ require File.expand_path('../../config/environment', __FILE__)
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
-require "rspec/rails"
+# only load rspec modules that don't use ActiveRecord
+require 'rspec/rails/view_rendering'
+require 'rspec/rails/matchers'
+require 'rspec/rails/file_fixture_support'
+require 'rspec/rails/fixture_file_upload_support'
 require "shoulda-matchers"
 require "webmock/rspec"
 require "rack/test"
@@ -34,24 +38,11 @@ VCR.configure do |c|
 end
 
 RSpec.configure do |config|
-  config.fixture_path = "#{::Rails.root}/spec/fixtures/"
-
   # config.include WebMock::API
   config.include Rack::Test::Methods, :type => :api
   config.include Rack::Test::Methods, :type => :controller
 
   def app
     Rails.application
-  end
-
-  def capture_stdout(&block)
-    original_stdout = $stdout
-    $stdout = fake = StringIO.new
-    begin
-      yield
-    ensure
-      $stdout = original_stdout
-    end
-    fake.string
   end
 end

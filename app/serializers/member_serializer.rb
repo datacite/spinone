@@ -1,12 +1,7 @@
-class MemberSerializer < ActiveModel::Serializer
-  cache key: 'member'
-  attributes :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created, :updated
+class MemberSerializer
+  include FastJsonapi::ObjectSerializer
 
-  def created
-    object.created_at
-  end
+  cache_options enabled: true, cache_length: 12.hours
 
-  def updated
-    object.updated_at
-  end
+  attributes :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created, :updated
 end

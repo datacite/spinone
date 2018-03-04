@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://942edfea859b
+      - Maremma - http://2d089a0d8a1d
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -16,48 +16,49 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      Date:
+      - Sun, 04 Mar 2018 12:33:04 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Sat, 16 Dec 2017 10:07:17 GMT
-      Etag:
-      - W/"3e07606b8356a5e8e6e648559a815b2c"
-      Server:
-      - openresty/1.11.2.2
-      Status:
-      - 200 OK
-      Vary:
-      - Accept-Encoding
-      X-Anonymous-Consumer:
-      - 'true'
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 5.1.12
-      X-Request-Id:
-      - 645b8cde-55c6-4b63-acf0-7beadbfc2c63
-      X-Runtime:
-      - '0.006381'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '2348'
       Connection:
       - keep-alive
+      Set-Cookie:
+      - AWSALB=NcPeH8ooI2o+t7SXmx8SNqYVnWPvIGud4mNZOfs/TlOPaPtXMCn3FfvNNUKMFJhkMP4yMEzKfII5Z/hRWacikAsSt078ThweDZalQm0ZT7naSCl0ydyzS3/G+PvW;
+        Expires=Sun, 11 Mar 2018 12:33:04 GMT; Path=/
+      Status:
+      - 200 OK
+      X-Anonymous-Consumer:
+      - 'true'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d50d27ac-3a85-4a66-8c86-76993b48e24b
+      Etag:
+      - W/"3e07606b8356a5e8e6e648559a815b2c"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.005705'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.1.12
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
         National Data Service","description":"\u003cp\u003eThe Australian National
         Data Service (ANDS) makes Australia\u0026#39;s research data assets more valuable
@@ -84,5 +85,5 @@ http_interactions:
         Pacific","country":"Australia","year":2010,"logo-url":"https://assets.test.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
         3 9902 0585","created":"2016-02-15T16:14:25Z","updated":"2017-12-14T10:25:03Z"}}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 10:07:21 GMT
+  recorded_at: Sun, 04 Mar 2018 12:33:29 GMT
 recorded_with: VCR 3.0.3

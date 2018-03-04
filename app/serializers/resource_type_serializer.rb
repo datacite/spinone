@@ -1,8 +1,7 @@
-class ResourceTypeSerializer < ActiveModel::Serializer
-  cache key: 'resource_type'
-  attributes :title, :updated
+class ResourceTypeSerializer
+  include FastJsonapi::ObjectSerializer
 
-  def updated
-    object.updated_at
-  end
+  cache_options enabled: true, cache_length: 12.hours
+
+  attributes :title, :updated
 end

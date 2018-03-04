@@ -1,5 +1,5 @@
 class Page < Base
-  attr_reader :id, :author, :title, :container_title, :description, :license, :url, :image_url, :tags, :issued, :updated_at
+  attr_reader :id, :author, :title, :container_title, :description, :license, :url, :image_url, :tags, :issued, :updated
 
   def initialize(attributes, options={})
     @id = attributes.fetch("@id")
@@ -14,7 +14,7 @@ class Page < Base
     @image_url = attributes.fetch("image", nil)
     @tags = attributes.fetch("keywords", "").split(", ")
     @issued = attributes.fetch("datePublished", nil)
-    @updated_at = @issued
+    @updated = @issued
   end
 
   def self.get_query_url(options={})

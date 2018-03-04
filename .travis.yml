@@ -16,10 +16,9 @@ install:
 
 before_script:
   - memcached -p 11211 &
-  - cp .env.travis .env
 
 script:
-  # - bundle exec rspec spec
+  - bundle exec rspec spec
   - bundle exec codeclimate-test-reporter || true
 
 after_success:

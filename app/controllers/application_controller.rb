@@ -4,9 +4,6 @@ class ApplicationController < ActionController::API
 
   attr_accessor :current_user
 
-  # pass ability into serializer
-  serialization_scope :current_ability
-
   before_action :default_format_json
   after_action :set_jsonp_format, :set_consumer_header
 
