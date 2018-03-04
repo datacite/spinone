@@ -57,13 +57,20 @@ class Work < Base
     @member_id = @member_id.downcase if @member_id.present?
     @resource_type_id = attributes.fetch("resourceTypeGeneral", nil)
     @resource_type_id = @resource_type_id.underscore.dasherize if @resource_type_id.present?
+    @cache_key = "work/#{@id}-#{@updated}"
+  end
 
-    # associations
-    @data_center = Array(options[:data_centers]).find { |p| p.id == @data_center_id }
-    @member = Array(options[:members]).find { |r| r.id == @member_id }
-    @resource_type = Array(options[:resource_types]).find { |r| r.id == @resource_type_id }
+  # associations
+  def data_center
+    cached_data_center_response(data_center_id.to_s.upcase) if data_center_id.present?
+  end
 
-    @cache_key = "works/#{@id}-#{@updated_at}"
+  def member
+    cached_member_response(member_id.to_s.upcase) if member_id.present?
+  end
+
+  def resource_type
+    cached_resource_type_response(resource_type_id) if resource_type_id.present?
   end
 
   def identifiers
@@ -212,16 +219,10 @@ class Work < Base
 
       if Rails.logger.level < 2
         Librato.timing "doi.parse_item" do
-          data = parse_item(item,
-            resource_types: cached_resource_types,
-            data_centers: [data_center].compact,
-            members: cached_members)
+          data = parse_item(item)
         end
       else
-        data = parse_item(item,
-          resource_types: cached_resource_types,
-          data_centers: [data_center].compact,
-          members: cached_members)
+        data = parse_item(item)
       end
 
       { data: data, meta: meta }
@@ -268,16 +269,10 @@ class Work < Base
 
       if Rails.logger.level < 2
         Librato.timing "doi.parse_items" do
-          data = parse_items(items,
-            resource_types: cached_resource_types,
-            data_centers: data_centers,
-            members: cached_members)
+          data = parse_items(items)
         end
       else
-        data = parse_items(items,
-          resource_types: cached_resource_types,
-          data_centers: data_centers,
-          members: cached_members)
+        data = parse_items(items)
       end
 
       { data: data, meta: meta }

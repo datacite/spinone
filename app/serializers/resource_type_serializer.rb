@@ -1,7 +1,7 @@
 class ResourceTypeSerializer
   include FastJsonapi::ObjectSerializer
 
-  cache_options enabled: true, cache_length: 12.hours
-
+  set_type "resource-types"
+  cache_options enabled: true, cache_length: 1.month
   attributes :title, :updated
 end

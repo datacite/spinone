@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://2d089a0d8a1d
+      - Maremma - http://1d8ace8a1cf2
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 04 Mar 2018 12:33:10 GMT
+      - Sun, 04 Mar 2018 19:41:05 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -34,7 +34,7 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":7},"response":{"numFound":241,"start":0,"docs":[{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvenJqMno1anh2OC4xPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+WW91LCBGdWNrPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+RW1iYXJnbyBjaGFuZ2VyPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk1lbmRlbGV5PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE4PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+Q29jYWluZTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTgtMDUtMzE8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL2VtYmFyZ29lZEFjY2VzcyIvPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoRW1iYXJnbzogMjAxOC0wNS0zMSk8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+Cg==","allocator_symbol":"BL","minted":"2018-03-01T11:14:45Z","updated":"2018-03-01T11:14:45Z","doi":"10.4124/ZRJ2Z5JXV8.1","schema_version":"3","creator":["You,
+      string: '{"responseHeader":{"status":0,"QTime":2},"response":{"numFound":241,"start":0,"docs":[{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvenJqMno1anh2OC4xPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+WW91LCBGdWNrPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+RW1iYXJnbyBjaGFuZ2VyPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk1lbmRlbGV5PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE4PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+Q29jYWluZTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTgtMDUtMzE8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL2VtYmFyZ29lZEFjY2VzcyIvPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoRW1iYXJnbzogMjAxOC0wNS0zMSk8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+Cg==","allocator_symbol":"BL","minted":"2018-03-01T11:14:45Z","updated":"2018-03-01T11:14:45Z","doi":"10.4124/ZRJ2Z5JXV8.1","schema_version":"3","creator":["You,
         Fuck"],"resourceTypeGeneral":"Dataset","title":["Embargo changer"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset"},{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvaDVnaHNmNXBzMy4xPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SmF5YWNoYW5kcmFuLCBBbXVkaGE8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5UZXN0IHRpdGxlMSBmZWIyODwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5NZW5kZWxleTwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxODwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0Pk1hdGhlbWF0aWNzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSI+MjAxOC0wMy0yMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+RGF0YXNldDwvcmVzb3VyY2VUeXBlPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9ImluZm86ZXUtcmVwby9zZW1hbnRpY3MvZW1iYXJnb2VkQWNjZXNzIi8+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL29wZW5zb3VyY2Uub3JnL2xpY2Vuc2VzL0JTRC0zLUNsYXVzZSI+QlNEIDMtQ2xhdXNlICgiUmV2aXNlZCIpIExpY2Vuc2UgKEVtYmFyZ286IDIwMTgtMDMtMjMpPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0Pgo8L3Jlc291cmNlPgo=","allocator_symbol":"BL","minted":"2018-02-28T14:17:52Z","updated":"2018-02-28T14:17:52Z","doi":"10.4124/H5GHSF5PS3.1","schema_version":"3","creator":["Jayachandran,
         Amudha"],"resourceTypeGeneral":"Dataset","title":["Test title1 feb28"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://opensource.org/licenses/BSD-3-Clause"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset"},{"datacentre_symbol":"BL.MENDELEY","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvc3N2YnNjM2IyOC4yPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPk1ELTYzMCBEYXRhc2V0IHdoaWNoIGhhcyBjb21lIG91dCBvZiBlbWJhcmdvIHN0aWxsIHNob3dzICJVbmRlciBlbWJhcmdvIiBtZXNzYWdlIC0gNDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5NZW5kZWxleTwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxODwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0Pk1hdGhlbWF0aWNzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSI+MjAxOC0wMy0wMTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+RGF0YXNldDwvcmVzb3VyY2VUeXBlPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9ImluZm86ZXUtcmVwby9zZW1hbnRpY3MvZW1iYXJnb2VkQWNjZXNzIi8+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsIChFbWJhcmdvOiAyMDE4LTAzLTAxKTwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KPC9yZXNvdXJjZT4K","allocator_symbol":"BL","minted":"2018-02-28T09:57:50Z","updated":"2018-02-28T09:57:50Z","doi":"10.4124/SSVBSC3B28.2","schema_version":"3","creator":["Natra,
         Mahesh"],"resourceTypeGeneral":"Dataset","title":["MD-630 Dataset which has
@@ -84,16 +84,16 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sun, 04 Mar 2018 12:33:36 GMT
+  recorded_at: Sun, 04 Mar 2018 19:41:11 GMT
 - request:
     method: get
-    uri: https://api.test.datacite.org/clients?ids=BL.MENDELEY
+    uri: https://app.test.datacite.org/clients?ids=BL.MENDELEY
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://2d089a0d8a1d
+      - Maremma - http://1d8ace8a1cf2
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -102,7 +102,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 04 Mar 2018 12:33:10 GMT
+      - Sun, 04 Mar 2018 19:41:05 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Connection:
@@ -114,30 +114,23 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Vary:
-      - Accept-Encoding
+      - Accept-Encoding, Origin
       Etag:
-      - W/"34d1821ce606eec4293a54be43295a6c"
+      - W/"6482868dcf4367dd7ecb9779a998e1d0"
       X-Runtime:
-      - '0.026452'
+      - '0.011861'
       X-Request-Id:
-      - 5dab997a-f20a-4516-b465-f812fd7cd5f0
+      - 9af0fc49-233d-4c36-8ed3-a2f37df8aeb6
       X-Powered-By:
-      - Phusion Passenger 5.2.0
+      - Phusion Passenger 5.2.1
       Server:
-      - nginx/1.12.2 + Phusion Passenger 5.2.0
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      - nginx/1.12.2 + Phusion Passenger 5.2.1
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"id":"bl.mendeley","type":"clients","attributes":{"name":"Mendeley
-        Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","url":null,"is-active":true,"created":"2014-10-03T15:53:41Z","updated":"2018-02-26T01:30:38Z"},"relationships":{"provider":{"data":{"id":"orbis","type":"providers"}}}}],"included":[{"id":"orbis","type":"providers","attributes":{"name":"Orbis
-        Cascade Alliance","symbol":"ORBIS","year":2018,"contact-name":"Kyle Banerjee","contact-email":"banerjek@ohsu.edu","logo-url":"https://assets.test.datacite.org/images/members/orbis.png","is-active":true,"created":"2018-01-16T12:39:49Z","updated":"2018-02-26T01:25:41Z"}}],"meta":{"total":1,"total-pages":1,"page":1,"years":[{"id":"2014","title":"2014","count":1}],"providers":[{"id":"bl","title":null,"count":1}]}}'
+        Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","url":null,"is-active":true,"has-password":true,"created":"2014-10-03T15:53:41Z","updated":"2018-03-04T01:30:39Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}}],"included":[{"id":"bl","type":"providers","attributes":{"name":"The
+        British Library","symbol":"BL","year":2010,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","logo-url":"https://assets.datacite.org/images/members/bl.png","is-active":true,"has-password":true,"created":"2010-01-01T00:00:00.000Z","updated":"2018-03-04T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":1,"total-pages":1,"page":1,"providers":[{"id":"BL","title":"The
+        British Library","count":1}],"years":[{"id":"2014","title":"2014","count":1}]}}'
     http_version: 
-  recorded_at: Sun, 04 Mar 2018 12:33:36 GMT
+  recorded_at: Sun, 04 Mar 2018 19:41:12 GMT
 recorded_with: VCR 3.0.3

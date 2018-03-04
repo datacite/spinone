@@ -16,7 +16,7 @@ class Member < Base
     @phone = attributes.fetch("phone", nil)
     @created = attributes.fetch("created", nil)
     @updated = attributes.fetch("updated", nil)
-    @cache_key = "members/#{@id}-#{@updated_at}"
+    @cache_key = "member/#{@id}-#{@updated}"
   end
 
   def self.get_query_url(options={})

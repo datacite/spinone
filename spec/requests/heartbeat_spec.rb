@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe '/heartbeat', type: :api do
+describe '/heartbeat', type: :request do
   it "get heartbeat" do
     get '/heartbeat'
 

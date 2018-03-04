@@ -1,12 +1,5 @@
 class WorksController < ApplicationController
-  def set_include
-    if params[:include].present?
-      @include = params[:include].split(",").map { |i| i.downcase.underscore }.join(",")
-      @include = [@include]
-    else
-      @include = nil
-    end
-  end
+  before_action :set_include
 
   def index
     @works = Work.where(params)
@@ -30,5 +23,13 @@ class WorksController < ApplicationController
     @work = @work[:data]
 
     render json: WorkSerializer.new(@work, options).serialized_json, status: :ok
+  end
+
+  def set_include
+    if params[:include].present?
+      @include = params[:include].split(",").map { |i| i.downcase.underscore.to_sym }
+    else
+      @include = nil
+    end
   end
 end

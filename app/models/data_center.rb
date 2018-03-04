@@ -1,5 +1,5 @@
 class DataCenter < Base
-  attr_reader :id, :name, :prefixes, :data_center_id, :member_id, :ids, :member, :year, :created, :updated
+  attr_reader :id, :name, :prefixes, :member_id, :ids, :year, :created, :updated, :member, :cache_key
 
   # include helper module for caching infrequently changing resources
   include Cacheable
@@ -8,18 +8,23 @@ class DataCenter < Base
     attributes = item.fetch('attributes', {})
     @id = item.fetch("id", nil).downcase
     @name = attributes.fetch("name", nil)
-    @created_at = attributes.fetch("created", nil)
-    @updated_at = attributes.fetch("updated", nil)
+    @year = attributes.fetch("year", nil)
+    @created = attributes.fetch("created", nil)
+    @updated = attributes.fetch("updated", nil)
     @prefixes = attributes.fetch("prefixes", [])
 
     @member_id = @id.split('.', 2).first
     @member_id = @member_id.downcase if @member_id.present?
 
-    # associations
-    @member = Array(options[:members]).find { |s| s.id == @member_id }
+    @cache_key = "data-center/#{@id}-#{@updated}"
   end
 
   alias_attribute :title, :name
+
+  # associations
+  def member
+    cached_member_response(member_id.to_s.upcase)
+  end
 
   def self.get_query_url(options={})
     if options[:id].present?
@@ -28,7 +33,7 @@ class DataCenter < Base
       params = { query: options.fetch(:query, nil),
                  ids: options.fetch(:ids, nil),
                  year: options.fetch(:year, nil),
-                 "provider-id": options.fetch("provider-id", nil),
+                 "provider-id": options.fetch("member-id", nil),
                  "page[size]" => options.dig(:page, :size),
                  "page[number]" => options.dig(:page, :number) }.compact
       url + "?" + URI.encode_www_form(params)
@@ -52,6 +57,6 @@ class DataCenter < Base
   end
 
   def self.url
-    "#{ENV["LUPO_URL"]}/clients"
+    "#{ENV["APP_URL"]}/clients"
   end
 end

@@ -39,8 +39,10 @@ end
 
 RSpec.configure do |config|
   # config.include WebMock::API
-  config.include Rack::Test::Methods, :type => :api
-  config.include Rack::Test::Methods, :type => :controller
+  config.include Rack::Test::Methods, :type => :request
+
+  # add custom json method
+  config.include RequestSpecHelper, type: :request
 
   def app
     Rails.application

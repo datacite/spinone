@@ -1,10 +1,11 @@
 class ResourceType < Base
-  attr_reader :id, :title, :updated
+  attr_reader :id, :title, :updated, :cache_key
 
   def initialize(attributes, options={})
     @id = attributes.fetch("id").underscore.dasherize
     @title = attributes.fetch("title", nil)
     @updated = DATACITE_SCHEMA_DATE + "T00:00:00Z"
+    @cache_key = "resource-type/#{@id}-#{@updated}"
   end
 
   def self.get_query_url(options={})

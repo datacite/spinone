@@ -1,7 +1,7 @@
 class MemberSerializer
   include FastJsonapi::ObjectSerializer
 
+  set_type :members
   cache_options enabled: true, cache_length: 12.hours
-
-  attributes :id, :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created, :updated
+  attributes :title, :description, :member_type, :region, :country, :year, :logo_url, :email, :website, :phone, :created, :updated
 end
