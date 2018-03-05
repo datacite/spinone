@@ -15,6 +15,7 @@ class Base
   end
 
   def self.collect_data(options = {})
+    options[:page] ||= {}
     data = get_data(options)
     parse_data(data, options)
   end

@@ -83,7 +83,7 @@ class UserStory < Base
         total_pages = (total.to_f / 100).ceil
 
         (1..total_pages).each do |page|
-          options[:page] = page
+          options[:page][:number] = page
           query_url = get_query_url(options)
           result = Maremma.get(query_url, options)
           data += (result.body.dig("data", "items") || [])
@@ -103,8 +103,7 @@ class UserStory < Base
 
       { data: parse_item(item) }
     else
-      items = result.fetch("data", [])
-      data = parse_items(items)
+      data = parse_items(result.fetch(:data, []))
       meta = { total: result[:total],
                milestones: parse_meta(data, "milestone"),
                categories: parse_meta(data, "categories"),
