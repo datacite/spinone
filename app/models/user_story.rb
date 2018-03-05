@@ -1,8 +1,8 @@
 class UserStory < Base
-  attr_reader :id, :url, :title, :description, :state, :milestone, :comments, :categories, :stakeholders, :inactive, :created, :updated, :closed
+  attr_reader :id, :url, :title, :description, :state, :milestone, :comments, :projects, :stakeholders, :inactive, :created, :updated, :closed
 
   LABEL_COLORS = {
-    "category" => "b1c9f0",
+    "project" => "006b75",
     "stakeholder" => "f9cfb9",
     "state" => "ededed",
     "inactive" => "c8d1da"
@@ -15,8 +15,8 @@ class UserStory < Base
     @comments = attributes.fetch("comments", nil)
     labels = Array.wrap(attributes.fetch("labels", nil))
       .select { |l| l["name"] != "user story" }
-    @categories = labels
-      .select { |l| l["color"] == LABEL_COLORS["category"] }
+    @projects = labels
+      .select { |l| l["color"] == LABEL_COLORS["project"] }
       .map { |l| l["name"] }
     @stakeholders = labels
       .select { |l| l["color"] == LABEL_COLORS["stakeholder"] }
@@ -37,7 +37,7 @@ class UserStory < Base
     if options[:id].present?
       "#{ENV["GITHUB_MILESTONES_URL"]}/issues/#{options[:id]}?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
     else
-      label = ["user story", options[:category], options[:stakeholder]].compact
+      label = ["user story", options[:project], options[:stakeholder]].compact
         .map { |l| "label:\"#{l}\"" }.join(" ")
       milestone = [options[:milestone]].compact
         .map { |m| "milestone:\"#{m}\"" }.first
@@ -105,8 +105,8 @@ class UserStory < Base
     else
       data = parse_items(result.fetch(:data, []))
       meta = { total: result[:total],
+               projects: parse_meta(data, "projects"),
                milestones: parse_meta(data, "milestone"),
-               categories: parse_meta(data, "categories"),
                stakeholders: parse_meta(data, "stakeholders"),
                state: parse_meta(data, "state") }
 

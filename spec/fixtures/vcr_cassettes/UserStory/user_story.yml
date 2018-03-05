@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/datacite/datacite/issues/10?github_token=<GITHUB_PERSONAL_ACCESS_TOKEN>
+    uri: https://api.github.com/repos/datacite/datacite/issues/59?github_token=<GITHUB_PERSONAL_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
@@ -19,27 +19,27 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Mon, 05 Mar 2018 07:53:19 GMT
+      - Mon, 05 Mar 2018 09:23:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '3758'
+      - '3928'
       Status:
       - 200 OK
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '58'
+      - '57'
       X-Ratelimit-Reset:
-      - '1520237041'
+      - '1520244081'
       Cache-Control:
       - public, max-age=60, s-maxage=60
       Vary:
       - Accept
       Etag:
-      - '"398481751cfda72890e1ba15f982e1a4"'
+      - '"da0b3aa3f89171b8f1c79fcd4f1eae56"'
       Last-Modified:
-      - Mon, 05 Mar 2018 06:47:36 GMT
+      - Mon, 05 Mar 2018 09:23:32 GMT
       X-Github-Media-Type:
       - unknown, github.v3
       Access-Control-Expose-Headers:
@@ -58,24 +58,21 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.067004'
+      - '0.057943'
       X-Github-Request-Id:
-      - C548:1035:343463:7E652A:5A9CF76F
+      - DB49:103B:8AE60D:11FC484:5A9D0CAE
     body:
       encoding: ASCII-8BIT
-      string: '{"url":"https://api.github.com/repos/datacite/datacite/issues/10","repository_url":"https://api.github.com/repos/datacite/datacite","labels_url":"https://api.github.com/repos/datacite/datacite/issues/10/labels{/name}","comments_url":"https://api.github.com/repos/datacite/datacite/issues/10/comments","events_url":"https://api.github.com/repos/datacite/datacite/issues/10/events","html_url":"https://github.com/datacite/datacite/issues/10","id":232702150,"number":10,"title":"DOI
-        Registration Reports","user":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"labels":[{"id":793025391,"url":"https://api.github.com/repos/datacite/datacite/labels/user%20story","name":"user
-        story","color":"d4c5f9","default":false}],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/datacite/datacite/milestones/28","html_url":"https://github.com/datacite/datacite/milestone/28","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/28/labels","id":2579725,"number":28,"title":"Add
-        DOI stats to DOI registration service","description":"The current [DataCite
-        Stats](https://stats.datacite.org) service provides an overview of the basic
-        DOI registration stats. This new functionality will provide members the opportunity
-        to retrieve stats about their data centers and DOIs, for example: number of
-        DOIs registered, reports on DOIs that don''t resolve properly (link checker),
-        and others.","creator":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":5,"closed_issues":0,"state":"open","created_at":"2017-06-13T07:47:32Z","updated_at":"2018-01-09T17:41:39Z","due_on":"2018-07-28T07:00:00Z","closed_at":null},"comments":0,"created_at":"2017-05-31T21:29:54Z","updated_at":"2018-03-05T06:47:36Z","closed_at":null,"author_association":"OWNER","body":"As
-        a member, I want to have statistics, so that I can report my impact.\r\n\r\n####
-        Related User Stories\r\n\r\n* As a member, I want up to date statistics/infos,
-        so that I can keep track and see the impact.\r\n* As a data manager, I want
-        better reporting, so more people understand the impact of their data.","closed_by":null}'
+      string: '{"url":"https://api.github.com/repos/datacite/datacite/issues/59","repository_url":"https://api.github.com/repos/datacite/datacite","labels_url":"https://api.github.com/repos/datacite/datacite/issues/59/labels{/name}","comments_url":"https://api.github.com/repos/datacite/datacite/issues/59/comments","events_url":"https://api.github.com/repos/datacite/datacite/issues/59/events","html_url":"https://github.com/datacite/datacite/issues/59","id":233523175,"number":59,"title":"Automatic
+        DOI suffix generation","user":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"labels":[{"id":793025202,"url":"https://api.github.com/repos/datacite/datacite/labels/data%20center","name":"data
+        center","color":"f9cfb9","default":false},{"id":793025291,"url":"https://api.github.com/repos/datacite/datacite/labels/development","name":"development","color":"ffc000","default":false},{"id":793025345,"url":"https://api.github.com/repos/datacite/datacite/labels/fabrica","name":"fabrica","color":"006b75","default":false},{"id":793025391,"url":"https://api.github.com/repos/datacite/datacite/labels/user%20story","name":"user
+        story","color":"d4c5f9","default":false}],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/datacite/datacite/milestones/10","html_url":"https://github.com/datacite/datacite/milestone/10","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/10/labels","id":2564092,"number":10,"title":"Develop
+        new DOI Fabrica Service","description":"The current DataCite Metadata Store
+        (MDS) will be renovated to become the new DOI Fabrica Service, including all
+        the functionalities needed to manage providers, clients, and prefixes. ","creator":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":9,"closed_issues":11,"state":"closed","created_at":"2017-06-06T07:02:38Z","updated_at":"2017-12-08T07:23:15Z","due_on":"2017-10-19T07:00:00Z","closed_at":"2017-11-01T13:57:48Z"},"comments":0,"created_at":"2017-06-05T08:17:55Z","updated_at":"2018-03-05T09:23:32Z","closed_at":null,"author_association":"OWNER","body":"As
+        a data center, I want the option of having the mint DOI API operation automatically
+        assigning a unique DOI suffix if it is not specified, so this logic does not
+        have to be included in my app.","closed_by":null}'
     http_version: 
-  recorded_at: Mon, 05 Mar 2018 07:53:21 GMT
+  recorded_at: Mon, 05 Mar 2018 09:24:06 GMT
 recorded_with: VCR 3.0.3
