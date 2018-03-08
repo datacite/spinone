@@ -120,7 +120,9 @@ class Work < Base
         options[:mm] = 1
       end
 
-      if options[:sort].present?
+      if options[:sample].present?
+        sort = "random_#{rand(1...100000)}"
+      elsif options[:sort].present?
         sort = case options[:sort]
                when "registered" then "minted"
                when "published" then "publicationYear"
@@ -133,7 +135,11 @@ class Work < Base
       order = options[:order] == "asc" ? "asc" : "desc"
 
       page = (options.dig(:page, :number) || 1).to_i
-      per_page = (options.dig(:page, :size) || 25).to_i
+      if options[:sample].present?
+        per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
+      else
+        per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
+      end
       offset = (page - 1) * per_page
 
       created_date = options['from-created-date'].present? || options['until-created-date'].present?
