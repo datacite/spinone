@@ -26,7 +26,6 @@ class Work < Base
     @media = @media.map { |m| { media_type: m.split(":", 2).first, url: m.split(":", 2).last }} if @media.present?
     @author = get_authors(attributes.fetch("creator", nil))
     @url = attributes.fetch("url", nil)
-
     @title = ActionController::Base.helpers.sanitize(attributes.fetch("title", []).first, tags: %w(strong em b i code pre sub sup br))
     @container_title = attributes.fetch("publisher", nil)
     @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", []).first, tags: %w(strong em b i code pre sub sup br)).presence || nil
@@ -121,7 +120,7 @@ class Work < Base
       end
 
       if options[:sample].present?
-        sort = "random_#{rand(1...100000)}"
+        sort = Rails.env.test? ? "random_1234" : "random_#{rand(1...100000)}"
       elsif options[:sort].present?
         sort = case options[:sort]
                when "registered" then "minted"
@@ -160,10 +159,18 @@ class Work < Base
       fq << "publicationYear:#{options[:year]}" if options[:year].present?
       fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
 
-      params = { q: options.fetch(:query, nil).presence || "*:*",
+      if options[:url].present?
+        q = "url:#{options[:url]}"
+      elsif options[:query].present?
+        q = options[:query]
+      else
+        q = "*:*"
+      end
+
+      params = { q: q,
                  start: offset,
                  rows: per_page,
-                 fl: "doi,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
+                 fl: "doi,url,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
                  qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
