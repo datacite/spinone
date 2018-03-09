@@ -49,8 +49,8 @@ describe "Works", type: :request, vcr: true do
   #
   #   expect(json["data"].size).to eq(10)
   #   work = json["data"].first
-  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cn8jtw67ht.2")
-  #   expect(work.dig("attributes", "title")).to eq("folder copy test")
+  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.539")
+  #   expect(work.dig("attributes", "title")).to eq("tind/tind-base: v1.0.0.0.0")
   # end
 
   # it "works with include data-center" do

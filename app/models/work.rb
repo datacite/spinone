@@ -138,6 +138,7 @@ class Work < Base
       group_field = nil
       group_ngroups = nil
       group_format = nil
+      group_limit = nil
 
       if options[:sample].present? && options["sample-group"].present?
         group_field = case options["sample-group"]
@@ -150,6 +151,7 @@ class Work < Base
           group = "true"
           group_ngroups = "true"
           group_format = "simple"
+          group_limit = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
         else
           options.delete("sample-group")
         end
@@ -207,6 +209,7 @@ class Work < Base
                  'group.field' => group_field,
                  'group.ngroups' => group_ngroups,
                  'group.format' => group_format,
+                 'group.limit' => group_limit,
                  sort: "#{sort} #{order}",
                  defType: "edismax",
                  bq: "updated:[NOW/DAY-1YEAR TO NOW/DAY]",
