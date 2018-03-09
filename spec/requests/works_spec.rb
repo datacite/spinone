@@ -42,37 +42,37 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
   end
 
-  it "works with include data-center" do
-    get '/works?include=data-center'
-
-    expect(last_response.status).to eq(200)
-
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
-
-    expect(json["included"].size).to eq(5)
-    data_center = json["included"].first
-    expect(data_center["id"]).to eq("bl.f1000r")
-    expect(data_center.dig("attributes", "title")).to eq("Faculty of 1000 Research")
-  end
-
-  it "works with include data-center, member and resource-type" do
-    get '/works?include=data-center,member,resource-type'
-
-    expect(last_response.status).to eq(200)
-
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
-
-    expect(json["included"].size).to eq(11)
-    resource_type = json["included"].last
-    expect(resource_type["id"]).to eq("image")
-    expect(resource_type.dig("attributes", "title")).to eq("Image")
-  end
+  # it "works with include data-center" do
+  #   get '/works?include=data-center'
+  #
+  #   expect(last_response.status).to eq(200)
+  #
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq(expected_work.id)
+  #   expect(work.dig("attributes", "title")).to eq(expected_work.title)
+  #
+  #   expect(json["included"].size).to eq(5)
+  #   data_center = json["included"].first
+  #   expect(data_center["id"]).to eq("bl.f1000r")
+  #   expect(data_center.dig("attributes", "title")).to eq("Faculty of 1000 Research")
+  # end
+  #
+  # it "works with include data-center, member and resource-type" do
+  #   get '/works?include=data-center,member,resource-type'
+  #
+  #   expect(last_response.status).to eq(200)
+  #
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq(expected_work.id)
+  #   expect(work.dig("attributes", "title")).to eq(expected_work.title)
+  #
+  #   expect(json["included"].size).to eq(11)
+  #   resource_type = json["included"].last
+  #   expect(resource_type["id"]).to eq("image")
+  #   expect(resource_type.dig("attributes", "title")).to eq("Image")
+  # end
 
   it "works with query" do
     get '/works?query=cancer'
@@ -108,16 +108,16 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "url")).to eq("http://riswebtest.st-andrews.ac.uk/portal/en/datasets/federica--test-affiliation-sent-to-datacite--5111(a620566a-4020-4e5e-b81c-bdc740add6b3).html")
   end
 
-  # it "works with resource-type dataset" do
-  #   get '/works?resource-type-id=dataset'
-  #
-  #   expect(last_response.status).to eq(200)
-  #
-  #   expect(json["data"].size).to eq(25)
-  #   work = json["data"].first
-  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.25499/vrqx4gtidt6dvrku3xhyiq6bzd")
-  #   expect(work.dig("attributes", "title")).to eq("Submitted chemical data for InChIKey YAPQBXQYLJRXSA-UHFFFAOYSA-N")
-  # end
+  it "works with resource-type dataset" do
+    get '/works?resource-type-id=dataset'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json["data"].size).to eq(25)
+    work = json["data"].first
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.25499/vrqx4gtidt6dvrku3xhyiq6bzd")
+    expect(work.dig("attributes", "title")).to eq("Submitted chemical data for InChIKey YAPQBXQYLJRXSA-UHFFFAOYSA-N")
+  end
   #
   # it "works with resource-type dataset and data-center mendeley" do
   #   get '/works?resource-type-id=dataset&data-center-id=bl.mendeley'
