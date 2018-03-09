@@ -32,7 +32,7 @@ class Page < Base
 
       { data: parse_item(item) }
     else
-      items = items.select { |i| i.values.join("\n").downcase.include?(options[:query]) } if options[:query]
+      items = items.select { |i| (i.fetch("title", "").downcase + i.fetch("description", "").downcase).include?(options[:query]) } if options[:query]
       items = items.select { |i| i.fetch("keywords", "").split(", ").include?(options[:tag]) } if options[:tag]
 
       meta = { total: items.length, tags: parse_meta(items) }

@@ -10,7 +10,7 @@ describe Page, type: :model, vcr: true do
 
   it "query" do
     pages = Page.where(query: "thor")[:data]
-    expect(pages.length).to eq(15)
+    expect(pages.length).to eq(4)
     page = pages.first
     expect(page.title).to eq("Wellcome explains the benefits of developing an open and global grant identifier")
   end
