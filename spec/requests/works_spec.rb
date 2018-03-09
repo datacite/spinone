@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Works", type: :request, vcr: true do
-  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.21956/gatesopenres.564.r214", title: "Referee report. For: FL Minecraft ORCID Signin [version 1; referees: 1 approved, 1 approved with reservations]") }
+  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.21956/wellcomeopenres.60640.r16370", title: "Referee report. For: Lina wellcome overleaf submission v2 - via overleaf [version 2; referees: 1 approved]") }
 
   it "works" do
     get '/works'
@@ -12,7 +12,7 @@ describe "Works", type: :request, vcr: true do
     expect(meta["data_centers"].size).to eq(15)
     expect(meta["data_centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>4786)
     expect(meta["years"].size).to eq(15)
-    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>966)
+    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>968)
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
@@ -49,8 +49,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/ccrltqv")
-    expect(work.dig("attributes", "title")).to eq("CCDC 703288: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc3llnx")
+    expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
   end
 
   it "works with sample and sample-group limit total to 1000" do
@@ -60,8 +60,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(750)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/ccrltqv")
-    expect(work.dig("attributes", "title")).to eq("CCDC 703288: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc3llnx")
+    expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
   end
 
   # it "works with include data-center" do
@@ -137,8 +137,20 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.25499/vrqx4gtidt6dvrku3xhyiq6bzd")
-    expect(work.dig("attributes", "title")).to eq("Submitted chemical data for InChIKey YAPQBXQYLJRXSA-UHFFFAOYSA-N")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.705")
+    expect(work.dig("attributes", "title")).to eq("Test license other")
+  end
+
+  it "works with checked date" do
+    get '/works?from-checked-date=2018-03-01'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json["data"].size).to eq(6)
+    work = json["data"].first
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0174/test-2")
+    expect(work.dig("attributes", "title")).to eq("Schnee im Februar: Auswirkungen auf Wien")
+    expect(work.dig("attributes", "checked")).to eq("2018-03-08T09:20:16Z")
   end
   #
   # it "works with resource-type dataset and data-center mendeley" do

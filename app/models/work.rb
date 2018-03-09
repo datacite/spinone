@@ -1,5 +1,5 @@
 class Work < Base
-  attr_reader :id, :doi, :identifier, :cache_key, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :published, :registered, :updated
+  attr_reader :id, :doi, :identifier, :cache_key, :url, :author, :title, :container_title, :description, :resource_type_subtype, :data_center_id, :member_id, :resource_type_id, :data_center, :member, :resource_type, :license, :version, :results, :related_identifiers, :schema_version, :xml, :media, :checked, :published, :registered, :updated
 
   # include author methods
   include Authorable
@@ -32,6 +32,7 @@ class Work < Base
     @published = attributes.fetch("publicationYear", nil)
     @registered = attributes.fetch("minted", nil)
     @updated = attributes.fetch("updated", nil)
+    @checked = attributes.fetch("checked", nil)
     @resource_type_subtype = attributes.fetch("resourceType", nil).presence || nil
     @license = normalize_license(attributes.fetch("rightsURI", []))
     @version = attributes.fetch("version", nil)
@@ -177,6 +178,9 @@ class Work < Base
       update_date = get_solr_date_range(options['from-update-date'], options['until-update-date']) if update_date
       registered = get_solr_date_range(options[:registered], options[:registered]) if options[:registered].present?
 
+      checked_date = options["from-checked-date"].present? || options["until-checked-date"].present?
+      checked_date = get_solr_date_range(options['from-checked-date'], options['until-checked-date']) if checked_date
+
       fq = %w(has_metadata:true is_active:true)
       fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
       fq << "datacentre_symbol:#{options['data-center-id'].upcase}" if options['data-center-id'].present?
@@ -184,6 +188,7 @@ class Work < Base
       fq << "nameIdentifier:ORCID\\:#{options['person-id']}" if options['person-id'].present?
       fq << "minted:#{created_date}" if created_date
       fq << "updated:#{update_date}" if update_date
+      fq << "checked:#{checked_date}" if checked_date
       fq << "minted:#{registered}" if registered
       fq << "publicationYear:#{options[:year]}" if options[:year].present?
       fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
@@ -199,7 +204,7 @@ class Work < Base
       params = { q: q,
                  start: offset,
                  rows: per_page,
-                 fl: "doi,url,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated",
+                 fl: "doi,url,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated,checked",
                  qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
