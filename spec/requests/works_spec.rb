@@ -42,6 +42,28 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
   end
 
+  it "works with sample and sample-group" do
+    get '/works?sample=1&sample-group=client&page[size]=10'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json["data"].size).to eq(10)
+    work = json["data"].first
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/ccrltqv")
+    expect(work.dig("attributes", "title")).to eq("CCDC 703288: Experimental Crystal Structure Determination")
+  end
+
+  it "works with sample and sample-group limit total to 1000" do
+    get '/works?sample=50&sample-group=client&page[size]=50'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json["data"].size).to eq(750)
+    work = json["data"].first
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/ccrltqv")
+    expect(work.dig("attributes", "title")).to eq("CCDC 703288: Experimental Crystal Structure Determination")
+  end
+
   # it "works with include data-center" do
   #   get '/works?include=data-center'
   #
