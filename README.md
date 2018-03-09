@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/datacite/spinone.svg?branch=master)](https://travis-ci.org/datacite/spinone) [![Code Climate](https://codeclimate.com/github/datacite/spinone/badges/gpa.svg)](https://codeclimate.com/github/datacite/spinone) [![Test Coverage](https://codeclimate.com/github/datacite/spinone/badges/coverage.svg)](https://codeclimate.com/github/datacite/spinone/coverage)
 
-The DataCite REST API. Merges information from the Metadata Store (MDS) other services, and provides this information via a common REST API using the [JSONAPI](http://jsonapi.org/) specification.
+The DataCite REST API that includes information from the Metadata Store (MDS) other services, and provides this information via a common REST API using the [JSONAPI](http://jsonapi.org/) specification.
 
 Examples:
 
