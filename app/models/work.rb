@@ -158,7 +158,11 @@ class Work < Base
       end
 
       page = (options.dig(:page, :number) || 1).to_i
-      if options[:sample].present? && options["sample-group"].blank?
+      if options[:sample].present? && options["sample-group"].present?
+        samples_per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
+        per_page = options.dig(:page, :size).to_i * samples_per_page
+        per_page = (1..1000).include?(per_page) ? per_page : 1000
+      elsif options[:sample].present? && options["sample-group"].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
       else
         per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
@@ -300,7 +304,11 @@ class Work < Base
       facets = result.body.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
-      if options[:sample].present? && options['sample-field'].blank?
+      if options[:sample].present? && options["sample-group"].present?
+        samples_per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
+        per_page = options.dig(:page, :size).to_i * samples_per_page
+        per_page = (1..1000).include?(per_page) ? per_page : 1000
+      elsif options[:sample].present? && options["sample-group"].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
       else
         per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
