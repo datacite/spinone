@@ -145,6 +145,7 @@ class Work < Base
                       when "client" then "datacentre_symbol"
                       when "data-center" then "datacentre_symbol"
                       when "provider" then "allocator_symbol"
+                      when "resource-type" then "resourceTypeGeneral"
                       else nil
                       end
         if group_field.present?
