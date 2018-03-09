@@ -108,27 +108,27 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "url")).to eq("http://riswebtest.st-andrews.ac.uk/portal/en/datasets/federica--test-affiliation-sent-to-datacite--5111(a620566a-4020-4e5e-b81c-bdc740add6b3).html")
   end
 
-  it "works with resource-type dataset" do
-    get '/works?resource-type-id=dataset'
-
-    expect(last_response.status).to eq(200)
-
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.25499/vrqx4gtidt6dvrku3xhyiq6bzd")
-    expect(work.dig("attributes", "title")).to eq("Submitted chemical data for InChIKey YAPQBXQYLJRXSA-UHFFFAOYSA-N")
-  end
-
-  it "works with resource-type dataset and data-center mendeley" do
-    get '/works?resource-type-id=dataset&data-center-id=bl.mendeley'
-
-    expect(last_response.status).to eq(200)
-
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/rsyr66f522.4")
-    expect(work.dig("attributes", "title")).to eq("File Types Mendeley Test On 9 Feb 2018 - Version 4 (Published)")
-  end
+  # it "works with resource-type dataset" do
+  #   get '/works?resource-type-id=dataset'
+  #
+  #   expect(last_response.status).to eq(200)
+  #
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.25499/vrqx4gtidt6dvrku3xhyiq6bzd")
+  #   expect(work.dig("attributes", "title")).to eq("Submitted chemical data for InChIKey YAPQBXQYLJRXSA-UHFFFAOYSA-N")
+  # end
+  #
+  # it "works with resource-type dataset and data-center mendeley" do
+  #   get '/works?resource-type-id=dataset&data-center-id=bl.mendeley'
+  #
+  #   expect(last_response.status).to eq(200)
+  #
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/rsyr66f522.4")
+  #   expect(work.dig("attributes", "title")).to eq("File Types Mendeley Test On 9 Feb 2018 - Version 4 (Published)")
+  # end
 
   it "work" do
     get '/works/10.4124/9f7xnnys8c.5'
