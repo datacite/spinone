@@ -133,8 +133,30 @@ class Work < Base
       end
       order = options[:order] == "asc" ? "asc" : "desc"
 
+      # grouping for sampling
+      group = nil
+      group_field = nil
+      group_ngroups = nil
+      group_format = nil
+
+      if options[:sample].present? && options["sample-group"].present?
+        group_field = case options["sample-group"]
+                      when "client" then "datacentre_symbol"
+                      when "data-center" then "datacentre_symbol"
+                      when "provider" then "allocator_symbol"
+                      else nil
+                      end
+        if group_field.present?
+          group = "true"
+          group_ngroups = "true"
+          group_format = "simple"
+        else
+          options.delete("sample-group")
+        end
+      end
+
       page = (options.dig(:page, :number) || 1).to_i
-      if options[:sample].present?
+      if options[:sample].present? && options["sample-group"].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
       else
         per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
@@ -181,6 +203,10 @@ class Work < Base
                  'f.minted.facet.range.start' => '2004-01-01T00:00:00Z',
                  'f.minted.facet.range.end' => '2024-01-01T00:00:00Z',
                  'f.minted.facet.range.gap' => '+1YEAR',
+                 group: group,
+                 'group.field' => group_field,
+                 'group.ngroups' => group_ngroups,
+                 'group.format' => group_format,
                  sort: "#{sort} #{order}",
                  defType: "edismax",
                  bq: "updated:[NOW/DAY-1YEAR TO NOW/DAY]",
@@ -257,14 +283,27 @@ class Work < Base
         result = Maremma.get(query_url, options)
       end
 
-      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
+      # check for grouped samples
+      if result.body.dig("data", "grouped").present?
+        grouped = result.body.dig("data", "grouped")
+        items = grouped.values[0].dig("doclist", "docs") || []
+        total = grouped.values[0].fetch("ngroups", 0)
+      else
+        response = result.body.dig("data", "response")
+        items = response.fetch('docs', [])
+        total = response.fetch("numFound", 0)
+      end
 
       facets = result.body.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
-      per_page = (options.dig(:page, :size) || 25).to_i
+      if options[:sample].present? && options['sample-field'].blank?
+        per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
+      else
+        per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
+      end
       offset = (page - 1) * per_page
-      total = result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+
       total_pages = (total.to_f / per_page).ceil
 
       meta = parse_facet_counts(facets, options)
