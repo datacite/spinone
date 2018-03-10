@@ -142,15 +142,14 @@ describe "Works", type: :request, vcr: true do
   end
 
   it "works with checked date" do
-    get '/works?from-checked-date=2018-03-01'
+    get '/works?checked=2018-03-01'
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(6)
+    expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0174/test-2")
-    expect(work.dig("attributes", "title")).to eq("Schnee im Februar: Auswirkungen auf Wien")
-    expect(work.dig("attributes", "checked")).to eq("2018-03-08T09:20:16Z")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.21956/wellcomeopenres.60640.r16370")
+    expect(work.dig("attributes", "title")).to eq("Referee report. For: Lina wellcome overleaf submission v2 - via overleaf [version 2; referees: 1 approved]")
   end
   #
   # it "works with resource-type dataset and data-center mendeley" do
