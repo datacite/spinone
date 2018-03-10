@@ -35,7 +35,8 @@ class DataCenter < Base
                  year: options.fetch(:year, nil),
                  "provider-id": options.fetch("member-id", nil),
                  "page[size]" => options.dig(:page, :size),
-                 "page[number]" => options.dig(:page, :number) }.compact
+                 "page[number]" => options.dig(:page, :number),
+                 include: "provider" }.compact
       url + "?" + URI.encode_www_form(params)
     end
   end

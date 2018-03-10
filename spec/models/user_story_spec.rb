@@ -3,14 +3,14 @@ require 'rails_helper'
 describe UserStory, type: :model, vcr: true do
   it "get_total" do
     total = UserStory.get_total
-    expect(total).to eq(64)
+    expect(total).to eq(68)
   end
 
   it "user_stories" do
     user_stories = UserStory.all[:data]
     expect(user_stories.size).to eq(25)
     user_story = user_stories.first
-    expect(user_story.title).to eq("Add changes in 4.0 and 4.1 schema to Solr index")
+    expect(user_story.title).to eq("Export list of DOIs as CSV")
   end
 
   it "user_story" do
