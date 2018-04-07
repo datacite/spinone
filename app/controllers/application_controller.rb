@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
 
   attr_accessor :current_user
 
-  before_action :default_format_json
+  before_action :default_format_json, :transform_params
   after_action :set_jsonp_format, :set_consumer_header
 
   # from https://github.com/spree/spree/blob/master/api/app/controllers/spree/api/base_controller.rb
@@ -16,12 +16,19 @@ class ApplicationController < ActionController::API
   end
 
   def set_consumer_header
-  if current_user
-    response.headers['X-Credential-Username'] = current_user.uid
-  else
-    response.headers['X-Anonymous-Consumer'] = true
+    if current_user
+      response.headers['X-Credential-Username'] = current_user.uid
+    else
+      response.headers['X-Anonymous-Consumer'] = true
+    end
   end
-end
+
+  # convert parameters with hyphen to parameters with underscore.
+  # deep_transform_keys has been removed in Rails 5.1
+  # https://stackoverflow.com/questions/35812277/fields-parameters-with-hyphen-in-ruby-on-rails
+  def transform_params
+    params.transform_keys! { |key| key.tr('-', '_') }
+  end
 
   def default_format_json
     request.format = :json if request.format.html?

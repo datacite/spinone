@@ -37,9 +37,9 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 e0cd8d49bdf4ac8d63eadfb883578822.cloudfront.net (CloudFront)
+      - 1.1 ac4b1a2be8b91f23027d4654c6fcaa23.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - tTc0WmQCulwT4eENYEnAHV9r7bInjwsYjlQvxjvix3ElUE9V0raUkQ==
+      - NmiOmYmrEXIZyeeMrpKmWvEDztUM0AfnuiG3t-V0Xghvc3bXScW26A==
     body:
       encoding: ASCII-8BIT
       string: !binary |-

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Works", type: :request, vcr: true do
-  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.21956/wellcomeopenres.60640.r16370", title: "Referee report. For: Lina wellcome overleaf submission v2 - via overleaf [version 2; referees: 1 approved]") }
+  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.0133/37522", title: "Dataset O from workspace-1523033259026") }
 
   it "works" do
     get '/works'
@@ -12,7 +12,7 @@ describe "Works", type: :request, vcr: true do
     expect(meta["data_centers"].size).to eq(15)
     expect(meta["data_centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>4786)
     expect(meta["years"].size).to eq(15)
-    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>968)
+    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>1241)
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
@@ -38,8 +38,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc3llnx")
-    expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.208")
+    expect(work.dig("attributes", "title")).to eq("Relevant Dates Test")
   end
 
   it "works with sample and sample-group" do
@@ -47,10 +47,10 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(10)
+    expect(json["data"].size).to eq(1)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc3llnx")
-    expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.208")
+    expect(work.dig("attributes", "title")).to eq("Relevant Dates Test")
   end
 
   it "works with sample and sample-group limit total to 1000" do
@@ -58,10 +58,10 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(750)
+    expect(json["data"].size).to eq(50)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc3llnx")
-    expect(work.dig("attributes", "title")).to eq("CCDC 107249: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.208")
+    expect(work.dig("attributes", "title")).to eq("Relevant Dates Test")
   end
 
   # it "works with include data-center" do
@@ -123,11 +123,11 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(4)
+    expect(json["data"].size).to eq(6)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/a620566a-4020-4e5e-b81c-bdc740add6b3")
-    expect(work.dig("attributes", "title")).to eq("Federica - test affiliation sent to datacite - 5-11-1")
-    expect(work.dig("attributes", "url")).to eq("http://riswebtest.st-andrews.ac.uk/portal/en/datasets/federica--test-affiliation-sent-to-datacite--5111(a620566a-4020-4e5e-b81c-bdc740add6b3).html")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/a330d8b8-8903-4340-82f9-373883fbf6ae")
+    expect(work.dig("attributes", "title")).to eq("Federica - test type sent to datacite - 5_11_1")
+    expect(work.dig("attributes", "url")).to eq("http://riswebtest.st-andrews.ac.uk/portal/en/datasets/federica--test-type-sent-to-datacite--5111(a330d8b8-8903-4340-82f9-373883fbf6ae).html")
   end
 
   it "works with resource-type dataset" do
@@ -137,8 +137,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.705")
-    expect(work.dig("attributes", "title")).to eq("Test license other")
+    expect(work["id"]).to eq(expected_work.id)
+    expect(work.dig("attributes", "title")).to eq(expected_work.title)
   end
 
   it "works with checked date" do
@@ -148,8 +148,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.21956/wellcomeopenres.60640.r16370")
-    expect(work.dig("attributes", "title")).to eq("Referee report. For: Lina wellcome overleaf submission v2 - via overleaf [version 2; referees: 1 approved]")
+    expect(work["id"]).to eq(expected_work.id)
+    expect(work.dig("attributes", "title")).to eq(expected_work.title)
   end
   #
   # it "works with resource-type dataset and data-center mendeley" do

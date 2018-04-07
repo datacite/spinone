@@ -27,7 +27,7 @@ class Page < Base
     items = result.body.fetch("data", [])
 
     if options[:id]
-      item = items.find { |i| i["@id"] == options[:id] }
+      item = items.find { |i| i["@id"] == "https://doi.org/" + options[:id] }
       return nil if item.nil?
 
       { data: parse_item(item) }
@@ -37,10 +37,10 @@ class Page < Base
 
       meta = { total: items.length, tags: parse_meta(items) }
 
-      number = (options["page[number]"] || 1).to_i
-      size = (options["page[size]"] || 25).to_i
-      offset = (number - 1) * size
-      items = items[offset...offset + size] || []
+      page = (options.dig(:page, :number) || 1).to_i
+      per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
+      offset = (page - 1) * per_page
+      items = items[offset...offset + per_page] || []
 
       { data: parse_items(items), meta: meta }
     end

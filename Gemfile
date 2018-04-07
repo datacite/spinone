@@ -8,7 +8,7 @@ gem 'bugsnag', '~> 6.3'
 gem 'maremma', '~> 4.0'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.23'
-gem 'fast_jsonapi', git: 'https://github.com/Netflix/fast_jsonapi.git', branch: 'master'
+gem 'fast_jsonapi', '~> 1.1'
 gem 'colorize', '~> 0.8'
 
 gem "dalli", "~> 2.7.0"
