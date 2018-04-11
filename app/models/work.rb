@@ -177,16 +177,16 @@ class Work < Base
       checked = "(checked:[* TO #{get_datetime_from_input(options[:checked])}] OR (*:* NOT checked:[* TO *]))" if options[:checked].present?
 
       fq = %w(has_metadata:true is_active:true)
-      fq << "resourceTypeGeneral:#{options['resource-type-id'].underscore.camelize}" if options['resource-type-id'].present?
-      fq << "datacentre_symbol:#{options['data-center-id'].upcase}" if options['data-center-id'].present?
-      fq << "allocator_symbol:#{options['member-id'].upcase}" if options['member-id'].present?
-      fq << "nameIdentifier:ORCID\\:#{options['person-id']}" if options['person-id'].present?
+      fq << "resourceTypeGeneral:#{options[:resource_type_id].underscore.camelize}" if options[:resource_type_id].present?
+      fq << "datacentre_symbol:#{options[:data_center_id].upcase}" if options[:data_center_id].present?
+      fq << "allocator_symbol:#{options[:member_id].upcase}" if options[:member_id].present?
+      fq << "nameIdentifier:ORCID\\:#{options[:person_id]}" if options[:person_id].present?
       fq << "minted:#{created_date}" if created_date
       fq << "updated:#{update_date}" if update_date
       fq << "checked:#{checked}" if checked
       fq << "minted:#{registered}" if registered
       fq << "publicationYear:#{options[:year]}" if options[:year].present?
-      fq << "schema_version:#{options['schema-version']}" if options['schema-version'].present?
+      fq << "schema_version:#{options[:schema_version]}" if options[:schema_version].present?
 
       if options[:url].present?
         q = "url:#{options[:url]}"
@@ -379,7 +379,7 @@ class Work < Base
 
   def self.get_data_center_facets(data_centers, options={})
     return [] unless data_centers.present?
-    
+
     response = DataCenter.where(ids: data_centers.keys.join(","))
     response.fetch(:data, [])
             .map { |p| { id: p.id.downcase, title: p.name, count: data_centers.fetch(p.id.upcase, 0) } }

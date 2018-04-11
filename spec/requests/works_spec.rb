@@ -144,6 +144,19 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
+    expect(json.dig("meta", "total")).to eq(5738)
+    expect(json["data"].size).to eq(25)
+    work = json["data"].first
+    expect(work["id"]).to eq(expected_work.id)
+    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+  end
+
+  it "works with data-center-id" do
+    get '/works?data-center-id=bl.mendeley'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json.dig("meta", "total")).to eq(282)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
@@ -166,6 +179,7 @@ describe "Works", type: :request, vcr: true do
   
     expect(last_response.status).to eq(200)
   
+    expect(json.dig("meta", "total")).to eq(281)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/73nbydxz48.1")
