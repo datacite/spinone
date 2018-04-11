@@ -373,11 +373,13 @@ class Work < Base
     { "resource-types" => resource_types,
       "years" => years,
       "registered" => registered,
-      "data_centers" => data_centers,
+      "data-centers" => data_centers,
       "schema-versions" => schema_versions }
   end
 
   def self.get_data_center_facets(data_centers, options={})
+    return [] unless data_centers.present?
+    
     response = DataCenter.where(ids: data_centers.keys.join(","))
     response.fetch(:data, [])
             .map { |p| { id: p.id.downcase, title: p.name, count: data_centers.fetch(p.id.upcase, 0) } }

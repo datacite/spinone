@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://solr.test.datacite.org/api?bq=updated:%5BNOW/DAY-1YEAR%20TO%20NOW/DAY%5D&defType=edismax&f.minted.facet.range.end=2024-01-01T00:00:00Z&f.minted.facet.range.gap=%2B1YEAR&f.minted.facet.range.start=2004-01-01T00:00:00Z&facet=true&facet.field=minted&facet.limit=15&facet.mincount=1&facet.range=minted&fl=doi,url,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated,checked&fq=has_metadata:true%20AND%20is_active:true&q=xxxx&rows=25&sort=score%20desc&start=0&wt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma 4.0.5 - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Apr 2018 07:46:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":2},"response":{"numFound":0,"start":0,"docs":[]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":[],"datacentre_facet":[],"resourceType_facet":[],"schema_version":[],"minted":[]},"facet_dates":{},"facet_ranges":{"minted":{"counts":[],"gap":"+1YEAR","start":"2004-01-01T00:00:00Z","end":"2024-01-01T00:00:00Z"}}}}
+
+'
+    http_version: 
+  recorded_at: Wed, 11 Apr 2018 07:46:04 GMT
+recorded_with: VCR 3.0.3

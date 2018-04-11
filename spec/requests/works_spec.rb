@@ -9,8 +9,8 @@ describe "Works", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     meta = json["meta"]
-    expect(meta["data_centers"].size).to eq(15)
-    expect(meta["data_centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>4786)
+    expect(meta["data-centers"].size).to eq(15)
+    expect(meta["data-centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>4786)
     expect(meta["years"].size).to eq(15)
     expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>1254)
 
@@ -116,6 +116,15 @@ describe "Works", type: :request, vcr: true do
     work = json["data"].first
     expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.946")
     expect(work.dig("attributes", "title")).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
+  end
+
+  it "works with query no results" do
+    get '/works?query=xxxx'
+
+    expect(last_response.status).to eq(200)
+
+    expect(json["data"].size).to eq(0)
+    expect(json.dig("meta", "data-centers").size).to eq(0)
   end
 
   it "works with query url" do
