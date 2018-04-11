@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://264044c521b8
+      - Maremma 4.0.5 - https://github.com/datacite/maremma
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 10 Mar 2018 10:14:44 GMT
+      - Wed, 11 Apr 2018 07:06:00 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Connection:
@@ -30,30 +30,30 @@ http_interactions:
       - max-age=0, private, must-revalidate
       Vary:
       - Accept-Encoding, Origin
-      Etag:
-      - W/"b5bdab60480851d7c5f21498778196ed"
-      X-Runtime:
-      - '0.027435'
       X-Request-Id:
-      - 4c07a060-8dc3-4f38-842b-61620eb690e6
+      - a127be75-9b1c-4bc4-996c-573d217758aa
+      Etag:
+      - W/"a3afbed8f3c82cca3e2c11710a63e3d9"
+      X-Runtime:
+      - '0.025674'
       X-Powered-By:
-      - Phusion Passenger 5.2.1
+      - Phusion Passenger 5.2.3
       Server:
-      - nginx/1.12.2 + Phusion Passenger 5.2.1
+      - nginx/1.12.2 + Phusion Passenger 5.2.3
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"id":"cdl.ucsdcca","type":"clients","attributes":{"name":"California
-        Coastal Atlas","symbol":"CDL.UCSDCCA","year":2012,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2012-06-27T20:51:59Z","updated":"2018-03-10T01:30:30Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"tind.cal","type":"clients","attributes":{"name":"California
-        Institute of Technology","symbol":"TIND.CAL","year":2016,"contact-name":"tech@tind.io","contact-email":"tech@tind.io","domains":"tind.io","url":null,"is-active":true,"has-password":true,"created":"2016-10-25T15:16:46Z","updated":"2018-03-10T01:30:54Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"tind","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.caltech","type":"clients","attributes":{"name":"California
+        Coastal Atlas","symbol":"CDL.UCSDCCA","year":2012,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":true,"created":"2012-06-27T20:51:59Z","updated":"2018-04-11T01:30:28Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"tind.cal","type":"clients","attributes":{"name":"California
+        Institute of Technology","symbol":"TIND.CAL","year":2016,"contact-name":"tech@tind.io","contact-email":"tech@tind.io","domains":"tind.io","url":null,"is-active":true,"has-password":true,"created":"2016-10-25T15:16:46Z","updated":"2018-04-11T01:30:51Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"tind","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.caltech","type":"clients","attributes":{"name":"California
         Institute of Technology (Caltech)","symbol":"CDL.CALTECH","year":2013,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2013-04-16T16:10:03Z","updated":"2018-03-10T01:30:33Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.ucnrs","type":"clients","attributes":{"name":"University
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2013-04-16T16:10:03Z","updated":"2018-04-11T01:30:31Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.ucnrs","type":"clients","attributes":{"name":"University
         of California Natural Reserve System","symbol":"CDL.UCNRS","year":2016,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2016-11-15T20:41:13Z","updated":"2018-03-10T01:30:55Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.ucdavis","type":"clients","attributes":{"name":"University
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2016-11-15T20:41:13Z","updated":"2018-04-11T01:30:51Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}},{"id":"cdl.ucdavis","type":"clients","attributes":{"name":"University
         of California, Davis, University Library","symbol":"CDL.UCDAVIS","year":2014,"contact-name":"Greg
-        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2014-09-24T14:54:20Z","updated":"2018-03-10T01:30:39Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}}],"included":[{"id":"cdl","type":"providers","attributes":{"name":"California
-        Digital Library","symbol":"CDL","year":2010,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","logo-url":"https://assets.datacite.org/images/members/cdl.png","is-active":true,"has-password":true,"created":"2010-01-01T00:00:00.000Z","updated":"2018-03-10T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}},{"id":"tind","type":"providers","attributes":{"name":"TIND
-        Technologies","symbol":"TIND","year":2016,"contact-name":"Alexander Nietzold","contact-email":"alexander@tind.io","logo-url":"https://assets.datacite.org/images/members/tind.png","is-active":true,"has-password":true,"created":"2016-06-08T18:16:18.000Z","updated":"2018-03-10T01:25:41.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":5,"total-pages":1,"page":1,"providers":[{"id":"CDL","title":"California
+        Janee","contact-email":"gjanee@ucop.edu","domains":"*","url":null,"is-active":true,"has-password":false,"created":"2014-09-24T14:54:20Z","updated":"2018-04-11T01:30:36Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"cdl","type":"providers"}},"repository":{"meta":{}}}}],"included":[{"id":"cdl","type":"providers","attributes":{"name":"California
+        Digital Library","symbol":"CDL","website":null,"contact-name":"Greg Janee","contact-email":"gjanee@ucop.edu","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-04-11T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}},{"id":"tind","type":"providers","attributes":{"name":"TIND
+        Technologies","symbol":"TIND","website":null,"contact-name":"Alexander Nietzold","contact-email":"alexander@tind.io","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2016-06-08T18:16:18.000Z","updated":"2018-04-11T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"total":5,"total-pages":1,"page":1,"providers":[{"id":"CDL","title":"California
         Digital Library","count":4},{"id":"TIND","title":"TIND Technologies","count":1}],"years":[{"id":"2016","title":"2016","count":2},{"id":"2014","title":"2014","count":1},{"id":"2013","title":"2013","count":1},{"id":"2012","title":"2012","count":1}]}}'
     http_version: 
-  recorded_at: Sat, 10 Mar 2018 10:14:59 GMT
+  recorded_at: Wed, 11 Apr 2018 07:05:59 GMT
 recorded_with: VCR 3.0.3

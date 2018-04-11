@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://profiles.test.datacite.org/api/members/ands
+    uri: https://app.test.datacite.org/members/ands
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - http://264044c521b8
+      - Maremma 4.0.5 - https://github.com/datacite/maremma
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,14 +17,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 10 Mar 2018 10:14:37 GMT
+      - Wed, 11 Apr 2018 07:23:57 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - application/vnd.api+json; charset=utf-8
       Connection:
       - keep-alive
-      Set-Cookie:
-      - AWSALB=ZI4aj/y5cGmbEEzE5nVTR/TOja42OvOUBlkEF5AC6Z4tjP0rBl9DwzkqfO9HnN0qrfqZuL5H5JItGDE7K9ULPEAD8RPIovo9NwmL2xFQnYxqpU9bhI5wuo0f8Aam;
-        Expires=Sat, 17 Mar 2018 10:14:37 GMT; Path=/
       Status:
       - 200 OK
       X-Anonymous-Consumer:
@@ -32,58 +29,40 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Vary:
-      - Accept-Encoding
-      X-Xss-Protection:
-      - 1; mode=block
+      - Accept-Encoding, Origin
       X-Request-Id:
-      - ef1b05b0-2034-4454-a312-4ca52f744e65
+      - 6176f72b-0be4-42d4-9f74-d7c549b26d5d
       Etag:
-      - W/"3e07606b8356a5e8e6e648559a815b2c"
-      X-Frame-Options:
-      - SAMEORIGIN
+      - W/"cf1d8df7c582c5758326950613d5bf33"
       X-Runtime:
-      - '0.005905'
-      X-Content-Type-Options:
-      - nosniff
+      - '0.004735'
       X-Powered-By:
-      - Phusion Passenger 5.1.12
+      - Phusion Passenger 5.2.3
       Server:
-      - nginx/1.12.2 + Phusion Passenger 5.1.12
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      - nginx/1.12.2 + Phusion Passenger 5.2.3
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
-        National Data Service","description":"\u003cp\u003eThe Australian National
-        Data Service (ANDS) makes Australia\u0026#39;s research data assets more valuable
-        for researchers, research institutions and the nation.\u003c/p\u003e\n\n\u003cp\u003eWe
-        do this through working in trusted partnerships on research data projects,
-        delivering reliable national services and enhancing the capability of Australia\u0026#39;s
-        research data system.\u003c/p\u003e\n\n\u003cp\u003eA key ANDS service is
-        the \u003ca href=\"http://researchdata.ands.org.au/\"\u003eResearch Data Australia\u003c/a\u003e
+        National Data Service","description":"The Australian National Data Service
+        (ANDS) makes Australia''s research data assets more valuable for researchers,
+        research institutions and the nation.\n\nWe do this through working in trusted
+        partnerships on research data projects, delivering reliable national services
+        and enhancing the capability of Australia''s research data system.\n \nA key
+        ANDS service is the [Research Data Australia](http://researchdata.ands.org.au/)
         discovery portal where you can find, access and reuse Australian research
-        data.\u003c/p\u003e\n\n\u003cp\u003eANDS is a partnership led by Monash University,
-        in collaboration with the Australian National University and CSIRO. It is
-        funded by the Australian Government through the National Collaborative Research
-        Infrastructure Strategy (NCRIS).\u003c/p\u003e\n\n\u003cp\u003eANDS involvement
-        in the DataCite consortium ensures that we are active in global initiatives
-        addressing the issues surrounding research data, including those of publication,
-        citation and standards. ANDS has run its \u003ca href=\"http://ands.org.au/services/cite-my-data.html\"\u003eCite
-        My Data\u003c/a\u003e service since 2011. This service allows Australian research
-        organisations to assign DOIs to their own research collections. This, in turn,
-        provides researchers with a means of citing their published data and achieving
-        recognition for their research data output.\u003c/p\u003e\n\n\u003cp\u003eSubscribe
-        to our discussion list: \u003ca href=\"https://groups.google.com/forum/?hl=en#!forum/ands-general\"\u003eANDS
-        Google Group\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eSubscribe to our
-        e-newsletter: \u003ca href=\"http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026amp;id=22b849a4ee\"\u003eandsUP\u003c/a\u003e.\u003c/p\u003e\n","member-type":"allocating","institution-type":"national_organization","region":"Asia
-        Pacific","country":"Australia","year":2010,"logo-url":"https://assets.test.datacite.org/images/members/ands.png","email":"contact@ands.org.au","website":"http://www.ands.org.au","phone":"+61
-        3 9902 0585","created":"2016-02-15T16:14:25Z","updated":"2017-12-14T10:25:03Z"}}}'
+        data.\n\nANDS is a partnership led by Monash University, in collaboration
+        with the Australian National University and CSIRO. It is funded by the Australian
+        Government through the National Collaborative Research Infrastructure Strategy
+        (NCRIS).\n \nANDS involvement in the DataCite consortium ensures that we are
+        active in global initiatives addressing the issues surrounding research data,
+        including those of publication, citation and standards. ANDS has run its [Cite
+        My Data](http://ands.org.au/services/cite-my-data.html) service since 2011.
+        This service allows Australian research organisations to assign DOIs to their
+        own research collections. This, in turn, provides researchers with a means
+        of citing their published data and achieving recognition for their research
+        data output.\n \nSubscribe to our discussion list: [ANDS Google Group](https://groups.google.com/forum/?hl=en#!forum/ands-general).\n
+        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026id=22b849a4ee).","member-type":"provider","institution-type":null,"region":"Asia
+        Pacific","country":"Australia","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-04-11T01:25:40.000Z"}}}'
     http_version: 
-  recorded_at: Sat, 10 Mar 2018 10:14:52 GMT
+  recorded_at: Wed, 11 Apr 2018 07:23:57 GMT
 recorded_with: VCR 3.0.3

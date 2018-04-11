@@ -101,12 +101,10 @@ class Work < Base
   def self.get_query_url(options={})
     if options[:id].present?
       params = { q: options[:id],
-                 qf: "doi",
                  defType: "edismax",
                  wt: "json" }
-    elsif options["work-id"].present?
-      params = { q: options['work-id'],
-                 qf: "doi",
+    elsif options[:work_id].present?
+      params = { q: options[:work_id],
                  fl: "doi,relatedIdentifier",
                  defType: "edismax",
                  wt: "json" }
@@ -114,7 +112,6 @@ class Work < Base
       if options[:ids].present?
         ids = options[:ids].split(",")[0..99]
         options[:query] = options[:query].to_s + " " + ids.join(" ")
-        options[:qf] = "doi"
         options[:rows] = ids.length
         options[:sort] = "registered"
         options[:mm] = 1
@@ -141,8 +138,8 @@ class Work < Base
       group_format = nil
       group_limit = nil
 
-      if options[:sample].present? && options["sample-group"].present?
-        group_field = case options["sample-group"]
+      if options[:sample].present? && options[:sample_group].present?
+        group_field = case options[:sample_group]
                       when "client" then "datacentre_symbol"
                       when "data-center" then "datacentre_symbol"
                       when "provider" then "allocator_symbol"
@@ -155,27 +152,27 @@ class Work < Base
           group_format = "simple"
           group_limit = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
         else
-          options.delete("sample-group")
+          options.delete(:sample_group)
         end
       end
 
       page = (options.dig(:page, :number) || 1).to_i
-      if options[:sample].present? && options["sample-group"].present?
+      if options[:sample].present? && options[:sample_group].present?
         samples_per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
         per_page = options.dig(:page, :size).to_i * samples_per_page
         per_page = (1..1000).include?(per_page) ? per_page : 1000
-      elsif options[:sample].present? && options["sample-group"].blank?
+      elsif options[:sample].present? && options[:sample_group].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
       else
         per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
       end
       offset = (page - 1) * per_page
 
-      created_date = options['from-created-date'].present? || options['until-created-date'].present?
-      created_date = get_solr_date_range(options['from-created-date'], options['until-created-date']) if created_date
+      created_date = options[:from_created_date].present? || options[:until_created_date].present?
+      created_date = get_solr_date_range(options[:from_created_date], options[:until_created_date]) if created_date
 
-      update_date = options["from-update-date"].present? || options["until-update-date"].present?
-      update_date = get_solr_date_range(options['from-update-date'], options['until-update-date']) if update_date
+      update_date = options[:from_update_date].present? || options[:until_update_date].present?
+      update_date = get_solr_date_range(options[:from_update_date], options[:until_update_date]) if update_date
       registered = get_solr_date_range(options[:registered], options[:registered]) if options[:registered].present?
       checked = "(checked:[* TO #{get_datetime_from_input(options[:checked])}] OR (*:* NOT checked:[* TO *]))" if options[:checked].present?
 
@@ -203,7 +200,6 @@ class Work < Base
                  start: offset,
                  rows: per_page,
                  fl: "doi,url,title,creator,description,publisher,publicationYear,resourceType,resourceTypeGeneral,rightsURI,version,datacentre_symbol,allocator_symbol,schema_version,xml,media,minted,updated,checked",
-                 qf: options[:qf],
                  fq: fq.join(" AND "),
                  facet: "true",
                  'facet.field' => %w(publicationYear datacentre_facet resourceType_facet schema_version minted),
@@ -230,7 +226,7 @@ class Work < Base
 
   def self.get_data(options={})
     # sometimes don't query DataCite MDS
-    return {} if (options["data-center-id"].present? && options["data-center-id"].exclude?("."))
+    return {} if (options[:data_center_id].present? && options[:data_center_id].exclude?("."))
 
     query_url = get_query_url(options)
 
@@ -277,7 +273,7 @@ class Work < Base
 
       { data: data, meta: meta }
     else
-      if options["work-id"].present?
+      if options[:work_id].present?
         return { data: [], meta: [] } if result.body.blank?
 
         items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', [])
@@ -289,7 +285,7 @@ class Work < Base
                                       .map { |i| i.split(':', 3).last.strip.upcase }
         return { data: [], meta: [] } if related_doi_identifiers.blank?
 
-        options = options.except("work-id")
+        options = options.except(:work_id)
         query_url = get_query_url(options.merge(ids: related_doi_identifiers.join(",")))
         result = Maremma.get(query_url, options)
       end
@@ -308,11 +304,11 @@ class Work < Base
       facets = result.body.fetch("data", {}).fetch("facet_counts", {})
 
       page = (options.dig(:page, :number) || 1).to_i
-      if options[:sample].present? && options["sample-group"].present?
+      if options[:sample].present? && options[:sample_group].present?
         samples_per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
         per_page = options.dig(:page, :size).to_i * samples_per_page
         per_page = (1..1000).include?(per_page) ? per_page : 1000
-      elsif options[:sample].present? && options["sample-group"].blank?
+      elsif options[:sample].present? && options[:sample_group].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
       else
         per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
@@ -370,8 +366,8 @@ class Work < Base
                             .sort { |a, b| b.first <=> a.first }
                             .map { |i| { id: i[0], title: "Schema #{i[0]}", count: i[1] } }
 
-    if options["data-center-id"].present? && data_centers.empty?
-      data_centers = { options["data-center-id"] => 0 }
+    if options[:data_center_id].present? && data_centers.empty?
+      data_centers = { options[:data_center_id] => 0 }
     end
 
     { "resource-types" => resource_types,

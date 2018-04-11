@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://search.test.datacite.org/api?defType=edismax&q=10.4124/9f7xnnys8c.5&qf=doi&wt=json
+    uri: https://solr.test.datacite.org/api?defType=edismax&q=10.4124/9f7xnnys8c.5&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 07 Apr 2018 16:46:05 GMT
+      - Wed, 11 Apr 2018 07:06:10 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -34,16 +34,16 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":1,"start":0,"docs":[{"is_active":true,"created":"2017-12-15T17:55:44Z","prefix":"10.4124","dataset_id":"2172984","has_media":false,"datacentre_symbol":"BL.MENDELEY","datacentre":"BL.MENDELEY
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":1,"start":0,"docs":[{"is_active":true,"created":"2017-12-15T17:55:44Z","prefix":"10.4124","dataset_id":"2172984","has_media":false,"datacentre_symbol":"BL.MENDELEY","datacentre":"BL.MENDELEY
         - Mendeley Data","datacentre_facet":"BL.MENDELEY - Mendeley Data","allocator":"BL
         - The British Library","allocator_facet":"BL - The British Library","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxyZXNvdXJjZSB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjQxMjQvOWY3eG5ueXM4Yy41PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TmF0cmEsIE1haGVzaDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRBVC0zMDI1IE1haW50YWluIGZpbGUgb3JkZXJpbmcgZm9yIHB1Ymxpc2hlZCBkYXRhc2V0cyAtIDQ8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+TWVuZGVsZXk8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTg8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NYXRoZW1hdGljczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTgtMTItMjE8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL2VtYmFyZ29lZEFjY2VzcyIvPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbCAoRW1iYXJnbzogMjAxOC0xMi0yMSk8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+Cg==","has_metadata":true,"allocator_symbol":"BL","uploaded":"2017-12-15T17:55:44Z","namespace":"http://datacite.org/schema/kernel-3","minted":"2017-12-15T17:55:44Z","state":"findable","updated":"2017-12-15T17:55:44Z","doi":"10.4124/9F7XNNYS8C.5","schema_version":"3","date":["2018-12-21"],"creator":["Natra,
         Mahesh"],"resourceTypeGeneral":"Dataset","spdx":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0/legalcode"],"subject":["Mathematics"],"title":["DAT-3025
         Maintain file ordering for published datasets - 4"],"dateType":["Available"],"rightsURI":["info:eu-repo/semantics/embargoedAccess","http://creativecommons.org/licenses/by/4.0"],"rights":["","Creative
-        Commons Attribution 4.0 International (Embargo: 2018-12-21)"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset","_version_":1597106328804786176,"indexed":"2018-04-07T16:41:26.351Z"}]}}
+        Commons Attribution 4.0 International (Embargo: 2018-12-21)"],"publisher":"Mendeley","publicationYear":"2018","resourceType":"Dataset","_version_":1597432227627532290,"indexed":"2018-04-11T07:01:27.688Z"}]}}
 
 '
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 16:51:52 GMT
+  recorded_at: Wed, 11 Apr 2018 07:06:09 GMT
 - request:
     method: get
     uri: https://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
@@ -65,7 +65,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 07 Apr 2018 16:46:07 GMT
+      - Wed, 11 Apr 2018 07:03:59 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -74,12 +74,14 @@ http_interactions:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Server:
       - AmazonS3
+      Age:
+      - '132'
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 9cdcc2ea1b56638df91a75e186244489.cloudfront.net (CloudFront)
+      - 1.1 f2cc6dbe7150e50a6bc010a2d6868e5f.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - _r743jje4NPM-T-37Age3lytEaENUP6JRQ7_OOOPcR8GQzr4aafK_Q==
+      - yZ2Ggn_KOPjMDHgWVlf97bZpTcmFyg4F6MC-N7J3fwI5SwUm95aB1Q==
     body:
       encoding: ASCII-8BIT
       string: |
@@ -112,7 +114,7 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 16:51:52 GMT
+  recorded_at: Wed, 11 Apr 2018 07:06:09 GMT
 - request:
     method: get
     uri: https://app.test.datacite.org/clients/bl.mendeley
@@ -130,7 +132,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 07 Apr 2018 16:46:06 GMT
+      - Wed, 11 Apr 2018 07:06:10 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Connection:
@@ -144,11 +146,11 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       X-Request-Id:
-      - 4b8472e9-1cdc-4f9c-85e0-bf277a19c896
+      - 94415640-143a-46e7-8a36-7d5c961e2375
       Etag:
-      - W/"d2646c6eaa6f0146940e5a9a7dddcfbf"
+      - W/"2e66bbd8ba14b36e18c4d94821852d8e"
       X-Runtime:
-      - '0.193503'
+      - '0.008951'
       X-Powered-By:
       - Phusion Passenger 5.2.3
       Server:
@@ -156,8 +158,8 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"bl.mendeley","type":"clients","attributes":{"name":"Mendeley
-        Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","url":null,"is-active":true,"has-password":true,"created":"2014-10-03T15:53:41Z","updated":"2018-04-07T01:30:37Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"bl","type":"providers","attributes":{"name":"The
-        British Library","symbol":"BL","website":null,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-04-07T01:25:39.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2014,"title":2014,"count":2640},{"id":2015,"title":2015,"count":96215},{"id":2016,"title":2016,"count":19451},{"id":2017,"title":2017,"count":3568},{"id":2018,"title":2018,"count":177}]}}'
+        Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","url":null,"is-active":true,"has-password":true,"created":"2014-10-03T15:53:41Z","updated":"2018-04-11T01:30:37Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"bl","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"bl","type":"providers","attributes":{"name":"The
+        British Library","symbol":"BL","website":null,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-04-11T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2014,"title":2014,"count":2640},{"id":2015,"title":2015,"count":96215},{"id":2016,"title":2016,"count":19451},{"id":2017,"title":2017,"count":3568},{"id":2018,"title":2018,"count":180}]}}'
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 16:51:53 GMT
+  recorded_at: Wed, 11 Apr 2018 07:06:09 GMT
 recorded_with: VCR 3.0.3

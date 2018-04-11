@@ -24,7 +24,7 @@ class Member < Base
       "#{url}/#{options[:id]}"
     else
       params = { query: options.fetch(:query, nil),
-                 member_type: options.fetch("member-type", nil),
+                 member_type: options.fetch(:member_type, nil),
                  region: options.fetch(:region, nil),
                  year: options.fetch(:year, nil),
                  "page[size]" => options.dig(:page, :size),
@@ -50,6 +50,6 @@ class Member < Base
   end
 
   def self.url
-    "#{ENV["VOLPINO_URL"]}/members"
+    "#{ENV["APP_URL"]}/members"
   end
 end

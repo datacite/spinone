@@ -33,7 +33,7 @@ class DataCenter < Base
       params = { query: options.fetch(:query, nil),
                  ids: options.fetch(:ids, nil),
                  year: options.fetch(:year, nil),
-                 "provider-id": options.fetch("member-id", nil),
+                 "provider-id": options.fetch(:member_id, nil),
                  "page[size]" => options.dig(:page, :size),
                  "page[number]" => options.dig(:page, :number),
                  include: "provider" }.compact

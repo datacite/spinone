@@ -10,6 +10,6 @@ describe Milestone, type: :model, vcr: true do
 
   it "milestone" do
     milestone = Milestone.where(id: "10")[:data]
-    expect(milestone.title).to eq("Develop new DOI Fabrica Service")
+    expect(milestone.title).to eq("Develop new DOI Fabrica service")
   end
 end
