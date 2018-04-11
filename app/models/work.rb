@@ -367,7 +367,12 @@ class Work < Base
                             .map { |i| { id: i[0], title: "Schema #{i[0]}", count: i[1] } }
 
     if options[:data_center_id].present? && data_centers.empty?
-      data_centers = { options[:data_center_id] => 0 }
+      dc = DataCenter.where(id: options[:data_center_id])
+      return [] unless dc[:data].present?
+
+      data_centers = [{ "id" => options[:data_center_id].upcase,
+                        "title" => dc[:data].name,
+                        "count" => 0 }]
     end
 
     { "resource-types" => resource_types,
