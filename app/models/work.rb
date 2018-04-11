@@ -318,7 +318,7 @@ class Work < Base
       total_pages = (total.to_f / per_page).ceil
 
       meta = parse_facet_counts(facets, options)
-      meta = meta.merge(total: total, total_pages: total_pages, page: page)
+      meta = meta.merge(total: total, "total-pages" => total_pages, page: page)
 
       data_centers = facets.fetch("facet_fields", {}).fetch("datacentre_facet", [])
                        .each_slice(2)

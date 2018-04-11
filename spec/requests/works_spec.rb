@@ -145,6 +145,7 @@ describe "Works", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     expect(json.dig("meta", "total")).to eq(5738)
+    expect(json.dig("meta", "total-pages")).to eq(230)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
@@ -157,6 +158,7 @@ describe "Works", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     expect(json.dig("meta", "total")).to eq(282)
+    expect(json.dig("meta", "total-pages")).to eq(12)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
@@ -180,6 +182,7 @@ describe "Works", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
   
     expect(json.dig("meta", "total")).to eq(281)
+    expect(json.dig("meta", "total-pages")).to eq(12)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/73nbydxz48.1")
