@@ -210,4 +210,14 @@ describe "Works", type: :request, vcr: true do
     expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/9f7xnnys8c.5")
     expect(work.dig("attributes", "title")).to eq("DAT-3025 Maintain file ordering for published datasets - 4")
   end
+
+  it "work with + sign in doi" do
+    get '/works/10.14454/terra+aqua/ceres/cldtyphist_l3.004'
+
+    expect(last_response.status).to eq(200)
+
+    work = json["data"]
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.14454/terra+aqua/ceres/cldtyphist_l3.004")
+    expect(work.dig("attributes", "title")).to eq("CERES Level 3 Cloud Type Historgram Terra+Aqua HDF file - Edition4")
+  end
 end
