@@ -101,7 +101,7 @@ class Work < Base
   def self.get_query_url(options={})
     if options[:id].present?
       params = { q: options[:id],
-                 fq: "doi:#{options[:id].dump}" ,
+                 fq: "doi:#{options[:id].dump}",
                  defType: "edismax",
                  wt: "json" }
     elsif options[:work_id].present?
