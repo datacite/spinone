@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://solr.test.datacite.org/api?defType=edismax&q=10.14454/terra%2Baqua/ceres/cldtyphist_l3.004&wt=json
+    uri: https://solr.test.datacite.org/api?defType=edismax&fq=doi:%2210.14454/terra%2Baqua/ceres/cldtyphist_l3.004%22&q=10.14454/terra%2Baqua/ceres/cldtyphist_l3.004&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 21 May 2018 08:19:49 GMT
+      - Tue, 19 Jun 2018 20:14:17 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -38,11 +38,11 @@ http_interactions:
         - DataCite","datacentre_facet":"DATACITE.DATACITE - DataCite","allocator":"DATACITE
         - DataCite","allocator_facet":"DATACITE - DataCite","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCAgICAgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtNC9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE0NDU0L1RFUlJBQVFVQS9DRVJFUy9DTERUWVBISVNUX0wzLjAwNDwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldvbmcsVGFrbWVuZzwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkNFUkVTIExldmVsIDMgQ2xvdWQgVHlwZSBIaXN0b3JncmFtIFRlcnJhK0FxdWEgSERGIGZpbGUgLSBFZGl0aW9uNDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5OQVNBIExhbmdsZXkgQXRtb3NwaGVyaWMgU2NpZW5jZSBEYXRhIENlbnRlciBEQUFDPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE2PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CjwvcmVzb3VyY2U+","has_metadata":true,"allocator_symbol":"DATACITE","uploaded":"2018-05-21T07:53:28Z","namespace":"http://datacite.org/schema/kernel-4","checked":"2018-05-21T07:53:29Z","minted":"2018-05-21T08:00:47Z","state":"findable","updated":"2018-05-21T08:00:47Z","doi":"10.14454/TERRA+AQUA/CERES/CLDTYPHIST_L3.004","schema_version":"4","creator":["Wong,Takmeng"],"resourceTypeGeneral":"Dataset","publisher":"NASA
         Langley Atmospheric Science Data Center DAAC","publicationYear":"2016","title":["CERES
-        Level 3 Cloud Type Historgram Terra+Aqua HDF file - Edition4"],"resourceType":"","_version_":1601060829714710530,"indexed":"2018-05-21T08:16:32.303Z"}]}}
+        Level 3 Cloud Type Historgram Terra+Aqua HDF file - Edition4"],"resourceType":"","_version_":1603733124816044035,"indexed":"2018-06-19T20:11:31.508Z"}]}}
 
 '
     http_version: 
-  recorded_at: Mon, 21 May 2018 08:19:50 GMT
+  recorded_at: Tue, 19 Jun 2018 20:14:22 GMT
 - request:
     method: get
     uri: https://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
@@ -64,7 +64,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 21 May 2018 08:19:50 GMT
+      - Tue, 19 Jun 2018 19:38:37 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -73,12 +73,14 @@ http_interactions:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Server:
       - AmazonS3
+      Age:
+      - '2141'
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 f7c2c81dcd8f9c4723ba9992c4abd851.cloudfront.net (CloudFront)
+      - 1.1 8ebc2b93de29d9744a950f4930f96579.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - br-bPDHGeNzm9-xfU_8tyQPJ7d3z3HB3mS3sBoKmqU-QnmrfsPwceQ==
+      - Y4jOPSo00kq4fdyEkN3aDTZVkYBRVxOsUj-b5V-O5uUR8TQ8KjCOaQ==
     body:
       encoding: ASCII-8BIT
       string: |
@@ -111,7 +113,7 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Mon, 21 May 2018 08:19:50 GMT
+  recorded_at: Tue, 19 Jun 2018 20:14:22 GMT
 - request:
     method: get
     uri: https://app.test.datacite.org/clients/datacite.datacite
@@ -129,7 +131,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 21 May 2018 08:19:49 GMT
+      - Tue, 19 Jun 2018 20:14:17 GMT
       Content-Type:
       - application/vnd.api+json; charset=utf-8
       Connection:
@@ -143,20 +145,20 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       X-Request-Id:
-      - b7c1b40f-0b3d-4f89-983a-a28be13a6eb2
+      - 51d77a24-a071-4b53-a913-4c769080dd45
       Etag:
-      - W/"6fff8219d8f1a7492c3ca1600a3213d0"
+      - W/"bd70377fd73442e1bd02e1baeae91297"
       X-Runtime:
-      - '0.008473'
+      - '0.008715'
       X-Powered-By:
-      - Phusion Passenger 5.3.1
+      - Phusion Passenger 5.3.2
       Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      - nginx/1.14.0 + Phusion Passenger 5.3.2
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"datacite.datacite","type":"clients","attributes":{"name":"DataCite","symbol":"DATACITE.DATACITE","year":2011,"contact-name":"Martin
-        Fenner","contact-email":"support@datacite.org","domains":"datacite.org","url":null,"is-active":true,"has-password":true,"created":"2011-12-07T13:43:39Z","updated":"2018-05-21T01:30:25Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"datacite","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"datacite","type":"providers","attributes":{"name":"DataCite","symbol":"DATACITE","website":null,"contact-name":"DataCite
-        Support","contact-email":"support@datacite.org","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2011-12-07T13:41:07.000Z","updated":"2018-05-21T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2016,"title":2016,"count":1},{"id":2018,"title":2018,"count":13}]}}'
+        Fenner","contact-email":"support@datacite.org","domains":"datacite.org","url":null,"is-active":true,"has-password":true,"created":"2011-12-07T13:43:39Z","updated":"2018-06-19T01:30:36Z"},"relationships":{"prefixes":{"meta":{}},"provider":{"data":{"id":"datacite","type":"providers"}},"repository":{"data":null}}},"included":[{"id":"datacite","type":"providers","attributes":{"name":"DataCite","symbol":"DATACITE","website":null,"contact-name":"DataCite
+        Support","contact-email":"support@datacite.org","phone":null,"description":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2011-12-07T13:41:07.000Z","updated":"2018-06-19T01:25:40.000Z"},"relationships":{"clients":{"meta":{}},"prefixes":{"meta":{}}}}],"meta":{"dois":[{"id":2016,"title":2016,"count":1},{"id":2018,"title":2018,"count":26}]}}'
     http_version: 
-  recorded_at: Mon, 21 May 2018 08:19:51 GMT
+  recorded_at: Tue, 19 Jun 2018 20:14:22 GMT
 recorded_with: VCR 3.0.3

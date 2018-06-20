@@ -211,6 +211,15 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "title")).to eq("DAT-3025 Maintain file ordering for published datasets - 4")
   end
 
+  it "work that doesn't exist" do
+    get '/works/10.1098/rsif.2017.0030'
+
+    expect(last_response.status).to eq(404)
+
+    errors = json["errors"]
+    expect(errors.first.dig("title")).to eq("The resource you are looking for doesn't exist.")
+  end
+
   it "work with + sign in doi" do
     get '/works/10.14454/terra+aqua/ceres/cldtyphist_l3.004'
 
