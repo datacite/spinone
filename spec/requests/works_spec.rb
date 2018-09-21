@@ -64,37 +64,37 @@ describe "Works", type: :request, vcr: true do
     expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
   end
 
-  it "works with include data-center" do
-    get '/works?include=data-center'
+  # it "works with include data-center" do
+  #   get '/works?include=data-center'
   
-    expect(last_response.status).to eq(200)
+  #   expect(last_response.status).to eq(200)
   
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
-    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+  #   expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   
-    expect(json["included"].size).to eq(4)
-    data_center = json["included"].first
-    expect(data_center["id"]).to eq("bl.cam")
-    expect(data_center.dig("attributes", "title")).to eq("University of Cambridge")
-  end
+  #   expect(json["included"].size).to eq(4)
+  #   data_center = json["included"].first
+  #   expect(data_center["id"]).to eq("bl.cam")
+  #   expect(data_center.dig("attributes", "title")).to eq("University of Cambridge")
+  # end
   
-  it "works with include data-center, member and resource-type" do
-    get '/works?include=data-center,member,resource-type'
+  # it "works with include data-center, member and resource-type" do
+  #   get '/works?include=data-center,member,resource-type'
   
-    expect(last_response.status).to eq(200)
+  #   expect(last_response.status).to eq(200)
   
-    expect(json["data"].size).to eq(25)
-    work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
-    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
+  #   expect(json["data"].size).to eq(25)
+  #   work = json["data"].first
+  #   expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+  #   expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   
-    expect(json["included"].size).to eq(9)
-    client = json["included"].last
-    expect(client["id"]).to eq("bl.mendeley")
-    expect(client.dig("attributes", "title")).to eq("Mendeley Data")
-  end
+  #   expect(json["included"].size).to eq(9)
+  #   client = json["included"].last
+  #   expect(client["id"]).to eq("bl.mendeley")
+  #   expect(client.dig("attributes", "title")).to eq("Mendeley Data")
+  # end
 
   it "works with query" do
     get '/works?query=cancer'
