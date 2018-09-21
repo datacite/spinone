@@ -50,6 +50,6 @@ class Member < Base
   end
 
   def self.url
-    "#{ENV["APP_URL"]}/members"
+    "#{ENV["API_URL"]}/members"
   end
 end

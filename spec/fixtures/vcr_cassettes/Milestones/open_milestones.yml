@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 21 Sep 2018 08:18:10 GMT
+      - Fri, 21 Sep 2018 08:57:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,7 +31,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4998'
+      - '4879'
       X-Ratelimit-Reset:
       - '1537521488'
       Cache-Control:
@@ -64,9 +64,9 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'
       X-Runtime-Rack:
-      - '0.045745'
+      - '0.061699'
       X-Github-Request-Id:
-      - CDFA:4E28:1BF6F82:36EDE2B:5BA4A940
+      - CF5A:4E27:14B71D0:2D2244D:5BA4B263
     body:
       encoding: ASCII-8BIT
       string: '[{"url":"https://api.github.com/repos/datacite/datacite/milestones/19","html_url":"https://github.com/datacite/datacite/milestone/19","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/19/labels","id":2564142,"node_id":"MDk6TWlsZXN0b25lMjU2NDE0Mg==","number":19,"title":"Status
@@ -120,5 +120,5 @@ http_interactions:
         for direct access from DOI to content. A particular focus will be on content
         negotiation, and on describing linked resources in metadata. ","creator":{"login":"mfenner","id":23151,"node_id":"MDQ6VXNlcjIzMTUx","avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":0,"closed_issues":0,"state":"open","created_at":"2017-11-01T14:59:21Z","updated_at":"2018-03-04T23:05:02Z","due_on":"2018-11-15T08:00:00Z","closed_at":null}]'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 08:18:13 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:13 GMT
 recorded_with: VCR 3.0.3

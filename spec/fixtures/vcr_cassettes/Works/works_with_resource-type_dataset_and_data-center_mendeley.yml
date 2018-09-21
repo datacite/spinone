@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:43:19 GMT
+      - Fri, 21 Sep 2018 08:57:45 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -93,10 +93,10 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:21 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:45 GMT
 - request:
     method: get
-    uri: https://app.test.datacite.org/clients?ids=BL.MENDELEY&include=provider
+    uri: https://api.test.datacite.org/clients?ids=BL.MENDELEY&include=provider
     body:
       encoding: US-ASCII
       string: ''
@@ -111,7 +111,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:43:23 GMT
+      - Fri, 21 Sep 2018 08:57:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -125,11 +125,11 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       X-Request-Id:
-      - 486a8189-756f-4f0e-9679-b321422e921a
+      - 6ee176d9-c076-4875-989a-022cf88957ed
       Etag:
-      - W/"9d02d760abb484c00a4d639eb419a908"
+      - W/"47195336189e71999d3dfdead4f07cc1"
       X-Runtime:
-      - '0.020859'
+      - '0.019982'
       X-Powered-By:
       - Phusion Passenger 5.3.4
       Server:
@@ -139,7 +139,7 @@ http_interactions:
       string: '{"data":[{"id":"bl.mendeley","type":"clients","attributes":{"name":"Mendeley
         Data","symbol":"BL.MENDELEY","year":2014,"contact-name":"Josh Emerson","contact-email":"josh.emerson@mendeley.com","domains":"mendeley.com","url":null,"created":"2014-10-03T15:53:41.000Z","updated":"2018-08-26T01:30:43.000Z","is-active":true,"has-password":true},"relationships":{"provider":{"data":{"id":"bl","type":"providers"}},"prefixes":{"data":[{"id":"10.4124","type":"prefixes"},{"id":"10.5072","type":"prefixes"},{"id":"10.15127","type":"prefixes"},{"id":"10.17632","type":"prefixes"}]}}}],"included":[{"id":"bl","type":"providers","attributes":{"name":"The
         British Library","symbol":"BL","website":null,"contact-name":"Rachael Kotarski","contact-email":"datasets@bl.uk","phone":null,"description":null,"region":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"},"relationships":{"prefixes":{"data":[{"id":"10.4124","type":"prefixes"},{"id":"10.5255","type":"prefixes"},{"id":"10.5256","type":"prefixes"},{"id":"10.5257","type":"prefixes"},{"id":"10.5258","type":"prefixes"},{"id":"10.5259","type":"prefixes"},{"id":"10.5287","type":"prefixes"},{"id":"10.5517","type":"prefixes"},{"id":"10.5518","type":"prefixes"},{"id":"10.5519","type":"prefixes"},{"id":"10.5520","type":"prefixes"},{"id":"10.5521","type":"prefixes"},{"id":"10.5522","type":"prefixes"},{"id":"10.5523","type":"prefixes"},{"id":"10.5524","type":"prefixes"},{"id":"10.5525","type":"prefixes"},{"id":"10.5526","type":"prefixes"},{"id":"10.5285","type":"prefixes"},{"id":"10.5284","type":"prefixes"},{"id":"10.5286","type":"prefixes"},{"id":"10.5072","type":"prefixes"},{"id":"10.7486","type":"prefixes"},{"id":"10.7487","type":"prefixes"},{"id":"10.7488","type":"prefixes"},{"id":"10.7489","type":"prefixes"},{"id":"10.7490","type":"prefixes"},{"id":"10.14468","type":"prefixes"},{"id":"10.14469","type":"prefixes"},{"id":"10.14465","type":"prefixes"},{"id":"10.14466","type":"prefixes"},{"id":"10.14467","type":"prefixes"},{"id":"10.15131","type":"prefixes"},{"id":"10.15132","type":"prefixes"},{"id":"10.15130","type":"prefixes"},{"id":"10.15129","type":"prefixes"},{"id":"10.15128","type":"prefixes"},{"id":"10.15127","type":"prefixes"},{"id":"10.15123","type":"prefixes"},{"id":"10.15126","type":"prefixes"},{"id":"10.15125","type":"prefixes"},{"id":"10.15124","type":"prefixes"},{"id":"10.17029","type":"prefixes"},{"id":"10.17028","type":"prefixes"},{"id":"10.17033","type":"prefixes"},{"id":"10.17032","type":"prefixes"},{"id":"10.17031","type":"prefixes"},{"id":"10.17030","type":"prefixes"},{"id":"10.17037","type":"prefixes"},{"id":"10.17036","type":"prefixes"},{"id":"10.17035","type":"prefixes"},{"id":"10.17034","type":"prefixes"},{"id":"10.17639","type":"prefixes"},{"id":"10.17638","type":"prefixes"},{"id":"10.17637","type":"prefixes"},{"id":"10.17636","type":"prefixes"},{"id":"10.17635","type":"prefixes"},{"id":"10.17634","type":"prefixes"},{"id":"10.17633","type":"prefixes"},{"id":"10.17632","type":"prefixes"},{"id":"10.17630","type":"prefixes"},{"id":"10.17631","type":"prefixes"},{"id":"10.17870","type":"prefixes"},{"id":"10.17868","type":"prefixes"},{"id":"10.17867","type":"prefixes"},{"id":"10.17869","type":"prefixes"},{"id":"10.17864","type":"prefixes"},{"id":"10.17862","type":"prefixes"},{"id":"10.17863","type":"prefixes"},{"id":"10.17861","type":"prefixes"},{"id":"10.17866","type":"prefixes"},{"id":"10.17865","type":"prefixes"},{"id":"10.18746","type":"prefixes"},{"id":"10.18745","type":"prefixes"},{"id":"10.18744","type":"prefixes"},{"id":"10.18743","type":"prefixes"},{"id":"10.18742","type":"prefixes"},{"id":"10.20392","type":"prefixes"},{"id":"10.20391","type":"prefixes"},{"id":"10.20390","type":"prefixes"},{"id":"10.20394","type":"prefixes"},{"id":"10.20393","type":"prefixes"},{"id":"10.21250","type":"prefixes"},{"id":"10.21254","type":"prefixes"},{"id":"10.21253","type":"prefixes"},{"id":"10.21252","type":"prefixes"},{"id":"10.21251","type":"prefixes"},{"id":"10.21957","type":"prefixes"},{"id":"10.21956","type":"prefixes"},{"id":"10.21953","type":"prefixes"},{"id":"10.21955","type":"prefixes"},{"id":"10.21954","type":"prefixes"},{"id":"10.22024","type":"prefixes"},{"id":"10.22023","type":"prefixes"},{"id":"10.22021","type":"prefixes"},{"id":"10.22026","type":"prefixes"},{"id":"10.22025","type":"prefixes"},{"id":"10.22020","type":"prefixes"},{"id":"10.23637","type":"prefixes"},{"id":"10.23636","type":"prefixes"},{"id":"10.23635","type":"prefixes"},{"id":"10.23634","type":"prefixes"},{"id":"10.24353","type":"prefixes"},{"id":"10.24382","type":"prefixes"},{"id":"10.24383","type":"prefixes"},{"id":"10.24384","type":"prefixes"},{"id":"10.24385","type":"prefixes"},{"id":"10.24380","type":"prefixes"},{"id":"10.24381","type":"prefixes"},{"id":"10.24379","type":"prefixes"},{"id":"10.24376","type":"prefixes"},{"id":"10.24378","type":"prefixes"},{"id":"10.24377","type":"prefixes"},{"id":"10.25506","type":"prefixes"},{"id":"10.25505","type":"prefixes"},{"id":"10.25508","type":"prefixes"},{"id":"10.25507","type":"prefixes"},{"id":"10.25502","type":"prefixes"},{"id":"10.25501","type":"prefixes"},{"id":"10.25504","type":"prefixes"},{"id":"10.25503","type":"prefixes"},{"id":"10.25500","type":"prefixes"},{"id":"10.25499","type":"prefixes"},{"id":"10.25560","type":"prefixes"},{"id":"10.25562","type":"prefixes"},{"id":"10.25561","type":"prefixes"},{"id":"10.25568","type":"prefixes"},{"id":"10.25567","type":"prefixes"},{"id":"10.25569","type":"prefixes"},{"id":"10.25564","type":"prefixes"},{"id":"10.25563","type":"prefixes"},{"id":"10.25566","type":"prefixes"},{"id":"10.25565","type":"prefixes"}]}}}],"meta":{"total":1,"total-pages":1,"page":1,"years":[{"id":"2014","title":"2014","count":1}],"providers":[{"id":"bl","title":"The
-        British Library","count":1}]},"links":{"self":"https://app.test.datacite.org/clients?ids=BL.MENDELEY&include=provider","next":"https://app.test.datacite.org/clients?page%5Bnumber%5D=2&page%5Bsize%5D=25"}}'
+        British Library","count":1}]},"links":{"self":"https://api.test.datacite.org/clients?ids=BL.MENDELEY&include=provider","next":"https://api.test.datacite.org/clients?page%5Bnumber%5D=2&page%5Bsize%5D=25"}}'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:23 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:45 GMT
 recorded_with: VCR 3.0.3

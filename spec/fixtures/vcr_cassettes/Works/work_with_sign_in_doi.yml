@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:43:25 GMT
+      - Fri, 21 Sep 2018 08:57:47 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -39,11 +39,11 @@ http_interactions:
         University","allocator":"DEMO - DataCite Demo Provider","allocator_facet":"DEMO
         - DataCite Demo Provider","xml":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCAgICAgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtNC9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE0NDU0L1RFUlJBQVFVQS9DRVJFUy9DTERUWVBISVNUX0wzLjAwNDwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPldvbmcsVGFrbWVuZzwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkNFUkVTIExldmVsIDMgQ2xvdWQgVHlwZSBIaXN0b3JncmFtIFRlcnJhK0FxdWEgSERGIGZpbGUgLSBFZGl0aW9uNDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5OQVNBIExhbmdsZXkgQXRtb3NwaGVyaWMgU2NpZW5jZSBEYXRhIENlbnRlciBEQUFDPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE2PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CjwvcmVzb3VyY2U+","has_metadata":true,"allocator_symbol":"DEMO","uploaded":"2018-05-21T07:53:28Z","namespace":"http://datacite.org/schema/kernel-4","checked":"2018-05-21T07:53:29Z","minted":"2018-05-21T08:00:47Z","state":"findable","updated":"2018-05-21T08:00:47Z","doi":"10.14454/TERRA+AQUA/CERES/CLDTYPHIST_L3.004","schema_version":"4","creator":["Wong,Takmeng"],"resourceTypeGeneral":"Dataset","publisher":"NASA
         Langley Atmospheric Science Data Center DAAC","publicationYear":"2016","title":["CERES
-        Level 3 Cloud Type Historgram Terra+Aqua HDF file - Edition4"],"resourceType":"","_version_":1612198276838195200,"indexed":"2018-09-21T06:41:29.575Z"}]}}
+        Level 3 Cloud Type Historgram Terra+Aqua HDF file - Edition4"],"resourceType":"","_version_":1612206771164676097,"indexed":"2018-09-21T08:56:30.396Z"}]}}
 
 '
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:25 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:47 GMT
 - request:
     method: get
     uri: https://schema.test.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd
@@ -65,7 +65,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 21 Sep 2018 06:11:55 GMT
+      - Fri, 21 Sep 2018 08:56:55 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -75,13 +75,13 @@ http_interactions:
       Server:
       - AmazonS3
       Age:
-      - '1891'
+      - '53'
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 32c8da10203574baccb74b8f771a7ffb.cloudfront.net (CloudFront)
+      - 1.1 e64eb476d8f76c461d21278e018e194f.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - p5iEFdTfa7d7J48hgaBZGPpPrXhg8Vw05cPkCzwtqmVM-3WycSQbxg==
+      - gd3LLBEfCzt2a5clNQu5Syec03_uEFwP55FJ7oTR7cL_kN2Kfg2WOw==
     body:
       encoding: ASCII-8BIT
       string: |
@@ -114,10 +114,10 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:25 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:47 GMT
 - request:
     method: get
-    uri: https://app.test.datacite.org/clients/demo.usertest
+    uri: https://api.test.datacite.org/clients/demo.usertest
     body:
       encoding: US-ASCII
       string: ''
@@ -132,7 +132,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:43:25 GMT
+      - Fri, 21 Sep 2018 08:57:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -146,11 +146,11 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       X-Request-Id:
-      - 3ab2c01e-550d-4b8b-85e2-55dcc2a3a528
+      - 69f0b318-1420-424a-9eb9-0057391121b3
       Etag:
       - W/"73eba05987b21926fc6de4c039cf1eea"
       X-Runtime:
-      - '0.015080'
+      - '0.012032'
       X-Powered-By:
       - Phusion Passenger 5.3.4
       Server:
@@ -162,5 +162,5 @@ http_interactions:
         Client","contact-email":"tech@datacite.org","domains":"*","url":null,"created":"2018-08-06T08:57:05.000Z","updated":"2018-08-26T01:31:14.000Z","is-active":true,"has-password":true},"relationships":{"provider":{"data":{"id":"demo","type":"providers"}},"prefixes":{"data":[{"id":"10.5072","type":"prefixes"},{"id":"10.33512","type":"prefixes"}]}}},"meta":{"dois":[{"id":2016,"title":2016,"count":1},{"id":2018,"title":2018,"count":46}]},"included":[{"id":"demo","type":"providers","attributes":{"name":"DataCite
         Demo Provider","symbol":"DEMO","website":null,"contact-name":"DataCite Support","contact-email":"tech@datacite.org","phone":null,"description":null,"region":null,"country":null,"logo-url":null,"institution-type":null,"is-active":true,"has-password":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"},"relationships":{"prefixes":{"data":[{"id":"10.5072","type":"prefixes"},{"id":"10.70032","type":"prefixes"},{"id":"10.70042","type":"prefixes"},{"id":"10.70043","type":"prefixes"},{"id":"10.70044","type":"prefixes"},{"id":"10.70049","type":"prefixes"},{"id":"10.25626","type":"prefixes"},{"id":"10.25625","type":"prefixes"},{"id":"10.25624","type":"prefixes"},{"id":"10.33512","type":"prefixes"},{"id":"10.33513","type":"prefixes"},{"id":"10.33514","type":"prefixes"}]}}}]}'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:25 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:47 GMT
 recorded_with: VCR 3.0.3

@@ -58,6 +58,6 @@ class DataCenter < Base
   end
 
   def self.url
-    "#{ENV["APP_URL"]}/clients"
+    "#{ENV["API_URL"]}/clients"
   end
 end

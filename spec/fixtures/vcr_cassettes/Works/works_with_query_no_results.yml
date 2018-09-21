@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:43:16 GMT
+      - Fri, 21 Sep 2018 08:57:37 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -34,9 +34,9 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":3},"response":{"numFound":0,"start":0,"docs":[]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":[],"datacentre_facet":[],"resourceType_facet":[],"schema_version":[],"minted":[]},"facet_dates":{},"facet_ranges":{"minted":{"counts":[],"gap":"+1YEAR","start":"2004-01-01T00:00:00Z","end":"2024-01-01T00:00:00Z"}}}}
+      string: '{"responseHeader":{"status":0,"QTime":2},"response":{"numFound":0,"start":0,"docs":[]},"facet_counts":{"facet_queries":{},"facet_fields":{"publicationYear":[],"datacentre_facet":[],"resourceType_facet":[],"schema_version":[],"minted":[]},"facet_dates":{},"facet_ranges":{"minted":{"counts":[],"gap":"+1YEAR","start":"2004-01-01T00:00:00Z","end":"2024-01-01T00:00:00Z"}}}}
 
 '
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:43:16 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:37 GMT
 recorded_with: VCR 3.0.3

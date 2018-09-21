@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 21 Sep 2018 06:42:53 GMT
+      - Fri, 21 Sep 2018 08:57:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '56'
+      - '57'
       X-Ratelimit-Reset:
-      - '1537515037'
+      - '1537523812'
       Cache-Control:
       - public, max-age=60, s-maxage=60
       Vary:
@@ -60,9 +60,9 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'
       X-Runtime-Rack:
-      - '0.053043'
+      - '0.073319'
       X-Github-Request-Id:
-      - CC40:4E27:1419CE2:2BD197C:5BA492ED
+      - CF55:4E28:1C33246:376574E:5BA4B260
     body:
       encoding: ASCII-8BIT
       string: '{"url":"https://api.github.com/repos/datacite/datacite/issues/59","repository_url":"https://api.github.com/repos/datacite/datacite","labels_url":"https://api.github.com/repos/datacite/datacite/issues/59/labels{/name}","comments_url":"https://api.github.com/repos/datacite/datacite/issues/59/comments","events_url":"https://api.github.com/repos/datacite/datacite/issues/59/events","html_url":"https://github.com/datacite/datacite/issues/59","id":233523175,"node_id":"MDU6SXNzdWUyMzM1MjMxNzU=","number":59,"title":"Automatic
@@ -77,5 +77,5 @@ http_interactions:
         assigning a unique DOI suffix if it is not specified, so this logic does not
         have to be included in my app.","closed_by":{"login":"mfenner","id":23151,"node_id":"MDQ6VXNlcjIzMTUx","avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false}}'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:42:53 GMT
+  recorded_at: Fri, 21 Sep 2018 08:57:05 GMT
 recorded_with: VCR 3.0.3

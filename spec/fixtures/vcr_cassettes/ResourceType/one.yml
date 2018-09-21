@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 21 Sep 2018 06:11:55 GMT
+      - Fri, 21 Sep 2018 08:56:55 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -30,14 +30,12 @@ http_interactions:
       - '"6cc0617992b21daf1b6785c473f82b64"'
       Server:
       - AmazonS3
-      Age:
-      - '1851'
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 5f6905ea282e042ad3334bfed8a840ce.cloudfront.net (CloudFront)
+      - 1.1 b44e2902bb3501d47514e51618f1bda5.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - E65YHRy7cZnJPBsnyyDyYV983-zBKu87MIqj5jCe8DYdeFswzoqMSw==
+      - 1uijeG_94KeAaYartR3yoRDY77fTIIR-zYP-IbgcgR3kzUjEyBghEw==
     body:
       encoding: ASCII-8BIT
       string: |
@@ -70,5 +68,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:42:44 GMT
+  recorded_at: Fri, 21 Sep 2018 08:56:54 GMT
 recorded_with: VCR 3.0.3

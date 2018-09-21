@@ -16,8 +16,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   end
 
   it "works with page size" do
@@ -27,8 +27,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(40)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   end
 
   it "works with sample" do
@@ -38,8 +38,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
-    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
+    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
   end
 
   it "works with sample and sample-group" do
@@ -49,8 +49,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
-    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
+    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
   end
 
   it "works with sample and sample-group limit total to 1000" do
@@ -60,8 +60,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(1000)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
-    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
+    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
   end
 
   it "works with include data-center" do
@@ -71,13 +71,13 @@ describe "Works", type: :request, vcr: true do
   
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   
-    expect(json["included"].size).to eq(3)
+    expect(json["included"].size).to eq(4)
     data_center = json["included"].first
-    expect(data_center["id"]).to eq("tib.mpdl")
-    expect(data_center.dig("attributes", "title")).to eq("Max Planck Digital Library")
+    expect(data_center["id"]).to eq("bl.cam")
+    expect(data_center.dig("attributes", "title")).to eq("University of Cambridge")
   end
   
   it "works with include data-center, member and resource-type" do
@@ -87,13 +87,13 @@ describe "Works", type: :request, vcr: true do
   
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   
-    expect(json["included"].size).to eq(7)
-    member = json["included"].last
-    expect(member["id"]).to eq("bl")
-    expect(member.dig("attributes", "title")).to eq("The British Library")
+    expect(json["included"].size).to eq(9)
+    client = json["included"].last
+    expect(client["id"]).to eq("bl.mendeley")
+    expect(client.dig("attributes", "title")).to eq("Mendeley Data")
   end
 
   it "works with query" do
@@ -172,8 +172,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
+    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
   end
   
   it "works with resource-type dataset and data-center mendeley" do

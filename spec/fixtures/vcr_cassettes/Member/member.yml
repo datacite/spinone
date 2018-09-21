@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://app.test.datacite.org/members/ands
+    uri: https://api.test.datacite.org/members/ands
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 06:42:42 GMT
+      - Fri, 21 Sep 2018 08:56:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -29,17 +29,25 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Vary:
-      - Accept-Encoding, Origin
-      X-Request-Id:
-      - 4003634f-1ada-4227-9713-75b4dcbb95a8
+      - Accept-Encoding
       Etag:
-      - W/"79a10d7082bd71ef71f11e9d01358c11"
+      - W/"33a6d09b00c6e06893938ff196abb42e"
       X-Runtime:
-      - '0.005215'
+      - '0.076232'
+      X-Request-Id:
+      - d555172e-74d0-42b7-bfb4-f712a6bd145c
       X-Powered-By:
-      - Phusion Passenger 5.3.4
+      - Phusion Passenger 5.3.2
       Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.4
+      - nginx/1.14.0 + Phusion Passenger 5.3.2
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      Access-Control-Expose-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
@@ -61,7 +69,7 @@ http_interactions:
         own research collections. This, in turn, provides researchers with a means
         of citing their published data and achieving recognition for their research
         data output.\n \nSubscribe to our discussion list: [ANDS Google Group](https://groups.google.com/forum/?hl=en#!forum/ands-general).\n
-        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9&id=22b849a4ee).","member-type":"provider","institution-type":null,"region":"APAC","country":"AU","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"}}}'
+        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9&amp;id=22b849a4ee).","member-type":"provider","region":"APAC","country":"AU","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"},"relationships":{}}}'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 06:42:42 GMT
+  recorded_at: Fri, 21 Sep 2018 08:56:52 GMT
 recorded_with: VCR 3.0.3
