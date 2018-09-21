@@ -7,11 +7,11 @@ describe "DataCenters", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     meta = json["meta"]
-    expect(meta["total"]).to eq(1457)
-    expect(meta["members"].size).to eq(63)
-    expect(meta["members"].first).to eq("id"=>"CDL", "title"=>"California Digital Library", "count"=>235)
+    expect(meta["total"]).to eq(1508)
+    expect(meta["members"].size).to eq(15)
+    expect(meta["members"].first).to eq("id"=>"cdl", "title"=>"California Digital Library", "count"=>235)
     expect(meta["years"].size).to eq(9)
-    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>78)
+    expect(meta["years"].first).to eq("count"=>6, "id"=>"2010", "title"=>"2010")
 
     expect(json["data"].size).to eq(25)
     data_center = json["data"].first
@@ -27,9 +27,9 @@ describe "DataCenters", type: :request, vcr: true do
     meta = json["meta"]
     expect(meta["total"]).to eq(5)
     expect(meta["members"].size).to eq(2)
-    expect(meta["members"].first).to eq("id"=>"CDL", "title"=>"California Digital Library", "count"=>4)
+    expect(meta["members"].first).to eq("id"=>"cdl", "title"=>"California Digital Library", "count"=>4)
     expect(meta["years"].size).to eq(4)
-    expect(meta["years"].first).to eq("id"=>"2016", "title"=>"2016", "count"=>2)
+    expect(meta["years"].first).to eq("count"=>1, "id"=>"2012", "title"=>"2012")
 
     expect(json["data"].size).to eq(5)
     data_center = json["data"].first

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma 4.0.5 - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,9 +17,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 11 Apr 2018 07:23:57 GMT
+      - Fri, 21 Sep 2018 06:42:42 GMT
       Content-Type:
-      - application/vnd.api+json; charset=utf-8
+      - application/json; charset=utf-8
       Connection:
       - keep-alive
       Status:
@@ -31,15 +31,15 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       X-Request-Id:
-      - 6176f72b-0be4-42d4-9f74-d7c549b26d5d
+      - 4003634f-1ada-4227-9713-75b4dcbb95a8
       Etag:
-      - W/"cf1d8df7c582c5758326950613d5bf33"
+      - W/"79a10d7082bd71ef71f11e9d01358c11"
       X-Runtime:
-      - '0.004735'
+      - '0.005215'
       X-Powered-By:
-      - Phusion Passenger 5.2.3
+      - Phusion Passenger 5.3.4
       Server:
-      - nginx/1.12.2 + Phusion Passenger 5.2.3
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
@@ -61,8 +61,7 @@ http_interactions:
         own research collections. This, in turn, provides researchers with a means
         of citing their published data and achieving recognition for their research
         data output.\n \nSubscribe to our discussion list: [ANDS Google Group](https://groups.google.com/forum/?hl=en#!forum/ands-general).\n
-        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9\u0026id=22b849a4ee).","member-type":"provider","institution-type":null,"region":"Asia
-        Pacific","country":"Australia","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-04-11T01:25:40.000Z"}}}'
+        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9&id=22b849a4ee).","member-type":"provider","institution-type":null,"region":"APAC","country":"AU","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"}}}'
     http_version: 
-  recorded_at: Wed, 11 Apr 2018 07:23:57 GMT
+  recorded_at: Fri, 21 Sep 2018 06:42:42 GMT
 recorded_with: VCR 3.0.3

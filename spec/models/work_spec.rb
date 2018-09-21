@@ -19,11 +19,11 @@ describe Work, type: :model, vcr: true do
     end
 
     it "with id" do
-      expect(Work.get_query_url(id: "10.5061/DRYAD.Q447C")).to eq("https://solr.test.datacite.org/api?q=10.5061%2FDRYAD.Q447C&fq=doi%3A%2210.5061%2FDRYAD.Q447C%22&defType=edismax&wt=json")
+      expect(Work.get_query_url(id: "10.5061/DRYAD.Q447C")).to eq("https://solr.test.datacite.org/api?q=doi%3A10.5061%2FDRYAD.Q447C&wt=json")
     end
 
     it "with work_id" do
-      expect(Work.get_query_url(work_id: "10.5061/DRYAD.Q447C")).to eq("https://solr.test.datacite.org/api?q=10.5061%2FDRYAD.Q447C&fl=doi%2CrelatedIdentifier&defType=edismax&wt=json")
+      expect(Work.get_query_url(work_id: "10.5061/DRYAD.Q447C")).to eq("https://solr.test.datacite.org/api?q=relatedIdentifier%3A10.5061%2FDRYAD.Q447C&fl=doi%2CrelatedIdentifier&wt=json")
     end
 
     it "with ids" do

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma 4.0.5 - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 11 Apr 2018 07:03:59 GMT
+      - Fri, 21 Sep 2018 06:11:55 GMT
       Content-Encoding:
       - text
       Last-Modified:
@@ -31,13 +31,13 @@ http_interactions:
       Server:
       - AmazonS3
       Age:
-      - '117'
+      - '1851'
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 0991a4b934302d120a32dada6513dc35.cloudfront.net (CloudFront)
+      - 1.1 5f6905ea282e042ad3334bfed8a840ce.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - B6esaAHmexJSHDcaMgO9ky__oju7qMR3tNB_ZXUaOIE1IwZ-npN6fQ==
+      - E65YHRy7cZnJPBsnyyDyYV983-zBKu87MIqj5jCe8DYdeFswzoqMSw==
     body:
       encoding: ASCII-8BIT
       string: |
@@ -70,5 +70,5 @@ http_interactions:
           </xs:simpleType>
         </xs:schema>
     http_version: 
-  recorded_at: Wed, 11 Apr 2018 07:05:54 GMT
+  recorded_at: Fri, 21 Sep 2018 06:42:44 GMT
 recorded_with: VCR 3.0.3

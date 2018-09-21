@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Maremma 4.0.5 - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -19,27 +19,27 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Wed, 11 Apr 2018 07:19:46 GMT
+      - Fri, 21 Sep 2018 06:42:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '4666'
+      - '4943'
       Status:
       - 200 OK
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '55'
+      - '56'
       X-Ratelimit-Reset:
-      - '1523433915'
+      - '1537515037'
       Cache-Control:
       - public, max-age=60, s-maxage=60
       Vary:
       - Accept
       Etag:
-      - '"39f8ad442c05f3972b4665f7417bafec"'
+      - '"dc671671914b68470755c73fb4ed1ed2"'
       Last-Modified:
-      - Wed, 11 Apr 2018 07:19:04 GMT
+      - Thu, 20 Sep 2018 09:03:20 GMT
       X-Github-Media-Type:
       - unknown, github.v3
       Access-Control-Expose-Headers:
@@ -60,22 +60,22 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'
       X-Runtime-Rack:
-      - '0.074457'
+      - '0.053043'
       X-Github-Request-Id:
-      - D134:3DA9:C8970A:19FFEA7:5ACDB712
+      - CC40:4E27:1419CE2:2BD197C:5BA492ED
     body:
       encoding: ASCII-8BIT
-      string: '{"url":"https://api.github.com/repos/datacite/datacite/issues/59","repository_url":"https://api.github.com/repos/datacite/datacite","labels_url":"https://api.github.com/repos/datacite/datacite/issues/59/labels{/name}","comments_url":"https://api.github.com/repos/datacite/datacite/issues/59/comments","events_url":"https://api.github.com/repos/datacite/datacite/issues/59/events","html_url":"https://github.com/datacite/datacite/issues/59","id":233523175,"number":59,"title":"Automatic
-        DOI suffix generation","user":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"labels":[{"id":856629765,"url":"https://api.github.com/repos/datacite/datacite/labels/DOI%20Fabrica","name":"DOI
-        Fabrica","color":"006b75","default":false},{"id":793025202,"url":"https://api.github.com/repos/datacite/datacite/labels/data%20center","name":"data
-        center","color":"f9cfb9","default":false},{"id":793025391,"url":"https://api.github.com/repos/datacite/datacite/labels/user%20story","name":"user
-        story","color":"d4c5f9","default":false}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/datacite/datacite/milestones/10","html_url":"https://github.com/datacite/datacite/milestone/10","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/10/labels","id":2564092,"number":10,"title":"Develop
+      string: '{"url":"https://api.github.com/repos/datacite/datacite/issues/59","repository_url":"https://api.github.com/repos/datacite/datacite","labels_url":"https://api.github.com/repos/datacite/datacite/issues/59/labels{/name}","comments_url":"https://api.github.com/repos/datacite/datacite/issues/59/comments","events_url":"https://api.github.com/repos/datacite/datacite/issues/59/events","html_url":"https://github.com/datacite/datacite/issues/59","id":233523175,"node_id":"MDU6SXNzdWUyMzM1MjMxNzU=","number":59,"title":"Automatic
+        DOI suffix generation","user":{"login":"mfenner","id":23151,"node_id":"MDQ6VXNlcjIzMTUx","avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"labels":[{"id":856629765,"node_id":"MDU6TGFiZWw4NTY2Mjk3NjU=","url":"https://api.github.com/repos/datacite/datacite/labels/DOI%20Fabrica","name":"DOI
+        Fabrica","color":"006b75","default":false},{"id":793025202,"node_id":"MDU6TGFiZWw3OTMwMjUyMDI=","url":"https://api.github.com/repos/datacite/datacite/labels/data%20center","name":"data
+        center","color":"f9cfb9","default":false},{"id":793025391,"node_id":"MDU6TGFiZWw3OTMwMjUzOTE=","url":"https://api.github.com/repos/datacite/datacite/labels/user%20story","name":"user
+        story","color":"d4c5f9","default":false}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":{"url":"https://api.github.com/repos/datacite/datacite/milestones/10","html_url":"https://github.com/datacite/datacite/milestone/10","labels_url":"https://api.github.com/repos/datacite/datacite/milestones/10/labels","id":2564092,"node_id":"MDk6TWlsZXN0b25lMjU2NDA5Mg==","number":10,"title":"Develop
         new DOI Fabrica service","description":"The current DataCite Metadata Store
         (MDS) will be renovated to become the new DOI Fabrica Service, including all
-        the functionalities needed to manage providers, clients, and prefixes. ","creator":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":3,"closed_issues":15,"state":"closed","created_at":"2017-06-06T07:02:38Z","updated_at":"2018-04-08T06:22:29Z","due_on":"2017-10-19T07:00:00Z","closed_at":"2017-11-01T13:57:48Z"},"comments":1,"created_at":"2017-06-05T08:17:55Z","updated_at":"2018-04-11T07:19:04Z","closed_at":"2018-04-07T17:22:53Z","author_association":"OWNER","body":"As
+        the functionalities needed to manage providers, clients, and prefixes. ","creator":{"login":"mfenner","id":23151,"node_id":"MDQ6VXNlcjIzMTUx","avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false},"open_issues":3,"closed_issues":15,"state":"closed","created_at":"2017-06-06T07:02:38Z","updated_at":"2018-04-08T06:22:29Z","due_on":"2017-10-19T07:00:00Z","closed_at":"2017-11-01T13:57:48Z"},"comments":1,"created_at":"2017-06-05T08:17:55Z","updated_at":"2018-04-11T07:19:04Z","closed_at":"2018-04-07T17:22:53Z","author_association":"MEMBER","body":"As
         a data center, I want the option of having the mint DOI API operation automatically
         assigning a unique DOI suffix if it is not specified, so this logic does not
-        have to be included in my app.","closed_by":{"login":"mfenner","id":23151,"avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false}}'
+        have to be included in my app.","closed_by":{"login":"mfenner","id":23151,"node_id":"MDQ6VXNlcjIzMTUx","avatar_url":"https://avatars0.githubusercontent.com/u/23151?v=4","gravatar_id":"","url":"https://api.github.com/users/mfenner","html_url":"https://github.com/mfenner","followers_url":"https://api.github.com/users/mfenner/followers","following_url":"https://api.github.com/users/mfenner/following{/other_user}","gists_url":"https://api.github.com/users/mfenner/gists{/gist_id}","starred_url":"https://api.github.com/users/mfenner/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mfenner/subscriptions","organizations_url":"https://api.github.com/users/mfenner/orgs","repos_url":"https://api.github.com/users/mfenner/repos","events_url":"https://api.github.com/users/mfenner/events{/privacy}","received_events_url":"https://api.github.com/users/mfenner/received_events","type":"User","site_admin":false}}'
     http_version: 
-  recorded_at: Wed, 11 Apr 2018 07:19:46 GMT
+  recorded_at: Fri, 21 Sep 2018 06:42:53 GMT
 recorded_with: VCR 3.0.3

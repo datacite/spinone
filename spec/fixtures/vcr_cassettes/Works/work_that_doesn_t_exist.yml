@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://solr.test.datacite.org/api?defType=edismax&fq=doi:%2210.1098/rsif.2017.0030%22&q=10.1098/rsif.2017.0030&wt=json
+    uri: https://solr.test.datacite.org/api?q=doi:10.1098/rsif.2017.0030&wt=json
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma 4.0.5 - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 19 Jun 2018 20:14:11 GMT
+      - Fri, 21 Sep 2018 06:43:25 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -34,9 +34,9 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":3},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Tue, 19 Jun 2018 20:14:16 GMT
+  recorded_at: Fri, 21 Sep 2018 06:43:25 GMT
 recorded_with: VCR 3.0.3

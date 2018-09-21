@@ -7,14 +7,14 @@ describe "Pages", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     meta = json["meta"]
-    expect(meta["total"]).to eq(87)
+    expect(meta["total"]).to eq(91)
     expect(meta["tags"].size).to eq(15)
-    expect(meta["tags"].first).to eq(["datacite", 19])
+    expect(meta["tags"].first).to eq(["datacite", 20])
 
     expect(json["data"].size).to eq(25)
     page = json["data"].first
-    expect(page["id"]).to eq("https://doi.org/10.5438/d5zg-9g02")
-    expect(page.dig("attributes", "title")).to eq("Wellcome explains the benefits of developing an open and global grant identifier")
+    expect(page["id"]).to eq("https://doi.org/10.5438/1nmy-9902")
+    expect(page.dig("attributes", "title")).to eq("DOI Registrations for Software")
   end
 
   it "pages query" do
@@ -39,14 +39,14 @@ describe "Pages", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     meta = json["meta"]
-    expect(meta["total"]).to eq(87)
+    expect(meta["total"]).to eq(91)
     expect(meta["tags"].size).to eq(15)
-    expect(meta["tags"].first).to eq(["datacite", 19])
+    expect(meta["tags"].first).to eq(["datacite", 20])
 
     expect(json["data"].size).to eq(25)
     page = json["data"].first
-    expect(page["id"]).to eq("https://doi.org/10.5438/zwsf-4y7y")
-    expect(page.dig("attributes", "title")).to eq("2016 in review")
+    expect(page["id"]).to eq("https://doi.org/10.5438/0000-9g41")
+    expect(page.dig("attributes", "title")).to eq("Welcoming Children’s Hospital of Philadelphia to the community!")
   end
 
   it "pages query by tag" do

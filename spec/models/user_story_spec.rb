@@ -3,14 +3,14 @@ require 'rails_helper'
 describe UserStory, type: :model, vcr: true do
   it "get_total" do
     total = UserStory.get_total
-    expect(total).to eq(63)
+    expect(total).to eq(51)
   end
 
   it "user_stories" do
     user_stories = UserStory.all[:data]
     expect(user_stories.size).to eq(25)
     user_story = user_stories.first
-    expect(user_story.title).to eq("Access to previous metadata versions")
+    expect(user_story.title).to eq("Add labels for prefixes")
   end
 
   it "user_story" do

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Works", type: :request, vcr: true do
-  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.4124/73nbydxz48.1", title: "Test dataset 020318120825643") }
+  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.4124/yhgcy9kj4d.2", title: "2018-09-21 07:26:21.58 3 authors public mode (revised)") }
 
   it "works" do
     get '/works'
@@ -10,13 +10,13 @@ describe "Works", type: :request, vcr: true do
 
     meta = json["meta"]
     expect(meta["data-centers"].size).to eq(15)
-    expect(meta["data-centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>4786)
+    expect(meta["data-centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>5185)
     expect(meta["years"].size).to eq(15)
-    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>1254)
+    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>3593)
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
     expect(work.dig("attributes", "title")).to eq(expected_work.title)
   end
 
@@ -27,7 +27,7 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(40)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
     expect(work.dig("attributes", "title")).to eq(expected_work.title)
   end
 
@@ -38,8 +38,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc8bzg0")
-    expect(work.dig("attributes", "title")).to eq("CCDC 248882: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
+    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
   end
 
   it "works with sample and sample-group" do
@@ -49,8 +49,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc8bzg0")
-    expect(work.dig("attributes", "title")).to eq("CCDC 248882: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
+    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
   end
 
   it "works with sample and sample-group limit total to 1000" do
@@ -58,10 +58,10 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(809)
+    expect(json["data"].size).to eq(1000)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/cc8bzg0")
-    expect(work.dig("attributes", "title")).to eq("CCDC 248882: Experimental Crystal Structure Determination")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.0133/37863")
+    expect(work.dig("attributes", "title")).to eq("Dataset O from workspace-1529413298898")
   end
 
   it "works with include data-center" do
@@ -71,13 +71,13 @@ describe "Works", type: :request, vcr: true do
   
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
     expect(work.dig("attributes", "title")).to eq(expected_work.title)
   
-    expect(json["included"].size).to eq(5)
+    expect(json["included"].size).to eq(3)
     data_center = json["included"].first
-    expect(data_center["id"]).to eq("bl.mendeley")
-    expect(data_center.dig("attributes", "title")).to eq("Mendeley Data")
+    expect(data_center["id"]).to eq("tib.mpdl")
+    expect(data_center.dig("attributes", "title")).to eq("Max Planck Digital Library")
   end
   
   it "works with include data-center, member and resource-type" do
@@ -87,13 +87,13 @@ describe "Works", type: :request, vcr: true do
   
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
     expect(work.dig("attributes", "title")).to eq(expected_work.title)
   
-    expect(json["included"].size).to eq(11)
+    expect(json["included"].size).to eq(7)
     member = json["included"].last
-    expect(member["id"]).to eq("bibsys")
-    expect(member.dig("attributes", "title")).to eq("BIBSYS")
+    expect(member["id"]).to eq("bl")
+    expect(member.dig("attributes", "title")).to eq("The British Library")
   end
 
   it "works with query" do
@@ -101,10 +101,10 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(8)
+    expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.946")
-    expect(work.dig("attributes", "title")).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.12203")
+    expect(work.dig("attributes", "title")).to eq("Fate mapping of human glioblastoma reveals an invariant stem cell hierarchy")
   end
 
   it "works with query sort by minted" do
@@ -112,10 +112,10 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(8)
+    expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.946")
-    expect(work.dig("attributes", "title")).to eq("Genome-Wide Meta-Analyses of Breast, Ovarian, and Prostate Cancer Association Studies Identify Multiple New Susceptibility Loci Shared by at Least Two Cancer Types.")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.12203")
+    expect(work.dig("attributes", "title")).to eq("Fate mapping of human glioblastoma reveals an invariant stem cell hierarchy")
   end
 
   it "works with query no results" do
@@ -132,11 +132,11 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(6)
+    expect(json["data"].size).to eq(18)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/a330d8b8-8903-4340-82f9-373883fbf6ae")
-    expect(work.dig("attributes", "title")).to eq("Federica - test type sent to datacite - 5_11_1")
-    expect(work.dig("attributes", "url")).to eq("http://riswebtest.st-andrews.ac.uk/portal/en/datasets/federica--test-type-sent-to-datacite--5111(a330d8b8-8903-4340-82f9-373883fbf6ae).html")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.5438/6brg-2m37")
+    expect(work.dig("attributes", "title")).to eq("Właściwości rzutowań podprzestrzeniowych")
+    expect(work.dig("attributes", "url")).to eq("http://www.datacite.org")
   end
 
   it "works with resource-type dataset" do
@@ -144,12 +144,12 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json.dig("meta", "total")).to eq(5738)
-    expect(json.dig("meta", "total-pages")).to eq(230)
+    expect(json.dig("meta", "total")).to eq(7076)
+    expect(json.dig("meta", "total-pages")).to eq(284)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.24411/763b-b945")
+    expect(work.dig("attributes", "title")).to eq("Example Requested DOI Gamma rays")
   end
 
   it "works with data-center-id" do
@@ -157,12 +157,12 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json.dig("meta", "total")).to eq(282)
-    expect(json.dig("meta", "total-pages")).to eq(12)
+    expect(json.dig("meta", "total")).to eq(895)
+    expect(json.dig("meta", "total-pages")).to eq(36)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq(expected_work.title)
+    expect(work.dig("attributes", "title")).to eq("Data for: a titlre - matt and richard -edit -edited")
   end
 
   it "works with checked date" do
@@ -172,7 +172,7 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq(expected_work.id)
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.15771/imejidev.uo")
     expect(work.dig("attributes", "title")).to eq(expected_work.title)
   end
   
@@ -181,12 +181,12 @@ describe "Works", type: :request, vcr: true do
   
     expect(last_response.status).to eq(200)
   
-    expect(json.dig("meta", "total")).to eq(281)
-    expect(json.dig("meta", "total-pages")).to eq(12)
+    expect(json.dig("meta", "total")).to eq(894)
+    expect(json.dig("meta", "total-pages")).to eq(36)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.4124/73nbydxz48.1")
-    expect(work.dig("attributes", "title")).to eq("Test dataset 020318120825643")
+    expect(work["id"]).to eq(expected_work.id)
+    expect(work.dig("attributes", "title")).to eq("Data for: a titlre - matt and richard -edit -edited")
   end
 
   it "related works" do

@@ -14,14 +14,16 @@ class Milestone < Base
     @updated = attributes.fetch("updated_at", nil)
     @closed = attributes.fetch("closed_at", nil)
 
-    @cache_key = "milestones/#{@id}"
+    @cache_key = "milestones/#{@id}/#{@updated}"
   end
 
   def self.get_query_url(options={})
     if options[:id].present?
       "#{url}/#{options[:id]}?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
+    elsif options[:state] == "closed"
+      url + "?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}&state=closed"
     else
-      url + "?state=all&github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
+      url + "?github_token=#{ENV['GITHUB_PERSONAL_ACCESS_TOKEN']}"
     end
   end
 
