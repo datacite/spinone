@@ -23,6 +23,12 @@ module Identifiable
       Array(/\A(http|https):\/\/(www\.)?(orcid\.org)/.match(orcid_scheme)).last
     end
 
+    def validate_doi(doi)
+      doi = Array(/\A(?:(http|https):\/(\/)?(dx\.)?(doi.org|handle.test.datacite.org)\/)?(doi:)?(10\.\d{4,5}\/.+)\z/.match(doi)).last
+      # remove non-printing whitespace and downcase
+      doi.delete("\u200B").downcase if doi.present?
+    end
+
     def github_from_url(url)
       return {} unless /\Ahttps:\/\/github\.com\/(.+)(?:\/)?(.+)?(?:\/tree\/)?(.*)\z/.match(url)
       words = URI.parse(url).path[1..-1].split('/')
@@ -45,13 +51,11 @@ module Identifiable
     end
 
     def doi_as_url(doi)
+      doi = validate_doi(doi)
       return nil unless doi.present?
-
       # use test handle server unless production environment
       doi_resolver = Rails.env.production? ? "https://doi.org/" : "https://handle.test.datacite.org/"
 
-      # remove non-printing whitespace and downcase
-      doi = doi.delete("\u200B").downcase
       doi_resolver + Addressable::URI.encode(doi)
     end
 

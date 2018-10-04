@@ -109,6 +109,12 @@ describe Work, type: :model, vcr: true do
       expect(response).to eq("https://handle.test.datacite.org/10.5061/dryad.8515")
     end
 
+    it "doi_as_url with invalid doi" do
+      doi = "(:tba)"
+      response = subject.doi_as_url(doi)
+      expect(response).to eq(nil)
+    end
+
     it "github_as_owner_url" do
       response = subject.github_as_owner_url(github_hash)
       expect(response).to eq("https://github.com/Troy-Wilson")
