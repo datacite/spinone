@@ -13,7 +13,6 @@ https://api.datacite.org/pages?tag=orcid
 
 ```
 
-
 The full documentation can be found [here](https://support.datacite.org/docs/api).
 
 ## Installation
