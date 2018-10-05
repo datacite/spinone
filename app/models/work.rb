@@ -295,9 +295,16 @@ class Work < Base
         per_page = (1..1000).include?(per_page) ? per_page : 1000
       elsif options[:sample].present? && options[:sample_group].blank?
         per_page = (1..100).include?(options[:sample].to_i) ? options[:sample].to_i : 10
-      else
-        per_page = options.dig(:page, :size) && (1..1000).include?(options.dig(:page, :size).to_i) ? options.dig(:page, :size).to_i : 25
       end
+
+      if options.dig(:page, :size).present? 
+        per_page = [options.dig(:page, :size).to_i, 1000].min
+        max_number = per_page > 0 ? 10000/per_page : 1
+      else
+        per_page = 25
+        max_number = 10000/per_page
+      end
+      page = page.to_i > 0 ? [page.to_i, max_number].min : 1
       offset = (page - 1) * per_page
 
       total_pages = (total.to_f / per_page).ceil
