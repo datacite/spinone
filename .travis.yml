@@ -59,10 +59,11 @@ after_success:
       git remote;
       git config user.email ${DOCKER_EMAIL};
       git config user.name ${DOCKER_USERNAME};
-      git add stage/services/api/_spinone.auto.tfvars;
       
       if [ "${TRAVIS_TAG?}" ]; then
         git add prod-eu-west/services/api/_spinone.auto.tfvars;
+      else
+        git add stage/services/api/_spinone.auto.tfvars;
       fi
 
       git commit -m "Adding spinone git variables for latest commit";
