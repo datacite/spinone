@@ -60,7 +60,12 @@ after_success:
       git config user.email ${DOCKER_EMAIL};
       git config user.name ${DOCKER_USERNAME};
       git add stage/services/api/_spinone.auto.tfvars;
-      git commit -m "Adding spinone git variables for latest commit" --allow-empty;
+      
+      if [ "${TRAVIS_TAG?}" ]; then
+        git add prod-eu-west/services/api/_spinone.auto.tfvars;
+      fi
+
+      git commit -m "Adding spinone git variables for latest commit";
       git push "https://${TRAVIS_SECURE_TOKEN}@github.com/datacite/mastino.git" master;
     fi
 
