@@ -1,6 +1,7 @@
 class MembersController < ApplicationController
   def index
     @members = Member.where(params)
+    fail AbstractController::ActionNotFound unless @members.present?
 
     options = {}
     options[:meta] = @members[:meta]

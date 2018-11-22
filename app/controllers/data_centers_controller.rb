@@ -3,6 +3,8 @@ class DataCentersController < ApplicationController
 
   def index
     @data_centers = DataCenter.where(params)
+    fail AbstractController::ActionNotFound unless @data_centers.present?
+
     @data_centers[:meta]["members"] = @data_centers[:meta].delete "providers"
 
     options = {}

@@ -367,6 +367,8 @@ class Work < Base
     return [] unless data_centers.present?
 
     response = DataCenter.where(ids: data_centers.keys.join(","))
+    return [] unless response.present?
+    
     response.fetch(:data, [])
             .map { |p| { id: p.id.downcase, title: p.name, count: data_centers.fetch(p.id.upcase, 0) } }
             .sort { |a, b| b[:count] <=> a[:count] }
