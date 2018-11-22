@@ -332,10 +332,6 @@ class Work < Base
     resource_types = Array.wrap(facets.dig("facet_fields", "resourceType_facet"))
                            .each_slice(2)
                            .map { |k,v| { id: k.underscore.dasherize, title: k.underscore.humanize, count: v } }
-    years = Array.wrap(facets.dig("facet_fields", "publicationYear"))
-                  .each_slice(2)
-                  .sort { |a, b| b.first <=> a.first }
-                  .map { |i| { id: i[0], title: i[0], count: i[1] } }
     registered = Array.wrap(facets.dig("facet_ranges", "minted", "counts"))
                   .each_slice(2)
                   .sort { |a, b| b.first <=> a.first }
@@ -362,7 +358,6 @@ class Work < Base
     end
 
     { "resource-types" => resource_types,
-      "years" => years,
       "registered" => registered,
       "data-centers" => data_centers,
       "schema-versions" => schema_versions }

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.test.datacite.org/members/ands
+    uri: https://api.test.datacite.org/providers/ands
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Sep 2018 08:56:52 GMT
+      - Thu, 22 Nov 2018 18:47:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -29,34 +29,27 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Vary:
-      - Accept-Encoding
-      Etag:
-      - W/"33a6d09b00c6e06893938ff196abb42e"
-      X-Runtime:
-      - '0.076232'
+      - Accept-Encoding, Origin
       X-Request-Id:
-      - d555172e-74d0-42b7-bfb4-f712a6bd145c
+      - b31dadc6-1225-4d75-bb6f-37f4a804a0ed
+      Etag:
+      - W/"1e5e8efe58bdeb65f8468426d161a66f"
+      X-Runtime:
+      - '0.023953'
       X-Powered-By:
-      - Phusion Passenger 5.3.2
+      - Phusion Passenger 5.3.7
       Server:
-      - nginx/1.14.0 + Phusion Passenger 5.3.2
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Access-Control-Allow-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
-      Access-Control-Expose-Headers:
-      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
+      - nginx/1.14.0 + Phusion Passenger 5.3.7
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"id":"ands","type":"members","attributes":{"title":"Australian
-        National Data Service","description":"The Australian National Data Service
-        (ANDS) makes Australia''s research data assets more valuable for researchers,
-        research institutions and the nation.\n\nWe do this through working in trusted
-        partnerships on research data projects, delivering reliable national services
-        and enhancing the capability of Australia''s research data system.\n \nA key
-        ANDS service is the [Research Data Australia](http://researchdata.ands.org.au/)
+      string: '{"data":{"id":"ands","type":"providers","attributes":{"name":"Australian
+        National Data Service","symbol":"ANDS","website":"http://www.ands.org.au","contactName":"Adrian
+        Burton","contactEmail":"services@ands.org.au","phone":null,"description":"The
+        Australian National Data Service (ANDS) makes Australia''s research data assets
+        more valuable for researchers, research institutions and the nation.\n\nWe
+        do this through working in trusted partnerships on research data projects,
+        delivering reliable national services and enhancing the capability of Australia''s
+        research data system.\n \nA key ANDS service is the [Research Data Australia](http://researchdata.ands.org.au/)
         discovery portal where you can find, access and reuse Australian research
         data.\n\nANDS is a partnership led by Monash University, in collaboration
         with the Australian National University and CSIRO. It is funded by the Australian
@@ -69,7 +62,7 @@ http_interactions:
         own research collections. This, in turn, provides researchers with a means
         of citing their published data and achieving recognition for their research
         data output.\n \nSubscribe to our discussion list: [ANDS Google Group](https://groups.google.com/forum/?hl=en#!forum/ands-general).\n
-        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9&amp;id=22b849a4ee).","member-type":"provider","region":"APAC","country":"AU","year":null,"logo-url":"https://assets.datacite.org/images/members/ands.png","email":"services@ands.org.au","website":"http://www.ands.org.au","phone":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"},"relationships":{}}}'
+        \nSubscribe to our e-newsletter: [andsUP](http://us7.campaign-archive2.com/home/?u=b542ef52e49302569068046d9&id=22b849a4ee).","region":"APAC","country":"AU","logoUrl":"https://assets.datacite.org/images/members/ands.png","organizationType":null,"focusArea":null,"isActive":true,"hasPassword":true,"joined":null,"created":"2010-01-01T00:00:00.000Z","updated":"2018-08-26T01:25:40.000Z"},"relationships":{"prefixes":{"data":[{"id":"10.4225","type":"prefixes"},{"id":"10.4227","type":"prefixes"},{"id":"10.4226","type":"prefixes"},{"id":"10.5072","type":"prefixes"},{"id":"10.33533","type":"prefixes"},{"id":"10.33527","type":"prefixes"},{"id":"10.33534","type":"prefixes"},{"id":"10.33535","type":"prefixes"},{"id":"10.33553","type":"prefixes"},{"id":"10.33550","type":"prefixes"},{"id":"10.33556","type":"prefixes"},{"id":"10.33551","type":"prefixes"},{"id":"10.33554","type":"prefixes"},{"id":"10.33567","type":"prefixes"},{"id":"10.33561","type":"prefixes"},{"id":"10.33557","type":"prefixes"},{"id":"10.33589","type":"prefixes"},{"id":"10.33627","type":"prefixes"},{"id":"10.33630","type":"prefixes"},{"id":"10.33632","type":"prefixes"},{"id":"10.33631","type":"prefixes"},{"id":"10.33628","type":"prefixes"},{"id":"10.33633","type":"prefixes"},{"id":"10.33625","type":"prefixes"},{"id":"10.33636","type":"prefixes"},{"id":"10.33644","type":"prefixes"},{"id":"10.33635","type":"prefixes"},{"id":"10.33626","type":"prefixes"},{"id":"10.33603","type":"prefixes"},{"id":"10.33604","type":"prefixes"},{"id":"10.33605","type":"prefixes"},{"id":"10.33606","type":"prefixes"},{"id":"10.33653","type":"prefixes"},{"id":"10.33654","type":"prefixes"},{"id":"10.33656","type":"prefixes"},{"id":"10.33657","type":"prefixes"},{"id":"10.33634","type":"prefixes"},{"id":"10.33658","type":"prefixes"},{"id":"10.33661","type":"prefixes"},{"id":"10.33660","type":"prefixes"},{"id":"10.33679","type":"prefixes"},{"id":"10.33681","type":"prefixes"},{"id":"10.33680","type":"prefixes"},{"id":"10.33685","type":"prefixes"},{"id":"10.33687","type":"prefixes"},{"id":"10.33684","type":"prefixes"},{"id":"10.33690","type":"prefixes"}]}}},"meta":{"clients":[{"id":"2011","title":"2011","count":13},{"id":"2012","title":"2012","count":22},{"id":"2013","title":"2013","count":34},{"id":"2014","title":"2014","count":47},{"id":"2015","title":"2015","count":80},{"id":"2016","title":"2016","count":98},{"id":"2017","title":"2017","count":100},{"id":"2018","title":"2018","count":138}],"dois":[{"id":"2018","title":"2018","count":1}]}}'
     http_version: 
-  recorded_at: Fri, 21 Sep 2018 08:56:52 GMT
+  recorded_at: Thu, 22 Nov 2018 18:47:20 GMT
 recorded_with: VCR 3.0.3

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Works", type: :request, vcr: true do
-  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.4124/yhgcy9kj4d.2", title: "2018-09-21 07:26:21.58 3 authors public mode (revised)") }
+  let(:expected_work) { OpenStruct.new(id: "https://handle.test.datacite.org/10.1234/rh5j9bx3gn.1", title: "2018-09-21 07:26:21.58 3 authors public mode (revised)") }
 
   it "works" do
     get '/works'
@@ -10,14 +10,14 @@ describe "Works", type: :request, vcr: true do
 
     meta = json["meta"]
     expect(meta["data-centers"].size).to eq(15)
-    expect(meta["data-centers"].first).to eq("id"=>"bl.ccdc", "title"=>"The Cambridge Structural Database", "count"=>5185)
-    expect(meta["years"].size).to eq(15)
-    expect(meta["years"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>3593)
+    expect(meta["data-centers"].first).to eq("count"=>10861, "id"=>"tib.aip", "title"=>"Leibniz-Institut für Astrophysik Potsdam (AIP) An der Sternwarte 16 14482 Potsdam")
+    expect(meta["registered"].size).to eq(7)
+    expect(meta["registered"].first).to eq("id"=>"2018", "title"=>"2018", "count"=>23869)
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
-    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.1234/rh5j9bx3gn.1")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
 
   it "works with page size" do
@@ -27,8 +27,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(40)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
-    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.1234/rh5j9bx3gn.1")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
 
   it "works with sample" do
@@ -38,8 +38,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
-    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17876/musewide/dr.1/30921")
+    expect(work.dig("attributes", "title")).to eq("candels-cdfs-30")
   end
 
   it "works with sample and sample-group" do
@@ -49,8 +49,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(10)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
-    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17876/musewide/dr.1/30921")
+    expect(work.dig("attributes", "title")).to eq("candels-cdfs-30")
   end
 
   it "works with sample and sample-group limit total to 1000" do
@@ -60,8 +60,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(1000)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.22002/d1.483")
-    expect(work.dig("attributes", "title")).to eq("Test Datacite v4")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17876/musewide/dr.1/30921")
+    expect(work.dig("attributes", "title")).to eq("candels-cdfs-30")
   end
 
   # it "works with include data-center" do
@@ -103,8 +103,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.12203")
-    expect(work.dig("attributes", "title")).to eq("Fate mapping of human glioblastoma reveals an invariant stem cell hierarchy")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.33522/08da-3cnl")
+    expect(work.dig("attributes", "title")).to eq("Methods for Measuring Cancer Disparities: Using Data Relevant to Healthy People 2010 Cancer-Related Objectives")
   end
 
   it "works with query sort by minted" do
@@ -114,8 +114,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.12203")
-    expect(work.dig("attributes", "title")).to eq("Fate mapping of human glioblastoma reveals an invariant stem cell hierarchy")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.33522/08da-3cnl")
+    expect(work.dig("attributes", "title")).to eq("Methods for Measuring Cancer Disparities: Using Data Relevant to Healthy People 2010 Cancer-Related Objectives")
   end
 
   it "works with query no results" do
@@ -132,11 +132,11 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json["data"].size).to eq(18)
+    expect(json["data"].size).to eq(21)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.5438/6brg-2m37")
-    expect(work.dig("attributes", "title")).to eq("Właściwości rzutowań podprzestrzeniowych")
-    expect(work.dig("attributes", "url")).to eq("http://www.datacite.org")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.33540/rry0-5b44")
+    expect(work.dig("attributes", "title")).to eq("My test title")
+    expect(work.dig("attributes", "url")).to eq("http://datacommons.cyverse.org/browse/iplant/home/shared/commons_repo/curated/doi-test-full-datacite")
   end
 
   it "works with resource-type dataset" do
@@ -144,12 +144,12 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json.dig("meta", "total")).to eq(7076)
-    expect(json.dig("meta", "total-pages")).to eq(284)
+    expect(json.dig("meta", "total")).to eq(18773)
+    expect(json.dig("meta", "total-pages")).to eq(751)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.24411/763b-b945")
-    expect(work.dig("attributes", "title")).to eq("Example Requested DOI Gamma rays")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.1234/rh5j9bx3gn.1")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
 
   it "works with data-center-id" do
@@ -157,12 +157,12 @@ describe "Works", type: :request, vcr: true do
 
     expect(last_response.status).to eq(200)
 
-    expect(json.dig("meta", "total")).to eq(895)
-    expect(json.dig("meta", "total-pages")).to eq(36)
+    expect(json.dig("meta", "total")).to eq(1052)
+    expect(json.dig("meta", "total-pages")).to eq(43)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq("Data for: a titlre - matt and richard -edit -edited")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
 
   it "works with checked date" do
@@ -172,8 +172,8 @@ describe "Works", type: :request, vcr: true do
 
     expect(json["data"].size).to eq(25)
     work = json["data"].first
-    expect(work["id"]).to eq("https://handle.test.datacite.org/10.17863/cam.329")
-    expect(work.dig("attributes", "title")).to eq("26-hour storage of a declined liver prior to successful transplantation using ex vivo normothermic perfusion")
+    expect(work["id"]).to eq("https://handle.test.datacite.org/10.1234/rh5j9bx3gn.1")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
   
   it "works with resource-type dataset and data-center mendeley" do
@@ -181,12 +181,12 @@ describe "Works", type: :request, vcr: true do
   
     expect(last_response.status).to eq(200)
   
-    expect(json.dig("meta", "total")).to eq(894)
-    expect(json.dig("meta", "total-pages")).to eq(36)
+    expect(json.dig("meta", "total")).to eq(1051)
+    expect(json.dig("meta", "total-pages")).to eq(43)
     expect(json["data"].size).to eq(25)
     work = json["data"].first
     expect(work["id"]).to eq(expected_work.id)
-    expect(work.dig("attributes", "title")).to eq("Data for: a titlre - matt and richard -edit -edited")
+    expect(work.dig("attributes", "title")).to eq("Title of Mendeley Data Set")
   end
 
   it "related works" do

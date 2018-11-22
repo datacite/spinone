@@ -7,9 +7,9 @@ describe "DataCenters", type: :request, vcr: true do
     expect(last_response.status).to eq(200)
 
     meta = json["meta"]
-    expect(meta["total"]).to eq(1508)
+    expect(meta["total"]).to eq(1559)
     expect(meta["members"].size).to eq(15)
-    expect(meta["members"].first).to eq("id"=>"cdl", "title"=>"California Digital Library", "count"=>235)
+    expect(meta["members"].first).to eq("id"=>"cdl", "title"=>"California Digital Library", "count"=>234)
     expect(meta["years"].size).to eq(9)
     expect(meta["years"].first).to eq("count"=>6, "id"=>"2010", "title"=>"2010")
 

@@ -4,13 +4,13 @@ class Member < Base
   def initialize(item, options={})
     attributes = item.fetch('attributes', {})
     @id = item.fetch("id", nil).downcase
-    @title = attributes.fetch("title", nil)
+    @title = attributes.fetch("name", nil)
     @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", nil), tags: %w(strong em b i code pre sub sup br))
-    @member_type = attributes.fetch("member-type", nil)
+    @member_type = attributes.fetch("memberType", nil)
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
     @year = attributes.fetch("year", nil)
-    @logo_url = attributes.fetch("logo-url", nil)
+    @logo_url = attributes.fetch("logoUrl", nil)
     @website = attributes.fetch("website", nil)
     @email = attributes.fetch("email", nil)
     @phone = attributes.fetch("phone", nil)
@@ -50,6 +50,6 @@ class Member < Base
   end
 
   def self.url
-    "#{ENV["API_URL"]}/members"
+    "#{ENV["API_URL"]}/providers"
   end
 end
