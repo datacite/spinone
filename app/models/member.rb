@@ -6,11 +6,11 @@ class Member < Base
     @id = item.fetch("id", nil).downcase
     @title = attributes.fetch("name", nil)
     @description = ActionController::Base.helpers.sanitize(attributes.fetch("description", nil), tags: %w(strong em b i code pre sub sup br))
-    @member_type = attributes.fetch("member_type", nil)
+    @member_type = attributes.fetch("member-type", nil)
     @region = attributes.fetch("region", nil)
     @country = attributes.fetch("country", nil)
     @year = attributes.fetch("year", nil)
-    @logo_url = attributes.fetch("logo_url", nil)
+    @logo_url = attributes.fetch("logo-url", nil)
     @website = attributes.fetch("website", nil)
     @email = attributes.fetch("email", nil)
     @phone = attributes.fetch("phone", nil)
