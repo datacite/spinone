@@ -4,7 +4,7 @@ gem 'rails', '~> 5.1', '>= 5.1.4'
 
 gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'rake', '~> 12.0'
-gem 'bugsnag', '~> 6.10'
+gem 'sentry-raven', '~> 2.9'
 gem 'maremma', '~> 4.0'
 gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.23'
@@ -25,6 +25,7 @@ gem 'logstash-logger', '~> 0.26.1'
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'cancancan', '~> 1.9.2'
 gem 'rails_12factor', '~> 0.0.3'
+gem 'git', '~> 1.5'
 
 group :development do
   gem 'pry-rails', '~> 0.3.2'

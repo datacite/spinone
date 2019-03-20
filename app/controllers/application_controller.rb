@@ -66,6 +66,8 @@ class ApplicationController < ActionController::API
       elsif status == 401
         message = "You are not authorized to access this resource."
       else
+        Raven.capture_exception(exception)
+        
         message = exception.message
       end
 
