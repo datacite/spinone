@@ -13,6 +13,8 @@ addons:
 
 install:
   - travis_retry bundle install
+  - curl -sL https://sentry.io/get-cli/ | bash
+  - sentry-cli --version
 
 before_script:
   - memcached -p 11211 &
@@ -50,10 +52,17 @@ after_success:
       export GIT_TAG=$(git describe --tags $(git rev-list --tags --max-count=1));
       git clone "https://${TRAVIS_SECURE_TOKEN}@github.com/datacite/mastino.git";
       ./dockerize -template vendor/docker/_spinone.auto.tfvars.tmpl:mastino/stage/services/api/_spinone.auto.tfvars;
+      
+      sentry-cli releases new spinone:${GIT_TAG} --finalize --project spinone;
 
       if [ "${TRAVIS_TAG?}" ]; then
         ./dockerize -template vendor/docker/_spinone.auto.tfvars.tmpl:mastino/prod-eu-west/services/api/_spinone.auto.tfvars;
+        sentry-cli releases deploys spinone:${GIT_TAG} new -e production;
+      else
+        sentry-cli releases deploys spinone:${GIT_TAG} new -e stage;
       fi
+
+      sentry-cli releases set-commits --auto spinone:${GIT_TAG};
 
       cd mastino;
       git remote;
