@@ -58,6 +58,10 @@ module Spinone
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += Dir["#{config.root}/app/models/**/**", "#{config.root}/app/controllers/**/"]
 
+    # include graphql
+    config.paths.add Rails.root.join('app', 'graphql', 'types').to_s, eager_load: true
+    config.paths.add Rails.root.join('app', 'graphql', 'mutations').to_s, eager_load: true
+    
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
@@ -65,6 +69,7 @@ module Spinone
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.i18n.fallbacks = true
 
     # Prepend all log lines with the following tags.
     # config.log_tags = [ :subdomain, :uuid ]

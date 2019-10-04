@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/funders?rows=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (compatible; Maremma/4.2.6; +https://github.com/datacite/maremma)
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '3328'
+      Server:
+      - http-kit
+      Date:
+      - Fri, 04 Oct 2019 17:39:18 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":10,"query":{"start-index":0,"search-terms":null},"total-results":21494,"items":[{"id":"501100010742","location":"Sweden","name":"Sandvik
+        Coromant","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100010742","replaces":[],"replaced-by":[],"tokens":["sandvik","coromant"]},{"id":"501100006568","location":"Japan","name":"Toagosei","alt-names":["Toagosei
+        Co., Ltd.","Toagosei Chemical Industry Company Limited","Toagosei Company
+        Limited"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006568","replaces":[],"replaced-by":[],"tokens":["toagosei","toagosei","co","ltd","toagosei","chemical","industry","company","limited","toagosei","company","limited"]},{"id":"501100004246","location":"Venezuela","name":"Provita","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004246","replaces":[],"replaced-by":[],"tokens":["provita"]},{"id":"501100007416","location":"Sweden","name":"Swedish
+        Brain Power","alt-names":["SBP"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007416","replaces":[],"replaced-by":[],"tokens":["swedish","brain","power","sbp"]},{"id":"100005633","location":"United
+        States","name":"King Pharmaceuticals","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100005633","replaces":[],"replaced-by":[],"tokens":["king","pharmaceuticals"]},{"id":"100014885","location":"United
+        States","name":"Hussman Foundation","alt-names":["John P. Hussman Foundation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014885","replaces":[],"replaced-by":[],"tokens":["hussman","foundation","john","p","hussman","foundation"]},{"id":"501100011279","location":"China","name":"State
+        Key Laboratory of Separation Membranes and Membrane Processes","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011279","replaces":[],"replaced-by":[],"tokens":["state","key","laboratory","of","separation","membranes","and","membrane","processes"]},{"id":"100005149","location":"United
+        States","name":"Starbucks Coffee","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100005149","replaces":[],"replaced-by":[],"tokens":["starbucks","coffee"]},{"id":"501100008392","location":"France","name":"Fondation
+        Nelia et Amadeo Barletta","alt-names":["Nelia and Amadeo Barletta Foundation","Fondazione
+        Nelia e Amadeo Barletta"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008392","replaces":[],"replaced-by":[],"tokens":["fondation","nelia","et","amadeo","barletta","nelia","and","amadeo","barletta","foundation","fondazione","nelia","e","amadeo","barletta"]},{"id":"501100002944","location":"France","name":"D\u00e9partement
+        Caract\u00e9risation et \u00c9laboration des Produits Issus de l\u2019Agriculture,
+        Institut National de la Recherche Agronomique","alt-names":["Division for
+        Science and Process Engineering of Agricultural Products, French National
+        Instiute for Agricultural Research","CEPIA, INRA"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100002944","replaces":[],"replaced-by":[],"tokens":["d\u00e9partement","caract\u00e9risation","et","\u00e9laboration","des","produits","issus","de","l\u2019agriculture","institut","national","de","la","recherche","agronomique","division","for","science","and","process","engineering","of","agricultural","products","french","national","instiute","for","agricultural","research","cepia","inra"]}]}}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2019 17:39:18 GMT
+recorded_with: VCR 3.0.3

@@ -10,6 +10,14 @@ gem 'addressable', "~> 2.3.8"
 gem 'postrank-uri', '~> 1.0.23'
 gem 'fast_jsonapi', '~> 1.1'
 gem 'colorize', '~> 0.8'
+gem 'graphql', '~> 1.9', '>= 1.9.4'
+gem 'graphql-errors', '~> 0.3.0'
+gem 'graphql-batch', '~> 0.4.0'
+gem 'batch-loader', '~> 1.4', '>= 1.4.1'
+gem 'graphql-cache', '~> 0.6.0', git: "https://github.com/stackshareio/graphql-cache"
+gem 'apollo-federation', '~> 0.4.0'
+gem 'multi_json', '~> 1.13', '>= 1.13.1'
+gem 'countries', '~> 2.1', '>= 2.1.2'
 
 gem "dalli", "~> 2.7.0"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'

@@ -1,0 +1,197 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/funders?rows=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (compatible; Maremma/4.2.6; +https://github.com/datacite/maremma)
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '32501'
+      Server:
+      - http-kit
+      Date:
+      - Fri, 04 Oct 2019 17:39:14 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":100,"query":{"start-index":0,"search-terms":null},"total-results":21494,"items":[{"id":"501100010742","location":"Sweden","name":"Sandvik
+        Coromant","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100010742","replaces":[],"replaced-by":[],"tokens":["sandvik","coromant"]},{"id":"501100006568","location":"Japan","name":"Toagosei","alt-names":["Toagosei
+        Co., Ltd.","Toagosei Chemical Industry Company Limited","Toagosei Company
+        Limited"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006568","replaces":[],"replaced-by":[],"tokens":["toagosei","toagosei","co","ltd","toagosei","chemical","industry","company","limited","toagosei","company","limited"]},{"id":"501100004246","location":"Venezuela","name":"Provita","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004246","replaces":[],"replaced-by":[],"tokens":["provita"]},{"id":"501100007416","location":"Sweden","name":"Swedish
+        Brain Power","alt-names":["SBP"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007416","replaces":[],"replaced-by":[],"tokens":["swedish","brain","power","sbp"]},{"id":"100005633","location":"United
+        States","name":"King Pharmaceuticals","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100005633","replaces":[],"replaced-by":[],"tokens":["king","pharmaceuticals"]},{"id":"100014885","location":"United
+        States","name":"Hussman Foundation","alt-names":["John P. Hussman Foundation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014885","replaces":[],"replaced-by":[],"tokens":["hussman","foundation","john","p","hussman","foundation"]},{"id":"501100011279","location":"China","name":"State
+        Key Laboratory of Separation Membranes and Membrane Processes","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011279","replaces":[],"replaced-by":[],"tokens":["state","key","laboratory","of","separation","membranes","and","membrane","processes"]},{"id":"100005149","location":"United
+        States","name":"Starbucks Coffee","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100005149","replaces":[],"replaced-by":[],"tokens":["starbucks","coffee"]},{"id":"501100008392","location":"France","name":"Fondation
+        Nelia et Amadeo Barletta","alt-names":["Nelia and Amadeo Barletta Foundation","Fondazione
+        Nelia e Amadeo Barletta"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008392","replaces":[],"replaced-by":[],"tokens":["fondation","nelia","et","amadeo","barletta","nelia","and","amadeo","barletta","foundation","fondazione","nelia","e","amadeo","barletta"]},{"id":"501100002944","location":"France","name":"D\u00e9partement
+        Caract\u00e9risation et \u00c9laboration des Produits Issus de l\u2019Agriculture,
+        Institut National de la Recherche Agronomique","alt-names":["Division for
+        Science and Process Engineering of Agricultural Products, French National
+        Instiute for Agricultural Research","CEPIA, INRA"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100002944","replaces":[],"replaced-by":[],"tokens":["d\u00e9partement","caract\u00e9risation","et","\u00e9laboration","des","produits","issus","de","l\u2019agriculture","institut","national","de","la","recherche","agronomique","division","for","science","and","process","engineering","of","agricultural","products","french","national","instiute","for","agricultural","research","cepia","inra"]},{"id":"100010387","location":"United
+        Kingdom","name":"Rutlish Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100010387","replaces":[],"replaced-by":[],"tokens":["rutlish","foundation"]},{"id":"501100002327","location":"Finland","name":"Kela","alt-names":["Kansanel\u00e4kelaitos"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100002327","replaces":[],"replaced-by":[],"tokens":["kela","kansanel\u00e4kelaitos"]},{"id":"501100006518","location":"Ireland","name":"Department
+        of Communications, Energy and Natural Resources","alt-names":["DCENR","An
+        Roinn Cumars\u00e1ide, Fuinnimh agus Achmhainn\u00ed N\u00e1d\u00fartha"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006518","replaces":[],"replaced-by":[],"tokens":["department","of","communications","energy","and","natural","resources","dcenr","an","roinn","cumars\u00e1ide","fuinnimh","agus","achmhainn\u00ed","n\u00e1d\u00fartha"]},{"id":"501100009109","location":"Germany","name":"Pharmaceuticals
+        Bayer","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009109","replaces":[],"replaced-by":[],"tokens":["pharmaceuticals","bayer"]},{"id":"100004676","location":"United
+        States","name":"CA Technologies","alt-names":["CA, Inc.","CA"],"uri":"http:\/\/dx.doi.org\/10.13039\/100004676","replaces":[],"replaced-by":[],"tokens":["ca","technologies","ca","inc","ca"]},{"id":"100013884","location":"United
+        States","name":"Macula Society","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100013884","replaces":[],"replaced-by":[],"tokens":["macula","society"]},{"id":"100003386","location":"United
+        States","name":"Sigma-Aldrich Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100003386","replaces":[],"replaced-by":[],"tokens":["sigma","aldrich","foundation"]},{"id":"501100003108","location":"Germany","name":"Bundeszentrale
+        f\u00fcr gesundheitliche Aufkl\u00e4rung","alt-names":["BZgA","Federal Centre
+        for Health Education"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100003108","replaces":[],"replaced-by":[],"tokens":["bundeszentrale","f\u00fcr","gesundheitliche","aufkl\u00e4rung","bzga","federal","centre","for","health","education"]},{"id":"501100000849","location":"United
+        Kingdom","name":"National Centre for the Replacement, Refinement and Reduction
+        of Animals in Research","alt-names":["NC3Rs"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000849","replaces":[],"replaced-by":["501100010757"],"tokens":["national","centre","for","the","replacement","refinement","and","reduction","of","animals","in","research","nc3rs"]},{"id":"100001238","location":"United
+        States","name":"Merck Company Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100001238","replaces":[],"replaced-by":[],"tokens":["merck","company","foundation"]},{"id":"100010412","location":"Canada","name":"Global
+        Risk Institute in Financial Services","alt-names":["GRI","Institut Mondial
+        de Gestion des Risques du Secteur Financier","Institut du Risque"],"uri":"http:\/\/dx.doi.org\/10.13039\/100010412","replaces":[],"replaced-by":[],"tokens":["global","risk","institute","in","financial","services","gri","institut","mondial","de","gestion","des","risques","du","secteur","financier","institut","du","risque"]},{"id":"100004186","location":"United
+        States","name":"UNLV Research Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100004186","replaces":[],"replaced-by":[],"tokens":["unlv","research","foundation"]},{"id":"100004929","location":"United
+        States","name":"Texas Board of Nursing","alt-names":["BON"],"uri":"http:\/\/dx.doi.org\/10.13039\/100004929","replaces":[],"replaced-by":[],"tokens":["texas","board","of","nursing","bon"]},{"id":"501100005958","location":"Netherlands","name":"Stichting
+        HPCN","alt-names":["Dutch Foundation HPCN","Foundation HPCN","Stichting Platform
+        HPCN"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100005958","replaces":[],"replaced-by":[],"tokens":["stichting","hpcn","dutch","foundation","hpcn","foundation","hpcn","stichting","platform","hpcn"]},{"id":"501100004566","location":"Belarus","name":"Ministry
+        of Education of the Republic of Belarus","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004566","replaces":[],"replaced-by":[],"tokens":["ministry","of","education","of","the","republic","of","belarus"]},{"id":"501100007944","location":"Bangladesh","name":"Shahjalal
+        University of Science and Technology","alt-names":["SUST"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007944","replaces":[],"replaced-by":[],"tokens":["shahjalal","university","of","science","and","technology","sust"]},{"id":"100009614","location":"United
+        States","name":"University of Rhode Island","alt-names":["URI"],"uri":"http:\/\/dx.doi.org\/10.13039\/100009614","replaces":[],"replaced-by":[],"tokens":["university","of","rhode","island","uri"]},{"id":"100001054","location":"United
+        States","name":"Community Foundation of the Ozarks","alt-names":["CFO"],"uri":"http:\/\/dx.doi.org\/10.13039\/100001054","replaces":[],"replaced-by":[],"tokens":["community","foundation","of","the","ozarks","cfo"]},{"id":"100004710","location":"Japan","name":"Hitachi
+        America","alt-names":["Hitachi America, Ltd."],"uri":"http:\/\/dx.doi.org\/10.13039\/100004710","replaces":[],"replaced-by":[],"tokens":["hitachi","america","hitachi","america","ltd"]},{"id":"100006436","location":"United
+        States","name":"Celgene","alt-names":["Celgene Corporation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006436","replaces":[],"replaced-by":[],"tokens":["celgene","celgene","corporation"]},{"id":"100010943","location":"United
+        States","name":"Colorado State University Extension","alt-names":["CSU Extension"],"uri":"http:\/\/dx.doi.org\/10.13039\/100010943","replaces":[],"replaced-by":[],"tokens":["colorado","state","university","extension","csu","extension"]},{"id":"100007679","location":"Serbia","name":"Ministarstvo
+        Energetike, Razvoja i Za\u0161tite \u017divotne Sredine","alt-names":["Ministry
+        of Energy, Development and Environmental Protection"],"uri":"http:\/\/dx.doi.org\/10.13039\/100007679","replaces":[],"replaced-by":[],"tokens":["ministarstvo","energetike","razvoja","i","za\u0161tite","\u017eivotne","sredine","ministry","of","energy","development","and","environmental","protection"]},{"id":"100001877","location":"United
+        States","name":"Sterling-Turner Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100001877","replaces":[],"replaced-by":[],"tokens":["sterling","turner","foundation"]},{"id":"501100006162","location":"Brazil","name":"Funda\u00e7\u00e3o
+        de Amparo \u00e0 Ci\u00eancia e Tecnologia do Estado de Pernambuco","alt-names":["Pernambuco
+        State Foundation for Science and Technology","FACEPE","Foundation for Science
+        and Technology of the State of Pernambuco","Pernambuco State Science and Technology
+        Support Foundation","Foundation for Science and Technology Development of
+        the State of Pernambuco"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006162","replaces":[],"replaced-by":[],"tokens":["funda\u00e7\u00e3o","de","amparo","\u00e0","ci\u00eancia","e","tecnologia","do","estado","de","pernambuco","pernambuco","state","foundation","for","science","and","technology","facepe","foundation","for","science","and","technology","of","the","state","of","pernambuco","pernambuco","state","science","and","technology","support","foundation","foundation","for","science","and","technology","development","of","the","state","of","pernambuco"]},{"id":"501100010563","location":"Belgium","name":"Fonds
+        Baillet Latour","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100010563","replaces":[],"replaced-by":[],"tokens":["fonds","baillet","latour"]},{"id":"100004739","location":"United
+        States","name":"US Airways","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100004739","replaces":[],"replaced-by":[],"tokens":["us","airways"]},{"id":"501100011695","location":"Belgium","name":"Benelux
+        Association for Stable Isotope Scientists","alt-names":["BASIS"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011695","replaces":[],"replaced-by":[],"tokens":["benelux","association","for","stable","isotope","scientists","basis"]},{"id":"100010522","location":"United
+        States","name":"California Cherry Board","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100010522","replaces":[],"replaced-by":[],"tokens":["california","cherry","board"]},{"id":"501100011318","location":"Switzerland","name":"Fondation
+        Botnar","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011318","replaces":[],"replaced-by":[],"tokens":["fondation","botnar"]},{"id":"501100008431","location":"Spain","name":"Consejer\u00eda
+        de Educaci\u00f3n, Junta de Castilla y Le\u00f3n","alt-names":["Consejer\u00eda
+        de Educaci\u00f3n de la Junta de Castilla y Le\u00f3n","Ministry of Education,
+        Government of Castile-Leon"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008431","replaces":[],"replaced-by":[],"tokens":["consejer\u00eda","de","educaci\u00f3n","junta","de","castilla","y","le\u00f3n","consejer\u00eda","de","educaci\u00f3n","de","la","junta","de","castilla","y","le\u00f3n","ministry","of","education","government","of","castile","leon"]},{"id":"501100009960","location":"Finland","name":"Pirkanmaan
+        Sairaanhoitopiiri","alt-names":["PSHP","Pirkanmaa Hospital District","Birkalands
+        Sjukv\u00e5rdsdistrikt"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009960","replaces":[],"replaced-by":[],"tokens":["pirkanmaan","sairaanhoitopiiri","pshp","pirkanmaa","hospital","district","birkalands","sjukv\u00e5rdsdistrikt"]},{"id":"100012989","location":"Italy","name":"Universit\u00e0
+        degli studi Internazionali di Roma","alt-names":["UNINT","Universit\u00e0
+        degli studi Internazionali - UNINT","University of International Studies of
+        Rome","UNINT University"],"uri":"http:\/\/dx.doi.org\/10.13039\/100012989","replaces":[],"replaced-by":[],"tokens":["universit\u00e0","degli","studi","internazionali","di","roma","unint","universit\u00e0","degli","studi","internazionali","unint","university","of","international","studies","of","rome","unint","university"]},{"id":"100013747","location":"United
+        States","name":"ACSM Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100013747","replaces":[],"replaced-by":[],"tokens":["acsm","foundation"]},{"id":"100012036","location":"United
+        Kingdom","name":"Environment Wales","alt-names":["EW"],"uri":"http:\/\/dx.doi.org\/10.13039\/100012036","replaces":[],"replaced-by":[],"tokens":["environment","wales","ew"]},{"id":"100012061","location":"United
+        Kingdom","name":"British and Irish Association of Law Librarians","alt-names":["BIALL","British
+        & Irish Association of Law Librarians"],"uri":"http:\/\/dx.doi.org\/10.13039\/100012061","replaces":[],"replaced-by":[],"tokens":["british","and","irish","association","of","law","librarians","biall","british","&","and","irish","association","of","law","librarians"]},{"id":"100012345","location":"United
+        Kingdom","name":"Forces in Mind Trust","alt-names":["FiMT"],"uri":"http:\/\/dx.doi.org\/10.13039\/100012345","replaces":[],"replaced-by":[],"tokens":["forces","in","mind","trust","fimt"]},{"id":"501100009815","location":"Germany","name":"Senckenberg
+        Biodiversit\u00e4t und Klima- Forschungszentrum","alt-names":["BiK-F","Senckenberg
+        Biodiversity and Climate Research Centre"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009815","replaces":[],"replaced-by":[],"tokens":["senckenberg","biodiversit\u00e4t","und","klima","forschungszentrum","bik","f","senckenberg","biodiversity","and","climate","research","centre"]},{"id":"100004707","location":"United
+        States","name":"Hess Corporation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100004707","replaces":[],"replaced-by":[],"tokens":["hess","corporation"]},{"id":"100007582","location":"Canada","name":"Alberta
+        Health Services","alt-names":["AHS"],"uri":"http:\/\/dx.doi.org\/10.13039\/100007582","replaces":[],"replaced-by":[],"tokens":["alberta","health","services","ahs"]},{"id":"501100006525","location":"Australia","name":"BHP
+        Billiton","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006525","replaces":[],"replaced-by":[],"tokens":["bhp","billiton"]},{"id":"100010053","location":"United
+        Kingdom","name":"Oxford Brookes University","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100010053","replaces":[],"replaced-by":[],"tokens":["oxford","brookes","university"]},{"id":"501100001512","location":"New
+        Zealand","name":"NZ On Air","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001512","replaces":[],"replaced-by":[],"tokens":["nz","on","air"]},{"id":"501100010988","location":"Germany","name":"Kulturwissenschaftliches
+        Institut Essen, Universit\u00e4tsallianz Ruhr","alt-names":["Institute of
+        Cultural Studies Essen","Institute for Advanced Study in the Humanities","KWI"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100010988","replaces":[],"replaced-by":[],"tokens":["kulturwissenschaftliches","institut","essen","universit\u00e4tsallianz","ruhr","institute","of","cultural","studies","essen","institute","for","advanced","study","in","the","humanities","kwi"]},{"id":"501100000856","location":"United
+        Kingdom","name":"Colt Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000856","replaces":[],"replaced-by":[],"tokens":["colt","foundation"]},{"id":"100010292","location":"United
+        States","name":"Banner Alzheimer\u2019s Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100010292","replaces":[],"replaced-by":[],"tokens":["banner","alzheimer\u2019s","foundation"]},{"id":"501100004049","location":"Germany","name":"Katholischer
+        Akademischer Ausl\u00e4nder-Dienst","alt-names":["KAAD","Catholic Academic
+        Exchange Service"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004049","replaces":[],"replaced-by":[],"tokens":["katholischer","akademischer","ausl\u00e4nder","dienst","kaad","catholic","academic","exchange","service"]},{"id":"501100007142","location":"Netherlands","name":"Deltares","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007142","replaces":[],"replaced-by":[],"tokens":["deltares"]},{"id":"501100006770","location":"China","name":"Shaoguan
+        University","alt-names":["SGU"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006770","replaces":[],"replaced-by":[],"tokens":["shaoguan","university","sgu"]},{"id":"501100012540","location":"Austria","name":"Fakult\u00e4t
+        f\u00fcr Geowissenschaften, Geographie und Astronomie, Universit\u00e4t Wien","alt-names":["Faculty
+        of Earth Sciences, Geography and Astronomy, University of Vienna"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100012540","replaces":[],"replaced-by":[],"tokens":["fakult\u00e4t","f\u00fcr","geowissenschaften","geographie","und","astronomie","universit\u00e4t","wien","faculty","of","earth","sciences","geography","and","astronomy","university","of","vienna"]},{"id":"501100007393","location":"Brazil","name":"Instituto
+        Nacional de Ci\u00eancia e Tecnologia de Processos Redox em Biomedicina","alt-names":["INCT
+        Redoxoma"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007393","replaces":[],"replaced-by":[],"tokens":["instituto","nacional","de","ci\u00eancia","e","tecnologia","de","processos","redox","em","biomedicina","inct","redoxoma"]},{"id":"100010362","location":"United
+        Kingdom","name":"St. Edmund Hall, University of Oxford","alt-names":["St Edmund
+        Hall, University of Oxford"],"uri":"http:\/\/dx.doi.org\/10.13039\/100010362","replaces":[],"replaced-by":[],"tokens":["st","edmund","hall","university","of","oxford","st","edmund","hall","university","of","oxford"]},{"id":"501100013642","location":"Japan","name":"Japan
+        Heart Foundation","alt-names":["JHF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100013642","replaces":[],"replaced-by":[],"tokens":["japan","heart","foundation","jhf"]},{"id":"100007636","location":"Germany","name":"Deutsche
+        Bundesstiftung Umwelt","alt-names":["German Federal Foundation Environment","German
+        Federal Environmental Foundation","DBU"],"uri":"http:\/\/dx.doi.org\/10.13039\/100007636","replaces":[],"replaced-by":[],"tokens":["deutsche","bundesstiftung","umwelt","german","federal","foundation","environment","german","federal","environmental","foundation","dbu"]},{"id":"100010900","location":"United
+        States","name":"Yale Cancer Center","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100010900","replaces":[],"replaced-by":[],"tokens":["yale","cancer","center"]},{"id":"100005426","location":"United
+        States","name":"Association for Research in Vision and Ophthalmology","alt-names":["ARVO","The
+        Association for Research in Vision and Ophthalmology","Association for Research
+        in Vision and Ophthalmology, Inc."],"uri":"http:\/\/dx.doi.org\/10.13039\/100005426","replaces":[],"replaced-by":[],"tokens":["association","for","research","in","vision","and","ophthalmology","arvo","the","association","for","research","in","vision","and","ophthalmology","association","for","research","in","vision","and","ophthalmology","inc"]},{"id":"501100002549","location":"South
+        Korea","name":"Seonam University","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100002549","replaces":[],"replaced-by":[],"tokens":["seonam","university"]},{"id":"100009314","location":"Belgium","name":"Society
+        of Environmental Toxicology and Chemistry","alt-names":["SETAC","Society of
+        Environmental Toxicology and Chemistry, Inc."],"uri":"http:\/\/dx.doi.org\/10.13039\/100009314","replaces":[],"replaced-by":[],"tokens":["society","of","environmental","toxicology","and","chemistry","setac","society","of","environmental","toxicology","and","chemistry","inc"]},{"id":"100004780","location":"United
+        States","name":"Novell","alt-names":["Novell, Inc."],"uri":"http:\/\/dx.doi.org\/10.13039\/100004780","replaces":[],"replaced-by":[],"tokens":["novell","novell","inc"]},{"id":"100008960","location":"United
+        States","name":"College of Health, Education, and Human Development, Clemson
+        University","alt-names":["HEHD","College of Health, Education, and Human Development","HEHD,
+        Clemson University"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008960","replaces":[],"replaced-by":[],"tokens":["college","of","health","education","and","human","development","clemson","university","hehd","college","of","health","education","and","human","development","hehd","clemson","university"]},{"id":"100014233","location":"Australia","name":"Australian
+        Prawn Farmers Association","alt-names":["APFA","Australian Prawn Farmers Association
+        Inc."],"uri":"http:\/\/dx.doi.org\/10.13039\/100014233","replaces":[],"replaced-by":[],"tokens":["australian","prawn","farmers","association","apfa","australian","prawn","farmers","association","inc"]},{"id":"100001802","location":"United
+        States","name":"John B. Pierce Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100001802","replaces":[],"replaced-by":[],"tokens":["john","b","pierce","foundation"]},{"id":"100005411","location":"United
+        States","name":"Americans for Medical Progress","alt-names":["Americans for
+        Medical Progress Educational Foundation","AMP"],"uri":"http:\/\/dx.doi.org\/10.13039\/100005411","replaces":[],"replaced-by":[],"tokens":["americans","for","medical","progress","americans","for","medical","progress","educational","foundation","amp"]},{"id":"501100009560","location":"Germany","name":"Uniklinikum
+        Giessen und Marburg","alt-names":["University Hospital Giessen and Marburg","Universit\u00e4tsklinikum
+        Gie\u00dfen und Marburg","UKGM"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009560","replaces":[],"replaced-by":[],"tokens":["uniklinikum","giessen","und","marburg","university","hospital","giessen","and","marburg","universit\u00e4tsklinikum","gie\u00dfen","und","marburg","ukgm"]},{"id":"100013240","location":"Portugal","name":"Instituto
+        do Ambiente e Desenvolvimento","alt-names":["Institute of Environment and
+        Development","IDAD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100013240","replaces":[],"replaced-by":[],"tokens":["instituto","do","ambiente","e","desenvolvimento","institute","of","environment","and","development","idad"]},{"id":"100009726","location":"Australia","name":"Foundation
+        for Angelman Syndrome Therapeutics","alt-names":["F.A.S.T. Australia","FAST","FAST
+        Australia","Foundation for Angelman Syndrome Therapeutics Australia"],"uri":"http:\/\/dx.doi.org\/10.13039\/100009726","replaces":[],"replaced-by":[],"tokens":["foundation","for","angelman","syndrome","therapeutics","fast","australia","fast","fast","australia","foundation","for","angelman","syndrome","therapeutics","australia"]},{"id":"501100013100","location":"China","name":"Scientific
+        Research Funds of Jilin Province of Health and Family Planning Commission","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100013100","replaces":[],"replaced-by":[],"tokens":["scientific","research","funds","of","jilin","province","of","health","and","family","planning","commission"]},{"id":"100005671","location":"United
+        States","name":"New England Foundation for the Arts","alt-names":["NEFA","New
+        England Foundation for the Arts Inc.","New England Foundation for the Arts,
+        Incorporated"],"uri":"http:\/\/dx.doi.org\/10.13039\/100005671","replaces":[],"replaced-by":[],"tokens":["new","england","foundation","for","the","arts","nefa","new","england","foundation","for","the","arts","inc","new","england","foundation","for","the","arts","incorporated"]},{"id":"100013760","location":"United
+        States","name":"State Council of Higher Education for Virginia","alt-names":["SCHEV","Virginia
+        State Council of Higher Education"],"uri":"http:\/\/dx.doi.org\/10.13039\/100013760","replaces":[],"replaced-by":[],"tokens":["state","council","of","higher","education","for","virginia","schev","virginia","state","council","of","higher","education"]},{"id":"100014131","location":"Canada","name":"McGill
+        University Health Centre","alt-names":["Centre universitaire de sant\u00e9
+        McGill","MUHC","McGill University Health Center"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014131","replaces":[],"replaced-by":[],"tokens":["mcgill","university","health","centre","centre","universitaire","de","sant\u00e9","mcgill","muhc","mcgill","university","health","center"]},{"id":"501100001871","location":"Portugal","name":"Funda\u00e7\u00e3o
+        para a Ci\u00eancia e a Tecnologia","alt-names":["Portuguese Science and Technology
+        Foundation","Foundation for Science and Technology","FCT"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001871","replaces":[],"replaced-by":[],"tokens":["funda\u00e7\u00e3o","para","a","ci\u00eancia","e","a","tecnologia","portuguese","science","and","technology","foundation","foundation","for","science","and","technology","fct"]},{"id":"501100006591","location":"Spain","name":"Ministerio
+        de Industria, Energ\u00eda y Turismo","alt-names":["Ministry of Industry,
+        Energy and Tourism","MINETUR"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100006591","replaces":[],"replaced-by":[],"tokens":["ministerio","de","industria","energ\u00eda","y","turismo","ministry","of","industry","energy","and","tourism","minetur"]},{"id":"100012946","location":"France","name":"Association
+        Sorbonne Universit\u00e9","alt-names":["Sorbonne University association"],"uri":"http:\/\/dx.doi.org\/10.13039\/100012946","replaces":[],"replaced-by":[],"tokens":["association","sorbonne","universit\u00e9","sorbonne","university","association"]},{"id":"100006498","location":"United
+        States","name":"Clemson University","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100006498","replaces":[],"replaced-by":[],"tokens":["clemson","university"]},{"id":"100008769","location":"United
+        States","name":"Abt Associates","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100008769","replaces":[],"replaced-by":[],"tokens":["abt","associates"]},{"id":"501100009763","location":"Sweden","name":"Kerstin
+        och Bo Pfannenstills Stiftelse f\u00f6r Bek\u00e4mpande av Sj\u00e4lsliga
+        och Nerv\u00f6sa Sjukdomar","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009763","replaces":[],"replaced-by":[],"tokens":["kerstin","och","bo","pfannenstills","stiftelse","f\u00f6r","bek\u00e4mpande","av","sj\u00e4lsliga","och","nerv\u00f6sa","sjukdomar"]},{"id":"100009536","location":"United
+        States","name":"Bergmark Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100009536","replaces":[],"replaced-by":[],"tokens":["bergmark","foundation"]},{"id":"100011392","location":"United
+        Kingdom","name":"Clinical Genetics Society","alt-names":["CGS"],"uri":"http:\/\/dx.doi.org\/10.13039\/100011392","replaces":[],"replaced-by":[],"tokens":["clinical","genetics","society","cgs"]},{"id":"100013310","location":"United
+        States","name":"Knowles Teacher Initiative","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100013310","replaces":[],"replaced-by":[],"tokens":["knowles","teacher","initiative"]},{"id":"100013570","location":"United
+        States","name":"Dr. Jeffrey Thomas Stroke Shield Foundation","alt-names":["Dr
+        Jeffrey Thomas Stroke Shield Fdn","Stroke-Shield Foundation","JTSSF","Jeffrey
+        Thomas Stroke Shield Foundation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100013570","replaces":[],"replaced-by":[],"tokens":["dr","jeffrey","thomas","stroke","shield","foundation","dr","jeffrey","thomas","stroke","shield","fdn","stroke","shield","foundation","jtssf","jeffrey","thomas","stroke","shield","foundation"]},{"id":"501100011012","location":"Austria","name":"Gesellschaft
+        f\u00fcr Thrombose- und H\u00e4mostaseforschung","alt-names":["Gesellschaft
+        f\u00fcr Thrombose- und H\u00e4mostaseforschung e.V.","Society of Thrombosis
+        and Haemostasis Research","GTH"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011012","replaces":[],"replaced-by":[],"tokens":["gesellschaft","f\u00fcr","thrombose","und","h\u00e4mostaseforschung","gesellschaft","f\u00fcr","thrombose","und","h\u00e4mostaseforschung","ev","society","of","thrombosis","and","haemostasis","research","gth"]},{"id":"100002737","location":"United
+        States","name":"Civil Justice Foundation","alt-names":["CJF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100002737","replaces":[],"replaced-by":[],"tokens":["civil","justice","foundation","cjf"]},{"id":"501100013044","location":"Iran","name":"Iran
+        Water Resources Management Company","alt-names":["Iran Water Resources Management
+        Co.","IWRMC"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100013044","replaces":[],"replaced-by":[],"tokens":["iran","water","resources","management","company","iran","water","resources","management","co","iwrmc"]},{"id":"100011469","location":"United
+        Kingdom","name":"British Association for Behavioural and Cognitive Psychotherapies","alt-names":["British
+        Association for Behavioural & Cognitive Psychotherapies","BABCP"],"uri":"http:\/\/dx.doi.org\/10.13039\/100011469","replaces":[],"replaced-by":[],"tokens":["british","association","for","behavioural","and","cognitive","psychotherapies","british","association","for","behavioural","&","and","cognitive","psychotherapies","babcp"]},{"id":"501100007517","location":"Mexico","name":"Instituto
+        de Seguriidad y Servicios Sociales de los Trabadores del Estado","alt-names":["State\u2019s
+        Employees\u00b4 Social Security and Social Services Institute","ISSSTE"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100007517","replaces":[],"replaced-by":[],"tokens":["instituto","de","seguriidad","y","servicios","sociales","de","los","trabadores","del","estado","state\u2019s","employees\u00b4","social","security","and","social","services","institute","issste"]},{"id":"100006650","location":"United
+        States","name":"Saint Louis County Department of Health","alt-names":["St.
+        Louis County Health","St. Louis County Health Department"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006650","replaces":[],"replaced-by":[],"tokens":["saint","louis","county","department","of","health","st","louis","county","health","st","louis","county","health","department"]},{"id":"100005734","location":"United
+        States","name":"Connecticut Space Grant College Consortium","alt-names":["CTSGC","NASA
+        Connecticut Space Grant Consortium","CT Space Grant College Consortium","NASA
+        CTSGC","NASA CT Space Grant"],"uri":"http:\/\/dx.doi.org\/10.13039\/100005734","replaces":[],"replaced-by":[],"tokens":["connecticut","space","grant","college","consortium","ctsgc","nasa","connecticut","space","grant","consortium","ct","space","grant","college","consortium","nasa","ctsgc","nasa","ct","space","grant"]},{"id":"100009511","location":"Italy","name":"Fondazione
+        Cassa di Risparmio di Foligno","alt-names":["Cassa di Risparmio di Foligno
+        Foundation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100009511","replaces":[],"replaced-by":[],"tokens":["fondazione","cassa","di","risparmio","di","foligno","cassa","di","risparmio","di","foligno","foundation"]},{"id":"100008043","location":"New
+        Zealand","name":"Palmerston North City Council","alt-names":["PNCC"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008043","replaces":[],"replaced-by":[],"tokens":["palmerston","north","city","council","pncc"]},{"id":"100011058","location":"United
+        Kingdom","name":"British Society for Cardiovascular Research","alt-names":["BSCR"],"uri":"http:\/\/dx.doi.org\/10.13039\/100011058","replaces":[],"replaced-by":[],"tokens":["british","society","for","cardiovascular","research","bscr"]},{"id":"501100004605","location":"China","name":"Zhengzhou
+        University","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004605","replaces":[],"replaced-by":[],"tokens":["zhengzhou","university"]}]}}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2019 17:39:15 GMT
+recorded_with: VCR 3.0.3

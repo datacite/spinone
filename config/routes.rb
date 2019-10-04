@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  post "/api/graphql", to: "graphql#execute"
+  get "/api/graphql", to: "index#method_not_allowed"
+
   root :to => 'index#index'
 
   resources :index, only: [:index]
