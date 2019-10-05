@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class FunderType < BaseObject
+  key fields: 'id'
+  
   description "Information about funders"
 
   field :id, ID, null: false, description: "Crossref Funder ID"
