@@ -6,8 +6,8 @@ gem "dotenv", '>= 2.1.1', '~> 2.1'
 gem 'rake', '~> 12.0'
 gem 'sentry-raven', '~> 2.9'
 gem 'maremma', '~> 4.0'
-gem 'addressable', "~> 2.3.8"
-gem 'postrank-uri', '~> 1.0.23'
+gem 'addressable', "~> 2.3"
+gem 'postrank-uri', '~> 1.0', '>= 1.0.23'
 gem 'fast_jsonapi', '~> 1.1'
 gem 'colorize', '~> 0.8'
 gem 'graphql', '~> 1.9', '>= 1.9.4'
@@ -16,12 +16,13 @@ gem 'graphql-batch', '~> 0.4.0'
 gem 'batch-loader', '~> 1.4', '>= 1.4.1'
 gem 'graphql-cache', '~> 0.6.0', git: "https://github.com/stackshareio/graphql-cache"
 gem 'apollo-federation', '~> 0.4.0'
+gem 'google-protobuf', '3.10.0.rc.1'
 gem 'multi_json', '~> 1.13', '>= 1.13.1'
 gem 'countries', '~> 2.1', '>= 2.1.2'
 
 gem "dalli", "~> 2.7.0"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
-gem 'nokogiri', '~> 1.8.1'
+gem "nokogiri", ">= 1.10.4"
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
 gem 'rack-cors', '~> 1.0', '>= 1.0.2', :require => 'rack/cors'
@@ -47,7 +48,8 @@ group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem "brakeman", "~> 2.6.0", :require => false
-  gem "rubocop", "~> 0.49.0"
+  gem 'rubocop', '~> 0.68', require: false
+  gem 'rubocop-performance', '~> 1.2', require: false
 end
 
 group :test do

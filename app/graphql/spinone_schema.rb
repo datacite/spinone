@@ -3,8 +3,8 @@
 class SpinoneSchema < GraphQL::Schema
   include ApolloFederation::Schema
   
-  # use(GraphQL::Tracing::DataDogTracing, analytics_enabled: Rails.env.production?)
-
+  use ApolloFederation::Tracing
+  
   default_max_page_size 250
   max_depth 10
 
