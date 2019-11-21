@@ -25,7 +25,7 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem "nokogiri", ">= 1.10.4"
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
-gem 'rack-cors', '~> 1.0', '>= 1.0.2', :require => 'rack/cors'
+gem 'rack-cors', '~> 1.0', :require => 'rack/cors'
 gem 'hashie', '~> 3.3.2'
 gem 'namae', '~> 0.10.2'
 gem 'lograge', '~> 0.10.0'
