@@ -5,7 +5,6 @@ require "active_model/railtie"
 require "action_controller/railtie"
 require "rails/test_unit/railtie"
 
-require 'syslog/logger'
 require 'securerandom'
 
 # Require the gems listed in Gemfile, including any gems
@@ -47,7 +46,6 @@ ENV['TRUSTED_IP'] ||= "127.0.0.0/8"
 
 module Spinone
   class Application < Rails::Application
-
     config.api_only = true
 
     # Settings in config/environments/* take precedence over those specified here.
