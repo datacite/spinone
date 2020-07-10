@@ -22,7 +22,7 @@ gem 'google-protobuf', '3.10.0.rc.1'
 gem 'countries', '~> 2.1', '>= 2.1.2'
 
 gem "dalli", "~> 2.7.0"
-gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'kaminari', '~> 1.2'
 gem "nokogiri", ">= 1.10.4"
 gem "github-markdown", "~> 0.6.3"
 gem 'iso8601', '~> 0.9.0'
